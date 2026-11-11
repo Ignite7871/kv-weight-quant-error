@@ -1,0 +1,704 @@
+{
+ "caught": 49,
+ "total": 49,
+ "results": [
+  {
+   "mutant": "m_qa_qo_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key perturbation not in the declared subspace (1.00e+00)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[llama]",
+     "AssertionError: QA: key perturbation not in the declared subspace (1.00e+00)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_projector_wrong_head",
+   "caught": true,
+   "first_failures": [
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key perturbation not in the declared subspace (8.58e-01)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[llama]",
+     "AssertionError: QA: key perturbation not in the declared subspace (9.68e-01)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_projector_wrong_layer",
+   "caught": true,
+   "first_failures": [
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key perturbation not in the declared subspace (7.31e-01)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[llama]",
+     "AssertionError: QA: key perturbation not in the declared subspace (9.52e-01)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_r_off_by_one",
+   "caught": true,
+   "first_failures": [
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: r must be 8"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[llama]",
+     "AssertionError: r must be 8"
+    ],
+    [
+     "v11_calibration_accumulator_and_subspace[qwen]",
+     "AssertionError: "
+    ]
+   ]
+  },
+  {
+   "mutant": "m_natural_kv_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: NAT-K paths wrong"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: NAT-K paths wrong"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_star_kv_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: NAT-K*: other path changed"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: NAT-K*: other path changed"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_c1_kv_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1-K: other path changed"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1-K: other path changed"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_loc_inh_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v05_loc_inh_routing_module_by_module[qwen]",
+     "AssertionError: LOC: precision map differs from the declared one"
+    ],
+    [
+     "v05_loc_inh_routing_module_by_module[llama]",
+     "AssertionError: LOC: precision map differs from the declared one"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_override_not_reset",
+   "caught": true,
+   "first_failures": [
+    [
+     "v01_alpha0_bitwise_every_arm[qwen]",
+     "AssertionError: LOC: JS not exactly 0 at alpha 0"
+    ],
+    [
+     "v01_alpha0_bitwise_every_arm[llama]",
+     "AssertionError: LOC: JS not exactly 0 at alpha 0"
+    ],
+    [
+     "v05_loc_inh_routing_module_by_module[qwen]",
+     "AssertionError: LOC: override left set"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_norm_pooled_over_heads",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 7.070e-01)"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 6.791e-01)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key norm not natural"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_rho_star_absolute",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: NAT-K*: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: NAT-K*: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v16_runtime_split_check[qwen]",
+     "AssertionError: NAT-K*: split check fails on a correct run (constr max 5.61e-16)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_predictor_includes_current_entry",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_norm step 2: fast 1.1828298311298524 vs slow 1.6727739891633149"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_norm step 2: fast 2.0652841141237777 vs slow 2.9207528043475497"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_predictor_drops_last_written",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_norm step 3: fast 2.0886214863828214 vs slow 1.4768784163532194"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_norm step 3: fast 4.868210554938264 vs slow 3.4423446956407724"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_predictor_norm_denominator_off_by_one",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_norm step 2: fast 1.1828298311298524 vs slow 1.6727739891633149"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_norm step 2: fast 2.0652841141237777 vs slow 2.9207528043475497"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_pre_rope_queries",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_logit step 2: fast 0.010241167533674479 vs slow 0.01365622502308595"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_logit step 2: fast 0.11645627342321947 vs slow 0.07866918170321431"
+    ],
+    [
+     "v09_query_capture_equals_hand_rotation[qwen]",
+     "AssertionError: captured post-RoPE query differs from the hand rotation"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_attention_over_unperturbed_keys",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_logit step 2: fast 0.013706836282004763 vs slow 0.01365622502308595"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_logit step 2: fast 0.06014048481806447 vs slow 0.07866918170321431"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_gqa_group_map_shifted",
+   "caught": true,
+   "first_failures": [
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: NAT P_logit step 2: fast 0.029938639616856676 vs slow 0.01365622502308595"
+    ],
+    [
+     "v08_predictors_match_slow_reference[llama]",
+     "AssertionError: NAT P_logit step 2: fast 0.0048256728605600594 vs slow 0.07866918170321431"
+    ],
+    [
+     "v11_calibration_accumulator_and_subspace[qwen]",
+     "AssertionError: query second moment not pooled within the KV group"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_past_entries_perturbed",
+   "caught": true,
+   "first_failures": [
+    [
+     "v01_alpha0_bitwise_every_arm[qwen]",
+     "AssertionError: NAT: JS not exactly 0 at alpha 0"
+    ],
+    [
+     "v01_alpha0_bitwise_every_arm[llama]",
+     "AssertionError: NAT: JS not exactly 0 at alpha 0"
+    ],
+    [
+     "v04_only_newest_entry_changes[qwen]",
+     "AssertionError: an earlier entry changed"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_seed_depends_on_data",
+   "caught": true,
+   "first_failures": [
+    [
+     "v07_seeds_label_only[qwen]",
+     "AssertionError: random draws depend on the data"
+    ],
+    [
+     "v07_seeds_label_only[llama]",
+     "AssertionError: random draws depend on the data"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_cv_profile_ignored",
+   "caught": true,
+   "first_failures": [
+    [
+     "v13_cv_follows_channel_profile[qwen]",
+     "AssertionError: CV does not follow the calibration channel-variance profile"
+    ],
+    [
+     "v13_cv_follows_channel_profile[llama]",
+     "AssertionError: CV does not follow the calibration channel-variance profile"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_qaqo_value_stream_not_shared",
+   "caught": true,
+   "first_failures": [
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA/QO must share the value stream only"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[llama]",
+     "AssertionError: QA/QO must share the value stream only"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_natural_not_bitwise",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: NAT: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: NAT: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v16_runtime_split_check[qwen]",
+     "AssertionError: NAT: split check fails on a correct run (constr max 0.00e+00)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_accumulator_pools_all_heads",
+   "caught": true,
+   "first_failures": [
+    [
+     "v11_calibration_accumulator_and_subspace[qwen]",
+     "AssertionError: query second moment not pooled within the KV group"
+    ],
+    [
+     "v11_calibration_accumulator_and_subspace[llama]",
+     "AssertionError: query second moment not pooled within the KV group"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_accumulator_rho_kv_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v11_calibration_accumulator_and_subspace[qwen]",
+     "AssertionError: rho_K wrong"
+    ],
+    [
+     "v11_calibration_accumulator_and_subspace[llama]",
+     "AssertionError: rho_K wrong"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_nat_measured_in_fp16",
+   "caught": true,
+   "first_failures": [
+    [
+     "v05_loc_inh_routing_module_by_module[qwen]",
+     "AssertionError: NF4 measurement must use NF4 everywhere"
+    ],
+    [
+     "v05_loc_inh_routing_module_by_module[llama]",
+     "AssertionError: NF4 measurement must use NF4 everywhere"
+    ],
+    [
+     "v06_nat_equals_engine_cache_only[qwen]",
+     "AssertionError: NAT teacher-forced on the engine's cache-only tokens must reproduce them"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_one_path_arm_touches_other_path",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: NAT-K*: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: NAT-K*: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v16_runtime_split_check[qwen]",
+     "AssertionError: NAT-K*: split check fails on a correct run (constr max 4.71e-16)"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_prerounding_norm_scaled_1p001",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 1.000e-03)"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 1.000e-03)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key norm not natural"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_slot_norm_scaled_1p001",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 1.000e-03)"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1: pre-rounding per-slot norm off (max rel dev 1.000e-03)"
+    ],
+    [
+     "v03_qa_qo_geometry_prerounding[qwen]",
+     "AssertionError: QA: key norm not natural"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_round_truncate",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v15_fp16_rounding_is_correct[qwen]",
+     "AssertionError: to_fp16: 4520 of 8291 values not correctly rounded"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_round_via_float32",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: QO: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v15_fp16_rounding_is_correct[qwen]",
+     "AssertionError: to_fp16: 1255 of 8291 values not correctly rounded"
+    ],
+    [
+     "v15_fp16_rounding_is_correct[llama]",
+     "AssertionError: to_fp16: 1255 of 8291 values not correctly rounded"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_round_half_up",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C2: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C2: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v15_fp16_rounding_is_correct[qwen]",
+     "AssertionError: to_fp16: 837 of 8291 values not correctly rounded"
+    ]
+   ]
+  },
+  {
+   "mutant": "m_rounding_skipped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v02_stored_entries_norms_and_paths_independent[qwen]",
+     "AssertionError: C1: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v02_stored_entries_norms_and_paths_independent[llama]",
+     "AssertionError: C1: stored entry is not the correctly rounded FP16 of the pre-rounding entry"
+    ],
+    [
+     "v08_predictors_match_slow_reference[qwen]",
+     "AssertionError: C1 P_norm step 2: fast 1.6727739891633149 vs slow 1.672538672385449"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_holm_is_bonferroni",
+   "caught": true,
+   "first_failures": [
+    [
+     "a04_holm",
+     "AssertionError: [0.04 0.16 0.12 0.02]"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_spearman_ordinal_ranks",
+   "caught": true,
+   "first_failures": [
+    [
+     "a05_spearman_with_ties",
+     "AssertionError: "
+    ]
+   ]
+  },
+  {
+   "mutant": "a_hc_slope_instead_of_intercept",
+   "caught": true,
+   "first_failures": [
+    [
+     "a06_hc_recovers_planted_confounder_and_absence",
+     "AssertionError: {'beta0': 0.508999467672195, 'beta1': 0.5008315375685451, 'beta0_ci95': [0.495967274360283, 0.5223597246815059], 'shrinkage': 0.008167930103649801, 'shrinkage_ci95': [-0.007415305322778483, 0.02374961553204142], 'fraction': 0.016047030738566725, 'fraction_ci95': [-0.01484703133289566, 0.045353420298691736], 'p': 0.33, 'applicable': True, 'band': 'no'}"
+    ],
+    [
+     "a07_hc_betas_exact",
+     "AssertionError: "
+    ]
+   ]
+  },
+  {
+   "mutant": "a_band_thresholds_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "a06_hc_recovers_planted_confounder_and_absence",
+     "AssertionError: {'beta0': 0.8532869754776502, 'beta1': 0.5973066418431807, 'beta0_ci95': [0.8394096378555572, 0.8681490009911378], 'shrinkage': 0.2559803336344695, 'shrinkage_ci95': [0.24250650960225623, 0.27036129697153677], 'fraction': 0.2999932507948778, 'fraction_ci95': [0.2885509605383662, 0.3124346216154215], 'p': 0.001, 'applicable': True, 'band': 'substantial'}"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_equivalence_ignores_dose_flag",
+   "caught": true,
+   "first_failures": [
+    [
+     "a03_equivalence_logic",
+     "AssertionError: no equivalence when the dose response is flat"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_family_contrast_sign_flipped",
+   "caught": true,
+   "first_failures": [
+    [
+     "a09_full_pipeline_planted_truth",
+     "AssertionError: {'n': 60, 'estimate': -0.7919528445806769, 'ci95': [-0.90232796423885, -0.6821182692683215], 'ci90': [-0.8843272725013643, -0.6999696651579146], 'p': 0.000999000999000999, 'verdict': 'difference', 'holm_p': 0.002997002997002997}"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_sd_guard_inactive",
+   "caught": true,
+   "first_failures": [
+    [
+     "a10_sd_guard",
+     "AssertionError: test across these four models (one model per cell)"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_hc_precondition_ignored",
+   "caught": true,
+   "first_failures": [
+    [
+     "a08_hc_cross_decision_and_nonreplication_finding",
+     "AssertionError: {'g0': 0.006913191883566927, 'g0_ci95': [-0.014326707716100073, 0.027976210041921204], 'g1': 0.0019467850041413604, 'g1_ci95': [-0.012759349403052251, 0.015543504034225573], 'F': 0.7183956359190629, 'F_ci95': [-11.239711787504167, 0.9769536736586488], 'precondition_met': True, 'band': 'not applicable'}"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_scale_factors_swapped",
+   "caught": true,
+   "first_failures": [
+    [
+     "v14",
+     ""
+    ]
+   ]
+  },
+  {
+   "mutant": "a_hd_rule_inverted",
+   "caught": true,
+   "first_failures": [
+    [
+     "v14",
+     "s in [0.5, 2] (closed) must keep H-D a test"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_ha_uses_all_steps_incl_step1",
+   "caught": true,
+   "first_failures": [
+    [
+     "a09_full_pipeline_planted_truth",
+     "AssertionError: H-A per model"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_sensitivity_cut_off_by_one",
+   "caught": true,
+   "first_failures": [
+    [
+     "a13_rounding_report_and_sensitivity",
+     "AssertionError: ([0, 1, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 38, 39], [0, 1, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 33, 35, 36, 37, 39])"
+    ]
+   ]
+  },
+  {
+   "mutant": "r_tierA_filter_removed",
+   "caught": true,
+   "first_failures": [
+    [
+     "B_interrupted_while_appending_tierA",
+     "AssertionError: {'C1-K.jsonl': 3, 'C1-V.jsonl': 3, 'C1.jsonl': 4, 'C2.jsonl': 4, 'CV.jsonl': 3, 'FP16_history.jsonl': 3, 'INH.jsonl': 3, 'LOC.jsonl': 3, 'NAT-K.jsonl': 3, 'NAT-Kstar.jsonl': 3, 'NAT-V.jsonl': 3, 'NAT-Vstar.jsonl': 3, 'NAT.jsonl': 4, 'QA.jsonl': 4, 'QO.jsonl': 4}"
+    ],
+    [
+     "C_torn_line_stops_driver_then_logged_repair_then_rerun",
+     "AssertionError: after repair and rerun the records must equal an uninterrupted run"
+    ]
+   ]
+  },
+  {
+   "mutant": "r_torn_check_disabled",
+   "caught": true,
+   "first_failures": [
+    [
+     "C_torn_line_stops_driver_then_logged_repair_then_rerun",
+     "JSONDecodeError: Expecting ',' delimiter: line 1 column 151 (char 150)"
+    ]
+   ]
+  },
+  {
+   "mutant": "r_heartbeat_missing",
+   "caught": true,
+   "first_failures": [
+    [
+     "F_heartbeat_charges_a_hard_kill",
+     "AssertionError: the heartbeat must be written while the work runs"
+    ]
+   ]
+  },
+  {
+   "mutant": "a_duplicate_assertion_removed",
+   "caught": true,
+   "first_failures": [
+    [
+     "a12_duplicate_record_fails_loudly",
+     "AssertionError: a duplicate (model, arm, problem) record must raise"
+    ]
+   ]
+  },
+  {
+   "mutant": "rp_repair_removes_too_much",
+   "caught": true,
+   "first_failures": [
+    [
+     "r01_torn_without_newline_is_removed_and_logged",
+     "AssertionError: kept part must be the complete lines, byte-identical"
+    ],
+    [
+     "r02_invalid_last_line_with_newline_is_removed",
+     "AssertionError: "
+    ],
+    [
+     "r07_repair_removes_only_the_trailing_line",
+     "AssertionError: b'{'"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 52, in b1_replication_categories_separate_uncertainty_from_directional_disagreement
+    assert rc(-3.5, -4.0, 0.01, 0.07, [-3, 2]).startswith("same direction; raw p")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 55, in b1_replication_categories_separate_uncertainty_from_directional_disagreement
+    assert "directional disagreement" in rc(-3.5, +6.0, 0.01, 0.04, [4, 14])         # sign flip, difference CI excludes 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 69, in b2_heterogeneity_has_a_calibrated_null_and_detects_a_shift
+    same = B.heterogeneity(d1, d2, np.random.default_rng(1), B=2000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: main.<locals>.het_wrong_sign() got an unexpected keyword argument 'B'
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 109, in b4_merge_requires_disjoint_samples_and_unions_them
+    raise AssertionError("overlapping stages were merged")
+AssertionError: overlapping stages were merged
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 92, in b3_pattern_counts_hand_checked
+    assert pc["patterns"] == {"SWSSS": 1, "SSSSS": 1, "WWWWW": 1, "WWSWS": 1}, pc["patterns"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'SSSWS': 1, 'SSSSS': 1, 'WWWWW': 1, 'SWSWW': 1}
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage2_tests.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage2_tests.py", line 85, in g2_only_heldout_problems_may_be_evaluated
+    raise AssertionError(f"accepted {bad}")
+AssertionError: accepted [0]
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 29, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\test_analyze_stage2.py", line 59, in b1_replication_categories_separate_uncertainty_from_directional_disagreement
+    assert B.equivalence_category([-4.0, 1.0]).startswith("equivalence not demonstrated")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+KILLED    Holm adjustment ignored in the replication category         failed by: ['b1']
+KILLED    sign flips never reported as directional disagreement       failed by: ['b1']
+KILLED    heterogeneity difference has the wrong sign                 failed by: ['b2']
+KILLED    stage merge without the overlap check                       failed by: ['b4']
+KILLED    pattern strings in the wrong arm order                      failed by: ['b3']
+KILLED    driver accepts any held-out index (pool included)           failed by: ['g2']
+KILLED    equivalence bound widened to +-5 pp                         failed by: ['b1']
+
+clean code passes all 15 tests: True
+7/7 mutants killed

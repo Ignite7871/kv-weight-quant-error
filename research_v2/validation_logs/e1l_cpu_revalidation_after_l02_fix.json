@@ -1,0 +1,29 @@
+{
+ "utc": "2026-10-28T06:24:05Z",
+ "reason": "re-validation after the single-line l02 device fix (test-only amendment)",
+ "steps": {
+  "tests_tiny_llama_plus_real_llama_cpu": {
+   "exit_code": 0,
+   "seconds": 462.6,
+   "summary": [
+    "18/18 passed"
+   ]
+  },
+  "mutation_check_19_mutants": {
+   "exit_code": 0,
+   "seconds": 235.5,
+   "summary": [
+    "baseline (unmutated) failures: 0",
+    "19/19 mutants caught"
+   ]
+  },
+  "analysis_tests": {
+   "exit_code": 0,
+   "seconds": 2.1,
+   "summary": [
+    "10/10 passed"
+   ]
+  }
+ },
+ "all_passed": true
+}

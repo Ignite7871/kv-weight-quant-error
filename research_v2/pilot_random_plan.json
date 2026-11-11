@@ -1,0 +1,63 @@
+[
+ {
+  "name": "rand_full_lagE_B10_s1",
+  "p_fp16": 0.08154574132492114,
+  "matched_to": [
+   "lag_entropy_B10"
+  ],
+  "unit": "full",
+  "group": "B10",
+  "note": ""
+ },
+ {
+  "name": "rand_full_lagM_B10_s1",
+  "p_fp16": 0.09551765172550575,
+  "matched_to": [
+   "lag_margin_B10"
+  ],
+  "unit": "full",
+  "group": "B10",
+  "note": ""
+ },
+ {
+  "name": "rand_cost_casc_B10_s1",
+  "p_fp16": 0.21856346515064082,
+  "matched_to": [
+   "cascade_nf4_margin_B10"
+  ],
+  "unit": "total_cost_bytes",
+  "group": "B10",
+  "note": ""
+ },
+ {
+  "name": "rand_full_flip_s1",
+  "p_fp16": 0.04996028594122319,
+  "matched_to": [
+   "oracle_flip"
+  ],
+  "unit": "full",
+  "group": "B10",
+  "note": ""
+ },
+ {
+  "name": "rand_full_lagE_B30_s1",
+  "p_fp16": 0.2541693930408138,
+  "matched_to": [
+   "lag_entropy_B30",
+   "lag_margin_B30"
+  ],
+  "unit": "full",
+  "group": "B30",
+  "note": "shared: |share diff| = 0.0024 <= 0.01; p = mean of the two"
+ },
+ {
+  "name": "rand_cost_casc_B30_s1",
+  "p_fp16": 0.5770933984930835,
+  "matched_to": [
+   "cascade_nf4_margin_B30"
+  ],
+  "unit": "total_cost_bytes",
+  "group": "B30",
+  "note": ""
+ }
+]

@@ -1,0 +1,12 @@
+[smoke] fp16 idx=11 WRONG steps=11 fp16=1.000 t=8.8s
+[smoke] fp16 idx=309 WRONG steps=11 fp16=1.000 t=7.6s
+[smoke] lag_entropy_B10 idx=11 SOLVED steps=11 fp16=0.000 t=15.4s
+[smoke] lag_entropy_B10 idx=309 WRONG steps=11 fp16=0.000 t=13.8s
+[smoke] cascade_nf4_margin_B10 idx=11 WRONG steps=11 fp16=0.182 t=16.3s
+[smoke] cascade_nf4_margin_B10 idx=309 WRONG steps=11 fp16=0.182 t=14.8s
+[smoke] random_B10_s1 idx=11 SOLVED steps=11 fp16=0.000 t=15.6s
+[smoke] random_B10_s1 idx=309 WRONG steps=11 fp16=0.000 t=14.5s
+[smoke] oracle_js_B10 idx=11 SOLVED steps=11 fp16=0.364 t=16.2s
+[smoke] oracle_js_B10 idx=309 WRONG steps=11 fp16=0.273 t=13.4s
+[smoke] oracle_flip idx=11 SOLVED steps=11 fp16=0.182 t=16.1s
+[smoke] oracle_flip idx=309 WRONG steps=11 fp16=0.091 t=14.9s

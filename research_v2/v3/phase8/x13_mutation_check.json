@@ -1,0 +1,153 @@
+{
+ "mutants": {
+  "m_mu_not_subtracted": {
+   "caught": true,
+   "failing_tests": [
+    "x02_centred_arm_construction[llama]",
+    "x02_centred_arm_construction[qwen]",
+    "x11_run_arms_end_to_end[llama]",
+    "x11_run_arms_end_to_end[qwen]"
+   ],
+   "seconds": 33.2
+  },
+  "m_mu_wrong_axis": {
+   "caught": true,
+   "failing_tests": [
+    "x03_mu_is_mean_of_nat_delta[llama]",
+    "x03_mu_is_mean_of_nat_delta[qwen]"
+   ],
+   "seconds": 43.6
+  },
+  "m_renorm_to_centred_norm": {
+   "caught": true,
+   "failing_tests": [
+    "x02_centred_arm_construction[llama]",
+    "x02_centred_arm_construction[qwen]",
+    "x11_run_arms_end_to_end[qwen]"
+   ],
+   "seconds": 30.8
+  },
+  "m_centred_wrong_path": {
+   "caught": true,
+   "failing_tests": [
+    "x02_centred_arm_construction[llama]",
+    "x02_centred_arm_construction[qwen]"
+   ],
+   "seconds": 32.9
+  },
+  "m_lambda_search_maximizes": {
+   "caught": true,
+   "failing_tests": [
+    "x04_norm_corrected_rounding[llama]",
+    "x04_norm_corrected_rounding[qwen]"
+   ],
+   "seconds": 15.3
+  },
+  "m_greedy_accepts_worse": {
+   "caught": true,
+   "failing_tests": [
+    "x04_norm_corrected_rounding[llama]",
+    "x04_norm_corrected_rounding[qwen]"
+   ],
+   "seconds": 32.0
+  },
+  "m_c1nc_new_seed_stream": {
+   "caught": true,
+   "failing_tests": [
+    "x04_norm_corrected_rounding[llama]",
+    "x04_norm_corrected_rounding[qwen]"
+   ],
+   "seconds": 50.7
+  },
+  "m_signed_logged_unsigned": {
+   "caught": true,
+   "failing_tests": [
+    "x04_norm_corrected_rounding[llama]",
+    "x04_norm_corrected_rounding[qwen]"
+   ],
+   "seconds": 19.4
+  },
+  "m_plc_decode_only": {
+   "caught": true,
+   "failing_tests": [
+    "x05_centred_logit_term_finite_difference[llama]",
+    "x05_centred_logit_term_finite_difference[qwen]"
+   ],
+   "seconds": 33.1
+  },
+  "m_rayleigh_wrong_head": {
+   "caught": true,
+   "failing_tests": [
+    "x06_rayleigh[llama]",
+    "x06_rayleigh[qwen]"
+   ],
+   "seconds": 31.3
+  },
+  "m_cm_share_unscaled": {
+   "caught": true,
+   "failing_tests": [
+    "x07_common_mode_share[llama]",
+    "x07_common_mode_share[qwen]"
+   ],
+   "seconds": 30.8
+  },
+  "m_comparator_tolerance": {
+   "caught": true,
+   "failing_tests": [
+    "x08_comparator_auth_manifest_subset_design[llama]",
+    "x08_comparator_auth_manifest_subset_design[qwen]"
+   ],
+   "seconds": 31.2
+  },
+  "m_auth_ignores_manifest_id": {
+   "caught": true,
+   "failing_tests": [
+    "x08_comparator_auth_manifest_subset_design[llama]",
+    "x08_comparator_auth_manifest_subset_design[qwen]"
+   ],
+   "seconds": 30.9
+  },
+  "m_history_always_matches": {
+   "caught": true,
+   "failing_tests": [
+    "x08_comparator_auth_manifest_subset_design[llama]",
+    "x08_comparator_auth_manifest_subset_design[qwen]"
+   ],
+   "seconds": 30.3
+  },
+  "m_subset_seed_changed": {
+   "caught": true,
+   "failing_tests": [
+    "x08_comparator_auth_manifest_subset_design[llama]",
+    "x08_comparator_auth_manifest_subset_design[qwen]"
+   ],
+   "seconds": 30.9
+  },
+  "m_integrity_drops_all_construction": {
+   "caught": true,
+   "failing_tests": [
+    "x09_integrity_rule[llama]",
+    "x09_integrity_rule[qwen]"
+   ],
+   "seconds": 39.7
+  },
+  "m_gap_inverted": {
+   "caught": true,
+   "failing_tests": [
+    "x10_analysis_rules[llama]",
+    "x10_analysis_rules[qwen]"
+   ],
+   "seconds": 33.7
+  },
+  "m_d_full_width": {
+   "caught": true,
+   "failing_tests": [
+    "x10_analysis_rules[llama]",
+    "x10_analysis_rules[qwen]"
+   ],
+   "seconds": 33.9
+  }
+ },
+ "caught": 18,
+ "total": 18
+}

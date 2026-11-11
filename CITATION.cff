@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or these records, please cite the article."
+title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: code, locks and per-problem records"
+type: software
+version: "1.0.0"
+date-released: "2026-11-09"
+license: MIT
+repository-code: "https://github.com/Ignite7871/kv-weight-quant-error"
+authors:
+  - family-names: Gunupati
+    given-names: Srikar Reddy
+    email: srikar20035@gmail.com
+    affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
+  - family-names: Anavekar
+    given-names: Shrinivas
+    affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
+  - family-names: Varghese
+    given-names: Alen K
+    affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
+preferred-citation:
+  type: article
+  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher across 0.5B-8B Language Models"
+  authors:
+    - family-names: Gunupati
+      given-names: Srikar Reddy
+    - family-names: Anavekar
+      given-names: Shrinivas
+    - family-names: Varghese
+      given-names: Alen K
+  journal: "Journal of Artificial Intelligence Research"
+  year: 2026
+  status: submitted

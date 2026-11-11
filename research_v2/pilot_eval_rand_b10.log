@@ -1,0 +1,408 @@
+W1022 19:01:21.483000 30800 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[DynamicQwen] Loading base FP16 model: Qwen/Qwen2.5-0.5B
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:52,  5.48it/s]Loading weights:  60%|#####9    | 173/290 [00:00<00:00, 757.47it/s]Loading weights:  95%|#########4| 275/290 [00:00<00:00, 445.90it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 423.92it/s]
+[DynamicQwen] Replacing attention/MLP nn.Linear layers with DynamicLinear...
+[DynamicQwen] Replaced 168 modules:
+  model.layers.0.self_attn.q_proj
+  model.layers.0.self_attn.k_proj
+  model.layers.0.self_attn.v_proj
+  model.layers.0.self_attn.o_proj
+  model.layers.0.mlp.gate_proj
+  model.layers.0.mlp.up_proj
+  model.layers.0.mlp.down_proj
+  model.layers.1.self_attn.q_proj
+  model.layers.1.self_attn.k_proj
+  model.layers.1.self_attn.v_proj
+  model.layers.1.self_attn.o_proj
+  model.layers.1.mlp.gate_proj
+  model.layers.1.mlp.up_proj
+  model.layers.1.mlp.down_proj
+  model.layers.2.self_attn.q_proj
+  model.layers.2.self_attn.k_proj
+  model.layers.2.self_attn.v_proj
+  model.layers.2.self_attn.o_proj
+  model.layers.2.mlp.gate_proj
+  model.layers.2.mlp.up_proj
+  model.layers.2.mlp.down_proj
+  model.layers.3.self_attn.q_proj
+  model.layers.3.self_attn.k_proj
+  model.layers.3.self_attn.v_proj
+  model.layers.3.self_attn.o_proj
+  model.layers.3.mlp.gate_proj
+  model.layers.3.mlp.up_proj
+  model.layers.3.mlp.down_proj
+  model.layers.4.self_attn.q_proj
+  model.layers.4.self_attn.k_proj
+  model.layers.4.self_attn.v_proj
+  model.layers.4.self_attn.o_proj
+  model.layers.4.mlp.gate_proj
+  model.layers.4.mlp.up_proj
+  model.layers.4.mlp.down_proj
+  model.layers.5.self_attn.q_proj
+  model.layers.5.self_attn.k_proj
+  model.layers.5.self_attn.v_proj
+  model.layers.5.self_attn.o_proj
+  model.layers.5.mlp.gate_proj
+  model.layers.5.mlp.up_proj
+  model.layers.5.mlp.down_proj
+  model.layers.6.self_attn.q_proj
+  model.layers.6.self_attn.k_proj
+  model.layers.6.self_attn.v_proj
+  model.layers.6.self_attn.o_proj
+  model.layers.6.mlp.gate_proj
+  model.layers.6.mlp.up_proj
+  model.layers.6.mlp.down_proj
+  model.layers.7.self_attn.q_proj
+  model.layers.7.self_attn.k_proj
+  model.layers.7.self_attn.v_proj
+  model.layers.7.self_attn.o_proj
+  model.layers.7.mlp.gate_proj
+  model.layers.7.mlp.up_proj
+  model.layers.7.mlp.down_proj
+  model.layers.8.self_attn.q_proj
+  model.layers.8.self_attn.k_proj
+  model.layers.8.self_attn.v_proj
+  model.layers.8.self_attn.o_proj
+  model.layers.8.mlp.gate_proj
+  model.layers.8.mlp.up_proj
+  model.layers.8.mlp.down_proj
+  model.layers.9.self_attn.q_proj
+  model.layers.9.self_attn.k_proj
+  model.layers.9.self_attn.v_proj
+  model.layers.9.self_attn.o_proj
+  model.layers.9.mlp.gate_proj
+  model.layers.9.mlp.up_proj
+  model.layers.9.mlp.down_proj
+  model.layers.10.self_attn.q_proj
+  model.layers.10.self_attn.k_proj
+  model.layers.10.self_attn.v_proj
+  model.layers.10.self_attn.o_proj
+  model.layers.10.mlp.gate_proj
+  model.layers.10.mlp.up_proj
+  model.layers.10.mlp.down_proj
+  model.layers.11.self_attn.q_proj
+  model.layers.11.self_attn.k_proj
+  model.layers.11.self_attn.v_proj
+  model.layers.11.self_attn.o_proj
+  model.layers.11.mlp.gate_proj
+  model.layers.11.mlp.up_proj
+  model.layers.11.mlp.down_proj
+  model.layers.12.self_attn.q_proj
+  model.layers.12.self_attn.k_proj
+  model.layers.12.self_attn.v_proj
+  model.layers.12.self_attn.o_proj
+  model.layers.12.mlp.gate_proj
+  model.layers.12.mlp.up_proj
+  model.layers.12.mlp.down_proj
+  model.layers.13.self_attn.q_proj
+  model.layers.13.self_attn.k_proj
+  model.layers.13.self_attn.v_proj
+  model.layers.13.self_attn.o_proj
+  model.layers.13.mlp.gate_proj
+  model.layers.13.mlp.up_proj
+  model.layers.13.mlp.down_proj
+  model.layers.14.self_attn.q_proj
+  model.layers.14.self_attn.k_proj
+  model.layers.14.self_attn.v_proj
+  model.layers.14.self_attn.o_proj
+  model.layers.14.mlp.gate_proj
+  model.layers.14.mlp.up_proj
+  model.layers.14.mlp.down_proj
+  model.layers.15.self_attn.q_proj
+  model.layers.15.self_attn.k_proj
+  model.layers.15.self_attn.v_proj
+  model.layers.15.self_attn.o_proj
+  model.layers.15.mlp.gate_proj
+  model.layers.15.mlp.up_proj
+  model.layers.15.mlp.down_proj
+  model.layers.16.self_attn.q_proj
+  model.layers.16.self_attn.k_proj
+  model.layers.16.self_attn.v_proj
+  model.layers.16.self_attn.o_proj
+  model.layers.16.mlp.gate_proj
+  model.layers.16.mlp.up_proj
+  model.layers.16.mlp.down_proj
+  model.layers.17.self_attn.q_proj
+  model.layers.17.self_attn.k_proj
+  model.layers.17.self_attn.v_proj
+  model.layers.17.self_attn.o_proj
+  model.layers.17.mlp.gate_proj
+  model.layers.17.mlp.up_proj
+  model.layers.17.mlp.down_proj
+  model.layers.18.self_attn.q_proj
+  model.layers.18.self_attn.k_proj
+  model.layers.18.self_attn.v_proj
+  model.layers.18.self_attn.o_proj
+  model.layers.18.mlp.gate_proj
+  model.layers.18.mlp.up_proj
+  model.layers.18.mlp.down_proj
+  model.layers.19.self_attn.q_proj
+  model.layers.19.self_attn.k_proj
+  model.layers.19.self_attn.v_proj
+  model.layers.19.self_attn.o_proj
+  model.layers.19.mlp.gate_proj
+  model.layers.19.mlp.up_proj
+  model.layers.19.mlp.down_proj
+  model.layers.20.self_attn.q_proj
+  model.layers.20.self_attn.k_proj
+  model.layers.20.self_attn.v_proj
+  model.layers.20.self_attn.o_proj
+  model.layers.20.mlp.gate_proj
+  model.layers.20.mlp.up_proj
+  model.layers.20.mlp.down_proj
+  model.layers.21.self_attn.q_proj
+  model.layers.21.self_attn.k_proj
+  model.layers.21.self_attn.v_proj
+  model.layers.21.self_attn.o_proj
+  model.layers.21.mlp.gate_proj
+  model.layers.21.mlp.up_proj
+  model.layers.21.mlp.down_proj
+  model.layers.22.self_attn.q_proj
+  model.layers.22.self_attn.k_proj
+  model.layers.22.self_attn.v_proj
+  model.layers.22.self_attn.o_proj
+  model.layers.22.mlp.gate_proj
+  model.layers.22.mlp.up_proj
+  model.layers.22.mlp.down_proj
+  model.layers.23.self_attn.q_proj
+  model.layers.23.self_attn.k_proj
+  model.layers.23.self_attn.v_proj
+  model.layers.23.self_attn.o_proj
+  model.layers.23.mlp.gate_proj
+  model.layers.23.mlp.up_proj
+  model.layers.23.mlp.down_proj
+
+[DynamicQwen] torch.cuda.memory_summary() after construction:
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1118 MiB |   1809 MiB |   2526 MiB |   1407 MiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   1890 MiB |   1890 MiB |   1890 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 270972 KiB | 300367 KiB |   2382 MiB |   2118 MiB |
+|---------------------------------------------------------------------------|
+| Allocations           |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| Active allocs         |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     105    |     105    |     105    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      86    |      88    |     623    |     537    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+[DynamicQwen] torch.cuda.max_memory_allocated(): 1824.28 MB
+[eval_random] rand_full_lagE_B10_s1 idx=11 WRONG steps=255 fp16=0.059 t=16.1s
+[eval_random] rand_full_lagE_B10_s1 idx=309 WRONG steps=255 fp16=0.094 t=15.4s
+[eval_random] rand_full_lagE_B10_s1 idx=478 SOLVED steps=255 fp16=0.082 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=721 SOLVED steps=255 fp16=0.125 t=14.2s
+[eval_random] rand_full_lagE_B10_s1 idx=1343 WRONG steps=210 fp16=0.043 t=12.3s
+[eval_random] rand_full_lagE_B10_s1 idx=1440 WRONG steps=255 fp16=0.086 t=14.1s
+[eval_random] rand_full_lagE_B10_s1 idx=1542 SOLVED steps=255 fp16=0.071 t=14.7s
+[eval_random] rand_full_lagE_B10_s1 idx=1653 WRONG steps=170 fp16=0.088 t=9.3s
+[eval_random] rand_full_lagE_B10_s1 idx=1946 SOLVED steps=255 fp16=0.082 t=14.3s
+[eval_random] rand_full_lagE_B10_s1 idx=2166 WRONG steps=255 fp16=0.078 t=14.7s
+[eval_random] rand_full_lagE_B10_s1 idx=2260 SOLVED steps=189 fp16=0.074 t=11.0s
+[eval_random] rand_full_lagE_B10_s1 idx=2458 WRONG steps=255 fp16=0.078 t=14.1s
+[eval_random] rand_full_lagE_B10_s1 idx=2629 SOLVED steps=255 fp16=0.063 t=14.5s
+[eval_random] rand_full_lagE_B10_s1 idx=2820 WRONG steps=255 fp16=0.067 t=14.7s
+[eval_random] rand_full_lagE_B10_s1 idx=2918 WRONG steps=255 fp16=0.063 t=15.4s
+[eval_random] rand_full_lagE_B10_s1 idx=2979 WRONG steps=255 fp16=0.078 t=15.4s
+[eval_random] rand_full_lagE_B10_s1 idx=3188 WRONG steps=255 fp16=0.086 t=14.7s
+[eval_random] rand_full_lagE_B10_s1 idx=3968 WRONG steps=252 fp16=0.056 t=15.0s
+[eval_random] rand_full_lagE_B10_s1 idx=4135 SOLVED steps=255 fp16=0.090 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=4142 WRONG steps=255 fp16=0.090 t=14.7s
+[eval_random] rand_full_lagE_B10_s1 idx=4150 WRONG steps=255 fp16=0.078 t=15.0s
+[eval_random] rand_full_lagE_B10_s1 idx=4167 WRONG steps=255 fp16=0.047 t=15.3s
+[eval_random] rand_full_lagE_B10_s1 idx=4268 WRONG steps=255 fp16=0.110 t=14.4s
+[eval_random] rand_full_lagE_B10_s1 idx=4283 SOLVED steps=255 fp16=0.098 t=14.8s
+[eval_random] rand_full_lagE_B10_s1 idx=4315 SOLVED steps=252 fp16=0.127 t=13.7s
+[eval_random] rand_full_lagE_B10_s1 idx=4444 WRONG steps=255 fp16=0.067 t=14.3s
+[eval_random] rand_full_lagE_B10_s1 idx=4503 SOLVED steps=255 fp16=0.067 t=14.6s
+[eval_random] rand_full_lagE_B10_s1 idx=4910 WRONG steps=255 fp16=0.043 t=15.2s
+[eval_random] rand_full_lagE_B10_s1 idx=5026 SOLVED steps=255 fp16=0.114 t=14.4s
+[eval_random] rand_full_lagE_B10_s1 idx=5256 WRONG steps=232 fp16=0.108 t=14.6s
+[eval_random] rand_full_lagE_B10_s1 idx=5407 WRONG steps=255 fp16=0.082 t=14.8s
+[eval_random] rand_full_lagE_B10_s1 idx=5766 SOLVED steps=255 fp16=0.094 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=5773 SOLVED steps=255 fp16=0.082 t=15.2s
+[eval_random] rand_full_lagE_B10_s1 idx=5873 SOLVED steps=255 fp16=0.047 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=6066 WRONG steps=255 fp16=0.094 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=6333 SOLVED steps=255 fp16=0.067 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=6454 WRONG steps=198 fp16=0.076 t=11.9s
+[eval_random] rand_full_lagE_B10_s1 idx=6503 SOLVED steps=255 fp16=0.067 t=15.6s
+[eval_random] rand_full_lagE_B10_s1 idx=6534 SOLVED steps=168 fp16=0.060 t=10.3s
+[eval_random] rand_full_lagE_B10_s1 idx=6610 SOLVED steps=255 fp16=0.055 t=15.7s
+[eval_random] rand_full_lagE_B10_s1 idx=6716 WRONG steps=255 fp16=0.043 t=15.2s
+[eval_random] rand_full_lagE_B10_s1 idx=6914 WRONG steps=255 fp16=0.094 t=15.2s
+[eval_random] rand_full_lagE_B10_s1 idx=7013 SOLVED steps=255 fp16=0.075 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=7043 WRONG steps=255 fp16=0.078 t=15.8s
+[eval_random] rand_full_lagE_B10_s1 idx=7059 SOLVED steps=255 fp16=0.075 t=15.6s
+[eval_random] rand_full_lagE_B10_s1 idx=7070 SOLVED steps=255 fp16=0.063 t=15.8s
+[eval_random] rand_full_lagE_B10_s1 idx=7141 SOLVED steps=255 fp16=0.102 t=15.8s
+[eval_random] rand_full_lagE_B10_s1 idx=7269 SOLVED steps=255 fp16=0.129 t=15.7s
+[eval_random] rand_full_lagE_B10_s1 idx=7312 SOLVED steps=233 fp16=0.052 t=15.1s
+[eval_random] rand_full_lagE_B10_s1 idx=7453 SOLVED steps=255 fp16=0.098 t=15.5s
+[eval_random] rand_full_lagM_B10_s1 idx=11 WRONG steps=255 fp16=0.098 t=15.9s
+[eval_random] rand_full_lagM_B10_s1 idx=309 WRONG steps=237 fp16=0.101 t=15.2s
+[eval_random] rand_full_lagM_B10_s1 idx=478 SOLVED steps=250 fp16=0.096 t=15.6s
+[eval_random] rand_full_lagM_B10_s1 idx=721 SOLVED steps=255 fp16=0.082 t=15.2s
+[eval_random] rand_full_lagM_B10_s1 idx=1343 WRONG steps=158 fp16=0.114 t=9.6s
+[eval_random] rand_full_lagM_B10_s1 idx=1440 WRONG steps=255 fp16=0.090 t=16.1s
+[eval_random] rand_full_lagM_B10_s1 idx=1542 SOLVED steps=176 fp16=0.068 t=10.3s
+[eval_random] rand_full_lagM_B10_s1 idx=1653 WRONG steps=255 fp16=0.094 t=15.2s
+[eval_random] rand_full_lagM_B10_s1 idx=1946 SOLVED steps=255 fp16=0.129 t=15.2s
+[eval_random] rand_full_lagM_B10_s1 idx=2166 WRONG steps=255 fp16=0.082 t=15.4s
+[eval_random] rand_full_lagM_B10_s1 idx=2260 SOLVED steps=235 fp16=0.128 t=13.7s
+[eval_random] rand_full_lagM_B10_s1 idx=2458 WRONG steps=255 fp16=0.102 t=15.0s
+[eval_random] rand_full_lagM_B10_s1 idx=2629 SOLVED steps=204 fp16=0.137 t=12.1s
+[eval_random] rand_full_lagM_B10_s1 idx=2820 WRONG steps=255 fp16=0.055 t=15.6s
+[eval_random] rand_full_lagM_B10_s1 idx=2918 WRONG steps=255 fp16=0.086 t=15.6s
+[eval_random] rand_full_lagM_B10_s1 idx=2979 WRONG steps=255 fp16=0.098 t=15.4s
+[eval_random] rand_full_lagM_B10_s1 idx=3188 WRONG steps=255 fp16=0.078 t=15.4s
+[eval_random] rand_full_lagM_B10_s1 idx=3968 WRONG steps=161 fp16=0.087 t=10.2s
+[eval_random] rand_full_lagM_B10_s1 idx=4135 SOLVED steps=255 fp16=0.106 t=16.1s
+[eval_random] rand_full_lagM_B10_s1 idx=4142 WRONG steps=255 fp16=0.118 t=16.4s
+[eval_random] rand_full_lagM_B10_s1 idx=4150 WRONG steps=255 fp16=0.122 t=15.9s
+[eval_random] rand_full_lagM_B10_s1 idx=4167 WRONG steps=255 fp16=0.125 t=15.9s
+[eval_random] rand_full_lagM_B10_s1 idx=4268 SOLVED steps=255 fp16=0.098 t=15.0s
+[eval_random] rand_full_lagM_B10_s1 idx=4283 SOLVED steps=225 fp16=0.111 t=13.2s
+[eval_random] rand_full_lagM_B10_s1 idx=4315 SOLVED steps=255 fp16=0.075 t=14.4s
+[eval_random] rand_full_lagM_B10_s1 idx=4444 WRONG steps=255 fp16=0.082 t=14.5s
+[eval_random] rand_full_lagM_B10_s1 idx=4503 WRONG steps=255 fp16=0.075 t=15.0s
+[eval_random] rand_full_lagM_B10_s1 idx=4910 WRONG steps=255 fp16=0.106 t=14.7s
+[eval_random] rand_full_lagM_B10_s1 idx=5026 SOLVED steps=255 fp16=0.110 t=14.8s
+[eval_random] rand_full_lagM_B10_s1 idx=5256 WRONG steps=255 fp16=0.075 t=14.8s
+[eval_random] rand_full_lagM_B10_s1 idx=5407 WRONG steps=202 fp16=0.089 t=11.6s
+[eval_random] rand_full_lagM_B10_s1 idx=5766 SOLVED steps=255 fp16=0.094 t=14.4s
+[eval_random] rand_full_lagM_B10_s1 idx=5773 SOLVED steps=255 fp16=0.106 t=14.4s
+[eval_random] rand_full_lagM_B10_s1 idx=5873 SOLVED steps=255 fp16=0.114 t=15.2s
+[eval_random] rand_full_lagM_B10_s1 idx=6066 WRONG steps=255 fp16=0.078 t=14.8s
+[eval_random] rand_full_lagM_B10_s1 idx=6333 SOLVED steps=255 fp16=0.067 t=14.8s
+[eval_random] rand_full_lagM_B10_s1 idx=6454 WRONG steps=201 fp16=0.080 t=11.6s
+[eval_random] rand_full_lagM_B10_s1 idx=6503 SOLVED steps=255 fp16=0.102 t=15.6s
+[eval_random] rand_full_lagM_B10_s1 idx=6534 SOLVED steps=255 fp16=0.071 t=16.2s
+[eval_random] rand_full_lagM_B10_s1 idx=6610 SOLVED steps=255 fp16=0.106 t=15.9s
+[eval_random] rand_full_lagM_B10_s1 idx=6716 WRONG steps=255 fp16=0.110 t=15.3s
+[eval_random] rand_full_lagM_B10_s1 idx=6914 WRONG steps=255 fp16=0.102 t=14.9s
+[eval_random] rand_full_lagM_B10_s1 idx=7013 SOLVED steps=255 fp16=0.086 t=14.9s
+[eval_random] rand_full_lagM_B10_s1 idx=7043 WRONG steps=255 fp16=0.090 t=15.7s
+[eval_random] rand_full_lagM_B10_s1 idx=7059 SOLVED steps=255 fp16=0.090 t=15.0s
+[eval_random] rand_full_lagM_B10_s1 idx=7070 SOLVED steps=214 fp16=0.112 t=13.1s
+[eval_random] rand_full_lagM_B10_s1 idx=7141 SOLVED steps=255 fp16=0.106 t=15.6s
+[eval_random] rand_full_lagM_B10_s1 idx=7269 WRONG steps=255 fp16=0.106 t=15.3s
+[eval_random] rand_full_lagM_B10_s1 idx=7312 SOLVED steps=255 fp16=0.063 t=15.9s
+[eval_random] rand_full_lagM_B10_s1 idx=7453 SOLVED steps=197 fp16=0.107 t=12.5s
+[eval_random] rand_cost_casc_B10_s1 idx=11 WRONG steps=255 fp16=0.247 t=15.2s
+[eval_random] rand_cost_casc_B10_s1 idx=309 WRONG steps=255 fp16=0.271 t=15.7s
+[eval_random] rand_cost_casc_B10_s1 idx=478 WRONG steps=204 fp16=0.211 t=12.0s
+[eval_random] rand_cost_casc_B10_s1 idx=721 SOLVED steps=255 fp16=0.173 t=15.1s
+[eval_random] rand_cost_casc_B10_s1 idx=1343 WRONG steps=255 fp16=0.204 t=14.9s
+[eval_random] rand_cost_casc_B10_s1 idx=1440 WRONG steps=255 fp16=0.282 t=14.4s
+[eval_random] rand_cost_casc_B10_s1 idx=1542 SOLVED steps=255 fp16=0.220 t=15.0s
+[eval_random] rand_cost_casc_B10_s1 idx=1653 SOLVED steps=255 fp16=0.212 t=14.5s
+[eval_random] rand_cost_casc_B10_s1 idx=1946 SOLVED steps=255 fp16=0.212 t=14.8s
+[eval_random] rand_cost_casc_B10_s1 idx=2166 SOLVED steps=255 fp16=0.188 t=15.0s
+[eval_random] rand_cost_casc_B10_s1 idx=2260 SOLVED steps=195 fp16=0.226 t=11.3s
+[eval_random] rand_cost_casc_B10_s1 idx=2458 WRONG steps=255 fp16=0.231 t=14.8s
+[eval_random] rand_cost_casc_B10_s1 idx=2629 SOLVED steps=203 fp16=0.222 t=12.0s
+[eval_random] rand_cost_casc_B10_s1 idx=2820 WRONG steps=72 fp16=0.222 t=4.3s
+[eval_random] rand_cost_casc_B10_s1 idx=2918 WRONG steps=255 fp16=0.243 t=14.7s
+[eval_random] rand_cost_casc_B10_s1 idx=2979 WRONG steps=162 fp16=0.198 t=9.6s
+[eval_random] rand_cost_casc_B10_s1 idx=3188 WRONG steps=255 fp16=0.184 t=15.2s
+[eval_random] rand_cost_casc_B10_s1 idx=3968 SOLVED steps=255 fp16=0.247 t=14.5s
+[eval_random] rand_cost_casc_B10_s1 idx=4135 SOLVED steps=255 fp16=0.216 t=15.7s
+[eval_random] rand_cost_casc_B10_s1 idx=4142 WRONG steps=255 fp16=0.184 t=15.3s
+[eval_random] rand_cost_casc_B10_s1 idx=4150 WRONG steps=255 fp16=0.220 t=14.4s
+[eval_random] rand_cost_casc_B10_s1 idx=4167 WRONG steps=255 fp16=0.247 t=14.5s
+[eval_random] rand_cost_casc_B10_s1 idx=4268 WRONG steps=187 fp16=0.209 t=10.9s
+[eval_random] rand_cost_casc_B10_s1 idx=4283 SOLVED steps=255 fp16=0.184 t=15.8s
+[eval_random] rand_cost_casc_B10_s1 idx=4315 SOLVED steps=255 fp16=0.243 t=13.8s
+[eval_random] rand_cost_casc_B10_s1 idx=4444 WRONG steps=255 fp16=0.200 t=14.8s
+[eval_random] rand_cost_casc_B10_s1 idx=4503 WRONG steps=67 fp16=0.239 t=3.8s
+[eval_random] rand_cost_casc_B10_s1 idx=4910 WRONG steps=255 fp16=0.263 t=13.9s
+[eval_random] rand_cost_casc_B10_s1 idx=5026 SOLVED steps=255 fp16=0.204 t=15.1s
+[eval_random] rand_cost_casc_B10_s1 idx=5256 WRONG steps=255 fp16=0.204 t=15.2s
+[eval_random] rand_cost_casc_B10_s1 idx=5407 WRONG steps=215 fp16=0.228 t=12.7s
+[eval_random] rand_cost_casc_B10_s1 idx=5766 SOLVED steps=255 fp16=0.153 t=15.7s
+[eval_random] rand_cost_casc_B10_s1 idx=5773 SOLVED steps=255 fp16=0.176 t=15.4s
+[eval_random] rand_cost_casc_B10_s1 idx=5873 SOLVED steps=255 fp16=0.204 t=15.1s
+[eval_random] rand_cost_casc_B10_s1 idx=6066 WRONG steps=255 fp16=0.208 t=15.0s
+[eval_random] rand_cost_casc_B10_s1 idx=6333 SOLVED steps=255 fp16=0.200 t=15.7s
+[eval_random] rand_cost_casc_B10_s1 idx=6454 WRONG steps=102 fp16=0.225 t=6.0s
+[eval_random] rand_cost_casc_B10_s1 idx=6503 SOLVED steps=255 fp16=0.235 t=15.6s
+[eval_random] rand_cost_casc_B10_s1 idx=6534 SOLVED steps=255 fp16=0.200 t=14.9s
+[eval_random] rand_cost_casc_B10_s1 idx=6610 SOLVED steps=255 fp16=0.204 t=14.4s
+[eval_random] rand_cost_casc_B10_s1 idx=6716 WRONG steps=255 fp16=0.235 t=15.3s
+[eval_random] rand_cost_casc_B10_s1 idx=6914 WRONG steps=255 fp16=0.196 t=14.5s
+[eval_random] rand_cost_casc_B10_s1 idx=7013 SOLVED steps=255 fp16=0.204 t=14.3s
+[eval_random] rand_cost_casc_B10_s1 idx=7043 WRONG steps=255 fp16=0.224 t=15.1s
+[eval_random] rand_cost_casc_B10_s1 idx=7059 SOLVED steps=255 fp16=0.208 t=15.2s
+[eval_random] rand_cost_casc_B10_s1 idx=7070 SOLVED steps=192 fp16=0.198 t=10.9s
+[eval_random] rand_cost_casc_B10_s1 idx=7141 SOLVED steps=255 fp16=0.204 t=15.2s
+[eval_random] rand_cost_casc_B10_s1 idx=7269 WRONG steps=255 fp16=0.192 t=15.1s
+[eval_random] rand_cost_casc_B10_s1 idx=7312 SOLVED steps=255 fp16=0.235 t=14.9s
+[eval_random] rand_cost_casc_B10_s1 idx=7453 SOLVED steps=255 fp16=0.220 t=15.1s
+[eval_random] rand_full_flip_s1 idx=11 WRONG steps=255 fp16=0.055 t=16.3s
+[eval_random] rand_full_flip_s1 idx=309 SOLVED steps=199 fp16=0.040 t=13.0s
+[eval_random] rand_full_flip_s1 idx=478 SOLVED steps=255 fp16=0.047 t=15.4s
+[eval_random] rand_full_flip_s1 idx=721 WRONG steps=255 fp16=0.055 t=15.9s
+[eval_random] rand_full_flip_s1 idx=1343 WRONG steps=255 fp16=0.055 t=16.0s
+[eval_random] rand_full_flip_s1 idx=1440 WRONG steps=255 fp16=0.051 t=16.4s
+[eval_random] rand_full_flip_s1 idx=1542 SOLVED steps=255 fp16=0.055 t=15.7s
+[eval_random] rand_full_flip_s1 idx=1653 WRONG steps=255 fp16=0.047 t=15.9s
+[eval_random] rand_full_flip_s1 idx=1946 SOLVED steps=255 fp16=0.067 t=15.8s
+[eval_random] rand_full_flip_s1 idx=2166 SOLVED steps=255 fp16=0.059 t=15.8s
+[eval_random] rand_full_flip_s1 idx=2260 SOLVED steps=255 fp16=0.047 t=15.1s
+[eval_random] rand_full_flip_s1 idx=2458 WRONG steps=255 fp16=0.039 t=16.1s
+[eval_random] rand_full_flip_s1 idx=2629 SOLVED steps=255 fp16=0.043 t=16.9s
+[eval_random] rand_full_flip_s1 idx=2820 WRONG steps=255 fp16=0.047 t=17.3s
+[eval_random] rand_full_flip_s1 idx=2918 WRONG steps=255 fp16=0.047 t=16.5s
+[eval_random] rand_full_flip_s1 idx=2979 WRONG steps=255 fp16=0.059 t=16.1s
+[eval_random] rand_full_flip_s1 idx=3188 WRONG steps=255 fp16=0.031 t=15.4s
+[eval_random] rand_full_flip_s1 idx=3968 WRONG steps=255 fp16=0.067 t=16.4s
+[eval_random] rand_full_flip_s1 idx=4135 SOLVED steps=255 fp16=0.082 t=15.4s
+[eval_random] rand_full_flip_s1 idx=4142 SOLVED steps=251 fp16=0.044 t=15.5s
+[eval_random] rand_full_flip_s1 idx=4150 WRONG steps=255 fp16=0.043 t=15.0s
+[eval_random] rand_full_flip_s1 idx=4167 WRONG steps=255 fp16=0.043 t=14.7s
+[eval_random] rand_full_flip_s1 idx=4268 SOLVED steps=255 fp16=0.039 t=14.3s
+[eval_random] rand_full_flip_s1 idx=4283 SOLVED steps=255 fp16=0.082 t=14.8s
+[eval_random] rand_full_flip_s1 idx=4315 WRONG steps=255 fp16=0.067 t=14.5s
+[eval_random] rand_full_flip_s1 idx=4444 WRONG steps=253 fp16=0.051 t=14.2s
+[eval_random] rand_full_flip_s1 idx=4503 WRONG steps=255 fp16=0.055 t=17.2s
+[eval_random] rand_full_flip_s1 idx=4910 WRONG steps=255 fp16=0.075 t=15.3s
+[eval_random] rand_full_flip_s1 idx=5026 SOLVED steps=255 fp16=0.051 t=15.9s
+[eval_random] rand_full_flip_s1 idx=5256 WRONG steps=255 fp16=0.043 t=16.1s
+[eval_random] rand_full_flip_s1 idx=5407 WRONG steps=255 fp16=0.063 t=15.5s
+[eval_random] rand_full_flip_s1 idx=5766 SOLVED steps=255 fp16=0.055 t=15.9s
+[eval_random] rand_full_flip_s1 idx=5773 SOLVED steps=255 fp16=0.055 t=15.8s
+[eval_random] rand_full_flip_s1 idx=5873 SOLVED steps=255 fp16=0.047 t=15.6s
+[eval_random] rand_full_flip_s1 idx=6066 WRONG steps=255 fp16=0.043 t=15.5s
+[eval_random] rand_full_flip_s1 idx=6333 SOLVED steps=255 fp16=0.059 t=15.2s
+[eval_random] rand_full_flip_s1 idx=6454 WRONG steps=255 fp16=0.047 t=15.2s
+[eval_random] rand_full_flip_s1 idx=6503 SOLVED steps=255 fp16=0.043 t=14.8s
+[eval_random] rand_full_flip_s1 idx=6534 SOLVED steps=255 fp16=0.051 t=14.7s
+[eval_random] rand_full_flip_s1 idx=6610 WRONG steps=255 fp16=0.039 t=14.9s
+[eval_random] rand_full_flip_s1 idx=6716 WRONG steps=255 fp16=0.047 t=15.1s
+[eval_random] rand_full_flip_s1 idx=6914 WRONG steps=255 fp16=0.031 t=14.7s
+[eval_random] rand_full_flip_s1 idx=7013 SOLVED steps=255 fp16=0.047 t=15.0s
+[eval_random] rand_full_flip_s1 idx=7043 WRONG steps=255 fp16=0.055 t=15.4s
+[eval_random] rand_full_flip_s1 idx=7059 SOLVED steps=255 fp16=0.067 t=15.6s
+[eval_random] rand_full_flip_s1 idx=7070 SOLVED steps=255 fp16=0.043 t=15.9s
+[eval_random] rand_full_flip_s1 idx=7141 SOLVED steps=255 fp16=0.027 t=15.9s
+[eval_random] rand_full_flip_s1 idx=7269 SOLVED steps=255 fp16=0.035 t=15.8s
+[eval_random] rand_full_flip_s1 idx=7312 SOLVED steps=255 fp16=0.051 t=15.7s
+[eval_random] rand_full_flip_s1 idx=7453 SOLVED steps=255 fp16=0.047 t=15.5s
+[ledger] cumulative GPU wall time: 3.954 h of 5.0 h
+EXIT=0

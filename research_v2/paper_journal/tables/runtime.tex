@@ -1,0 +1,11 @@
+\begin{tabular}{lcccc}
+\toprule
+Arm & ms/step Stage 1 & ms/step held-out & FP16-pass equiv./step & peak mem.\ (GB) \\
+\midrule
+FP16 & 34.3 & 31.2 & 1.02 & 1.38 \\
+NF4 & 55.6 & 50.2 & 0.48 & 1.38 \\
+cache-only & 88.5 & 80.2 & 1.50 & 1.38 \\
+token-only & 88.0 & 80.2 & 1.50 & 1.38 \\
+flip oracle & 89.9 & 81.7 & 1.51 & 1.38 \\
+\bottomrule
+\end{tabular}

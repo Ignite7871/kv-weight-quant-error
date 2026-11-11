@@ -1,0 +1,178 @@
+{
+ "passed": 43,
+ "n": 43,
+ "results": [
+  {
+   "test": "o01_authorization_files",
+   "ok": true
+  },
+  {
+   "test": "o02_cost_estimate_rate_boot_autostop_storage",
+   "ok": true
+  },
+  {
+   "test": "o03_sessions_counted_once_and_recovered",
+   "ok": true
+  },
+  {
+   "test": "o04_billing_lines_take_the_larger",
+   "ok": true
+  },
+  {
+   "test": "o05_ceiling_check_before_problem_and_watchdog",
+   "ok": true
+  },
+  {
+   "test": "o06_pod_start_from_pid1_not_uptime",
+   "ok": true
+  },
+  {
+   "test": "o07_gpu_ledger_recovery",
+   "ok": true
+  },
+  {
+   "test": "o08_secret_scan_formats",
+   "ok": true
+  },
+  {
+   "test": "o09_redaction_filter",
+   "ok": true
+  },
+  {
+   "test": "o20_pid1_environment_secrets",
+   "ok": true
+  },
+  {
+   "test": "o10_token_file_check",
+   "ok": true
+  },
+  {
+   "test": "o11_checkpoint_pack_and_verify",
+   "ok": true
+  },
+  {
+   "test": "o12_remote_command_filter",
+   "ok": true
+  },
+  {
+   "test": "o13_permission_rules",
+   "ok": true
+  },
+  {
+   "test": "o14_order_rules",
+   "ok": true
+  },
+  {
+   "test": "o15_exactly_once_and_resume",
+   "ok": true
+  },
+  {
+   "test": "o16_g8_canonical_comparison",
+   "ok": true
+  },
+  {
+   "test": "o17_g7_snapshot_checks",
+   "ok": true
+  },
+  {
+   "test": "o18_block_loop_ceiling_and_drift",
+   "ok": true
+  },
+  {
+   "test": "o19_g6_fit_and_reduction_order",
+   "ok": true
+  },
+  {
+   "test": "o22_bf16_reload_does_not_double_load",
+   "ok": true
+  },
+  {
+   "test": "o23_sku_check_is_exact",
+   "ok": true
+  },
+  {
+   "test": "o24_deterministic_settings_applied_and_required",
+   "ok": true
+  },
+  {
+   "test": "o25_gm_environment_logged_and_gated",
+   "ok": true
+  },
+  {
+   "test": "o26_image_digest_recorded_once",
+   "ok": true
+  },
+  {
+   "test": "o27_cloud_files_name_the_study_gpu_and_image",
+   "ok": true
+  },
+  {
+   "test": "o28_lock_amendment_preserves_and_links",
+   "ok": true
+  },
+  {
+   "test": "o29_lock_amendment_refused_after_data_or_on_a_dirty_tree",
+   "ok": true
+  },
+  {
+   "test": "o30_lock_verify_catches_a_broken_amendment",
+   "ok": true
+  },
+  {
+   "test": "o31_storage_prorated_and_stops_at_deletion",
+   "ok": true
+  },
+  {
+   "test": "o32_sample_is_the_first_100_and_50",
+   "ok": true
+  },
+  {
+   "test": "o33_seeds_do_not_depend_on_n",
+   "ok": true
+  },
+  {
+   "test": "o34_mistral_last_and_first_to_drop",
+   "ok": true
+  },
+  {
+   "test": "o35_stream_survives_the_console_encoding",
+   "ok": true
+  },
+  {
+   "test": "o36_closeout_report_gates_deletion",
+   "ok": true
+  },
+  {
+   "test": "o37_hqq_is_gone_from_the_study_code",
+   "ok": true
+  },
+  {
+   "test": "o38_lock_hashes_ignore_line_endings",
+   "ok": true
+  },
+  {
+   "test": "o39_known_hosts_path_with_spaces_stays_one_file",
+   "ok": true
+  },
+  {
+   "test": "o40_v3_records_verified_against_manifest_and_v3_lock",
+   "ok": true
+  },
+  {
+   "test": "o41_tests_fail_loudly_without_their_inputs",
+   "ok": true
+  },
+  {
+   "test": "o42_deviation_recorded_appended_and_verified",
+   "ok": true
+  },
+  {
+   "test": "o43_drift_reference_and_gm_after_deviation",
+   "ok": true
+  },
+  {
+   "test": "o44_resume_check_bitwise_against_stored_records",
+   "ok": true
+  }
+ ]
+}

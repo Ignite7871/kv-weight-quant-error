@@ -1,0 +1,132 @@
+{
+ "utc": "2026-10-28T04:07:16Z",
+ "python": "3.12.10",
+ "steps": {
+  "unit_tests_tiny_llama_plus_real_llama_cpu": {
+   "exit_code": 0,
+   "seconds": 419.8,
+   "tail": [
+    "   real Llama cache geometry: {'n_layers': 16, 'n_kv_heads': 8, 'head_dim': 64, 'key_dtype': 'torch.float16', 'value_dtype': 'torch.float16', 'all_fp16': True, 'shape_K_layer0': [1, 8, 13, 64], 'seq_len': 13}",
+    "   real Llama C1 alpha=1.0: norm_dev_mean 0.0002 max 0.0043 rel_scale 0.1481",
+    "   real Llama C2 alpha=1.0: norm_dev_mean 0.0001 max 0.0008 rel_scale 0.1486",
+    "   real Llama C1 alpha=2.0: norm_dev_mean 0.0001 max 0.0012 rel_scale 0.1481",
+    "c01_nat_equals_engine_cache_only_bitwise                      PASS  ",
+    "c02_alpha_zero_reproduces_pure_fp16_bitwise                   PASS  ",
+    "c03_norm_matching_per_slot                                    PASS  ",
+    "c04_c2_preserves_coordinate_magnitudes_and_randomizes_signs   PASS  ",
+    "c05_c1_direction_is_unstructured                              PASS  ",
+    "c06_determinism_and_seed_dependence                           PASS  ",
+    "c07_teacher_forced_identical_history_and_first_step_zero      PASS  ",
+    "c08_reference_teacher_forced_matches_free_running_fp16        PASS  ",
+    "c09_prefill_and_earlier_entries_never_modified                PASS  ",
+    "c10_perturbation_changes_only_newest_decode_entries           PASS  ",
+    "c11_diagnostics_report_matched_norms                          PASS  ",
+    "c12_c1_noise_independent_across_slots                         PASS  ",
+    "c13_js64_matches_independent_formula                          PASS  ",
+    "l01_cache_layout_fp16_storage_and_gqa_geometry                PASS  ",
+    "l02_slot_alignment_layer_kind_head                            PASS  ",
+    "l03_independent_per_kv_head_norm_matching_from_cache_entries  PASS  ",
+    "l04_gqa_shapes_in_stacked_diagnostics                         PASS  ",
+    "r01_real_llama_cpu_smoke                                      PASS  ",
+    "18/18 passed",
+    "W1028 09:37:46.924000 11628 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels"
+   ]
+  },
+  "mutation_check_19_mutants": {
+   "exit_code": 0,
+   "seconds": 227.9,
+   "tail": [
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 112, in c03_norm_matching_per_slot",
+    "    assert (r - 1).abs().max() < 0.03, f\"{arm} alpha={a}: realized/target norm deviates up to {(r - 1).abs().max():.4f}\"",
+    "           ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "AssertionError: C1 alpha=0.5: realized/target norm deviates up to 0.5735",
+    "Traceback (most recent call last):",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 36, in wrapper",
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 240, in c11_diagnostics_report_matched_norms",
+    "    assert max(d[\"norm_dev_max\"]) < 0.30, f\"{arm} alpha={a}: realized norm deviates (max {max(d['norm_dev_max']):.3f}) in the tiny model\"",
+    "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "AssertionError: C1 alpha=1.0: realized norm deviates (max 0.413) in the tiny model",
+    "Traceback (most recent call last):",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_e1l_tests.py\", line 35, in wrapper",
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_e1l_tests.py\", line 98, in l03_independent_per_kv_head_norm_matching_from_cache_entries",
+    "    assert ((rn - key[1] * tn).abs() <= tol).all(), f\"{key}: realized per-(layer,K/V,KV-head) norm differs from alpha*||D||\"",
+    "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "AssertionError: ('C1', 1.0): realized per-(layer,K/V,KV-head) norm differs from alpha*||D||",
+    "Traceback (most recent call last):",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_e1l_tests.py\", line 35, in wrapper",
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_e1l_tests.py\", line 108, in l04_gqa_shapes_in_stacked_diagnostics",
+    "    assert len(d[\"norm_dev_max\"]) == 4 and max(d[\"norm_dev_max\"]) < 0.3 and all(0.0 < x < 5.0 for x in d[\"rel_scale_mean\"])",
+    "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "AssertionError"
+   ]
+  },
+  "analysis_tests_locked_analyzer": {
+   "exit_code": 0,
+   "seconds": 2.1,
+   "tail": [
+    "t01_holm_matches_manual                                        PASS  ",
+    "t02_estimate_recovers_known_effect_and_ci_covers               PASS  ",
+    "t03_null_has_nominal_type_I_error_and_equivalence_verdict      PASS  ",
+    "t04_equivalence_not_claimable_when_dose_response_flat          PASS  ",
+    "t05_dose_slope_and_calibration_recover_truth                   PASS  ",
+    "t06_calibration_clamps_and_flags                               PASS  ",
+    "t07_first_divergence_and_restriction                           PASS  ",
+    "t08_tierB_contrast_matches_manual_computation                  PASS  ",
+    "t09_bootstrap_ci_agrees_with_independent_normal_approximation  PASS  ",
+    "t10_floor_prevents_log_of_zero                                 PASS  ",
+    "10/10 passed"
+   ]
+  },
+  "plan_consistency": {
+   "exit_code": 0,
+   "seconds": 15.8,
+   "tail": [
+    "{'model': 'meta-llama/Llama-3.2-1B-Instruct', 'qwen_e1_sample_sha256': '774b29188cfab0457ffb0cef3f7cc867eeda78a5c823b03d0cdc43e7a7a79ab9', 'tierA_ids': 200, 'calibration_train_ids': 100, 'gate_train_ids': 10, 'gate_numerics_train_ids': 6, 'gate_test_ids_for_G5': 8, 'exposed_test_ids_in_sample': 4, 'seed_tier_labels': {'calibration': 'Lcalib', 'tierA': 'LA', 'gates': 'Lgate'}}",
+    "W1028 09:48:37.171000 32744 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels"
+   ]
+  },
+  "cpu_harness_gpu_only_paths_real_llama": {
+   "exit_code": 0,
+   "seconds": 4078.9,
+   "tail": [
+    "   1,",
+    "   1",
+    "  ]",
+    " },",
+    " \"G5_nat_equals_engine_cache_only\": {",
+    "  \"n\": 1,",
+    "  \"identical\": 1,",
+    "  \"pass\": true",
+    " },",
+    " \"G6_runtime\": {",
+    "  \"tierA_problem_s_mean\": 407.70908939999936,",
+    "  \"calibration_problem_s_mean\": 341.3075864499997,",
+    "  \"used_h_after_gates\": 0.9041948533720441,",
+    "  \"projected_total_h\": 34.67202967316367,",
+    "  \"ceiling_h\": 2.5,",
+    "  \"pass\": false",
+    " },",
+    " \"all_passed\": false",
+    "}",
+    "{'G7_cache_geometry': True, 'G1_alpha0_bitwise': True, 'G2_G3_integrity_errors': [], 'G4_determinism': None, 'G5_nat_equals_engine_cache_only': True, 'G6_runtime': False}",
+    "geometry: {'n_layers': 16, 'n_kv_heads': 8, 'head_dim': 64, 'key_dtype': 'torch.float16', 'value_dtype': 'torch.float16', 'all_fp16': True, 'shape_K_layer0': [1, 8, 378, 64], 'seq_len': 378, 'pass': True}",
+    "calib arms ['NAT', 'C1_a0.5', 'C1_a1', 'C1_a2', 'C1_a4'] []",
+    "tierA arms ['NAT', 'C1_a1.0', 'C2_a1.0', 'C1_a0.5', 'C1_a2.0', 'C1star'] [] ref len 5",
+    "harness complete; outputs in C:\\Users\\gsr20\\AppData\\Local\\Temp\\tmpp1m3mga0",
+    "W1028 09:48:53.087000 8868 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels",
+    "[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway."
+   ]
+  }
+ },
+ "versions": {
+  "torch": "2.13.0+cu126",
+  "transformers": "5.13.0",
+  "bitsandbytes": "0.49.2"
+ },
+ "git_head_at_run": "db619c2abf51802ea47ef4ca24a6187268d5b7ae",
+ "all_passed": true
+}

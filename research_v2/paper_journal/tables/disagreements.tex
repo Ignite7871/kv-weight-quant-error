@@ -1,0 +1,19 @@
+\begin{tabular}{lcc}
+\toprule
+Pair of arms & Stage 1 ($n$=930) & Held-out ($n$=389) \\
+\midrule
+FP16 vs NF4 & 203 & 90 \\
+FP16 vs cache-only & 138 & 60 \\
+FP16 vs token-only & 161 & 59 \\
+FP16 vs flip oracle & 147 & 61 \\
+NF4 vs cache-only & 173 & 74 \\
+NF4 vs token-only & 174 & 59 \\
+NF4 vs flip oracle & 176 & 73 \\
+cache-only vs token-only & 185 & 63 \\
+cache-only vs flip oracle & 51 & 23 \\
+token-only vs flip oracle & 200 & 60 \\
+\midrule
+All five arms agree & 603 & 263 \\
+Distinct joint patterns & 29 & 26 \\
+\bottomrule
+\end{tabular}

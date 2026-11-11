@@ -1,0 +1,12 @@
+
+=====================================================================================================
+a1_first_divergence_and_hazard_arrays_hand_checked                       PASS  
+a2_holm_matches_textbook_example                                         PASS  
+a3_contrasts_identity_and_exact_values                                   PASS  
+a4_analysis_is_deterministic                                             PASS  
+a5_divergence_counts_and_non_diverged_outcome_identity                   PASS  
+a6_hazard_events_equal_number_of_diverged_problems_in_the_answer_region  PASS  
+a7_tost_equivalence_label                                                PASS  
+a8_outputs_written_and_complete_cases_only                               PASS  
+
+8/8 passed

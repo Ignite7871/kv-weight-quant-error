@@ -1,0 +1,3 @@
+p10 ms/step instrumented 67.9 vs historical 42.5  ratio 1.60  (logging share of instrumented 4.3%)
+p30 ms/step instrumented 60.4 vs historical 54.5  ratio 1.11  (logging share of instrumented 3.9%)
+p50 ms/step instrumented 60.5 vs historical 56.7  ratio 1.07  (logging share of instrumented 3.9%)

@@ -1,0 +1,59 @@
+G2 gate0 fp16: exact reproduction of stored outcomes                                                     PASS  30/30
+G2 gate0 nf4: exact reproduction of stored outcomes                                                      PASS  30/30
+G2 gate0 hist_lag_entropy_p50: exact reproduction of stored outcomes                                     PASS  30/30
+G2 gate0 hist_lag_entropy_p50: token-identical to untouched historical implementation                    PASS  30/30
+G2 gate0 hist_lag_entropy_p10: exact reproduction of stored outcomes                                     PASS  30/30
+G2 gate0 hist_lag_entropy_p10: token-identical to untouched historical implementation                    PASS  30/30
+G2 gate0 hist_lag_entropy_p30: exact reproduction of stored outcomes                                     PASS  30/30
+G2 gate0 hist_lag_entropy_p30: token-identical to untouched historical implementation                    PASS  30/30
+G3 equiv equiv_cascade_always == fp16 (token ids)                                                        PASS  5/5
+G3 equiv equiv_cascade_never == nf4 (token ids)                                                          PASS  5/5
+G3 equiv equiv_oracle_always_fp16 == fp16 (token ids)                                                    PASS  5/5
+G3 equiv equiv_oracle_never_fp16 == nf4 (token ids)                                                      PASS  5/5
+G4 cascade_nf4_margin_B10: truncated-text extraction identical                                           PASS  []
+G4 cascade_nf4_margin_B10: offsets consistent                                                            PASS  []
+G4 cascade_nf4_margin_B30: truncated-text extraction identical                                           PASS  []
+G4 cascade_nf4_margin_B30: offsets consistent                                                            FAIL  [721]
+G4 fp16: truncated-text extraction identical                                                             PASS  []
+G4 fp16: offsets consistent                                                                              PASS  []
+G4 lag_entropy_B10: truncated-text extraction identical                                                  PASS  []
+G4 lag_entropy_B10: offsets consistent                                                                   PASS  []
+G4 lag_entropy_B30: truncated-text extraction identical                                                  PASS  []
+G4 lag_entropy_B30: offsets consistent                                                                   PASS  []
+G4 lag_margin_B10: truncated-text extraction identical                                                   PASS  []
+G4 lag_margin_B10: offsets consistent                                                                    FAIL  [1542, 4150, 5407, 5773, 7013, 7059]
+G4 lag_margin_B30: truncated-text extraction identical                                                   PASS  []
+G4 lag_margin_B30: offsets consistent                                                                    PASS  []
+G4 nf4: truncated-text extraction identical                                                              PASS  []
+G4 nf4: offsets consistent                                                                               FAIL  [721, 4142, 5407, 6610, 7043, 7059, 7269]
+G4 oracle_flip: truncated-text extraction identical                                                      PASS  []
+G4 oracle_flip: offsets consistent                                                                       FAIL  [1542, 6914]
+G4 rand_cost_casc_B10_s1: truncated-text extraction identical                                            PASS  []
+G4 rand_cost_casc_B10_s1: offsets consistent                                                             FAIL  [4444, 5407]
+B3 rand_cost_casc_B10_s1: realized full share within 1.5 pp of p=0.2186                                  PASS  0.2146
+G4 rand_cost_casc_B30_s1: truncated-text extraction identical                                            PASS  []
+G4 rand_cost_casc_B30_s1: offsets consistent                                                             FAIL  [5407]
+B3 rand_cost_casc_B30_s1: realized full share within 1.5 pp of p=0.5771                                  PASS  0.5815
+G4 rand_full_flip_s1: truncated-text extraction identical                                                PASS  []
+G4 rand_full_flip_s1: offsets consistent                                                                 FAIL  [309, 2629, 4142, 4444, 5407]
+B3 rand_full_flip_s1: realized full share within 1.5 pp of p=0.0500                                      PASS  0.0508
+G4 rand_full_lagE_B10_s1: truncated-text extraction identical                                            PASS  []
+G4 rand_full_lagE_B10_s1: offsets consistent                                                             FAIL  [478, 5407, 5773, 6610, 7043, 7269]
+B3 rand_full_lagE_B10_s1: realized full share within 1.5 pp of p=0.0815                                  PASS  0.0791
+G4 rand_full_lagE_B30_s1: truncated-text extraction identical                                            PASS  []
+G4 rand_full_lagE_B30_s1: offsets consistent                                                             FAIL  [4142, 5407]
+B3 rand_full_lagE_B30_s1: realized full share within 1.5 pp of p=0.2542                                  PASS  0.2551
+G4 rand_full_lagM_B10_s1: truncated-text extraction identical                                            PASS  []
+G4 rand_full_lagM_B10_s1: offsets consistent                                                             FAIL  [721, 5407, 7043]
+B3 rand_full_lagM_B10_s1: realized full share within 1.5 pp of p=0.0955                                  PASS  0.0960
+B1 lag_entropy_B10: |eval share - target| <= 3% (informs calibration design)                             PASS  tau=1.68652 calib=0.1000 eval=0.0815
+B1 lag_margin_B10: |eval share - target| <= 3% (informs calibration design)                              PASS  tau=0.169067 calib=0.1000 eval=0.0955
+B1 cascade_nf4_margin_B10: |eval share - target| <= 3% (informs calibration design)                      PASS  tau=0.170776 calib=0.1000 eval=0.1151
+B1 lag_entropy_B30: |eval share - target| <= 5% (informs calibration design)                             PASS  tau=0.698242 calib=0.2999 eval=0.2530
+B1 lag_margin_B30: |eval share - target| <= 5% (informs calibration design)                              PASS  tau=0.706055 calib=0.3000 eval=0.2554
+B1 cascade_nf4_margin_B30: |eval share - target| <= 5% (informs calibration design)                      PASS  tau=0.712891 calib=0.2999 eval=0.3039
+B2 lag_entropy_B10 vs rand_full_lagE_B10_s1: answer-only FP16 share gap at matched full share (finding)  INFO  -0.0148
+B2 lag_margin_B10 vs rand_full_lagM_B10_s1: answer-only FP16 share gap at matched full share (finding)   INFO  -0.0247
+B2 oracle_flip vs rand_full_flip_s1: answer-only FP16 share gap at matched full share (finding)          INFO  -0.0155
+B2 lag_entropy_B30 vs rand_full_lagE_B30_s1: answer-only FP16 share gap at matched full share (finding)  INFO  -0.0106
+B2 lag_margin_B30 vs rand_full_lagE_B30_s1: answer-only FP16 share gap at matched full share (finding)   INFO  -0.0208

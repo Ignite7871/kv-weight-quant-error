@@ -1,0 +1,46 @@
+protocol lock -- research_v2 E1 (perturbation-matched cache controls)
+utc: 2026-10-26T15:14:28.810372+00:00
+git commit containing the locked files: 703233ab4118430894e8db7f29b234d44f24998d
+Hashes are SHA-256 of the committed file contents (git show <commit>:<path>).
+Private dated hash for coauthors. NOT a public pre-registration.
+PROVENANCE: E1 is EXPLORATORY IN ORIGIN. Its hypotheses follow from the limitations of Stages 1-2 (no magnitude-matched perturbation control) and from the
+full-text novelty review; all 1,319 GSM8K test problems were used in earlier work, but the control arms have no prior outcomes and the primary outcomes use no
+gold label. This lock is created before ANY E1 GPU use and before any E1 outcome exists. It is NOT an authorization to run: the E1 GPU evaluation needs
+further author approval (run_controls.py refuses without e1_runs/AUTHORIZED_BY_AUTHORS.txt).
+
+9c474c2257b3a41dd26fc9e5e407be076363bc7f010da6c31d27b2f8ab2db4f5  research_v2/E1_SPEC.md
+14640987889c1539fea46e3cba7e7042cdfa3beceb0199b9f299f54907c9b69a  research_v2/run_controls.py
+81aa4f7abaffeadd38db99921ea92414a07aa0dd83c4fbd5f9e7bf55560cb5c7  research_v2/analyze_controls.py
+774b29188cfab0457ffb0cef3f7cc867eeda78a5c823b03d0cdc43e7a7a79ab9  research_v2/e1_sample.json
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+0fb73f9d36cae64fcbabd8f4acac394aaf05b829e8334b365bce937a1beeded4  research_v2/tests/run_controls_tests.py
+8b642a73a0ca1a804eb59f22b06b3fd3a33f6beadd537157a735ef3955f805ca  research_v2/tests/mutation_check_controls.py
+2f4422a3783defead6a4a6911c595a32a4326d963e47bfa3078b8e61d644d1dc  research_v2/tests/test_analyze_controls.py
+a36c2c70c92d4bc875eb591ce45f020906f8749f7edd74bf0a2c4415a1765bf7  research_v2/tools/lock_e1.py
+f6b5ed559c2d722f99a996910aa37b31cabee716494f8edba92ac1b68ccec749  research_v2/validation_logs/e1_cpu_validation.json
+d7f6e72cba9d8754e87b3e19821bb54155d6b43e7e2d98f417205fb8dbb0a6be  research_v2/run_stage1.py
+b179246f94ec60b107e446abd6a69e51907ddc3cb3bb1027f309984d79484e3c  research_v2/stage1_runtime.py
+e806e36629d54b89155c78496921a0db2f7709105142bf7ac8676311ce0ac464  research_v2/stage1_sample.json
+510ccb45ec15b7a234225a791b55d6104a7b1e0a05090221592dacf3440b4a0f  research_v2/stage2_sample.json
+8bb990a64a5ee028df322b2fbb8c62b0655909279f21968b1d1c4a5551579568  research_v2/pilot_sample.json
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py
+a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60  src/dynamic_linear.py
+492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7  src/dynamic_model.py
+cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302  src/routing.py
+9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764  src/fragility.py
+cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287  scripts/gsm8k_gate_check.py
+e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc  scripts/probe_gsm8k_routing.py
+
+EXTERNAL (untracked raw records; SHA-256 of the working files at lock time)
+76a3fc6cf85851153a9cf0a54f0938c0ce10c7cecb806a84476fc400655ef4f4  research_v2/stage1_runs/eval/fp16.jsonl
+943e91a3de6f4c85dcf50536c4ffab989a890244f1954fa5c70007bb5ab38e36  research_v2/stage2_runs/eval/fp16.jsonl
+bad596d0299938c647a238fdea74539faae6023ff11ef0d3d73e337f8b5b5009  research_v2/stage1_runs/eval/cache_only.jsonl
+f6d015ea0255ce0e935361770bba929c7a739b0b34ae3bdcd424610dce0bd424  research_v2/stage2_runs/eval/cache_only.jsonl
+
+CALIBRATION (appended 2026-10-27T08:32:50.639176+00:00, before any test problem was evaluated): 2d066f31ad96a5efeb0cc77e6543e15e0a06530ef22935ae2cd4bc3719948580  research_v2/e1_runs/e1_calibration.json

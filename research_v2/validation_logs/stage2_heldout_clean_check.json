@@ -1,0 +1,156 @@
+{
+ "n_heldout": 389,
+ "n_pool": 930,
+ "disjoint": true,
+ "union_is_full_test_split": true,
+ "stage1_pilot_gate_jsonl_records_with_heldout_test_index": [],
+ "files_scanned": 241,
+ "repository_hits": {
+  "paper_tmlr/supplement/supplement/dps_supplement/results/eqf_spike_dataset_Qwen2.5-0.5B.csv": {
+   "hits": [
+    [
+     "csv key=problem_id",
+     5323
+    ]
+   ],
+   "classification": "copy of the gold-trajectory labelling file above"
+  },
+  "paper_tmlr/supplement/supplement/dps_supplement/results/eqf_spike_dataset_TinyLlama_v1.1.csv": {
+   "hits": [
+    [
+     "csv key=problem_id",
+     5680
+    ]
+   ],
+   "classification": "copy of the gold-trajectory labelling file above"
+  },
+  "paper_tmlr/supplement/supplement/dps_supplement/results/triviaqa_n930_all_conditions.json": {
+   "hits": [
+    [
+     "json/condition_1 key=index",
+     286
+    ],
+    [
+     "json/condition_2 key=index",
+     286
+    ],
+    [
+     "json/condition_3 key=index",
+     286
+    ],
+    [
+     "json/condition_4 key=index",
+     286
+    ]
+   ],
+   "classification": "copy of the TriviaQA file above"
+  },
+  "research_v2/pilot_analysis/paired_outcomes.csv": {
+   "hits": [
+    [
+     "csv key=index",
+     1
+    ]
+   ],
+   "classification": "pilot TRAIN-split problem indices (GSM8K train split, 7,473 items); numerically coincident with test indices"
+  },
+  "results/eqf_spike_dataset_Qwen2.5-0.5B.csv": {
+   "hits": [
+    [
+     "csv key=problem_id",
+     5323
+    ]
+   ],
+   "classification": "teacher-forced token labelling of GOLD solutions of test problems 0-199 (FP16/INT4 argmax per gold token); no generation, no answer correctness"
+  },
+  "results/eqf_spike_dataset_TinyLlama_v1.1.csv": {
+   "hits": [
+    [
+     "csv key=problem_id",
+     5680
+    ]
+   ],
+   "classification": "same labelling with a different model"
+  },
+  "results/triviaqa_n930_all_conditions.json": {
+   "hits": [
+    [
+     "json/condition_1 key=index",
+     286
+    ],
+    [
+     "json/condition_2 key=index",
+     286
+    ],
+    [
+     "json/condition_3 key=index",
+     286
+    ],
+    [
+     "json/condition_4 key=index",
+     286
+    ]
+   ],
+   "classification": "TriviaQA validation items; integer 'index' is a TriviaQA index (different dataset), numerically coincident"
+  }
+ },
+ "unexpected_hits": [],
+ "exposure_disclosure": {
+  "probe_test_0_7_console_only": [
+   4,
+   5
+  ],
+  "gold_trajectory_labelling_test_0_199": [
+   4,
+   5,
+   38,
+   39,
+   40,
+   45,
+   51,
+   52,
+   54,
+   57,
+   59,
+   66,
+   67,
+   69,
+   71,
+   75,
+   77,
+   81,
+   82,
+   94,
+   99,
+   100,
+   101,
+   102,
+   103,
+   106,
+   107,
+   112,
+   117,
+   123,
+   126,
+   129,
+   132,
+   133,
+   149,
+   151,
+   153,
+   156,
+   160,
+   164,
+   165,
+   170,
+   172,
+   174,
+   175,
+   176,
+   189
+  ],
+  "n_gold_trajectory_labelled": 47,
+  "note": "Neither exposure produced a stored per-problem GSM8K task outcome (generated answer or correctness) for these problems. The gold-trajectory file stores teacher-forced FP16/INT4 token argmax labels on the reference solution. STAGE2_SPEC.md pre-declares a sensitivity analysis excluding all of them."
+ },
+ "clean": true
+}

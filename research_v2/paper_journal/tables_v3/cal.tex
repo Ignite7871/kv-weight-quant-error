@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}l l l l l@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule
+$\rho_K$ / $\rho_V$ (median $\|\Delta\|/\|\kappa^{\FF}\|$) & \vn{cal.qb.rhoK} / \vn{cal.qb.rhoV} & \vn{cal.qi.rhoK} / \vn{cal.qi.rhoV} & \vn{cal.lb.rhoK} / \vn{cal.lb.rhoV} & \vn{cal.li.rhoK} / \vn{cal.li.rhoV} \\
+$\rho^\ast$; $s_K$ / $s_V$ & \vn{cal.qb.rhostar}; \vn{cal.qb.sK} / \vn{cal.qb.sV} & \vn{cal.qi.rhostar}; \vn{cal.qi.sK} / \vn{cal.qi.sV} & \vn{cal.lb.rhostar}; \vn{cal.lb.sK} / \vn{cal.lb.sV} & \vn{cal.li.rhostar}; \vn{cal.li.sK} / \vn{cal.li.sV} \\
+$\hat b$; $c$ (before clamp); margin & \vn{cal.qb.b}; \vn{cal.qb.c} (\vn{cal.qb.craw}); $\pm$\vn{cal.qb.margin} & \vn{cal.qi.b}; \vn{cal.qi.c} (\vn{cal.qi.craw}); $\pm$\vn{cal.qi.margin} & \vn{cal.lb.b}; \vn{cal.lb.c} (\vn{cal.lb.craw}); $\pm$\vn{cal.lb.margin} & \vn{cal.li.b}; \vn{cal.li.c} (\vn{cal.li.craw}); $\pm$\vn{cal.li.margin} \\
+$E_8$ median; $r_{80}$ median; share $r_{80}\le8$ & \vn{cal.qb.E8}; \vn{cal.qb.r80}; \vn{cal.qb.r80share}\% & \vn{cal.qi.E8}; \vn{cal.qi.r80}; \vn{cal.qi.r80share}\% & \vn{cal.lb.E8}; \vn{cal.lb.r80}; \vn{cal.lb.r80share}\% & \vn{cal.li.E8}; \vn{cal.li.r80}; \vn{cal.li.r80share}\% \\
+Mean scored steps; share with 64 & \vn{hist.qb.Smean}; \vn{hist.qb.S64}\% & \vn{hist.qi.Smean}; \vn{hist.qi.S64}\% & \vn{hist.lb.Smean}; \vn{hist.lb.S64}\% & \vn{hist.li.Smean}; \vn{hist.li.S64}\% \\
+GPU hours (gates, calibration, runtime gate, test run) & \vn{gpu.qb} & \vn{gpu.qi} & \vn{gpu.lb} & \vn{gpu.li} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Calibration (100 GSM8K training problems per model; frozen and hashed into the lock before the model's first test problem) and run summary. H-D is descriptive if $s_K$ or $s_V$ lies outside $[0.5,2]$; equivalence verdicts require $\hat b\ge0.25$. $c$ is clamped to $[0.10,0.40]$; the unclamped value is in parentheses.}
+\label{tab:cal}
+\end{table}

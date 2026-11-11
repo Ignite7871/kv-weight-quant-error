@@ -1,0 +1,21 @@
+\begin{table}[tbp]
+\centering\small
+\caption{Models and frozen calibrations. Parameters are the 16-bit count of the stored checkpoint (billions). $\hat b$: dose slope of C1; margin $=|\hat b|\ln(1+c)$; $\rho_K$, $\rho_V$: median natural relative error of keys and values. Calibration used \vf{design.ncal} training problems per model.}
+\label{tab:models}
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Model & Params & Layers & Q/KV & head\_dim & $\hat b$ & Margin & $\rho_K$ & $\rho_V$ & $\rho_V/\rho_K$ \\
+\midrule
+Qwen2.5-0.5B & \vf{x.qa.params} & \vf{geo.qa.layers} & \vf{geo.qa.qheads}/\vf{geo.qa.kvheads} & \vf{geo.qa.headdim} & \vf{cal.qa.b} & \vf{cal.qa.margin} & \vf{cal.qa.rhoK} & \vf{cal.qa.rhoV} & \vf{cal.qa.rhoVK} \\
+Qwen2.5-1.5B & \vf{x.qb.params} & \vf{geo.qb.layers} & \vf{geo.qb.qheads}/\vf{geo.qb.kvheads} & \vf{geo.qb.headdim} & \vf{cal.qb.b} & \vf{cal.qb.margin} & \vf{cal.qb.rhoK} & \vf{cal.qb.rhoV} & \vf{cal.qb.rhoVK} \\
+Qwen2.5-3B & \vf{x.qc.params} & \vf{geo.qc.layers} & \vf{geo.qc.qheads}/\vf{geo.qc.kvheads} & \vf{geo.qc.headdim} & \vf{cal.qc.b} & \vf{cal.qc.margin} & \vf{cal.qc.rhoK} & \vf{cal.qc.rhoV} & \vf{cal.qc.rhoVK} \\
+Qwen2.5-7B & \vf{x.qd.params} & \vf{geo.qd.layers} & \vf{geo.qd.qheads}/\vf{geo.qd.kvheads} & \vf{geo.qd.headdim} & \vf{cal.qd.b} & \vf{cal.qd.margin} & \vf{cal.qd.rhoK} & \vf{cal.qd.rhoV} & \vf{cal.qd.rhoVK} \\
+\midrule
+Llama-3.2-1B & \vf{x.la.params} & \vf{geo.la.layers} & \vf{geo.la.qheads}/\vf{geo.la.kvheads} & \vf{geo.la.headdim} & \vf{cal.la.b} & \vf{cal.la.margin} & \vf{cal.la.rhoK} & \vf{cal.la.rhoV} & \vf{cal.la.rhoVK} \\
+Llama-3.2-3B & \vf{x.lb.params} & \vf{geo.lb.layers} & \vf{geo.lb.qheads}/\vf{geo.lb.kvheads} & \vf{geo.lb.headdim} & \vf{cal.lb.b} & \vf{cal.lb.margin} & \vf{cal.lb.rhoK} & \vf{cal.lb.rhoV} & \vf{cal.lb.rhoVK} \\
+Llama-3.1-8B & \vf{x.lc.params} & \vf{geo.lc.layers} & \vf{geo.lc.qheads}/\vf{geo.lc.kvheads} & \vf{geo.lc.headdim} & \vf{cal.lc.b} & \vf{cal.lc.margin} & \vf{cal.lc.rhoK} & \vf{cal.lc.rhoV} & \vf{cal.lc.rhoVK} \\
+\midrule
+Mistral-7B-v0.3 & \vf{x.mi.params} & \vf{geo.mi.layers} & \vf{geo.mi.qheads}/\vf{geo.mi.kvheads} & \vf{geo.mi.headdim} & \vf{cal.mi.b} & \vf{cal.mi.margin} & \vf{cal.mi.rhoK} & \vf{cal.mi.rhoV} & \vf{cal.mi.rhoVK} \\
+\bottomrule
+\end{tabular}
+\end{table}

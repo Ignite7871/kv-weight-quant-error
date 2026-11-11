@@ -1,0 +1,249 @@
+{
+ "utc": "2026-10-25T04:54:59Z",
+ "criteria": "ids identical AND final caches bitwise equal; any failure stops",
+ "problems": [
+  11,
+  309,
+  478
+ ],
+ "checks": [
+  {
+   "A": {
+    "index": 11,
+    "F": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 256,
+     "ok": true
+    },
+    "N": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 256,
+     "ok": true
+    }
+   }
+  },
+  {
+   "A": {
+    "index": 309,
+    "F": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 256,
+     "ok": true
+    },
+    "N": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 256,
+     "ok": true
+    }
+   }
+  },
+  {
+   "A": {
+    "index": 478,
+    "F": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 182,
+     "ok": true
+    },
+    "N": {
+     "ids_hist_eq_static_eq_cell": true,
+     "cell_cache_bitwise_eq_static": true,
+     "n_tokens": 256,
+     "ok": true
+    }
+   }
+  },
+  {
+   "B": {
+    "index": 11,
+    "cell": "cache_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 7,
+    "n_tokens": 96
+   }
+  },
+  {
+   "B": {
+    "index": 11,
+    "cell": "token_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 2,
+    "n_tokens": 96
+   }
+  },
+  {
+   "B": {
+    "index": 309,
+    "cell": "cache_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 5,
+    "n_tokens": 96
+   }
+  },
+  {
+   "B": {
+    "index": 309,
+    "cell": "token_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 9,
+    "n_tokens": 96
+   }
+  },
+  {
+   "B": {
+    "index": 478,
+    "cell": "cache_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 7,
+    "n_tokens": 96
+   }
+  },
+  {
+   "B": {
+    "index": 478,
+    "cell": "token_only",
+    "ids_eq_reference": true,
+    "cache_bitwise_eq_reference": true,
+    "cache_bitwise_eq_single_precision_replay": true,
+    "token_equals_declared_source_argmax": true,
+    "local_branch_flips": 10,
+    "n_tokens": 96
+   }
+  },
+  {
+   "C": {
+    "index": 11,
+    "precision": "F",
+    "steps_full": 256,
+    "steps_early": 143,
+    "stopped_early": true,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C": {
+    "index": 11,
+    "precision": "N",
+    "steps_full": 256,
+    "steps_early": 256,
+    "stopped_early": false,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C": {
+    "index": 309,
+    "precision": "F",
+    "steps_full": 256,
+    "steps_early": 73,
+    "stopped_early": true,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C": {
+    "index": 309,
+    "precision": "N",
+    "steps_full": 256,
+    "steps_early": 91,
+    "stopped_early": true,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C": {
+    "index": 478,
+    "precision": "F",
+    "steps_full": 182,
+    "steps_early": 65,
+    "stopped_early": true,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C": {
+    "index": 478,
+    "precision": "N",
+    "steps_full": 256,
+    "steps_early": 65,
+    "stopped_early": true,
+    "prefix_identical": true,
+    "same_boundary": true,
+    "same_status": true,
+    "ok": true
+   }
+  },
+  {
+   "C_hybrid": {
+    "index": 11,
+    "cell": "cache_only",
+    "steps_full": 256,
+    "steps_early": 118,
+    "ok": true
+   }
+  },
+  {
+   "C_hybrid": {
+    "index": 11,
+    "cell": "token_only",
+    "steps_full": 256,
+    "steps_early": 256,
+    "ok": true
+   }
+  },
+  {
+   "C_hybrid": {
+    "index": 309,
+    "cell": "cache_only",
+    "steps_full": 256,
+    "steps_early": 89,
+    "ok": true
+   }
+  },
+  {
+   "C_hybrid": {
+    "index": 309,
+    "cell": "token_only",
+    "steps_full": 155,
+    "steps_early": 72,
+    "ok": true
+   }
+  }
+ ],
+ "all_passed": true
+}

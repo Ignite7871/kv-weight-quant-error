@@ -1,0 +1,22 @@
+\begin{table}[tbp]
+\centering\small
+\caption{Exploratory X2: per-layer common-mode share $C^P$ from the locked report, pooled over problems (no interval, not head\_dim-adjusted). Layer of the maximum (0-based), layer 0 against the mean of the other layers, and the fraction of layers with $C^V>C^K$.}
+\label{tab:x2}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lr rrrr rrrr r@{}}
+\toprule
+ & & \multicolumn{4}{c}{K} & \multicolumn{4}{c}{V} & \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Model & $L$ & mean & argmax & layer 0 & rest & mean & argmax & layer 0 & rest & $C^V>C^K$ \\
+\midrule
+Qwen2.5-0.5B & \vf{xtwo.qa.K.L} & \vf{xtwo.qa.K.mean} & \vf{xtwo.qa.K.argmax} & \vf{xtwo.qa.K.lzero} & \vf{xtwo.qa.K.rest} & \vf{xtwo.qa.V.mean} & \vf{xtwo.qa.V.argmax} & \vf{xtwo.qa.V.lzero} & \vf{xtwo.qa.V.rest} & \vf{xtwo.qa.fracVK} \\
+Qwen2.5-1.5B & \vf{xtwo.qb.K.L} & \vf{xtwo.qb.K.mean} & \vf{xtwo.qb.K.argmax} & \vf{xtwo.qb.K.lzero} & \vf{xtwo.qb.K.rest} & \vf{xtwo.qb.V.mean} & \vf{xtwo.qb.V.argmax} & \vf{xtwo.qb.V.lzero} & \vf{xtwo.qb.V.rest} & \vf{xtwo.qb.fracVK} \\
+Qwen2.5-3B & \vf{xtwo.qc.K.L} & \vf{xtwo.qc.K.mean} & \vf{xtwo.qc.K.argmax} & \vf{xtwo.qc.K.lzero} & \vf{xtwo.qc.K.rest} & \vf{xtwo.qc.V.mean} & \vf{xtwo.qc.V.argmax} & \vf{xtwo.qc.V.lzero} & \vf{xtwo.qc.V.rest} & \vf{xtwo.qc.fracVK} \\
+Qwen2.5-7B & \vf{xtwo.qd.K.L} & \vf{xtwo.qd.K.mean} & \vf{xtwo.qd.K.argmax} & \vf{xtwo.qd.K.lzero} & \vf{xtwo.qd.K.rest} & \vf{xtwo.qd.V.mean} & \vf{xtwo.qd.V.argmax} & \vf{xtwo.qd.V.lzero} & \vf{xtwo.qd.V.rest} & \vf{xtwo.qd.fracVK} \\
+Llama-3.2-1B & \vf{xtwo.la.K.L} & \vf{xtwo.la.K.mean} & \vf{xtwo.la.K.argmax} & \vf{xtwo.la.K.lzero} & \vf{xtwo.la.K.rest} & \vf{xtwo.la.V.mean} & \vf{xtwo.la.V.argmax} & \vf{xtwo.la.V.lzero} & \vf{xtwo.la.V.rest} & \vf{xtwo.la.fracVK} \\
+Llama-3.2-3B & \vf{xtwo.lb.K.L} & \vf{xtwo.lb.K.mean} & \vf{xtwo.lb.K.argmax} & \vf{xtwo.lb.K.lzero} & \vf{xtwo.lb.K.rest} & \vf{xtwo.lb.V.mean} & \vf{xtwo.lb.V.argmax} & \vf{xtwo.lb.V.lzero} & \vf{xtwo.lb.V.rest} & \vf{xtwo.lb.fracVK} \\
+Llama-3.1-8B & \vf{xtwo.lc.K.L} & \vf{xtwo.lc.K.mean} & \vf{xtwo.lc.K.argmax} & \vf{xtwo.lc.K.lzero} & \vf{xtwo.lc.K.rest} & \vf{xtwo.lc.V.mean} & \vf{xtwo.lc.V.argmax} & \vf{xtwo.lc.V.lzero} & \vf{xtwo.lc.V.rest} & \vf{xtwo.lc.fracVK} \\
+Mistral-7B-v0.3 & \vf{xtwo.mi.K.L} & \vf{xtwo.mi.K.mean} & \vf{xtwo.mi.K.argmax} & \vf{xtwo.mi.K.lzero} & \vf{xtwo.mi.K.rest} & \vf{xtwo.mi.V.mean} & \vf{xtwo.mi.V.argmax} & \vf{xtwo.mi.V.lzero} & \vf{xtwo.mi.V.rest} & \vf{xtwo.mi.fracVK} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,8 @@
+research_v2/v4_runs/
+research_v2/v3_runs/
+research_v2/v3_runs_x9/
+research_v2/v3_runs_x13/
+research_v2/e1_runs/
+research_v2/e1l_runs/
+__pycache__/
+*.pyc

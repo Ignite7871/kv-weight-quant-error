@@ -1,0 +1,37 @@
+{
+ "eval_files": {
+  "cache_only.jsonl": {
+   "sha256": "bad596d0299938c647a238fdea74539faae6023ff11ef0d3d73e337f8b5b5009",
+   "bytes": 6238993,
+   "lines": 930
+  },
+  "fp16.jsonl": {
+   "sha256": "76a3fc6cf85851153a9cf0a54f0938c0ce10c7cecb806a84476fc400655ef4f4",
+   "bytes": 2608976,
+   "lines": 930
+  },
+  "nf4.jsonl": {
+   "sha256": "e401f05d5bff457305dfbf5fdf5cb03c6597752eb0421a402d4cb782b66d5799",
+   "bytes": 2728853,
+   "lines": 930
+  },
+  "oracle_flip.jsonl": {
+   "sha256": "5eec8317b81d9f9b165c1ea0c750910b806f8390ee933650b4e4cc2e225bcd5e",
+   "bytes": 2742217,
+   "lines": 930
+  },
+  "token_only.jsonl": {
+   "sha256": "29d6953d5728d30382c50ae96c3667ed036405baabaf8177c1e46e6addd5c3a8",
+   "bytes": 6119441,
+   "lines": 930
+  }
+ },
+ "final_cumulative_gpu_hours": 10.885387739009328,
+ "by_block_hours": {
+  "gate-equiv": 0.22787445651160346,
+  "gate-feasible": 0.10607071770562065,
+  "speed": 0.023855747249391344,
+  "eval": 10.527586817542712
+ },
+ "cap_hours": 12.0
+}

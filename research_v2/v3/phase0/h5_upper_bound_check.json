@@ -1,0 +1,62 @@
+{
+ "streams": 1000,
+ "B_per_stream": 10000,
+ "threshold_pp": 3.0,
+ "samples": {
+  "stage1": {
+   "n": 930,
+   "estimate_pp": -0.7526881720430108,
+   "lattice_step_pp": 0.10752688172043011,
+   "upper_limit_distribution": {
+    "+0.43": 109,
+    "+0.44": 14,
+    "+0.54": 877
+   },
+   "lower_limit_distribution": {
+    "-2.04": 955,
+    "-1.94": 45
+   },
+   "upper_min": 0.43010752688172044,
+   "upper_max": 0.5376344086021506,
+   "fraction_upper_ge_3": 0.0,
+   "fraction_lower_le_minus3": 0.0,
+   "tost_p_pm3_normal": 0.0017138674476588154
+  },
+  "heldout389": {
+   "n": 389,
+   "estimate_pp": 0.7712082262210797,
+   "lattice_step_pp": 0.2570694087403599,
+   "upper_limit_distribution": {
+    "+2.83": 1000
+   },
+   "lower_limit_distribution": {
+    "-1.29": 1000
+   },
+   "upper_min": 2.827763496143959,
+   "upper_max": 2.827763496143959,
+   "fraction_upper_ge_3": 0.0,
+   "fraction_lower_le_minus3": 0.0,
+   "tost_p_pm3_normal": 0.03542766145250825
+  },
+  "heldout342": {
+   "n": 342,
+   "estimate_pp": 0.29239766081871343,
+   "lattice_step_pp": 0.29239766081871343,
+   "upper_limit_distribution": {
+    "+2.34": 379,
+    "+2.35": 16,
+    "+2.63": 605
+   },
+   "lower_limit_distribution": {
+    "-2.05": 490,
+    "-1.77": 12,
+    "-1.75": 498
+   },
+   "upper_min": 2.3391812865497075,
+   "upper_max": 2.631578947368421,
+   "fraction_upper_ge_3": 0.0,
+   "fraction_lower_le_minus3": 0.0,
+   "tost_p_pm3_normal": 0.021801789011741853
+  }
+ }
+}

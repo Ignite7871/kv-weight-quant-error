@@ -1,0 +1,24 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{Locked tests H1--H3 per model: estimate, 95\% problem-clustered bootstrap interval and Holm-adjusted $p$ (Holm over the eight models of each family). Contrasts are differences of log mean JS divergence; negative means the first arm is milder. Reading: S, supported; I, inconclusive. hd: head dimension. $n=$\,\vf{n.qa} problems per model.}
+\label{tab:main}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lr lll lll lll@{}}
+\toprule
+ & & \multicolumn{3}{c}{H1: NAT-K$-$C1-K} & \multicolumn{3}{c}{H2: NAT-V$-$C1-V} & \multicolumn{3}{c}{H3: NAT-K$-$NAT-V} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+Model & hd & Est. & 95\% CI & Holm & Est. & 95\% CI & Holm & Est. & 95\% CI & Holm \\
+\midrule
+Qwen2.5-0.5B & \vf{geo.qa.headdim} & \vf{hone.qa.est} & \vf{hone.qa.ci} & \vf{hone.qa.holm}\,S & \vf{htwo.qa.est} & \vf{htwo.qa.ci} & \vf{htwo.qa.holm}\,S & \vf{hthree.qa.est} & \vf{hthree.qa.ci} & \vf{hthree.qa.holm}\,S \\
+Qwen2.5-1.5B & \vf{geo.qb.headdim} & \vf{hone.qb.est} & \vf{hone.qb.ci} & \vf{hone.qb.holm}\,S & \vf{htwo.qb.est} & \vf{htwo.qb.ci} & \vf{htwo.qb.holm}\,S & \vf{hthree.qb.est} & \vf{hthree.qb.ci} & \vf{hthree.qb.holm}\,S \\
+Qwen2.5-3B & \vf{geo.qc.headdim} & \vf{hone.qc.est} & \vf{hone.qc.ci} & \vf{hone.qc.holm}\,S & \vf{htwo.qc.est} & \vf{htwo.qc.ci} & \vf{htwo.qc.holm}\,S & \vf{hthree.qc.est} & \vf{hthree.qc.ci} & \vf{hthree.qc.holm}\,S \\
+Qwen2.5-7B & \vf{geo.qd.headdim} & \vf{hone.qd.est} & \vf{hone.qd.ci} & \vf{hone.qd.holm}\,S & \vf{htwo.qd.est} & \vf{htwo.qd.ci} & \vf{htwo.qd.holm}\,S & \vf{hthree.qd.est} & \vf{hthree.qd.ci} & \vf{hthree.qd.holm}\,S \\
+\midrule
+Llama-3.2-1B & \vf{geo.la.headdim} & \vf{hone.la.est} & \vf{hone.la.ci} & \vf{hone.la.holm}\,S & \vf{htwo.la.est} & \vf{htwo.la.ci} & \vf{htwo.la.holm}\,S & \vf{hthree.la.est} & \vf{hthree.la.ci} & \vf{hthree.la.holm}\,S \\
+Llama-3.2-3B & \vf{geo.lb.headdim} & \vf{hone.lb.est} & \vf{hone.lb.ci} & \vf{hone.lb.holm}\,S & \vf{htwo.lb.est} & \vf{htwo.lb.ci} & \vf{htwo.lb.holm}\,S & \vf{hthree.lb.est} & \vf{hthree.lb.ci} & \vf{hthree.lb.holm}\,S \\
+Llama-3.1-8B & \vf{geo.lc.headdim} & \vf{hone.lc.est} & \vf{hone.lc.ci} & \vf{hone.lc.holm}\,S & \vf{htwo.lc.est} & \vf{htwo.lc.ci} & \vf{htwo.lc.holm}\,S & \vf{hthree.lc.est} & \vf{hthree.lc.ci} & \vf{hthree.lc.holm}\,S \\
+\midrule
+Mistral-7B-v0.3 & \vf{geo.mi.headdim} & \vf{hone.mi.est} & \vf{hone.mi.ci} & \vf{hone.mi.holm}\,I & \vf{htwo.mi.est} & \vf{htwo.mi.ci} & \vf{htwo.mi.holm}\,S & \vf{hthree.mi.est} & \vf{hthree.mi.ci} & \vf{hthree.mi.holm}\,S \\
+\bottomrule
+\end{tabular}
+\end{table}

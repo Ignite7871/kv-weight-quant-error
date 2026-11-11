@@ -1,0 +1,118 @@
+{
+ "utc": "2026-10-29T14:33:13Z",
+ "all_passed": true,
+ "steps": [
+  {
+   "step": "v3 CPU suite (tiny + real + static)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 3677.1,
+   "stdout_tail": [
+    "  \"n_dynamic_modules\": 112,",
+    "  \"alpha0_bitwise_all_arms\": true,",
+    "  \"integrity_errors\": [],",
+    "  \"pass\": true",
+    " }",
+    "}"
+   ]
+  },
+  {
+   "step": "v3 analysis tests (simulated truth)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 3.7,
+   "stdout_tail": [
+    "PASS a09_full_pipeline_planted_truth",
+    "PASS a10_sd_guard",
+    "PASS a11_hb_falsification_flag",
+    "PASS a12_duplicate_record_fails_loudly",
+    "PASS a13_rounding_report_and_sensitivity",
+    "13/13 passed"
+   ]
+  },
+  {
+   "step": "v3 CPU harness of the driver's GPU code paths",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 414.1,
+   "stdout_tail": [
+    "  \"HC_cross\": true,",
+    "  \"markdown_lines\": 176",
+    " },",
+    " \"pass\": true,",
+    " \"seconds\": 395.6",
+    "}"
+   ]
+  },
+  {
+   "step": "v3 repair-script tests (amendment 1)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 0.1,
+   "stdout_tail": [
+    "PASS r03_intact_file_is_refused_and_untouched",
+    "PASS r04_invalid_middle_line_is_refused",
+    "PASS r05_outside_root_is_refused",
+    "PASS r06_single_torn_line_file",
+    "PASS r07_repair_removes_only_the_trailing_line",
+    "7/7 passed"
+   ]
+  },
+  {
+   "step": "v3 crash-injection tests (amendment 1)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 253.0,
+   "stdout_tail": [
+    "PASS C_torn_line_stops_driver_then_logged_repair_then_rerun",
+    "PASS D_calibration_interrupted_mid_append",
+    "PASS E_ledger_cumulative_and_unclean_exit_recovered",
+    "PASS F_heartbeat_charges_a_hard_kill",
+    "PASS G_analysis_refuses_duplicate_records",
+    "7/7 passed"
+   ]
+  },
+  {
+   "step": "v3 mutation check",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 2293.7,
+   "stdout_tail": [
+    " \"bytes_removed\": 32,",
+    " \"removed_bytes_saved_to\": \"repairs/qwen-base_tierA_NAT_2026-10-29T142826567285+0000.removed\",",
+    " \"reason\": \"test\"",
+    "}",
+    "CAUGHT rp_repair_removes_too_much  <- r01_torn_without_newline_is_removed_and_logged",
+    "49/49 mutants caught"
+   ]
+  },
+  {
+   "step": "E1 mutation check (unchanged)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 52.0,
+   "stdout_tail": [
+    "CAUGHT  same_noise_all_slots               failing tests: c12_c1_noise_independent_across_slots",
+    "CAUGHT  token_from_nf4_logits              failing tests: c01_nat_equals_engine_cache_only_bitwise, c02_alpha_zero_reproduces_pure_fp16_bitwise, c07_teacher_forced_identical_history_and_first_step_zero",
+    "CAUGHT  unkept_pass_is_fp16                failing tests: c01_nat_equals_engine_cache_only_bitwise, c06_determinism_and_seed_dependence, c07_teacher_forced_identical_history_and_first_step_zero, c10_perturbation_changes_only_newest_decode_entries",
+    "CAUGHT  write_keys_only                    failing tests: c01_nat_equals_engine_cache_only_bitwise",
+    "CAUGHT  write_wrong_layer                  failing tests: c01_nat_equals_engine_cache_only_bitwise, c02_alpha_zero_reproduces_pure_fp16_bitwise",
+    "15/15 mutants caught"
+   ]
+  },
+  {
+   "step": "E1L mutation check (unchanged)",
+   "returncode": 0,
+   "passed": true,
+   "seconds": 233.1,
+   "stdout_tail": [
+    "CAUGHT  write_wrong_layer                  failing: c01_nat_equals_engine_cache_only_bitwise, c02_alpha_zero_reproduces_pure_fp16_bitwise, l02_slot_alignment_laye",
+    "CAUGHT  write_kv_swapped                   failing: c01_nat_equals_engine_cache_only_bitwise, c02_alpha_zero_reproduces_pure_fp16_bitwise, l02_slot_alignment_laye",
+    "CAUGHT  write_head_rolled                  failing: c01_nat_equals_engine_cache_only_bitwise, c02_alpha_zero_reproduces_pure_fp16_bitwise, l02_slot_alignment_laye",
+    "CAUGHT  stored_value_scaled_by_epsilon     failing: c02_alpha_zero_reproduces_pure_fp16_bitwise, c03_norm_matching_per_slot, c04_c2_preserves_coordinate_magnitude",
+    "CAUGHT  norm_pooled_over_kv_heads          failing: c03_norm_matching_per_slot, c11_diagnostics_report_matched_norms, l03_independent_per_kv_head_norm_matching_fr",
+    "19/19 mutants caught"
+   ]
+  }
+ ]
+}

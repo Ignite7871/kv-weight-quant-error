@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{3.3cm}p{2.65cm}p{2.65cm}p{2.65cm}p{2.65cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{X1: path-weighted provenance as a predictor of NAT$-$C1}} \\
+Mean natural K share $w_K$ & \vn{x1.qb.wK} & \vn{x1.qi.wK} & \vn{x1.lb.wK} & \vn{x1.li.wK} \\
+Predicted (weighted) & \vn{x1.qb.pred} \vn{x1.qb.predci} & \vn{x1.qi.pred} \vn{x1.qi.predci} & \vn{x1.lb.pred} \vn{x1.lb.predci} & \vn{x1.li.pred} \vn{x1.li.predci} \\
+Observed NAT$-$C1 & \vn{x1.qb.obs} & \vn{x1.qi.obs} & \vn{x1.lb.obs} & \vn{x1.li.obs} \\
+Observed $-$ predicted; Holm & \vn{x1.qb.d} \vn{x1.qb.dci}\newline Holm \vn{x1.qb.holm} & \vn{x1.qi.d} \vn{x1.qi.dci}\newline Holm \vn{x1.qi.holm} & \vn{x1.lb.d} \vn{x1.lb.dci}\newline Holm \vn{x1.lb.holm} & \vn{x1.li.d} \vn{x1.li.dci}\newline Holm \vn{x1.li.holm} \\
+Sign predicted & \vn{x1.qb.sign} & \vn{x1.qi.sign} & \vn{x1.lb.sign} & \vn{x1.li.sign} \\
+Spearman(pred, obs) over problems & \vn{x1.qb.rho} \vn{x1.qb.rhoci} & \vn{x1.qi.rho} \vn{x1.qi.rhoci} & \vn{x1.lb.rho} \vn{x1.lb.rhoci} & \vn{x1.li.rho} \vn{x1.li.rhoci} \\
+\midrule\multicolumn{5}{@{}l}{\emph{X2: H-A estimand $D$ with other predictors (NAT, steps $2\ldots T_i$)}} \\
+X2a: $P_{\mathrm{val}}$ vs $P_{\mathrm{norm}}$ & \vn{x2a.qb.est} \vn{x2a.qb.ci}\newline Holm \vn{x2a.qb.holm}; \vn{x2a.qb.verdict} & \vn{x2a.qi.est} \vn{x2a.qi.ci}\newline Holm \vn{x2a.qi.holm}; \vn{x2a.qi.verdict} & \vn{x2a.lb.est} \vn{x2a.lb.ci}\newline Holm \vn{x2a.lb.holm}; \vn{x2a.lb.verdict} & \vn{x2a.li.est} \vn{x2a.li.ci}\newline Holm \vn{x2a.li.holm}; \vn{x2a.li.verdict} \\
+X2b: rank-sum $P_{\mathrm{comb}}$ vs $P_{\mathrm{norm}}$ & \vn{x2b.qb.est} \vn{x2b.qb.ci}\newline Holm \vn{x2b.qb.holm}; \vn{x2b.qb.verdict} & \vn{x2b.qi.est} \vn{x2b.qi.ci}\newline Holm \vn{x2b.qi.holm}; \vn{x2b.qi.verdict} & \vn{x2b.lb.est} \vn{x2b.lb.ci}\newline Holm \vn{x2b.lb.holm}; \vn{x2b.lb.verdict} & \vn{x2b.li.est} \vn{x2b.li.ci}\newline Holm \vn{x2b.li.holm}; \vn{x2b.li.verdict} \\
+X2c: $D_{\mathrm{comb}}-D_{\mathrm{logit}}$ & \vn{x2c.qb.est} \vn{x2c.qb.ci}\newline Holm \vn{x2c.qb.holm}; \vn{x2c.qb.verdict} & \vn{x2c.qi.est} \vn{x2c.qi.ci}\newline Holm \vn{x2c.qi.holm}; \vn{x2c.qi.verdict} & \vn{x2c.lb.est} \vn{x2c.lb.ci}\newline Holm \vn{x2c.lb.holm}; \vn{x2c.lb.verdict} & \vn{x2c.li.est} \vn{x2c.li.ci}\newline Holm \vn{x2c.li.holm}; \vn{x2c.li.verdict} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Exploratory X1 and X2 \tagE{} (plan entry \texttt{4b1ca9d}, committed after the locked results were known and before these were computed; not blind). Holm over the four models within each row, labelled exploratory. ``Sign predicted'' (fixed in the plan): \emph{yes} if the mean predicted and mean observed contrasts have the same sign and both 95\% intervals exclude 0; Llama-base is \emph{no} because its observed interval includes 0. X2a reproduces a pre-declared descriptive quantity of the locked analysis.}
+\label{tab:exp}
+\end{table}

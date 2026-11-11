@@ -1,0 +1,50 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}l l r l l l l@{}}
+\toprule
+Model & Arm & Steps & Mean & p99 $\le$ & Max & Steps with a slot $>5\%$ \\
+\midrule
+Qwen-base & C1 & 12235 & $8.2\times10^{-4}$ & $2.1\times10^{-2}$ & 0.225 & 2507 \\
+Qwen-base & C2 & 12235 & $8.0\times10^{-5}$ & $5.6\times10^{-4}$ & 0.046 & 0 \\
+Qwen-base & QA & 12235 & $4.8\times10^{-4}$ & $7.5\times10^{-3}$ & 0.133 & 187 \\
+Qwen-base & QO & 12235 & $8.5\times10^{-4}$ & $2.2\times10^{-2}$ & 0.250 & 2996 \\
+Qwen-base & CV & 12235 & $1.2\times10^{-3}$ & $3.3\times10^{-2}$ & 0.301 & 5959 \\
+Qwen-base & REL-K & 12235 & $2.1\times10^{-4}$ & $7.9\times10^{-4}$ & 0.002 & 0 \\
+Qwen-base & REL-V & 12235 & $1.7\times10^{-4}$ & $6.0\times10^{-4}$ & 0.001 & 0 \\
+Qwen-base & C1-K & 12235 & $1.5\times10^{-3}$ & $3.5\times10^{-2}$ & 0.226 & 2628 \\
+Qwen-base & C1-V & 12235 & $1.1\times10^{-4}$ & $4.7\times10^{-4}$ & 0.002 & 0 \\
+\midrule
+Qwen-instruct & C1 & 12734 & $8.2\times10^{-4}$ & $2.1\times10^{-2}$ & 0.289 & 2706 \\
+Qwen-instruct & C2 & 12734 & $7.7\times10^{-5}$ & $5.3\times10^{-4}$ & 0.045 & 0 \\
+Qwen-instruct & QA & 12734 & $4.7\times10^{-4}$ & $7.5\times10^{-3}$ & 0.127 & 224 \\
+Qwen-instruct & QO & 12734 & $8.4\times10^{-4}$ & $2.2\times10^{-2}$ & 0.260 & 3090 \\
+Qwen-instruct & CV & 12734 & $1.2\times10^{-3}$ & $3.5\times10^{-2}$ & 0.307 & 6609 \\
+Qwen-instruct & REL-K & 12734 & $2.0\times10^{-4}$ & $7.9\times10^{-4}$ & 0.002 & 0 \\
+Qwen-instruct & REL-V & 12734 & $1.7\times10^{-4}$ & $6.0\times10^{-4}$ & 0.001 & 0 \\
+Qwen-instruct & C1-K & 12734 & $1.5\times10^{-3}$ & $3.5\times10^{-2}$ & 0.298 & 2667 \\
+Qwen-instruct & C1-V & 12734 & $1.1\times10^{-4}$ & $4.7\times10^{-4}$ & 0.002 & 0 \\
+\midrule
+Llama-base & C1 & 11272 & $2.5\times10^{-4}$ & $1.4\times10^{-3}$ & 0.007 & 0 \\
+Llama-base & C2 & 11272 & $9.5\times10^{-5}$ & $6.7\times10^{-4}$ & 0.008 & 0 \\
+Llama-base & QA & 11272 & $2.5\times10^{-4}$ & $1.3\times10^{-3}$ & 0.005 & 0 \\
+Llama-base & QO & 11272 & $2.5\times10^{-4}$ & $1.4\times10^{-3}$ & 0.007 & 0 \\
+Llama-base & CV & 11272 & $3.1\times10^{-4}$ & $2.0\times10^{-3}$ & 0.012 & 0 \\
+Llama-base & REL-K & 11272 & $2.4\times10^{-4}$ & $9.4\times10^{-4}$ & 0.002 & 0 \\
+Llama-base & REL-V & 11272 & $2.0\times10^{-4}$ & $6.7\times10^{-4}$ & 0.002 & 0 \\
+Llama-base & C1-K & 11272 & $3.9\times10^{-4}$ & $1.7\times10^{-3}$ & 0.006 & 0 \\
+Llama-base & C1-V & 11272 & $1.2\times10^{-4}$ & $5.3\times10^{-4}$ & 0.003 & 0 \\
+\midrule
+Llama-instruct & C1 & 11346 & $2.5\times10^{-4}$ & $1.4\times10^{-3}$ & 0.007 & 0 \\
+Llama-instruct & C2 & 11346 & $9.4\times10^{-5}$ & $6.3\times10^{-4}$ & 0.008 & 0 \\
+Llama-instruct & QA & 11346 & $2.5\times10^{-4}$ & $1.3\times10^{-3}$ & 0.006 & 0 \\
+Llama-instruct & QO & 11346 & $2.5\times10^{-4}$ & $1.4\times10^{-3}$ & 0.008 & 0 \\
+Llama-instruct & CV & 11346 & $3.0\times10^{-4}$ & $1.9\times10^{-3}$ & 0.012 & 0 \\
+Llama-instruct & REL-K & 11346 & $2.4\times10^{-4}$ & $8.9\times10^{-4}$ & 0.002 & 0 \\
+Llama-instruct & REL-V & 11346 & $2.0\times10^{-4}$ & $6.7\times10^{-4}$ & 0.002 & 0 \\
+Llama-instruct & C1-K & 11346 & $3.9\times10^{-4}$ & $1.7\times10^{-3}$ & 0.007 & 0 \\
+Llama-instruct & C1-V & 11346 & $1.2\times10^{-4}$ & $5.3\times10^{-4}$ & 0.003 & 0 \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Realized post-rounding relative per-slot norm deviation $|r-t|/t$ of the constructed arms (amendment~2; reported, not gated). p99 is an upper bin edge (40 bins per decade). Natural arms (NAT, NAT-K, NAT-V, LOC, INH) have no constructed slots.}
+\label{tab:rdev}
+\end{table}

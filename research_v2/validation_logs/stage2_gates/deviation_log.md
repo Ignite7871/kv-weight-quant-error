@@ -1,0 +1,3 @@
+# Stage 2 deviation log
+
+1. **2026-10-25, first launch of `run_stage2.py run` aborted before any GPU use** (`FileNotFoundError` in `verify_checkpoint`, which assumed the five arm record files exist; in Stage 1 they existed from the feasibility/earlier runs). No model was loaded, no problem evaluated, the GPU ledger is unchanged (0.158 h). Resolution without any code change: the five empty record files `stage2_runs/eval/{arm}.jsonl` were created, then the run was relaunched. The aborted log is kept as `stage2_runs/eval_run_0_aborted_before_gpu.log`. Not a protocol amendment (locked code, sample and analysis untouched).

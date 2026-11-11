@@ -1,0 +1,1709 @@
+{
+ "vf_defined": 980,
+ "vf_used": 623,
+ "vf_undefined": [],
+ "vn_used": 175,
+ "vn_undefined": [],
+ "v3_unsourced": [],
+ "rederived_n": 980,
+ "rederived_fail": [],
+ "recomp_n": 195,
+ "recomp_fail": [],
+ "literals_n": 229,
+ "literals_unclassified": [],
+ "claims": [
+  {
+   "claim": "All eight models complete, n = 100, none flagged",
+   "ok": true
+  },
+  {
+   "claim": "H2: every model supported, every CI > 0, every Holm p < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "H2: larger in the largest than the smallest model of each family; Mistral largest of all",
+   "ok": true
+  },
+  {
+   "claim": "H3: every model supported, all Holm p < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "H5: all 16 supported, lower bounds > ln 4, Holm p < 0.01",
+   "ok": true
+  },
+  {
+   "claim": "H5: L^K > L^V in all Qwen and Mistral; L^V > L^K in all Llama",
+   "ok": true
+  },
+  {
+   "claim": "H1: supported in the seven Qwen/Llama models with Holm p < 0.001; Mistral inconclusive",
+   "ok": true
+  },
+  {
+   "claim": "Mistral H1: 90% CI excludes 0 but not inside the margin, so not equivalent; 95% CI includes 0",
+   "ok": true
+  },
+  {
+   "claim": "H1 shrinks monotonically with size in Qwen and in Llama; Mistral smallest magnitude",
+   "ok": true
+  },
+  {
+   "claim": "H4 falsified; three Qwen CIs entirely above 0; Qwen-0.5B negative; Llama-1B equivalent; other Llama positive",
+   "ok": true
+  },
+  {
+   "claim": "NAT-C1 negative only in Qwen-0.5B; positive in every model from 1.5B params up (incl. Mistral)",
+   "ok": true
+  },
+  {
+   "claim": "NAT-C1 rises monotonically with size within each family; Mistral largest of the eight",
+   "ok": true
+  },
+  {
+   "claim": "Families did not separate completely",
+   "ok": true
+  },
+  {
+   "claim": "Without-flagged identical to all-models",
+   "ok": true
+  },
+  {
+   "claim": "Every b-hat >= 0.25 (informative)",
+   "ok": true
+  },
+  {
+   "claim": "Step 0 passed for all three models; every criterion-1 and -2 met",
+   "ok": true
+  },
+  {
+   "claim": "Head dimension 64 only for the smallest Qwen and Llama",
+   "ok": true
+  },
+  {
+   "claim": "X1: all four within-family slopes positive with CIs excluding 0",
+   "ok": true
+  },
+  {
+   "claim": "X3: within-model r near 0 (CI includes 0) in the four smallest models, CI > 0 in the four larger",
+   "ok": true
+  },
+  {
+   "claim": "X4: Qwen hd128-only slopes positive with CI > 0; Llama H1 flat (CI includes 0); Llama NAT-C1 CI includes 0",
+   "ok": true
+  },
+  {
+   "claim": "X2: Mistral layer 0 is its maximum on both paths",
+   "ok": true
+  },
+  {
+   "claim": "H2/H3/H5 per-model signs identical at both head dimensions",
+   "ok": true
+  }
+ ],
+ "literals": [
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 8,
+   "literal": "3.1",
+   "class": "model / licence name Llama 3.1",
+   "context": "ckpoints from three families (   -- ,  /3.1  --  and"
+  },
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 21,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "ameters up. Head dimension changes from 64 to 128 at the same step as size, so siz"
+  },
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 21,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "s up. Head dimension changes from 64 to 128 at the same step as size, so size and h"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 22,
+   "literal": "3.2",
+   "class": "model / licence name Llama 3.2",
+   "context": "four   sizes ( -- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 22,
+   "literal": "3.2",
+   "class": "model / licence name Llama 3.2",
+   "context": "sizes ( -- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 22,
+   "literal": "3.1",
+   "class": "model / licence name Llama 3.1",
+   "context": "-- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
+  },
+  {
+   "file": "sections_v4\\02_related.tex",
+   "line": 5,
+   "literal": "2026",
+   "class": "year",
+   "context": "and November 2026. Three scale papers were added for this"
+  },
+  {
+   "file": "sections_v4\\02_related.tex",
+   "line": 31,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "rojection at a time in nine models from 1.  to"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 9,
+   "literal": "256",
+   "class": "SHA-256 (hash name)",
+   "context": "pinned to a revision hash, and the SHA-256 of every weight shard is in the"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 11,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "has a head dimension of 64; every other model, Mistral included, h"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 11,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "very other model, Mistral included, has 128. Size and head dimension therefore chan"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 26,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "ored perturbation first acts at step $t+1$, so the divergence at"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 27,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "step 1 is exactly 0 in every arm, which is che"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 27,
+   "literal": "0",
+   "class": "zero",
+   "context": "step 1 is exactly 0 in every arm, which is checked for ever"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 30,
+   "literal": "65",
+   "class": "history cap (\u00a73)",
+   "context": "-session   greedy generation, capped at 65"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 32,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "$1  T_i$, with $T_i= (64, {history length}"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 32,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "$1  T_i$, with $T_i= (64, {history length}-1)$, we compute in"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 32,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "T_i$, with $T_i= (64, {history length}-1)$, we compute in   the Jensen--Shannon"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 34,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "$ is the mean JS of arm $a$ over steps $1  T_i$, floored at $10^{-9}$, and a cont"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 34,
+   "literal": "10^{-9}",
+   "class": "JS floor (\u00a73)",
+   "context": "rm $a$ over steps $1  T_i$, floored at $10^{-9}$, and a contrast is"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 35,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "$ (a,b)= 1n _i[  m_i^{a}-  m_i^{b}]$, paired by pr"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 37,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "study's 200 seeded GSM8K test problems~ , and the c"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 38,
+   "literal": "100",
+   "class": "earlier study's calibration sample / count",
+   "context": "100 seeded training problems. No gold answe"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 62,
+   "literal": "10^{-4}",
+   "class": "construction tolerance (\u00a73)",
+   "context": "with its per-slot norm within $10^{-4}$ of the target, then rounded once to"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 67,
+   "literal": "0.5,1,2",
+   "class": "calibration doses (\u00a73)",
+   "context": "lems with arms NAT and C1 at doses $  \\{0.5,1,2\\}$, over"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 68,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "64 steps, before its first test problem; t"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 69,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "valence margin of each model is $|  b| (1+c)$, where $  b$ is the dose slope of C"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 71,
+   "literal": "0.10,0.40",
+   "class": "clamp of c (\u00a73)",
+   "context": "norm, clamped to $[0.10,0.40]$. Margins lay between   and  . Equival"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 72,
+   "literal": "0.25",
+   "class": "b-hat threshold (\u00a73)",
+   "context": "an informative dose response, $  b 0.25$, which held in every model ($  b$ from"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 79,
+   "literal": "0",
+   "class": "zero",
+   "context": "[  (key path)] $ ( {NAT-K}, {C1-K})<0$ in every model: natural key error is m"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 81,
+   "literal": "0",
+   "class": "zero",
+   "context": "[  (value path)] $ ( {NAT-V}, {C1-V})>0$ in every model: natural value error is"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 82,
+   "literal": "0",
+   "class": "zero",
+   "context": "al-size ranking)] $ ( {NAT-K}, {NAT-V})<0$ in every model: values-only error is m"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 85,
+   "literal": "0",
+   "class": "zero",
+   "context": "( {NAT}, {C1})$ follows family: Qwen $<0$, Llama $ 0$."
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 85,
+   "literal": "0",
+   "class": "zero",
+   "context": "1})$ follows family: Qwen $<0$, Llama $ 0$."
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 90,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "eceives a verdict:  {difference} if its 95\\% interval excludes 0,"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 90,
+   "literal": "0",
+   "class": "zero",
+   "context": "fference} if its 95\\% interval excludes 0,"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 91,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "{equivalent} if its 90\\% interval lies inside $ $margin and $  b"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 91,
+   "literal": "0.25",
+   "class": "b-hat threshold (\u00a73)",
+   "context": "interval lies inside $ $margin and $  b 0.25$, and  {inconclusive} otherwise;"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 92,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "--  are  {supported} in a model if the 95\\% interval lies"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 93,
+   "literal": "0",
+   "class": "zero",
+   "context": "entirely on the predicted side of 0 and the Holm-adjusted $p<0.05$, and  {f"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 93,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "cted side of 0 and the Holm-adjusted $p<0.05$, and  {falsified} in a model if the in"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 97,
+   "literal": "16",
+   "class": "H5 family size (16 tests)",
+   "context": "over the 16 model--path tests."
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 100,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "$ _ = _j _{j }$ and $ _ = _j\\| _{j }\\|^2$ over positions $j$."
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 103,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "C_i^P= { _ \\| _ /n_i\\|^2}{ _   _ /n_i},"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 105,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "which is about $1/n_i$ when the directions are independen"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 106,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "tity under an empirical isotropic null (200 seeded draws that keep the per-entry no"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 107,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "is supported in a model and path if the 95\\% lower bound of $ $ is"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 108,
+   "literal": "4",
+   "class": "ln 4 / four",
+   "context": "above $  4$ and the Holm $p<0.05$, and falsified i"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 108,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "above $  4$ and the Holm $p<0.05$, and falsified if the upper bound is b"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 108,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "alsified if the upper bound is below $  2$. These are the thresholds of the"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 114,
+   "literal": "7",
+   "class": "C(7,3)",
+   "context": "one-sided permutation test over all $ {7}{3}=35$ assignments of the family label"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 114,
+   "literal": "3",
+   "class": "3-shot / three-point",
+   "context": "e-sided permutation test over all $ {7}{3}=35$ assignments of the family labels;"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 114,
+   "literal": "35",
+   "class": "C(7,3) labellings (\u00a77.4)",
+   "context": "ided permutation test over all $ {7}{3}=35$ assignments of the family labels; mode"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 115,
+   "literal": "1/35",
+   "class": "smallest attainable p",
+   "context": "r term. The smallest attainable $p$ is $1/35$, so $p 0.05$ requires"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 115,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "mallest attainable $p$ is $1/35$, so $p 0.05$ requires"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 116,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "ete separation.   is  {supported} if $p 0.05$ and every Qwen interval lies below 0 w"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 116,
+   "literal": "0",
+   "class": "zero",
+   "context": ".05$ and every Qwen interval lies below 0 while no Llama interval does;"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 117,
+   "literal": "0",
+   "class": "zero",
+   "context": "en model has an interval entirely above 0 or is equivalent to 0, or any Llama mod"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 117,
+   "literal": "0",
+   "class": "zero",
+   "context": "al entirely above 0 or is equivalent to 0, or any Llama model has an"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 118,
+   "literal": "0",
+   "class": "zero",
+   "context": "interval entirely below 0; and inconclusive otherwise. All seven"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 122,
+   "literal": "10{,}000",
+   "class": "bootstrap and permutation count (\u00a77)",
+   "context": "lem-clustered percentile bootstrap with 10{,}000 resamples"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 123,
+   "literal": "10{,}000",
+   "class": "bootstrap and permutation count (\u00a77)",
+   "context": "paired sign-flip permutation tests with 10{,}000"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 125,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "score steps 2--8 or 9--64 only, use per-problem media"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 125,
+   "literal": "8",
+   "class": "eight / top-8 / steps 2-8",
+   "context": "score steps 2--8 or 9--64 only, use per-problem medians,"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 125,
+   "literal": "9",
+   "class": "steps 9-64",
+   "context": "score steps 2--8 or 9--64 only, use per-problem medians, and"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 125,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "score steps 2--8 or 9--64 only, use per-problem medians, and trun"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 126,
+   "literal": "5\\%",
+   "class": "truncation sensitivity / Step 0 rho tolerance (\u00a74, \u00a78)",
+   "context": "deviating by more than 5\\% from its target norm. If a model failed"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 131,
+   "literal": "4060",
+   "class": "GPU model RTX 4060",
+   "context": "he earlier study ran on a laptop GPU (  4060,  ); this one runs on an NVIDIA   (Ampe"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 134,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "t required, per model and contrast, the 90\\% interval of the difference $ $ to lie i"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 135,
+   "literal": "0.10",
+   "class": "Step 0 |delta| limit / c clamp (\u00a74, \u00a73)",
+   "context": "margin and $|  | 0.10$; the same verdict for every contrast w"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 135,
+   "literal": "0.2",
+   "class": "Step 0 verdict threshold (\u00a74, D9) / MDE wording (\u00a77.6: 0.206)",
+   "context": "for every contrast with an earlier $| | 0.2$; and calibration"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 136,
+   "literal": "5\\%",
+   "class": "truncation sensitivity / Step 0 rho tolerance (\u00a74, \u00a78)",
+   "context": "agreement ($ _K$, $ _V$ within 5\\% and $  b$ within $0.25$ of the earlier"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 136,
+   "literal": "0.25",
+   "class": "b-hat threshold (\u00a73)",
+   "context": "_K$, $ _V$ within 5\\% and $  b$ within $0.25$ of the earlier values recomputed on th"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 136,
+   "literal": "50",
+   "class": "Step 0 calibration problems (\u00a74)",
+   "context": "e earlier values recomputed on the same 50"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 137,
+   "literal": "0",
+   "class": "zero",
+   "context": "nstructed arm equals   bitwise at scale 0, the   construction"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 143,
+   "literal": "256",
+   "class": "SHA-256 (hash name)",
+   "context": "shes were fixed in a private, dated SHA-256 lock before any GPU use"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 147,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1)",
+   "context": "me exceeded its projection by more than 25\\%."
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 150,
+   "literal": "1.48",
+   "class": "D1 drift factor (V4-D1.json)",
+   "context": "projection times 1.48, the factor measured in the   timing (d"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 151,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1)",
+   "context": "kept the 25\\% tolerance, and required every resumed t"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 159,
+   "literal": "48\\,GB",
+   "class": "A40 memory",
+   "context": "The study ran on one rented NVIDIA   (48\\,GB, Secure Cloud,  ; driver  , ECC  ) at a"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 162,
+   "literal": "1.0.2",
+   "class": "image tag",
+   "context": "at tag 1.0.2 for CUDA 12.8.1 and Ubuntu 24.04 (recor"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 162,
+   "literal": "12.8.1",
+   "class": "image CUDA (tag)",
+   "context": "at tag 1.0.2 for CUDA 12.8.1 and Ubuntu 24.04 (recorded by digest),"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 162,
+   "literal": "24.04",
+   "class": "Ubuntu version (image tag)",
+   "context": "at tag 1.0.2 for CUDA 12.8.1 and Ubuntu 24.04 (recorded by digest), with the study's"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 163,
+   "literal": "2.13.0",
+   "class": "PyTorch version (V4_PACKAGES)",
+   "context": "2.13.0+ , transformers 5.13.0 and bitsandbytes"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 163,
+   "literal": "5.13.0",
+   "class": "transformers version (V4_PACKAGES)",
+   "context": "2.13.0+ , transformers 5.13.0 and bitsandbytes 0.49.2 installed in a"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 163,
+   "literal": "0.49.2",
+   "class": "bitsandbytes version (V4_PACKAGES)",
+   "context": ", transformers 5.13.0 and bitsandbytes 0.49.2 installed in a virtual environment pinn"
+  },
+  {
+   "file": "sections_v4\\03_methods.tex",
+   "line": 166,
+   "literal": "29",
+   "class": "pre-declared $29 stop (\u00a710, r5)",
+   "context": "ng of \\$  with a pre-declared stop at \\$29. The models ran one at a time in a fixe"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 14,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "{ --  per model, with 95\\% problem-clustered bootstrap intervals ("
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 15,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "al. Open squares mark the two head\\_dim-64 models. Generated by  .}"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 19,
+   "literal": "0",
+   "class": "zero",
+   "context": "{Step 0: The Earlier Results Reproduce on the C"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 22,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "op-GPU estimates was   log units, every 90\\% interval of the difference lay inside t"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 23,
+   "literal": "0.2",
+   "class": "Step 0 verdict threshold (\u00a74, D9) / MDE wording (\u00a77.6: 0.206)",
+   "context": "and every contrast with an earlier $| | 0.2$ kept its verdict (Table~ , Appendix~ )"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 32,
+   "literal": "0",
+   "class": "zero",
+   "context": "etween   and  , every interval excluded 0, and every Holm"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 33,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "$p<0.001$.   is  { }. The contrast does not shri"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 38,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "$NAT-V lay between   and   (all Holm $p<0.001$), a factor of"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 48,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "times the isotropic share, with every 95\\% lower bound at"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 49,
+   "literal": "4",
+   "class": "ln 4 / four",
+   "context": "bove  , against the support threshold $ 4 1.39$, and every Holm $p<0.01$"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 49,
+   "literal": "1.39",
+   "class": "ln 4 rounded (threshold)",
+   "context": "ve  , against the support threshold $ 4 1.39$, and every Holm $p<0.01$"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 49,
+   "literal": "0.01",
+   "class": "Holm level wording (all Holm p = 0.0016)",
+   "context": "threshold $ 4 1.39$, and every Holm $p<0.01$"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 56,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "and   (Holm $p<0.001$). In   the estimate was"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 57,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": ", Holm $p=$\\, :  { }. Its 90\\% interval,  , excludes"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 58,
+   "literal": "0",
+   "class": "zero",
+   "context": "0 but does not lie inside its margin of $"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 58,
+   "literal": "0",
+   "class": "zero",
+   "context": "neither a difference nor equivalent to 0,"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 67,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "(right) against $  $ parameters, with 95\\% intervals. Lines join the"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 68,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "family. Open squares mark the head\\_dim-64 models, which are also the smallest of"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 78,
+   "literal": "0",
+   "class": "zero",
+   "context": "n models had an interval entirely above 0,"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 79,
+   "literal": "0",
+   "class": "zero",
+   "context": "it as predicted.  -  was equivalent to 0 ( ), and the other two Llama models wer"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 88,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "from the change in head dimension from 64 to 128, which happens at the same step"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 88,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "the change in head dimension from 64 to 128, which happens at the same step in both"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 27,
+   "literal": "0",
+   "class": "zero",
+   "context": "ation of the two contrasts was close to 0 in the four smallest models ("
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 29,
+   "literal": "0",
+   "class": "zero",
+   "context": ", intervals excluding 0). Both contrasts are computed on the sa"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 35,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "del is the only one with head dimension 64, so every within-family size comparison"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 37,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "estimate is at head dimension 64, and its estimate equivalent to 0 is th"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 37,
+   "literal": "0",
+   "class": "zero",
+   "context": "sion 64, and its estimate equivalent to 0 is the other head-dimension-64 model),"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 37,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "valent to 0 is the other head-dimension-64 model), the   family"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 41,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "Restricted to the head-dimension-128 models, the Qwen slopes stay positive ("
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 44,
+   "literal": "0",
+   "class": "zero",
+   "context": "includes 0 (   ). The step from each family's head"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 44,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "step from each family's head-dimension-64 model to its next"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 54,
+   "literal": "0",
+   "class": "zero",
+   "context": "h pairs the largest share sits in layer 0 or 1; it is most extreme in  , where la"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 54,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "rs the largest share sits in layer 0 or 1; it is most extreme in  , where layer 0"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 54,
+   "literal": "0",
+   "class": "zero",
+   "context": "1; it is most extreme in  , where layer 0"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 13,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "struct version, all with head dimension 64, under the raw   prompt (so the instruc"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 14,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "ntrolled step and outcome of Section~ , 200 test and 100 calibration"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 14,
+   "literal": "100",
+   "class": "earlier study's calibration sample / count",
+   "context": "and outcome of Section~ , 200 test and 100 calibration"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 15,
+   "literal": "14",
+   "class": "earlier study arms (\u00a76)",
+   "context": "problems per model, and 14 arms. Besides the six arms of the prese"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 19,
+   "literal": "4060",
+   "class": "GPU model RTX 4060",
+   "context": "on an   4060 Laptop GPU (8\\,GB) for   GPU-hours unde"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 19,
+   "literal": "8\\,GB",
+   "class": "laptop GPU memory",
+   "context": "on an   4060 Laptop GPU (8\\,GB) for   GPU-hours under a lock of the sa"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 25,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "Holm $p<0.001$, and values-only error was more disrup"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 33,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "study: locked contrasts per model, with 95\\% intervals ($n=200$ each). NAT$-$C1 is t"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 33,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "asts per model, with 95\\% intervals ($n=200$ each). NAT$-$C1 is the"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 53,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "between   and   (all Holm $p<0.001$; Table~ ). The two arms split the natu"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 66,
+   "literal": "100\\%",
+   "class": "the whole",
+   "context": "the two need not add to 100\\%. INH is the cache component of a config"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 74,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "(95\\% intervals), the percentage of quantized"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 97,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "positions of a slot would carry about $1/n$ of the error energy. The natural err"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 105,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "($ _{ {cen}}$ from   to  , Holm $p<0.001$) and closed a share $G$ of"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 124,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "sus-isotropic gap that centring closes. 95\\%"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 155,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "{The 2$ $2} With the four models as cells $a$"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 155,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "{The 2$ $2} With the four models as cells $a$ (Qwe"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 157,
+   "literal": "12",
+   "class": "count",
+   "context": "ble~ , Figure~ ). The family contrast $ 12[(c+d)-(a+b)]$ was"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 159,
+   "literal": "12",
+   "class": "count",
+   "context": "predicted. The tuning contrast $ 12[(b+d)-(a+c)]$ was equivalent to 0 (   )"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 159,
+   "literal": "0",
+   "class": "zero",
+   "context": "st $ 12[(b+d)-(a+c)]$ was equivalent to 0 (   ), contradicting a"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 166,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "the per-problem NAT$-$C1 over the same 200 problems, Holm"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 171,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "Contrast & Estimate & 95\\% CI & Holm $p$ & Verdict & Prediction \\\\"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 173,
+   "literal": "0",
+   "class": "zero",
+   "context": "Family &   &   &   &   & $>0$:   \\\\"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 174,
+   "literal": "0",
+   "class": "zero",
+   "context": "Tuning &   &   &   &   & $>0$:   \\\\"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 183,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "C1 per model in the earlier study, with 95\\% intervals: the cells of Table~ . Genera"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 189,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llam"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 189,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llama si"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 191,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "(Figure~ ). The 2$ $2's family contrast is better describ"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 191,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "(Figure~ ). The 2$ $2's family contrast is better described a"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 192,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "ize, and they share a head dimension of 64 that no larger model in the ladder has."
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 193,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "The caveat we attached to the 2$ $2 named this confound; the ladder sho"
+  },
+  {
+   "file": "sections_v4\\06_v3study.tex",
+   "line": 193,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "The caveat we attached to the 2$ $2 named this confound; the ladder shows t"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 32,
+   "literal": "4",
+   "class": "ln 4 / four",
+   "context": "} For practitioners who keep weights in 4 bits and the cache in 16 bits, the resu"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 32,
+   "literal": "16",
+   "class": "H5 family size (16 tests)",
+   "context": "keep weights in 4 bits and the cache in 16 bits, the results suggest"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 5,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "dimension 64. No checkpoint here varies size with he"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 6,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "also a statement about the change from 64 to 128 at the smallest step (Section~ )"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 6,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "a statement about the change from 64 to 128 at the smallest step (Section~ )."
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 14,
+   "literal": "100",
+   "class": "earlier study's calibration sample / count",
+   "context": "nning generation and no other task. The 100 test problems"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 21,
+   "literal": "0.2",
+   "class": "Step 0 verdict threshold (\u00a74, D9) / MDE wording (\u00a77.6: 0.206)",
+   "context": "any data. Per-model effects below about 0.2 log units are not reliably detected, an"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 21,
+   "literal": "0",
+   "class": "zero",
+   "context": "t reliably detected, and equivalence to 0 is attainable only for"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 22,
+   "literal": "0.1",
+   "class": "equivalence attainability (\u00a77.6: 0.115)",
+   "context": "estimates within about 0.1 of 0."
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 22,
+   "literal": "0",
+   "class": "zero",
+   "context": "estimates within about 0.1 of 0."
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 21,
+   "literal": "2.0",
+   "class": "Apache License 2.0",
+   "context": "the Apache License 2.0.  -  is distributed under the Qwen Rese"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 22,
+   "literal": "3.2",
+   "class": "model / licence name Llama 3.2",
+   "context": "and  -  are distributed under the Llama 3.2 Community License"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 23,
+   "literal": "3.1",
+   "class": "model / licence name Llama 3.1",
+   "context": "Agreement, and  -  under the Llama 3.1 Community License Agreement (Meta), wit"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 24,
+   "literal": "3.1",
+   "class": "model / licence name Llama 3.1",
+   "context": "3.1 and Llama 3.2 are licensed under their"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 24,
+   "literal": "3.2",
+   "class": "model / licence name Llama 3.2",
+   "context": "3.1 and Llama 3.2 are licensed under their community lice"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 31,
+   "literal": "4.0",
+   "class": "CC BY 4.0",
+   "context": "MIT License and the records under CC BY 4.0."
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 35,
+   "literal": "13386",
+   "class": "TMLR submission number",
+   "context": "question, TMLR submission 13386 (rejected) and ACL Rolling Review submi"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 35,
+   "literal": "283",
+   "class": "ARR submission number",
+   "context": "cted) and ACL Rolling Review submission 283 (not committed to any venue), were not"
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 3,
+   "literal": "4060",
+   "class": "GPU model RTX 4060",
+   "context": "author's personal laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 3,
+   "literal": "8\\,GB",
+   "class": "laptop GPU memory",
+   "context": "l laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 12,
+   "literal": "16",
+   "class": "H5 family size (16 tests)",
+   "context": "identifiers are the first 16 hexadecimal digits of the lock hash. ``"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 20,
+   "literal": "29",
+   "class": "pre-declared $29 stop (\u00a710, r5)",
+   "context": "ing including storage, with a stop at \\$29; the second quantizer dropped;"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 31,
+   "literal": "83",
+   "class": "GM attempt mutants caught (V4-A12)",
+   "context": "& Gate check caught 83 of 87 mutants: four tests passed silent"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 31,
+   "literal": "87",
+   "class": "GM attempt mutants total (V4-A12)",
+   "context": "& Gate check caught 83 of 87 mutants: four tests passed silently bec"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 37,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1)",
+   "context": "me exceeded the projection by more than 25\\%; the projection"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 39,
+   "literal": "1.48",
+   "class": "D1 drift factor (V4-D1.json)",
+   "context": "): drift reference $=$ projection $ $ 1.48, tolerance 25\\%,"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 39,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1)",
+   "context": "ence $=$ projection $ $ 1.48, tolerance 25\\%,"
+  },
+  {
+   "file": "sections_v4\\C_v3details.tex",
+   "line": 16,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "ther locked tests of the earlier study (95\\% intervals, $n=200$ each; all Holm $p<0."
+  },
+  {
+   "file": "sections_v4\\C_v3details.tex",
+   "line": 16,
+   "literal": "200",
+   "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
+   "context": "f the earlier study (95\\% intervals, $n=200$ each; all Holm $p<0.001$). Generated b"
+  },
+  {
+   "file": "sections_v4\\C_v3details.tex",
+   "line": 16,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "\\% intervals, $n=200$ each; all Holm $p<0.001$). Generated by"
+  },
+  {
+   "file": "sections_v4\\C_v3details.tex",
+   "line": 38,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "ery model (QA$-$QO from   to  , Holm $p<0.001$)."
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 6,
+   "literal": "2026",
+   "class": "year",
+   "context": "(OpenAI) was used from July to November 2026 for research discussion, experimental p"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 12,
+   "literal": "5.5",
+   "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
+   "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 12,
+   "literal": "2026-10-29",
+   "class": "date",
+   "context": "the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 12,
+   "literal": "2026-11-01",
+   "class": "date",
+   "context": "e VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 16,
+   "literal": "2026-11-02",
+   "class": "date",
+   "context": "sent study} For the present study, from 2026-11-02 to 2026-11-09, the AI-use log records C"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 16,
+   "literal": "2026-11-09",
+   "class": "date",
+   "context": "r the present study, from 2026-11-02 to 2026-11-09, the AI-use log records Claude"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 17,
+   "literal": "5.5",
+   "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
+   "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 23,
+   "literal": "1.4.0",
+   "class": "RunPod plugin version (AI_USE_LOG_V4)",
+   "context": "(plugin   1.4.0). Each such action was approved by the"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 37,
+   "literal": "5.5",
+   "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 37,
+   "literal": "2026-10-28",
+   "class": "date (AI-use log)",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 37,
+   "literal": "2026-11-01",
+   "class": "date",
+   "context": "del Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as a source of d"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 3,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "its isotropic value; support requires a 95\\% lower bound above $  4$ and Holm $p<0.0"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 3,
+   "literal": "4",
+   "class": "ln 4 / four",
+   "context": "rt requires a 95\\% lower bound above $  4$ and Holm $p<0.05$ (Holm over the 16 te"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 3,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "5\\% lower bound above $  4$ and Holm $p<0.05$ (Holm over the 16 tests). NAT$-$C1 is"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 3,
+   "literal": "16",
+   "class": "H5 family size (16 tests)",
+   "context": "$  4$ and Holm $p<0.05$ (Holm over the 16 tests). NAT$-$C1 is shown with its 95\\%"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 3,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "e 16 tests). NAT$-$C1 is shown with its 95\\% interval and verdict;   is out of sampl"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "Model & hd & Est. & 95\\% CI & Est. & 95\\% CI & Est. & 95\\% CI \\\\"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "Model & hd & Est. & 95\\% CI & Est. & 95\\% CI & Est. & 95\\% CI \\\\"
+  },
+  {
+   "file": "tables_v4\\h5h4.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "st. & 95\\% CI & Est. & 95\\% CI & Est. & 95\\% CI \\\\"
+  },
+  {
+   "file": "tables_v4\\main.tex",
+   "line": 3,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "{Locked tests  --  per model: estimate, 95\\% problem-clustered bootstrap interval an"
+  },
+  {
+   "file": "tables_v4\\main.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "Model & hd & Est. & 95\\% CI & Holm & Est. & 95\\% CI & Holm & Est"
+  },
+  {
+   "file": "tables_v4\\main.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "l & hd & Est. & 95\\% CI & Holm & Est. & 95\\% CI & Holm & Est. & 95\\% CI & Holm \\\\"
+  },
+  {
+   "file": "tables_v4\\main.tex",
+   "line": 10,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "& Holm & Est. & 95\\% CI & Holm & Est. & 95\\% CI & Holm \\\\"
+  },
+  {
+   "file": "tables_v4\\models.tex",
+   "line": 3,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "b$: dose slope of C1; margin $=|  b| (1+c)$; $ _K$, $ _V$: median natural relat"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 3,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "he exposed test problems, scoring steps 2--8 or 9--64 only, per-problem medians i"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 3,
+   "literal": "8",
+   "class": "eight / top-8 / steps 2-8",
+   "context": "exposed test problems, scoring steps 2--8 or 9--64 only, per-problem medians inst"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 3,
+   "literal": "9",
+   "class": "steps 9-64",
+   "context": "ed test problems, scoring steps 2--8 or 9--64 only, per-problem medians instead o"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 3,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "test problems, scoring steps 2--8 or 9--64 only, per-problem medians instead of me"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 3,
+   "literal": "5\\%",
+   "class": "truncation sensitivity / Step 0 rho tolerance (\u00a74, \u00a78)",
+   "context": "tten with a slot deviating by more than 5\\% from its target norm (problems dropped"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 8,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "rast & Primary & Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 8,
+   "literal": "8",
+   "class": "eight / top-8 / steps 2-8",
+   "context": "t & Primary & Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\\\"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 8,
+   "literal": "9",
+   "class": "steps 9-64",
+   "context": "y & Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\\\"
+  },
+  {
+   "file": "tables_v4\\sens.tex",
+   "line": 8,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\\\"
+  },
+  {
+   "file": "tables_v4\\step0.tex",
+   "line": 3,
+   "literal": "0",
+   "class": "zero",
+   "context": "{Step 0, cross-hardware check on the   against"
+  },
+  {
+   "file": "tables_v4\\step0.tex",
+   "line": 3,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "r contrast, paired by problem, with its 90\\% interval. Criterion 1 requires the inte"
+  },
+  {
+   "file": "tables_v4\\step0.tex",
+   "line": 3,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "blem, with its 90\\% interval. Criterion 1 requires the interval inside $ $ the ea"
+  },
+  {
+   "file": "tables_v4\\step0.tex",
+   "line": 3,
+   "literal": "0.10",
+   "class": "Step 0 |delta| limit / c clamp (\u00a74, \u00a73)",
+   "context": "inside $ $ the earlier margin and $|  | 0.10$.}"
+  },
+  {
+   "file": "tables_v4\\step0.tex",
+   "line": 8,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "rgin) & Contrast & Earlier $ $ & $  $ & 90\\% CI of $ $ \\\\"
+  },
+  {
+   "file": "tables_v4\\x1.tex",
+   "line": 3,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "within each family, per decade, with a 95\\% bootstrap interval over problems (  res"
+  },
+  {
+   "file": "tables_v4\\x1.tex",
+   "line": 3,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "mples, models fixed). Llama's head\\_dim-128 ``slope'' joins two points. Not blind;"
+  },
+  {
+   "file": "tables_v4\\x1.tex",
+   "line": 7,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "mily & Contrast & All sizes & head\\_dim 128 only \\\\"
+  },
+  {
+   "file": "tables_v4\\x2.tex",
+   "line": 3,
+   "literal": "0",
+   "class": "zero",
+   "context": "d\\_dim-adjusted). Layer of the maximum (0-based), layer 0 against the mean of the"
+  },
+  {
+   "file": "tables_v4\\x2.tex",
+   "line": 3,
+   "literal": "0",
+   "class": "zero",
+   "context": ". Layer of the maximum (0-based), layer 0 against the mean of the other layers, a"
+  },
+  {
+   "file": "tables_v4\\x2.tex",
+   "line": 10,
+   "literal": "0",
+   "class": "zero",
+   "context": "Model & $L$ & mean & argmax & layer 0 & rest & mean & argmax & layer 0 & rest"
+  },
+  {
+   "file": "tables_v4\\x2.tex",
+   "line": 10,
+   "literal": "0",
+   "class": "zero",
+   "context": "layer 0 & rest & mean & argmax & layer 0 & rest & $ > $ \\\\"
+  }
+ ]
+}

@@ -1,0 +1,823 @@
+{
+ "device": "cpu",
+ "caught": 100,
+ "n": 100,
+ "all_caught": true,
+ "mutants": [
+  {
+   "mutant": "m_natural_kv_swapped",
+   "caught": true,
+   "failed_tests": [
+    "t04_natural_arms_store_measured_entry_on_own_path",
+    "t01_fp16_equals_locked_v3_arm"
+   ],
+   "seconds": 17.5
+  },
+  {
+   "mutant": "m_c1_kv_swapped",
+   "caught": true,
+   "failed_tests": [
+    "t05_constructed_arms_norm_path_and_full_sphere",
+    "t01_fp16_equals_locked_v3_arm"
+   ],
+   "seconds": 17.2
+  },
+  {
+   "mutant": "m_one_path_arm_touches_other_path",
+   "caught": true,
+   "failed_tests": [
+    "t05_constructed_arms_norm_path_and_full_sphere"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_natural_not_bitwise",
+   "caught": true,
+   "failed_tests": [
+    "t04_natural_arms_store_measured_entry_on_own_path",
+    "t18_integrity_flags_finite_and_step1"
+   ],
+   "seconds": 0.3
+  },
+  {
+   "mutant": "m_norm_pooled_over_heads",
+   "caught": true,
+   "failed_tests": [
+    "t05_constructed_arms_norm_path_and_full_sphere",
+    "t06_slot_norm_per_kv_head"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_c1_drawn_on_64_sphere",
+   "caught": true,
+   "failed_tests": [
+    "t05_constructed_arms_norm_path_and_full_sphere"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_past_entries_perturbed",
+   "caught": true,
+   "failed_tests": [
+    "t19_past_entries_never_revisited"
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_seed_master_label_dropped",
+   "caught": true,
+   "failed_tests": [
+    "t10_seeds_labels_only"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_nat_measured_in_fp16",
+   "caught": true,
+   "failed_tests": [
+    "t11_measure_pass_all_4bit_and_reset"
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_override_not_reset",
+   "caught": true,
+   "failed_tests": [
+    "t11_measure_pass_all_4bit_and_reset",
+    "t18_integrity_flags_finite_and_step1"
+   ],
+   "seconds": 0.4
+  },
+  {
+   "mutant": "m_prerounding_norm_scaled_1p001",
+   "caught": true,
+   "failed_tests": [
+    "t09_fp16_rounding_check_active",
+    "t18_integrity_flags_finite_and_step1"
+   ],
+   "seconds": 0.4
+  },
+  {
+   "mutant": "m_fp16_round_via_float32",
+   "caught": true,
+   "failed_tests": [
+    "t21_fp16_storage_correctly_rounded_on_double_rounding_cases"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_fp16_round_truncate",
+   "caught": true,
+   "failed_tests": [
+    "t18_integrity_flags_finite_and_step1",
+    "t21_fp16_storage_correctly_rounded_on_double_rounding_cases"
+   ],
+   "seconds": 1.2
+  },
+  {
+   "mutant": "m_bf16_round_via_float32",
+   "caught": true,
+   "failed_tests": [
+    "t07_bf16_rounding_equals_independent_oracle"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_bf16_oracle_ties_up",
+   "caught": true,
+   "failed_tests": [
+    "t07_bf16_rounding_equals_independent_oracle"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_bf16_output_cast_fp16",
+   "caught": true,
+   "failed_tests": [
+    "t08_bf16_mode_end_to_end"
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_x13_sums_of_stored_not_delta",
+   "caught": true,
+   "failed_tests": [
+    "t12_x13a_sums_independent"
+   ],
+   "seconds": 0.3
+  },
+  {
+   "mutant": "m_rho_kv_swapped",
+   "caught": true,
+   "failed_tests": [
+    "t13_rho_accumulator_independent"
+   ],
+   "seconds": 0.6
+  },
+  {
+   "mutant": "m_cost_rate_ignored",
+   "caught": true,
+   "failed_tests": [
+    "o02_cost_estimate_rate_boot_autostop_storage"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_autostop_omitted",
+   "caught": true,
+   "failed_tests": [
+    "o02_cost_estimate_rate_boot_autostop_storage",
+    "o03_sessions_counted_once_and_recovered"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_billing_ignored",
+   "caught": true,
+   "failed_tests": [
+    "o04_billing_lines_take_the_larger",
+    "o05_ceiling_check_before_problem_and_watchdog"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_pod_start_from_uptime",
+   "caught": true,
+   "failed_tests": [
+    "o06_pod_start_from_pid1_not_uptime"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_ceiling_checked_after_problem",
+   "caught": true,
+   "failed_tests": [
+    "o18_block_loop_ceiling_and_drift"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_watchdog_does_not_close",
+   "caught": true,
+   "failed_tests": [
+    "o05_ceiling_check_before_problem_and_watchdog"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_secret_scan_misses_gzip",
+   "caught": true,
+   "failed_tests": [
+    "o08_secret_scan_formats"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_secret_literal_ignored",
+   "caught": true,
+   "failed_tests": [
+    "o08_secret_scan_formats"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_redaction_off",
+   "caught": true,
+   "failed_tests": [
+    "o09_redaction_filter"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_g7_accepts_unpinned_revision",
+   "caught": true,
+   "failed_tests": [
+    "o17_g7_snapshot_checks"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_auth_substring",
+   "caught": true,
+   "failed_tests": [
+    "o01_authorization_files"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_exactly_once_off",
+   "caught": true,
+   "failed_tests": [
+    "o15_exactly_once_and_resume"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_torn_check_off",
+   "caught": true,
+   "failed_tests": [
+    "o15_exactly_once_and_resume"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_g8_ignores_values",
+   "caught": true,
+   "failed_tests": [
+    "o16_g8_canonical_comparison"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_bf16_flag_ignored",
+   "caught": true,
+   "failed_tests": [
+    "o14_order_rules"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_remote_allows_everything",
+   "caught": true,
+   "failed_tests": [
+    "o12_remote_command_filter"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_checkpoint_verify_always_true",
+   "caught": true,
+   "failed_tests": [
+    "o11_checkpoint_pack_and_verify"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_step0_not_required",
+   "caught": true,
+   "failed_tests": [
+    "o14_order_rules"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_double_load_bf16_site",
+   "caught": true,
+   "failed_tests": [
+    "o22_bf16_reload_does_not_double_load"
+   ],
+   "seconds": 0.3
+  },
+  {
+   "mutant": "m_double_load_real_backend",
+   "caught": true,
+   "failed_tests": [
+    "t22_reload_releases_the_previous_model"
+   ],
+   "seconds": 0.5
+  },
+  {
+   "mutant": "m_reload_without_garbage_collection",
+   "caught": true,
+   "failed_tests": [
+    "o22_bf16_reload_does_not_double_load"
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_sku_substring",
+   "caught": true,
+   "failed_tests": [
+    "o23_sku_check_is_exact"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_determinism_not_applied",
+   "caught": true,
+   "failed_tests": [
+    "o24_deterministic_settings_applied_and_required"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_cublas_workspace_not_set",
+   "caught": true,
+   "failed_tests": [
+    "o24_deterministic_settings_applied_and_required"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_determinism_not_required",
+   "caught": true,
+   "failed_tests": [
+    "o24_deterministic_settings_applied_and_required"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_ignores_environment",
+   "caught": true,
+   "failed_tests": [
+    "o25_gm_environment_logged_and_gated"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_ignores_determinism",
+   "caught": true,
+   "failed_tests": [
+    "o25_gm_environment_logged_and_gated"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_environment_always_complete",
+   "caught": true,
+   "failed_tests": [
+    "o25_gm_environment_logged_and_gated"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_ignores_image_record",
+   "caught": true,
+   "failed_tests": [
+    "o25_gm_environment_logged_and_gated"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_image_digest_overwritten",
+   "caught": true,
+   "failed_tests": [
+    "o26_image_digest_recorded_once"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_image_record_any_tag",
+   "caught": true,
+   "failed_tests": [
+    "o26_image_digest_recorded_once"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_amend_does_not_preserve_old_lock",
+   "caught": true,
+   "failed_tests": [
+    "o28_lock_amendment_preserves_and_links",
+    "o30_lock_verify_catches_a_broken_amendment"
+   ],
+   "seconds": 1.3
+  },
+  {
+   "mutant": "m_amend_allowed_after_data",
+   "caught": true,
+   "failed_tests": [
+    "o29_lock_amendment_refused_after_data_or_on_a_dirty_tree"
+   ],
+   "seconds": 0.5
+  },
+  {
+   "mutant": "m_amend_ignores_old_lock_mismatch",
+   "caught": true,
+   "failed_tests": [
+    "o29_lock_amendment_refused_after_data_or_on_a_dirty_tree"
+   ],
+   "seconds": 0.4
+  },
+  {
+   "mutant": "m_verify_ignores_amendments",
+   "caught": true,
+   "failed_tests": [
+    "o28_lock_amendment_preserves_and_links",
+    "o30_lock_verify_catches_a_broken_amendment"
+   ],
+   "seconds": 2.0
+  },
+  {
+   "mutant": "m_verify_ignores_head",
+   "caught": true,
+   "failed_tests": [
+    "o28_lock_amendment_preserves_and_links"
+   ],
+   "seconds": 0.2
+  },
+  {
+   "mutant": "m_ceiling_still_150",
+   "caught": true,
+   "failed_tests": [
+    "o05_ceiling_check_before_problem_and_watchdog",
+    "o27_cloud_files_name_the_study_gpu_and_image"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_no_closeout_reserve",
+   "caught": true,
+   "failed_tests": [
+    "o05_ceiling_check_before_problem_and_watchdog"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_storage_ignores_deletion",
+   "caught": true,
+   "failed_tests": [
+    "o31_storage_prorated_and_stops_at_deletion"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_storage_allowance_full_month",
+   "caught": true,
+   "failed_tests": [
+    "o31_storage_prorated_and_stops_at_deletion"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_sample_keeps_200",
+   "caught": true,
+   "failed_tests": [
+    "o32_sample_is_the_first_100_and_50"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_sample_calibration_100",
+   "caught": true,
+   "failed_tests": [
+    "o32_sample_is_the_first_100_and_50"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_g6_problems_are_calibration_problems",
+   "caught": true,
+   "failed_tests": [
+    "o32_sample_is_the_first_100_and_50"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_mistral_not_last",
+   "caught": true,
+   "failed_tests": [
+    "o34_mistral_last_and_first_to_drop"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_mistral_start_not_checked",
+   "caught": true,
+   "failed_tests": [
+    "o34_mistral_last_and_first_to_drop"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_design_never_drops_mistral",
+   "caught": true,
+   "failed_tests": [
+    "o19_g6_fit_and_reduction_order"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_design_cuts_another_model",
+   "caught": true,
+   "failed_tests": [
+    "o19_g6_fit_and_reduction_order"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_project_ignores_g8",
+   "caught": true,
+   "failed_tests": [
+    "o19_g6_fit_and_reduction_order"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_h4_estimated_without_all_seven",
+   "caught": true,
+   "failed_tests": [
+    "a20_h4_needs_all_seven"
+   ],
+   "seconds": 17.9
+  },
+  {
+   "mutant": "m_step0_compares_with_all_100",
+   "caught": true,
+   "failed_tests": [
+    "a16_step0_on_v3_records_themselves"
+   ],
+   "seconds": 0.4
+  },
+  {
+   "mutant": "m_stream_keeps_strict_encoding",
+   "caught": true,
+   "failed_tests": [
+    "o35_stream_survives_the_console_encoding"
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_closeout_always_ready",
+   "caught": true,
+   "failed_tests": [
+    "o36_closeout_report_gates_deletion"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_closeout_ignores_final_state",
+   "caught": true,
+   "failed_tests": [
+    "o36_closeout_report_gates_deletion"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_x13a_s1_unnormalized",
+   "caught": true,
+   "failed_tests": [
+    "a03_x13a_null_uses_model_head_dim",
+    "a13_h5_isotropic_falsified"
+   ],
+   "seconds": 20.2
+  },
+  {
+   "mutant": "m_x13a_null_always_64",
+   "caught": true,
+   "failed_tests": [
+    "a03_x13a_null_uses_model_head_dim"
+   ],
+   "seconds": 15.1
+  },
+  {
+   "mutant": "m_h4_permutation_over_problems",
+   "caught": true,
+   "failed_tests": [
+    "a01_h4_permutation_exact",
+    "a10_h4_incomplete_separation_inconclusive"
+   ],
+   "seconds": 20.1
+  },
+  {
+   "mutant": "m_holm_over_wrong_family",
+   "caught": true,
+   "failed_tests": [
+    "a05_truth_supported_everywhere"
+   ],
+   "seconds": 20.1
+  },
+  {
+   "mutant": "m_equivalence_ignores_dose_flag",
+   "caught": true,
+   "failed_tests": [
+    "a08_equivalence_needs_informative_dose"
+   ],
+   "seconds": 20.1
+  },
+  {
+   "mutant": "m_equivalence_not_falsifying",
+   "caught": true,
+   "failed_tests": [
+    "a02_readings_rules",
+    "a07_equivalence_falsifies_h2"
+   ],
+   "seconds": 20.3
+  },
+  {
+   "mutant": "m_h5_support_at_ln2",
+   "caught": true,
+   "failed_tests": [
+    "a02_readings_rules"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_h4_llama_rule_dropped",
+   "caught": true,
+   "failed_tests": [
+    "a18_h4_sign_rules_unit"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_flagged_not_excluded",
+   "caught": true,
+   "failed_tests": [
+    "a11_flagged_with_and_without"
+   ],
+   "seconds": 20.2
+  },
+  {
+   "mutant": "m_unresolved_included",
+   "caught": true,
+   "failed_tests": [
+    "a12_unresolved_model_and_h4_not_estimable"
+   ],
+   "seconds": 19.3
+  },
+  {
+   "mutant": "m_step0_no_point_rule",
+   "caught": true,
+   "failed_tests": [
+    "a16_step0_on_v3_records_themselves"
+   ],
+   "seconds": 17.8
+  },
+  {
+   "mutant": "m_step0_verdict_rule_for_small_theta",
+   "caught": true,
+   "failed_tests": [
+    "a16_step0_on_v3_records_themselves"
+   ],
+   "seconds": 7.0
+  },
+  {
+   "mutant": "m_step0_calibration_tolerance_off",
+   "caught": true,
+   "failed_tests": [
+    "a16_step0_on_v3_records_themselves"
+   ],
+   "seconds": 23.3
+  },
+  {
+   "mutant": "m_lock_text_files_hashed_as_raw_bytes",
+   "caught": true,
+   "failed_tests": [
+    "o38_lock_hashes_ignore_line_endings"
+   ],
+   "seconds": 0.5
+  },
+  {
+   "mutant": "m_locked_line_raw_bytes",
+   "caught": true,
+   "failed_tests": [
+    "o38_lock_hashes_ignore_line_endings"
+   ],
+   "seconds": 0.9
+  },
+  {
+   "mutant": "m_known_hosts_unquoted",
+   "caught": true,
+   "failed_tests": [
+    "o39_known_hosts_path_with_spaces_stays_one_file"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_ignores_v3_records",
+   "caught": true,
+   "failed_tests": [
+    "o25_gm_environment_logged_and_gated"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_v3_records_hash_not_checked",
+   "caught": true,
+   "failed_tests": [
+    "o40_v3_records_verified_against_manifest_and_v3_lock"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_v3_records_ignore_v3_lock",
+   "caught": true,
+   "failed_tests": [
+    "o40_v3_records_verified_against_manifest_and_v3_lock"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_v3_manifest_not_locked",
+   "caught": true,
+   "failed_tests": [
+    "o40_v3_records_verified_against_manifest_and_v3_lock"
+   ],
+   "seconds": 0.2
+  },
+  {
+   "mutant": "m_a16_returns_without_records",
+   "caught": true,
+   "failed_tests": [
+    "o41_tests_fail_loudly_without_their_inputs"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_a04_skips_missing_records",
+   "caught": true,
+   "failed_tests": [
+    "o41_tests_fail_loudly_without_their_inputs"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_deviation_hashes_ignored",
+   "caught": true,
+   "failed_tests": [
+    "o42_deviation_recorded_appended_and_verified"
+   ],
+   "seconds": 1.2
+  },
+  {
+   "mutant": "m_deviation_accepts_any_content",
+   "caught": true,
+   "failed_tests": [
+    "o42_deviation_recorded_appended_and_verified"
+   ],
+   "seconds": 1.5
+  },
+  {
+   "mutant": "m_append_deviation_unchecked",
+   "caught": true,
+   "failed_tests": [
+    "o42_deviation_recorded_appended_and_verified"
+   ],
+   "seconds": 0.9
+  },
+  {
+   "mutant": "m_drift_reference_factor_dropped",
+   "caught": true,
+   "failed_tests": [
+    "o43_drift_reference_and_gm_after_deviation"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_ignores_deviation",
+   "caught": true,
+   "failed_tests": [
+    "o43_drift_reference_and_gm_after_deviation"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_resume_check_always_passes",
+   "caught": true,
+   "failed_tests": [
+    "o44_resume_check_bitwise_against_stored_records"
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_run_test_skips_resume_check",
+   "caught": true,
+   "failed_tests": [
+    "o44_resume_check_bitwise_against_stored_records"
+   ],
+   "seconds": 0.0
+  }
+ ]
+}

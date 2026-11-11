@@ -1,0 +1,218 @@
+{
+ "H5_stage1": {
+  "n": 930,
+  "n_pos": 22,
+  "n_neg": 29,
+  "estimate_pp": -0.7526881720430108,
+  "lattice_step_pp": 0.10752688172043011,
+  "exact_bootstrap_ci90_pp": [
+   -2.043010752688172,
+   0.5376344086021506
+  ],
+  "exact_cdf_around_upper": {
+   "+0.32": 0.9300659127590615,
+   "+0.43": 0.9470901353025438,
+   "+0.54": 0.9606461552384699,
+   "+0.65": 0.9712281900910134
+  },
+  "streams": 1000,
+  "B_per_stream": 10000,
+  "upper_endpoint_frequency_over_streams": {
+   "+0.43": 109,
+   "+0.44": 13,
+   "+0.54": 878
+  },
+  "lower_endpoint_frequency_over_streams": {
+   "-2.04": 958,
+   "-1.94": 42
+  },
+  "delta_star_exact_pp": 2.043010752688172
+ },
+ "H5_heldout342": {
+  "n": 342,
+  "n_pos": 11,
+  "n_neg": 10,
+  "estimate_pp": 0.29239766081871343,
+  "lattice_step_pp": 0.29239766081871343,
+  "exact_bootstrap_ci90_pp": [
+   -2.046783625730994,
+   2.631578947368421
+  ],
+  "exact_cdf_around_upper": {
+   "+2.05": 0.9224950090005944,
+   "+2.34": 0.9493222389885533,
+   "+2.63": 0.9681113961408838,
+   "+2.92": 0.9806913302211899
+  },
+  "streams": 1000,
+  "B_per_stream": 10000,
+  "upper_endpoint_frequency_over_streams": {
+   "+2.34": 390,
+   "+2.35": 14,
+   "+2.63": 596
+  },
+  "lower_endpoint_frequency_over_streams": {
+   "-2.05": 515,
+   "-1.77": 14,
+   "-1.75": 471
+  },
+  "delta_star_exact_pp": 2.631578947368421
+ },
+ "H5_stored": {
+  "locked_analysis (Table B.5/B.6)": {
+   "stage1": [
+    -2.043010752688172,
+    0.5376344086021506
+   ],
+   "heldout342": [
+    -2.046783625730994,
+    2.3391812865497075
+   ]
+  },
+  "exploratory_audit (Table D.19)": {
+   "stage1": [
+    -2.043010752688172,
+    0.43010752688172044
+   ],
+   "heldout342": [
+    -2.046783625730994,
+    2.631578947368421
+   ]
+  }
+ },
+ "stage1_unparseable": {
+  "fp16": {
+   "parsed": 873,
+   "no_hash": 57,
+   "hash_without_number": 0,
+   "no_hash_pct": 6.129032258064516,
+   "unparseable": 57,
+   "unparseable_pct": 6.129032258064516
+  },
+  "nf4": {
+   "parsed": 815,
+   "no_hash": 115,
+   "hash_without_number": 0,
+   "no_hash_pct": 12.365591397849462,
+   "unparseable": 115,
+   "unparseable_pct": 12.365591397849462
+  },
+  "cache_only": {
+   "parsed": 825,
+   "no_hash": 105,
+   "hash_without_number": 0,
+   "no_hash_pct": 11.290322580645162,
+   "unparseable": 105,
+   "unparseable_pct": 11.290322580645162
+  },
+  "token_only": {
+   "parsed": 852,
+   "no_hash": 75,
+   "hash_without_number": 3,
+   "no_hash_pct": 8.064516129032258,
+   "unparseable": 78,
+   "unparseable_pct": 8.387096774193548
+  },
+  "oracle_flip": {
+   "parsed": 824,
+   "no_hash": 105,
+   "hash_without_number": 1,
+   "no_hash_pct": 11.290322580645162,
+   "unparseable": 106,
+   "unparseable_pct": 11.397849462365592
+  }
+ },
+ "lengths": {
+  "stage1_n930/fp16": {
+   "mean_len_ids": 108.55806451612904,
+   "mean_steps": 107.55806451612904,
+   "mean_prompt_tokens": 430.84086021505374
+  },
+  "stage1_n930/nf4": {
+   "mean_len_ids": 119.77741935483871,
+   "mean_steps": 118.77741935483871,
+   "mean_prompt_tokens": 430.84086021505374
+  },
+  "stage1_n930/cache_only": {
+   "mean_len_ids": 115.82903225806452,
+   "mean_steps": 114.82903225806452,
+   "mean_prompt_tokens": 430.84086021505374
+  },
+  "stage1_n930/token_only": {
+   "mean_len_ids": 112.79247311827957,
+   "mean_steps": 111.79247311827957,
+   "mean_prompt_tokens": 430.84086021505374
+  },
+  "stage1_n930/oracle_flip": {
+   "mean_len_ids": 116.35483870967742,
+   "mean_steps": 115.35483870967742,
+   "mean_prompt_tokens": 430.84086021505374
+  },
+  "stage1_n930/all_arms": {
+   "mean_len_ids": 114.66236559139784,
+   "mean_steps": 113.66236559139784
+  },
+  "heldout_n389/fp16": {
+   "mean_len_ids": 110.0719794344473,
+   "mean_steps": 109.0719794344473,
+   "mean_prompt_tokens": 431.4858611825193
+  },
+  "heldout_n389/nf4": {
+   "mean_len_ids": 118.19537275064268,
+   "mean_steps": 117.19537275064268,
+   "mean_prompt_tokens": 431.4858611825193
+  },
+  "heldout_n389/cache_only": {
+   "mean_len_ids": 116.54498714652956,
+   "mean_steps": 115.54498714652956,
+   "mean_prompt_tokens": 431.4858611825193
+  },
+  "heldout_n389/token_only": {
+   "mean_len_ids": 114.719794344473,
+   "mean_steps": 113.719794344473,
+   "mean_prompt_tokens": 431.4858611825193
+  },
+  "heldout_n389/oracle_flip": {
+   "mean_len_ids": 116.74035989717224,
+   "mean_steps": 115.74035989717224,
+   "mean_prompt_tokens": 431.4858611825193
+  },
+  "heldout_n389/all_arms": {
+   "mean_len_ids": 115.25449871465295,
+   "mean_steps": 114.25449871465295
+  },
+  "e1_tierA_n200/ref_len (source of 112)": 112.115,
+  "e1_tierA_n200/stored_fp16_len_ids": 112.115,
+  "e1_tierA_n200/stored_fp16_steps": 111.115,
+  "e1_tierA_n200/ref_len_equals_stored_len_ids_all": true
+ },
+ "tierB_accuracy_mde": {
+  "n": 400,
+  "formula": "(z_.975 + z_.80) * sqrt(discordance / n)",
+  "NAT-C1": {
+   "discordance": 0.2325,
+   "mde_pp": 6.754377355160436
+  },
+  "NAT-C2": {
+   "discordance": 0.235,
+   "mde_pp": 6.7905941153407845
+  },
+  "C2-C1": {
+   "discordance": 0.2125,
+   "mde_pp": 6.457334867321776
+  },
+  "NAT-FP16": {
+   "discordance": 0.1525,
+   "mde_pp": 5.470270010447921
+  },
+  "C1-FP16": {
+   "discordance": 0.195,
+   "mde_pp": 6.18573267325317
+  },
+  "C2-FP16": {
+   "discordance": 0.1975,
+   "mde_pp": 6.225258523816391
+  },
+  "protocol_projection": "E1 protocol draft: discordance 0.16-0.20 at n=500 -> 5-6 points"
+ }
+}

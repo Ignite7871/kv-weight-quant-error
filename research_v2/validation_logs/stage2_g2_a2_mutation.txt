@@ -1,0 +1,131 @@
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 336, in s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe
+    assert RS.stop_decision(cap - worst - T.HARD_MARGIN_S + 1, worst, cap) == "cap"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 336, in s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe
+    assert RS.stop_decision(cap - worst - T.HARD_MARGIN_S + 1, worst, cap) == "cap"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 336, in s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe
+    assert RS.stop_decision(cap - worst - T.HARD_MARGIN_S + 1, worst, cap) == "cap"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 332, in s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe
+    assert abs(worst - 1.25 * 80.0 * 1.03) < 1e-9 and T.worst_problem_seconds([], 1.03) == 0.0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 369, in s13_watchdog_fires_once_at_deadline_ticks_and_can_be_cancelled
+    assert len(fired) == 1 and w.fired and len(ticks) >= 2 and not w.is_alive(), (fired, ticks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ([], [])
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 393, in s14_pace_statistics_use_the_pooled_rate_and_record_recent_rate_separately
+    assert abs(ps["pooled_s_per_problem"] - pooled) < 1e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 418, in s15_telemetry_parsing_and_temperature_stop
+    assert T.hardware_stop({"temp_c": 87.9}) is None and "88" in T.hardware_stop({"temp_c": 88.0}) and T.hardware_stop({"temp_c": 95.0})
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 458, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    expect(lambda r: r["cache_only"]["ids"].__setitem__(5, r["cache_only"]["ids"][5] + 1), "argmax of its declared F source")
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 456, in expect
+    assert any(needle in e for e in errs), (needle, errs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('argmax of its declared F source', ['oracle_flip differs from cache_only before its first flip step'])
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 460, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    expect(lambda r: r["cache_only"].__setitem__("routes", "F" + r["cache_only"]["routes"][1:]), "KV letters")
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 456, in expect
+    assert any(needle in e for e in errs), (needle, errs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('KV letters', [])
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 464, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    expect(lambda r: r["cache_only"]["tF"].__setitem__(0, r["cache_only"]["tF"][0] + 1), "step-1 branch tokens")
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 456, in expect
+    assert any(needle in e for e in errs), (needle, errs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('step-1 branch tokens', ['cache_only: step 1 token 1414 != argmax of its declared F source'])
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 479, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    assert any("before its first flip" in e for e in T.problem_integrity_errors(recs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 486, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    assert any("different outcome" in e for e in T.problem_integrity_errors(recs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 462, in s16_integrity_checker_passes_real_records_and_catches_each_corruption
+    expect(lambda r: r["cache_only"]["js"].__setitem__(3, float("nan")), "JS divergence")
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 456, in expect
+    assert any(needle in e for e in errs), (needle, errs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('JS divergence', [])
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 524, in s17_checkpoint_verification_detects_edits_repeats_skips_and_reordering
+    assert not r["ok"] and any("differ from the snapshot" in p for p in r["problems"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 531, in s17_checkpoint_verification_detects_edits_repeats_skips_and_reordering
+    assert not T.verify_checkpoint(e, None, order)["ok"], name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: repeat
+KILLED    stop rule without the safety margin                       failed by: ['s12']
+KILLED    stop rule ignores worst-case problem duration             failed by: ['s12']
+KILLED    stop rule never stops                                     failed by: ['s12']
+KILLED    worst-case factor 1.0 instead of 1.25                     failed by: ['s12']
+KILLED    watchdog never fires                                      failed by: ['s13']
+KILLED    pooled pace uses only the current session                 failed by: ['s14']
+KILLED    temperature stop disabled                                 failed by: ['s15']
+KILLED    integrity: token-source check dropped                     failed by: ['s16']
+KILLED    integrity: KV-letter check dropped                        failed by: ['s16']
+KILLED    integrity: step-1 label check dropped                     failed by: ['s16']
+KILLED    integrity: flip-oracle prefix check dropped               failed by: ['s16']
+KILLED    integrity: identical-history outcome check dropped        failed by: ['s16']
+KILLED    integrity: JS range check dropped                         failed by: ['s16']
+KILLED    checkpoint: hash comparison dropped                       failed by: ['s17']
+KILLED    checkpoint: order/repeat/skip check dropped               failed by: ['s17']
+
+clean code passes all 6 A2 tests: True
+15/15 mutants killed

@@ -1,0 +1,58 @@
+{
+ "tiny_tests_total": 22,
+ "tiny_tests_failed": [],
+ "real": {
+  "qwen-base": {
+   "nat_bitwise_equal": true,
+   "diff_fields": [],
+   "integrity_errors": [],
+   "arms": [
+    "NAT",
+    "NAT-K-cen",
+    "NAT-V-cen",
+    "C1-nc",
+    "C1-K-nc"
+   ],
+   "steps": 4,
+   "pass": true
+  },
+  "llama-instruct": {
+   "nat_bitwise_equal": true,
+   "diff_fields": [],
+   "integrity_errors": [],
+   "arms": [
+    "NAT",
+    "NAT-K-cen",
+    "NAT-V-cen"
+   ],
+   "steps": 4,
+   "pass": true
+  },
+  "qwen-instruct": {
+   "nat_bitwise_equal": true,
+   "diff_fields": [],
+   "integrity_errors": [],
+   "arms": [
+    "NAT",
+    "NAT-K-cen",
+    "NAT-V-cen",
+    "C1-nc",
+    "C1-K-nc"
+   ],
+   "steps": 4,
+   "pass": true
+  },
+  "llama-base": {
+   "nat_bitwise_equal": true,
+   "diff_fields": [],
+   "integrity_errors": [],
+   "arms": [
+    "NAT",
+    "NAT-K-cen",
+    "NAT-V-cen"
+   ],
+   "steps": 4,
+   "pass": true
+  }
+ }
+}

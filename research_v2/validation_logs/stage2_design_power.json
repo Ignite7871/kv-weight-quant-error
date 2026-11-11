@@ -1,0 +1,54 @@
+{
+ "n_heldout": 389,
+ "sims": 20000,
+ "stage1_n": 930,
+ "contrasts": {
+  "cache_only - fp16": {
+   "stage1_estimate_pp": -2.3655913978494625,
+   "se_pp_at_n": 1.9504571997525149,
+   "mde80_pp": 5.464400890826646,
+   "discordant_share_stage1": 0.14838709677419354,
+   "p_raw_lt_0.05": 0.22775,
+   "p_holm_lt_0.05": 0.10405,
+   "p_same_sign_as_stage1": 0.8718
+  },
+  "token_only - fp16": {
+   "stage1_estimate_pp": -3.5483870967741935,
+   "se_pp_at_n": 2.1030285922087275,
+   "mde80_pp": 5.891844903931971,
+   "discordant_share_stage1": 0.17311827956989248,
+   "p_raw_lt_0.05": 0.3952,
+   "p_holm_lt_0.05": 0.21095,
+   "p_same_sign_as_stage1": 0.94615
+  },
+  "interaction (nf4 - cache_only - token_only + fp16)": {
+   "stage1_estimate_pp": -4.086021505376344,
+   "se_pp_at_n": 2.663890799179548,
+   "mde80_pp": 7.463156462981423,
+   "discordant_share_stage1": 0.23548387096774193,
+   "p_raw_lt_0.05": 0.3443,
+   "p_holm_lt_0.05": 0.17635,
+   "p_same_sign_as_stage1": 0.93205
+  },
+  "cache_only - nf4": {
+   "stage1_estimate_pp": 7.634408602150537,
+   "se_pp_at_n": 2.1534157148669,
+   "mde80_pp": 6.033009466771108,
+   "discordant_share_stage1": 0.1860215053763441,
+   "p_raw_lt_0.05": 0.9451,
+   "p_holm_lt_0.05": 0.8467,
+   "p_same_sign_as_stage1": 0.99975
+  },
+  "oracle_flip - cache_only": {
+   "stage1_estimate_pp": -0.7526881720430108,
+   "se_pp_at_n": 1.18734787495481,
+   "mde80_pp": 3.326473806473396,
+   "discordant_share_stage1": 0.054838709677419356,
+   "p_raw_lt_0.05": 0.102,
+   "p_holm_lt_0.05": 0.03515,
+   "p_same_sign_as_stage1": 0.70725,
+   "p_ci90_within_pm3pp": 0.53295
+  }
+ },
+ "note": "Assumes the Stage 1 distribution is the truth; Stage 1 estimates are likely optimistic (winner's curse), so true power is probably lower. The five Holm-adjusted figures use the same family as the locked analysis."
+}

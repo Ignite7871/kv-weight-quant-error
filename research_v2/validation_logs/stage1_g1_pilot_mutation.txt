@@ -1,0 +1,80 @@
+G1 pilot mutation check 2026-10-23T13:14:54Z
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 215, in t2b_oracle_extremes_equal_static_bitwise_including_cache
+    assert r_of.ids == r_f.ids and r_on.ids == r_n.ids
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 238, in t2c_mixed_routes_equal_single_pass_replay_bitwise
+    assert r2.ids == r.ids, f"{pol.name}: replay ids differ"
+           ^^^^^^^^^^^^^^^
+AssertionError: oracle_js@0.0617574: replay ids differ
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 215, in t2b_oracle_extremes_equal_static_bitwise_including_cache
+    assert r_of.ids == r_f.ids and r_on.ids == r_n.ids
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 136, in t1_lag_entropy_matches_historical_DynamicQwen_generate
+    assert res.ids == hist_ids, f"ids differ at tau={tau}"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: ids differ at tau=2.9840497970581055
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 136, in t1_lag_entropy_matches_historical_DynamicQwen_generate
+    assert res.ids == hist_ids, f"ids differ at tau={tau}"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: ids differ at tau=-1.0
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 176, in t1e_static_fp16_equals_unwrapped_model_absolute_reference
+    assert generate(be, prompt, StaticFP16(), MAX_NEW, EOS, 0).ids == ids
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 197, in t2_cascade_extremes_equal_static_bitwise_including_cache
+    r_ce, c_ce = run_with_cache(be, prompt, CascadeNF4Margin(2.0))    # margin < 2 always -> escalate
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 100, in run_with_cache
+    res = generate(backend, prompt, policy, MAX_NEW, EOS, idx, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\engine.py", line 164, in generate
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 39, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_cpu_tests.py", line 317, in t3d_cascade_decisions_invariant_to_fp16_weights_until_first_escalation
+    r_clean = generate(be, PROMPTS[1], pol, MAX_NEW, EOS, 0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\engine.py", line 164, in generate
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+KILLED   oracle restore skipped                    {'t2b_oracle_extremes_equal_static_bitwise_including_cache': 'FAIL', 't2c_mixed_routes_equal_single_pass_replay_bitwise': 'FAIL'}
+KILLED   oracle snapshot of wrong position         {'t2b_oracle_extremes_equal_static_bitwise_including_cache': 'FAIL'}
+KILLED   lag-entropy off by one step               {'t1_lag_entropy_matches_historical_DynamicQwen_generate': 'FAIL'}
+KILLED   routing flag inverted in backend          {'t1_lag_entropy_matches_historical_DynamicQwen_generate': 'FAIL', 't1e_static_fp16_equals_unwrapped_model_absolute_reference': 'FAIL'}
+KILLED   cascade rollback (cache crop) disabled    {'t2_cascade_extremes_equal_static_bitwise_including_cache': 'FAIL', 't3d_cascade_decisions_invariant_to_fp16_weights_until_first_escalation': 'FAIL'}
+clean run: {'t1_lag_entropy_matches_historical_DynamicQwen_generate': 'PASS', 't1e_static_fp16_equals_unwrapped_model_absolute_reference': 'PASS', 't2_cascade_extremes_equal_static_bitwise_including_cache': 'PASS', 't2b_oracle_extremes_equal_static_bitwise_including_cache': 'PASS', 't2c_mixed_routes_equal_single_pass_replay_bitwise': 'PASS', 't3d_cascade_decisions_invariant_to_fp16_weights_until_first_escalation': 'PASS'}
+
+5/5 mutants killed; clean code passes: True

@@ -1,0 +1,2 @@
+# Store every file byte-for-byte: the protocol locks hash exact file contents (some lock files mix CRLF and LF).
+* -text

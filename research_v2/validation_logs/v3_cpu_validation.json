@@ -1,0 +1,98 @@
+{
+ "tiny_tests_total": 32,
+ "tiny_tests_failed": [],
+ "static": {
+  "lock_e1.py": true,
+  "lock_e1l.py": true
+ },
+ "real": {
+  "qwen-base": {
+   "hf_id": "Qwen/Qwen2.5-0.5B",
+   "geometry": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_fp16": true,
+    "shape_K_layer0": [
+     1,
+     2,
+     22,
+     64
+    ],
+    "seq_len": 22
+   },
+   "n_dynamic_modules": 168,
+   "alpha0_bitwise_all_arms": true,
+   "integrity_errors": [],
+   "pass": true
+  },
+  "llama-instruct": {
+   "hf_id": "meta-llama/Llama-3.2-1B-Instruct",
+   "geometry": {
+    "n_layers": 16,
+    "n_kv_heads": 8,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_fp16": true,
+    "shape_K_layer0": [
+     1,
+     8,
+     23,
+     64
+    ],
+    "seq_len": 23
+   },
+   "n_dynamic_modules": 112,
+   "alpha0_bitwise_all_arms": true,
+   "integrity_errors": [],
+   "pass": true
+  },
+  "qwen-instruct": {
+   "hf_id": "Qwen/Qwen2.5-0.5B-Instruct",
+   "geometry": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_fp16": true,
+    "shape_K_layer0": [
+     1,
+     2,
+     22,
+     64
+    ],
+    "seq_len": 22
+   },
+   "n_dynamic_modules": 168,
+   "alpha0_bitwise_all_arms": true,
+   "integrity_errors": [],
+   "pass": true
+  },
+  "llama-base": {
+   "hf_id": "meta-llama/Llama-3.2-1B",
+   "geometry": {
+    "n_layers": 16,
+    "n_kv_heads": 8,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_fp16": true,
+    "shape_K_layer0": [
+     1,
+     8,
+     23,
+     64
+    ],
+    "seq_len": 23
+   },
+   "n_dynamic_modules": 112,
+   "alpha0_bitwise_all_arms": true,
+   "integrity_errors": [],
+   "pass": true
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "label": "EXPLORATORY, descriptive (EXPLORATORY_PLAN_V3.md, dated entry X11, 2026-10-31)",
+ "per_model": {
+  "qwen-base": {
+   "B": 56.013829779842936,
+   "B_q": 65.81485326359945,
+   "B_1": 46.813456954340005,
+   "per_slot_ratio_median": 57.907571782367214,
+   "per_slot_ratio_range": [
+    12.453006430683185,
+    255.04869660513978
+   ],
+   "observed_exp_theta_QA_QO": 32.03612727701633,
+   "observed_ci95": [
+    29.45761174699424,
+    34.856489246757384
+   ],
+   "dilution_gC1V_over_gQO": 0.7137047559738405,
+   "dilution_ci95": [
+    0.6687247529256739,
+    0.7627522514116807
+   ],
+   "n_slots": 48,
+   "check: max |E8 recomputed from M - frozen E8_per_slot|": 0.0
+  },
+  "llama-instruct": {
+   "B": 43.286075947680544,
+   "B_q": 44.275936684408414,
+   "B_1": 43.94530544069995,
+   "per_slot_ratio_median": 46.58999124230152,
+   "per_slot_ratio_range": [
+    19.620847780145972,
+    98.99970488793583
+   ],
+   "observed_exp_theta_QA_QO": 12.901803254462854,
+   "observed_ci95": [
+    12.15249424106707,
+    13.733234086128123
+   ],
+   "dilution_gC1V_over_gQO": 0.7492816245464092,
+   "dilution_ci95": [
+    0.7080929421464697,
+    0.7944401086433135
+   ],
+   "n_slots": 128,
+   "check: max |E8 recomputed from M - frozen E8_per_slot|": 0.0
+  },
+  "qwen-instruct": {
+   "B": 53.67310647473665,
+   "B_q": 64.4542664611682,
+   "B_1": 45.70003433013946,
+   "per_slot_ratio_median": 54.62587573628538,
+   "per_slot_ratio_range": [
+    12.774434613667239,
+    261.5239565370352
+   ],
+   "observed_exp_theta_QA_QO": 23.619714384840442,
+   "observed_ci95": [
+    21.396809002406414,
+    26.15799695803391
+   ],
+   "dilution_gC1V_over_gQO": 0.6899979837203863,
+   "dilution_ci95": [
+    0.649045849477608,
+    0.7323607463309819
+   ],
+   "n_slots": 48,
+   "check: max |E8 recomputed from M - frozen E8_per_slot|": 0.0
+  },
+  "llama-base": {
+   "B": 48.826224118519484,
+   "B_q": 49.425655227988,
+   "B_1": 49.160152610801006,
+   "per_slot_ratio_median": 52.530064049121094,
+   "per_slot_ratio_range": [
+    20.310945754599487,
+    120.17028762718466
+   ],
+   "observed_exp_theta_QA_QO": 15.072904439424676,
+   "observed_ci95": [
+    14.210053183823717,
+    15.982112997275335
+   ],
+   "dilution_gC1V_over_gQO": 0.667696798465991,
+   "dilution_ci95": [
+    0.6284636124493135,
+    0.7078807520186953
+   ],
+   "n_slots": 128,
+   "check: max |E8 recomputed from M - frozen E8_per_slot|": 0.0
+  }
+ }
+}

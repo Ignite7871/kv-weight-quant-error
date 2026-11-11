@@ -1,0 +1,17 @@
+G2 stage1 suite (run_stage1_tests.py --real) 2026-10-23T13:15:40Z
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:30,  9.40it/s]Loading weights:  59%|#####8    | 171/290 [00:00<00:00, 951.01it/s]Loading weights:  92%|#########2| 267/290 [00:00<00:00, 858.50it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 822.18it/s]
+
+========================================================================================================================
+s1_pure_cells_equal_static_arms_bitwise_including_cache                                     PASS  
+s2_hybrid_cells_match_independent_deepcopy_reference                                        PASS  
+s3_cache_after_run_equals_single_precision_teacher_forced_replay_of_emitted_history         PASS  
+s4_both_passes_of_a_step_see_identical_cache_and_the_emitted_token                          PASS  
+s5_token_source_labels_and_argmax_handling                                                  PASS  
+s6_logging_and_early_stop_do_not_change_generation                                          PASS  
+s7_cells_are_distinguishable_from_static_arms_and_each_other                                PASS  
+s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip        PASS  
+s9_cost_charges_every_executed_pass_of_hybrid_cells                                         PASS  
+s10_stage1_leaves_baseline_engine_and_historical_code_untouched_and_has_no_boundary_access  PASS  
+s11_real_qwen_cpu_hybrids_match_independent_reference                                       PASS  
+
+11/11 passed

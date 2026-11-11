@@ -1,0 +1,104 @@
+{
+ "utc": "2026-10-26T14:09:26Z",
+ "python": "3.12.10",
+ "steps": {
+  "unit_tests_real_model_included": {
+   "exit_code": 0,
+   "seconds": 166.4,
+   "tail": [
+    "c02_alpha_zero_reproduces_pure_fp16_bitwise                  PASS  ",
+    "c03_norm_matching_per_slot                                   PASS  ",
+    "c04_c2_preserves_coordinate_magnitudes_and_randomizes_signs  PASS  ",
+    "c05_c1_direction_is_unstructured                             PASS  ",
+    "c06_determinism_and_seed_dependence                          PASS  ",
+    "c07_teacher_forced_identical_history_and_first_step_zero     PASS  ",
+    "c08_reference_teacher_forced_matches_free_running_fp16       PASS  ",
+    "c09_prefill_and_earlier_entries_never_modified               PASS  ",
+    "c10_perturbation_changes_only_newest_decode_entries          PASS  ",
+    "c11_diagnostics_report_matched_norms                         PASS  ",
+    "c12_c1_noise_independent_across_slots                        PASS  ",
+    "c13_js64_matches_independent_formula                         PASS  ",
+    "r01_real_model_cpu_smoke                                     PASS  ",
+    "14/14 passed",
+    "W1026 19:39:55.438000 20144 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels",
+    "Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]",
+    "Loading weights:  63%|######3   | 183/290 [00:00<00:00, 1702.04it/s]",
+    "Loading weights: 100%|##########| 290/290 [00:00<00:00, 1413.74it/s]"
+   ]
+  },
+  "mutation_check": {
+   "exit_code": 0,
+   "seconds": 48.8,
+   "tail": [
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 80, in c01_nat_equals_engine_cache_only_bitwise",
+    "    assert eng.ids == res.ids, \"NAT tokens differ from the engine's cache-only tokens\"",
+    "           ^^^^^^^^^^^^^^^^^^",
+    "AssertionError: NAT tokens differ from the engine's cache-only tokens",
+    "Traceback (most recent call last):",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 36, in wrapper",
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 80, in c01_nat_equals_engine_cache_only_bitwise",
+    "    assert eng.ids == res.ids, \"NAT tokens differ from the engine's cache-only tokens\"",
+    "           ^^^^^^^^^^^^^^^^^^",
+    "AssertionError: NAT tokens differ from the engine's cache-only tokens",
+    "Traceback (most recent call last):",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 36, in wrapper",
+    "    fn()",
+    "  File \"D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\tests\\run_controls_tests.py\", line 91, in c02_alpha_zero_reproduces_pure_fp16_bitwise",
+    "    assert ref.ids == res.ids, f\"{arm} alpha=0 tokens differ from FP16\"",
+    "           ^^^^^^^^^^^^^^^^^^",
+    "AssertionError: C1 alpha=0 tokens differ from FP16"
+   ]
+  },
+  "analysis_tests": {
+   "exit_code": 0,
+   "seconds": 2.0,
+   "tail": [
+    "t01_holm_matches_manual                                        PASS  ",
+    "t02_estimate_recovers_known_effect_and_ci_covers               PASS  ",
+    "t03_null_has_nominal_type_I_error_and_equivalence_verdict      PASS  ",
+    "t04_equivalence_not_claimable_when_dose_response_flat          PASS  ",
+    "t05_dose_slope_and_calibration_recover_truth                   PASS  ",
+    "t06_calibration_clamps_and_flags                               PASS  ",
+    "t07_first_divergence_and_restriction                           PASS  ",
+    "t08_tierB_contrast_matches_manual_computation                  PASS  ",
+    "t09_bootstrap_ci_agrees_with_independent_normal_approximation  PASS  ",
+    "t10_floor_prevents_log_of_zero                                 PASS  ",
+    "10/10 passed"
+   ]
+  },
+  "plan_consistency": {
+   "exit_code": 0,
+   "seconds": 15.6,
+   "tail": [
+    "{'test_order_seed': 'rv2-E1-test-order-2026-10-27', 'calibration_seed': 'rv2-E1-calibration-train-2026-10-27', 'n_test': 1319, 'tierB_ids': 400, 'tierA_ids': 200, 'calibration_train_ids': 100, 'gate_train_ids': 20, 'gate_test_ids_for_G5': 24, 'exposed_test_ids_in_sample': 13, 'fp16_reference_files_sha256': {'stage1_runs/eval/fp16.jsonl': '76a3fc6cf85851153a9cf0a54f0938c0ce10c7cecb806a84476fc400655ef4f4', 'stage2_runs/eval/fp16.jsonl': '943e91a3de6f4c85dcf50536c4ffab989a890244f1954fa5c70007bb5ab38e36'}, 'note': 'Tier A reuses the stored FP16 token sequences of Stage 1/2 only as the shared teacher-forced history; the FP16 reference distributions are recomputed in-session.'}",
+    "tier A subset of tier B: True | exposed test problems in sample: 13",
+    "W1026 19:43:32.911000 33520 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels"
+   ]
+  },
+  "cpu_smoke_real_model_io": {
+   "exit_code": 0,
+   "seconds": 394.0,
+   "tail": [
+    "Tier A integrity errors: []",
+    "Tier B FP16 WRONG 11",
+    "Tier B NAT WRONG 11",
+    "Tier B C1 WRONG 11",
+    "Tier B C2 WRONG 11",
+    "records written to D:\\Projects\\Dynamic Precision Scaling\\entropy-dps-project\\research_v2\\validation_logs\\e1_cpu_smoke",
+    "W1026 19:43:52.925000 11180 Lib\\site-packages\\torch\\utils\\flop_counter.py:29] triton not found; flop counting will not work for triton kernels",
+    "Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]",
+    "Loading weights:   0%|          | 1/290 [00:00<01:05,  4.41it/s]",
+    "Loading weights:  80%|#######9  | 231/290 [00:00<00:00, 868.48it/s]",
+    "Loading weights: 100%|##########| 290/290 [00:00<00:00, 726.73it/s]"
+   ]
+  }
+ },
+ "versions": {
+  "torch": "2.13.0+cu126",
+  "transformers": "5.13.0",
+  "bitsandbytes": "0.49.2"
+ },
+ "git_head_at_run": "33c9e726639ff1a795e684a1eb3409d8c6fd2332",
+ "all_passed": true
+}

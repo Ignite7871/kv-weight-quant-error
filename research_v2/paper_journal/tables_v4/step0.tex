@@ -1,0 +1,26 @@
+\begin{table}[tbp]
+\centering\small
+\caption{Step 0, cross-hardware check on the A40 against the earlier laptop-GPU records: $\delta=\theta_{\mathrm{A40}}-\theta_{\mathrm{earlier}}$ per contrast, paired by problem, with its 90\% interval. Criterion 1 requires the interval inside $\pm$ the earlier margin and $|\hat\delta|\le0.10$.}
+\label{tab:step0}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrll@{}}
+\toprule
+Model (margin) & Contrast & Earlier $\theta$ & $\hat\delta$ & 90\% CI of $\delta$ \\
+\midrule
+Qwen2.5-0.5B (\vf{st.qa.margin}) & NAT-K$-$C1-K & \vf{st.qa.hone.vthree} & \vf{st.qa.hone.d} & \vf{st.qa.hone.ci} \\
+ & NAT-V$-$C1-V & \vf{st.qa.htwo.vthree} & \vf{st.qa.htwo.d} & \vf{st.qa.htwo.ci} \\
+ & NAT-K$-$NAT-V & \vf{st.qa.hthree.vthree} & \vf{st.qa.hthree.d} & \vf{st.qa.hthree.ci} \\
+ & NAT$-$C1 & \vf{st.qa.natc.vthree} & \vf{st.qa.natc.d} & \vf{st.qa.natc.ci} \\
+\midrule
+Llama-3.2-1B-Instruct (\vf{st.li.margin}) & NAT-K$-$C1-K & \vf{st.li.hone.vthree} & \vf{st.li.hone.d} & \vf{st.li.hone.ci} \\
+ & NAT-V$-$C1-V & \vf{st.li.htwo.vthree} & \vf{st.li.htwo.d} & \vf{st.li.htwo.ci} \\
+ & NAT-K$-$NAT-V & \vf{st.li.hthree.vthree} & \vf{st.li.hthree.d} & \vf{st.li.hthree.ci} \\
+ & NAT$-$C1 & \vf{st.li.natc.vthree} & \vf{st.li.natc.d} & \vf{st.li.natc.ci} \\
+\midrule
+Llama-3.2-1B (\vf{st.la.margin}) & NAT-K$-$C1-K & \vf{st.la.hone.vthree} & \vf{st.la.hone.d} & \vf{st.la.hone.ci} \\
+ & NAT-V$-$C1-V & \vf{st.la.htwo.vthree} & \vf{st.la.htwo.d} & \vf{st.la.htwo.ci} \\
+ & NAT-K$-$NAT-V & \vf{st.la.hthree.vthree} & \vf{st.la.hthree.d} & \vf{st.la.hthree.ci} \\
+ & NAT$-$C1 & \vf{st.la.natc.vthree} & \vf{st.la.natc.d} & \vf{st.la.natc.ci} \\
+\bottomrule
+\end{tabular}
+\end{table}

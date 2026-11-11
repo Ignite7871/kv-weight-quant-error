@@ -1,0 +1,30 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:39,  7.33it/s]Loading weights:  67%|######7   | 195/290 [00:00<00:00, 984.30it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 883.11it/s]
+    real-model weight bytes per pass: {'fp16_routed': 715708416, 'nf4_routed': 184646976, 'unrouted': 272357248, 'kv_bytes_per_token': 12288}
+
+====================================================================================================
+t1_lag_entropy_matches_historical_DynamicQwen_generate                  PASS  
+t1b_random_matches_historical_generate_with_random_routing              PASS  
+t1c_static_policies_equal_extreme_thresholds                            PASS  
+t1e_static_fp16_equals_unwrapped_model_absolute_reference               PASS  
+t1d_precisions_actually_differ                                          PASS  
+t2_cascade_extremes_equal_static_bitwise_including_cache                PASS  
+t2b_oracle_extremes_equal_static_bitwise_including_cache                PASS  
+t2c_mixed_routes_equal_single_pass_replay_bitwise                       PASS  
+t2d_oracle_flip_semantics                                               PASS  
+t3_stepview_blocks_undeclared_fields                                    PASS  
+t3b_deployable_policies_cannot_declare_fp16_current                     PASS  
+t3c_pass_order_never_computes_fp16_before_deployable_decision           PASS  
+t3d_cascade_decisions_invariant_to_fp16_weights_until_first_escalation  PASS  
+t4_random_streams_order_independent_and_distinct                        PASS  
+t5_accounting_consistency                                               PASS  
+t5c_cost_charges_every_executed_pass_and_cache_op                       PASS  
+t3e_answer_boundary_cannot_influence_generation                         PASS  
+t8_tie_rule_and_cost_matching                                           PASS  
+t9_lean_mode_is_token_and_route_identical                               PASS  
+t5b_eos_handling_matches_historical                                     PASS  
+t6_boundary_cases                                                       PASS  
+t6b_early_stop_is_prefix_stable                                         PASS  
+t6c_offset_inconsistency_is_flagged_not_hidden                          PASS  
+t7_real_qwen_cpu_lag_entropy_matches_historical                         PASS  
+
+24/24 passed

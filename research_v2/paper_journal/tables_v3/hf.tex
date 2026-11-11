@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering\small
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}l l l l l l l@{}}
+\toprule
+Contrast & Estimate & 95\% CI & 90\% CI & Holm $p$ & Verdict & Pre-declared prediction \\
+\midrule
+Family: $\tfrac12[(c+d)-(a+b)]$ & \vn{hf.fam.est} & \vn{hf.fam.ci} & \vn{hf.fam.ci90} & \vn{hf.fam.holm} & \vn{hf.fam.verdict} & $>0$: \vn{hf.word.fam} \\
+Tuning: $\tfrac12[(b+d)-(a+c)]$ & \vn{hf.tun.est} & \vn{hf.tun.ci} & \vn{hf.tun.ci90} & \vn{hf.tun.holm} & \vn{hf.tun.verdict} & $>0$: \vn{hf.word.tun} \\
+Interaction: $\tfrac12[(a-b)-(c-d)]$ & \vn{hf.int.est} & \vn{hf.int.ci} & \vn{hf.int.ci90} & \vn{hf.int.holm} & \vn{hf.int.verdict} & two-sided: additivity \vn{hf.word.add} \\
+\midrule
+\multicolumn{7}{@{}l}{SD of $\theta_{m,i}$: Qwen-base \vn{hf.sd.qb}, Qwen-instruct \vn{hf.sd.qi}, Llama-base \vn{hf.sd.lb}, Llama-instruct \vn{hf.sd.li} (guard limit \vn{hf.guard})} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{H-F \tagC{}: family $\mathcal{F}_{2\times2}$ over the per-problem $\theta_{m,i}=\log m_i^{\mathrm{NAT}}-\log m_i^{\mathrm{C1}}$, with $a=$ Qwen-base, $b=$ Qwen-instruct, $c=$ Llama-base, $d=$ Llama-instruct, paired over the same 200 problems; Holm over the three contrasts; equivalence margin $\pm$\vn{hf.margin} (mean of the four calibrated margins). One model per cell: the contrasts compare four specific models.}
+\label{tab:hf}
+\end{table}

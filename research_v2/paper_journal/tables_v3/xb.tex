@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{4.1cm}p{2.55cm}p{2.55cm}p{2.55cm}p{2.55cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule\multicolumn{5}{@{}l}{\emph{REL arms against the dose-slope benchmark (X10)}} \\
+K: $R_{\mathrm{obs}}$ vs $s_K^{\hat b}$ & \vn{x10.qb.K.robs} vs \vn{x10.qb.K.rpred} & \vn{x10.qi.K.robs} vs \vn{x10.qi.K.rpred} & \vn{x10.lb.K.robs} vs \vn{x10.lb.K.rpred} & \vn{x10.li.K.robs} vs \vn{x10.li.K.rpred} \\
+K: $R_{\mathrm{obs}}/s_K^{\hat b}$ & \vn{x10.qb.K.ratio} & \vn{x10.qi.K.ratio} & \vn{x10.lb.K.ratio} & \vn{x10.li.K.ratio} \\
+V: $R_{\mathrm{obs}}/s_V^{\hat b}$ & \vn{x10.qb.V.ratio} & \vn{x10.qi.V.ratio} & \vn{x10.lb.V.ratio} & \vn{x10.li.V.ratio} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Effective REL-K scale per layer, $\rho^\ast/\rho_{\mathrm{slot}}$ (X9d)}} \\
+Nominal $s_K$ & \vn{x9d.qb.sK} & \vn{x9d.qi.sK} & \vn{x9d.lb.sK} & \vn{x9d.li.sK} \\
+Layer 0 (median) & \vn{x9d.qb.L0} & \vn{x9d.qi.L0} & \vn{x9d.lb.L0} & \vn{x9d.li.L0} \\
+Largest other layer; median of other layers & \vn{x9d.qb.restmax}; \vn{x9d.qb.restmed} & \vn{x9d.qi.restmax}; \vn{x9d.qi.restmed} & \vn{x9d.lb.restmax}; \vn{x9d.lb.restmed} & \vn{x9d.li.restmax}; \vn{x9d.li.restmed} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Layer 0 left natural (X9b)}} \\
+Share $G$ of the REL-K excess removed; verdict & \vn{x9b.qb.G} \vn{x9b.qb.Gci}\newline \vn{x9b.qb.verdict} & \vn{x9b.qi.G} \vn{x9b.qi.Gci}\newline \vn{x9b.qi.verdict} & \vn{x9b.lb.G} \vn{x9b.lb.Gci}\newline \vn{x9b.lb.verdict} & \vn{x9b.li.G} \vn{x9b.li.Gci}\newline \vn{x9b.li.verdict} \\
+Excess over benchmark: REL-K $\to$ layer 0 natural & \vn{x9b.qb.EK} $\to$ \vn{x9b.qb.EL0} & \vn{x9b.qi.EK} $\to$ \vn{x9b.qi.EL0} & \vn{x9b.lb.EK} $\to$ \vn{x9b.lb.EL0} & \vn{x9b.li.EK} $\to$ \vn{x9b.li.EL0} \\
+\midrule\multicolumn{5}{@{}l}{\emph{H-B positive control (X11)}} \\
+First-order benchmark $B$ & \vn{x11.qb.B} & \vn{x11.qi.B} & \vn{x11.lb.B} & \vn{x11.li.B} \\
+Observed $e^{\theta(\mathrm{QA},\mathrm{QO})}$ (locked) & \vn{hb.qb.ratio} & \vn{hb.qi.ratio} & \vn{hb.lb.ratio} & \vn{hb.li.ratio} \\
+Shared-V dilution $\mathrm{GM}(\text{C1-V})/\mathrm{GM}(\mathrm{QO})$ & \vn{x11.qb.dil} \vn{x11.qb.dilci} & \vn{x11.qi.dil} \vn{x11.qi.dilci} & \vn{x11.lb.dil} \vn{x11.lb.dilci} & \vn{x11.li.dil} \vn{x11.li.dilci} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Exploratory analyses \tagE{}, part 2: equal-relative-error matching and the H-B positive control. X10, X9d and X11 are descriptive; X9b is an exploratory test in the two Qwen models (rule of FOLLOWUP\_X9; no adjustment across the two) and a descriptive control in the Llama models. $R_{\mathrm{obs}}=e^{\theta(\text{REL-}P,\,\text{NAT-}P)}$; benchmark $s_P^{\hat b}$ from the calibrated dose slope; ratios above 1 mean REL-$P$ is more disruptive than uniform scaling at the slope's rate would predict. GM: geometric mean over problems of the per-problem mean JS.}
+\label{tab:xb}
+\end{table}

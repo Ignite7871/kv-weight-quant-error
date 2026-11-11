@@ -1,0 +1,109 @@
+protocol lock -- research_v2 v4 (scale study of weight-induced cache error on rented cloud GPUs)
+utc: 2026-11-08T06:25:28.643020+00:00
+git commit containing the locked files: 0f1be9c93a3a53eb852124d52bef8ccbf4f768e7
+Hashes are SHA-256 of the committed file contents (git show <commit>:<path>).
+PREVIOUS LOCK: 935fe55c67cd9d1de6370a87f9d0e32fd305355c58a63395b61556ba0c47b891  research_v2/V3_PROTOCOL_LOCK.txt
+PREVIOUS LOCK: b2de4b3cf17d4911a539ea901ac3edea5172175f2a11cc019f333411bc9d2c85  research_v2/E1_PROTOCOL_LOCK.txt
+PREVIOUS LOCK: 47ce7ce8eced2cc7492d21b9fff0ed98208383df0382b39485a4a7acc713503f  research_v2/E1L_PROTOCOL_LOCK.txt
+AMENDMENT r4: from lock 411c11598561d374 (commit f3a54cc739d483c258e8c27b9e95f8316cdfd77f); old lock sha256 411c11598561d374b9858ca9745f5b0aaaff94a3aaabf351dff899c79ecea415 preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_411c11598561d374.txt; Pre-data amendment r4: A40 for the whole study, reload double-load fixed, deterministic settings, GM environment log, image digest record, lock amendment path, deviation log; no study data existed.
+AMENDMENT r5: from lock f02dd185f8bc2792 (commit 59b966d9d05fe2e1b6545d14a3a78cff91dd7827); old lock sha256 f02dd185f8bc27922b7e7cbd2d41369fccd4c37921e1b9d6f9e9c6ed79aee15e preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_f02dd185f8bc2792.txt; r5 (pre-data, budget): hard ceiling 30 USD including storage with a stop at 29; HQQ dropped (D4); test n = 100 (first 100 of the seeded 200), calibration n = 50; network volume 100 GB, deleted after verified download; run order Step 0, Qwen/Llama ladder, Mistral last; reduction order drop Mistral then stop and report; H4 needs all seven Qwen/Llama models; v4_remote stream encoding fix
+AMENDMENT r6: from lock ae5bd6db5ce48b7a (commit 9e3491af254cc2ed20f5e758a8d86f4c43df2827); old lock sha256 ae5bd6db5ce48b7a7c038b02f6ddcd12f37def4a90ba895069b68084872b3497 preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_ae5bd6db5ce48b7a.txt; r6 (pre-data, tooling): previous locks and appended run files hashed LF-normalized on writing and verifying (lock could not verify on the pod, V4-A7); quoted known_hosts path in v4_remote; runbook command syntax; no change to science, arms, sample or ceiling
+AMENDMENT r7: from lock 349d0acad9712e91 (commit e23552f1539c96bd88d4e397067e70ba7348cd82); old lock sha256 349d0acad9712e91508f548e5553b0853cf39b574f20b6b56dbb795eb712f624 preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_349d0acad9712e91.txt; Pre-data fix of three CUDA-only device bugs in test_rv4 (t08, t12, t13) found when GM failed under lock 349d0acad9712e91 (V4-A9); verified on local CUDA and by a run-path smoke test; science, arms, sample, gates and ceiling unchanged.
+AMENDMENT r8: from lock e5e53c243e044bad (commit 0a46faf963308e41b4198aaeb48e14a4dd4a27aa); old lock sha256 e5e53c243e044badc0ac78793afb4fde386969e3173e5c0328cde087dc08cf5a preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_e5e53c243e044bad.txt; Pre-data: tests that passed without inputs fail loudly (a04, a16, o39); locked v3 records for the Step 0 tests copied to the pod under a committed manifest and verified by GM (V4-A12); science, arms, sample, gates and ceiling unchanged.
+AMENDMENT r8b: from lock 3ed7b28e64c3b636 (commit e7f76e1e797129d041bfa2b4f1419e8170d3e3bc); old lock sha256 3ed7b28e64c3b636fe121f19963f471f29b6f3f16388bb9aee13ddff02bd2343 preserved at research_v2/v4/lock_history/V4_PROTOCOL_LOCK_3ed7b28e64c3b636.txt; Pre-data: the v3 records manifest and tools/v4_v3_records.py added to the locked file list (omitted by lock 3ed7b28e64c3b636, which authorized nothing); otherwise as r8.
+MODEL qwen2.5-0.5b Qwen/Qwen2.5-0.5B@060db6499f32faf8b98477b0a26969ef7d8b9987: 88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342  model.safetensors
+MODEL qwen2.5-1.5b Qwen/Qwen2.5-1.5B@8faed761d45a263340a0528343f099c05c9a4323: a961db72e75d52b18e6b0c9d379e51a26973b233385e0e127fdda7d648aec796  model.safetensors
+MODEL qwen2.5-3b Qwen/Qwen2.5-3B@3aab1f1954e9cc14eb9509a215f9e5ca08227a9b: f9558df91d3b89b4826e4db37439edb52f1d62a4fd602685013e7ca6b9f60f8f  model-00001-of-00002.safetensors
+MODEL qwen2.5-3b Qwen/Qwen2.5-3B@3aab1f1954e9cc14eb9509a215f9e5ca08227a9b: 51410930d5cf19a998fdb17ef0c46e4d9ace72c97a975a3331395a8a500f5edb  model-00002-of-00002.safetensors
+MODEL qwen2.5-7b Qwen/Qwen2.5-7B@d149729398750b98c0af14eb82c78cfe92750796: b6d4b6e881d17e9235934419b1c17a8bb0f1108579404e0a468a6afdeae6e868  model-00001-of-00004.safetensors
+MODEL qwen2.5-7b Qwen/Qwen2.5-7B@d149729398750b98c0af14eb82c78cfe92750796: 687e8d08dc82b5f7d69322f1d8691d49b59db9039b07e7ea71010fb6434d5274  model-00002-of-00004.safetensors
+MODEL qwen2.5-7b Qwen/Qwen2.5-7B@d149729398750b98c0af14eb82c78cfe92750796: 32652eb23537597cca8c7a56ec85b5d5f1c7245b16269a904d57e85aa1aff30e  model-00003-of-00004.safetensors
+MODEL qwen2.5-7b Qwen/Qwen2.5-7B@d149729398750b98c0af14eb82c78cfe92750796: b5a2298dddcf228129975a9a271912a9f8dc817957deecde523e3154481ec3fb  model-00004-of-00004.safetensors
+MODEL llama3.2-1b meta-llama/Llama-3.2-1B@4e20de362430cd3b72f300e6b0f18e50e7166e08: 68a2e4be76fa709455a60272fba8e512c02d81c46e6c671cc9449e374fd6809a  model.safetensors
+MODEL llama3.2-3b meta-llama/Llama-3.2-3B@13afe5124825b4f3751f836b40dafda64c1ed062: 584d8d3e3f82f7964955174dfe5e3b1cf117a9d859f022cfdf7fcb884856e002  model-00001-of-00002.safetensors
+MODEL llama3.2-3b meta-llama/Llama-3.2-3B@13afe5124825b4f3751f836b40dafda64c1ed062: 4719a04514ec2f060240711b7c33ab21187cac730ecaba3040b7a0fd95a9cefb  model-00002-of-00002.safetensors
+MODEL llama3.1-8b meta-llama/Llama-3.1-8B@d04e592bb4f6aa9cfee91e2e20afa771667e1d4b: f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b  model-00001-of-00004.safetensors
+MODEL llama3.1-8b meta-llama/Llama-3.1-8B@d04e592bb4f6aa9cfee91e2e20afa771667e1d4b: c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0  model-00002-of-00004.safetensors
+MODEL llama3.1-8b meta-llama/Llama-3.1-8B@d04e592bb4f6aa9cfee91e2e20afa771667e1d4b: d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383  model-00003-of-00004.safetensors
+MODEL llama3.1-8b meta-llama/Llama-3.1-8B@d04e592bb4f6aa9cfee91e2e20afa771667e1d4b: e4486f35c040f683f7d790354f66c169c109eb9fa0954a4a35d7c458a108405d  model-00004-of-00004.safetensors
+MODEL mistral-7b-v0.3 mistralai/Mistral-7B-v0.3@caa1feb0e54d415e2df31207e5f4e273e33509b1: 2d7de8eb9bd554cccc999649fd5a3a28a44d09042879d6c1cedd13f59c86f7a8  model-00001-of-00003.safetensors
+MODEL mistral-7b-v0.3 mistralai/Mistral-7B-v0.3@caa1feb0e54d415e2df31207e5f4e273e33509b1: 79a5f871a0fbb7919f263d78caff0d4d3b7a1d444552db3011ada70f48fd5ee4  model-00002-of-00003.safetensors
+MODEL mistral-7b-v0.3 mistralai/Mistral-7B-v0.3@caa1feb0e54d415e2df31207e5f4e273e33509b1: ba7ae59358f726f5f5bc5264fd8a3aec907f42e6009d7b22454007d18723616a  model-00003-of-00003.safetensors
+MODEL llama3.2-1b-instruct meta-llama/Llama-3.2-1B-Instruct@9213176726f574b556790deb65791e0c5aa438b6: 1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f  model.safetensors
+Private dated hash for coauthors. NOT a public pre-registration.
+PROVENANCE: v4 is EXPLORATORY IN ORIGIN: H1-H5 come from the v3 locked results and X13. The 100 test ids and 50 calibration ids are the first
+of the 200 and 100 of the locked E1/v3 sample. No v4 outcome exists at lock time. This lock is NOT an authorization to run: the corresponding author creates one
+file per model, v4_runs/AUTHORIZED_V4_<model>.txt (and AUTHORIZED_V4_GM.txt), containing 'PROTOCOL_V4',
+the lock id printed by `tools/lock_v4.py --lock-id` and the model id.
+
+1833bd53e7f824d79432d037a10b170386969dad1919cc4f61873ee045a67641  research_v2/v4/PROTOCOL_V4.md
+62d8f7f8fe9136a6abf5177aeba4751ea508e035a695609a5143c1fb26a4c389  research_v2/v4/phase2/PHASE2_LITERATURE.md
+51c4ab7c0294f58d300e1ed95122a7216576f459d15d0ea1cf81326bd04b071e  research_v2/v4/V4_MODEL_MANIFEST.json
+59b131b70eccdb37eb3adee007c1e822fea8f943e0cbbea696181569d8bd1c73  research_v2/v4/v4_sample.json
+eaac3936621a3b6f3656350eeacc2e7ecc3cdf5ed40a1e992d6ad99f4df0f2bc  research_v2/v4/V4_PACKAGES.txt
+042799b4740c46874765e76680074df5519efb87b9272dd53b26f7cdfd4e7fac  research_v2/v4/rv4.py
+6f0261e891601f497548c218ade03abf7350e10836aebe5d9b563471b8dbcdc8  research_v2/v4/v4_ops.py
+05b4c19a7bdbe149a8bb52c5ed614954ccd3d74ebabe9ae99018579e3ab9752e  research_v2/v4/run_v4.py
+81f405c5017879be4f191e00a57eb1120e93ce98b124ce785c3d647bc98de07d  research_v2/v4/analyze_v4.py
+e9ce1a85dd0563bc6c636ce76160824d24236f6c77273ce7107c8bb48d8f3c60  research_v2/v4/recompute_v4_independent.py
+17aef1bbc363499b2c12bef825bea81b11e3abfc80c3f71326c33d785ccf1e31  research_v2/v4/RECOMPUTATION_TOLERANCES_V4.md
+1a6d43a3959ce3fe8c5503f82380fd912f1da882906113002025804a8cd93811  research_v2/v4/plan/v4_plan_numbers.py
+fec40941560536f1883891409759ad6efa50f30d2a193b19d2ef9e2b0ae8ec6d  research_v2/v4/plan/v4_plan_numbers.json
+b099cc4b05f8dcd8858c0d48fd80fce8dcbf4d5ba632789f801997559c1e1048  research_v2/v4/cloud/pod_setup.sh
+e99ede68e5c5cbbb7c956c6e45f39a26d547b0507f609cf3ae1d801a1f1e9b11  research_v2/v4/cloud/RUNBOOK_V4.md
+c1525b191db2769e6b14d716f186283baaff0cb257e7ab506c127f52cba26468  research_v2/v4/v3_records_manifest.json
+8026d353ae58dfbf839558fb1537b9ba7cb74da264a544043c7d0bb0fb381cca  research_v2/v4/tests/mutation_check_v4.py
+811fcf41e3750f69cf8155f2a908c6868cb7385389e68d082090f669da66f122  research_v2/v4/tests/real_model_cpu_v4.py
+2161d6bf887a9d5c9eb7aabbf36130dd622c66cfd0c7d6aebb8c34107c3a7c3a  research_v2/v4/tests/test_analyze_v4.py
+5357f4382de427f980949880ee11e7c74e936531499baa1dbf3b3f9a3e108ace  research_v2/v4/tests/test_ops_v4.py
+bae58e461be3af87bbcccb1f7674c2a2087d9bacc33db33390172bde1ac8983e  research_v2/v4/tests/test_rv4.py
+336e80cf389a5c9e2faf09a7593d77d982c24af1ec9de16e12e5e3f92f1f2991  research_v2/v4/validation/v4_mutation_check.json
+f408e5ffdcedd93487fbe456d634ed92568d236403a9858b7b5bc353d9907b91  research_v2/v4/validation/v4_real_model_cpu.json
+fd0c7a62d95486674f1e16883a6a5d90b4fd0490f45b4cb7ef36690666abdafd  research_v2/v4/validation/v4_test_analyze.json
+bc909d8cdcf4eac75c05ad91b91b50467bacf65f20ae0e3a9769ec3d8571dad0  research_v2/v4/validation/v4_test_ops.json
+51520c6c166fb3528b9f40af6274d9573bccf736748e792887e4756433e9dd72  research_v2/v4/validation/v4_test_rv4.json
+5b2c02e5fbba82f824257ac6fba2678eb8693bbc4936cf0732b4292861fecfb2  research_v2/v4/validation/v4_validation_summary.json
+a0dca7ee3827400619ca05116e2688cf22dbd1640914a8abc18bb7ef9b01728c  research_v2/tools/lock_v4.py
+ddaf7e6d70d098f7432c25832710ac87905fc4a3d421be126d962c480c92e056  research_v2/tools/v4_secret_scan.py
+28f6a8635cc201193726d025f85b7234e35e4e5079e23c88bf8f5c9c7bcf596d  research_v2/tools/v4_remote.py
+f3abd88caeab13fb44cce54bf51c3753796423317cc75fa2b0b5cb91dc732049  research_v2/tools/v4_build_manifest.py
+92ff5660c0ea31c3a5ea45773acd3fcae5bb0f903e0394a4ca73640d80c176d6  research_v2/tools/v4_gpu_mutation_check.py
+46abf420e7b568aafca19f3b1cd3fb834bd284379222b3e257ed93b23cf4340b  research_v2/tools/v3_repair_torn_line.py
+aa9d9c4ab0e482540c2f8c59aa239660e6e97766f5f80ce3f5cdc68aef88b31d  research_v2/tools/v4_v3_records.py
+a75baf21f73810aefddba95505e4bcb6a7c47d70c287254e504df40f731c9a54  research_v2/rv3/__init__.py
+1c59c5b62f26b0b7b9fe6e34b2135ca58a5eabb0259ec7d363a21fdcdbf7cc4a  research_v2/rv3/core.py
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py
+14640987889c1539fea46e3cba7e7042cdfa3beceb0199b9f299f54907c9b69a  research_v2/run_controls.py
+d7f6e72cba9d8754e87b3e19821bb54155d6b43e7e2d98f417205fb8dbb0a6be  research_v2/run_stage1.py
+b179246f94ec60b107e446abd6a69e51907ddc3cb3bb1027f309984d79484e3c  research_v2/stage1_runtime.py
+2c63e4abfef7914d3f71cf8e7a52623543a313355c9e8845d2c3a05d9123aaa2  research_v2/e1l_support.py
+6b407ec8790634f8f950690acbcbdbd65d57d95319c48765f2a81bb370c3b064  research_v2/analyze_v3.py
+774b29188cfab0457ffb0cef3f7cc867eeda78a5c823b03d0cdc43e7a7a79ab9  research_v2/e1_sample.json
+3360b2858181c5735b10d7ef925d4ce31b6c41dfdb7f3dc61b4432be1795836a  research_v2/v3/phase8/analyze_x13.py
+045c26500683432b27bdb5fb92b722fdb42a6a805860691883fff5a2d7773b8b  research_v2/v3/phase5/v3_report_locked.json
+a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60  src/dynamic_linear.py
+492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7  src/dynamic_model.py
+cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302  src/routing.py
+9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764  src/fragility.py
+cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287  scripts/gsm8k_gate_check.py
+e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc  scripts/probe_gsm8k_routing.py
+GM: f5d1f50e7244337a5867ccc07fc9b3aa599e1a31a95fbc3c94a6916f189e5b08  gm.json   utc 2026-11-08T07:01:43.104598+00:00
+CALIBRATION qwen2.5-0.5b: f21ede74409c5a060962aa7b013d0e96ecc1d3172886f7ea0d9459e7cd5625b5  qwen2.5-0.5b/calibration.json   utc 2026-11-08T07:28:44.363615+00:00
+CALIBRATION llama3.2-1b-instruct: a9b0e16088834776271068f70eb8826ee7444190200569b2845e2cbe42295491  llama3.2-1b-instruct/calibration.json   utc 2026-11-08T08:50:38.114007+00:00
+CALIBRATION llama3.2-1b: da204edd3a17abf6ec6412ae4c2635111f021e78ef4dd6cf2d9f40d454559685  llama3.2-1b/calibration.json   utc 2026-11-08T10:01:32.309296+00:00
+STEP0: 74494aea6292faa399be95a9f35e0479fd759cfe087d11f68a96ea68410f742c  step0.json  decision pass utc 2026-11-08T10:49:20.054084+00:00
+DESIGN: 93fa5f0fce189fb8743020b61de343cd4ac84aa3acfbc8da1052f780073c826e  design.json  reductions None utc 2026-11-08T10:55:08.506663+00:00
+CALIBRATION qwen2.5-1.5b: a7b6ba943af401959648da3305ec15f0e5dabad47fb051da93515006f5433d15  qwen2.5-1.5b/calibration.json   utc 2026-11-08T11:27:56.626357+00:00
+DEVIATION D1: f6c9559083dfebcc1c2b2f4e6da17cc3b4f3df0a707894b3f8ac13519ec6caaa  research_v2/v4/deviations/V4-D1.json  files 14 utc 2026-11-08T14:58:43.114137+00:00
+GM D1: 3f6033eb2594f8928df620e2ce69fb3ae18f7706add304a5d2457ff7f30bb2c2  gm_D1.json   utc 2026-11-08T15:15:58.075449+00:00
+CALIBRATION llama3.2-3b: 8920955c015838a6d039517cc1de528a5e5831071c109307139560941c5be5f3  llama3.2-3b/calibration.json   utc 2026-11-08T16:55:07.470708+00:00
+CALIBRATION qwen2.5-3b: 0ecc48d9b2cb8700789dd4c4f2ef17083b9ed38ad0236eb512ce6ea470ed1531  qwen2.5-3b/calibration.json   utc 2026-11-08T18:55:22.005667+00:00
+CALIBRATION qwen2.5-7b: f3390eb3f7d352168ace7c5302bd845d7ed6050fce189aca53892049e8507ceb  qwen2.5-7b/calibration.json   utc 2026-11-08T20:53:20.150213+00:00
+CALIBRATION llama3.1-8b: b057d8ad3357c744de76883fea8fbf9fa9bbb81c5728455a267060204359782b  llama3.1-8b/calibration.json   utc 2026-11-08T22:52:28.402963+00:00
+CALIBRATION mistral-7b-v0.3: 26f2267de556e4d7e938e7c5e899b3e9b6d09320c4c41636105cf75060115a2e  mistral-7b-v0.3/calibration.json   utc 2026-11-09T01:10:26.143836+00:00

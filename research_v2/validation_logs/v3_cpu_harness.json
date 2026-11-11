@@ -1,0 +1,81 @@
+{
+ "gates": {
+  "G7_expected_fail_tiny": true,
+  "G1": true,
+  "G2_G3_errors": [],
+  "G2b_leak": 8.146302119699587e-08,
+  "G2b_U": 1.1920928955078125e-07,
+  "G4": {
+   "same_seed_identical": true,
+   "different_seed_differs_in_n_of": [
+    2,
+    2
+   ]
+  },
+  "G5": {
+   "n": 2,
+   "identical": 2,
+   "pass": true
+  },
+  "G8": {
+   "LOC": {
+    "n_modules_called": 14,
+    "n_nf4": 4,
+    "matches_map": true,
+    "reset": true
+   },
+   "INH": {
+    "n_modules_called": 14,
+    "n_nf4": 10,
+    "matches_map": true,
+    "reset": true
+   },
+   "pass": true
+  }
+ },
+ "calibration_keys_ok": true,
+ "g6_first_model": {
+  "model": "qwen-base",
+  "t_arm_problem_s": 0.90268390714378,
+  "t_overhead_problem_s": 1.7692116500002157,
+  "used_h": 0.00786590211921268,
+  "projection_steps": [
+   {
+    "design": "full",
+    "projected_total_h": 4.17675992314361
+   }
+  ],
+  "pass": true,
+  "design_written": true
+ },
+ "design": {
+  "dropped_arms": [],
+  "n_test": 200
+ },
+ "g6_later_model": false,
+ "record_files": [
+  "C1-K.jsonl",
+  "C1-V.jsonl",
+  "C1.jsonl",
+  "C2.jsonl",
+  "CV.jsonl",
+  "FP16_history.jsonl",
+  "INH.jsonl",
+  "LOC.jsonl",
+  "NAT-K.jsonl",
+  "NAT-Kstar.jsonl",
+  "NAT-V.jsonl",
+  "NAT-Vstar.jsonl",
+  "NAT.jsonl",
+  "QA.jsonl",
+  "QO.jsonl"
+ ],
+ "analysis_sections": {
+  "HA": true,
+  "HF": true,
+  "HC_cross": true,
+  "markdown_lines": 176
+ },
+ "pass": true,
+ "seconds": 395.6
+}

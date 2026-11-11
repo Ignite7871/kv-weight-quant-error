@@ -1,0 +1,74 @@
+{
+ "tiny_tests_total": 16,
+ "tiny_tests_failed": [],
+ "real": {
+  "qwen-base": {
+   "NAT": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*-L0nat": {
+    "integrity_errors": [],
+    "steps": 4
+   },
+   "pass": true
+  },
+  "llama-instruct": {
+   "NAT": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*-L0nat": {
+    "integrity_errors": [],
+    "steps": 4
+   },
+   "pass": true
+  },
+  "qwen-instruct": {
+   "NAT": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*-L0nat": {
+    "integrity_errors": [],
+    "steps": 4
+   },
+   "pass": true
+  },
+  "llama-base": {
+   "NAT": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*": {
+    "bitwise_equal": true,
+    "diff_fields": [],
+    "per_layer_sums": true
+   },
+   "NAT-K*-L0nat": {
+    "integrity_errors": [],
+    "steps": 4
+   },
+   "pass": true
+  }
+ }
+}

@@ -1,0 +1,390 @@
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 137, in s1_pure_cells_equal_static_arms_bitwise_including_cache
+    assert r.ids == r0.ids, (seed, cell.name)
+           ^^^^^^^^^^^^^^^
+AssertionError: (0, 'tokF_kvF')
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 150, in s2_hybrid_cells_match_independent_deepcopy_reference
+    assert r.ids == ids_ref, f"seed {seed} cell {tk}{kv}: ids differ from independent reference"
+           ^^^^^^^^^^^^^^^^
+AssertionError: seed 0 cell FN: ids differ from independent reference
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 210, in s5_token_source_labels_and_argmax_handling
+    assert r.ids[s + 1] == expect, f"{cell.name} step {s + 1}: token != argmax of its declared source"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache_only step 1: token != argmax of its declared source
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 273, in s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip
+    assert fo.ids[: j + 2] == co.ids[: j + 2], f"seed {seed}: diverged before the first flip"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: seed 0: diverged before the first flip
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 150, in s2_hybrid_cells_match_independent_deepcopy_reference
+    assert r.ids == ids_ref, f"seed {seed} cell {tk}{kv}: ids differ from independent reference"
+           ^^^^^^^^^^^^^^^^
+AssertionError: seed 0 cell FN: ids differ from independent reference
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 194, in s4_both_passes_of_a_step_see_identical_cache_and_the_emitted_token
+    assert flag_a != flag_b, "both passes used the same precision"
+           ^^^^^^^^^^^^^^^^
+AssertionError: both passes used the same precision
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 216, in s5_token_source_labels_and_argmax_handling
+    assert r.trace["tF"][0] == ff[1] and r.trace["tN"][0] == nn[1], "branch labels tF/tN are wrong"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: branch labels tF/tN are wrong
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 254, in s7_cells_are_distinguishable_from_static_arms_and_each_other
+    assert all(v > 0 for v in seen.values()), seen
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'co_ne_ff': 6, 'to_ne_nn': 6, 'co_ne_to': 6, 'flips': 0}
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 273, in s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip
+    assert fo.ids[: j + 2] == co.ids[: j + 2], f"seed {seed}: diverged before the first flip"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: seed 0: diverged before the first flip
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 296, in s9_cost_charges_every_executed_pass_of_hybrid_cells
+    a = account(r, [1] * (len(r.routes) + 1), wb, prompt_len=P)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\engine.py", line 218, in account
+    assert nf4_passes == res.counts["nf4_passes"] and fp16_passes == res.counts["fp16_passes"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 135, in s1_pure_cells_equal_static_arms_bitwise_including_cache
+    r, c = run_cell_with_cache(be, prompt, cell)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 148, in s2_hybrid_cells_match_independent_deepcopy_reference
+    r, c = run_cell_with_cache(be, prompt, Cell(tk, kv))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 163, in s3_cache_after_run_equals_single_precision_teacher_forced_replay_of_emitted_history
+    r, c = run_cell_with_cache(be, prompt, cell)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 184, in s4_both_passes_of_a_step_see_identical_cache_and_the_emitted_token
+    r = generate_cell(be, PROMPTS[0], cell, 24, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 205, in s5_token_source_labels_and_argmax_handling
+    r = generate_cell(be, prompt, cell, MAX_NEW, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 226, in s6_logging_and_early_stop_do_not_change_generation
+    full = generate_cell(be, PROMPTS[1], cell, MAX_NEW, EOS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 248, in s7_cells_are_distinguishable_from_static_arms_and_each_other
+    co = generate_cell(be, prompt, CACHE_ONLY, MAX_NEW, EOS)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 268, in s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip
+    co = generate_cell(be, prompt, CACHE_ONLY, MAX_NEW, EOS)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 290, in s9_cost_charges_every_executed_pass_of_hybrid_cells
+    r = generate_cell(be, PROMPTS[0], cell, MAX_NEW, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 135, in s1_pure_cells_equal_static_arms_bitwise_including_cache
+    r, c = run_cell_with_cache(be, prompt, cell)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 148, in s2_hybrid_cells_match_independent_deepcopy_reference
+    r, c = run_cell_with_cache(be, prompt, Cell(tk, kv))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 163, in s3_cache_after_run_equals_single_precision_teacher_forced_replay_of_emitted_history
+    r, c = run_cell_with_cache(be, prompt, cell)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 74, in run_cell_with_cache
+    res = generate_cell(be, prompt, cell, n, EOS, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 184, in s4_both_passes_of_a_step_see_identical_cache_and_the_emitted_token
+    r = generate_cell(be, PROMPTS[0], cell, 24, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 205, in s5_token_source_labels_and_argmax_handling
+    r = generate_cell(be, prompt, cell, MAX_NEW, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 226, in s6_logging_and_early_stop_do_not_change_generation
+    full = generate_cell(be, PROMPTS[1], cell, MAX_NEW, EOS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 248, in s7_cells_are_distinguishable_from_static_arms_and_each_other
+    co = generate_cell(be, prompt, CACHE_ONLY, MAX_NEW, EOS)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 268, in s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip
+    co = generate_cell(be, prompt, CACHE_ONLY, MAX_NEW, EOS)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 290, in s9_cost_charges_every_executed_pass_of_hybrid_cells
+    r = generate_cell(be, PROMPTS[0], cell, MAX_NEW, EOS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\rv2\stage1.py", line 120, in generate_cell
+    assert cache.get_seq_length() == L + 1, "cache length invariant violated"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache length invariant violated
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 210, in s5_token_source_labels_and_argmax_handling
+    assert r.ids[s + 1] == expect, f"{cell.name} step {s + 1}: token != argmax of its declared source"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cache_only step 1: token != argmax of its declared source
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 137, in s1_pure_cells_equal_static_arms_bitwise_including_cache
+    assert r.ids == r0.ids, (seed, cell.name)
+           ^^^^^^^^^^^^^^^
+AssertionError: (0, 'tokF_kvF')
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 150, in s2_hybrid_cells_match_independent_deepcopy_reference
+    assert r.ids == ids_ref, f"seed {seed} cell {tk}{kv}: ids differ from independent reference"
+           ^^^^^^^^^^^^^^^^
+AssertionError: seed 0 cell FN: ids differ from independent reference
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 165, in s3_cache_after_run_equals_single_precision_teacher_forced_replay_of_emitted_history
+    assert caches_equal(c, replay), f"seed {seed} {cell.name}: cache is not a pure {cell.kv_source}-replay"
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: seed 0 cache_only: cache is not a pure N-replay
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 216, in s5_token_source_labels_and_argmax_handling
+    assert r.trace["tF"][0] == ff[1] and r.trace["tN"][0] == nn[1], "branch labels tF/tN are wrong"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: branch labels tF/tN are wrong
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 232, in s6_logging_and_early_stop_do_not_change_generation
+    assert caches_equal(c, teacher_forced_cache(be, PROMPTS[1], r.ids, cell.kv_source))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 254, in s7_cells_are_distinguishable_from_static_arms_and_each_other
+    assert all(v > 0 for v in seen.values()), seen
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'co_ne_ff': 0, 'to_ne_nn': 0, 'co_ne_to': 6, 'flips': 0}
+Traceback (most recent call last):
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 42, in wrapper
+    fn()
+  File "D:\Projects\Dynamic Precision Scaling\entropy-dps-project\research_v2\tests\run_stage1_tests.py", line 293, in s9_cost_charges_every_executed_pass_of_hybrid_cells
+    assert be.call_log[0] == "P" and "".join(calls) == "".join(r.passes) and len(calls) == 2 * len(r.routes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+KILLED    token source swapped                                        failed by: ['s1', 's2', 's5', 's8']
+KILLED    unkept pass uses kept precision (no real second branch)     failed by: ['s2', 's4', 's5', 's7', 's8', 's9']
+KILLED    cache not restored between the two passes                   failed by: ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9']
+KILLED    cache restored one entry too far                            failed by: ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9']
+KILLED    tF/tN branch labels swapped in the log                      failed by: ['s5']
+KILLED    kept pass runs in the wrong precision                       failed by: ['s1', 's2', 's3', 's5', 's6', 's7', 's9']
+
+clean code passes all 16 tests: True
+6/6 mutants killed

@@ -1,0 +1,49 @@
+protocol lock -- research_v2 Llama E1 Tier A replication
+utc: 2026-10-28T06:36:01.295836+00:00
+git commit containing the locked files: 6d2f4da0bec0fe5889d73122dc0fa231583575e3
+Hashes are SHA-256 of the committed file contents (git show <commit>:<path>).
+Qwen E1 lock file (whose hash pins the Qwen protocol): de876ab9ca87ee083c4f650e737785d9db263e7f8b52cbeb25a9297ebeae50c1  research_v2/E1_PROTOCOL_LOCK.txt
+Private dated hash for coauthors. NOT a public pre-registration.
+PROVENANCE: the Llama Tier A replication is EXPLORATORY IN ORIGIN (it follows the completed Qwen E1; its design is the Qwen E1 Tier A design applied to a second
+model family). The 200 test ids and 100 calibration ids are copied from the locked Qwen E1 sample; no Llama outcome existed at lock time except the 100-problem
+feasibility pilot (accuracy/gates only; no perturbation-matched outcome). This lock is created before ANY Llama-E1 GPU use. It is NOT an authorization to run:
+the corresponding author must create research_v2/e1l_runs/AUTHORIZED_BY_AUTHORS_LLAMA.txt (non-empty, containing the word 'Llama') after reviewing it.
+
+a4a8d6521efe339491013d9a4714c9d046f364d5ff00bcc6707a10336807e7ff  research_v2/E1L_SPEC.md
+f499e1f1760bbe429dc01fbb952d75f44ab2c9cf6104046972509782105f997e  research_v2/run_e1l.py
+249c2ed6d3491ac8a53145335def5e0cb46efa4565b86d8378fe2897489242b3  research_v2/analyze_e1l.py
+2c63e4abfef7914d3f71cf8e7a52623543a313355c9e8845d2c3a05d9123aaa2  research_v2/e1l_support.py
+8f663846ee3f9c66de384d8e87a3f84f370fc042c87cf328c90d2478978afc51  research_v2/e1l_sample.json
+58964099e93d61b7089332997d72ab05fe7607387b6a6ff07cfc7e3ae12fff1b  research_v2/tests/run_e1l_tests.py
+ad1ca3ca5910956093378ccc5b3a70c4b1e28dd8a8817b77bba69e1d9e85daf3  research_v2/tests/mutation_check_e1l.py
+74c22c3d3d9257e139de53d6b32b9f63b4b4305024c9d094d0999ec31c819e29  research_v2/tools/e1l_gpu_mutation_check.py
+1fe3d0aac6fde50277e26db47619b568f1b40cd4bf0118b702668487cfa49255  research_v2/tools/lock_e1l.py
+69b7dbc05e135a994e7020ae3fa20181b7cfba10fe048c82fb8695921056e22e  research_v2/validation_logs/e1l_cpu_validation.json
+9c474c2257b3a41dd26fc9e5e407be076363bc7f010da6c31d27b2f8ab2db4f5  research_v2/E1_SPEC.md
+14640987889c1539fea46e3cba7e7042cdfa3beceb0199b9f299f54907c9b69a  research_v2/run_controls.py
+81aa4f7abaffeadd38db99921ea92414a07aa0dd83c4fbd5f9e7bf55560cb5c7  research_v2/analyze_controls.py
+774b29188cfab0457ffb0cef3f7cc867eeda78a5c823b03d0cdc43e7a7a79ab9  research_v2/e1_sample.json
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+0fb73f9d36cae64fcbabd8f4acac394aaf05b829e8334b365bce937a1beeded4  research_v2/tests/run_controls_tests.py
+8b642a73a0ca1a804eb59f22b06b3fd3a33f6beadd537157a735ef3955f805ca  research_v2/tests/mutation_check_controls.py
+d7f6e72cba9d8754e87b3e19821bb54155d6b43e7e2d98f417205fb8dbb0a6be  research_v2/run_stage1.py
+b179246f94ec60b107e446abd6a69e51907ddc3cb3bb1027f309984d79484e3c  research_v2/stage1_runtime.py
+e806e36629d54b89155c78496921a0db2f7709105142bf7ac8676311ce0ac464  research_v2/stage1_sample.json
+8bb990a64a5ee028df322b2fbb8c62b0655909279f21968b1d1c4a5551579568  research_v2/pilot_sample.json
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py
+a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60  src/dynamic_linear.py
+492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7  src/dynamic_model.py
+cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302  src/routing.py
+9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764  src/fragility.py
+cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287  scripts/gsm8k_gate_check.py
+e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc  scripts/probe_gsm8k_routing.py
+
+AMENDMENT 1 (test-harness only, approved by the corresponding author 2026-10-28; lock re-created after the failed GPU mutation check): research_v2/tests/run_e1l_tests.py line 68 now creates the l02 marker tensor on the cache device. Original lock file preserved at research_v2/validation_logs/E1L_PROTOCOL_LOCK_original_97bb7f11.txt (sha256 97bb7f1171b1e11f4d6e7e2520f609ec0e448d69f70f210d9816c24b3fa2cd38, commit 2eadb86); every other locked file hash is identical to the original lock; re-validation record sha256 8d7716b4e9482ed48200ffd72278100a9bd7b1f4f28c64bf2fd92a91c00c200b. No scientific protocol field changed. See validation_logs/e1l_deviation_log.md.
+
+CALIBRATION (appended 2026-10-28T07:16:42.185597+00:00, before any Llama test problem was evaluated): 04906d31f8b9f02a46983bd461eb699db6d485837c20b038b92b13d83d0ce6e4  research_v2/e1l_runs/e1l_calibration.json

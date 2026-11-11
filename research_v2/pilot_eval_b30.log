@@ -1,0 +1,358 @@
+W1022 19:50:51.233000 39284 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[DynamicQwen] Loading base FP16 model: Qwen/Qwen2.5-0.5B
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:51,  5.62it/s]Loading weights:  59%|#####8    | 171/290 [00:00<00:00, 733.02it/s]Loading weights:  91%|#########1| 264/290 [00:00<00:00, 790.23it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 688.91it/s]
+[DynamicQwen] Replacing attention/MLP nn.Linear layers with DynamicLinear...
+[DynamicQwen] Replaced 168 modules:
+  model.layers.0.self_attn.q_proj
+  model.layers.0.self_attn.k_proj
+  model.layers.0.self_attn.v_proj
+  model.layers.0.self_attn.o_proj
+  model.layers.0.mlp.gate_proj
+  model.layers.0.mlp.up_proj
+  model.layers.0.mlp.down_proj
+  model.layers.1.self_attn.q_proj
+  model.layers.1.self_attn.k_proj
+  model.layers.1.self_attn.v_proj
+  model.layers.1.self_attn.o_proj
+  model.layers.1.mlp.gate_proj
+  model.layers.1.mlp.up_proj
+  model.layers.1.mlp.down_proj
+  model.layers.2.self_attn.q_proj
+  model.layers.2.self_attn.k_proj
+  model.layers.2.self_attn.v_proj
+  model.layers.2.self_attn.o_proj
+  model.layers.2.mlp.gate_proj
+  model.layers.2.mlp.up_proj
+  model.layers.2.mlp.down_proj
+  model.layers.3.self_attn.q_proj
+  model.layers.3.self_attn.k_proj
+  model.layers.3.self_attn.v_proj
+  model.layers.3.self_attn.o_proj
+  model.layers.3.mlp.gate_proj
+  model.layers.3.mlp.up_proj
+  model.layers.3.mlp.down_proj
+  model.layers.4.self_attn.q_proj
+  model.layers.4.self_attn.k_proj
+  model.layers.4.self_attn.v_proj
+  model.layers.4.self_attn.o_proj
+  model.layers.4.mlp.gate_proj
+  model.layers.4.mlp.up_proj
+  model.layers.4.mlp.down_proj
+  model.layers.5.self_attn.q_proj
+  model.layers.5.self_attn.k_proj
+  model.layers.5.self_attn.v_proj
+  model.layers.5.self_attn.o_proj
+  model.layers.5.mlp.gate_proj
+  model.layers.5.mlp.up_proj
+  model.layers.5.mlp.down_proj
+  model.layers.6.self_attn.q_proj
+  model.layers.6.self_attn.k_proj
+  model.layers.6.self_attn.v_proj
+  model.layers.6.self_attn.o_proj
+  model.layers.6.mlp.gate_proj
+  model.layers.6.mlp.up_proj
+  model.layers.6.mlp.down_proj
+  model.layers.7.self_attn.q_proj
+  model.layers.7.self_attn.k_proj
+  model.layers.7.self_attn.v_proj
+  model.layers.7.self_attn.o_proj
+  model.layers.7.mlp.gate_proj
+  model.layers.7.mlp.up_proj
+  model.layers.7.mlp.down_proj
+  model.layers.8.self_attn.q_proj
+  model.layers.8.self_attn.k_proj
+  model.layers.8.self_attn.v_proj
+  model.layers.8.self_attn.o_proj
+  model.layers.8.mlp.gate_proj
+  model.layers.8.mlp.up_proj
+  model.layers.8.mlp.down_proj
+  model.layers.9.self_attn.q_proj
+  model.layers.9.self_attn.k_proj
+  model.layers.9.self_attn.v_proj
+  model.layers.9.self_attn.o_proj
+  model.layers.9.mlp.gate_proj
+  model.layers.9.mlp.up_proj
+  model.layers.9.mlp.down_proj
+  model.layers.10.self_attn.q_proj
+  model.layers.10.self_attn.k_proj
+  model.layers.10.self_attn.v_proj
+  model.layers.10.self_attn.o_proj
+  model.layers.10.mlp.gate_proj
+  model.layers.10.mlp.up_proj
+  model.layers.10.mlp.down_proj
+  model.layers.11.self_attn.q_proj
+  model.layers.11.self_attn.k_proj
+  model.layers.11.self_attn.v_proj
+  model.layers.11.self_attn.o_proj
+  model.layers.11.mlp.gate_proj
+  model.layers.11.mlp.up_proj
+  model.layers.11.mlp.down_proj
+  model.layers.12.self_attn.q_proj
+  model.layers.12.self_attn.k_proj
+  model.layers.12.self_attn.v_proj
+  model.layers.12.self_attn.o_proj
+  model.layers.12.mlp.gate_proj
+  model.layers.12.mlp.up_proj
+  model.layers.12.mlp.down_proj
+  model.layers.13.self_attn.q_proj
+  model.layers.13.self_attn.k_proj
+  model.layers.13.self_attn.v_proj
+  model.layers.13.self_attn.o_proj
+  model.layers.13.mlp.gate_proj
+  model.layers.13.mlp.up_proj
+  model.layers.13.mlp.down_proj
+  model.layers.14.self_attn.q_proj
+  model.layers.14.self_attn.k_proj
+  model.layers.14.self_attn.v_proj
+  model.layers.14.self_attn.o_proj
+  model.layers.14.mlp.gate_proj
+  model.layers.14.mlp.up_proj
+  model.layers.14.mlp.down_proj
+  model.layers.15.self_attn.q_proj
+  model.layers.15.self_attn.k_proj
+  model.layers.15.self_attn.v_proj
+  model.layers.15.self_attn.o_proj
+  model.layers.15.mlp.gate_proj
+  model.layers.15.mlp.up_proj
+  model.layers.15.mlp.down_proj
+  model.layers.16.self_attn.q_proj
+  model.layers.16.self_attn.k_proj
+  model.layers.16.self_attn.v_proj
+  model.layers.16.self_attn.o_proj
+  model.layers.16.mlp.gate_proj
+  model.layers.16.mlp.up_proj
+  model.layers.16.mlp.down_proj
+  model.layers.17.self_attn.q_proj
+  model.layers.17.self_attn.k_proj
+  model.layers.17.self_attn.v_proj
+  model.layers.17.self_attn.o_proj
+  model.layers.17.mlp.gate_proj
+  model.layers.17.mlp.up_proj
+  model.layers.17.mlp.down_proj
+  model.layers.18.self_attn.q_proj
+  model.layers.18.self_attn.k_proj
+  model.layers.18.self_attn.v_proj
+  model.layers.18.self_attn.o_proj
+  model.layers.18.mlp.gate_proj
+  model.layers.18.mlp.up_proj
+  model.layers.18.mlp.down_proj
+  model.layers.19.self_attn.q_proj
+  model.layers.19.self_attn.k_proj
+  model.layers.19.self_attn.v_proj
+  model.layers.19.self_attn.o_proj
+  model.layers.19.mlp.gate_proj
+  model.layers.19.mlp.up_proj
+  model.layers.19.mlp.down_proj
+  model.layers.20.self_attn.q_proj
+  model.layers.20.self_attn.k_proj
+  model.layers.20.self_attn.v_proj
+  model.layers.20.self_attn.o_proj
+  model.layers.20.mlp.gate_proj
+  model.layers.20.mlp.up_proj
+  model.layers.20.mlp.down_proj
+  model.layers.21.self_attn.q_proj
+  model.layers.21.self_attn.k_proj
+  model.layers.21.self_attn.v_proj
+  model.layers.21.self_attn.o_proj
+  model.layers.21.mlp.gate_proj
+  model.layers.21.mlp.up_proj
+  model.layers.21.mlp.down_proj
+  model.layers.22.self_attn.q_proj
+  model.layers.22.self_attn.k_proj
+  model.layers.22.self_attn.v_proj
+  model.layers.22.self_attn.o_proj
+  model.layers.22.mlp.gate_proj
+  model.layers.22.mlp.up_proj
+  model.layers.22.mlp.down_proj
+  model.layers.23.self_attn.q_proj
+  model.layers.23.self_attn.k_proj
+  model.layers.23.self_attn.v_proj
+  model.layers.23.self_attn.o_proj
+  model.layers.23.mlp.gate_proj
+  model.layers.23.mlp.up_proj
+  model.layers.23.mlp.down_proj
+
+[DynamicQwen] torch.cuda.memory_summary() after construction:
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1118 MiB |   1809 MiB |   2526 MiB |   1407 MiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   1890 MiB |   1890 MiB |   1890 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 270972 KiB | 300367 KiB |   2382 MiB |   2118 MiB |
+|---------------------------------------------------------------------------|
+| Allocations           |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| Active allocs         |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     105    |     105    |     105    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      86    |      88    |     623    |     537    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+[DynamicQwen] torch.cuda.max_memory_allocated(): 1824.28 MB
+[eval] lag_entropy_B30 idx=11 WRONG steps=255 fp16=0.373 t=13.8s
+[eval] lag_entropy_B30 idx=309 WRONG steps=194 fp16=0.325 t=10.6s
+[eval] lag_entropy_B30 idx=478 SOLVED steps=255 fp16=0.180 t=19.3s
+[eval] lag_entropy_B30 idx=721 SOLVED steps=255 fp16=0.208 t=14.2s
+[eval] lag_entropy_B30 idx=1343 SOLVED steps=255 fp16=0.255 t=12.0s
+[eval] lag_entropy_B30 idx=1440 WRONG steps=255 fp16=0.145 t=11.9s
+[eval] lag_entropy_B30 idx=1542 SOLVED steps=255 fp16=0.188 t=11.6s
+[eval] lag_entropy_B30 idx=1653 WRONG steps=255 fp16=0.235 t=11.1s
+[eval] lag_entropy_B30 idx=1946 SOLVED steps=255 fp16=0.224 t=11.1s
+[eval] lag_entropy_B30 idx=2166 SOLVED steps=255 fp16=0.204 t=11.5s
+[eval] lag_entropy_B30 idx=2260 SOLVED steps=255 fp16=0.392 t=11.9s
+[eval] lag_entropy_B30 idx=2458 SOLVED steps=255 fp16=0.231 t=12.5s
+[eval] lag_entropy_B30 idx=2629 SOLVED steps=255 fp16=0.192 t=11.9s
+[eval] lag_entropy_B30 idx=2820 WRONG steps=255 fp16=0.251 t=26.5s
+[eval] lag_entropy_B30 idx=2918 SOLVED steps=255 fp16=0.329 t=14.4s
+[eval] lag_entropy_B30 idx=2979 WRONG steps=255 fp16=0.196 t=13.6s
+[eval] lag_entropy_B30 idx=3188 WRONG steps=255 fp16=0.412 t=10.7s
+[eval] lag_entropy_B30 idx=3968 WRONG steps=255 fp16=0.267 t=10.7s
+[eval] lag_entropy_B30 idx=4135 SOLVED steps=255 fp16=0.212 t=11.5s
+[eval] lag_entropy_B30 idx=4142 WRONG steps=255 fp16=0.239 t=11.9s
+[eval] lag_entropy_B30 idx=4150 WRONG steps=255 fp16=0.243 t=11.9s
+[eval] lag_entropy_B30 idx=4167 WRONG steps=255 fp16=0.333 t=10.8s
+[eval] lag_entropy_B30 idx=4268 WRONG steps=255 fp16=0.188 t=11.4s
+[eval] lag_entropy_B30 idx=4283 SOLVED steps=255 fp16=0.173 t=11.4s
+[eval] lag_entropy_B30 idx=4315 WRONG steps=255 fp16=0.220 t=11.4s
+[eval] lag_entropy_B30 idx=4444 WRONG steps=255 fp16=0.188 t=12.0s
+[eval] lag_entropy_B30 idx=4503 SOLVED steps=255 fp16=0.278 t=11.3s
+[eval] lag_entropy_B30 idx=4910 WRONG steps=255 fp16=0.310 t=10.2s
+[eval] lag_entropy_B30 idx=5026 SOLVED steps=255 fp16=0.216 t=10.5s
+[eval] lag_entropy_B30 idx=5256 WRONG steps=255 fp16=0.243 t=10.4s
+[eval] lag_entropy_B30 idx=5407 WRONG steps=255 fp16=0.231 t=10.4s
+[eval] lag_entropy_B30 idx=5766 SOLVED steps=255 fp16=0.176 t=10.6s
+[eval] lag_entropy_B30 idx=5773 SOLVED steps=255 fp16=0.196 t=10.4s
+[eval] lag_entropy_B30 idx=5873 SOLVED steps=255 fp16=0.255 t=10.2s
+[eval] lag_entropy_B30 idx=6066 WRONG steps=255 fp16=0.161 t=10.7s
+[eval] lag_entropy_B30 idx=6333 SOLVED steps=255 fp16=0.243 t=10.4s
+[eval] lag_entropy_B30 idx=6454 WRONG steps=255 fp16=0.357 t=9.9s
+[eval] lag_entropy_B30 idx=6503 SOLVED steps=255 fp16=0.224 t=10.4s
+[eval] lag_entropy_B30 idx=6534 WRONG steps=255 fp16=0.235 t=11.3s
+[eval] lag_entropy_B30 idx=6610 WRONG steps=255 fp16=0.255 t=12.2s
+[eval] lag_entropy_B30 idx=6716 WRONG steps=255 fp16=0.427 t=10.9s
+[eval] lag_entropy_B30 idx=6914 WRONG steps=255 fp16=0.306 t=12.2s
+[eval] lag_entropy_B30 idx=7013 SOLVED steps=255 fp16=0.341 t=11.6s
+[eval] lag_entropy_B30 idx=7043 WRONG steps=255 fp16=0.282 t=11.7s
+[eval] lag_entropy_B30 idx=7059 SOLVED steps=255 fp16=0.169 t=11.1s
+[eval] lag_entropy_B30 idx=7070 SOLVED steps=255 fp16=0.212 t=11.3s
+[eval] lag_entropy_B30 idx=7141 SOLVED steps=255 fp16=0.192 t=12.3s
+[eval] lag_entropy_B30 idx=7269 WRONG steps=255 fp16=0.373 t=11.4s
+[eval] lag_entropy_B30 idx=7312 WRONG steps=255 fp16=0.345 t=10.8s
+[eval] lag_entropy_B30 idx=7453 WRONG steps=255 fp16=0.235 t=11.2s
+[eval] lag_margin_B30 idx=11 WRONG steps=255 fp16=0.298 t=10.6s
+[eval] lag_margin_B30 idx=309 WRONG steps=255 fp16=0.259 t=12.2s
+[eval] lag_margin_B30 idx=478 SOLVED steps=255 fp16=0.192 t=11.0s
+[eval] lag_margin_B30 idx=721 SOLVED steps=255 fp16=0.224 t=11.2s
+[eval] lag_margin_B30 idx=1343 SOLVED steps=255 fp16=0.325 t=10.4s
+[eval] lag_margin_B30 idx=1440 WRONG steps=255 fp16=0.129 t=11.6s
+[eval] lag_margin_B30 idx=1542 SOLVED steps=255 fp16=0.208 t=12.4s
+[eval] lag_margin_B30 idx=1653 WRONG steps=255 fp16=0.220 t=13.2s
+[eval] lag_margin_B30 idx=1946 SOLVED steps=255 fp16=0.255 t=10.9s
+[eval] lag_margin_B30 idx=2166 WRONG steps=255 fp16=0.227 t=11.8s
+[eval] lag_margin_B30 idx=2260 SOLVED steps=255 fp16=0.318 t=11.5s
+[eval] lag_margin_B30 idx=2458 WRONG steps=255 fp16=0.184 t=12.1s
+[eval] lag_margin_B30 idx=2629 SOLVED steps=255 fp16=0.224 t=11.9s
+[eval] lag_margin_B30 idx=2820 WRONG steps=255 fp16=0.263 t=11.7s
+[eval] lag_margin_B30 idx=2918 SOLVED steps=255 fp16=0.373 t=10.8s
+[eval] lag_margin_B30 idx=2979 WRONG steps=255 fp16=0.235 t=11.4s
+[eval] lag_margin_B30 idx=3188 WRONG steps=106 fp16=0.443 t=4.5s
+[eval] lag_margin_B30 idx=3968 WRONG steps=255 fp16=0.318 t=11.3s
+[eval] lag_margin_B30 idx=4135 SOLVED steps=255 fp16=0.294 t=11.6s
+[eval] lag_margin_B30 idx=4142 WRONG steps=255 fp16=0.282 t=11.9s
+[eval] lag_margin_B30 idx=4150 WRONG steps=255 fp16=0.243 t=10.8s
+[eval] lag_margin_B30 idx=4167 WRONG steps=208 fp16=0.365 t=8.5s
+[eval] lag_margin_B30 idx=4268 WRONG steps=255 fp16=0.200 t=11.1s
+[eval] lag_margin_B30 idx=4283 SOLVED steps=255 fp16=0.212 t=11.1s
+[eval] lag_margin_B30 idx=4315 WRONG steps=255 fp16=0.231 t=10.9s
+[eval] lag_margin_B30 idx=4444 WRONG steps=255 fp16=0.294 t=10.7s
+[eval] lag_margin_B30 idx=4503 SOLVED steps=255 fp16=0.282 t=10.6s
+[eval] lag_margin_B30 idx=4910 WRONG steps=255 fp16=0.267 t=10.9s
+[eval] lag_margin_B30 idx=5026 SOLVED steps=255 fp16=0.267 t=10.8s
+[eval] lag_margin_B30 idx=5256 WRONG steps=255 fp16=0.255 t=10.9s
+[eval] lag_margin_B30 idx=5407 WRONG steps=255 fp16=0.255 t=10.9s
+[eval] lag_margin_B30 idx=5766 SOLVED steps=255 fp16=0.173 t=11.9s
+[eval] lag_margin_B30 idx=5773 SOLVED steps=255 fp16=0.231 t=11.6s
+[eval] lag_margin_B30 idx=5873 SOLVED steps=255 fp16=0.282 t=11.4s
+[eval] lag_margin_B30 idx=6066 WRONG steps=255 fp16=0.161 t=11.9s
+[eval] lag_margin_B30 idx=6333 SOLVED steps=158 fp16=0.323 t=6.8s
+[eval] lag_margin_B30 idx=6454 WRONG steps=255 fp16=0.361 t=11.3s
+[eval] lag_margin_B30 idx=6503 SOLVED steps=255 fp16=0.247 t=11.8s
+[eval] lag_margin_B30 idx=6534 WRONG steps=255 fp16=0.227 t=11.9s
+[eval] lag_margin_B30 idx=6610 SOLVED steps=255 fp16=0.278 t=11.5s
+[eval] lag_margin_B30 idx=6716 WRONG steps=255 fp16=0.165 t=12.1s
+[eval] lag_margin_B30 idx=6914 WRONG steps=255 fp16=0.267 t=11.5s
+[eval] lag_margin_B30 idx=7013 SOLVED steps=196 fp16=0.337 t=8.0s
+[eval] lag_margin_B30 idx=7043 WRONG steps=255 fp16=0.298 t=10.7s
+[eval] lag_margin_B30 idx=7059 SOLVED steps=255 fp16=0.196 t=10.9s
+[eval] lag_margin_B30 idx=7070 SOLVED steps=255 fp16=0.196 t=11.0s
+[eval] lag_margin_B30 idx=7141 SOLVED steps=255 fp16=0.220 t=10.9s
+[eval] lag_margin_B30 idx=7269 WRONG steps=255 fp16=0.235 t=10.8s
+[eval] lag_margin_B30 idx=7312 WRONG steps=255 fp16=0.357 t=10.4s
+[eval] lag_margin_B30 idx=7453 WRONG steps=255 fp16=0.247 t=10.8s
+[eval] cascade_nf4_margin_B30 idx=11 WRONG steps=255 fp16=0.373 t=14.8s
+[eval] cascade_nf4_margin_B30 idx=309 WRONG steps=255 fp16=0.357 t=15.0s
+[eval] cascade_nf4_margin_B30 idx=478 SOLVED steps=255 fp16=0.259 t=14.6s
+[eval] cascade_nf4_margin_B30 idx=721 SOLVED steps=255 fp16=0.294 t=14.9s
+[eval] cascade_nf4_margin_B30 idx=1343 SOLVED steps=255 fp16=0.345 t=15.6s
+[eval] cascade_nf4_margin_B30 idx=1440 WRONG steps=255 fp16=0.337 t=15.6s
+[eval] cascade_nf4_margin_B30 idx=1542 SOLVED steps=255 fp16=0.231 t=14.6s
+[eval] cascade_nf4_margin_B30 idx=1653 WRONG steps=255 fp16=0.255 t=14.7s
+[eval] cascade_nf4_margin_B30 idx=1946 SOLVED steps=255 fp16=0.376 t=15.7s
+[eval] cascade_nf4_margin_B30 idx=2166 WRONG steps=255 fp16=0.243 t=14.7s
+[eval] cascade_nf4_margin_B30 idx=2260 SOLVED steps=255 fp16=0.310 t=14.3s
+[eval] cascade_nf4_margin_B30 idx=2458 WRONG steps=255 fp16=0.294 t=14.0s
+[eval] cascade_nf4_margin_B30 idx=2629 SOLVED steps=255 fp16=0.314 t=14.2s
+[eval] cascade_nf4_margin_B30 idx=2820 WRONG steps=255 fp16=0.204 t=13.4s
+[eval] cascade_nf4_margin_B30 idx=2918 WRONG steps=255 fp16=0.373 t=14.4s
+[eval] cascade_nf4_margin_B30 idx=2979 WRONG steps=255 fp16=0.286 t=13.9s
+[eval] cascade_nf4_margin_B30 idx=3188 WRONG steps=255 fp16=0.357 t=14.7s
+[eval] cascade_nf4_margin_B30 idx=3968 SOLVED steps=255 fp16=0.239 t=13.7s
+[eval] cascade_nf4_margin_B30 idx=4135 SOLVED steps=255 fp16=0.239 t=13.8s
+[eval] cascade_nf4_margin_B30 idx=4142 WRONG steps=255 fp16=0.294 t=15.2s
+[eval] cascade_nf4_margin_B30 idx=4150 WRONG steps=255 fp16=0.322 t=15.4s
+[eval] cascade_nf4_margin_B30 idx=4167 WRONG steps=255 fp16=0.384 t=15.9s
+[eval] cascade_nf4_margin_B30 idx=4268 WRONG steps=255 fp16=0.176 t=14.0s
+[eval] cascade_nf4_margin_B30 idx=4283 SOLVED steps=255 fp16=0.278 t=14.8s
+[eval] cascade_nf4_margin_B30 idx=4315 WRONG steps=255 fp16=0.286 t=15.0s
+[eval] cascade_nf4_margin_B30 idx=4444 WRONG steps=255 fp16=0.290 t=15.1s
+[eval] cascade_nf4_margin_B30 idx=4503 SOLVED steps=255 fp16=0.341 t=15.4s
+[eval] cascade_nf4_margin_B30 idx=4910 WRONG steps=255 fp16=0.298 t=14.1s
+[eval] cascade_nf4_margin_B30 idx=5026 SOLVED steps=255 fp16=0.290 t=13.9s
+[eval] cascade_nf4_margin_B30 idx=5256 WRONG steps=255 fp16=0.302 t=14.3s
+[eval] cascade_nf4_margin_B30 idx=5407 WRONG steps=252 fp16=0.282 t=13.6s
+[eval] cascade_nf4_margin_B30 idx=5766 SOLVED steps=255 fp16=0.255 t=13.9s
+[eval] cascade_nf4_margin_B30 idx=5773 SOLVED steps=235 fp16=0.379 t=13.4s
+[eval] cascade_nf4_margin_B30 idx=5873 SOLVED steps=255 fp16=0.349 t=14.6s
+[eval] cascade_nf4_margin_B30 idx=6066 WRONG steps=255 fp16=0.259 t=13.8s
+[eval] cascade_nf4_margin_B30 idx=6333 SOLVED steps=255 fp16=0.314 t=15.0s
+[eval] cascade_nf4_margin_B30 idx=6454 WRONG steps=166 fp16=0.253 t=9.3s
+[eval] cascade_nf4_margin_B30 idx=6503 SOLVED steps=255 fp16=0.349 t=15.3s
+[eval] cascade_nf4_margin_B30 idx=6534 SOLVED steps=255 fp16=0.361 t=15.6s
+[eval] cascade_nf4_margin_B30 idx=6610 WRONG steps=255 fp16=0.314 t=15.1s
+[eval] cascade_nf4_margin_B30 idx=6716 WRONG steps=255 fp16=0.337 t=15.3s
+[eval] cascade_nf4_margin_B30 idx=6914 WRONG steps=255 fp16=0.431 t=15.8s
+[eval] cascade_nf4_margin_B30 idx=7013 SOLVED steps=255 fp16=0.380 t=15.8s
+[eval] cascade_nf4_margin_B30 idx=7043 WRONG steps=255 fp16=0.275 t=15.5s
+[eval] cascade_nf4_margin_B30 idx=7059 SOLVED steps=255 fp16=0.184 t=13.2s
+[eval] cascade_nf4_margin_B30 idx=7070 SOLVED steps=255 fp16=0.247 t=13.6s
+[eval] cascade_nf4_margin_B30 idx=7141 SOLVED steps=255 fp16=0.318 t=13.9s
+[eval] cascade_nf4_margin_B30 idx=7269 WRONG steps=255 fp16=0.290 t=14.1s
+[eval] cascade_nf4_margin_B30 idx=7312 WRONG steps=255 fp16=0.369 t=14.6s
+[eval] cascade_nf4_margin_B30 idx=7453 WRONG steps=255 fp16=0.290 t=14.0s
+[ledger] cumulative GPU wall time: 4.476 h of 5.0 h
+EXIT=0

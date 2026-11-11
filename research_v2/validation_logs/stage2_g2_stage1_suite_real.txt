@@ -1,0 +1,32 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:54,  5.27it/s]Loading weights:  63%|######3   | 183/290 [00:00<00:00, 783.36it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 809.63it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 695.47it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:00,  4.77it/s]Loading weights:  84%|########3 | 243/290 [00:00<00:00, 977.57it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 822.86it/s]
+[eval] #0 idx=337 fp16:W/7st/6.9s nf4:W/7st/34.7s cache_only:W/7st/35.4s token_only:W/7st/35.8s oracle_flip:W/7st/37.7s | cum GPU 0.042 h
+    pace: pooled 154.9 s/problem | session 154.9 | last20 154.9 | projected cumulative 0.08 h (pooled) / 0.08 h (last20) of 12.0 h | GPU 60.0 C 210.0 MHz
+[eval] #1 idx=370 nf4:W/7st/39.8s cache_only:W/7st/39.4s token_only:W/7st/39.7s oracle_flip:W/7st/39.5s fp16:W/7st/8.1s | cum GPU 0.088 h
+    pace: pooled 163.2 s/problem | session 163.2 | last20 163.2 | projected cumulative 0.09 h (pooled) / 0.09 h (last20) of 12.0 h | GPU 63.0 C 210.0 MHz
+[CAP] stopping before problem #2 (idx 655): used 12.088 h + worst-case problem 214 s + margin > absolute cap 12.00 h. 0 problems completed in this process. The experiment is TRUNCATED; the budget is not extended.
+[INTEGRITY FAILURE] problem idx 655 (order position 2): ['cache_only: step 2 token 69 != argmax of its declared F source']. Stopped immediately; the failing records are saved in integrity_failure.json and were NOT appended to the arm files.
+[eval] #2 idx=655 cache_only:E/7st/39.2s token_only:E/7st/38.0s oracle_flip:E/7st/35.8s fp16:E/7st/7.1s nf4:E/7st/35.3s | cum GPU 0.177 h
+    pace: pooled 162.2 s/problem | session 160.2 | last20 160.2 | projected cumulative 0.18 h (pooled) / 0.18 h (last20) of 12.0 h | GPU 64.0 C 1380.0 MHz
+
+========================================================================================================================
+s1_pure_cells_equal_static_arms_bitwise_including_cache                                     PASS  
+s2_hybrid_cells_match_independent_deepcopy_reference                                        PASS  
+s3_cache_after_run_equals_single_precision_teacher_forced_replay_of_emitted_history         PASS  
+s4_both_passes_of_a_step_see_identical_cache_and_the_emitted_token                          PASS  
+s5_token_source_labels_and_argmax_handling                                                  PASS  
+s6_logging_and_early_stop_do_not_change_generation                                          PASS  
+s7_cells_are_distinguishable_from_static_arms_and_each_other                                PASS  
+s8_flip_oracle_is_a_distinct_diagnostic_that_matches_cache_only_until_its_first_flip        PASS  
+s9_cost_charges_every_executed_pass_of_hybrid_cells                                         PASS  
+s10_stage1_leaves_baseline_engine_and_historical_code_untouched_and_has_no_boundary_access  PASS  
+s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe                          PASS  
+s13_watchdog_fires_once_at_deadline_ticks_and_can_be_cancelled                              PASS  
+s14_pace_statistics_use_the_pooled_rate_and_record_recent_rate_separately                   PASS  
+s15_telemetry_parsing_and_temperature_stop                                                  PASS  
+s16_integrity_checker_passes_real_records_and_catches_each_corruption                       PASS  
+s17_checkpoint_verification_detects_edits_repeats_skips_and_reordering                      PASS  
+s11_real_qwen_cpu_hybrids_match_independent_reference                                       PASS  
+s18_real_qwen_cpu_a2_run_path_integrity_cap_and_logging                                     PASS  
+
+18/18 passed

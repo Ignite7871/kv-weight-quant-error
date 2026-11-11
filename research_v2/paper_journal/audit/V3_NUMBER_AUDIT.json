@@ -1,0 +1,2154 @@
+{
+ "n_macros_defined": 1385,
+ "n_macros_used": 1070,
+ "undefined_used": [],
+ "unused_macros": [
+  "arch.li.locpct",
+  "arch.qi.locpct",
+  "e1l.flip.c1",
+  "e1l.flip.c1half",
+  "e1l.flip.c1two",
+  "e1l.js.c1",
+  "e1l.js.c1half",
+  "e1l.js.c1two",
+  "fam.lb.size",
+  "fam.li.size",
+  "fam.qb.size",
+  "fam.qi.size",
+  "gpu.left",
+  "gpu.v3x9",
+  "ha.lb.p",
+  "ha.li.p",
+  "ha.pooled.p",
+  "ha.qb.p",
+  "ha.qi.p",
+  "hb.lb.ci90",
+  "hb.lb.p",
+  "hb.li.ci90",
+  "hb.li.p",
+  "hb.qb.ci90",
+  "hb.qb.p",
+  "hb.qi.ci90",
+  "hb.qi.p",
+  "hc.lb.holm",
+  "hc.lb.p",
+  "hc.li.p",
+  "hc.qb.p",
+  "hc.qi.p",
+  "hcx.g0",
+  "hcx.g0ci",
+  "hcx.g1",
+  "hcx.g1ci",
+  "hd.lb.ci90",
+  "hd.lb.p",
+  "hd.lb.ratio",
+  "hd.li.ci90",
+  "hd.li.p",
+  "hd.li.ratio",
+  "hd.qb.ci90",
+  "hd.qb.p",
+  "hd.qb.ratio",
+  "hd.qi.ci90",
+  "hd.qi.p",
+  "hd.qi.ratio",
+  "he.lb.ci90",
+  "he.lb.p",
+  "he.lb.ratio",
+  "he.li.ci90",
+  "he.li.p",
+  "he.li.ratio",
+  "he.qb.ci90",
+  "he.qb.p",
+  "he.qb.ratio",
+  "he.qi.ci90",
+  "he.qi.p",
+  "he.qi.ratio",
+  "hf.fam.p",
+  "hf.int.p",
+  "hf.read.add",
+  "hf.read.fam",
+  "hf.read.tun",
+  "hf.tun.p",
+  "natc1.lb.cat",
+  "natc1.lb.p",
+  "natc1.lb.ratio",
+  "natc1.li.cat",
+  "natc1.li.ci90",
+  "natc1.li.p",
+  "natc1.li.ratio",
+  "natc1.qb.cat",
+  "natc1.qb.ci90",
+  "natc1.qb.p",
+  "natc1.qb.ratio",
+  "natc1.qi.cat",
+  "natc1.qi.ci90",
+  "natc1.qi.p",
+  "natc1.qi.ratio",
+  "provk.lb.ci90",
+  "provk.lb.p",
+  "provk.lb.ratio",
+  "provk.li.ci90",
+  "provk.li.p",
+  "provk.li.ratio",
+  "provk.qb.ci90",
+  "provk.qb.p",
+  "provk.qb.ratio",
+  "provk.qi.ci90",
+  "provk.qi.p",
+  "provk.qi.ratio",
+  "provv.lb.ci90",
+  "provv.lb.p",
+  "provv.lb.ratio",
+  "provv.li.ci90",
+  "provv.li.p",
+  "provv.li.ratio",
+  "provv.qb.ci90",
+  "provv.qb.p",
+  "provv.qb.ratio",
+  "provv.qi.ci90",
+  "provv.qi.p",
+  "provv.qi.ratio",
+  "qaqo.lb.lognorm",
+  "qaqo.li.lognorm",
+  "qaqo.qb.lognorm",
+  "qaqo.qi.lognorm",
+  "rdev.lb.max",
+  "rdev.lb.meanmax",
+  "rdev.li.max",
+  "rdev.li.meanmax",
+  "rdev.qi.meanmax",
+  "rng.E8.max",
+  "rng.E8.min",
+  "rng.hd.max",
+  "rng.hd.min",
+  "rng.rdevmaxllama.min",
+  "rng.x13bKl.min",
+  "rng.x13dabs.min",
+  "rng.x13dciabs.min",
+  "rng.x1rho.max",
+  "rng.x1rho.min",
+  "rng.x4all.min",
+  "rng.x4norm.max",
+  "rng.x4norm.min",
+  "rng.x7neg.max",
+  "rng.x7neg.min",
+  "rng.x8share.max",
+  "rng.x8share.min",
+  "rng.x9aF.max",
+  "rng.x9aF.min",
+  "rng.x9bEL0qwenratio.max",
+  "rng.x9bEL0qwenratio.min",
+  "rng.x9bGqwen.max",
+  "rng.x9bGqwen.min",
+  "rng.x9cabs.min",
+  "sens.lb.s32",
+  "sens.lb.sexp",
+  "sens.lb.smed",
+  "sens.li.s28",
+  "sens.li.s32",
+  "sens.li.s964",
+  "sens.li.sexp",
+  "sens.li.smed",
+  "sens.qb.s32",
+  "sens.qb.s964",
+  "sens.qb.smed",
+  "sens.qi.s28",
+  "sens.qi.s32",
+  "sens.qi.s964",
+  "sens.qi.sexp",
+  "sens.qi.smed",
+  "trunc.hf.n",
+  "trunc.lb.hb.frac",
+  "trunc.lb.hb.kept",
+  "trunc.lb.natc1.frac",
+  "trunc.lb.natc1.kept",
+  "trunc.lb.natcv.frac",
+  "trunc.lb.natcv.kept",
+  "trunc.lb.provk.frac",
+  "trunc.lb.provk.kept",
+  "trunc.li.hb.frac",
+  "trunc.li.hb.kept",
+  "trunc.li.natc1.frac",
+  "trunc.li.natc1.kept",
+  "trunc.li.natcv.frac",
+  "trunc.li.natcv.kept",
+  "trunc.li.provk.frac",
+  "trunc.li.provk.kept",
+  "trunc.qb.hb.frac",
+  "trunc.qb.natcv.frac",
+  "trunc.qb.natcv.kept",
+  "trunc.qb.provk.frac",
+  "trunc.qi.hb.frac",
+  "trunc.qi.natcv.frac",
+  "trunc.qi.natcv.kept",
+  "trunc.qi.provk.frac",
+  "x10.lb.K.E",
+  "x10.lb.K.Eci",
+  "x10.lb.V.E",
+  "x10.lb.V.Eci",
+  "x10.lb.V.robs",
+  "x10.lb.V.rpred",
+  "x10.li.K.E",
+  "x10.li.K.Eci",
+  "x10.li.V.E",
+  "x10.li.V.Eci",
+  "x10.li.V.robs",
+  "x10.li.V.rpred",
+  "x10.qb.K.E",
+  "x10.qb.K.Eci",
+  "x10.qb.V.E",
+  "x10.qb.V.Eci",
+  "x10.qb.V.robs",
+  "x10.qb.V.rpred",
+  "x10.qi.K.E",
+  "x10.qi.K.Eci",
+  "x10.qi.V.E",
+  "x10.qi.V.Eci",
+  "x10.qi.V.robs",
+  "x10.qi.V.rpred",
+  "x11.lb.B1",
+  "x11.lb.Bq",
+  "x11.li.B1",
+  "x11.li.Bq",
+  "x11.qb.B1",
+  "x11.qb.Bq",
+  "x11.qi.B1",
+  "x11.qi.Bq",
+  "x12.l.holm",
+  "x13.ncgt5",
+  "x13.readV",
+  "x13a.lb.K.fac",
+  "x13a.lb.V.fac",
+  "x13a.li.K.fac",
+  "x13a.li.V.fac",
+  "x13a.qb.K.fac",
+  "x13a.qb.V.fac",
+  "x13a.qi.K.fac",
+  "x13a.qi.V.fac",
+  "x13b.lb.K.G",
+  "x13b.lb.K.Gci",
+  "x13b.lb.K.band",
+  "x13b.li.K.G",
+  "x13b.li.K.Gci",
+  "x13b.li.K.band",
+  "x13b.qb.K.G",
+  "x13b.qb.K.Gci",
+  "x13b.qb.K.band",
+  "x13b.qi.K.G",
+  "x13b.qi.K.Gci",
+  "x13b.qi.K.band",
+  "x13c.lb.lnR0",
+  "x13c.li.lnR0",
+  "x13c.qb.lnR0",
+  "x13c.qi.lnR0",
+  "x13d.qb.c1k.gt5lock",
+  "x13d.qb.c1k.gt5nc",
+  "x13d.qi.c1k.gt5lock",
+  "x13d.qi.c1k.gt5nc",
+  "x2a.pooled.ci",
+  "x2a.pooled.est",
+  "x2b.pooled.ci",
+  "x2b.pooled.est",
+  "x2c.pooled.ci",
+  "x2c.pooled.est",
+  "x6.lb.c1.arith",
+  "x6.lb.c1k.arith",
+  "x6.lb.c1v.arith",
+  "x6.lb.c2.arith",
+  "x6.lb.cv.arith",
+  "x6.lb.inh.arith",
+  "x6.lb.loc.arith",
+  "x6.lb.natk.arith",
+  "x6.lb.natv.arith",
+  "x6.lb.qa.arith",
+  "x6.lb.qo.arith",
+  "x6.lb.relk.arith",
+  "x6.lb.relv.arith",
+  "x6.li.c1.arith",
+  "x6.li.c1k.arith",
+  "x6.li.c1v.arith",
+  "x6.li.c2.arith",
+  "x6.li.cv.arith",
+  "x6.li.inh.arith",
+  "x6.li.loc.arith",
+  "x6.li.natk.arith",
+  "x6.li.natv.arith",
+  "x6.li.qa.arith",
+  "x6.li.qo.arith",
+  "x6.li.relk.arith",
+  "x6.li.relv.arith",
+  "x6.qb.c1.arith",
+  "x6.qb.c1k.arith",
+  "x6.qb.c1v.arith",
+  "x6.qb.c2.arith",
+  "x6.qb.cv.arith",
+  "x6.qb.inh.arith",
+  "x6.qb.loc.arith",
+  "x6.qb.natk.arith",
+  "x6.qb.natv.arith",
+  "x6.qb.qa.arith",
+  "x6.qb.qo.arith",
+  "x6.qb.relk.arith",
+  "x6.qb.relv.arith",
+  "x6.qi.c1.arith",
+  "x6.qi.c1k.arith",
+  "x6.qi.c1v.arith",
+  "x6.qi.c2.arith",
+  "x6.qi.cv.arith",
+  "x6.qi.inh.arith",
+  "x6.qi.loc.arith",
+  "x6.qi.natk.arith",
+  "x6.qi.natv.arith",
+  "x6.qi.qa.arith",
+  "x6.qi.qo.arith",
+  "x6.qi.relk.arith",
+  "x6.qi.relv.arith",
+  "x7a.lb.neg",
+  "x7a.li.neg",
+  "x7a.qb.neg",
+  "x7a.qi.neg",
+  "x8.lb.share",
+  "x8.li.share",
+  "x8.qb.share",
+  "x8.qi.share",
+  "x9b.lb.EL0ci",
+  "x9b.li.EL0ci",
+  "x9b.qb.EL0ci",
+  "x9b.qi.EL0ci",
+  "x9d.lb.biglayers",
+  "x9d.li.biglayers",
+  "x9d.qi.biglayers"
+ ],
+ "recompute_checks": 281,
+ "recompute_failures": [
+  {
+   "macro": "hc.lb.fci",
+   "printed": "$[-98.89, +0.03]$",
+   "recomputed": [
+    -106.96158528394326,
+    0.08415180412994637
+   ],
+   "ok": false,
+   "kind": "CI"
+  }
+ ],
+ "literals": [
+  {
+   "file": "01_introduction",
+   "line": 53,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "far larger depletion than its share in the top-8 query subspace shows (\\vn{rng.x9adeficit.min}--\\vn{rng.x9adeficit.max}\\%"
+  },
+  {
+   "file": "01_introduction",
+   "line": 70,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "teacher-forced divergence over at most 64 steps."
+  },
+  {
+   "file": "02_related",
+   "line": 5,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "October and November 2026. For each line of work we state what this study borrows and what, to our knowledge, it adds. The"
+  },
+  {
+   "file": "02_related",
+   "line": 37,
+   "literal": "4",
+   "class": "outlier channels / exposed problems / four models",
+   "context": "cache can all be quantized to 4~bits without changing the full-precision output~\\citep{ashkboos2024quarot}, and SpinQuant"
+  },
+  {
+   "file": "02_related",
+   "line": 46,
+   "literal": "4",
+   "class": "outlier channels / exposed problems / four models",
+   "context": "systems that quantize weights and activations, such as Atom (4-bit weights and activations, with a quantized KV"
+  },
+  {
+   "file": "02_related",
+   "line": 47,
+   "literal": "4",
+   "class": "outlier channels / exposed problems / four models",
+   "context": "cache)~\\citep{zhao2024atom} and QServe (4-bit weights, 8-bit activations, 4-bit KV cache)~\\citep{lin2025qserve}, write every"
+  },
+  {
+   "file": "02_related",
+   "line": 47,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "cache)~\\citep{zhao2024atom} and QServe (4-bit weights, 8-bit activations, 4-bit KV cache)~\\citep{lin2025qserve}, write every"
+  },
+  {
+   "file": "02_related",
+   "line": 47,
+   "literal": "4",
+   "class": "outlier channels / exposed problems / four models",
+   "context": "cache)~\\citep{zhao2024atom} and QServe (4-bit weights, 8-bit activations, 4-bit KV cache)~\\citep{lin2025qserve}, write every"
+  },
+  {
+   "file": "03_methods",
+   "line": 15,
+   "literal": "24",
+   "class": "Qwen layers (\u00a72)",
+   "context": "Qwen-base ($a$) & \\texttt{Qwen/Qwen2.5-0.5B} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 15,
+   "literal": "14",
+   "class": "Qwen query heads",
+   "context": "Qwen-base ($a$) & \\texttt{Qwen/Qwen2.5-0.5B} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 15,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "Qwen-base ($a$) & \\texttt{Qwen/Qwen2.5-0.5B} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 15,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "Qwen-base ($a$) & \\texttt{Qwen/Qwen2.5-0.5B} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 16,
+   "literal": "24",
+   "class": "Qwen layers (\u00a72)",
+   "context": "Qwen-instruct ($b$) & \\texttt{Qwen/Qwen2.5-0.5B-Instruct} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 16,
+   "literal": "14",
+   "class": "Qwen query heads",
+   "context": "Qwen-instruct ($b$) & \\texttt{Qwen/Qwen2.5-0.5B-Instruct} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 16,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "Qwen-instruct ($b$) & \\texttt{Qwen/Qwen2.5-0.5B-Instruct} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 16,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "Qwen-instruct ($b$) & \\texttt{Qwen/Qwen2.5-0.5B-Instruct} & 24 & 14 / 2 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 17,
+   "literal": "16",
+   "class": "Llama layers (\u00a72)",
+   "context": "Llama-base ($c$) & \\texttt{meta-llama/Llama-3.2-1B} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 17,
+   "literal": "32",
+   "class": "Llama query heads",
+   "context": "Llama-base ($c$) & \\texttt{meta-llama/Llama-3.2-1B} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 17,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "Llama-base ($c$) & \\texttt{meta-llama/Llama-3.2-1B} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 17,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "Llama-base ($c$) & \\texttt{meta-llama/Llama-3.2-1B} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 18,
+   "literal": "16",
+   "class": "Llama layers (\u00a72)",
+   "context": "Llama-instruct ($d$) & \\texttt{meta-llama/Llama-3.2-1B-Instruct} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 18,
+   "literal": "32",
+   "class": "Llama query heads",
+   "context": "Llama-instruct ($d$) & \\texttt{meta-llama/Llama-3.2-1B-Instruct} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 18,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "Llama-instruct ($d$) & \\texttt{meta-llama/Llama-3.2-1B-Instruct} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 18,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "Llama-instruct ($d$) & \\texttt{meta-llama/Llama-3.2-1B-Instruct} & 16 & 32 / 8 & 64 \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 26,
+   "literal": "3",
+   "class": "count",
+   "context": "All four models receive the same raw GSM8K 3-shot completion prompt~\\citep{cobbe2021gsm8k}, without a chat template, so"
+  },
+  {
+   "file": "03_methods",
+   "line": 29,
+   "literal": "1}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "At decode step $t$, starting from token $x_{t-1}$ and the arm's cache $\\mathcal{C}_{t-1}$, a \\emph{measurement pass} runs"
+  },
+  {
+   "file": "03_methods",
+   "line": 29,
+   "literal": "1}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "At decode step $t$, starting from token $x_{t-1}$ and the arm's cache $\\mathcal{C}_{t-1}$, a \\emph{measurement pass} runs"
+  },
+  {
+   "file": "03_methods",
+   "line": 35,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "its 64 coordinates. Only the newly written entry is perturbed, at write time; the prompt prefill is FP16 in every arm. A"
+  },
+  {
+   "file": "03_methods",
+   "line": 41,
+   "literal": "65",
+   "class": "history cap (\u00a73)",
+   "context": "generation, capped at 65 tokens and stopped at the first newline followed by ``Question:'', where the model starts a new"
+  },
+  {
+   "file": "03_methods",
+   "line": 42,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "few-shot item of its own. All arms of a model share this history. At steps $1\\ldots T_i$, with $T_i=\\min(64,\\text{history"
+  },
+  {
+   "file": "03_methods",
+   "line": 45,
+   "literal": "10",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "$a$ over steps $1\\ldots T_i$, floored at $10^{-9}$. A contrast is $\\theta(a,b)=\\frac1n\\sum_i[\\log m_i^{a}-\\log m_i^{b}]$,"
+  },
+  {
+   "file": "03_methods",
+   "line": 45,
+   "literal": "9}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "$a$ over steps $1\\ldots T_i$, floored at $10^{-9}$. A contrast is $\\theta(a,b)=\\frac1n\\sum_i[\\log m_i^{a}-\\log m_i^{b}]$,"
+  },
+  {
+   "file": "03_methods",
+   "line": 49,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "\\vn{hist.li.Smean} (Llama-instruct). Every model uses the same 200 seeded GSM8K test problems as the earlier studies, and"
+  },
+  {
+   "file": "03_methods",
+   "line": 50,
+   "literal": "100",
+   "class": "calibration problems (\u00a75)",
+   "context": "the same 100 training problems for calibration. No gold answer is used. For Qwen-base, the in-session histories equal those"
+  },
+  {
+   "file": "03_methods",
+   "line": 51,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "of the earlier Qwen study on \\vn{hist.qb.e1same} of 200 problems."
+  },
+  {
+   "file": "03_methods",
+   "line": 56,
+   "literal": "14",
+   "class": "Qwen query heads",
+   "context": "Table~\\ref{tab:arms} lists the 14 test arms; the FP16 reference is a separate pass. Each constructed perturbation is"
+  },
+  {
+   "file": "03_methods",
+   "line": 58,
+   "literal": "4}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "step. The isotropic arms draw a direction $u$ uniformly on the unit sphere of $\\mathbb{R}^{64}$; C2 multiplies the natural"
+  },
+  {
+   "file": "03_methods",
+   "line": 60,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "$P_8=U_8U_8^\\top$, the projector onto the top-8 eigenvectors of the calibration query second moment of that (layer, KV"
+  },
+  {
+   "file": "03_methods",
+   "line": 74,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "QA & all NF4 & $\\kappa^{\\FF}+\\|\\Delta_K\\|\\,P_8z/\\|P_8z\\|$ & $\\kappa^{\\FF}+\\|\\Delta_V\\|u_V$ & key error inside the top-8 query subspace \\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 107,
+   "literal": "10",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "Every constructed entry is built in float64, with its per-slot norm within $10^{-4}$ of the target, then rounded once to"
+  },
+  {
+   "file": "03_methods",
+   "line": 107,
+   "literal": "4}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "Every constructed entry is built in float64, with its per-slot norm within $10^{-4}$ of the target, then rounded once to"
+  },
+  {
+   "file": "03_methods",
+   "line": 113,
+   "literal": "100",
+   "class": "calibration problems (\u00a75)",
+   "context": "Each model is calibrated on 100 GSM8K training problems with arms NAT and C1 at doses $\\alpha\\in\\{0.5,1,2\\}$, over 64"
+  },
+  {
+   "file": "03_methods",
+   "line": 113,
+   "literal": "0.5,1,2",
+   "class": "design constant: dose set / scale range (PROTOCOL_V3 \u00a75)",
+   "context": "Each model is calibrated on 100 GSM8K training problems with arms NAT and C1 at doses $\\alpha\\in\\{0.5,1,2\\}$, over 64"
+  },
+  {
+   "file": "03_methods",
+   "line": 113,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "Each model is calibrated on 100 GSM8K training problems with arms NAT and C1 at doses $\\alpha\\in\\{0.5,1,2\\}$, over 64"
+  },
+  {
+   "file": "03_methods",
+   "line": 116,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "top-8 eigenvectors $U_8$, the captured query energy $E_8$ and the 80\\%-energy rank $r_{80}$; the channel variances"
+  },
+  {
+   "file": "03_methods",
+   "line": 116,
+   "literal": "80\\%",
+   "class": "r80 definition (\u00a75)",
+   "context": "top-8 eigenvectors $U_8$, the captured query energy $E_8$ and the 80\\%-energy rank $r_{80}$; the channel variances"
+  },
+  {
+   "file": "03_methods",
+   "line": 124,
+   "literal": "0.10,0.40",
+   "class": "clamp of c (analyze_v3.C_LO, C_HI; PROTOCOL_V3 \u00a75)",
+   "context": "per-step error norm, clamped to $[0.10,0.40]$. The margin is thus the change in divergence that the typical step-to-step"
+  },
+  {
+   "file": "03_methods",
+   "line": 127,
+   "literal": "0.25",
+   "class": "b-hat threshold / band (\u00a75, \u00a78.3)",
+   "context": "an informative dose response, $\\hat b\\ge0.25$. The path comparison (H-D) is reported as descriptive if $s_K$ or $s_V$ falls"
+  },
+  {
+   "file": "03_methods",
+   "line": 128,
+   "literal": "0.5,2",
+   "class": "design constant: dose set / scale range (PROTOCOL_V3 \u00a75)",
+   "context": "outside $[0.5,2]$, the measured dose range; this rule did not trigger."
+  },
+  {
+   "file": "03_methods",
+   "line": 134,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "At step $t\\ge2$ the predictors are evaluated over the decode positions $J_t$ written before $t$. Here $\\delta k_j$ and"
+  },
+  {
+   "file": "03_methods",
+   "line": 137,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "head that serves $g$, and $d=64$:"
+  },
+  {
+   "file": "03_methods",
+   "line": 139,
+   "literal": "1}{2",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "P_{\\mathrm{norm}}&=\\tfrac{1}{2LH_{kv}}\\textstyle\\sum_{l,h}\\sum_{X\\in\\{K,V\\}}\\big(\\tfrac{1}{|J_t|}\\sum_{j}\\|\\delta X_{j,l,h}\\|^2\\big)^{1/2},\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 139,
+   "literal": "1}{",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "P_{\\mathrm{norm}}&=\\tfrac{1}{2LH_{kv}}\\textstyle\\sum_{l,h}\\sum_{X\\in\\{K,V\\}}\\big(\\tfrac{1}{|J_t|}\\sum_{j}\\|\\delta X_{j,l,h}\\|^2\\big)^{1/2},\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 139,
+   "literal": "2}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "P_{\\mathrm{norm}}&=\\tfrac{1}{2LH_{kv}}\\textstyle\\sum_{l,h}\\sum_{X\\in\\{K,V\\}}\\big(\\tfrac{1}{|J_t|}\\sum_{j}\\|\\delta X_{j,l,h}\\|^2\\big)^{1/2},\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 140,
+   "literal": "1}{",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "P_{\\mathrm{logit}}&=\\tfrac{1}{LH_q}\\textstyle\\sum_{l,g}\\sum_{j}p_{t,l,g,j}\\,|q_{t,l,g}\\cdot\\delta k_{j,l,h(g)}|/\\sqrt d,\\\\"
+  },
+  {
+   "file": "03_methods",
+   "line": 141,
+   "literal": "1}{",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "P_{\\mathrm{val}}&=\\tfrac{1}{LH_q}\\textstyle\\sum_{l,g}\\big\\|\\sum_{j}p_{t,l,g,j}\\,\\delta v_{j,l,h(g)}\\big\\|."
+  },
+  {
+   "file": "03_methods",
+   "line": 149,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "for the Spearman correlation of a predictor $P$ with the per-step JS over steps $2\\ldots T_i$ of a problem. The locked"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "2}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "12",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "12",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 169,
+   "literal": "12",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "H-F 2$\\times$2 ($\\mathcal{F}_{2\\times2}$) & family $\\tfrac12[(c+d)-(a+b)]$, tuning $\\tfrac12[(b+d)-(a+c)]$, interaction $\\tfrac12[(a-b)-(c-d"
+  },
+  {
+   "file": "03_methods",
+   "line": 171,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "H-A predictor ($\\mathcal{F}_{\\mathrm{A}}$) & $D_m=\\mathrm{mean}_i[\\mathrm{Sp}(P_{\\mathrm{logit}})-\\mathrm{Sp}(P_{\\mathrm{norm}})]$ in NAT; p"
+  },
+  {
+   "file": "03_methods",
+   "line": 171,
+   "literal": "0.05",
+   "class": "Holm significance level (\u00a78)",
+   "context": "H-A predictor ($\\mathcal{F}_{\\mathrm{A}}$) & $D_m=\\mathrm{mean}_i[\\mathrm{Sp}(P_{\\mathrm{logit}})-\\mathrm{Sp}(P_{\\mathrm{norm}})]$ in NAT; p"
+  },
+  {
+   "file": "03_methods",
+   "line": 178,
+   "literal": "2}",
+   "class": "formula fragment (LaTeX math, not a result)",
+   "context": "Holm over the four; $\\mathcal{F}_{2\\times2}$, the three H-F contrasts, with Holm over the three. The H-C cross-model decision"
+  },
+  {
+   "file": "03_methods",
+   "line": 183,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "All rules were fixed before any test problem. Each contrast receives a \\emph{verdict}: \\emph{difference} if its 95\\%"
+  },
+  {
+   "file": "03_methods",
+   "line": 184,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "interval excludes 0, \\emph{equivalent} if its 90\\% interval lies inside $\\pm$margin and $\\hat b\\ge0.25$, and"
+  },
+  {
+   "file": "03_methods",
+   "line": 184,
+   "literal": "0.25",
+   "class": "b-hat threshold / band (\u00a75, \u00a78.3)",
+   "context": "interval excludes 0, \\emph{equivalent} if its 90\\% interval lies inside $\\pm$margin and $\\hat b\\ge0.25$, and"
+  },
+  {
+   "file": "03_methods",
+   "line": 186,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "\\emph{supported} if the verdict is a difference in the predicted direction, \\emph{contradicted} if the 95\\% interval lies"
+  },
+  {
+   "file": "03_methods",
+   "line": 188,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "(Table~\\ref{tab:hyp}), and H-A and H-C have no equivalence category. Verdicts use the \\emph{unadjusted} 95\\% interval of each"
+  },
+  {
+   "file": "03_methods",
+   "line": 190,
+   "literal": "0.05",
+   "class": "Holm significance level (\u00a78)",
+   "context": "every verdict. Every locked test cited in the abstract and the conclusions also has a Holm-adjusted $p<0.05$, except the"
+  },
+  {
+   "file": "03_methods",
+   "line": 192,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "95\\% interval excludes 0. Descriptive and exploratory quantities are labelled as such. Intervals come from a"
+  },
+  {
+   "file": "03_methods",
+   "line": 193,
+   "literal": "10{,}000",
+   "class": "bootstrap / permutation count (\u00a73)",
+   "context": "problem-clustered percentile bootstrap with 10{,}000 resamples (seed 20261103), and $p$-values from two-sided paired"
+  },
+  {
+   "file": "03_methods",
+   "line": 193,
+   "literal": "20261103",
+   "class": "locked bootstrap seed (\u00a73)",
+   "context": "problem-clustered percentile bootstrap with 10{,}000 resamples (seed 20261103), and $p$-values from two-sided paired"
+  },
+  {
+   "file": "03_methods",
+   "line": 194,
+   "literal": "10{,}000",
+   "class": "bootstrap / permutation count (\u00a73)",
+   "context": "sign-flip permutation tests with 10{,}000 permutations; for the H-C shrinkage $S_m=|\\beta_0|-|\\beta_1|$ the $p$-value is"
+  },
+  {
+   "file": "03_methods",
+   "line": 195,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "$2\\min(P^\\ast(S\\le0),P^\\ast(S\\ge0))$ over the bootstrap. There are no step-level $p$-values."
+  },
+  {
+   "file": "03_methods",
+   "line": 197,
+   "literal": "0.5",
+   "class": "band / scale range / dose (\u00a75, \u00a78.3)",
+   "context": "H-C bands for $f_m$ were \\emph{substantial} if $\\hat f\\ge0.5$ and the 95\\% lower bound is $>0$; \\emph{partial} if the lower"
+  },
+  {
+   "file": "03_methods",
+   "line": 197,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "H-C bands for $f_m$ were \\emph{substantial} if $\\hat f\\ge0.5$ and the 95\\% lower bound is $>0$; \\emph{partial} if the lower"
+  },
+  {
+   "file": "03_methods",
+   "line": 198,
+   "literal": "0.5",
+   "class": "band / scale range / dose (\u00a75, \u00a78.3)",
+   "context": "bound is $>0$ and $\\hat f<0.5$; \\emph{no} if the upper bound is $<0.25$; otherwise \\emph{inconclusive}. H-C required its"
+  },
+  {
+   "file": "03_methods",
+   "line": 198,
+   "literal": "0.25",
+   "class": "b-hat threshold / band (\u00a75, \u00a78.3)",
+   "context": "bound is $>0$ and $\\hat f<0.5$; \\emph{no} if the upper bound is $<0.25$; otherwise \\emph{inconclusive}. H-C required its"
+  },
+  {
+   "file": "03_methods",
+   "line": 202,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "adjusted gap $\\Gamma_1$, and $f_\\times=1-|\\Gamma_1|/|\\Gamma_0|$, with the precondition that the 95\\% interval of $\\Gamma_0$"
+  },
+  {
+   "file": "03_methods",
+   "line": 204,
+   "literal": "0.497",
+   "class": "assumed SD (\u00a78.9)",
+   "context": "SD of $\\theta_{m,i}$ exceeded the assumed common SD of 0.497 by more than 25\\%; its equivalence margin is the mean of the"
+  },
+  {
+   "file": "03_methods",
+   "line": 204,
+   "literal": "25\\%",
+   "class": "SD guard (\u00a78.9)",
+   "context": "SD of $\\theta_{m,i}$ exceeded the assumed common SD of 0.497 by more than 25\\%; its equivalence margin is the mean of the"
+  },
+  {
+   "file": "03_methods",
+   "line": 213,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "NAT and REL-K arms on 50 seeded problems per model and added an arm, REL-K/L0, equal to REL-K except that layer~0 keeps its"
+  },
+  {
+   "file": "03_methods",
+   "line": 215,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "problem records (50 per model). X13 ran on the same seeded subset, reduced to \\vn{x13.n} problems per model by its"
+  },
+  {
+   "file": "03_methods",
+   "line": 230,
+   "literal": "15\\%",
+   "class": "G6 drift limit (\u00a79)",
+   "context": "than 15\\% from the projection used for the GPU budget: it failed for Llama-base, and the authors waived that gate, before any"
+  },
+  {
+   "file": "03_methods",
+   "line": 234,
+   "literal": "8\\,GB",
+   "class": "GPU memory",
+   "context": "ran one at a time on one RTX 4060 Laptop GPU (8\\,GB), with \\vn{gpu.total} GPU-hours against a locked ceiling of 25\\,h; X9"
+  },
+  {
+   "file": "03_methods",
+   "line": 234,
+   "literal": "25",
+   "class": "GPU-hour ceiling (\u00a79)",
+   "context": "ran one at a time on one RTX 4060 Laptop GPU (8\\,GB), with \\vn{gpu.total} GPU-hours against a locked ceiling of 25\\,h; X9"
+  },
+  {
+   "file": "04_results",
+   "line": 7,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "analyses. All estimates are log mean-JS contrasts with 95\\% intervals, and each model has $n=200$ problems."
+  },
+  {
+   "file": "04_results",
+   "line": 7,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "analyses. All estimates are log mean-JS contrasts with 95\\% intervals, and each model has $n=200$ problems."
+  },
+  {
+   "file": "04_results",
+   "line": 14,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "\\caption{Left: the locked log mean-JS contrasts of each model with 95\\% problem-clustered bootstrap intervals (positive:"
+  },
+  {
+   "file": "04_results",
+   "line": 26,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "in all four models, with opposite signs (all Holm $p<0.001$). On the key path the natural error was \\emph{less} disruptive:"
+  },
+  {
+   "file": "04_results",
+   "line": 31,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "draws with norm-corrected rounding removed every deviation above 5\\% and changed NAT$-$C1 and NAT-K$-$C1-K by at most"
+  },
+  {
+   "file": "04_results",
+   "line": 57,
+   "literal": "0.5,2",
+   "class": "design constant: dose set / scale range (PROTOCOL_V3 \u00a75)",
+   "context": "The scale factors lay within the pre-declared range $[0.5,2]$ ($s_K$ from \\vn{rng.sK.min} to \\vn{rng.sK.max}), so H-D was"
+  },
+  {
+   "file": "04_results",
+   "line": 89,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "the interval excludes 0 with the same sign. Llama-base gave \\vn{natc1.lb.est} \\vn{natc1.lb.ci}; its 90\\% interval"
+  },
+  {
+   "file": "04_results",
+   "line": 95,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\paragraph{The 2$\\times$2: family, not tuning \\tagC{}} The per-model SDs of $\\theta_{m,i}$ were at most \\vn{hf.sdmax}, below"
+  },
+  {
+   "file": "04_results",
+   "line": 95,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\paragraph{The 2$\\times$2: family, not tuning \\tagC{}} The per-model SDs of $\\theta_{m,i}$ were at most \\vn{hf.sdmax}, below"
+  },
+  {
+   "file": "04_results",
+   "line": 99,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "\\vn{hf.tun.ci}; its 90\\% interval \\vn{hf.tun.ci90} lies inside the clamp-set margin $\\pm$\\vn{hf.margin}, so the verdict is"
+  },
+  {
+   "file": "04_results",
+   "line": 103,
+   "literal": "0.05",
+   "class": "Holm significance level (\u00a78)",
+   "context": "\\vn{hf.word.add}, at a Holm $p$ close to 0.05. The base-to-instruct changes behind it had opposite-signed point estimates,"
+  },
+  {
+   "file": "04_results",
+   "line": 113,
+   "literal": "0.55",
+   "class": "figure width",
+   "context": "\\includegraphics[width=0.55\\linewidth]{figures_v3/fig_2x2.pdf}"
+  },
+  {
+   "file": "04_results",
+   "line": 114,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "\\caption{NAT$-$C1 per model (95\\% CI): the 2$\\times$2 of Table~\\ref{tab:hf}.}"
+  },
+  {
+   "file": "04_results",
+   "line": 114,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\caption{NAT$-$C1 per model (95\\% CI): the 2$\\times$2 of Table~\\ref{tab:hf}.}"
+  },
+  {
+   "file": "04_results",
+   "line": 114,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\caption{NAT$-$C1 per model (95\\% CI): the 2$\\times$2 of Table~\\ref{tab:hf}.}"
+  },
+  {
+   "file": "04_results",
+   "line": 122,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "\\vn{rng.he.min} and \\vn{rng.he.max} (all Holm $p<0.001$); the prediction is supported. The two arms differ in which weights"
+  },
+  {
+   "file": "04_results",
+   "line": 152,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "No problem was excluded for $T_i<8$. $D_m$ is a difference between two rank correlations; their levels, which are low in"
+  },
+  {
+   "file": "04_results",
+   "line": 155,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "\\paragraph{H-B: a positive control \\tagC{}} Key error placed inside the top-8 query subspace was far more disruptive than key"
+  },
+  {
+   "file": "04_results",
+   "line": 157,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "\\vn{rng.hb.max} (ratios of geometric-mean JS from \\vn{rng.hbratio.min} to \\vn{rng.hbratio.max}; all Holm $p<0.001$); the"
+  },
+  {
+   "file": "04_results",
+   "line": 179,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "the Llama models every arm's maximum deviation is at most \\vn{rng.rdevmaxllama.max} and no slot exceeds 5\\%. In the Qwen"
+  },
+  {
+   "file": "04_results",
+   "line": 183,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "correction, \\vn{rng.x13nnpos.min}--\\vn{rng.x13nnpos.max}\\% of slots exceeded their target by more than 5\\% and only"
+  },
+  {
+   "file": "04_results",
+   "line": 184,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "\\vn{rng.x13nnneg.min}--\\vn{rng.x13nnneg.max}\\% fell short by more than 5\\%, so rounding mostly enlarged the isotropic"
+  },
+  {
+   "file": "04_results",
+   "line": 185,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "perturbations. After correction no step had a slot above 5\\% (against \\vn{rng.x13gt5lock.min}--\\vn{rng.x13gt5lock.max}"
+  },
+  {
+   "file": "04_results",
+   "line": 187,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "\\vn{rng.x13dabs.max} (95\\% intervals within $\\pm$\\vn{rng.x13dciabs.max}), well inside the locked half-widths."
+  },
+  {
+   "file": "04_results",
+   "line": 190,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "before the first write with a slot above 5\\%, and drops problems with fewer than 8 such steps (Table~\\ref{tab:trunc}). In"
+  },
+  {
+   "file": "04_results",
+   "line": 190,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "before the first write with a slot above 5\\%, and drops problems with fewer than 8 such steps (Table~\\ref{tab:trunc}). In"
+  },
+  {
+   "file": "04_results",
+   "line": 193,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "of 200 problems, with median retained step fractions of \\vn{trunc.qb.natc1.frac} and \\vn{trunc.qi.natc1.frac}; for H-B,"
+  },
+  {
+   "file": "04_results",
+   "line": 199,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\paragraph{Other pre-declared sensitivities \\tagE{}} For NAT$-$C1, restricting to steps 2--8 or 9--64, using per-problem"
+  },
+  {
+   "file": "04_results",
+   "line": 199,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "\\paragraph{Other pre-declared sensitivities \\tagE{}} For NAT$-$C1, restricting to steps 2--8 or 9--64, using per-problem"
+  },
+  {
+   "file": "04_results",
+   "line": 199,
+   "literal": "9",
+   "class": "steps 9--64",
+   "context": "\\paragraph{Other pre-declared sensitivities \\tagE{}} For NAT$-$C1, restricting to steps 2--8 or 9--64, using per-problem"
+  },
+  {
+   "file": "04_results",
+   "line": 199,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "\\paragraph{Other pre-declared sensitivities \\tagE{}} For NAT$-$C1, restricting to steps 2--8 or 9--64, using per-problem"
+  },
+  {
+   "file": "04_results",
+   "line": 200,
+   "literal": "4",
+   "class": "outlier channels / exposed problems / four models",
+   "context": "medians, excluding the 4 test problems whose gold solutions were token-labelled in earlier work (``exposed'' problems,"
+  },
+  {
+   "file": "04_results",
+   "line": 201,
+   "literal": "32",
+   "class": "Llama query heads",
+   "context": "\\ref{app:protocols}), or keeping problems with $T_i\\ge32$ keeps the primary's sign in every model, except one Llama-base"
+  },
+  {
+   "file": "04_results",
+   "line": 202,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "window whose primary is itself near 0 (Table~\\ref{tab:sensv3}). For example, Qwen-base gives \\vn{sens.qb.s28} (steps 2--8)"
+  },
+  {
+   "file": "04_results",
+   "line": 202,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "window whose primary is itself near 0 (Table~\\ref{tab:sensv3}). For example, Qwen-base gives \\vn{sens.qb.s28} (steps 2--8)"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 28,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "X9 & Per-layer follow-up on 50 problems (GPU): (a) key error in the query subspace, (b) REL-K with layer 0 natural, (c) H-A without layer 0,"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 53,
+   "literal": "0.5",
+   "class": "band / scale range / dose (\u00a75, \u00a78.3)",
+   "context": "\\vn{e1l.flip.nat}\\%. In the earlier Qwen study, isotropic perturbations at 0.5, 1 and 2 times the natural norm gave mean JS"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 53,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\vn{e1l.flip.nat}\\%. In the earlier Qwen study, isotropic perturbations at 0.5, 1 and 2 times the natural norm gave mean JS"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 61,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "directions in which the queries have most energy. In the 50 problems of X9, the share $\\phi$ of natural key-error energy"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 62,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "inside the top-8 query subspace was below the isotropic value $8/64=0.125$ in all four models"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 62,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "inside the top-8 query subspace was below the isotropic value $8/64=0.125$ in all four models"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 62,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "inside the top-8 query subspace was below the isotropic value $8/64=0.125$ in all four models"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 62,
+   "literal": "0.125",
+   "class": "isotropic subspace share 8/64 (FOLLOWUP_X9 \u00a78a)",
+   "context": "inside the top-8 query subspace was below the isotropic value $8/64=0.125$ in all four models"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 63,
+   "literal": "0.125",
+   "class": "isotropic subspace share 8/64 (FOLLOWUP_X9 \u00a78a)",
+   "context": "($A=\\mathrm{mean}\\ln(\\phi_i/0.125)$ between \\vn{rng.x9aA.min} and \\vn{rng.x9aA.max}; the pre-stated exploratory rule reads"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 70,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "between \\vn{rng.x9arho.min} and \\vn{rng.x9arho.max}; every interval includes 0). The top-8 share is a coarse measure: the"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 71,
+   "literal": "80\\%",
+   "class": "r80 definition (\u00a75)",
+   "context": "median 80\\%-energy rank $r_{80}$ of the queries is well below eight (Table~\\ref{tab:cal}), so a key error could avoid the"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 72,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "leading few query directions without changing its top-8 share. X13 measured this directly (Section~\\ref{sec:x:cm}): weighted"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 73,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "by the query energy, the depletion is far larger than the top-8 share shows."
+  },
+  {
+   "file": "05_exploratory",
+   "line": 78,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "$p<0.001$ each), and has the opposite sign in both Qwen models (Table~\\ref{tab:exp}). Applying both paths' natural errors"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 100,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "Holm $p<0.001$; direction \\emph{supported}). It closed a share $G$ of \\vn{rng.x13GV.min}--\\vn{rng.x13GV.max} of the gap"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 112,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "against a top-8 measure $A$ of only \\vn{rng.x13A.min} to \\vn{rng.x13A.max} on the same problems; the depletion is strongest"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 121,
+   "literal": "5\\%",
+   "class": "amendment-2 flag (\u00a716)",
+   "context": "norm-corrected FP16 rounding. No step had a slot above 5\\% deviation (against \\vn{rng.x13gt5lock.min}--\\vn{rng.x13gt5lock.max}"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 122,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "steps in the locked arms on the same problems). NAT$-$C1 and NAT-K$-$C1-K changed by at most \\vn{rng.x13dabs.max}, with 95\\%"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 131,
+   "literal": "100\\%",
+   "class": "the whole (shares need not add to 100%)",
+   "context": "error magnitude, and the two shares need not add to 100\\%. Set against the weights each arm quantizes, the reading reverses:"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 158,
+   "literal": "0.001",
+   "class": "summary threshold; verified by the '<0.001 claims' check",
+   "context": "direction improved the ranking by \\vn{rng.x5.min} to \\vn{rng.x5.max} in every model (Holm $p<0.001$ each; pooled"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 169,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "the Qwen models stayed negative (Table~\\ref{tab:xa}). In this 50-problem follow-up, layer~0 does not account for the Qwen"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 191,
+   "literal": "0.5",
+   "class": "band / scale range / dose (\u00a75, \u00a78.3)",
+   "context": "the pre-stated rule (supported if $G\\ge0.5$ with lower bound $>0.2$; contradicted if the upper bound is $<0.2$) both are"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 191,
+   "literal": "0.2",
+   "class": "X9b decision threshold (FOLLOWUP_X9 \u00a78b, decision D1)",
+   "context": "the pre-stated rule (supported if $G\\ge0.5$ with lower bound $>0.2$; contradicted if the upper bound is $<0.2$) both are"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 191,
+   "literal": "0.2",
+   "class": "X9b decision threshold (FOLLOWUP_X9 \u00a78b, decision D1)",
+   "context": "the pre-stated rule (supported if $G\\ge0.5$ with lower bound $>0.2$; contradicted if the upper bound is $<0.2$) both are"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 205,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "\\caption{X9 per layer \\tagE{} (50 problems per model). Left: share of the natural key-error energy inside the top-8 query"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 205,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "\\caption{X9 per layer \\tagE{} (50 problems per model). Left: share of the natural key-error energy inside the top-8 query"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 206,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "subspace (X9a); dashed, the isotropic value $8/64$. Right: median effective REL-K scale $\\rho^\\ast/\\rho_{\\mathrm{slot}}$"
+  },
+  {
+   "file": "05_exploratory",
+   "line": 206,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "subspace (X9a); dashed, the isotropic value $8/64$. Right: median effective REL-K scale $\\rho^\\ast/\\rho_{\\mathrm{slot}}$"
+  },
+  {
+   "file": "06_discussion",
+   "line": 4,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "These readings concern four small models and teacher-forced next-token divergence over at most 64 steps. They are not"
+  },
+  {
+   "file": "06_discussion",
+   "line": 20,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "\\vn{rng.x13R.min}--\\vn{rng.x13R.max} of the first-order logit energy of isotropic error, far more depletion than the top-8"
+  },
+  {
+   "file": "06_discussion",
+   "line": 61,
+   "literal": "14",
+   "class": "Qwen query heads",
+   "context": "design cannot separate because they coincide with family, are the grouping of query heads on KV heads (14 on 2 in Qwen, 32"
+  },
+  {
+   "file": "06_discussion",
+   "line": 61,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "design cannot separate because they coincide with family, are the grouping of query heads on KV heads (14 on 2 in Qwen, 32"
+  },
+  {
+   "file": "06_discussion",
+   "line": 61,
+   "literal": "32",
+   "class": "Llama query heads",
+   "context": "design cannot separate because they coincide with family, are the grouping of query heads on KV heads (14 on 2 in Qwen, 32"
+  },
+  {
+   "file": "06_discussion",
+   "line": 62,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "on 8 in Llama) and model scale and depth. The subspace control (H-B) behaved as attention algebra requires, below a"
+  },
+  {
+   "file": "06_discussion",
+   "line": 68,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "2$\\times$2 it tracks family: the family contrast was resolved, and the pre-declared prediction of a tuning effect was"
+  },
+  {
+   "file": "06_discussion",
+   "line": 68,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "2$\\times$2 it tracks family: the family contrast was resolved, and the pre-declared prediction of a tuning effect was"
+  },
+  {
+   "file": "06_discussion",
+   "line": 70,
+   "literal": "0.05",
+   "class": "Holm significance level (\u00a78)",
+   "context": "rejected additivity at a Holm $p$ close to 0.05. With one model per cell, these readings describe four specific models. They"
+  },
+  {
+   "file": "07_limitations",
+   "line": 5,
+   "literal": "24",
+   "class": "Qwen layers (\u00a72)",
+   "context": "Qwen2.5-0.5B and its instruct version with Llama-3.2-1B and its instruct version and is confounded with architecture (24"
+  },
+  {
+   "file": "07_limitations",
+   "line": 6,
+   "literal": "16",
+   "class": "Llama layers (\u00a72)",
+   "context": "versus 16 layers, 2 versus 8 KV heads), size, training data and tokenizer; the tuning contrast compares one base and one"
+  },
+  {
+   "file": "07_limitations",
+   "line": 6,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "versus 16 layers, 2 versus 8 KV heads), size, training data and tokenizer; the tuning contrast compares one base and one"
+  },
+  {
+   "file": "07_limitations",
+   "line": 6,
+   "literal": "8",
+   "class": "top-r subspace, S_i<8 exclusion, kept-step minimum (\u00a74, \u00a78.1, \u00a716)",
+   "context": "versus 16 layers, 2 versus 8 KV heads), size, training data and tokenizer; the tuning contrast compares one base and one"
+  },
+  {
+   "file": "07_limitations",
+   "line": 8,
+   "literal": "3",
+   "class": "count",
+   "context": "uses four small models, one benchmark (GSM8K, 3-shot), one quantizer (bitsandbytes NF4 with double quantization and FP16"
+  },
+  {
+   "file": "07_limitations",
+   "line": 13,
+   "literal": "64",
+   "class": "Tier A steps / head dimension (\u00a73, \u00a72)",
+   "context": "\\paragraph{Outcome} The teacher-forced protocol measures next-token divergence under a shared FP16 history for at most 64"
+  },
+  {
+   "file": "07_limitations",
+   "line": 32,
+   "literal": "0.05",
+   "class": "Holm significance level (\u00a78)",
+   "context": "$p$ close to 0.05."
+  },
+  {
+   "file": "07_limitations",
+   "line": 35,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "formulated after the earlier studies, and the 200 test problems were used in earlier work, although without outcomes for"
+  },
+  {
+   "file": "07_limitations",
+   "line": 40,
+   "literal": "50",
+   "class": "X9 problems per model (FOLLOWUP_X9 \u00a72, decision D5)",
+   "context": "planned after the locked results were known and are not blind; X9 used 50 and X13 \\vn{x13.n} of the 200 problems per model,"
+  },
+  {
+   "file": "07_limitations",
+   "line": 40,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "planned after the locked results were known and are not blind; X9 used 50 and X13 \\vn{x13.n} of the 200 problems per model,"
+  },
+  {
+   "file": "H_v3extra",
+   "line": 5,
+   "literal": "90\\%",
+   "class": "CI level",
+   "context": "output. Table~\\ref{tab:fmfull} lists every test of the per-model families with 90\\% intervals and raw and Holm-adjusted"
+  },
+  {
+   "file": "G_background",
+   "line": 9,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\paragraph{Stage 1/2: accuracy pathways on Qwen2.5-0.5B} A persistent token-source $\\times$ cache-source intervention ran"
+  },
+  {
+   "file": "G_background",
+   "line": 12,
+   "literal": "930",
+   "class": "Stage 1 sample size (earlier study; STAGE1_REPORT, carried over)",
+   "context": "exploratory stage ($n=930$) and a protocol-locked held-out stage ($n=389$) that tested five contrasts."
+  },
+  {
+   "file": "G_background",
+   "line": 12,
+   "literal": "389",
+   "class": "Stage 2 held-out sample size (earlier study; STAGE2_REPORT)",
+   "context": "exploratory stage ($n=930$) and a protocol-locked held-out stage ($n=389$) that tested five contrasts."
+  },
+  {
+   "file": "G_background",
+   "line": 20,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "\\caption{Stage~2 (protocol-locked held-out, $n=389$, Qwen2.5-0.5B, GSM8K): paired accuracy contrasts in percentage points,"
+  },
+  {
+   "file": "G_background",
+   "line": 20,
+   "literal": "389",
+   "class": "Stage 2 held-out sample size (earlier study; STAGE2_REPORT)",
+   "context": "\\caption{Stage~2 (protocol-locked held-out, $n=389$, Qwen2.5-0.5B, GSM8K): paired accuracy contrasts in percentage points,"
+  },
+  {
+   "file": "G_background",
+   "line": 22,
+   "literal": "3",
+   "class": "count",
+   "context": "positive/negative contrast value. H5 was declared to be judged by equivalence ($\\pm3$ points). From the earlier generated tables (read only)"
+  },
+  {
+   "file": "G_background",
+   "line": 48,
+   "literal": "200",
+   "class": "test problems per model (PROTOCOL_V3 \u00a73)",
+   "context": "\\caption{E1 and E1L, teacher-forced tier (200 problems per model, the same problem indices; 95\\% problem-clustered"
+  },
+  {
+   "file": "G_background",
+   "line": 48,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "\\caption{E1 and E1L, teacher-forced tier (200 problems per model, the same problem indices; 95\\% problem-clustered"
+  },
+  {
+   "file": "G_background",
+   "line": 57,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "2$\\times$2 decomposition. Every model's teacher-forced history is generated in session; for Qwen-base it equals the stored"
+  },
+  {
+   "file": "G_background",
+   "line": 57,
+   "literal": "2",
+   "class": "scale range / dose / count (\u00a75)",
+   "context": "2$\\times$2 decomposition. Every model's teacher-forced history is generated in session; for Qwen-base it equals the stored"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 7,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "\\paragraph{ChatGPT} ChatGPT (OpenAI) was used from July to November 2026 (earliest documented project discussion: 22 July"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 7,
+   "literal": "22",
+   "class": "date: 22 July 2026, earliest ChatGPT project discussion (supplied by the corresponding author, AI_USE_LOG_V3.md)",
+   "context": "\\paragraph{ChatGPT} ChatGPT (OpenAI) was used from July to November 2026 (earliest documented project discussion: 22 July"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 8,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "2026) for research discussion, experimental planning, methodological suggestions, critical evaluation of findings,"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 10,
+   "literal": "6",
+   "class": "model name GPT-6 (supplied by the corresponding author, AI_USE_LOG_V3.md)",
+   "context": "was GPT-6; the model versions used in earlier sessions were not recorded and are not inferred. Unpublished results, code and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "10",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "22",
+   "class": "date: 22 July 2026, earliest ChatGPT project discussion (supplied by the corresponding author, AI_USE_LOG_V3.md)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "10",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "28",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "10",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "22",
+   "class": "date: 22 July 2026, earliest ChatGPT project discussion (supplied by the corresponding author, AI_USE_LOG_V3.md)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "10",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 15,
+   "literal": "23",
+   "class": "date",
+   "context": "commit trailers, the commits of those studies (2026-10-22 to 2026-10-28) name Claude Opus 5.5 (2026-10-22 to 2026-10-23) and"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "10",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "23",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "10",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "28",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "09",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "29",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "09",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 16,
+   "literal": "30",
+   "class": "date",
+   "context": "Claude Sonnet 5.5 (2026-10-23 to 2026-10-28). Claude Sonnet 5 appears only in commits of 2026-09-29 and 2026-09-30, which"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "10",
+   "class": "date",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "29",
+   "class": "date",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "11",
+   "class": "date",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 18,
+   "literal": "01",
+   "class": "date",
+   "context": "(\\texttt{claude-opus-5-5}) in the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01. It was used for the"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "10",
+   "class": "date",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "28",
+   "class": "date",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "2026",
+   "class": "date (search period of the related-work section)",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "11",
+   "class": "date",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  },
+  {
+   "file": "J_aiuse",
+   "line": 30,
+   "literal": "01",
+   "class": "date",
+   "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01. It was the source of many design proposals, including"
+  }
+ ],
+ "unclassified_literals": [],
+ "e1_macros": [
+  {
+   "macro": "QThetaA",
+   "value": "${-}0.253$",
+   "expected": "$-0.253$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  },
+  {
+   "macro": "QThetaACI",
+   "value": "$[{-}0.325,{-}0.179]$",
+   "expected": "$[-0.325,-0.179]$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  },
+  {
+   "macro": "LThetaA",
+   "value": "$+0.058$",
+   "expected": "$+0.058$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  },
+  {
+   "macro": "LThetaACI",
+   "value": "$[{-}0.007,+0.121]$",
+   "expected": "$[-0.007,+0.121]$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  },
+  {
+   "macro": "DiffTheta",
+   "value": "$+0.311$",
+   "expected": "$+0.311$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  },
+  {
+   "macro": "DiffThetaCI",
+   "value": "$[+0.214,+0.407]$",
+   "expected": "$[+0.214,+0.407]$",
+   "ok": true,
+   "source": "E1_REPORT.md line 30 (-0.253 [-0.325, -0.179]); E1L_REPORT.md lines 17 and 34 (+0.058 [-0.007, +0.121]; +0.311 [+0.214, +0.407])"
+  }
+ ],
+ "summary_claims": [
+  {
+   "claim": "H-B: every Holm p < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "H-B: all four 'difference' with estimate > 0",
+   "ok": true
+  },
+  {
+   "claim": "H-D: all four 'difference', K more disruptive (estimate > 0), Holm < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "Provenance: all Holm p < 0.001, K negative, V positive",
+   "ok": true
+  },
+  {
+   "claim": "NAT-K - NAT-V: all four negative, CI excludes 0",
+   "ok": true
+  },
+  {
+   "claim": "H-E: all Holm p < 0.001, INH > LOC",
+   "ok": true
+  },
+  {
+   "claim": "X1: obs - pred Holm < 0.001 in each model, negative",
+   "ok": true
+  },
+  {
+   "claim": "X1: sign predicted only in Llama-instruct",
+   "ok": true
+  },
+  {
+   "claim": "X1: predicted positive in every model; observed opposite sign in both Qwen",
+   "ok": true
+  },
+  {
+   "claim": "X1 caption: Llama-base 'no' because its observed (NAT-C1) CI includes 0",
+   "ok": true
+  },
+  {
+   "claim": "Locked tests cited in abstract/conclusions have Holm < 0.05 (provenance, H-E, NAT-C1 QB/QI/LI, family)",
+   "ok": true
+  },
+  {
+   "claim": "Interaction Holm < 0.05 (both analyses)",
+   "ok": true
+  },
+  {
+   "claim": "X4: Qwen P_logit Spearman CIs include 0 ('near zero'); P_norm higher than P_logit in Qwen",
+   "ok": true
+  },
+  {
+   "claim": "X4: P_anormK follows the family pattern (negative in Qwen, positive in Llama)",
+   "ok": true
+  },
+  {
+   "claim": "X5: positive in all four, Holm < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "X7: x < 0 at every scored step in every model",
+   "ok": true
+  },
+  {
+   "claim": "X7: x-bar for P_val positive in every model",
+   "ok": true
+  },
+  {
+   "claim": "X9a: supported in all four; largest Holm p is Llama-base's",
+   "ok": true
+  },
+  {
+   "claim": "X9a: every Spearman(lnF, theta) CI includes 0",
+   "ok": true
+  },
+  {
+   "claim": "X9b: inconclusive in both Qwen models; Llama descriptive",
+   "ok": true
+  },
+  {
+   "claim": "X9c: Qwen D negative with and without layer 0",
+   "ok": true
+  },
+  {
+   "claim": "X9d: layers 1, 2 and 8 inflated in both Qwen models; none in Llama",
+   "ok": true
+  },
+  {
+   "claim": "X10: Llama K below benchmark (ratio < 1); Qwen K > 10x",
+   "ok": true
+  },
+  {
+   "claim": "X11: observed H-B ratio below benchmark B in every model",
+   "ok": true
+  },
+  {
+   "claim": "X12: neither tuning effect's CI excludes 0; opposite signs",
+   "ok": true
+  },
+  {
+   "claim": "X9 reproduction: all problems bitwise",
+   "ok": true
+  },
+  {
+   "claim": "NAT arith JS equals the earlier studies' value (QB = E1, LI = E1L)",
+   "ok": true
+  },
+  {
+   "claim": "H-A: supported in both Llama, contradicted in both Qwen",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: H-F readings family supported, tuning contradicted, additivity rejected",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: unclamped c below the 0.10 clamp in all four (margins set by the clamp)",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: Llama REL arms within [x10Kllama.min, x10V.max] of the benchmark, and x10V.max is a Llama value",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: C1-V within rng.rdevmaxllama.max in every model (from the locked report)",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: LOC potency > 1 in every model (LOC share of NAT divergence exceeds its weight share)",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: hcx.g0rev = -hcx.g0",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: Llama-base is the H-C 'not applicable' model and QB/LI share the band",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13a supported on both paths in all four",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13b V direction supported, band partial, in all four; manipulation passed everywhere",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13b K inconclusive in all four; Qwen K negative, Llama K positive; readings K mixed, V supported",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13b Llama K CIs exclude 0 but Holm p > 0.05",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13d supported in both Qwen models and contrasts; no >5% step after correction",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13c D_c positive with CI > 0 in all four",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: X13 NAT reproduction complete and nc_ok never false",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8c: GPU grand total = v3 + X9 + X13 (2 dp)",
+   "ok": true
+  },
+  {
+   "claim": "Phase 8a: r80 median below 8 in every model",
+   "ok": true
+  },
+  {
+   "claim": "H-C: |beta1| > |beta0| in all four",
+   "ok": true
+  },
+  {
+   "claim": "H-C bands: no (QB, LI), inconclusive (QI), not applicable (LB)",
+   "ok": true
+  },
+  {
+   "claim": "C2 - C1 negative with CI excluding 0 in all four",
+   "ok": true
+  },
+  {
+   "claim": "Pooled six-arm H-A positive in all four (CI lower bound > 0)",
+   "ok": true
+  },
+  {
+   "claim": "X2c negative in every model",
+   "ok": true
+  },
+  {
+   "claim": "X2a/X2b: Qwen negative, Llama-base positive, Llama-instruct inconclusive",
+   "ok": true
+  },
+  {
+   "claim": "Tuning step opposite in the two families (QI < QB, LI > LB in NAT-C1)",
+   "ok": true
+  },
+  {
+   "claim": "H-F guard not triggered (max SD < limit)",
+   "ok": true
+  },
+  {
+   "claim": "Llama-base NAT-C1 equivalent; others difference",
+   "ok": true
+  },
+  {
+   "claim": "H-C cross precondition met (g0 CI excludes 0, negative)",
+   "ok": true
+  }
+ ]
+}

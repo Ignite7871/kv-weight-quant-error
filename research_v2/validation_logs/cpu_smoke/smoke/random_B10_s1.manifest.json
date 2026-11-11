@@ -1,0 +1,52 @@
+{
+ "block": "smoke",
+ "split": "train",
+ "indices": [
+  11,
+  309
+ ],
+ "policy": {
+  "name": "random_B10_s1",
+  "kind": "pre",
+  "deployable": true,
+  "access": [
+   "rng"
+  ],
+  "p_fp16": 0.1,
+  "seed_label": "B10_s1"
+ },
+ "weight_bytes_per_pass": {
+  "fp16_routed": 715708416,
+  "nf4_routed": 184646976,
+  "unrouted": 272357248
+ },
+ "git_head": "f201001bfd5a45548e138272ff75bcbb60814a12",
+ "git_dirty_paths": [
+  "?? research_v2/"
+ ],
+ "code_sha256": {
+  "research_v2\\rv2\\__init__.py": "11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698",
+  "research_v2\\rv2\\backends.py": "41e2cfa1fb72d93f19b3190937e0190c977eae61a8df86446a848c274e3f1dfa",
+  "research_v2\\rv2\\boundary.py": "a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025",
+  "research_v2\\rv2\\engine.py": "d550bf3f9b911c4799748317195ddd5e98ba7ad0e9b3c1138bd29c48ac3d434b",
+  "research_v2\\rv2\\policies.py": "eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e",
+  "research_v2\\run_pilot.py": "3b9698b649b34868e1b20a0b568ad14a96c491af926e7cbb8296fd13ca19c4b9",
+  "src\\dynamic_linear.py": "a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60",
+  "src\\dynamic_model.py": "492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7",
+  "src\\routing.py": "cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302",
+  "src\\fragility.py": "9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764",
+  "scripts\\gsm8k_gate_check.py": "cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287",
+  "scripts\\probe_gsm8k_routing.py": "e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc"
+ },
+ "versions": {
+  "python": "3.12.10",
+  "torch": "2.13.0+cu126",
+  "transformers": "5.13.0",
+  "bitsandbytes": "0.49.2",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+ },
+ "model": "Qwen/Qwen2.5-0.5B",
+ "max_new_tokens": 256,
+ "started_utc": "2026-10-22T08:53:55Z"
+}

@@ -1,0 +1,11 @@
+
+=======================================================================================================================
+b1_replication_categories_separate_uncertainty_from_directional_disagreement               PASS  
+b2_heterogeneity_has_a_calibrated_null_and_detects_a_shift                                 PASS  
+b3_pattern_counts_hand_checked                                                             PASS  
+b4_merge_requires_disjoint_samples_and_unions_them                                         PASS  
+b5_full_run_on_synthetic_stages_is_consistent_with_the_stage1_code_and_writes_all_outputs  PASS  
+b6_stage1_reference_estimates_are_asserted_against_the_stage1_records                      PASS  
+b7_real_stage1_records_reproduce_the_recorded_reference_estimates                          PASS  
+
+7/7 passed

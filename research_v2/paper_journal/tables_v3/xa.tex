@@ -1,0 +1,31 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{4.1cm}p{2.55cm}p{2.55cm}p{2.55cm}p{2.55cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule\multicolumn{5}{@{}l}{\emph{Absolute divergence (X6)}} \\
+NAT: geometric-mean JS & \vn{x6.qb.nat.geo} & \vn{x6.qi.nat.geo} & \vn{x6.lb.nat.geo} & \vn{x6.li.nat.geo} \\
+NAT: arithmetic-mean JS & \vn{x6.qb.nat.arith} & \vn{x6.qi.nat.arith} & \vn{x6.lb.nat.arith} & \vn{x6.li.nat.arith} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Key error in the query subspace (X9a)}} \\
+Share $\phi$ of $\|\Delta_K\|^2$ in the top-8 subspace (isotropic 0.125) & \vn{x9a.qb.F} & \vn{x9a.qi.F} & \vn{x9a.lb.F} & \vn{x9a.li.F} \\
+$A=\mathrm{mean}\,\ln(\phi_i/0.125)$; Holm; verdict & \vn{x9a.qb.A} \vn{x9a.qb.Aci}\newline Holm \vn{x9a.qb.holm}; \vn{x9a.qb.verdict} & \vn{x9a.qi.A} \vn{x9a.qi.Aci}\newline Holm \vn{x9a.qi.holm}; \vn{x9a.qi.verdict} & \vn{x9a.lb.A} \vn{x9a.lb.Aci}\newline Holm \vn{x9a.lb.holm}; \vn{x9a.lb.verdict} & \vn{x9a.li.A} \vn{x9a.li.Aci}\newline Holm \vn{x9a.li.holm}; \vn{x9a.li.verdict} \\
+$\phi$ in layer 0 & \vn{x9a.qb.F0} & \vn{x9a.qi.F0} & \vn{x9a.lb.F0} & \vn{x9a.li.F0} \\
+Spearman of $\ln \phi_i$ with $\theta_i$(NAT-K, C1-K) & \vn{x9a.qb.rho} \vn{x9a.qb.rhoci} & \vn{x9a.qi.rho} \vn{x9a.qi.rhoci} & \vn{x9a.lb.rho} \vn{x9a.lb.rhoci} & \vn{x9a.li.rho} \vn{x9a.li.rhoci} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Origin shares of NAT's geometric-mean JS (X8)}} \\
+INH / NAT (\%) & \vn{x8.qb.inh} \vn{x8.qb.inhci} & \vn{x8.qi.inh} \vn{x8.qi.inhci} & \vn{x8.lb.inh} \vn{x8.lb.inhci} & \vn{x8.li.inh} \vn{x8.li.inhci} \\
+LOC / NAT (\%) & \vn{x8.qb.loc} \vn{x8.qb.locci} & \vn{x8.qi.loc} \vn{x8.qi.locci} & \vn{x8.lb.loc} \vn{x8.lb.locci} & \vn{x8.li.loc} \vn{x8.li.locci} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Spearman of each predictor with per-step JS, NAT (X4)}} \\
+$P_{\mathrm{norm}}$ & \vn{x4.qb.norm} \vn{x4.qb.norm.ci} & \vn{x4.qi.norm} \vn{x4.qi.norm.ci} & \vn{x4.lb.norm} \vn{x4.lb.norm.ci} & \vn{x4.li.norm} \vn{x4.li.norm.ci} \\
+$P_{\mathrm{logit}}$ & \vn{x4.qb.logit} \vn{x4.qb.logit.ci} & \vn{x4.qi.logit} \vn{x4.qi.logit.ci} & \vn{x4.lb.logit} \vn{x4.lb.logit.ci} & \vn{x4.li.logit} \vn{x4.li.logit.ci} \\
+$P_{\mathrm{val}}$ & \vn{x4.qb.val} \vn{x4.qb.val.ci} & \vn{x4.qi.val} \vn{x4.qi.val.ci} & \vn{x4.lb.val} \vn{x4.lb.val.ci} & \vn{x4.li.val} \vn{x4.li.val.ci} \\
+$P_{\mathrm{anormK}}$ & \vn{x4.qb.anormk} \vn{x4.qb.anormk.ci} & \vn{x4.qi.anormk} \vn{x4.qi.anormk.ci} & \vn{x4.lb.anormk} \vn{x4.lb.anormk.ci} & \vn{x4.li.anormk} \vn{x4.li.anormk.ci} \\
+\midrule\multicolumn{5}{@{}l}{\emph{Query direction and layer 0 (X5, X9c)}} \\
+X5: $\mathrm{Sp}(P_{\mathrm{logit}})-\mathrm{Sp}(P_{\mathrm{anormK}})$; Holm & \vn{x5.qb.est} \vn{x5.qb.ci}\newline Holm \vn{x5.qb.holm} & \vn{x5.qi.est} \vn{x5.qi.ci}\newline Holm \vn{x5.qi.holm} & \vn{x5.lb.est} \vn{x5.lb.ci}\newline Holm \vn{x5.lb.holm} & \vn{x5.li.est} \vn{x5.li.ci}\newline Holm \vn{x5.li.holm} \\
+X9c: change of $\mathrm{Sp}(P_{\mathrm{logit}})$ without layer 0 & \vn{x9c.qb.drho} \vn{x9c.qb.drhoci} & \vn{x9c.qi.drho} \vn{x9c.qi.drhoci} & \vn{x9c.lb.drho} \vn{x9c.lb.drhoci} & \vn{x9c.li.drho} \vn{x9c.li.drhoci} \\
+X9c: H-A $D$, all layers $\to$ without layer 0 & \vn{x9c.qb.D} $\to$ \vn{x9c.qb.D0} & \vn{x9c.qi.D} $\to$ \vn{x9c.qi.D0} & \vn{x9c.lb.D} $\to$ \vn{x9c.lb.D0} & \vn{x9c.li.D} $\to$ \vn{x9c.li.D0} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Exploratory analyses \tagE{}, part 1: absolute divergence, the key-error geometry and origin shares, and the predictors. Each row names its analysis (X$n$); plan entries and blind status are in Table~\ref{tab:xplan}. X6, X8 and X4 are descriptive; X9a is an exploratory test (Holm over the four models); X5 is exploratory with Holm over the four models; X9c is descriptive. JS in nats; intervals are 95\% problem-bootstrap intervals; X9 uses 50 of the 200 problems.}
+\label{tab:xa}
+\end{table}

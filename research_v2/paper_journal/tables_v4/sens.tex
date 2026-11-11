@@ -1,0 +1,51 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{Locked sensitivity analyses (none replaces a primary estimate): excluding the exposed test problems, scoring steps 2--8 or 9--64 only, per-problem medians instead of means, and truncating each problem before the first step written with a slot deviating by more than 5\% from its target norm (problems dropped in parentheses).}
+\label{tab:sens}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}ll rrrrrr@{}}
+\toprule
+Model & Contrast & Primary & Excl.\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\
+\midrule
+Qwen2.5-0.5B & H1 & \vf{hone.qa.est} & \vf{sens.qa.hone.exp} & \vf{sens.qa.hone.early} & \vf{sens.qa.hone.late} & \vf{sens.qa.hone.med} & \vf{sens.qa.hone.rdev} (\vf{sens.qa.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.qa.est} & \vf{sens.qa.htwo.exp} & \vf{sens.qa.htwo.early} & \vf{sens.qa.htwo.late} & \vf{sens.qa.htwo.med} & \vf{sens.qa.htwo.rdev} (\vf{sens.qa.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.qa.est} & \vf{sens.qa.hthree.exp} & \vf{sens.qa.hthree.early} & \vf{sens.qa.hthree.late} & \vf{sens.qa.hthree.med} & \vf{sens.qa.hthree.rdev} (\vf{sens.qa.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.qa.est} & \vf{sens.qa.natc.exp} & \vf{sens.qa.natc.early} & \vf{sens.qa.natc.late} & \vf{sens.qa.natc.med} & \vf{sens.qa.natc.rdev} (\vf{sens.qa.natc.rdevdrop}) \\
+\midrule
+Qwen2.5-1.5B & H1 & \vf{hone.qb.est} & \vf{sens.qb.hone.exp} & \vf{sens.qb.hone.early} & \vf{sens.qb.hone.late} & \vf{sens.qb.hone.med} & \vf{sens.qb.hone.rdev} (\vf{sens.qb.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.qb.est} & \vf{sens.qb.htwo.exp} & \vf{sens.qb.htwo.early} & \vf{sens.qb.htwo.late} & \vf{sens.qb.htwo.med} & \vf{sens.qb.htwo.rdev} (\vf{sens.qb.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.qb.est} & \vf{sens.qb.hthree.exp} & \vf{sens.qb.hthree.early} & \vf{sens.qb.hthree.late} & \vf{sens.qb.hthree.med} & \vf{sens.qb.hthree.rdev} (\vf{sens.qb.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.qb.est} & \vf{sens.qb.natc.exp} & \vf{sens.qb.natc.early} & \vf{sens.qb.natc.late} & \vf{sens.qb.natc.med} & \vf{sens.qb.natc.rdev} (\vf{sens.qb.natc.rdevdrop}) \\
+\midrule
+Qwen2.5-3B & H1 & \vf{hone.qc.est} & \vf{sens.qc.hone.exp} & \vf{sens.qc.hone.early} & \vf{sens.qc.hone.late} & \vf{sens.qc.hone.med} & \vf{sens.qc.hone.rdev} (\vf{sens.qc.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.qc.est} & \vf{sens.qc.htwo.exp} & \vf{sens.qc.htwo.early} & \vf{sens.qc.htwo.late} & \vf{sens.qc.htwo.med} & \vf{sens.qc.htwo.rdev} (\vf{sens.qc.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.qc.est} & \vf{sens.qc.hthree.exp} & \vf{sens.qc.hthree.early} & \vf{sens.qc.hthree.late} & \vf{sens.qc.hthree.med} & \vf{sens.qc.hthree.rdev} (\vf{sens.qc.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.qc.est} & \vf{sens.qc.natc.exp} & \vf{sens.qc.natc.early} & \vf{sens.qc.natc.late} & \vf{sens.qc.natc.med} & \vf{sens.qc.natc.rdev} (\vf{sens.qc.natc.rdevdrop}) \\
+\midrule
+Qwen2.5-7B & H1 & \vf{hone.qd.est} & \vf{sens.qd.hone.exp} & \vf{sens.qd.hone.early} & \vf{sens.qd.hone.late} & \vf{sens.qd.hone.med} & \vf{sens.qd.hone.rdev} (\vf{sens.qd.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.qd.est} & \vf{sens.qd.htwo.exp} & \vf{sens.qd.htwo.early} & \vf{sens.qd.htwo.late} & \vf{sens.qd.htwo.med} & \vf{sens.qd.htwo.rdev} (\vf{sens.qd.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.qd.est} & \vf{sens.qd.hthree.exp} & \vf{sens.qd.hthree.early} & \vf{sens.qd.hthree.late} & \vf{sens.qd.hthree.med} & \vf{sens.qd.hthree.rdev} (\vf{sens.qd.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.qd.est} & \vf{sens.qd.natc.exp} & \vf{sens.qd.natc.early} & \vf{sens.qd.natc.late} & \vf{sens.qd.natc.med} & \vf{sens.qd.natc.rdev} (\vf{sens.qd.natc.rdevdrop}) \\
+\midrule
+Llama-3.2-1B & H1 & \vf{hone.la.est} & \vf{sens.la.hone.exp} & \vf{sens.la.hone.early} & \vf{sens.la.hone.late} & \vf{sens.la.hone.med} & \vf{sens.la.hone.rdev} (\vf{sens.la.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.la.est} & \vf{sens.la.htwo.exp} & \vf{sens.la.htwo.early} & \vf{sens.la.htwo.late} & \vf{sens.la.htwo.med} & \vf{sens.la.htwo.rdev} (\vf{sens.la.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.la.est} & \vf{sens.la.hthree.exp} & \vf{sens.la.hthree.early} & \vf{sens.la.hthree.late} & \vf{sens.la.hthree.med} & \vf{sens.la.hthree.rdev} (\vf{sens.la.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.la.est} & \vf{sens.la.natc.exp} & \vf{sens.la.natc.early} & \vf{sens.la.natc.late} & \vf{sens.la.natc.med} & \vf{sens.la.natc.rdev} (\vf{sens.la.natc.rdevdrop}) \\
+\midrule
+Llama-3.2-3B & H1 & \vf{hone.lb.est} & \vf{sens.lb.hone.exp} & \vf{sens.lb.hone.early} & \vf{sens.lb.hone.late} & \vf{sens.lb.hone.med} & \vf{sens.lb.hone.rdev} (\vf{sens.lb.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.lb.est} & \vf{sens.lb.htwo.exp} & \vf{sens.lb.htwo.early} & \vf{sens.lb.htwo.late} & \vf{sens.lb.htwo.med} & \vf{sens.lb.htwo.rdev} (\vf{sens.lb.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.lb.est} & \vf{sens.lb.hthree.exp} & \vf{sens.lb.hthree.early} & \vf{sens.lb.hthree.late} & \vf{sens.lb.hthree.med} & \vf{sens.lb.hthree.rdev} (\vf{sens.lb.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.lb.est} & \vf{sens.lb.natc.exp} & \vf{sens.lb.natc.early} & \vf{sens.lb.natc.late} & \vf{sens.lb.natc.med} & \vf{sens.lb.natc.rdev} (\vf{sens.lb.natc.rdevdrop}) \\
+\midrule
+Llama-3.1-8B & H1 & \vf{hone.lc.est} & \vf{sens.lc.hone.exp} & \vf{sens.lc.hone.early} & \vf{sens.lc.hone.late} & \vf{sens.lc.hone.med} & \vf{sens.lc.hone.rdev} (\vf{sens.lc.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.lc.est} & \vf{sens.lc.htwo.exp} & \vf{sens.lc.htwo.early} & \vf{sens.lc.htwo.late} & \vf{sens.lc.htwo.med} & \vf{sens.lc.htwo.rdev} (\vf{sens.lc.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.lc.est} & \vf{sens.lc.hthree.exp} & \vf{sens.lc.hthree.early} & \vf{sens.lc.hthree.late} & \vf{sens.lc.hthree.med} & \vf{sens.lc.hthree.rdev} (\vf{sens.lc.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.lc.est} & \vf{sens.lc.natc.exp} & \vf{sens.lc.natc.early} & \vf{sens.lc.natc.late} & \vf{sens.lc.natc.med} & \vf{sens.lc.natc.rdev} (\vf{sens.lc.natc.rdevdrop}) \\
+\midrule
+Mistral-7B-v0.3 & H1 & \vf{hone.mi.est} & \vf{sens.mi.hone.exp} & \vf{sens.mi.hone.early} & \vf{sens.mi.hone.late} & \vf{sens.mi.hone.med} & \vf{sens.mi.hone.rdev} (\vf{sens.mi.hone.rdevdrop}) \\
+ & H2 & \vf{htwo.mi.est} & \vf{sens.mi.htwo.exp} & \vf{sens.mi.htwo.early} & \vf{sens.mi.htwo.late} & \vf{sens.mi.htwo.med} & \vf{sens.mi.htwo.rdev} (\vf{sens.mi.htwo.rdevdrop}) \\
+ & H3 & \vf{hthree.mi.est} & \vf{sens.mi.hthree.exp} & \vf{sens.mi.hthree.early} & \vf{sens.mi.hthree.late} & \vf{sens.mi.hthree.med} & \vf{sens.mi.hthree.rdev} (\vf{sens.mi.hthree.rdevdrop}) \\
+ & NAT$-$C1 & \vf{natc.mi.est} & \vf{sens.mi.natc.exp} & \vf{sens.mi.natc.early} & \vf{sens.mi.natc.late} & \vf{sens.mi.natc.med} & \vf{sens.mi.natc.rdev} (\vf{sens.mi.natc.rdevdrop}) \\
+\bottomrule
+\end{tabular}
+\end{table}

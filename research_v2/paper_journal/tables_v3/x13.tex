@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{4.1cm}p{2.55cm}p{2.55cm}p{2.55cm}p{2.55cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule\multicolumn{5}{@{}l}{\emph{(a) Common mode}} \\
+$L$, keys; verdict & \vn{x13a.qb.K} \vn{x13a.qb.K.ci}\newline \vn{x13a.qb.K.verdict} & \vn{x13a.qi.K} \vn{x13a.qi.K.ci}\newline \vn{x13a.qi.K.verdict} & \vn{x13a.lb.K} \vn{x13a.lb.K.ci}\newline \vn{x13a.lb.K.verdict} & \vn{x13a.li.K} \vn{x13a.li.K.ci}\newline \vn{x13a.li.K.verdict} \\
+$L$, values; verdict & \vn{x13a.qb.V} \vn{x13a.qb.V.ci}\newline \vn{x13a.qb.V.verdict} & \vn{x13a.qi.V} \vn{x13a.qi.V.ci}\newline \vn{x13a.qi.V.verdict} & \vn{x13a.lb.V} \vn{x13a.lb.V.ci}\newline \vn{x13a.lb.V.verdict} & \vn{x13a.li.V} \vn{x13a.li.V.ci}\newline \vn{x13a.li.V.verdict} \\
+\midrule\multicolumn{5}{@{}l}{\emph{(b) Common mode removed}} \\
+Values: $\theta_{\mathrm{cen}}$; Holm; direction & \vn{x13b.qb.V} \vn{x13b.qb.V.ci}\newline Holm \vn{x13b.qb.V.holm}; \vn{x13b.qb.V.dir} & \vn{x13b.qi.V} \vn{x13b.qi.V.ci}\newline Holm \vn{x13b.qi.V.holm}; \vn{x13b.qi.V.dir} & \vn{x13b.lb.V} \vn{x13b.lb.V.ci}\newline Holm \vn{x13b.lb.V.holm}; \vn{x13b.lb.V.dir} & \vn{x13b.li.V} \vn{x13b.li.V.ci}\newline Holm \vn{x13b.li.V.holm}; \vn{x13b.li.V.dir} \\
+Values: $G$; band & \vn{x13b.qb.V.G} \vn{x13b.qb.V.Gci}\newline \vn{x13b.qb.V.band} & \vn{x13b.qi.V.G} \vn{x13b.qi.V.Gci}\newline \vn{x13b.qi.V.band} & \vn{x13b.lb.V.G} \vn{x13b.lb.V.Gci}\newline \vn{x13b.lb.V.band} & \vn{x13b.li.V.G} \vn{x13b.li.V.Gci}\newline \vn{x13b.li.V.band} \\
+Keys: $\theta_{\mathrm{cen}}$; Holm; direction & \vn{x13b.qb.K} \vn{x13b.qb.K.ci}\newline Holm \vn{x13b.qb.K.holm}; \vn{x13b.qb.K.dir} & \vn{x13b.qi.K} \vn{x13b.qi.K.ci}\newline Holm \vn{x13b.qi.K.holm}; \vn{x13b.qi.K.dir} & \vn{x13b.lb.K} \vn{x13b.lb.K.ci}\newline Holm \vn{x13b.lb.K.holm}; \vn{x13b.lb.K.dir} & \vn{x13b.li.K} \vn{x13b.li.K.ci}\newline Holm \vn{x13b.li.K.holm}; \vn{x13b.li.K.dir} \\
+Manipulation check $L$ (K; V); passed & \vn{x13b.qb.K.man}; \vn{x13b.qb.V.man}; \vn{x13b.qb.K.manok}/\vn{x13b.qb.V.manok} & \vn{x13b.qi.K.man}; \vn{x13b.qi.V.man}; \vn{x13b.qi.K.manok}/\vn{x13b.qi.V.manok} & \vn{x13b.lb.K.man}; \vn{x13b.lb.V.man}; \vn{x13b.lb.K.manok}/\vn{x13b.lb.V.manok} & \vn{x13b.li.K.man}; \vn{x13b.li.V.man}; \vn{x13b.li.K.manok}/\vn{x13b.li.V.manok} \\
+\midrule\multicolumn{5}{@{}l}{\emph{(c) Descriptive}} \\
+$D_c$ & \vn{x13c.qb.Dc} \vn{x13c.qb.Dcci} & \vn{x13c.qi.Dc} \vn{x13c.qi.Dcci} & \vn{x13c.lb.Dc} \vn{x13c.lb.Dcci} & \vn{x13c.li.Dc} \vn{x13c.li.Dcci} \\
+$\mathrm{Sp}(P_{\mathrm{logit}}^c)$ & \vn{x13c.qb.spc} & \vn{x13c.qi.spc} & \vn{x13c.lb.spc} & \vn{x13c.li.spc} \\
+$R$ ($\ln R$); X9a $A$ on the same problems & \vn{x13c.qb.R} (\vn{x13c.qb.lnR}); \vn{x13c.qb.A} & \vn{x13c.qi.R} (\vn{x13c.qi.lnR}); \vn{x13c.qi.A} & \vn{x13c.lb.R} (\vn{x13c.lb.lnR}); \vn{x13c.lb.A} & \vn{x13c.li.R} (\vn{x13c.li.lnR}); \vn{x13c.li.A} \\
+Spearman of $\ln R_i$ with $\theta_i$(NAT-K, C1-K) & \vn{x13c.qb.rho} & \vn{x13c.qi.rho} & \vn{x13c.lb.rho} & \vn{x13c.li.rho} \\
+\midrule\multicolumn{5}{@{}l}{\emph{(d) Norm-corrected rounding (Qwen)}} \\
+NAT$-$C1: $\Delta\theta$; $h$; verdict & \vn{x13d.qb.c1} \vn{x13d.qb.c1.ci}; \vn{x13d.qb.c1.h}\newline \vn{x13d.qb.c1.verdict} & \vn{x13d.qi.c1} \vn{x13d.qi.c1.ci}; \vn{x13d.qi.c1.h}\newline \vn{x13d.qi.c1.verdict} & --- & --- \\
+NAT-K$-$C1-K: $\Delta\theta$; $h$; verdict & \vn{x13d.qb.c1k} \vn{x13d.qb.c1k.ci}; \vn{x13d.qb.c1k.h}\newline \vn{x13d.qb.c1k.verdict} & \vn{x13d.qi.c1k} \vn{x13d.qi.c1k.ci}; \vn{x13d.qi.c1k.h}\newline \vn{x13d.qi.c1k.verdict} & --- & --- \\
+Steps with a slot $>5\%$: locked C1 / C1-nc & \vn{x13d.qb.c1.gt5lock} / \vn{x13d.qb.c1.gt5nc} & \vn{x13d.qi.c1.gt5lock} / \vn{x13d.qi.c1.gt5nc} & --- & --- \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{X13 \tagE{} (FOLLOWUP\_X13; $n=$\ \vn{x13.n} problems per model after the pre-declared runtime reductions). (a) $L$: log of the natural common-mode share over the isotropic share (null-corrected); (b) $\theta_{\mathrm{cen}}$: centred arm minus the locked natural single-path arm, with the share $G$ of the locked provenance gap it closes, and the manipulation check (the same statistic $L$ for the centred arm, below $\ln 2$ required); (c) $D_c=\mathrm{Sp}(P_{\mathrm{logit}}^c)-\mathrm{Sp}(P_{\mathrm{logit}})$ and the energy-weighted alignment $R$ (isotropic 1), descriptive; (d) the change of the Qwen isotropic contrasts under norm-corrected rounding, against the locked half-width $h$. Holm over the four models within each path. 95\% intervals.}
+\label{tab:x13}
+\end{table}

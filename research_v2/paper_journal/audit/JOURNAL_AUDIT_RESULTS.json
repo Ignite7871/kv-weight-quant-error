@@ -1,0 +1,357 @@
+{
+ "n_checks": 52,
+ "n_failed": 0,
+ "failed": [],
+ "reference_history": {
+  "qwen": {
+   "S_mean": 61.175,
+   "share_S64": 0.835,
+   "full_generation_mean_tokens": 112.115,
+   "source": "stored Stage 1/2 FP16 generation (<=256 tokens), first 65 tokens used"
+  },
+  "llama": {
+   "S_mean": 56.73,
+   "share_S64": 0.565,
+   "full_generation_mean_tokens": 57.73,
+   "source": "in-session FP16 greedy generation, <= 65 tokens"
+  }
+ },
+ "descriptive": {
+  "qwen_mean_js": {
+   "NAT": 0.0044496062405587075,
+   "C1_a1.0": 0.006102001650529345,
+   "C2_a1.0": 0.004731932360603648,
+   "C1_a0.5": 0.001285975681155142,
+   "C1_a2.0": 0.038144958478792935,
+   "C1star": 0.004766931144960479
+  },
+  "llama_mean_js": {
+   "NAT": 0.0026320885344697674,
+   "C1_a1.0": 0.002544767076439003,
+   "C2_a1.0": 0.002104423110471428,
+   "C1_a0.5": 0.0006407401601566845,
+   "C1_a2.0": 0.01161956983902663,
+   "C1star": 0.0022755751605994853
+  },
+  "qwen_tierB_accuracy": {
+   "FP16": 0.3725,
+   "NAT": 0.335,
+   "C1": 0.3275,
+   "C2": 0.32
+  }
+ },
+ "checks": [
+  {
+   "check": "lock_e1.py --verify",
+   "ok": true,
+   "got": "lock verifies",
+   "want": "lock verifies"
+  },
+  {
+   "check": "lock_e1l.py --verify",
+   "ok": true,
+   "got": "lock verifies",
+   "want": "lock verifies"
+  },
+  {
+   "check": "frozen manifest: 62 files unchanged",
+   "ok": true,
+   "got": [],
+   "want": []
+  },
+  {
+   "check": "Qwen Tier A: 200 test problems on all 6 arms",
+   "ok": true,
+   "got": 200,
+   "want": 200
+  },
+  {
+   "check": "Qwen Tier A: primary estimate",
+   "ok": true,
+   "got": -0.25291541037904036,
+   "want": -0.25291541037904036
+  },
+  {
+   "check": "Qwen Tier A: primary CI low",
+   "ok": true,
+   "got": -0.3277888476096067,
+   "want": -0.32503741757889115
+  },
+  {
+   "check": "Qwen Tier A: primary CI high",
+   "ok": true,
+   "got": -0.1810843893312731,
+   "want": -0.17936235785809232
+  },
+  {
+   "check": "Qwen Tier A: primary 90% low",
+   "ok": true,
+   "got": -0.31570002572489353,
+   "want": -0.31391330874742224
+  },
+  {
+   "check": "Qwen Tier A: primary p (sign-flip)",
+   "ok": true,
+   "got": 4.999750012499375e-05,
+   "want": 9.999000099990002e-05
+  },
+  {
+   "check": "Qwen Tier A: A: NAT - C2 (log JS) estimate",
+   "ok": true,
+   "got": 0.0026862684084951426,
+   "want": 0.0026862684084951426
+  },
+  {
+   "check": "Qwen Tier A: A: NAT - C2 (log JS) CI low",
+   "ok": true,
+   "got": -0.08326453826563955,
+   "want": -0.08330468277937655
+  },
+  {
+   "check": "Qwen Tier A: A: C2 - C1 (log JS) estimate",
+   "ok": true,
+   "got": -0.2556016787875355,
+   "want": -0.2556016787875355
+  },
+  {
+   "check": "Qwen Tier A: A: C2 - C1 (log JS) CI low",
+   "ok": true,
+   "got": -0.3337637699065843,
+   "want": -0.3337672006235084
+  },
+  {
+   "check": "Qwen Tier A: A: NAT - C1* (effect-matched, log JS) estimate",
+   "ok": true,
+   "got": -0.04134335351807143,
+   "want": -0.04134335351807143
+  },
+  {
+   "check": "Qwen Tier A: A: NAT - C1* (effect-matched, log JS) CI low",
+   "ok": true,
+   "got": -0.1103080146597923,
+   "want": -0.11191294811442017
+  },
+  {
+   "check": "Qwen Tier A: dose slope",
+   "ok": true,
+   "got": 2.5068335553927605,
+   "want": 2.5068335553927605
+  },
+  {
+   "check": "Qwen Tier A: flip-rate contrast",
+   "ok": true,
+   "got": -0.004308924856437402,
+   "want": -0.004308924856437402
+  },
+  {
+   "check": "Qwen Tier A: Holm re-applied to the reported raw p (7 tests)",
+   "ok": true,
+   "got": 7,
+   "want": 7
+  },
+  {
+   "check": "Qwen Tier A: 100 calibration problems on 5 arms",
+   "ok": true,
+   "got": 100,
+   "want": 100
+  },
+  {
+   "check": "Qwen Tier A: alpha* re-derived",
+   "ok": true,
+   "got": 0.9099405973341553,
+   "want": 0.9099405973341553
+  },
+  {
+   "check": "Qwen Tier A: dose slope b re-derived",
+   "ok": true,
+   "got": 2.4859295476381473,
+   "want": 2.4859295476381473
+  },
+  {
+   "check": "Qwen Tier A: margin re-derived",
+   "ok": true,
+   "got": 0.23693439216627596,
+   "want": 0.23693439216627596
+  },
+  {
+   "check": "Llama Tier A: 200 test problems on all 6 arms",
+   "ok": true,
+   "got": 200,
+   "want": 200
+  },
+  {
+   "check": "Llama Tier A: primary estimate",
+   "ok": true,
+   "got": 0.057799678168558286,
+   "want": 0.057799678168558286
+  },
+  {
+   "check": "Llama Tier A: primary CI low",
+   "ok": true,
+   "got": -0.006361417322757584,
+   "want": -0.006869302254779407
+  },
+  {
+   "check": "Llama Tier A: primary CI high",
+   "ok": true,
+   "got": 0.122423305634757,
+   "want": 0.12052054816982916
+  },
+  {
+   "check": "Llama Tier A: primary 90% low",
+   "ok": true,
+   "got": 0.003792547347195127,
+   "want": 0.002916160072316695
+  },
+  {
+   "check": "Llama Tier A: primary p (sign-flip)",
+   "ok": true,
+   "got": 0.07689615519224038,
+   "want": 0.07799220077992201
+  },
+  {
+   "check": "Llama Tier A: A: NAT - C2 (log JS) estimate",
+   "ok": true,
+   "got": 0.2664177660759902,
+   "want": 0.2664177660759902
+  },
+  {
+   "check": "Llama Tier A: A: NAT - C2 (log JS) CI low",
+   "ok": true,
+   "got": 0.19669301884379523,
+   "want": 0.1947618184987609
+  },
+  {
+   "check": "Llama Tier A: A: C2 - C1 (log JS) estimate",
+   "ok": true,
+   "got": -0.20861808790743194,
+   "want": -0.20861808790743194
+  },
+  {
+   "check": "Llama Tier A: A: C2 - C1 (log JS) CI low",
+   "ok": true,
+   "got": -0.27432163097757517,
+   "want": -0.27391436722452656
+  },
+  {
+   "check": "Llama Tier A: A: NAT - C1* (effect-matched, log JS) estimate",
+   "ok": true,
+   "got": 0.16803163036237748,
+   "want": 0.16803163036237748
+  },
+  {
+   "check": "Llama Tier A: A: NAT - C1* (effect-matched, log JS) CI low",
+   "ok": true,
+   "got": 0.10057004319033346,
+   "want": 0.10114793765638103
+  },
+  {
+   "check": "Llama Tier A: dose slope",
+   "ok": true,
+   "got": 2.1479654525426186,
+   "want": 2.1479654525426186
+  },
+  {
+   "check": "Llama Tier A: flip-rate contrast",
+   "ok": true,
+   "got": 0.00048737560323699135,
+   "want": 0.00048737560323699135
+  },
+  {
+   "check": "Llama Tier A: Holm re-applied to the reported raw p (5 tests)",
+   "ok": true,
+   "got": 5,
+   "want": 5
+  },
+  {
+   "check": "Llama Tier A: 100 calibration problems on 5 arms",
+   "ok": true,
+   "got": 100,
+   "want": 100
+  },
+  {
+   "check": "Llama Tier A: alpha* re-derived",
+   "ok": true,
+   "got": 0.9583478213201302,
+   "want": 0.9583478213201302
+  },
+  {
+   "check": "Llama Tier A: dose slope b re-derived",
+   "ok": true,
+   "got": 2.1041744564084977,
+   "want": 2.1041744564084977
+  },
+  {
+   "check": "Llama Tier A: margin re-derived",
+   "ok": true,
+   "got": 0.20054924577996158,
+   "want": 0.20054924577996158
+  },
+  {
+   "check": "Qwen Tier B: 400 problems on 4 arms",
+   "ok": true,
+   "got": 400,
+   "want": 400
+  },
+  {
+   "check": "Qwen Tier B: primary estimate",
+   "ok": true,
+   "got": 3.5375,
+   "want": 3.5375
+  },
+  {
+   "check": "Qwen Tier B: CI low",
+   "ok": true,
+   "got": 1.145,
+   "want": 1.1423750000000001
+  },
+  {
+   "check": "Qwen Tier B: CI high",
+   "ok": true,
+   "got": 5.955,
+   "want": 5.9500625
+  },
+  {
+   "check": "Qwen Tier B: NAT - C2 estimate",
+   "ok": true,
+   "got": 0.9775,
+   "want": 0.9775
+  },
+  {
+   "check": "Qwen Tier B: mean restricted first divergence NAT",
+   "ok": true,
+   "got": 30.255,
+   "want": 30.255
+  },
+  {
+   "check": "Qwen Tier B: mean restricted first divergence C1",
+   "ok": true,
+   "got": 26.7175,
+   "want": 26.7175
+  },
+  {
+   "check": "Qwen Tier B: mean restricted first divergence C2",
+   "ok": true,
+   "got": 29.2775,
+   "want": 29.2775
+  },
+  {
+   "check": "Qwen Tier A reference (stored Stage 1/2 FP16 generation, first 65 tokens) == in-session FP16 generation of Tier B, all 200 problems",
+   "ok": true,
+   "got": 200,
+   "want": 200
+  },
+  {
+   "check": "Llama reference histories are in-session FP16 greedy generations (<= 65 tokens), one per test problem",
+   "ok": true,
+   "got": 200,
+   "want": 200
+  },
+  {
+   "check": "neither experiment used a gold-answer reference history (both are FP16-generated)",
+   "ok": true,
+   "got": null,
+   "want": null
+  }
+ ]
+}

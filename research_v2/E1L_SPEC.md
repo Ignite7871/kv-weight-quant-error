@@ -1,0 +1,38 @@
+# E1L specification — Tier A replication of the perturbation-matched cache controls on Llama-3.2-1B-Instruct (locked version)
+
+Prepared 2026-10-28 for author review. Private dated hash (`E1L_PROTOCOL_LOCK.txt`), **not a public pre-registration**; exploratory in origin (it follows the completed Qwen E1). **Locking is not authorization to run.** GPU execution needs the corresponding author to create `research_v2/e1l_runs/AUTHORIZED_BY_AUTHORS_LLAMA.txt` (non-empty, containing the word "Llama") after reviewing this specification and the lock; the driver refuses without it and without a verifying Qwen E1 lock. Authorized scope (2026-10-28 message): E1 **Tier A only**, Llama-3.2-1B-Instruct, 100 calibration train problems, 200 test problems, **absolute 2.5 GPU-hour cumulative ceiling** (gates and calibration included), local RTX 4060, no Tier B, no other model/dataset, no cloud.
+
+## 1. What is unchanged from Qwen E1 (`E1_SPEC.md`, locked)
+All definitions and estimands: the controlled step (NF4 pass → crop → FP16 pass → overwrite only the newest entry per arm), slot = (layer, K/V, KV head), arms NAT / C1 / C2 / dose C1 at 0.5, 1, 2 / effect-matched C1\*, prefill FP16 and unperturbed, seeds from SHA-256 of labels only, float64 JS, the primary estimand θ_A = mean_i[log m_i^NAT − log m_i^C1] (per-problem mean JS over steps 1…S_i, S_i = min(64, length − 1), floored at 1e-9), the secondary contrasts, bootstrap (10,000, seed 20261101), sign-flip permutation tests, Holm, the calibration rules (α\* by log–log interpolation of the steps 2–16 effect, dose slope b̂ over α ∈ {0.5, 1, 2}, c clamped to [0.10, 0.40], margin |b̂|·ln(1 + c), equivalence claimable only if b̂ ≥ 0.25), and every sensitivity analysis. The analysis code is the locked `analyze_controls.py`, unchanged.
+
+## 2. What differs (all forced by the model; none changes an estimand)
+- **Model/format:** meta-llama/Llama-3.2-1B-Instruct, the validated checkpoint, FP16 weights + bitsandbytes NF4 (double quantization, FP16 compute) on the same 112 projection modules (16 layers × 7); raw 3-shot completion prompt (no chat template), tokenizer defaults (BOS added), as in the feasibility pilot (44 % FP16 accuracy, all gates passed). Cache geometry: 16 layers, 8 KV heads (grouped-query attention, 4 query heads per KV head), head_dim 64, stored FP16 — verified from the live cache by gate G7 and by `tests/run_e1l_tests.py`. Slot matching is per KV head (8 per layer and kind), not per query head.
+- **Samples (frozen in `e1l_sample.json`, copied from the locked Qwen E1 sample; nothing drawn after any Llama result):** the same 200 test ids (Tier A) and the same 100 train calibration ids. Gate sets are prefixes of these.
+- **Shared token history (Tier A):** Llama has no stored FP16 trajectories, so each test problem's teacher-forced history is its **in-session FP16 greedy generation** (≤ 65 tokens, drift-marker stop); every arm is fed that same sequence, and the reference distributions are recomputed by a pure-FP16 teacher-forced pass. (Qwen used stored FP16 sequences; both are one FP16 sequence per problem shared by all arms.)
+- **Seeds:** same master seed, tier labels `Lcalib`, `LA`, `Lgate` (so Llama streams are independent of Qwen's).
+- **Holm family:** five secondary tests (NAT − C2; C2 − C1; dose slope; top-1 flip rate NAT − C1; NAT − C1\*) because there is no Tier B.
+- **Budget:** 2.5 h absolute, own ledger `e1l_runs/gpu_ledger.jsonl` + the Stage 1 watchdog; hardware stops as before.
+- **Not run:** Tier B, any other model or dataset.
+
+## 3. Pre-declared interpretation (set before any Llama data; no metric or sample may be changed after seeing results)
+**Nonsignificant ≠ equivalent.** Equivalence is claimed only by the locked margin rule (90 % CI inside ±margin computed from *Llama's* calibration, and b̂ ≥ 0.25); a wide interval is "unresolved".
+| Quantity | Replication categories (Llama vs Qwen E1) |
+|---|---|
+| Primary θ_A (NAT − C1) | **Replicated:** θ_A < 0 and 95 % CI excludes 0 (same direction, resolved). **Same direction, unresolved:** θ_A < 0, CI includes 0. **Not replicated:** θ_A ≥ 0 or CI excludes 0 on the positive side. **Equivalent to C1 (different conclusion):** the locked equivalence rule is met. |
+| NAT − C2 | **Replicated "NAT ≈ C2":** 90 % CI inside ±Llama margin with b̂ ≥ 0.25. **Unresolved:** otherwise. **Different:** 95 % CI excludes 0. |
+| C2 − C1 | **Replicated:** estimate < 0 with CI excluding 0 (Holm-adjusted reported). |
+| Dose response | same sign and a slope CI excluding 0; the slope magnitude is compared descriptively (Qwen 2.51). |
+| Effect-matched C1\* | calibration performance = NAT − C1\* interval on test problems (Qwen: −0.041, CI [−0.112, +0.030]); success if the interval includes 0 and is narrower than the primary effect. |
+Between-model magnitude comparison is descriptive (difference of the two θ_A with its bootstrap-independent interval); the models differ in family, tuning (base vs instruct) and architecture, so a difference is **not attributable to a single cause**; architecture-specific deviations (GQA 8 KV heads, dose slope, ‖Δ‖/‖κ‖) are reported.
+
+## 4. Gates (any failure ⇒ stop and report; no gate is relaxed)
+**G1** α = 0 equals FP16 bitwise (tokens + cache; 10 train problems × C1, C2 × 64 tokens). **G2/G3** per-slot norms within tolerance (mean ≤ 1 %, max ≤ 10 %, judged against max(target, 2⁻¹⁰·entry norm)), finite entries/logits, step-1 JS exactly 0 for every arm (token-history/cache-state consistency), on 6 train problems × 6 arms. **G4** same seed ⇒ bitwise identical, different seed ⇒ different. **G5** NAT through the new path equals the engine's cache-only generation token-for-token, computed in-session on 8 test problems. **G6** runtime: measured per-problem times (3 test-type, 2 calibration-type problems) project the **total** (gates + calibration + Tier A + 5 % margin) **≤ 2.5 h**; otherwise stop (no reduction of scope; the authors decide). **G7** real cache geometry = 16 layers, 8 KV heads, head_dim 64, all stored tensors FP16. **GPU mutation/correctness check:** the 17-test suite and all **19** injected bugs on a tiny random GQA Llama with the real CUDA kernels (`tools/e1l_gpu_mutation_check.py`). Per-problem integrity checks (as Qwen) stop the run; hardware stop at 88 °C. A run cut by the ceiling is **truncated**: inference uses the completed problems of the fixed order; fewer than 100 completed test problems ⇒ the primary is reported as unresolved.
+
+## 5. CPU validation required before the lock (done; `validation_logs/e1l_cpu_validation.json`)
+The full Qwen control suite (c01–c13) re-run on a tiny GQA Llama with the real NF4 path, Llama-specific tests (l01 cache layout/FP16 storage/GQA geometry, l02 layer-kind-head slot alignment, l03 independent per-KV-head norm matching from cache entries, l04 GQA shapes), mutation check with 19 mutants (15 Qwen + KV-swap, head-roll, epsilon-scaled stored values, norm pooled over KV heads), real Llama-3.2-1B-Instruct CPU smoke (α = 0 bitwise, NAT = engine cache-only, norms, step-1 JS = 0, geometry), and a CPU harness exercising the GPU-only code paths.
+
+## 6. Sequence after authorization
+`gates` → `tools/e1l_gpu_mutation_check.py --authorized-gpu-run` → `calibrate` → `analyze_e1l.py calibrate` → `lock_e1l.py --append-calibration` (before any test problem) → `tierA` → `analyze_e1l.py analyze` → report. Each step refuses unless the previous one passed.
+
+## 7. Amendments
+Any change after the lock is logged in `validation_logs/e1l_deviation_log.md` with date and reason; none may alter hypotheses, estimands, margin rule, samples, arms or decision categories.

@@ -1,0 +1,448 @@
+W1022 15:50:00.774000 33588 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[DynamicQwen] Loading base FP16 model: Qwen/Qwen2.5-0.5B
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:54,  5.29it/s]Loading weights:  63%|######3   | 183/290 [00:00<00:00, 765.26it/s]Loading weights:  98%|#########7| 284/290 [00:00<00:00, 655.91it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 605.70it/s]
+[DynamicQwen] Replacing attention/MLP nn.Linear layers with DynamicLinear...
+[DynamicQwen] Replaced 168 modules:
+  model.layers.0.self_attn.q_proj
+  model.layers.0.self_attn.k_proj
+  model.layers.0.self_attn.v_proj
+  model.layers.0.self_attn.o_proj
+  model.layers.0.mlp.gate_proj
+  model.layers.0.mlp.up_proj
+  model.layers.0.mlp.down_proj
+  model.layers.1.self_attn.q_proj
+  model.layers.1.self_attn.k_proj
+  model.layers.1.self_attn.v_proj
+  model.layers.1.self_attn.o_proj
+  model.layers.1.mlp.gate_proj
+  model.layers.1.mlp.up_proj
+  model.layers.1.mlp.down_proj
+  model.layers.2.self_attn.q_proj
+  model.layers.2.self_attn.k_proj
+  model.layers.2.self_attn.v_proj
+  model.layers.2.self_attn.o_proj
+  model.layers.2.mlp.gate_proj
+  model.layers.2.mlp.up_proj
+  model.layers.2.mlp.down_proj
+  model.layers.3.self_attn.q_proj
+  model.layers.3.self_attn.k_proj
+  model.layers.3.self_attn.v_proj
+  model.layers.3.self_attn.o_proj
+  model.layers.3.mlp.gate_proj
+  model.layers.3.mlp.up_proj
+  model.layers.3.mlp.down_proj
+  model.layers.4.self_attn.q_proj
+  model.layers.4.self_attn.k_proj
+  model.layers.4.self_attn.v_proj
+  model.layers.4.self_attn.o_proj
+  model.layers.4.mlp.gate_proj
+  model.layers.4.mlp.up_proj
+  model.layers.4.mlp.down_proj
+  model.layers.5.self_attn.q_proj
+  model.layers.5.self_attn.k_proj
+  model.layers.5.self_attn.v_proj
+  model.layers.5.self_attn.o_proj
+  model.layers.5.mlp.gate_proj
+  model.layers.5.mlp.up_proj
+  model.layers.5.mlp.down_proj
+  model.layers.6.self_attn.q_proj
+  model.layers.6.self_attn.k_proj
+  model.layers.6.self_attn.v_proj
+  model.layers.6.self_attn.o_proj
+  model.layers.6.mlp.gate_proj
+  model.layers.6.mlp.up_proj
+  model.layers.6.mlp.down_proj
+  model.layers.7.self_attn.q_proj
+  model.layers.7.self_attn.k_proj
+  model.layers.7.self_attn.v_proj
+  model.layers.7.self_attn.o_proj
+  model.layers.7.mlp.gate_proj
+  model.layers.7.mlp.up_proj
+  model.layers.7.mlp.down_proj
+  model.layers.8.self_attn.q_proj
+  model.layers.8.self_attn.k_proj
+  model.layers.8.self_attn.v_proj
+  model.layers.8.self_attn.o_proj
+  model.layers.8.mlp.gate_proj
+  model.layers.8.mlp.up_proj
+  model.layers.8.mlp.down_proj
+  model.layers.9.self_attn.q_proj
+  model.layers.9.self_attn.k_proj
+  model.layers.9.self_attn.v_proj
+  model.layers.9.self_attn.o_proj
+  model.layers.9.mlp.gate_proj
+  model.layers.9.mlp.up_proj
+  model.layers.9.mlp.down_proj
+  model.layers.10.self_attn.q_proj
+  model.layers.10.self_attn.k_proj
+  model.layers.10.self_attn.v_proj
+  model.layers.10.self_attn.o_proj
+  model.layers.10.mlp.gate_proj
+  model.layers.10.mlp.up_proj
+  model.layers.10.mlp.down_proj
+  model.layers.11.self_attn.q_proj
+  model.layers.11.self_attn.k_proj
+  model.layers.11.self_attn.v_proj
+  model.layers.11.self_attn.o_proj
+  model.layers.11.mlp.gate_proj
+  model.layers.11.mlp.up_proj
+  model.layers.11.mlp.down_proj
+  model.layers.12.self_attn.q_proj
+  model.layers.12.self_attn.k_proj
+  model.layers.12.self_attn.v_proj
+  model.layers.12.self_attn.o_proj
+  model.layers.12.mlp.gate_proj
+  model.layers.12.mlp.up_proj
+  model.layers.12.mlp.down_proj
+  model.layers.13.self_attn.q_proj
+  model.layers.13.self_attn.k_proj
+  model.layers.13.self_attn.v_proj
+  model.layers.13.self_attn.o_proj
+  model.layers.13.mlp.gate_proj
+  model.layers.13.mlp.up_proj
+  model.layers.13.mlp.down_proj
+  model.layers.14.self_attn.q_proj
+  model.layers.14.self_attn.k_proj
+  model.layers.14.self_attn.v_proj
+  model.layers.14.self_attn.o_proj
+  model.layers.14.mlp.gate_proj
+  model.layers.14.mlp.up_proj
+  model.layers.14.mlp.down_proj
+  model.layers.15.self_attn.q_proj
+  model.layers.15.self_attn.k_proj
+  model.layers.15.self_attn.v_proj
+  model.layers.15.self_attn.o_proj
+  model.layers.15.mlp.gate_proj
+  model.layers.15.mlp.up_proj
+  model.layers.15.mlp.down_proj
+  model.layers.16.self_attn.q_proj
+  model.layers.16.self_attn.k_proj
+  model.layers.16.self_attn.v_proj
+  model.layers.16.self_attn.o_proj
+  model.layers.16.mlp.gate_proj
+  model.layers.16.mlp.up_proj
+  model.layers.16.mlp.down_proj
+  model.layers.17.self_attn.q_proj
+  model.layers.17.self_attn.k_proj
+  model.layers.17.self_attn.v_proj
+  model.layers.17.self_attn.o_proj
+  model.layers.17.mlp.gate_proj
+  model.layers.17.mlp.up_proj
+  model.layers.17.mlp.down_proj
+  model.layers.18.self_attn.q_proj
+  model.layers.18.self_attn.k_proj
+  model.layers.18.self_attn.v_proj
+  model.layers.18.self_attn.o_proj
+  model.layers.18.mlp.gate_proj
+  model.layers.18.mlp.up_proj
+  model.layers.18.mlp.down_proj
+  model.layers.19.self_attn.q_proj
+  model.layers.19.self_attn.k_proj
+  model.layers.19.self_attn.v_proj
+  model.layers.19.self_attn.o_proj
+  model.layers.19.mlp.gate_proj
+  model.layers.19.mlp.up_proj
+  model.layers.19.mlp.down_proj
+  model.layers.20.self_attn.q_proj
+  model.layers.20.self_attn.k_proj
+  model.layers.20.self_attn.v_proj
+  model.layers.20.self_attn.o_proj
+  model.layers.20.mlp.gate_proj
+  model.layers.20.mlp.up_proj
+  model.layers.20.mlp.down_proj
+  model.layers.21.self_attn.q_proj
+  model.layers.21.self_attn.k_proj
+  model.layers.21.self_attn.v_proj
+  model.layers.21.self_attn.o_proj
+  model.layers.21.mlp.gate_proj
+  model.layers.21.mlp.up_proj
+  model.layers.21.mlp.down_proj
+  model.layers.22.self_attn.q_proj
+  model.layers.22.self_attn.k_proj
+  model.layers.22.self_attn.v_proj
+  model.layers.22.self_attn.o_proj
+  model.layers.22.mlp.gate_proj
+  model.layers.22.mlp.up_proj
+  model.layers.22.mlp.down_proj
+  model.layers.23.self_attn.q_proj
+  model.layers.23.self_attn.k_proj
+  model.layers.23.self_attn.v_proj
+  model.layers.23.self_attn.o_proj
+  model.layers.23.mlp.gate_proj
+  model.layers.23.mlp.up_proj
+  model.layers.23.mlp.down_proj
+
+[DynamicQwen] torch.cuda.memory_summary() after construction:
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1125 MiB |   1824 MiB |   2546 MiB |   1420 MiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1118 MiB |   1809 MiB |   2526 MiB |   1407 MiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   1890 MiB |   1890 MiB |   1890 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 270972 KiB | 300367 KiB |   2382 MiB |   2118 MiB |
+|---------------------------------------------------------------------------|
+| Allocations           |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| Active allocs         |    1301    |    1544    |    2381    |    1080    |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     105    |     105    |     105    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      86    |      88    |     623    |     537    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+
+[DynamicQwen] torch.cuda.max_memory_allocated(): 1824.28 MB
+[gate0] fp16 idx=29 WRONG steps=211 fp16=1.000 t=9.1s
+[gate0] fp16 idx=50 WRONG steps=255 fp16=1.000 t=9.9s
+[gate0] fp16 idx=143 WRONG steps=255 fp16=1.000 t=9.6s
+[gate0] fp16 idx=152 SOLVED steps=111 fp16=1.000 t=4.0s
+[gate0] fp16 idx=186 WRONG steps=255 fp16=1.000 t=9.5s
+[gate0] fp16 idx=240 SOLVED steps=232 fp16=1.000 t=8.3s
+[gate0] fp16 idx=275 WRONG steps=230 fp16=1.000 t=8.8s
+[gate0] fp16 idx=299 WRONG steps=255 fp16=1.000 t=9.5s
+[gate0] fp16 idx=328 WRONG steps=203 fp16=1.000 t=9.8s
+[gate0] fp16 idx=329 SOLVED steps=235 fp16=1.000 t=9.9s
+[gate0] fp16 idx=351 SOLVED steps=255 fp16=1.000 t=9.8s
+[gate0] fp16 idx=401 SOLVED steps=241 fp16=1.000 t=9.1s
+[gate0] fp16 idx=492 SOLVED steps=58 fp16=1.000 t=2.3s
+[gate0] fp16 idx=561 WRONG steps=238 fp16=1.000 t=8.7s
+[gate0] fp16 idx=579 SOLVED steps=255 fp16=1.000 t=9.2s
+[gate0] fp16 idx=616 SOLVED steps=211 fp16=1.000 t=7.7s
+[gate0] fp16 idx=648 WRONG steps=161 fp16=1.000 t=6.1s
+[gate0] fp16 idx=702 WRONG steps=255 fp16=1.000 t=9.5s
+[gate0] fp16 idx=752 WRONG steps=237 fp16=1.000 t=9.5s
+[gate0] fp16 idx=808 WRONG steps=235 fp16=1.000 t=10.0s
+[gate0] fp16 idx=821 SOLVED steps=207 fp16=1.000 t=7.8s
+[gate0] fp16 idx=880 WRONG steps=255 fp16=1.000 t=9.6s
+[gate0] fp16 idx=899 WRONG steps=255 fp16=1.000 t=9.7s
+[gate0] fp16 idx=941 WRONG steps=243 fp16=1.000 t=9.0s
+[gate0] fp16 idx=953 WRONG steps=255 fp16=1.000 t=9.3s
+[gate0] fp16 idx=1083 WRONG steps=144 fp16=1.000 t=5.3s
+[gate0] fp16 idx=1110 WRONG steps=255 fp16=1.000 t=9.4s
+[gate0] fp16 idx=1234 SOLVED steps=202 fp16=1.000 t=7.4s
+[gate0] fp16 idx=1293 WRONG steps=99 fp16=1.000 t=4.4s
+[gate0] fp16 idx=1301 WRONG steps=227 fp16=1.000 t=12.2s
+[gate0] nf4 idx=29 WRONG steps=255 fp16=0.000 t=19.0s
+[gate0] nf4 idx=50 WRONG steps=255 fp16=0.000 t=17.0s
+[gate0] nf4 idx=143 WRONG steps=255 fp16=0.000 t=15.4s
+[gate0] nf4 idx=152 WRONG steps=255 fp16=0.000 t=17.1s
+[gate0] nf4 idx=186 WRONG steps=255 fp16=0.000 t=16.8s
+[gate0] nf4 idx=240 SOLVED steps=255 fp16=0.000 t=17.6s
+[gate0] nf4 idx=275 WRONG steps=255 fp16=0.000 t=20.9s
+[gate0] nf4 idx=299 WRONG steps=255 fp16=0.000 t=22.7s
+[gate0] nf4 idx=328 WRONG steps=255 fp16=0.000 t=21.1s
+[gate0] nf4 idx=329 SOLVED steps=233 fp16=0.000 t=19.2s
+[gate0] nf4 idx=351 WRONG steps=255 fp16=0.000 t=20.7s
+[gate0] nf4 idx=401 WRONG steps=255 fp16=0.000 t=21.1s
+[gate0] nf4 idx=492 SOLVED steps=255 fp16=0.000 t=19.8s
+[gate0] nf4 idx=561 SOLVED steps=255 fp16=0.000 t=21.3s
+[gate0] nf4 idx=579 SOLVED steps=255 fp16=0.000 t=21.9s
+[gate0] nf4 idx=616 SOLVED steps=255 fp16=0.000 t=22.8s
+[gate0] nf4 idx=648 WRONG steps=255 fp16=0.000 t=24.1s
+[gate0] nf4 idx=702 WRONG steps=255 fp16=0.000 t=23.4s
+[gate0] nf4 idx=752 WRONG steps=185 fp16=0.000 t=15.3s
+[gate0] nf4 idx=808 WRONG steps=255 fp16=0.000 t=24.2s
+[gate0] nf4 idx=821 WRONG steps=255 fp16=0.000 t=22.8s
+[gate0] nf4 idx=880 SOLVED steps=255 fp16=0.000 t=22.9s
+[gate0] nf4 idx=899 SOLVED steps=255 fp16=0.000 t=22.3s
+[gate0] nf4 idx=941 WRONG steps=255 fp16=0.000 t=23.0s
+[gate0] nf4 idx=953 WRONG steps=255 fp16=0.000 t=22.7s
+[gate0] nf4 idx=1083 WRONG steps=255 fp16=0.000 t=24.2s
+[gate0] nf4 idx=1110 WRONG steps=255 fp16=0.000 t=23.2s
+[gate0] nf4 idx=1234 WRONG steps=255 fp16=0.000 t=24.8s
+[gate0] nf4 idx=1293 WRONG steps=255 fp16=0.000 t=21.7s
+[gate0] nf4 idx=1301 WRONG steps=255 fp16=0.000 t=23.7s
+[gate0] hist_lag_entropy_p10 idx=29 WRONG steps=210 fp16=0.567 t=14.4s
+[gate0] hist_lag_entropy_p10 idx=50 SOLVED steps=223 fp16=0.592 t=14.5s
+[gate0] hist_lag_entropy_p10 idx=143 WRONG steps=255 fp16=0.412 t=17.1s
+[gate0] hist_lag_entropy_p10 idx=152 SOLVED steps=255 fp16=0.494 t=18.5s
+[gate0] hist_lag_entropy_p10 idx=186 WRONG steps=255 fp16=0.675 t=16.4s
+[gate0] hist_lag_entropy_p10 idx=240 SOLVED steps=255 fp16=0.592 t=17.2s
+[gate0] hist_lag_entropy_p10 idx=275 WRONG steps=255 fp16=0.537 t=17.5s
+[gate0] hist_lag_entropy_p10 idx=299 WRONG steps=255 fp16=0.475 t=18.2s
+[gate0] hist_lag_entropy_p10 idx=328 WRONG steps=255 fp16=0.659 t=16.9s
+[gate0] hist_lag_entropy_p10 idx=329 SOLVED steps=255 fp16=0.420 t=19.1s
+[gate0] hist_lag_entropy_p10 idx=351 SOLVED steps=255 fp16=0.576 t=15.5s
+[gate0] hist_lag_entropy_p10 idx=401 SOLVED steps=210 fp16=0.548 t=12.9s
+[gate0] hist_lag_entropy_p10 idx=492 SOLVED steps=255 fp16=0.412 t=19.0s
+[gate0] hist_lag_entropy_p10 idx=561 WRONG steps=201 fp16=0.597 t=13.9s
+[gate0] hist_lag_entropy_p10 idx=579 SOLVED steps=255 fp16=0.420 t=19.9s
+[gate0] hist_lag_entropy_p10 idx=616 SOLVED steps=255 fp16=0.451 t=20.7s
+[gate0] hist_lag_entropy_p10 idx=648 WRONG steps=168 fp16=0.720 t=10.5s
+[gate0] hist_lag_entropy_p10 idx=702 WRONG steps=255 fp16=0.678 t=16.9s
+[gate0] hist_lag_entropy_p10 idx=752 WRONG steps=255 fp16=0.596 t=17.5s
+[gate0] hist_lag_entropy_p10 idx=808 WRONG steps=255 fp16=0.600 t=17.4s
+[gate0] hist_lag_entropy_p10 idx=821 SOLVED steps=255 fp16=0.545 t=17.9s
+[gate0] hist_lag_entropy_p10 idx=880 WRONG steps=122 fp16=0.705 t=7.7s
+[gate0] hist_lag_entropy_p10 idx=899 WRONG steps=255 fp16=0.678 t=17.0s
+[gate0] hist_lag_entropy_p10 idx=941 WRONG steps=255 fp16=0.671 t=16.9s
+[gate0] hist_lag_entropy_p10 idx=953 WRONG steps=178 fp16=0.758 t=11.7s
+[gate0] hist_lag_entropy_p10 idx=1083 WRONG steps=255 fp16=0.675 t=16.5s
+[gate0] hist_lag_entropy_p10 idx=1110 WRONG steps=255 fp16=0.729 t=16.3s
+[gate0] hist_lag_entropy_p10 idx=1234 WRONG steps=255 fp16=0.690 t=16.5s
+[gate0] hist_lag_entropy_p10 idx=1293 WRONG steps=99 fp16=0.626 t=6.9s
+[gate0] hist_lag_entropy_p10 idx=1301 WRONG steps=216 fp16=0.630 t=14.2s
+[gate0] hist_lag_entropy_p30 idx=29 WRONG steps=255 fp16=0.176 t=14.7s
+[gate0] hist_lag_entropy_p30 idx=50 WRONG steps=255 fp16=0.243 t=13.1s
+[gate0] hist_lag_entropy_p30 idx=143 WRONG steps=255 fp16=0.282 t=13.7s
+[gate0] hist_lag_entropy_p30 idx=152 SOLVED steps=255 fp16=0.278 t=15.0s
+[gate0] hist_lag_entropy_p30 idx=186 WRONG steps=255 fp16=0.267 t=14.0s
+[gate0] hist_lag_entropy_p30 idx=240 WRONG steps=255 fp16=0.169 t=15.3s
+[gate0] hist_lag_entropy_p30 idx=275 WRONG steps=255 fp16=0.176 t=14.8s
+[gate0] hist_lag_entropy_p30 idx=299 WRONG steps=255 fp16=0.165 t=14.5s
+[gate0] hist_lag_entropy_p30 idx=328 WRONG steps=255 fp16=0.227 t=13.8s
+[gate0] hist_lag_entropy_p30 idx=329 SOLVED steps=255 fp16=0.165 t=14.1s
+[gate0] hist_lag_entropy_p30 idx=351 SOLVED steps=255 fp16=0.220 t=14.2s
+[gate0] hist_lag_entropy_p30 idx=401 SOLVED steps=255 fp16=0.157 t=14.3s
+[gate0] hist_lag_entropy_p30 idx=492 SOLVED steps=255 fp16=0.153 t=14.1s
+[gate0] hist_lag_entropy_p30 idx=561 SOLVED steps=255 fp16=0.157 t=14.3s
+[gate0] hist_lag_entropy_p30 idx=579 SOLVED steps=255 fp16=0.231 t=15.9s
+[gate0] hist_lag_entropy_p30 idx=616 SOLVED steps=255 fp16=0.220 t=18.9s
+[gate0] hist_lag_entropy_p30 idx=648 WRONG steps=255 fp16=0.247 t=14.0s
+[gate0] hist_lag_entropy_p30 idx=702 WRONG steps=255 fp16=0.224 t=13.5s
+[gate0] hist_lag_entropy_p30 idx=752 WRONG steps=255 fp16=0.235 t=19.8s
+[gate0] hist_lag_entropy_p30 idx=808 WRONG steps=255 fp16=0.176 t=20.4s
+[gate0] hist_lag_entropy_p30 idx=821 SOLVED steps=255 fp16=0.216 t=15.2s
+[gate0] hist_lag_entropy_p30 idx=880 WRONG steps=255 fp16=0.259 t=20.2s
+[gate0] hist_lag_entropy_p30 idx=899 WRONG steps=255 fp16=0.247 t=21.3s
+[gate0] hist_lag_entropy_p30 idx=941 WRONG steps=248 fp16=0.242 t=15.8s
+[gate0] hist_lag_entropy_p30 idx=953 WRONG steps=255 fp16=0.302 t=14.2s
+[gate0] hist_lag_entropy_p30 idx=1083 WRONG steps=255 fp16=0.235 t=14.3s
+[gate0] hist_lag_entropy_p30 idx=1110 WRONG steps=255 fp16=0.271 t=15.7s
+[gate0] hist_lag_entropy_p30 idx=1234 WRONG steps=255 fp16=0.188 t=14.4s
+[gate0] hist_lag_entropy_p30 idx=1293 WRONG steps=255 fp16=0.192 t=13.9s
+[gate0] hist_lag_entropy_p30 idx=1301 WRONG steps=255 fp16=0.282 t=14.3s
+[gate0] hist_lag_entropy_p50 idx=29 WRONG steps=255 fp16=0.102 t=15.5s
+[gate0] hist_lag_entropy_p50 idx=50 WRONG steps=255 fp16=0.075 t=16.0s
+[gate0] hist_lag_entropy_p50 idx=143 WRONG steps=255 fp16=0.078 t=16.6s
+[gate0] hist_lag_entropy_p50 idx=152 WRONG steps=255 fp16=0.090 t=17.9s
+[gate0] hist_lag_entropy_p50 idx=186 SOLVED steps=255 fp16=0.039 t=16.7s
+[gate0] hist_lag_entropy_p50 idx=240 SOLVED steps=255 fp16=0.098 t=20.4s
+[gate0] hist_lag_entropy_p50 idx=275 WRONG steps=255 fp16=0.055 t=15.1s
+[gate0] hist_lag_entropy_p50 idx=299 WRONG steps=255 fp16=0.043 t=14.8s
+[gate0] hist_lag_entropy_p50 idx=328 WRONG steps=255 fp16=0.063 t=15.2s
+[gate0] hist_lag_entropy_p50 idx=329 SOLVED steps=255 fp16=0.035 t=15.3s
+[gate0] hist_lag_entropy_p50 idx=351 SOLVED steps=255 fp16=0.071 t=15.0s
+[gate0] hist_lag_entropy_p50 idx=401 WRONG steps=255 fp16=0.055 t=15.0s
+[gate0] hist_lag_entropy_p50 idx=492 SOLVED steps=255 fp16=0.059 t=15.1s
+[gate0] hist_lag_entropy_p50 idx=561 SOLVED steps=255 fp16=0.055 t=15.1s
+[gate0] hist_lag_entropy_p50 idx=579 SOLVED steps=255 fp16=0.059 t=15.6s
+[gate0] hist_lag_entropy_p50 idx=616 SOLVED steps=255 fp16=0.051 t=15.2s
+[gate0] hist_lag_entropy_p50 idx=648 WRONG steps=255 fp16=0.102 t=15.1s
+[gate0] hist_lag_entropy_p50 idx=702 WRONG steps=255 fp16=0.082 t=18.0s
+[gate0] hist_lag_entropy_p50 idx=752 WRONG steps=255 fp16=0.078 t=16.1s
+[gate0] hist_lag_entropy_p50 idx=808 WRONG steps=255 fp16=0.102 t=15.7s
+[gate0] hist_lag_entropy_p50 idx=821 WRONG steps=255 fp16=0.043 t=14.3s
+[gate0] hist_lag_entropy_p50 idx=880 WRONG steps=255 fp16=0.059 t=14.4s
+[gate0] hist_lag_entropy_p50 idx=899 SOLVED steps=255 fp16=0.094 t=14.4s
+[gate0] hist_lag_entropy_p50 idx=941 WRONG steps=255 fp16=0.094 t=13.7s
+[gate0] hist_lag_entropy_p50 idx=953 WRONG steps=255 fp16=0.063 t=14.1s
+[gate0] hist_lag_entropy_p50 idx=1083 WRONG steps=241 fp16=0.062 t=13.2s
+[gate0] hist_lag_entropy_p50 idx=1110 WRONG steps=255 fp16=0.031 t=14.7s
+[gate0] hist_lag_entropy_p50 idx=1234 WRONG steps=255 fp16=0.043 t=14.7s
+[gate0] hist_lag_entropy_p50 idx=1293 WRONG steps=255 fp16=0.063 t=14.4s
+[gate0] hist_lag_entropy_p50 idx=1301 WRONG steps=255 fp16=0.031 t=14.8s
+[gate0] histimpl_lag_entropy_p10 idx=29 WRONG steps=210 fp16=0.567 t=8.9s
+[gate0] histimpl_lag_entropy_p10 idx=50 SOLVED steps=223 fp16=0.592 t=9.6s
+[gate0] histimpl_lag_entropy_p10 idx=143 WRONG steps=255 fp16=0.412 t=12.5s
+[gate0] histimpl_lag_entropy_p10 idx=152 SOLVED steps=255 fp16=0.494 t=11.8s
+[gate0] histimpl_lag_entropy_p10 idx=186 WRONG steps=255 fp16=0.675 t=10.6s
+[gate0] histimpl_lag_entropy_p10 idx=240 SOLVED steps=255 fp16=0.592 t=11.0s
+[gate0] histimpl_lag_entropy_p10 idx=275 WRONG steps=255 fp16=0.537 t=11.4s
+[gate0] histimpl_lag_entropy_p10 idx=299 WRONG steps=255 fp16=0.475 t=11.3s
+[gate0] histimpl_lag_entropy_p10 idx=328 WRONG steps=255 fp16=0.659 t=10.6s
+[gate0] histimpl_lag_entropy_p10 idx=329 SOLVED steps=255 fp16=0.420 t=11.5s
+[gate0] histimpl_lag_entropy_p10 idx=351 SOLVED steps=255 fp16=0.576 t=10.9s
+[gate0] histimpl_lag_entropy_p10 idx=401 SOLVED steps=210 fp16=0.548 t=9.4s
+[gate0] histimpl_lag_entropy_p10 idx=492 SOLVED steps=255 fp16=0.412 t=12.2s
+[gate0] histimpl_lag_entropy_p10 idx=561 WRONG steps=201 fp16=0.597 t=8.7s
+[gate0] histimpl_lag_entropy_p10 idx=579 SOLVED steps=255 fp16=0.420 t=12.0s
+[gate0] histimpl_lag_entropy_p10 idx=616 SOLVED steps=255 fp16=0.451 t=10.8s
+[gate0] histimpl_lag_entropy_p10 idx=648 WRONG steps=168 fp16=0.720 t=6.2s
+[gate0] histimpl_lag_entropy_p10 idx=702 WRONG steps=255 fp16=0.678 t=10.0s
+[gate0] histimpl_lag_entropy_p10 idx=752 WRONG steps=255 fp16=0.596 t=10.3s
+[gate0] histimpl_lag_entropy_p10 idx=808 WRONG steps=255 fp16=0.600 t=10.2s
+[gate0] histimpl_lag_entropy_p10 idx=821 SOLVED steps=255 fp16=0.545 t=10.9s
+[gate0] histimpl_lag_entropy_p10 idx=880 WRONG steps=122 fp16=0.705 t=4.8s
+[gate0] histimpl_lag_entropy_p10 idx=899 WRONG steps=255 fp16=0.678 t=9.9s
+[gate0] histimpl_lag_entropy_p10 idx=941 WRONG steps=255 fp16=0.671 t=10.4s
+[gate0] histimpl_lag_entropy_p10 idx=953 WRONG steps=178 fp16=0.758 t=7.2s
+[gate0] histimpl_lag_entropy_p10 idx=1083 WRONG steps=255 fp16=0.675 t=10.7s
+[gate0] histimpl_lag_entropy_p10 idx=1110 WRONG steps=255 fp16=0.729 t=10.2s
+[gate0] histimpl_lag_entropy_p10 idx=1234 WRONG steps=255 fp16=0.690 t=10.0s
+[gate0] histimpl_lag_entropy_p10 idx=1293 WRONG steps=99 fp16=0.626 t=4.3s
+[gate0] histimpl_lag_entropy_p10 idx=1301 WRONG steps=216 fp16=0.630 t=9.3s
+[gate0] histimpl_lag_entropy_p30 idx=29 WRONG steps=255 fp16=0.176 t=13.3s
+[gate0] histimpl_lag_entropy_p30 idx=50 WRONG steps=255 fp16=0.243 t=13.8s
+[gate0] histimpl_lag_entropy_p30 idx=143 WRONG steps=255 fp16=0.282 t=12.7s
+[gate0] histimpl_lag_entropy_p30 idx=152 SOLVED steps=255 fp16=0.278 t=13.6s
+[gate0] histimpl_lag_entropy_p30 idx=186 WRONG steps=255 fp16=0.267 t=13.7s
+[gate0] histimpl_lag_entropy_p30 idx=240 WRONG steps=255 fp16=0.169 t=14.4s
+[gate0] histimpl_lag_entropy_p30 idx=275 WRONG steps=255 fp16=0.176 t=13.1s
+[gate0] histimpl_lag_entropy_p30 idx=299 WRONG steps=255 fp16=0.165 t=13.2s
+[gate0] histimpl_lag_entropy_p30 idx=328 WRONG steps=255 fp16=0.227 t=12.5s
+[gate0] histimpl_lag_entropy_p30 idx=329 SOLVED steps=255 fp16=0.165 t=14.8s
+[gate0] histimpl_lag_entropy_p30 idx=351 SOLVED steps=255 fp16=0.220 t=15.6s
+[gate0] histimpl_lag_entropy_p30 idx=401 SOLVED steps=255 fp16=0.157 t=14.7s
+[gate0] histimpl_lag_entropy_p30 idx=492 SOLVED steps=255 fp16=0.153 t=14.6s
+[gate0] histimpl_lag_entropy_p30 idx=561 SOLVED steps=255 fp16=0.157 t=14.5s
+[gate0] histimpl_lag_entropy_p30 idx=579 SOLVED steps=255 fp16=0.231 t=14.2s
+[gate0] histimpl_lag_entropy_p30 idx=616 SOLVED steps=255 fp16=0.220 t=15.4s
+[gate0] histimpl_lag_entropy_p30 idx=648 WRONG steps=255 fp16=0.247 t=13.9s
+[gate0] histimpl_lag_entropy_p30 idx=702 WRONG steps=255 fp16=0.224 t=13.9s
+[gate0] histimpl_lag_entropy_p30 idx=752 WRONG steps=255 fp16=0.235 t=13.4s
+[gate0] histimpl_lag_entropy_p30 idx=808 WRONG steps=255 fp16=0.176 t=14.0s
+[gate0] histimpl_lag_entropy_p30 idx=821 SOLVED steps=255 fp16=0.216 t=13.3s
+[gate0] histimpl_lag_entropy_p30 idx=880 WRONG steps=255 fp16=0.259 t=12.4s
+[gate0] histimpl_lag_entropy_p30 idx=899 WRONG steps=255 fp16=0.247 t=13.6s
+[gate0] histimpl_lag_entropy_p30 idx=941 WRONG steps=248 fp16=0.242 t=14.5s
+[gate0] histimpl_lag_entropy_p30 idx=953 WRONG steps=255 fp16=0.302 t=13.8s
+[gate0] histimpl_lag_entropy_p30 idx=1083 WRONG steps=255 fp16=0.235 t=14.2s
+[gate0] histimpl_lag_entropy_p30 idx=1110 WRONG steps=255 fp16=0.271 t=14.9s
+[gate0] histimpl_lag_entropy_p30 idx=1234 WRONG steps=255 fp16=0.188 t=14.4s
+[gate0] histimpl_lag_entropy_p30 idx=1293 WRONG steps=255 fp16=0.192 t=13.4s
+[gate0] histimpl_lag_entropy_p30 idx=1301 WRONG steps=255 fp16=0.282 t=12.8s
+[gate0] histimpl_lag_entropy_p50 idx=29 WRONG steps=255 fp16=0.102 t=13.6s
+[gate0] histimpl_lag_entropy_p50 idx=50 WRONG steps=255 fp16=0.075 t=15.1s
+[gate0] histimpl_lag_entropy_p50 idx=143 WRONG steps=255 fp16=0.078 t=14.9s
+[gate0] histimpl_lag_entropy_p50 idx=152 WRONG steps=255 fp16=0.090 t=15.5s
+[gate0] histimpl_lag_entropy_p50 idx=186 SOLVED steps=255 fp16=0.039 t=14.9s
+[gate0] histimpl_lag_entropy_p50 idx=240 SOLVED steps=255 fp16=0.098 t=14.4s
+[gate0] histimpl_lag_entropy_p50 idx=275 WRONG steps=255 fp16=0.055 t=16.0s
+[gate0] histimpl_lag_entropy_p50 idx=299 WRONG steps=255 fp16=0.043 t=15.3s
+[gate0] histimpl_lag_entropy_p50 idx=328 WRONG steps=255 fp16=0.063 t=15.0s
+[gate0] histimpl_lag_entropy_p50 idx=329 SOLVED steps=255 fp16=0.035 t=14.9s
+[gate0] histimpl_lag_entropy_p50 idx=351 SOLVED steps=255 fp16=0.071 t=14.6s
+[gate0] histimpl_lag_entropy_p50 idx=401 WRONG steps=255 fp16=0.055 t=14.6s
+[gate0] histimpl_lag_entropy_p50 idx=492 SOLVED steps=255 fp16=0.059 t=15.0s
+[gate0] histimpl_lag_entropy_p50 idx=561 SOLVED steps=255 fp16=0.055 t=14.4s
+[gate0] histimpl_lag_entropy_p50 idx=579 SOLVED steps=255 fp16=0.059 t=15.2s
+[gate0] histimpl_lag_entropy_p50 idx=616 SOLVED steps=255 fp16=0.051 t=14.0s
+[gate0] histimpl_lag_entropy_p50 idx=648 WRONG steps=255 fp16=0.102 t=13.6s
+[gate0] histimpl_lag_entropy_p50 idx=702 WRONG steps=255 fp16=0.082 t=13.9s
+[gate0] histimpl_lag_entropy_p50 idx=752 WRONG steps=255 fp16=0.078 t=14.2s
+[gate0] histimpl_lag_entropy_p50 idx=808 WRONG steps=255 fp16=0.102 t=14.1s
+[gate0] histimpl_lag_entropy_p50 idx=821 WRONG steps=255 fp16=0.043 t=14.3s
+[gate0] histimpl_lag_entropy_p50 idx=880 WRONG steps=255 fp16=0.059 t=14.0s
+[gate0] histimpl_lag_entropy_p50 idx=899 SOLVED steps=255 fp16=0.094 t=13.8s
+[gate0] histimpl_lag_entropy_p50 idx=941 WRONG steps=255 fp16=0.094 t=14.1s
+[gate0] histimpl_lag_entropy_p50 idx=953 WRONG steps=255 fp16=0.063 t=14.3s
+[gate0] histimpl_lag_entropy_p50 idx=1083 WRONG steps=241 fp16=0.062 t=13.2s
+[gate0] histimpl_lag_entropy_p50 idx=1110 WRONG steps=255 fp16=0.031 t=14.3s
+[gate0] histimpl_lag_entropy_p50 idx=1234 WRONG steps=255 fp16=0.043 t=13.4s
+[gate0] histimpl_lag_entropy_p50 idx=1293 WRONG steps=255 fp16=0.063 t=13.8s
+[gate0] histimpl_lag_entropy_p50 idx=1301 WRONG steps=255 fp16=0.031 t=15.0s
+[ledger] cumulative GPU wall time: 0.959 h of 5.0 h
+EXIT=0

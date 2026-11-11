@@ -1,0 +1,12 @@
+X9 manifest id: 8b443fdca6e22062
+utc: 2026-10-31T14:55:53Z
+files (in hashing order; LF-normalized; each prefixed by name and byte length):
+  FOLLOWUP_X9.md  sha256(LF) acce47bdbcab98416d204e7b0ccf89cf4cb2066897250b75c1397a0d78e9083b
+  rv3x9.py  sha256(LF) 2729997aab3d19031f2f2ab8c4b0f822c5a753f21151075cc6e81ab5d29eb72c
+  run_x9.py  sha256(LF) c119417b956e5cbb6386bc6cdfad017900a58d0e23443804ffd61864518f5b57
+  analyze_x9.py  sha256(LF) 21cb540b31fa8ac354ac825e3bae96c64a70bb4377808cf25537060970e8e262
+  test_x9.py  sha256(LF) c1faffcee9fa700f575d2f860c3f261c8fb9f86cc926a0e16a112933e3a3916f
+  mutation_check_x9.py  sha256(LF) c8f21e0644cba14c9f13ebf848357b7150b4aae82884ca5aacf6e76c294a7817
+  x9_subset.json  sha256(LF) 7e4189e18b49de37b8c6962f8bd5c2aac059c1129d9b1e272bfe7c053910c2b6
+
+Authorization (created only by the authors): research_v2\v3_runs_x9\AUTHORIZED_X9_BY_AUTHORS.txt containing the text FOLLOWUP_X9 and the id 8b443fdca6e22062.

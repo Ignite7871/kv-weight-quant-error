@@ -1,0 +1,21 @@
+# Amendment A2 validation, 2026-10-24 (CPU; generation code unchanged)
+
+## run_stage1_tests.py --real (tail)
+s9_cost_charges_every_executed_pass_of_hybrid_cells                                         PASS  
+s10_stage1_leaves_baseline_engine_and_historical_code_untouched_and_has_no_boundary_access  PASS  
+s12_a2_hard_ceiling_is_the_only_stop_rule_and_ledger_is_crash_safe                          PASS  
+s13_watchdog_fires_once_at_deadline_ticks_and_can_be_cancelled                              PASS  
+s14_pace_statistics_use_the_pooled_rate_and_record_recent_rate_separately                   PASS  
+s15_telemetry_parsing_and_temperature_stop                                                  PASS  
+s16_integrity_checker_passes_real_records_and_catches_each_corruption                       PASS  
+s17_checkpoint_verification_detects_edits_repeats_skips_and_reordering                      PASS  
+s11_real_qwen_cpu_hybrids_match_independent_reference                                       PASS  
+s18_real_qwen_cpu_a2_run_path_integrity_cap_and_logging                                     PASS  
+
+18/18 passed
+
+real	22m46.179s
+user	0m0.375s
+sys	0m1.123s
+
+[exited with code 0]

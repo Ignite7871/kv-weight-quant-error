@@ -1,0 +1,6 @@
+KILLED   oracle restore skipped                    {'t2b_oracle_extremes_equal_static_bitwise_including_cache': 'FAIL', 't2c_mixed_routes_equal_single_pass_replay_bitwise': 'FAIL'}
+KILLED   oracle snapshot of wrong position         {'t2b_oracle_extremes_equal_static_bitwise_including_cache': 'FAIL'}
+KILLED   lag-entropy off by one step               {'t1_lag_entropy_matches_historical_DynamicQwen_generate': 'FAIL'}
+KILLED   routing flag inverted in backend          {'t1_lag_entropy_matches_historical_DynamicQwen_generate': 'FAIL', 't1e_static_fp16_equals_unwrapped_model_absolute_reference': 'FAIL'}
+KILLED   cascade rollback (cache crop) disabled    {'t2_cascade_extremes_equal_static_bitwise_including_cache': 'FAIL', 't3d_cascade_decisions_invariant_to_fp16_weights_until_first_escalation': 'FAIL'}
+5/5 mutants killed; clean code passes: True

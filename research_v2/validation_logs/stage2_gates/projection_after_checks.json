@@ -1,0 +1,25 @@
+{
+ "used_h_after_checks": 0.15775643792417315,
+ "remaining_h": 5.342243562075827,
+ "load_s": 90,
+ "cumulative_h_if_run_at": {
+  "fastest_session": 4.427386860316686,
+  "pooled": 4.708758219924693,
+  "slowest_session": 5.374782578356443
+ },
+ "max_problems_at_slowest_rate": 397,
+ "speed_check_vs_stage1_s3_ms_per_step": {
+  "fp16": [
+   33.75,
+   34.1
+  ],
+  "nf4": [
+   49.85,
+   55.5
+  ],
+  "cache_only": [
+   79.3,
+   88.3
+  ]
+ }
+}

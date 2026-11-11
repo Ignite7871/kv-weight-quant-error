@@ -1,0 +1,46 @@
+{
+ "date": "2026-11-08",
+ "phase": "Deviation D1 (post-data, corresponding author's decision after the drift stop V4-A17), CPU on the laptop, lock b0b191df9bee180e unchanged",
+ "core_tests": "18/18",
+ "ops_harness": "43/43",
+ "analysis_tests_full": "19/19",
+ "mutants_caught": "100/100",
+ "real_model_cpu": "10/10",
+ "not_possible_on_laptop": {
+  "qwen2.5-7b": "weights 15.2 GB in FP16 exceed this laptop's 16 GB RAM with the NF4 copy; checked on the pod (G1-G8)",
+  "llama3.1-8b": "gated repo not readable with the laptop account, and 16 GB in FP16; checked on the pod",
+  "llama3.2-3b": "gated repo not readable with the laptop account; snapshot checks and G5 through identical bytes here, the rest on the pod",
+  "mistral-7b-v0.3": "weights 14.5 GB in FP16 exceed this laptop's RAM with the NF4 copy; checked on the pod"
+ },
+ "calibration_rules_reproduce_v3": "exact (b_hat, c, margin, rho_K, rho_V) on all four v3 models",
+ "step0_self_test": "v3 records of the first 100 ids and v3's calibration on the first 50 as cloud records: every delta exactly 0, criteria 1-3 pass; shifts and a 10 % rho change fail as declared",
+ "bugs_found_and_fixed": [
+  "billing tie (same timestamp) took the earlier line",
+  "post-billing accrual dropped the auto-stop window of a session open at the billing time",
+  "pod variables reach PID 1 only (RunPod): HF_TOKEN read from /proc/1/environ",
+  "pod start from container PID 1, not /proc/uptime (host boot)",
+  "r4: reload double-load at three sites (HQQ q1 to q2, q2 to frozen, FP16 to BF16): the old model stayed referenced while the next one loaded",
+  "r4: lock --verify passed after a later commit changed a locked file: verify now compares HEAD with the lock",
+  "r4: runbook pushed the locked commit, which lacks the lock file: it now pushes the commit containing the lock",
+  "r4: substring SKU match accepted RTX A4000/A400: exact match on NVIDIA A40 or A40",
+  "r4: section 10 ceiling multiple left out storage: about 2.5x of $61 with HQQ and one month of storage",
+  "r5: tools/v4_remote.py run_stream died with UnicodeEncodeError writing pod output to the laptop's piped cp1252 stdout: reproduced on the unpatched code, stream now backslash-escapes, child output decoded as UTF-8 with replacement",
+  "r5: the r4 harness UnicodeDecodeError came from the validation launch (PYTHONIOENCODING=utf-8 with a cp1252 parent), only the stderr reader failed, and the harness never runs on the pod; child output is now decoded as UTF-8",
+  "r5: the projection left out GM, first-boot setup and the G8 reruns: now counted",
+  "r6: lock_v4 hashed previous locks (and appended run files) as raw bytes: the laptop's CRLF checkout and the pod's LF checkout disagreed, so the lock could not verify on the pod; now LF-normalized on writing and verifying, run_v4.locked_line likewise",
+  "r6: v4_remote passed an unquoted UserKnownHostsFile; OpenSSH split the path at its spaces and pinned the host key in a stray file; now quoted, checked with ssh -G under both OpenSSH builds",
+  "r6: runbook and tool usage gave the subcommand before its options; corrected, plus MSYS_NO_PATHCONV=1 for Git Bash",
+  "r7: GM on the A40 failed 15/18 on three CUDA-only device bugs in test code (t08 CPU input to a CUDA BF16 forward; t12 .numpy() on CUDA tensors; t13 allclose across devices); fixed, then test_rv4 18/18 and the mutation check 87/87 on local CUDA, plus a run-path smoke test (qwen2.5-0.5b, gates, 3 calibration and 3 test problems, G8 bitwise) that wrote only scratch output, which was then deleted",
+  "r8: a16 returned (passed) without research_v2/v3_runs, which is untracked and never reached the pod, so the four Step 0 mutants survived GM; a04 skipped models without records and o39 checked nothing without an ssh executable. All three now fail loudly; the v3 records go to the pod under a committed SHA-256 manifest checked against the V3 lock, and GM requires them",
+  "r8b: the first r8 lock omitted v4/v3_records_manifest.json and tools/v4_v3_records.py from the locked file list; added, with a test and a mutant, before any use of that lock",
+  "D1: none found; added deviation records (lock_v4 --deviation/--append-deviation), drift reference x 1.48, resume check, GM per deviation, with tests o42-o44 and seven mutants"
+ ],
+ "all_passed": true,
+ "not_tested_on_cpu_r5": "deterministic mode on CUDA, the nvidia-smi environment log on a real GPU, and the digest record on a pod: first exercised at GM and first boot",
+ "local_cuda_r7": {
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "core_tests": "18/18",
+  "mutants_caught": "87/87",
+  "run_path_smoke": "passed, not data, deleted"
+ }
+}

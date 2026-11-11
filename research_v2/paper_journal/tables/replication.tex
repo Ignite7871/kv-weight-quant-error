@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrcp{3.3cm}}
+\toprule
+Contrast & Stage 1 & Held-out & Held-out $-$ Stage 1 [95\% CI] & perm.\ $p$ & Pre-declared category \\
+\midrule
+H1 cache-only $-$ FP16 & $-$2.37 & $-$4.63 & $-$2.26 [$-$6.88, $+$2.29] & 0.350 & same direction; raw $p<0.05$, not Holm-sig. \\
+H2 token-only $-$ FP16 & $-$3.55 & $-$4.37 & $-$0.82 [$-$5.50, $+$3.91] & 0.759 & same direction; raw $p<0.05$, not Holm-sig. \\
+H3 interaction & $-$4.09 & $+$0.77 & $+$4.86 [$-$1.23, $+$10.95] & 0.127 & opposite sign; compatible with Stage 1 (uncertainty) \\
+H4 cache-only $-$ NF4 & $+$7.63 & $+$3.60 & $-$4.04 [$-$9.14, $+$1.13] & 0.122 & same direction; not significant \\
+H5 oracle $-$ cache-only & $-$0.75 & $+$0.77 & $+$1.52 [$-$1.33, $+$4.35] & 0.306 & equivalence within $\pm$3 pp \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,33 @@
+protocol lock -- research_v2 Stage 1 (token-source x KV-source)
+utc: 2026-10-23T14:03:00.077910+00:00
+git commit containing the locked files: 4b0ff0b602fc40b61a7bd3aa282e1121ec7c131c
+Hashes are SHA-256 of the committed file contents (git show <commit>:<path>).
+Private dated hash for coauthors. NOT a public pre-registration.
+PROVENANCE: this protocol is EXPLORATORY IN ORIGIN. It is informed by earlier looks at these data: the 2026-10-22 pilot
+(flip oracle diverged from FP16 on 50/50 train problems, median first divergence token 20), the historical outcomes on the
+930-problem test pool (FP16 336 / NF4 243 solved), several routing comparisons run on that pool, and 30 of its problems
+re-run under several policies in the pilot. The 930-problem evaluation is therefore an exploratory replication with
+pre-declared estimands on data that have been examined before, not an independent confirmation. The 389 test problems
+outside the pool are reserved for a separately reported validation and are not touched in Stage 1.
+
+eda3e70b265072b2867a1d232a05be1ac23a50f2f26ad5cf250b6fc4c05f3e20  research_v2/STAGE1_SPEC.md
+dc647f3aaa358260c7f97d68a9b808a631d990bd00c4e7058c67d426127f11c3  research_v2/run_stage1.py
+e9113178108b30c3cea0a3b726f62ebeb86014755020ac96a846ac396e29c639  research_v2/stage1_gates.py
+ff46a3458ad312d9b15afdddda578915873b9bc4dded830f858925baedfe2fb6  research_v2/analyze_stage1.py
+e806e36629d54b89155c78496921a0db2f7709105142bf7ac8676311ce0ac464  research_v2/stage1_sample.json
+f784689c845fd43d0818ff5ea2c72d2880fb1df7d946600a7e4b042660d1b8f8  research_v2/tests/run_stage1_tests.py
+482c92600cceb7d106bd8943ec74dd0fe94757fa50786121b5314dcc419cb40e  research_v2/tests/mutation_check_stage1.py
+51f32fc4eeb4acce1c647ceb9eee52ad86f318d0d2129e27720ca5636ab47d9c  research_v2/tests/run_cpu_tests.py
+794423020ce0639b4b9af9b6f36bdc02925735e6d34c4044f5960bcbdcfa6990  research_v2/tests/test_analyze_stage1.py
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py
+a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60  src/dynamic_linear.py
+492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7  src/dynamic_model.py
+cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302  src/routing.py
+9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764  src/fragility.py
+cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287  scripts/gsm8k_gate_check.py
+e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc  scripts/probe_gsm8k_routing.py

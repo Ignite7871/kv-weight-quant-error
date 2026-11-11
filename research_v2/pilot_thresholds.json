@@ -1,0 +1,80 @@
+{
+ "_rule": "open-loop; exact decision-dtype signals from calib block; tie rule: closest share, then lower share, then smaller tau",
+ "_sources": {
+  "lag_*": "calib/nf4 trajectory",
+  "cascade": "calib/nf4 M_nf4",
+  "oracle_*": "calib/oracle_flip trajectory"
+ },
+ "lag_entropy_B10": {
+  "tau": 1.6865234375,
+  "target": 0.1,
+  "calib_share_on_source": 0.10000800704620065,
+  "n_values": 12489,
+  "n_distinct": 7614,
+  "source": "calib/nf4:Hd_lag1",
+  "direction": ">"
+ },
+ "lag_margin_B10": {
+  "tau": 0.1690673828125,
+  "target": 0.1,
+  "calib_share_on_source": 0.10000800704620065,
+  "n_values": 12489,
+  "n_distinct": 2695,
+  "source": "calib/nf4:Md_lag1",
+  "direction": "<"
+ },
+ "cascade_nf4_margin_B10": {
+  "tau": 0.1707763671875,
+  "target": 0.1,
+  "calib_share_on_source": 0.10000800704620065,
+  "n_values": 12489,
+  "n_distinct": 2684,
+  "source": "calib/nf4:Md_nf4",
+  "direction": "<"
+ },
+ "lag_entropy_B30": {
+  "tau": 0.6982421875,
+  "target": 0.3,
+  "calib_share_on_source": 0.2999439506765954,
+  "n_values": 12489,
+  "n_distinct": 7614,
+  "source": "calib/nf4:Hd_lag1",
+  "direction": ">"
+ },
+ "lag_margin_B30": {
+  "tau": 0.7060546875,
+  "target": 0.3,
+  "calib_share_on_source": 0.300024021138602,
+  "n_values": 12489,
+  "n_distinct": 2695,
+  "source": "calib/nf4:Md_lag1",
+  "direction": "<"
+ },
+ "cascade_nf4_margin_B30": {
+  "tau": 0.712890625,
+  "target": 0.3,
+  "calib_share_on_source": 0.2998638802145888,
+  "n_values": 12489,
+  "n_distinct": 2684,
+  "source": "calib/nf4:Md_nf4",
+  "direction": "<"
+ },
+ "oracle_js_B10": {
+  "tau": 0.019772373139858246,
+  "target": 0.1,
+  "calib_share_on_source": 0.10000818397577543,
+  "n_values": 12219,
+  "n_distinct": 12219,
+  "source": "calib/oracle_flip:js",
+  "direction": ">"
+ },
+ "oracle_fp16_entropy_B10": {
+  "tau": 1.6005859375,
+  "target": 0.1,
+  "calib_share_on_source": 0.10000818397577543,
+  "n_values": 12219,
+  "n_distinct": 7677,
+  "source": "calib/oracle_flip:Hd_fp16",
+  "direction": ">"
+ }
+}

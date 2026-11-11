@@ -1,0 +1,24 @@
+{
+ "id": "D1",
+ "lock_id": "b0b191df9bee180e",
+ "commit": "808407edda977b4d402bb44dbaa7e273a8ff3971",
+ "reason": "Corresponding author's decision after the drift stop on qwen2.5-1.5b (V4-A17): the drift reference of every remaining ladder model is the G6-design projection x 1.48, the per-problem time ratio measured in Step 0 timing (decided from timing data only, no test result seen); tolerance stays 25 %; resume check (rerun last completed problem, bitwise) before a resumed test; post-data deviation records in lock_v4; GM again under the deviation. Gates, thresholds, the $29 ledger stop and the $27 condition unchanged.",
+ "utc": "2026-11-08T14:13:02.191593+00:00",
+ "earlier_deviations": [],
+ "files": {
+  "research_v2/v4/PROTOCOL_V4.md": "d3f9ca86b74715039200f290b6525b5cffc5aae642bcc470001cd8fb43969154",
+  "research_v2/v4/v4_ops.py": "d81fb225e96d07c6f75ed732f462cff69afd049e2e1e03e99db5d499e1287647",
+  "research_v2/v4/run_v4.py": "92d0d9f031a892f8ec4433c2993a8ca9b0538f30bc426c9b2dac234e6ece32c5",
+  "research_v2/v4/cloud/RUNBOOK_V4.md": "3cbde2919480799d586804d79e9f7a295f03080f3b6189fefd5caa202209b150",
+  "research_v2/v4/tests/mutation_check_v4.py": "547a7fbfccc258f2109640feca0926059c205c0dae384a826904b2e21ac952dd",
+  "research_v2/v4/tests/test_ops_v4.py": "f597151a3f128931687c49d55aeec29d9a8ca6997932aa112c9930c9cea90b02",
+  "research_v2/v4/validation/v4_mutation_check.json": "97d4bb4a8a2cb230348cf2ae9c227a2627de5ddb6d1a47661a8a5c24f765e637",
+  "research_v2/v4/validation/v4_real_model_cpu.json": "a12461052c52f14446649b0a363c37b25b55d5633234b93755ed75e7eace6cdb",
+  "research_v2/v4/validation/v4_test_analyze.json": "7fff16c8ccb6abb15392c5c3fa42bc24f3fcd0e74ff15e21a7890bdc82c69ae3",
+  "research_v2/v4/validation/v4_test_ops.json": "8ed7277c89cd44aa31df291013392006c3a22e1eb407401a7391b206764f3123",
+  "research_v2/v4/validation/v4_test_rv4.json": "d0be519cdb7635b646c074f578ac8db495d0bc9c169771d18b495d0efd23bd7b",
+  "research_v2/v4/validation/v4_validation_summary.json": "5373fc787f2abbb15520c80b4b2ab215e3db8581a4dfc379ab3c62d1469b7a42",
+  "research_v2/tools/lock_v4.py": "9fa77d816ead03cbafcb5d65c8ef2bc9276345f86be76b5fc3505e15c519df10",
+  "research_v2/tools/v4_gpu_mutation_check.py": "f29f0a76c1023dc15d6188494f4b9a92251ae6152e32dd4ea1fd6649b7bcbe65"
+ }
+}

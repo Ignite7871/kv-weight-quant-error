@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{3.1cm}p{2.7cm}p{2.7cm}p{2.7cm}p{2.7cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule
+NAT$-$C2 & \vn{natc2.qb.est} \vn{natc2.qb.ci}\newline \vn{natc2.qb.verdict} & \vn{natc2.qi.est} \vn{natc2.qi.ci}\newline \vn{natc2.qi.verdict} & \vn{natc2.lb.est} \vn{natc2.lb.ci}\newline \vn{natc2.lb.verdict} & \vn{natc2.li.est} \vn{natc2.li.ci}\newline \vn{natc2.li.verdict} \\
+C2$-$C1 & \vn{c2c1.qb.est} \vn{c2c1.qb.ci}\newline \vn{c2c1.qb.verdict} & \vn{c2c1.qi.est} \vn{c2c1.qi.ci}\newline \vn{c2c1.qi.verdict} & \vn{c2c1.lb.est} \vn{c2c1.lb.ci}\newline \vn{c2c1.lb.verdict} & \vn{c2c1.li.est} \vn{c2c1.li.ci}\newline \vn{c2c1.li.verdict} \\
+NAT$-$CV & \vn{natcv.qb.est} \vn{natcv.qb.ci}\newline \vn{natcv.qb.verdict} & \vn{natcv.qi.est} \vn{natcv.qi.ci}\newline \vn{natcv.qi.verdict} & \vn{natcv.lb.est} \vn{natcv.lb.ci}\newline \vn{natcv.lb.verdict} & \vn{natcv.li.est} \vn{natcv.li.ci}\newline \vn{natcv.li.verdict} \\
+NAT-K$-$NAT-V (natural sizes) & \vn{nkv.qb.est} \vn{nkv.qb.ci}\newline \vn{nkv.qb.verdict} & \vn{nkv.qi.est} \vn{nkv.qi.ci}\newline \vn{nkv.qi.verdict} & \vn{nkv.lb.est} \vn{nkv.lb.ci}\newline \vn{nkv.lb.verdict} & \vn{nkv.li.est} \vn{nkv.li.ci}\newline \vn{nkv.li.verdict} \\
+$D$ with $P_{\mathrm{val}}$ & \vn{pval.qb.est} \vn{pval.qb.ci} & \vn{pval.qi.est} \vn{pval.qi.ci} & \vn{pval.lb.est} \vn{pval.lb.ci} & \vn{pval.li.est} \vn{pval.li.ci} \\
+$D$ with $P_{\mathrm{anormK}}$ & \vn{panormk.qb.est} \vn{panormk.qb.ci} & \vn{panormk.qi.est} \vn{panormk.qi.ci} & \vn{panormk.lb.est} \vn{panormk.lb.ci} & \vn{panormk.li.est} \vn{panormk.li.ci} \\
+$D$ with $P_{\mathrm{out}}$ & \vn{pout.qb.est} \vn{pout.qb.ci} & \vn{pout.qi.est} \vn{pout.qi.ci} & \vn{pout.lb.est} \vn{pout.lb.ci} & \vn{pout.li.est} \vn{pout.li.ci} \\
+$D$ pooled over NAT, C1, C2, QA, QO, CV & \vn{hapool.qb.est} \vn{hapool.qb.ci} & \vn{hapool.qi.est} \vn{hapool.qi.ci} & \vn{hapool.lb.est} \vn{hapool.lb.ci} & \vn{hapool.li.est} \vn{hapool.li.ci} \\
+$m^{\mathrm{NAT}}/(m^{\mathrm{LOC}}+m^{\mathrm{INH}})$, median & \vn{nonadd.qb.med} \vn{nonadd.qb.ci} & \vn{nonadd.qi.med} \vn{nonadd.qi.ci} & \vn{nonadd.lb.med} \vn{nonadd.lb.ci} & \vn{nonadd.li.med} \vn{nonadd.li.ci} \\
+$\|\Delta\|/\|\kappa^{\FF}\|$ in NAT, K / V (\%) & \vn{rel.qb.K} / \vn{rel.qb.V} & \vn{rel.qi.K} / \vn{rel.qi.V} & \vn{rel.lb.K} / \vn{rel.lb.V} & \vn{rel.li.K} / \vn{rel.li.V} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{Descriptive and secondary quantities \tagD{} (pre-declared, not tested; 95\% bootstrap intervals). The $D$ rows are the H-A estimand with another predictor or over the six norm-matched arms (\S8.1 secondary of the protocol).}
+\label{tab:desc}
+\end{table}

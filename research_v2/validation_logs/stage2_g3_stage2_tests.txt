@@ -1,0 +1,12 @@
+
+===============================================================================================================
+g1_sample_is_the_complement_of_the_pool_with_a_reproducible_seeded_order           PASS  
+g2_only_heldout_problems_may_be_evaluated                                          PASS  
+g3_configure_redirects_every_stage1_path_into_stage2_and_ledger_is_separate        PASS  
+g4_cap_cannot_be_raised_and_gpu_runs_need_authorization_and_the_gate               PASS  
+g5_projection_uses_stage1_session_rates_and_reports_whether_it_fits_5_5_h          PASS  
+g6_cleanliness_check_passes_on_the_repository_and_fails_on_a_planted_record        PASS  
+g7_checkpoint_order_check_uses_the_stage2_run_order_and_detects_repeats_and_skips  PASS  
+g8_provenance_and_budget_constants                                                 PASS  
+
+8/8 passed

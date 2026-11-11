@@ -1,0 +1,5542 @@
+{
+ "ha.qb.est": {
+  "value": "$-0.063$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HA.estimate"
+ },
+ "ha.qb.ci": {
+  "value": "$[-0.091, -0.035]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HA.ci95"
+ },
+ "ha.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HA.p"
+ },
+ "ha.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HA.holm_p"
+ },
+ "ha.qb.word": {
+  "value": "contradicted",
+  "source": "v3_report_locked.json:per_model.qwen-base.HA.supported/falsified (paper word for 'falsified': contradicted)"
+ },
+ "natc1.qb.est": {
+  "value": "$-0.241$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.estimate"
+ },
+ "natc1.qb.ci": {
+  "value": "$[-0.307, -0.176]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.ci95"
+ },
+ "natc1.qb.ci90": {
+  "value": "$[-0.296, -0.186]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.ci90"
+ },
+ "natc1.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.p"
+ },
+ "natc1.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.holm_p"
+ },
+ "natc1.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.NAT-C1.verdict"
+ },
+ "natc1.qb.ratio": {
+  "value": "$0.79$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.NAT-C1.estimate)"
+ },
+ "hb.qb.est": {
+  "value": "$+3.467$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.estimate"
+ },
+ "hb.qb.ci": {
+  "value": "$[+3.383, +3.551]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.ci95"
+ },
+ "hb.qb.ci90": {
+  "value": "$[+3.398, +3.538]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.ci90"
+ },
+ "hb.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.p"
+ },
+ "hb.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.holm_p"
+ },
+ "hb.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.verdict"
+ },
+ "hb.qb.ratio": {
+  "value": "$32.04$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.HB QA-QO.estimate)"
+ },
+ "hd.qb.est": {
+  "value": "$+4.783$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.estimate"
+ },
+ "hd.qb.ci": {
+  "value": "$[+4.645, +4.924]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.ci95"
+ },
+ "hd.qb.ci90": {
+  "value": "$[+4.665, +4.900]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.ci90"
+ },
+ "hd.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.p"
+ },
+ "hd.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.holm_p"
+ },
+ "hd.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.verdict"
+ },
+ "hd.qb.ratio": {
+  "value": "$119.45$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.HD K*-V*.estimate)"
+ },
+ "provk.qb.est": {
+  "value": "$-1.233$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "provk.qb.ci": {
+  "value": "$[-1.300, -1.162]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.ci95"
+ },
+ "provk.qb.ci90": {
+  "value": "$[-1.291, -1.173]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.ci90"
+ },
+ "provk.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.p"
+ },
+ "provk.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.holm_p"
+ },
+ "provk.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.verdict"
+ },
+ "provk.qb.ratio": {
+  "value": "$0.29$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "provv.qb.est": {
+  "value": "$+0.831$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "provv.qb.ci": {
+  "value": "$[+0.766, +0.895]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.ci95"
+ },
+ "provv.qb.ci90": {
+  "value": "$[+0.777, +0.886]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.ci90"
+ },
+ "provv.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.p"
+ },
+ "provv.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.holm_p"
+ },
+ "provv.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.verdict"
+ },
+ "provv.qb.ratio": {
+  "value": "$2.30$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.Prov-V NAT-V-C1-V.estimate)"
+ },
+ "he.qb.est": {
+  "value": "$+0.914$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.estimate"
+ },
+ "he.qb.ci": {
+  "value": "$[+0.843, +0.984]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.ci95"
+ },
+ "he.qb.ci90": {
+  "value": "$[+0.855, +0.972]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.ci90"
+ },
+ "he.qb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.p"
+ },
+ "he.qb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.holm_p"
+ },
+ "he.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.verdict"
+ },
+ "he.qb.ratio": {
+  "value": "$2.49$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-base.family.HE INH-LOC.estimate)"
+ },
+ "hc.qb.b0": {
+  "value": "$-0.142$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.beta0"
+ },
+ "hc.qb.b0ci": {
+  "value": "$[-0.198, -0.086]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.beta0_ci95"
+ },
+ "hc.qb.b1": {
+  "value": "$+0.543$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.beta1"
+ },
+ "hc.qb.S": {
+  "value": "$-0.400$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.shrinkage"
+ },
+ "hc.qb.Sci": {
+  "value": "$[-0.688, -0.123]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.shrinkage_ci95"
+ },
+ "hc.qb.f": {
+  "value": "$-2.81$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.fraction"
+ },
+ "hc.qb.fci": {
+  "value": "$[-6.91, -0.70]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.fraction_ci95"
+ },
+ "hc.qb.p": {
+  "value": "$0.004$",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.p"
+ },
+ "hc.qb.band": {
+  "value": "no",
+  "source": "v3_report_locked.json:per_model.qwen-base.HC.band"
+ },
+ "hc.qb.holm": {
+  "value": "$0.004$",
+  "source": "v3_report_locked.json:per_model.qwen-base.family.HC shrinkage.holm_p"
+ },
+ "fam.qb.size": {
+  "value": "7",
+  "source": "v3_report_locked.json:per_model.qwen-base.family (count)"
+ },
+ "natc1.qb.cat": {
+  "value": "replicated",
+  "source": "E1L_SPEC \u00a73 rule applied to v3_report_locked.json:per_model.qwen-base.family.NAT-C1"
+ },
+ "natc2.qb.est": {
+  "value": "$+0.036$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-C2.estimate"
+ },
+ "natc2.qb.ci": {
+  "value": "$[-0.039, +0.110]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-C2.ci95"
+ },
+ "natc2.qb.verdict": {
+  "value": "equivalent",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-C2.verdict"
+ },
+ "c2c1.qb.est": {
+  "value": "$-0.277$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.C2-C1.estimate"
+ },
+ "c2c1.qb.ci": {
+  "value": "$[-0.346, -0.205]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.C2-C1.ci95"
+ },
+ "c2c1.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.C2-C1.verdict"
+ },
+ "natcv.qb.est": {
+  "value": "$+0.016$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-CV.estimate"
+ },
+ "natcv.qb.ci": {
+  "value": "$[-0.058, +0.087]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-CV.ci95"
+ },
+ "natcv.qb.verdict": {
+  "value": "equivalent",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-CV.verdict"
+ },
+ "nkv.qb.est": {
+  "value": "$-0.932$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "nkv.qb.ci": {
+  "value": "$[-1.004, -0.863]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-K-NAT-V.ci95"
+ },
+ "nkv.qb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.NAT-K-NAT-V.verdict"
+ },
+ "pval.qb.est": {
+  "value": "$-0.105$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_val vs P_norm (NAT).estimate"
+ },
+ "pval.qb.ci": {
+  "value": "$[-0.133, -0.076]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_val vs P_norm (NAT).ci95"
+ },
+ "panormk.qb.est": {
+  "value": "$-0.088$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_anormK vs P_norm (NAT).estimate"
+ },
+ "panormk.qb.ci": {
+  "value": "$[-0.116, -0.059]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_anormK vs P_norm (NAT).ci95"
+ },
+ "pout.qb.est": {
+  "value": "$-0.091$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_out vs P_norm (NAT).estimate"
+ },
+ "pout.qb.ci": {
+  "value": "$[-0.117, -0.065]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA-type P_out vs P_norm (NAT).ci95"
+ },
+ "hapool.qb.est": {
+  "value": "$+0.139$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA pooled norm-matched arms (secondary).estimate"
+ },
+ "hapool.qb.ci": {
+  "value": "$[+0.122, +0.156]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.HA pooled norm-matched arms (secondary).ci95"
+ },
+ "nonadd.qb.med": {
+  "value": "$1.035$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.nonadditivity.median"
+ },
+ "nonadd.qb.ci": {
+  "value": "$[1.000, 1.070]$",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.nonadditivity.ci95_of_median"
+ },
+ "rel.qb.K": {
+  "value": "6.8",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.rel norm K / V (NAT, mean)[0] x100"
+ },
+ "rel.qb.V": {
+  "value": "21.9",
+  "source": "v3_report_locked.json:per_model.qwen-base.descriptive.rel norm K / V (NAT, mean)[1] x100"
+ },
+ "sens.qb.s28": {
+  "value": "$-0.134$",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity.NAT-C1.steps 2-8"
+ },
+ "sens.qb.s964": {
+  "value": "$-0.256$",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity.NAT-C1.steps 9-64"
+ },
+ "sens.qb.smed": {
+  "value": "$-0.135$",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity.NAT-C1.per-problem median"
+ },
+ "sens.qb.sexp": {
+  "value": "$-0.245$",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity.NAT-C1.excluding exposed"
+ },
+ "sens.qb.s32": {
+  "value": "$-0.247$",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity.NAT-C1.S >= 32"
+ },
+ "cal.qb.rhoK": {
+  "value": "$0.072$",
+  "source": "qwen-base/calibration.json:rho_K"
+ },
+ "cal.qb.rhoV": {
+  "value": "$0.209$",
+  "source": "qwen-base/calibration.json:rho_V"
+ },
+ "cal.qb.rhostar": {
+  "value": "$0.1231$",
+  "source": "qwen-base/calibration.json:rho_star"
+ },
+ "cal.qb.sK": {
+  "value": "$1.70$",
+  "source": "qwen-base/calibration.json:scale_factor_K"
+ },
+ "cal.qb.sV": {
+  "value": "$0.59$",
+  "source": "qwen-base/calibration.json:scale_factor_V"
+ },
+ "cal.qb.b": {
+  "value": "$2.46$",
+  "source": "qwen-base/calibration.json:dose_slope_b_hat"
+ },
+ "cal.qb.c": {
+  "value": "$0.10$",
+  "source": "qwen-base/calibration.json:c_used"
+ },
+ "cal.qb.craw": {
+  "value": "$0.084$",
+  "source": "qwen-base/calibration.json:cv_raw_median (before the clamp)"
+ },
+ "cal.qb.margin": {
+  "value": "$0.235$",
+  "source": "qwen-base/calibration.json:margin_log_js"
+ },
+ "cal.qb.E8": {
+  "value": "$0.89$",
+  "source": "qwen-base/calibration.json:E8.median"
+ },
+ "cal.qb.r80": {
+  "value": "2.5",
+  "source": "qwen-base/calibration.json:r80.median"
+ },
+ "cal.qb.r80share": {
+  "value": "83",
+  "source": "qwen-base/calibration.json:r80.share_le_8 x100"
+ },
+ "ha.qi.est": {
+  "value": "$-0.160$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HA.estimate"
+ },
+ "ha.qi.ci": {
+  "value": "$[-0.186, -0.135]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HA.ci95"
+ },
+ "ha.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HA.p"
+ },
+ "ha.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HA.holm_p"
+ },
+ "ha.qi.word": {
+  "value": "contradicted",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HA.supported/falsified (paper word for 'falsified': contradicted)"
+ },
+ "natc1.qi.est": {
+  "value": "$-0.323$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.estimate"
+ },
+ "natc1.qi.ci": {
+  "value": "$[-0.393, -0.252]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.ci95"
+ },
+ "natc1.qi.ci90": {
+  "value": "$[-0.383, -0.263]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.ci90"
+ },
+ "natc1.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.p"
+ },
+ "natc1.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.holm_p"
+ },
+ "natc1.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.verdict"
+ },
+ "natc1.qi.ratio": {
+  "value": "$0.72$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1.estimate)"
+ },
+ "hb.qi.est": {
+  "value": "$+3.162$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.estimate"
+ },
+ "hb.qi.ci": {
+  "value": "$[+3.063, +3.264]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.ci95"
+ },
+ "hb.qi.ci90": {
+  "value": "$[+3.078, +3.246]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.ci90"
+ },
+ "hb.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.p"
+ },
+ "hb.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.holm_p"
+ },
+ "hb.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.verdict"
+ },
+ "hb.qi.ratio": {
+  "value": "$23.62$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.HB QA-QO.estimate)"
+ },
+ "hd.qi.est": {
+  "value": "$+4.518$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.estimate"
+ },
+ "hd.qi.ci": {
+  "value": "$[+4.379, +4.655]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.ci95"
+ },
+ "hd.qi.ci90": {
+  "value": "$[+4.400, +4.633]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.ci90"
+ },
+ "hd.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.p"
+ },
+ "hd.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.holm_p"
+ },
+ "hd.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.verdict"
+ },
+ "hd.qi.ratio": {
+  "value": "$91.64$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.HD K*-V*.estimate)"
+ },
+ "provk.qi.est": {
+  "value": "$-1.190$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "provk.qi.ci": {
+  "value": "$[-1.271, -1.113]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.ci95"
+ },
+ "provk.qi.ci90": {
+  "value": "$[-1.258, -1.125]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.ci90"
+ },
+ "provk.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.p"
+ },
+ "provk.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.holm_p"
+ },
+ "provk.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.verdict"
+ },
+ "provk.qi.ratio": {
+  "value": "$0.30$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "provv.qi.est": {
+  "value": "$+0.740$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "provv.qi.ci": {
+  "value": "$[+0.669, +0.814]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.ci95"
+ },
+ "provv.qi.ci90": {
+  "value": "$[+0.680, +0.802]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.ci90"
+ },
+ "provv.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.p"
+ },
+ "provv.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.holm_p"
+ },
+ "provv.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.verdict"
+ },
+ "provv.qi.ratio": {
+  "value": "$2.10$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.Prov-V NAT-V-C1-V.estimate)"
+ },
+ "he.qi.est": {
+  "value": "$+0.910$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.estimate"
+ },
+ "he.qi.ci": {
+  "value": "$[+0.836, +0.986]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.ci95"
+ },
+ "he.qi.ci90": {
+  "value": "$[+0.847, +0.973]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.ci90"
+ },
+ "he.qi.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.p"
+ },
+ "he.qi.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.holm_p"
+ },
+ "he.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.verdict"
+ },
+ "he.qi.ratio": {
+  "value": "$2.49$",
+  "source": "exp(v3_report_locked.json:per_model.qwen-instruct.family.HE INH-LOC.estimate)"
+ },
+ "hc.qi.b0": {
+  "value": "$-0.295$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.beta0"
+ },
+ "hc.qi.b0ci": {
+  "value": "$[-0.338, -0.251]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.beta0_ci95"
+ },
+ "hc.qi.b1": {
+  "value": "$+0.344$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.beta1"
+ },
+ "hc.qi.S": {
+  "value": "$-0.049$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.shrinkage"
+ },
+ "hc.qi.Sci": {
+  "value": "$[-0.280, +0.180]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.shrinkage_ci95"
+ },
+ "hc.qi.f": {
+  "value": "$-0.17$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.fraction"
+ },
+ "hc.qi.fci": {
+  "value": "$[-1.03, +0.58]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.fraction_ci95"
+ },
+ "hc.qi.p": {
+  "value": "$0.670$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.p"
+ },
+ "hc.qi.band": {
+  "value": "inconclusive",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.HC.band"
+ },
+ "hc.qi.holm": {
+  "value": "$0.670$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family.HC shrinkage.holm_p"
+ },
+ "fam.qi.size": {
+  "value": "7",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.family (count)"
+ },
+ "natc1.qi.cat": {
+  "value": "replicated",
+  "source": "E1L_SPEC \u00a73 rule applied to v3_report_locked.json:per_model.qwen-instruct.family.NAT-C1"
+ },
+ "natc2.qi.est": {
+  "value": "$-0.103$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-C2.estimate"
+ },
+ "natc2.qi.ci": {
+  "value": "$[-0.172, -0.037]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-C2.ci95"
+ },
+ "natc2.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-C2.verdict"
+ },
+ "c2c1.qi.est": {
+  "value": "$-0.220$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.C2-C1.estimate"
+ },
+ "c2c1.qi.ci": {
+  "value": "$[-0.287, -0.152]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.C2-C1.ci95"
+ },
+ "c2c1.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.C2-C1.verdict"
+ },
+ "natcv.qi.est": {
+  "value": "$-0.074$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-CV.estimate"
+ },
+ "natcv.qi.ci": {
+  "value": "$[-0.147, -0.000]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-CV.ci95"
+ },
+ "natcv.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-CV.verdict"
+ },
+ "nkv.qi.est": {
+  "value": "$-0.852$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "nkv.qi.ci": {
+  "value": "$[-0.930, -0.775]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-K-NAT-V.ci95"
+ },
+ "nkv.qi.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.NAT-K-NAT-V.verdict"
+ },
+ "pval.qi.est": {
+  "value": "$-0.183$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_val vs P_norm (NAT).estimate"
+ },
+ "pval.qi.ci": {
+  "value": "$[-0.209, -0.158]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_val vs P_norm (NAT).ci95"
+ },
+ "panormk.qi.est": {
+  "value": "$-0.186$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_anormK vs P_norm (NAT).estimate"
+ },
+ "panormk.qi.ci": {
+  "value": "$[-0.212, -0.160]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_anormK vs P_norm (NAT).ci95"
+ },
+ "pout.qi.est": {
+  "value": "$-0.122$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_out vs P_norm (NAT).estimate"
+ },
+ "pout.qi.ci": {
+  "value": "$[-0.152, -0.092]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA-type P_out vs P_norm (NAT).ci95"
+ },
+ "hapool.qi.est": {
+  "value": "$+0.049$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA pooled norm-matched arms (secondary).estimate"
+ },
+ "hapool.qi.ci": {
+  "value": "$[+0.030, +0.067]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.HA pooled norm-matched arms (secondary).ci95"
+ },
+ "nonadd.qi.med": {
+  "value": "$0.997$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.nonadditivity.median"
+ },
+ "nonadd.qi.ci": {
+  "value": "$[0.970, 1.036]$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.nonadditivity.ci95_of_median"
+ },
+ "rel.qi.K": {
+  "value": "7.3",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.rel norm K / V (NAT, mean)[0] x100"
+ },
+ "rel.qi.V": {
+  "value": "22.7",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.descriptive.rel norm K / V (NAT, mean)[1] x100"
+ },
+ "sens.qi.s28": {
+  "value": "$-0.191$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity.NAT-C1.steps 2-8"
+ },
+ "sens.qi.s964": {
+  "value": "$-0.322$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity.NAT-C1.steps 9-64"
+ },
+ "sens.qi.smed": {
+  "value": "$-0.295$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity.NAT-C1.per-problem median"
+ },
+ "sens.qi.sexp": {
+  "value": "$-0.318$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity.NAT-C1.excluding exposed"
+ },
+ "sens.qi.s32": {
+  "value": "$-0.323$",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity.NAT-C1.S >= 32"
+ },
+ "cal.qi.rhoK": {
+  "value": "$0.076$",
+  "source": "qwen-instruct/calibration.json:rho_K"
+ },
+ "cal.qi.rhoV": {
+  "value": "$0.218$",
+  "source": "qwen-instruct/calibration.json:rho_V"
+ },
+ "cal.qi.rhostar": {
+  "value": "$0.1290$",
+  "source": "qwen-instruct/calibration.json:rho_star"
+ },
+ "cal.qi.sK": {
+  "value": "$1.69$",
+  "source": "qwen-instruct/calibration.json:scale_factor_K"
+ },
+ "cal.qi.sV": {
+  "value": "$0.59$",
+  "source": "qwen-instruct/calibration.json:scale_factor_V"
+ },
+ "cal.qi.b": {
+  "value": "$2.42$",
+  "source": "qwen-instruct/calibration.json:dose_slope_b_hat"
+ },
+ "cal.qi.c": {
+  "value": "$0.10$",
+  "source": "qwen-instruct/calibration.json:c_used"
+ },
+ "cal.qi.craw": {
+  "value": "$0.099$",
+  "source": "qwen-instruct/calibration.json:cv_raw_median (before the clamp)"
+ },
+ "cal.qi.margin": {
+  "value": "$0.231$",
+  "source": "qwen-instruct/calibration.json:margin_log_js"
+ },
+ "cal.qi.E8": {
+  "value": "$0.89$",
+  "source": "qwen-instruct/calibration.json:E8.median"
+ },
+ "cal.qi.r80": {
+  "value": "3",
+  "source": "qwen-instruct/calibration.json:r80.median"
+ },
+ "cal.qi.r80share": {
+  "value": "83",
+  "source": "qwen-instruct/calibration.json:r80.share_le_8 x100"
+ },
+ "ha.lb.est": {
+  "value": "$+0.181$",
+  "source": "v3_report_locked.json:per_model.llama-base.HA.estimate"
+ },
+ "ha.lb.ci": {
+  "value": "$[+0.153, +0.208]$",
+  "source": "v3_report_locked.json:per_model.llama-base.HA.ci95"
+ },
+ "ha.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.HA.p"
+ },
+ "ha.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.HA.holm_p"
+ },
+ "ha.lb.word": {
+  "value": "supported",
+  "source": "v3_report_locked.json:per_model.llama-base.HA.supported/falsified (paper word for 'falsified': contradicted)"
+ },
+ "natc1.lb.est": {
+  "value": "$+0.013$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.estimate"
+ },
+ "natc1.lb.ci": {
+  "value": "$[-0.047, +0.073]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.ci95"
+ },
+ "natc1.lb.ci90": {
+  "value": "$[-0.038, +0.064]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.ci90"
+ },
+ "natc1.lb.p": {
+  "value": "$0.669$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.p"
+ },
+ "natc1.lb.holm": {
+  "value": "$0.669$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.holm_p"
+ },
+ "natc1.lb.verdict": {
+  "value": "equivalent",
+  "source": "v3_report_locked.json:per_model.llama-base.family.NAT-C1.verdict"
+ },
+ "natc1.lb.ratio": {
+  "value": "$1.01$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.NAT-C1.estimate)"
+ },
+ "hb.lb.est": {
+  "value": "$+2.713$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.estimate"
+ },
+ "hb.lb.ci": {
+  "value": "$[+2.654, +2.771]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.ci95"
+ },
+ "hb.lb.ci90": {
+  "value": "$[+2.663, +2.762]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.ci90"
+ },
+ "hb.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.p"
+ },
+ "hb.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.holm_p"
+ },
+ "hb.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HB QA-QO.verdict"
+ },
+ "hb.lb.ratio": {
+  "value": "$15.07$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.HB QA-QO.estimate)"
+ },
+ "hd.lb.est": {
+  "value": "$+1.450$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.estimate"
+ },
+ "hd.lb.ci": {
+  "value": "$[+1.387, +1.514]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.ci95"
+ },
+ "hd.lb.ci90": {
+  "value": "$[+1.397, +1.503]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.ci90"
+ },
+ "hd.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.p"
+ },
+ "hd.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.holm_p"
+ },
+ "hd.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HD K*-V*.verdict"
+ },
+ "hd.lb.ratio": {
+  "value": "$4.26$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.HD K*-V*.estimate)"
+ },
+ "provk.lb.est": {
+  "value": "$-0.932$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "provk.lb.ci": {
+  "value": "$[-0.999, -0.866]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.ci95"
+ },
+ "provk.lb.ci90": {
+  "value": "$[-0.988, -0.876]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.ci90"
+ },
+ "provk.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.p"
+ },
+ "provk.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.holm_p"
+ },
+ "provk.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.verdict"
+ },
+ "provk.lb.ratio": {
+  "value": "$0.39$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "provv.lb.est": {
+  "value": "$+0.977$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "provv.lb.ci": {
+  "value": "$[+0.923, +1.032]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.ci95"
+ },
+ "provv.lb.ci90": {
+  "value": "$[+0.932, +1.023]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.ci90"
+ },
+ "provv.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.p"
+ },
+ "provv.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.holm_p"
+ },
+ "provv.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.verdict"
+ },
+ "provv.lb.ratio": {
+  "value": "$2.66$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.Prov-V NAT-V-C1-V.estimate)"
+ },
+ "he.lb.est": {
+  "value": "$+1.207$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.estimate"
+ },
+ "he.lb.ci": {
+  "value": "$[+1.156, +1.259]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.ci95"
+ },
+ "he.lb.ci90": {
+  "value": "$[+1.163, +1.252]$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.ci90"
+ },
+ "he.lb.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.p"
+ },
+ "he.lb.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.holm_p"
+ },
+ "he.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.verdict"
+ },
+ "he.lb.ratio": {
+  "value": "$3.34$",
+  "source": "exp(v3_report_locked.json:per_model.llama-base.family.HE INH-LOC.estimate)"
+ },
+ "hc.lb.b0": {
+  "value": "$+0.029$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.beta0"
+ },
+ "hc.lb.b0ci": {
+  "value": "$[-0.007, +0.066]$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.beta0_ci95"
+ },
+ "hc.lb.b1": {
+  "value": "$+0.198$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.beta1"
+ },
+ "hc.lb.S": {
+  "value": "$-0.169$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.shrinkage"
+ },
+ "hc.lb.Sci": {
+  "value": "$[-0.352, +0.001]$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.shrinkage_ci95"
+ },
+ "hc.lb.f": {
+  "value": "$-5.94$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.fraction"
+ },
+ "hc.lb.fci": {
+  "value": "$[-98.89, +0.03]$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.fraction_ci95"
+ },
+ "hc.lb.p": {
+  "value": "$0.052$",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.p"
+ },
+ "hc.lb.band": {
+  "value": "not applicable",
+  "source": "v3_report_locked.json:per_model.llama-base.HC.band"
+ },
+ "hc.lb.holm": {
+  "value": "---",
+  "source": "v3_report_locked.json:per_model.llama-base.family (HC removed: not applicable)"
+ },
+ "fam.lb.size": {
+  "value": "6",
+  "source": "v3_report_locked.json:per_model.llama-base.family (count)"
+ },
+ "natc1.lb.cat": {
+  "value": "equivalent to C1",
+  "source": "E1L_SPEC \u00a73 rule applied to v3_report_locked.json:per_model.llama-base.family.NAT-C1"
+ },
+ "natc2.lb.est": {
+  "value": "$+0.196$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-C2.estimate"
+ },
+ "natc2.lb.ci": {
+  "value": "$[+0.144, +0.249]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-C2.ci95"
+ },
+ "natc2.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-C2.verdict"
+ },
+ "c2c1.lb.est": {
+  "value": "$-0.183$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.C2-C1.estimate"
+ },
+ "c2c1.lb.ci": {
+  "value": "$[-0.241, -0.126]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.C2-C1.ci95"
+ },
+ "c2c1.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.C2-C1.verdict"
+ },
+ "natcv.lb.est": {
+  "value": "$+0.144$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-CV.estimate"
+ },
+ "natcv.lb.ci": {
+  "value": "$[+0.088, +0.199]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-CV.ci95"
+ },
+ "natcv.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-CV.verdict"
+ },
+ "nkv.lb.est": {
+  "value": "$-0.958$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "nkv.lb.ci": {
+  "value": "$[-1.019, -0.896]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-K-NAT-V.ci95"
+ },
+ "nkv.lb.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.NAT-K-NAT-V.verdict"
+ },
+ "pval.lb.est": {
+  "value": "$+0.166$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_val vs P_norm (NAT).estimate"
+ },
+ "pval.lb.ci": {
+  "value": "$[+0.136, +0.195]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_val vs P_norm (NAT).ci95"
+ },
+ "panormk.lb.est": {
+  "value": "$+0.158$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_anormK vs P_norm (NAT).estimate"
+ },
+ "panormk.lb.ci": {
+  "value": "$[+0.130, +0.187]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_anormK vs P_norm (NAT).ci95"
+ },
+ "pout.lb.est": {
+  "value": "$-0.093$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_out vs P_norm (NAT).estimate"
+ },
+ "pout.lb.ci": {
+  "value": "$[-0.132, -0.053]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA-type P_out vs P_norm (NAT).ci95"
+ },
+ "hapool.lb.est": {
+  "value": "$+0.269$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA pooled norm-matched arms (secondary).estimate"
+ },
+ "hapool.lb.ci": {
+  "value": "$[+0.247, +0.291]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.HA pooled norm-matched arms (secondary).ci95"
+ },
+ "nonadd.lb.med": {
+  "value": "$1.007$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.nonadditivity.median"
+ },
+ "nonadd.lb.ci": {
+  "value": "$[0.984, 1.024]$",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.nonadditivity.ci95_of_median"
+ },
+ "rel.lb.K": {
+  "value": "5.9",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.rel norm K / V (NAT, mean)[0] x100"
+ },
+ "rel.lb.V": {
+  "value": "21.9",
+  "source": "v3_report_locked.json:per_model.llama-base.descriptive.rel norm K / V (NAT, mean)[1] x100"
+ },
+ "sens.lb.s28": {
+  "value": "$+0.175$",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity.NAT-C1.steps 2-8"
+ },
+ "sens.lb.s964": {
+  "value": "$-0.002$",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity.NAT-C1.steps 9-64"
+ },
+ "sens.lb.smed": {
+  "value": "$+0.009$",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity.NAT-C1.per-problem median"
+ },
+ "sens.lb.sexp": {
+  "value": "$+0.011$",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity.NAT-C1.excluding exposed"
+ },
+ "sens.lb.s32": {
+  "value": "$+0.025$",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity.NAT-C1.S >= 32"
+ },
+ "cal.lb.rhoK": {
+  "value": "$0.058$",
+  "source": "llama-base/calibration.json:rho_K"
+ },
+ "cal.lb.rhoV": {
+  "value": "$0.204$",
+  "source": "llama-base/calibration.json:rho_V"
+ },
+ "cal.lb.rhostar": {
+  "value": "$0.1089$",
+  "source": "llama-base/calibration.json:rho_star"
+ },
+ "cal.lb.sK": {
+  "value": "$1.88$",
+  "source": "llama-base/calibration.json:scale_factor_K"
+ },
+ "cal.lb.sV": {
+  "value": "$0.53$",
+  "source": "llama-base/calibration.json:scale_factor_V"
+ },
+ "cal.lb.b": {
+  "value": "$2.20$",
+  "source": "llama-base/calibration.json:dose_slope_b_hat"
+ },
+ "cal.lb.c": {
+  "value": "$0.10$",
+  "source": "llama-base/calibration.json:c_used"
+ },
+ "cal.lb.craw": {
+  "value": "$0.063$",
+  "source": "llama-base/calibration.json:cv_raw_median (before the clamp)"
+ },
+ "cal.lb.margin": {
+  "value": "$0.209$",
+  "source": "llama-base/calibration.json:margin_log_js"
+ },
+ "cal.lb.E8": {
+  "value": "$0.88$",
+  "source": "llama-base/calibration.json:E8.median"
+ },
+ "cal.lb.r80": {
+  "value": "3",
+  "source": "llama-base/calibration.json:r80.median"
+ },
+ "cal.lb.r80share": {
+  "value": "94",
+  "source": "llama-base/calibration.json:r80.share_le_8 x100"
+ },
+ "ha.li.est": {
+  "value": "$+0.042$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HA.estimate"
+ },
+ "ha.li.ci": {
+  "value": "$[+0.010, +0.076]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HA.ci95"
+ },
+ "ha.li.p": {
+  "value": "$0.012$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HA.p"
+ },
+ "ha.li.holm": {
+  "value": "$0.012$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HA.holm_p"
+ },
+ "ha.li.word": {
+  "value": "supported",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HA.supported/falsified (paper word for 'falsified': contradicted)"
+ },
+ "natc1.li.est": {
+  "value": "$+0.079$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.estimate"
+ },
+ "natc1.li.ci": {
+  "value": "$[+0.022, +0.139]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.ci95"
+ },
+ "natc1.li.ci90": {
+  "value": "$[+0.031, +0.130]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.ci90"
+ },
+ "natc1.li.p": {
+  "value": "$0.010$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.p"
+ },
+ "natc1.li.holm": {
+  "value": "$0.010$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.holm_p"
+ },
+ "natc1.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.verdict"
+ },
+ "natc1.li.ratio": {
+  "value": "$1.08$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.NAT-C1.estimate)"
+ },
+ "hb.li.est": {
+  "value": "$+2.557$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.estimate"
+ },
+ "hb.li.ci": {
+  "value": "$[+2.498, +2.620]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.ci95"
+ },
+ "hb.li.ci90": {
+  "value": "$[+2.506, +2.610]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.ci90"
+ },
+ "hb.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.p"
+ },
+ "hb.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.holm_p"
+ },
+ "hb.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.verdict"
+ },
+ "hb.li.ratio": {
+  "value": "$12.90$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.HB QA-QO.estimate)"
+ },
+ "hd.li.est": {
+  "value": "$+1.207$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.estimate"
+ },
+ "hd.li.ci": {
+  "value": "$[+1.135, +1.279]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.ci95"
+ },
+ "hd.li.ci90": {
+  "value": "$[+1.147, +1.267]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.ci90"
+ },
+ "hd.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.p"
+ },
+ "hd.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.holm_p"
+ },
+ "hd.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.verdict"
+ },
+ "hd.li.ratio": {
+  "value": "$3.34$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.HD K*-V*.estimate)"
+ },
+ "provk.li.est": {
+  "value": "$-0.882$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "provk.li.ci": {
+  "value": "$[-0.952, -0.812]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.ci95"
+ },
+ "provk.li.ci90": {
+  "value": "$[-0.940, -0.823]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.ci90"
+ },
+ "provk.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.p"
+ },
+ "provk.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.holm_p"
+ },
+ "provk.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.verdict"
+ },
+ "provk.li.ratio": {
+  "value": "$0.41$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "provv.li.est": {
+  "value": "$+0.890$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "provv.li.ci": {
+  "value": "$[+0.826, +0.954]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.ci95"
+ },
+ "provv.li.ci90": {
+  "value": "$[+0.836, +0.944]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.ci90"
+ },
+ "provv.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.p"
+ },
+ "provv.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.holm_p"
+ },
+ "provv.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.verdict"
+ },
+ "provv.li.ratio": {
+  "value": "$2.44$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.Prov-V NAT-V-C1-V.estimate)"
+ },
+ "he.li.est": {
+  "value": "$+1.224$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.estimate"
+ },
+ "he.li.ci": {
+  "value": "$[+1.160, +1.288]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.ci95"
+ },
+ "he.li.ci90": {
+  "value": "$[+1.170, +1.278]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.ci90"
+ },
+ "he.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.p"
+ },
+ "he.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.holm_p"
+ },
+ "he.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.verdict"
+ },
+ "he.li.ratio": {
+  "value": "$3.40$",
+  "source": "exp(v3_report_locked.json:per_model.llama-instruct.family.HE INH-LOC.estimate)"
+ },
+ "hc.li.b0": {
+  "value": "$+0.053$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.beta0"
+ },
+ "hc.li.b0ci": {
+  "value": "$[+0.022, +0.084]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.beta0_ci95"
+ },
+ "hc.li.b1": {
+  "value": "$+0.609$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.beta1"
+ },
+ "hc.li.S": {
+  "value": "$-0.556$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.shrinkage"
+ },
+ "hc.li.Sci": {
+  "value": "$[-0.706, -0.398]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.shrinkage_ci95"
+ },
+ "hc.li.f": {
+  "value": "$-10.47$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.fraction"
+ },
+ "hc.li.fci": {
+  "value": "$[-25.52, -5.91]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.fraction_ci95"
+ },
+ "hc.li.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.p"
+ },
+ "hc.li.band": {
+  "value": "no",
+  "source": "v3_report_locked.json:per_model.llama-instruct.HC.band"
+ },
+ "hc.li.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family.HC shrinkage.holm_p"
+ },
+ "fam.li.size": {
+  "value": "7",
+  "source": "v3_report_locked.json:per_model.llama-instruct.family (count)"
+ },
+ "natc1.li.cat": {
+  "value": "not replicated",
+  "source": "E1L_SPEC \u00a73 rule applied to v3_report_locked.json:per_model.llama-instruct.family.NAT-C1"
+ },
+ "natc2.li.est": {
+  "value": "$+0.222$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-C2.estimate"
+ },
+ "natc2.li.ci": {
+  "value": "$[+0.157, +0.285]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-C2.ci95"
+ },
+ "natc2.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-C2.verdict"
+ },
+ "c2c1.li.est": {
+  "value": "$-0.143$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.C2-C1.estimate"
+ },
+ "c2c1.li.ci": {
+  "value": "$[-0.208, -0.077]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.C2-C1.ci95"
+ },
+ "c2c1.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.C2-C1.verdict"
+ },
+ "natcv.li.est": {
+  "value": "$+0.212$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-CV.estimate"
+ },
+ "natcv.li.ci": {
+  "value": "$[+0.142, +0.279]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-CV.ci95"
+ },
+ "natcv.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-CV.verdict"
+ },
+ "nkv.li.est": {
+  "value": "$-1.008$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "nkv.li.ci": {
+  "value": "$[-1.077, -0.941]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-K-NAT-V.ci95"
+ },
+ "nkv.li.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.NAT-K-NAT-V.verdict"
+ },
+ "pval.li.est": {
+  "value": "$+0.011$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_val vs P_norm (NAT).estimate"
+ },
+ "pval.li.ci": {
+  "value": "$[-0.023, +0.044]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_val vs P_norm (NAT).ci95"
+ },
+ "panormk.li.est": {
+  "value": "$+0.016$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_anormK vs P_norm (NAT).estimate"
+ },
+ "panormk.li.ci": {
+  "value": "$[-0.016, +0.049]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_anormK vs P_norm (NAT).ci95"
+ },
+ "pout.li.est": {
+  "value": "$-0.133$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_out vs P_norm (NAT).estimate"
+ },
+ "pout.li.ci": {
+  "value": "$[-0.170, -0.095]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA-type P_out vs P_norm (NAT).ci95"
+ },
+ "hapool.li.est": {
+  "value": "$+0.162$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA pooled norm-matched arms (secondary).estimate"
+ },
+ "hapool.li.ci": {
+  "value": "$[+0.140, +0.186]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.HA pooled norm-matched arms (secondary).ci95"
+ },
+ "nonadd.li.med": {
+  "value": "$1.006$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.nonadditivity.median"
+ },
+ "nonadd.li.ci": {
+  "value": "$[0.969, 1.041]$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.nonadditivity.ci95_of_median"
+ },
+ "rel.li.K": {
+  "value": "5.9",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.rel norm K / V (NAT, mean)[0] x100"
+ },
+ "rel.li.V": {
+  "value": "20.1",
+  "source": "v3_report_locked.json:per_model.llama-instruct.descriptive.rel norm K / V (NAT, mean)[1] x100"
+ },
+ "sens.li.s28": {
+  "value": "$+0.028$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity.NAT-C1.steps 2-8"
+ },
+ "sens.li.s964": {
+  "value": "$+0.082$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity.NAT-C1.steps 9-64"
+ },
+ "sens.li.smed": {
+  "value": "$+0.062$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity.NAT-C1.per-problem median"
+ },
+ "sens.li.sexp": {
+  "value": "$+0.076$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity.NAT-C1.excluding exposed"
+ },
+ "sens.li.s32": {
+  "value": "$+0.070$",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity.NAT-C1.S >= 32"
+ },
+ "cal.li.rhoK": {
+  "value": "$0.058$",
+  "source": "llama-instruct/calibration.json:rho_K"
+ },
+ "cal.li.rhoV": {
+  "value": "$0.192$",
+  "source": "llama-instruct/calibration.json:rho_V"
+ },
+ "cal.li.rhostar": {
+  "value": "$0.1057$",
+  "source": "llama-instruct/calibration.json:rho_star"
+ },
+ "cal.li.sK": {
+  "value": "$1.81$",
+  "source": "llama-instruct/calibration.json:scale_factor_K"
+ },
+ "cal.li.sV": {
+  "value": "$0.55$",
+  "source": "llama-instruct/calibration.json:scale_factor_V"
+ },
+ "cal.li.b": {
+  "value": "$2.20$",
+  "source": "llama-instruct/calibration.json:dose_slope_b_hat"
+ },
+ "cal.li.c": {
+  "value": "$0.10$",
+  "source": "llama-instruct/calibration.json:c_used"
+ },
+ "cal.li.craw": {
+  "value": "$0.064$",
+  "source": "llama-instruct/calibration.json:cv_raw_median (before the clamp)"
+ },
+ "cal.li.margin": {
+  "value": "$0.210$",
+  "source": "llama-instruct/calibration.json:margin_log_js"
+ },
+ "cal.li.E8": {
+  "value": "$0.87$",
+  "source": "llama-instruct/calibration.json:E8.median"
+ },
+ "cal.li.r80": {
+  "value": "4",
+  "source": "llama-instruct/calibration.json:r80.median"
+ },
+ "cal.li.r80share": {
+  "value": "91",
+  "source": "llama-instruct/calibration.json:r80.share_le_8 x100"
+ },
+ "ha.pooled.est": {
+  "value": "$-0.0001$",
+  "source": "v3_report_locked.json:HA_pooled_secondary.estimate"
+ },
+ "ha.pooled.ci": {
+  "value": "$[-0.017, +0.017]$",
+  "source": "v3_report_locked.json:HA_pooled_secondary.ci95"
+ },
+ "ha.pooled.p": {
+  "value": "$0.989$",
+  "source": "v3_report_locked.json:HA_pooled_secondary.p"
+ },
+ "hcx.g0": {
+  "value": "$-0.196$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g0"
+ },
+ "hcx.g0ci": {
+  "value": "$[-0.259, -0.130]$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g0_ci95"
+ },
+ "hcx.g1": {
+  "value": "$-0.066$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g1"
+ },
+ "hcx.g1ci": {
+  "value": "$[-0.378, +0.245]$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g1_ci95"
+ },
+ "hcx.F": {
+  "value": "$+0.66$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.F"
+ },
+ "hcx.Fci": {
+  "value": "$[-1.03, +0.97]$",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.F_ci95"
+ },
+ "hcx.band": {
+  "value": "inconclusive",
+  "source": "v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.band"
+ },
+ "hcx.g0rev": {
+  "value": "$+0.196$",
+  "source": "-1 x v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g0"
+ },
+ "hcx.g0revci": {
+  "value": "$[+0.130, +0.259]$",
+  "source": "-1 x v3_report_locked.json:HC_cross.qwen-base vs llama-instruct.g0_ci95 (endpoints swapped)"
+ },
+ "gap.theta": {
+  "value": "$+0.320$",
+  "source": "recompute_v3_independent.paired(theta_LI - theta_QB), seed 4242034"
+ },
+ "gap.thetaci": {
+  "value": "$[+0.236, +0.401]$",
+  "source": "recompute_v3_independent.paired(theta_LI - theta_QB), seed 4242034"
+ },
+ "hf.fam.est": {
+  "value": "$+0.328$",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).estimate"
+ },
+ "hf.fam.ci": {
+  "value": "$[+0.266, +0.389]$",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).ci95"
+ },
+ "hf.fam.ci90": {
+  "value": "$[+0.276, +0.379]$",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).ci90"
+ },
+ "hf.fam.p": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).p"
+ },
+ "hf.fam.holm": {
+  "value": "$<0.001$",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).holm_p"
+ },
+ "hf.fam.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:HF.contrasts.family (Llama - Qwen).verdict"
+ },
+ "hf.tun.est": {
+  "value": "$-0.008$",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).estimate"
+ },
+ "hf.tun.ci": {
+  "value": "$[-0.071, +0.055]$",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).ci95"
+ },
+ "hf.tun.ci90": {
+  "value": "$[-0.060, +0.044]$",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).ci90"
+ },
+ "hf.tun.p": {
+  "value": "$0.801$",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).p"
+ },
+ "hf.tun.holm": {
+  "value": "$0.801$",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).holm_p"
+ },
+ "hf.tun.verdict": {
+  "value": "equivalent",
+  "source": "v3_report_locked.json:HF.contrasts.tuning (instruct - base).verdict"
+ },
+ "hf.int.est": {
+  "value": "$+0.074$",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.estimate"
+ },
+ "hf.int.ci": {
+  "value": "$[+0.011, +0.139]$",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.ci95"
+ },
+ "hf.int.ci90": {
+  "value": "$[+0.021, +0.128]$",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.ci90"
+ },
+ "hf.int.p": {
+  "value": "$0.021$",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.p"
+ },
+ "hf.int.holm": {
+  "value": "$0.043$",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.holm_p"
+ },
+ "hf.int.verdict": {
+  "value": "difference",
+  "source": "v3_report_locked.json:HF.contrasts.interaction.verdict"
+ },
+ "hf.int.holmrecomp": {
+  "value": "$0.044$",
+  "source": "recompute_v3.json:HF.contrasts.interaction.holm_p"
+ },
+ "hf.sd.qb": {
+  "value": "$0.472$",
+  "source": "v3_report_locked.json:HF.sd_per_model.qwen-base"
+ },
+ "hf.sd.qi": {
+  "value": "$0.507$",
+  "source": "v3_report_locked.json:HF.sd_per_model.qwen-instruct"
+ },
+ "hf.sd.lb": {
+  "value": "$0.442$",
+  "source": "v3_report_locked.json:HF.sd_per_model.llama-base"
+ },
+ "hf.sd.li": {
+  "value": "$0.428$",
+  "source": "v3_report_locked.json:HF.sd_per_model.llama-instruct"
+ },
+ "hf.sdmax": {
+  "value": "$0.507$",
+  "source": "max v3_report_locked.json:HF.sd_per_model"
+ },
+ "hf.guard": {
+  "value": "$0.621$",
+  "source": "1.25 x v3_report_locked.json:HF.assumed_sd"
+ },
+ "hf.margin": {
+  "value": "$0.221$",
+  "source": "mean of calibration.json:margin_log_js"
+ },
+ "hf.read.fam": {
+  "value": "supported",
+  "source": "v3_report_locked.json:HF.readings.family account"
+ },
+ "hf.word.fam": {
+  "value": "supported",
+  "source": "v3_report_locked.json:HF.readings.family account (paper wording)"
+ },
+ "hf.read.tun": {
+  "value": "falsified",
+  "source": "v3_report_locked.json:HF.readings.tuning account"
+ },
+ "hf.word.tun": {
+  "value": "contradicted",
+  "source": "v3_report_locked.json:HF.readings.tuning account (paper wording)"
+ },
+ "hf.read.add": {
+  "value": "falsified",
+  "source": "v3_report_locked.json:HF.readings.additivity"
+ },
+ "hf.word.add": {
+  "value": "rejected",
+  "source": "v3_report_locked.json:HF.readings.additivity (paper wording)"
+ },
+ "recomp.n": {
+  "value": "1{,}464",
+  "source": "recompute_vs_locked.json:summary.n_compared"
+ },
+ "recomp.ndis": {
+  "value": "1",
+  "source": "recompute_vs_locked.json:summary.n_disagreements"
+ },
+ "x1.qb.wK": {
+  "value": "$0.29$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.mean_wK"
+ },
+ "x1.qb.pred": {
+  "value": "$+0.276$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.pred.estimate"
+ },
+ "x1.qb.predci": {
+  "value": "$[+0.213, +0.337]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.pred.ci95"
+ },
+ "x1.qb.obs": {
+  "value": "$-0.241$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.obs.estimate"
+ },
+ "x1.qb.d": {
+  "value": "$-0.516$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.obs_minus_pred.estimate"
+ },
+ "x1.qb.dci": {
+  "value": "$[-0.587, -0.448]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.obs_minus_pred.ci95"
+ },
+ "x1.qb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.obs_minus_pred.holm_p"
+ },
+ "x1.qb.sign": {
+  "value": "no",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.sign_predicted"
+ },
+ "x1.qb.rho": {
+  "value": "$+0.37$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.spearman_pred_obs.rho"
+ },
+ "x1.qb.rhoci": {
+  "value": "$[+0.23, +0.49]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-base.spearman_pred_obs.ci95"
+ },
+ "x2a.qb.est": {
+  "value": "$-0.105$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-base.estimate"
+ },
+ "x2a.qb.ci": {
+  "value": "$[-0.133, -0.075]$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-base.ci95"
+ },
+ "x2a.qb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-base.holm_p"
+ },
+ "x2a.qb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-base.verdict"
+ },
+ "x2b.qb.est": {
+  "value": "$-0.084$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-base.estimate"
+ },
+ "x2b.qb.ci": {
+  "value": "$[-0.113, -0.055]$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-base.ci95"
+ },
+ "x2b.qb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-base.holm_p"
+ },
+ "x2b.qb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-base.verdict"
+ },
+ "x2c.qb.est": {
+  "value": "$-0.021$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-base.estimate"
+ },
+ "x2c.qb.ci": {
+  "value": "$[-0.024, -0.018]$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-base.ci95"
+ },
+ "x2c.qb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-base.holm_p"
+ },
+ "x2c.qb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-base.verdict"
+ },
+ "x1.qi.wK": {
+  "value": "$0.31$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.mean_wK"
+ },
+ "x1.qi.pred": {
+  "value": "$+0.200$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.pred.estimate"
+ },
+ "x1.qi.predci": {
+  "value": "$[+0.130, +0.275]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.pred.ci95"
+ },
+ "x1.qi.obs": {
+  "value": "$-0.323$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.obs.estimate"
+ },
+ "x1.qi.d": {
+  "value": "$-0.523$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.obs_minus_pred.estimate"
+ },
+ "x1.qi.dci": {
+  "value": "$[-0.602, -0.448]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.obs_minus_pred.ci95"
+ },
+ "x1.qi.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.obs_minus_pred.holm_p"
+ },
+ "x1.qi.sign": {
+  "value": "no",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.sign_predicted"
+ },
+ "x1.qi.rho": {
+  "value": "$+0.37$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.spearman_pred_obs.rho"
+ },
+ "x1.qi.rhoci": {
+  "value": "$[+0.24, +0.49]$",
+  "source": "exploratory_v3.json:X1.per_model.qwen-instruct.spearman_pred_obs.ci95"
+ },
+ "x2a.qi.est": {
+  "value": "$-0.183$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-instruct.estimate"
+ },
+ "x2a.qi.ci": {
+  "value": "$[-0.208, -0.158]$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-instruct.ci95"
+ },
+ "x2a.qi.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-instruct.holm_p"
+ },
+ "x2a.qi.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.qwen-instruct.verdict"
+ },
+ "x2b.qi.est": {
+  "value": "$-0.172$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-instruct.estimate"
+ },
+ "x2b.qi.ci": {
+  "value": "$[-0.197, -0.147]$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-instruct.ci95"
+ },
+ "x2b.qi.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-instruct.holm_p"
+ },
+ "x2b.qi.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.qwen-instruct.verdict"
+ },
+ "x2c.qi.est": {
+  "value": "$-0.012$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-instruct.estimate"
+ },
+ "x2c.qi.ci": {
+  "value": "$[-0.016, -0.007]$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-instruct.ci95"
+ },
+ "x2c.qi.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-instruct.holm_p"
+ },
+ "x2c.qi.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.qwen-instruct.verdict"
+ },
+ "x1.lb.wK": {
+  "value": "$0.29$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.mean_wK"
+ },
+ "x1.lb.pred": {
+  "value": "$+0.473$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.pred.estimate"
+ },
+ "x1.lb.predci": {
+  "value": "$[+0.422, +0.524]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.pred.ci95"
+ },
+ "x1.lb.obs": {
+  "value": "$+0.013$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.obs.estimate"
+ },
+ "x1.lb.d": {
+  "value": "$-0.460$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.obs_minus_pred.estimate"
+ },
+ "x1.lb.dci": {
+  "value": "$[-0.521, -0.401]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.obs_minus_pred.ci95"
+ },
+ "x1.lb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.obs_minus_pred.holm_p"
+ },
+ "x1.lb.sign": {
+  "value": "no",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.sign_predicted"
+ },
+ "x1.lb.rho": {
+  "value": "$+0.44$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.spearman_pred_obs.rho"
+ },
+ "x1.lb.rhoci": {
+  "value": "$[+0.31, +0.54]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-base.spearman_pred_obs.ci95"
+ },
+ "x2a.lb.est": {
+  "value": "$+0.166$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-base.estimate"
+ },
+ "x2a.lb.ci": {
+  "value": "$[+0.136, +0.195]$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-base.ci95"
+ },
+ "x2a.lb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-base.holm_p"
+ },
+ "x2a.lb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-base.verdict"
+ },
+ "x2b.lb.est": {
+  "value": "$+0.174$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-base.estimate"
+ },
+ "x2b.lb.ci": {
+  "value": "$[+0.145, +0.203]$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-base.ci95"
+ },
+ "x2b.lb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-base.holm_p"
+ },
+ "x2b.lb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-base.verdict"
+ },
+ "x2c.lb.est": {
+  "value": "$-0.007$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-base.estimate"
+ },
+ "x2c.lb.ci": {
+  "value": "$[-0.011, -0.002]$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-base.ci95"
+ },
+ "x2c.lb.holm": {
+  "value": "$0.004$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-base.holm_p"
+ },
+ "x2c.lb.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-base.verdict"
+ },
+ "x1.li.wK": {
+  "value": "$0.28$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.mean_wK"
+ },
+ "x1.li.pred": {
+  "value": "$+0.441$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.pred.estimate"
+ },
+ "x1.li.predci": {
+  "value": "$[+0.382, +0.500]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.pred.ci95"
+ },
+ "x1.li.obs": {
+  "value": "$+0.079$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.obs.estimate"
+ },
+ "x1.li.d": {
+  "value": "$-0.362$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.obs_minus_pred.estimate"
+ },
+ "x1.li.dci": {
+  "value": "$[-0.426, -0.299]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.obs_minus_pred.ci95"
+ },
+ "x1.li.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.obs_minus_pred.holm_p"
+ },
+ "x1.li.sign": {
+  "value": "yes",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.sign_predicted"
+ },
+ "x1.li.rho": {
+  "value": "$+0.40$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.spearman_pred_obs.rho"
+ },
+ "x1.li.rhoci": {
+  "value": "$[+0.27, +0.52]$",
+  "source": "exploratory_v3.json:X1.per_model.llama-instruct.spearman_pred_obs.ci95"
+ },
+ "x2a.li.est": {
+  "value": "$+0.011$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-instruct.estimate"
+ },
+ "x2a.li.ci": {
+  "value": "$[-0.023, +0.043]$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-instruct.ci95"
+ },
+ "x2a.li.holm": {
+  "value": "$0.527$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-instruct.holm_p"
+ },
+ "x2a.li.verdict": {
+  "value": "inconclusive",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.per_model.llama-instruct.verdict"
+ },
+ "x2b.li.est": {
+  "value": "$+0.027$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-instruct.estimate"
+ },
+ "x2b.li.ci": {
+  "value": "$[-0.006, +0.060]$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-instruct.ci95"
+ },
+ "x2b.li.holm": {
+  "value": "$0.113$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-instruct.holm_p"
+ },
+ "x2b.li.verdict": {
+  "value": "inconclusive",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.per_model.llama-instruct.verdict"
+ },
+ "x2c.li.est": {
+  "value": "$-0.015$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-instruct.estimate"
+ },
+ "x2c.li.ci": {
+  "value": "$[-0.019, -0.011]$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-instruct.ci95"
+ },
+ "x2c.li.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-instruct.holm_p"
+ },
+ "x2c.li.verdict": {
+  "value": "difference",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.per_model.llama-instruct.verdict"
+ },
+ "x2a.pooled.est": {
+  "value": "$-0.028$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.pooled_mean_over_models.estimate"
+ },
+ "x2a.pooled.ci": {
+  "value": "$[-0.046, -0.010]$",
+  "source": "exploratory_v3.json:X2.X2a P_val vs P_norm.pooled_mean_over_models.ci95"
+ },
+ "x2b.pooled.est": {
+  "value": "$-0.014$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.pooled_mean_over_models.estimate"
+ },
+ "x2b.pooled.ci": {
+  "value": "$[-0.031, +0.004]$",
+  "source": "exploratory_v3.json:X2.X2b P_comb vs P_norm.pooled_mean_over_models.ci95"
+ },
+ "x2c.pooled.est": {
+  "value": "$-0.014$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.pooled_mean_over_models.estimate"
+ },
+ "x2c.pooled.ci": {
+  "value": "$[-0.016, -0.012]$",
+  "source": "exploratory_v3.json:X2.X2c D_comb - D_logit.pooled_mean_over_models.ci95"
+ },
+ "gpu.total": {
+  "value": "23.75",
+  "source": "sum gpu_ledger.jsonl seconds / 3600"
+ },
+ "gpu.left": {
+  "value": "1.25",
+  "source": "25.0 - sum gpu_ledger.jsonl"
+ },
+ "gpu.qb": {
+  "value": "7.42",
+  "source": "sum gpu_ledger.jsonl blocks *:qwen-base"
+ },
+ "gpu.qi": {
+  "value": "7.18",
+  "source": "sum gpu_ledger.jsonl blocks *:qwen-instruct"
+ },
+ "gpu.lb": {
+  "value": "4.46",
+  "source": "sum gpu_ledger.jsonl blocks *:llama-base"
+ },
+ "gpu.li": {
+  "value": "4.58",
+  "source": "sum gpu_ledger.jsonl blocks *:llama-instruct"
+ },
+ "gpu.mut": {
+  "value": "0.11",
+  "source": "gpu_ledger.jsonl gpu_mutation_check"
+ },
+ "g6.lb.drift": {
+  "value": "$+18.1$",
+  "source": "llama-base/g6.json:drift"
+ },
+ "g6.lb.t": {
+  "value": "4.20",
+  "source": "llama-base/g6.json:t_arm_problem_s"
+ },
+ "g6.lb.exp": {
+  "value": "3.56",
+  "source": "llama-base/g6.json:expected_t_arm_problem_s"
+ },
+ "hist.qb.Smean": {
+  "value": "61.2",
+  "source": "qwen-base/tierA/NAT.jsonl mean S"
+ },
+ "hist.qb.S64": {
+  "value": "84",
+  "source": "qwen-base/tierA/NAT.jsonl share S == 64 x100"
+ },
+ "hist.qb.e1same": {
+  "value": "200",
+  "source": "qwen-base/tierA/FP16_history.jsonl equals_stored_e1_history"
+ },
+ "hist.qi.Smean": {
+  "value": "63.7",
+  "source": "qwen-instruct/tierA/NAT.jsonl mean S"
+ },
+ "hist.qi.S64": {
+  "value": "97",
+  "source": "qwen-instruct/tierA/NAT.jsonl share S == 64 x100"
+ },
+ "hist.lb.Smean": {
+  "value": "56.4",
+  "source": "llama-base/tierA/NAT.jsonl mean S"
+ },
+ "hist.lb.S64": {
+  "value": "61",
+  "source": "llama-base/tierA/NAT.jsonl share S == 64 x100"
+ },
+ "hist.li.Smean": {
+  "value": "56.7",
+  "source": "llama-instruct/tierA/NAT.jsonl mean S"
+ },
+ "hist.li.S64": {
+  "value": "56",
+  "source": "llama-instruct/tierA/NAT.jsonl share S == 64 x100"
+ },
+ "rdev.qb.max": {
+  "value": "0.301",
+  "source": "max v3_report_locked.json:per_model.qwen-base.realized_norm_deviation.*.max"
+ },
+ "rdev.qb.meanmax": {
+  "value": "$1.5\\times10^{-3}$",
+  "source": "max v3_report_locked.json:per_model.qwen-base.realized_norm_deviation.*.mean"
+ },
+ "trunc.qb.natc1.kept": {
+  "value": "38",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.NAT-C1.n_kept"
+ },
+ "trunc.qb.natc1.frac": {
+  "value": "0.18",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.NAT-C1.median_retained_fraction"
+ },
+ "trunc.qb.hb.kept": {
+  "value": "18",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.HB QA-QO.n_kept"
+ },
+ "trunc.qb.hb.frac": {
+  "value": "0.15",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.HB QA-QO.median_retained_fraction"
+ },
+ "trunc.qb.provk.kept": {
+  "value": "36",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.n_kept"
+ },
+ "trunc.qb.provk.frac": {
+  "value": "0.19",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.median_retained_fraction"
+ },
+ "trunc.qb.natcv.kept": {
+  "value": "3",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.NAT-CV.n_kept"
+ },
+ "trunc.qb.natcv.frac": {
+  "value": "0.12",
+  "source": "v3_report_locked.json:per_model.qwen-base.sensitivity_rounding.contrasts.NAT-CV.median_retained_fraction"
+ },
+ "rdev.qi.max": {
+  "value": "0.307",
+  "source": "max v3_report_locked.json:per_model.qwen-instruct.realized_norm_deviation.*.max"
+ },
+ "rdev.qi.meanmax": {
+  "value": "$1.5\\times10^{-3}$",
+  "source": "max v3_report_locked.json:per_model.qwen-instruct.realized_norm_deviation.*.mean"
+ },
+ "trunc.qi.natc1.kept": {
+  "value": "29",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.NAT-C1.n_kept"
+ },
+ "trunc.qi.natc1.frac": {
+  "value": "0.20",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.NAT-C1.median_retained_fraction"
+ },
+ "trunc.qi.hb.kept": {
+  "value": "10",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.HB QA-QO.n_kept"
+ },
+ "trunc.qi.hb.frac": {
+  "value": "0.19",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.HB QA-QO.median_retained_fraction"
+ },
+ "trunc.qi.provk.kept": {
+  "value": "27",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.n_kept"
+ },
+ "trunc.qi.provk.frac": {
+  "value": "0.16",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.median_retained_fraction"
+ },
+ "trunc.qi.natcv.kept": {
+  "value": "3",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.NAT-CV.n_kept"
+ },
+ "trunc.qi.natcv.frac": {
+  "value": "0.12",
+  "source": "v3_report_locked.json:per_model.qwen-instruct.sensitivity_rounding.contrasts.NAT-CV.median_retained_fraction"
+ },
+ "rdev.lb.max": {
+  "value": "0.012",
+  "source": "max v3_report_locked.json:per_model.llama-base.realized_norm_deviation.*.max"
+ },
+ "rdev.lb.meanmax": {
+  "value": "$3.9\\times10^{-4}$",
+  "source": "max v3_report_locked.json:per_model.llama-base.realized_norm_deviation.*.mean"
+ },
+ "trunc.lb.natc1.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.NAT-C1.n_kept"
+ },
+ "trunc.lb.natc1.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.NAT-C1.median_retained_fraction"
+ },
+ "trunc.lb.hb.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.HB QA-QO.n_kept"
+ },
+ "trunc.lb.hb.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.HB QA-QO.median_retained_fraction"
+ },
+ "trunc.lb.provk.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.n_kept"
+ },
+ "trunc.lb.provk.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.median_retained_fraction"
+ },
+ "trunc.lb.natcv.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.NAT-CV.n_kept"
+ },
+ "trunc.lb.natcv.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-base.sensitivity_rounding.contrasts.NAT-CV.median_retained_fraction"
+ },
+ "rdev.li.max": {
+  "value": "0.012",
+  "source": "max v3_report_locked.json:per_model.llama-instruct.realized_norm_deviation.*.max"
+ },
+ "rdev.li.meanmax": {
+  "value": "$3.9\\times10^{-4}$",
+  "source": "max v3_report_locked.json:per_model.llama-instruct.realized_norm_deviation.*.mean"
+ },
+ "trunc.li.natc1.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.NAT-C1.n_kept"
+ },
+ "trunc.li.natc1.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.NAT-C1.median_retained_fraction"
+ },
+ "trunc.li.hb.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.HB QA-QO.n_kept"
+ },
+ "trunc.li.hb.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.HB QA-QO.median_retained_fraction"
+ },
+ "trunc.li.provk.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.n_kept"
+ },
+ "trunc.li.provk.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.Prov-K NAT-K-C1-K.median_retained_fraction"
+ },
+ "trunc.li.natcv.kept": {
+  "value": "200",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.NAT-CV.n_kept"
+ },
+ "trunc.li.natcv.frac": {
+  "value": "1.00",
+  "source": "v3_report_locked.json:per_model.llama-instruct.sensitivity_rounding.contrasts.NAT-CV.median_retained_fraction"
+ },
+ "trunc.hf.n": {
+  "value": "9",
+  "source": "v3_report_locked.json:HF_sensitivity_rounding.n_shared"
+ },
+ "qaqo.qb.lognorm": {
+  "value": "$+0.029$",
+  "source": "qwen-base/tierA/QA.jsonl, QO.jsonl: mean log(mean target_norm_mean QA / QO)"
+ },
+ "qaqo.qi.lognorm": {
+  "value": "$+0.032$",
+  "source": "qwen-instruct/tierA/QA.jsonl, QO.jsonl: mean log(mean target_norm_mean QA / QO)"
+ },
+ "qaqo.lb.lognorm": {
+  "value": "$+0.013$",
+  "source": "llama-base/tierA/QA.jsonl, QO.jsonl: mean log(mean target_norm_mean QA / QO)"
+ },
+ "qaqo.li.lognorm": {
+  "value": "$+0.011$",
+  "source": "llama-instruct/tierA/QA.jsonl, QO.jsonl: mean log(mean target_norm_mean QA / QO)"
+ },
+ "rng.sK.min": {
+  "value": "$1.69$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:scale_factor_K"
+ },
+ "rng.sK.max": {
+  "value": "$1.88$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:scale_factor_K"
+ },
+ "rng.margin.min": {
+  "value": "$0.209$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:margin_log_js"
+ },
+ "rng.margin.max": {
+  "value": "$0.235$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:margin_log_js"
+ },
+ "rng.E8.min": {
+  "value": "$0.87$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:E8.median"
+ },
+ "rng.E8.max": {
+  "value": "$0.89$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:E8.median"
+ },
+ "rng.rhoVK.min": {
+  "value": "2.9",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:rho_V/rho_K"
+ },
+ "rng.rhoVK.max": {
+  "value": "3.5",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:rho_V/rho_K"
+ },
+ "rng.b.min": {
+  "value": "$2.20$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:dose_slope_b_hat"
+ },
+ "rng.b.max": {
+  "value": "$2.46$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:dose_slope_b_hat"
+ },
+ "rng.craw.min": {
+  "value": "$0.063$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:cv_raw_median"
+ },
+ "rng.craw.max": {
+  "value": "$0.099$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of calibration.json:cv_raw_median"
+ },
+ "rng.provk.min": {
+  "value": "$-1.233$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "rng.provk.max": {
+  "value": "$-0.882$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.Prov-K NAT-K-C1-K.estimate"
+ },
+ "rng.provv.min": {
+  "value": "$+0.740$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "rng.provv.max": {
+  "value": "$+0.977$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.Prov-V NAT-V-C1-V.estimate"
+ },
+ "rng.hb.min": {
+  "value": "$+2.557$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HB QA-QO.estimate"
+ },
+ "rng.hb.max": {
+  "value": "$+3.467$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HB QA-QO.estimate"
+ },
+ "rng.hd.min": {
+  "value": "$+1.207$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HD K*-V*.estimate"
+ },
+ "rng.hd.max": {
+  "value": "$+4.783$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HD K*-V*.estimate"
+ },
+ "rng.he.min": {
+  "value": "$+0.910$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HE INH-LOC.estimate"
+ },
+ "rng.he.max": {
+  "value": "$+1.224$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.family.HE INH-LOC.estimate"
+ },
+ "rng.hbratio.min": {
+  "value": "$13$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp of v3_report_locked.json:per_model.*.family.HB QA-QO.estimate"
+ },
+ "rng.hbratio.max": {
+  "value": "$32$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp of v3_report_locked.json:per_model.*.family.HB QA-QO.estimate"
+ },
+ "rng.nkv.min": {
+  "value": "$-1.008$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "rng.nkv.max": {
+  "value": "$-0.852$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.NAT-K-NAT-V.estimate"
+ },
+ "rng.c2c1.min": {
+  "value": "$-0.277$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.C2-C1.estimate"
+ },
+ "rng.c2c1.max": {
+  "value": "$-0.143$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.C2-C1.estimate"
+ },
+ "rng.nonadd.min": {
+  "value": "$0.997$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.nonadditivity.median"
+ },
+ "rng.nonadd.max": {
+  "value": "$1.035$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of v3_report_locked.json:per_model.*.descriptive.nonadditivity.median"
+ },
+ "rng.x1wK.min": {
+  "value": "$0.28$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.mean_wK"
+ },
+ "rng.x1wK.max": {
+  "value": "$0.31$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.mean_wK"
+ },
+ "rng.x1d.min": {
+  "value": "$-0.523$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.obs_minus_pred.estimate"
+ },
+ "rng.x1d.max": {
+  "value": "$-0.362$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.obs_minus_pred.estimate"
+ },
+ "rng.x1rho.min": {
+  "value": "$+0.37$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.spearman_pred_obs.rho"
+ },
+ "rng.x1rho.max": {
+  "value": "$+0.44$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X1.per_model.*.spearman_pred_obs.rho"
+ },
+ "rng.x2c.min": {
+  "value": "$-0.021$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X2.X2c.per_model.*.estimate"
+ },
+ "rng.x2c.max": {
+  "value": "$-0.007$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3.json:X2.X2c.per_model.*.estimate"
+ },
+ "rng.qaqo.min": {
+  "value": "$+0.011$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of qaqo.*.lognorm (rounded)"
+ },
+ "rng.qaqo.max": {
+  "value": "$+0.032$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of qaqo.*.lognorm (rounded)"
+ },
+ "rng.rdevmaxllama.min": {
+  "value": "0.012",
+  "source": "min over ['llama-base', 'llama-instruct'] of v3_report_locked.json:per_model.llama-*.realized_norm_deviation.*.max"
+ },
+ "rng.rdevmaxllama.max": {
+  "value": "0.012",
+  "source": "max over ['llama-base', 'llama-instruct'] of v3_report_locked.json:per_model.llama-*.realized_norm_deviation.*.max"
+ },
+ "rng.nkvratio.min": {
+  "value": "2.3",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp(-v3_report_locked.json:per_model.*.descriptive.NAT-K-NAT-V.estimate)"
+ },
+ "rng.nkvratio.max": {
+  "value": "2.7",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp(-v3_report_locked.json:per_model.*.descriptive.NAT-K-NAT-V.estimate)"
+ },
+ "rng.provkratio.min": {
+  "value": "2.4",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp(-v3_report_locked.json:per_model.*.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "rng.provkratio.max": {
+  "value": "3.4",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp(-v3_report_locked.json:per_model.*.family.Prov-K NAT-K-C1-K.estimate)"
+ },
+ "x4.qb.norm": {
+  "value": "$+0.068$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_norm.mean"
+ },
+ "x4.qb.norm.ci": {
+  "value": "$[+0.044, +0.091]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_norm.ci95"
+ },
+ "x4.qb.logit": {
+  "value": "$+0.005$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_logit.mean"
+ },
+ "x4.qb.logit.ci": {
+  "value": "$[-0.024, +0.034]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_logit.ci95"
+ },
+ "x4.qb.val": {
+  "value": "$-0.037$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_val.mean"
+ },
+ "x4.qb.val.ci": {
+  "value": "$[-0.067, -0.007]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_val.ci95"
+ },
+ "x4.qb.anormk": {
+  "value": "$-0.020$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_anormK.mean"
+ },
+ "x4.qb.anormk.ci": {
+  "value": "$[-0.050, +0.010]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-base.P_anormK.ci95"
+ },
+ "x5.qb.est": {
+  "value": "$+0.025$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-base.estimate"
+ },
+ "x5.qb.ci": {
+  "value": "$[+0.020, +0.029]$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-base.ci95"
+ },
+ "x5.qb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-base.holm_p"
+ },
+ "x6.qb.nat.geo": {
+  "value": "$3.82\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT.geo_mean"
+ },
+ "x6.qb.nat.arith": {
+  "value": "$4.45\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT.arith_mean"
+ },
+ "x6.qb.c1.geo": {
+  "value": "$4.86\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1.geo_mean"
+ },
+ "x6.qb.c1.arith": {
+  "value": "$5.92\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1.arith_mean"
+ },
+ "x6.qb.c2.geo": {
+  "value": "$3.68\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C2.geo_mean"
+ },
+ "x6.qb.c2.arith": {
+  "value": "$4.65\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C2.arith_mean"
+ },
+ "x6.qb.qa.geo": {
+  "value": "$4.91\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.QA.geo_mean"
+ },
+ "x6.qb.qa.arith": {
+  "value": "$5.41\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.QA.arith_mean"
+ },
+ "x6.qb.qo.geo": {
+  "value": "$1.53\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.QO.geo_mean"
+ },
+ "x6.qb.qo.arith": {
+  "value": "$1.89\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.QO.arith_mean"
+ },
+ "x6.qb.cv.geo": {
+  "value": "$3.76\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.CV.geo_mean"
+ },
+ "x6.qb.cv.arith": {
+  "value": "$4.89\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.CV.arith_mean"
+ },
+ "x6.qb.natk.geo": {
+  "value": "$9.89\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-K.geo_mean"
+ },
+ "x6.qb.natk.arith": {
+  "value": "$1.25\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-K.arith_mean"
+ },
+ "x6.qb.natv.geo": {
+  "value": "$2.51\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-V.geo_mean"
+ },
+ "x6.qb.natv.arith": {
+  "value": "$2.94\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-V.arith_mean"
+ },
+ "x6.qb.relk.geo": {
+  "value": "$9.43\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-K*.geo_mean"
+ },
+ "x6.qb.relk.arith": {
+  "value": "$1.39\\times10^{-1}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-K*.arith_mean"
+ },
+ "x6.qb.relv.geo": {
+  "value": "$7.90\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-V*.geo_mean"
+ },
+ "x6.qb.relv.arith": {
+  "value": "$9.42\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.NAT-V*.arith_mean"
+ },
+ "x6.qb.c1k.geo": {
+  "value": "$3.39\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1-K.geo_mean"
+ },
+ "x6.qb.c1k.arith": {
+  "value": "$4.22\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1-K.arith_mean"
+ },
+ "x6.qb.c1v.geo": {
+  "value": "$1.09\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1-V.geo_mean"
+ },
+ "x6.qb.c1v.arith": {
+  "value": "$1.36\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.C1-V.arith_mean"
+ },
+ "x6.qb.loc.geo": {
+  "value": "$1.03\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.LOC.geo_mean"
+ },
+ "x6.qb.loc.arith": {
+  "value": "$1.26\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.LOC.arith_mean"
+ },
+ "x6.qb.inh.geo": {
+  "value": "$2.58\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.INH.geo_mean"
+ },
+ "x6.qb.inh.arith": {
+  "value": "$3.06\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-base.INH.arith_mean"
+ },
+ "x7a.qb.b1ci": {
+  "value": "$[+0.283, +0.802]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.beta1_ci95"
+ },
+ "x7a.qb.xbar": {
+  "value": "$-0.726$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.x_bar"
+ },
+ "x7a.qb.xbarci": {
+  "value": "$[-0.731, -0.722]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.x_bar_ci95"
+ },
+ "x7a.qb.gamma": {
+  "value": "$+0.943$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.gamma"
+ },
+ "x7a.qb.gammaci": {
+  "value": "$[+0.604, +1.282]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.gamma_ci95"
+ },
+ "x7a.qb.neg": {
+  "value": "$1.0000$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.share_steps_x_negative"
+ },
+ "x7a.qb.nneg": {
+  "value": "12{,}035",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.share_steps_x_negative x n_steps"
+ },
+ "x7a.qb.nsteps": {
+  "value": "12{,}035",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.n_steps"
+ },
+ "x7a.qb.xval": {
+  "value": "$+0.232$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-base.x_bar_val"
+ },
+ "x7b.qb.b1": {
+  "value": "$-0.115$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-base.beta1"
+ },
+ "x7b.qb.b1ci": {
+  "value": "$[-0.235, +0.002]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-base.beta1_ci95"
+ },
+ "x7b.qb.f": {
+  "value": "$+0.19$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-base.fraction"
+ },
+ "x7b.qb.fci": {
+  "value": "$[-0.85, +0.92]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-base.fraction_ci95"
+ },
+ "x7b.qb.band": {
+  "value": "inconclusive",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-base.band"
+ },
+ "x7c.qb.b1": {
+  "value": "$-0.101$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-base.beta1"
+ },
+ "x7c.qb.b1ci": {
+  "value": "$[-0.223, +0.019]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-base.beta1_ci95"
+ },
+ "x7c.qb.f": {
+  "value": "$+0.29$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-base.fraction"
+ },
+ "x7c.qb.fci": {
+  "value": "$[-0.72, +0.94]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-base.fraction_ci95"
+ },
+ "x7c.qb.band": {
+  "value": "inconclusive",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-base.band"
+ },
+ "x8.qb.inh": {
+  "value": "67",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.INH.geo_ratio x100"
+ },
+ "x8.qb.inhci": {
+  "value": "$[65, 70]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.INH.geo_ratio_ci95 x100"
+ },
+ "x8.qb.loc": {
+  "value": "27",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.LOC.geo_ratio x100"
+ },
+ "x8.qb.locci": {
+  "value": "$[25, 29]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.LOC.geo_ratio_ci95 x100"
+ },
+ "x8.qb.share": {
+  "value": "71",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.INH_share_of_INH_plus_LOC x100"
+ },
+ "arch.qb.locpct": {
+  "value": "1.5",
+  "source": "locked config.json of qwen-base: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "arch.qb.potency": {
+  "value": "$18$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-base.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "x10.qb.K.robs": {
+  "value": "$95.4$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.K.R_obs"
+ },
+ "x10.qb.K.rpred": {
+  "value": "$3.70$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.K.R_pred"
+ },
+ "x10.qb.K.E": {
+  "value": "$+3.25$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.K.excess_E"
+ },
+ "x10.qb.K.Eci": {
+  "value": "$[+3.10, +3.40]$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.K.excess_E_ci95"
+ },
+ "x10.qb.K.ratio": {
+  "value": "$25.8$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.K.R_obs_over_R_pred"
+ },
+ "x10.qb.V.robs": {
+  "value": "$0.31$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.V.R_obs"
+ },
+ "x10.qb.V.rpred": {
+  "value": "$0.27$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.V.R_pred"
+ },
+ "x10.qb.V.E": {
+  "value": "$+0.15$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.V.excess_E"
+ },
+ "x10.qb.V.Eci": {
+  "value": "$[+0.13, +0.18]$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.V.excess_E_ci95"
+ },
+ "x10.qb.V.ratio": {
+  "value": "$1.16$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-base.V.R_obs_over_R_pred"
+ },
+ "x11.qb.B": {
+  "value": "$56.0$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-base.B"
+ },
+ "x11.qb.Bq": {
+  "value": "$65.8$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-base.B_q"
+ },
+ "x11.qb.B1": {
+  "value": "$46.8$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-base.B_1"
+ },
+ "x11.qb.dil": {
+  "value": "$0.71$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-base.dilution_gC1V_over_gQO"
+ },
+ "x11.qb.dilci": {
+  "value": "$[0.67, 0.76]$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-base.dilution_ci95"
+ },
+ "x9a.qb.A": {
+  "value": "$-0.040$",
+  "source": "x9_results.json:per_model.qwen-base.a.test.estimate"
+ },
+ "x9a.qb.Aci": {
+  "value": "$[-0.047, -0.034]$",
+  "source": "x9_results.json:per_model.qwen-base.a.test.ci95"
+ },
+ "x9a.qb.holm": {
+  "value": "$<0.001$",
+  "source": "x9_results.json:per_model.qwen-base.a.holm_p"
+ },
+ "x9a.qb.verdict": {
+  "value": "supported",
+  "source": "x9_results.json:per_model.qwen-base.a.verdict"
+ },
+ "x9a.qb.F": {
+  "value": "$0.120$",
+  "source": "x9_results.json:per_model.qwen-base.a.F_mean"
+ },
+ "x9a.qb.F0": {
+  "value": "$0.013$",
+  "source": "x9_results.json:per_model.qwen-base.a.F_per_layer[0].F"
+ },
+ "x9a.qb.rho": {
+  "value": "$-0.03$",
+  "source": "x9_results.json:per_model.qwen-base.a.spearman_lnF_vs_locked_theta_NATK_C1K.rho"
+ },
+ "x9a.qb.rhoci": {
+  "value": "$[-0.34, +0.27]$",
+  "source": "x9_results.json:per_model.qwen-base.a.spearman_lnF_vs_locked_theta_NATK_C1K.ci95"
+ },
+ "x9b.qb.G": {
+  "value": "$+0.38$",
+  "source": "x9_results.json:per_model.qwen-base.b.G"
+ },
+ "x9b.qb.Gci": {
+  "value": "$[+0.33, +0.42]$",
+  "source": "x9_results.json:per_model.qwen-base.b.G_ci95"
+ },
+ "x9b.qb.verdict": {
+  "value": "inconclusive",
+  "source": "x9_results.json:per_model.qwen-base.b.verdict"
+ },
+ "x9b.qb.EK": {
+  "value": "$+3.10$",
+  "source": "x9_results.json:per_model.qwen-base.b.E_Kstar"
+ },
+ "x9b.qb.EL0": {
+  "value": "$+1.43$",
+  "source": "x9_results.json:per_model.qwen-base.b.E_L0"
+ },
+ "x9b.qb.EL0ci": {
+  "value": "$[+1.28, +1.59]$",
+  "source": "x9_results.json:per_model.qwen-base.b.E_L0_ci95"
+ },
+ "x9c.qb.drho": {
+  "value": "$-0.0006$",
+  "source": "x9_results.json:per_model.qwen-base.c.P_logit.delta_rho.mean"
+ },
+ "x9c.qb.drhoci": {
+  "value": "$[-0.0017, +0.0004]$",
+  "source": "x9_results.json:per_model.qwen-base.c.P_logit.delta_rho.ci95"
+ },
+ "x9c.qb.D": {
+  "value": "$-0.085$",
+  "source": "x9_results.json:per_model.qwen-base.c.P_logit.D.mean"
+ },
+ "x9c.qb.D0": {
+  "value": "$-0.087$",
+  "source": "x9_results.json:per_model.qwen-base.c.P_logit.D_no_l0.mean"
+ },
+ "x9d.qb.L0": {
+  "value": "$131$",
+  "source": "x9_results.json:per_model.qwen-base.d.per_layer[0].median"
+ },
+ "x9d.qb.restmax": {
+  "value": "$11.1$",
+  "source": "max over layers >= 1 of x9_results.json:per_model.qwen-base.d.per_layer.median"
+ },
+ "x9d.qb.restmed": {
+  "value": "$1.68$",
+  "source": "median over layers >= 1 of x9_results.json:per_model.qwen-base.d.per_layer.median"
+ },
+ "x9d.qb.biglayers": {
+  "value": "1, 2 and 8",
+  "source": "layers >= 1 with x9_results.json:per_model.qwen-base.d.per_layer.median > 5"
+ },
+ "x9d.qb.sK": {
+  "value": "$1.70$",
+  "source": "x9_results.json:per_model.qwen-base.d.s_K"
+ },
+ "x4.qi.norm": {
+  "value": "$+0.157$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_norm.mean"
+ },
+ "x4.qi.norm.ci": {
+  "value": "$[+0.132, +0.182]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_norm.ci95"
+ },
+ "x4.qi.logit": {
+  "value": "$-0.003$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_logit.mean"
+ },
+ "x4.qi.logit.ci": {
+  "value": "$[-0.032, +0.026]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_logit.ci95"
+ },
+ "x4.qi.val": {
+  "value": "$-0.026$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_val.mean"
+ },
+ "x4.qi.val.ci": {
+  "value": "$[-0.058, +0.004]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_val.ci95"
+ },
+ "x4.qi.anormk": {
+  "value": "$-0.029$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_anormK.mean"
+ },
+ "x4.qi.anormk.ci": {
+  "value": "$[-0.059, +0.001]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.qwen-instruct.P_anormK.ci95"
+ },
+ "x5.qi.est": {
+  "value": "$+0.026$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-instruct.estimate"
+ },
+ "x5.qi.ci": {
+  "value": "$[+0.021, +0.030]$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-instruct.ci95"
+ },
+ "x5.qi.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.qwen-instruct.holm_p"
+ },
+ "x6.qi.nat.geo": {
+  "value": "$6.22\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT.geo_mean"
+ },
+ "x6.qi.nat.arith": {
+  "value": "$9.14\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT.arith_mean"
+ },
+ "x6.qi.c1.geo": {
+  "value": "$8.59\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1.geo_mean"
+ },
+ "x6.qi.c1.arith": {
+  "value": "$1.23\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1.arith_mean"
+ },
+ "x6.qi.c2.geo": {
+  "value": "$6.90\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C2.geo_mean"
+ },
+ "x6.qi.c2.arith": {
+  "value": "$1.02\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C2.arith_mean"
+ },
+ "x6.qi.qa.geo": {
+  "value": "$6.99\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.QA.geo_mean"
+ },
+ "x6.qi.qa.arith": {
+  "value": "$7.58\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.QA.arith_mean"
+ },
+ "x6.qi.qo.geo": {
+  "value": "$2.96\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.QO.geo_mean"
+ },
+ "x6.qi.qo.arith": {
+  "value": "$5.49\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.QO.arith_mean"
+ },
+ "x6.qi.cv.geo": {
+  "value": "$6.69\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.CV.geo_mean"
+ },
+ "x6.qi.cv.arith": {
+  "value": "$1.04\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.CV.arith_mean"
+ },
+ "x6.qi.natk.geo": {
+  "value": "$1.83\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-K.geo_mean"
+ },
+ "x6.qi.natk.arith": {
+  "value": "$2.97\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-K.arith_mean"
+ },
+ "x6.qi.natv.geo": {
+  "value": "$4.28\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-V.geo_mean"
+ },
+ "x6.qi.natv.arith": {
+  "value": "$6.74\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-V.arith_mean"
+ },
+ "x6.qi.relk.geo": {
+  "value": "$1.34\\times10^{-1}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-K*.geo_mean"
+ },
+ "x6.qi.relk.arith": {
+  "value": "$1.75\\times10^{-1}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-K*.arith_mean"
+ },
+ "x6.qi.relv.geo": {
+  "value": "$1.46\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-V*.geo_mean"
+ },
+ "x6.qi.relv.arith": {
+  "value": "$2.39\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.NAT-V*.arith_mean"
+ },
+ "x6.qi.c1k.geo": {
+  "value": "$6.01\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1-K.geo_mean"
+ },
+ "x6.qi.c1k.arith": {
+  "value": "$9.21\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1-K.arith_mean"
+ },
+ "x6.qi.c1v.geo": {
+  "value": "$2.04\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1-V.geo_mean"
+ },
+ "x6.qi.c1v.arith": {
+  "value": "$3.97\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.C1-V.arith_mean"
+ },
+ "x6.qi.loc.geo": {
+  "value": "$1.74\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.LOC.geo_mean"
+ },
+ "x6.qi.loc.arith": {
+  "value": "$2.80\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.LOC.arith_mean"
+ },
+ "x6.qi.inh.geo": {
+  "value": "$4.32\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.INH.geo_mean"
+ },
+ "x6.qi.inh.arith": {
+  "value": "$6.72\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.qwen-instruct.INH.arith_mean"
+ },
+ "x7a.qi.b1ci": {
+  "value": "$[+0.121, +0.554]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.beta1_ci95"
+ },
+ "x7a.qi.xbar": {
+  "value": "$-0.706$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.x_bar"
+ },
+ "x7a.qi.xbarci": {
+  "value": "$[-0.711, -0.700]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.x_bar_ci95"
+ },
+ "x7a.qi.gamma": {
+  "value": "$+0.906$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.gamma"
+ },
+ "x7a.qi.gammaci": {
+  "value": "$[+0.596, +1.196]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.gamma_ci95"
+ },
+ "x7a.qi.neg": {
+  "value": "$1.0000$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.share_steps_x_negative"
+ },
+ "x7a.qi.nneg": {
+  "value": "12{,}534",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.share_steps_x_negative x n_steps"
+ },
+ "x7a.qi.nsteps": {
+  "value": "12{,}534",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.n_steps"
+ },
+ "x7a.qi.xval": {
+  "value": "$+0.205$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.qwen-instruct.x_bar_val"
+ },
+ "x7b.qi.b1": {
+  "value": "$-0.079$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-instruct.beta1"
+ },
+ "x7b.qi.b1ci": {
+  "value": "$[-0.181, +0.022]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-instruct.beta1_ci95"
+ },
+ "x7b.qi.f": {
+  "value": "$+0.73$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-instruct.fraction"
+ },
+ "x7b.qi.fci": {
+  "value": "$[+0.39, +0.98]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-instruct.fraction_ci95"
+ },
+ "x7b.qi.band": {
+  "value": "substantial",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).qwen-instruct.band"
+ },
+ "x7c.qi.b1": {
+  "value": "$-0.060$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-instruct.beta1"
+ },
+ "x7c.qi.b1ci": {
+  "value": "$[-0.160, +0.039]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-instruct.beta1_ci95"
+ },
+ "x7c.qi.f": {
+  "value": "$+0.80$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-instruct.fraction"
+ },
+ "x7c.qi.fci": {
+  "value": "$[+0.46, +0.99]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-instruct.fraction_ci95"
+ },
+ "x7c.qi.band": {
+  "value": "substantial",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).qwen-instruct.band"
+ },
+ "x8.qi.inh": {
+  "value": "70",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.INH.geo_ratio x100"
+ },
+ "x8.qi.inhci": {
+  "value": "$[67, 72]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.INH.geo_ratio_ci95 x100"
+ },
+ "x8.qi.loc": {
+  "value": "28",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.LOC.geo_ratio x100"
+ },
+ "x8.qi.locci": {
+  "value": "$[26, 30]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.LOC.geo_ratio_ci95 x100"
+ },
+ "x8.qi.share": {
+  "value": "71",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.INH_share_of_INH_plus_LOC x100"
+ },
+ "arch.qi.locpct": {
+  "value": "1.5",
+  "source": "locked config.json of qwen-instruct: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "arch.qi.potency": {
+  "value": "$18$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.qwen-instruct.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "x10.qi.K.robs": {
+  "value": "$73.2$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.K.R_obs"
+ },
+ "x10.qi.K.rpred": {
+  "value": "$3.56$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.K.R_pred"
+ },
+ "x10.qi.K.E": {
+  "value": "$+3.02$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.K.excess_E"
+ },
+ "x10.qi.K.Eci": {
+  "value": "$[+2.88, +3.16]$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.K.excess_E_ci95"
+ },
+ "x10.qi.K.ratio": {
+  "value": "$20.5$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.K.R_obs_over_R_pred"
+ },
+ "x10.qi.V.robs": {
+  "value": "$0.34$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.V.R_obs"
+ },
+ "x10.qi.V.rpred": {
+  "value": "$0.28$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.V.R_pred"
+ },
+ "x10.qi.V.E": {
+  "value": "$+0.19$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.V.excess_E"
+ },
+ "x10.qi.V.Eci": {
+  "value": "$[+0.16, +0.22]$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.V.excess_E_ci95"
+ },
+ "x10.qi.V.ratio": {
+  "value": "$1.21$",
+  "source": "exploratory_v3_x10.json:per_model.qwen-instruct.V.R_obs_over_R_pred"
+ },
+ "x11.qi.B": {
+  "value": "$53.7$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-instruct.B"
+ },
+ "x11.qi.Bq": {
+  "value": "$64.5$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-instruct.B_q"
+ },
+ "x11.qi.B1": {
+  "value": "$45.7$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-instruct.B_1"
+ },
+ "x11.qi.dil": {
+  "value": "$0.69$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-instruct.dilution_gC1V_over_gQO"
+ },
+ "x11.qi.dilci": {
+  "value": "$[0.65, 0.73]$",
+  "source": "exploratory_v3_x11.json:per_model.qwen-instruct.dilution_ci95"
+ },
+ "x9a.qi.A": {
+  "value": "$-0.054$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.test.estimate"
+ },
+ "x9a.qi.Aci": {
+  "value": "$[-0.062, -0.047]$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.test.ci95"
+ },
+ "x9a.qi.holm": {
+  "value": "$<0.001$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.holm_p"
+ },
+ "x9a.qi.verdict": {
+  "value": "supported",
+  "source": "x9_results.json:per_model.qwen-instruct.a.verdict"
+ },
+ "x9a.qi.F": {
+  "value": "$0.118$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.F_mean"
+ },
+ "x9a.qi.F0": {
+  "value": "$0.022$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.F_per_layer[0].F"
+ },
+ "x9a.qi.rho": {
+  "value": "$+0.02$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.spearman_lnF_vs_locked_theta_NATK_C1K.rho"
+ },
+ "x9a.qi.rhoci": {
+  "value": "$[-0.28, +0.34]$",
+  "source": "x9_results.json:per_model.qwen-instruct.a.spearman_lnF_vs_locked_theta_NATK_C1K.ci95"
+ },
+ "x9b.qi.G": {
+  "value": "$+0.43$",
+  "source": "x9_results.json:per_model.qwen-instruct.b.G"
+ },
+ "x9b.qi.Gci": {
+  "value": "$[+0.39, +0.47]$",
+  "source": "x9_results.json:per_model.qwen-instruct.b.G_ci95"
+ },
+ "x9b.qi.verdict": {
+  "value": "inconclusive",
+  "source": "x9_results.json:per_model.qwen-instruct.b.verdict"
+ },
+ "x9b.qi.EK": {
+  "value": "$+3.11$",
+  "source": "x9_results.json:per_model.qwen-instruct.b.E_Kstar"
+ },
+ "x9b.qi.EL0": {
+  "value": "$+1.22$",
+  "source": "x9_results.json:per_model.qwen-instruct.b.E_L0"
+ },
+ "x9b.qi.EL0ci": {
+  "value": "$[+1.07, +1.38]$",
+  "source": "x9_results.json:per_model.qwen-instruct.b.E_L0_ci95"
+ },
+ "x9c.qi.drho": {
+  "value": "$+0.0012$",
+  "source": "x9_results.json:per_model.qwen-instruct.c.P_logit.delta_rho.mean"
+ },
+ "x9c.qi.drhoci": {
+  "value": "$[+0.0002, +0.0021]$",
+  "source": "x9_results.json:per_model.qwen-instruct.c.P_logit.delta_rho.ci95"
+ },
+ "x9c.qi.D": {
+  "value": "$-0.192$",
+  "source": "x9_results.json:per_model.qwen-instruct.c.P_logit.D.mean"
+ },
+ "x9c.qi.D0": {
+  "value": "$-0.191$",
+  "source": "x9_results.json:per_model.qwen-instruct.c.P_logit.D_no_l0.mean"
+ },
+ "x9d.qi.L0": {
+  "value": "$143$",
+  "source": "x9_results.json:per_model.qwen-instruct.d.per_layer[0].median"
+ },
+ "x9d.qi.restmax": {
+  "value": "$11.4$",
+  "source": "max over layers >= 1 of x9_results.json:per_model.qwen-instruct.d.per_layer.median"
+ },
+ "x9d.qi.restmed": {
+  "value": "$1.64$",
+  "source": "median over layers >= 1 of x9_results.json:per_model.qwen-instruct.d.per_layer.median"
+ },
+ "x9d.qi.biglayers": {
+  "value": "1, 2 and 8",
+  "source": "layers >= 1 with x9_results.json:per_model.qwen-instruct.d.per_layer.median > 5"
+ },
+ "x9d.qi.sK": {
+  "value": "$1.69$",
+  "source": "x9_results.json:per_model.qwen-instruct.d.s_K"
+ },
+ "x4.lb.norm": {
+  "value": "$+0.055$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_norm.mean"
+ },
+ "x4.lb.norm.ci": {
+  "value": "$[+0.028, +0.082]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_norm.ci95"
+ },
+ "x4.lb.logit": {
+  "value": "$+0.236$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_logit.mean"
+ },
+ "x4.lb.logit.ci": {
+  "value": "$[+0.206, +0.267]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_logit.ci95"
+ },
+ "x4.lb.val": {
+  "value": "$+0.221$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_val.mean"
+ },
+ "x4.lb.val.ci": {
+  "value": "$[+0.189, +0.253]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_val.ci95"
+ },
+ "x4.lb.anormk": {
+  "value": "$+0.214$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_anormK.mean"
+ },
+ "x4.lb.anormk.ci": {
+  "value": "$[+0.182, +0.245]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-base.P_anormK.ci95"
+ },
+ "x5.lb.est": {
+  "value": "$+0.023$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-base.estimate"
+ },
+ "x5.lb.ci": {
+  "value": "$[+0.017, +0.028]$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-base.ci95"
+ },
+ "x5.lb.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-base.holm_p"
+ },
+ "x6.lb.nat.geo": {
+  "value": "$3.01\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT.geo_mean"
+ },
+ "x6.lb.nat.arith": {
+  "value": "$3.56\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT.arith_mean"
+ },
+ "x6.lb.c1.geo": {
+  "value": "$2.97\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1.geo_mean"
+ },
+ "x6.lb.c1.arith": {
+  "value": "$3.70\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1.arith_mean"
+ },
+ "x6.lb.c2.geo": {
+  "value": "$2.47\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C2.geo_mean"
+ },
+ "x6.lb.c2.arith": {
+  "value": "$3.08\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C2.arith_mean"
+ },
+ "x6.lb.qa.geo": {
+  "value": "$1.84\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.QA.geo_mean"
+ },
+ "x6.lb.qa.arith": {
+  "value": "$2.14\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.QA.arith_mean"
+ },
+ "x6.lb.qo.geo": {
+  "value": "$1.22\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.QO.geo_mean"
+ },
+ "x6.lb.qo.arith": {
+  "value": "$1.48\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.QO.arith_mean"
+ },
+ "x6.lb.cv.geo": {
+  "value": "$2.60\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.CV.geo_mean"
+ },
+ "x6.lb.cv.arith": {
+  "value": "$3.19\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.CV.arith_mean"
+ },
+ "x6.lb.natk.geo": {
+  "value": "$8.30\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-K.geo_mean"
+ },
+ "x6.lb.natk.arith": {
+  "value": "$1.03\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-K.arith_mean"
+ },
+ "x6.lb.natv.geo": {
+  "value": "$2.16\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-V.geo_mean"
+ },
+ "x6.lb.natv.arith": {
+  "value": "$2.54\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-V.arith_mean"
+ },
+ "x6.lb.relk.geo": {
+  "value": "$2.69\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-K*.geo_mean"
+ },
+ "x6.lb.relk.arith": {
+  "value": "$3.28\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-K*.arith_mean"
+ },
+ "x6.lb.relv.geo": {
+  "value": "$6.30\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-V*.geo_mean"
+ },
+ "x6.lb.relv.arith": {
+  "value": "$7.43\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.NAT-V*.arith_mean"
+ },
+ "x6.lb.c1k.geo": {
+  "value": "$2.11\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1-K.geo_mean"
+ },
+ "x6.lb.c1k.arith": {
+  "value": "$2.65\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1-K.arith_mean"
+ },
+ "x6.lb.c1v.geo": {
+  "value": "$8.14\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1-V.geo_mean"
+ },
+ "x6.lb.c1v.arith": {
+  "value": "$9.83\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.C1-V.arith_mean"
+ },
+ "x6.lb.loc.geo": {
+  "value": "$6.76\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.LOC.geo_mean"
+ },
+ "x6.lb.loc.arith": {
+  "value": "$8.16\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.LOC.arith_mean"
+ },
+ "x6.lb.inh.geo": {
+  "value": "$2.26\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.INH.geo_mean"
+ },
+ "x6.lb.inh.arith": {
+  "value": "$2.70\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-base.INH.arith_mean"
+ },
+ "x7a.lb.b1ci": {
+  "value": "$[+0.015, +0.384]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.beta1_ci95"
+ },
+ "x7a.lb.xbar": {
+  "value": "$-0.607$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.x_bar"
+ },
+ "x7a.lb.xbarci": {
+  "value": "$[-0.611, -0.603]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.x_bar_ci95"
+ },
+ "x7a.lb.gamma": {
+  "value": "$+0.279$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.gamma"
+ },
+ "x7a.lb.gammaci": {
+  "value": "$[-0.021, +0.585]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.gamma_ci95"
+ },
+ "x7a.lb.neg": {
+  "value": "$1.0000$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.share_steps_x_negative"
+ },
+ "x7a.lb.nneg": {
+  "value": "11{,}072",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.share_steps_x_negative x n_steps"
+ },
+ "x7a.lb.nsteps": {
+  "value": "11{,}072",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.n_steps"
+ },
+ "x7a.lb.xval": {
+  "value": "$+0.304$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-base.x_bar_val"
+ },
+ "x7b.lb.b1": {
+  "value": "$-0.071$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-base.beta1"
+ },
+ "x7b.lb.b1ci": {
+  "value": "$[-0.147, +0.006]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-base.beta1_ci95"
+ },
+ "x7b.lb.f": {
+  "value": "$-1.48$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-base.fraction"
+ },
+ "x7b.lb.fci": {
+  "value": "$[-37.79, +0.79]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-base.fraction_ci95"
+ },
+ "x7b.lb.band": {
+  "value": "not applicable",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-base.band"
+ },
+ "x7c.lb.b1": {
+  "value": "$-0.066$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-base.beta1"
+ },
+ "x7c.lb.b1ci": {
+  "value": "$[-0.142, +0.011]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-base.beta1_ci95"
+ },
+ "x7c.lb.f": {
+  "value": "$-1.31$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-base.fraction"
+ },
+ "x7c.lb.fci": {
+  "value": "$[-35.46, +0.82]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-base.fraction_ci95"
+ },
+ "x7c.lb.band": {
+  "value": "not applicable",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-base.band"
+ },
+ "x8.lb.inh": {
+  "value": "75",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.INH.geo_ratio x100"
+ },
+ "x8.lb.inhci": {
+  "value": "$[73, 77]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.INH.geo_ratio_ci95 x100"
+ },
+ "x8.lb.loc": {
+  "value": "22",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.LOC.geo_ratio x100"
+ },
+ "x8.lb.locci": {
+  "value": "$[21, 24]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.LOC.geo_ratio_ci95 x100"
+ },
+ "x8.lb.share": {
+  "value": "77",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.INH_share_of_INH_plus_LOC x100"
+ },
+ "arch.lb.locpct": {
+  "value": "3.4",
+  "source": "locked config.json of llama-base: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "arch.lb.potency": {
+  "value": "$7$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-base.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "x10.lb.K.robs": {
+  "value": "$3.24$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.K.R_obs"
+ },
+ "x10.lb.K.rpred": {
+  "value": "$3.99$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.K.R_pred"
+ },
+ "x10.lb.K.E": {
+  "value": "$-0.21$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.K.excess_E"
+ },
+ "x10.lb.K.Eci": {
+  "value": "$[-0.23, -0.18]$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.K.excess_E_ci95"
+ },
+ "x10.lb.K.ratio": {
+  "value": "$0.81$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.K.R_obs_over_R_pred"
+ },
+ "x10.lb.V.robs": {
+  "value": "$0.29$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.V.R_obs"
+ },
+ "x10.lb.V.rpred": {
+  "value": "$0.25$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.V.R_pred"
+ },
+ "x10.lb.V.E": {
+  "value": "$+0.15$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.V.excess_E"
+ },
+ "x10.lb.V.Eci": {
+  "value": "$[+0.14, +0.17]$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.V.excess_E_ci95"
+ },
+ "x10.lb.V.ratio": {
+  "value": "$1.16$",
+  "source": "exploratory_v3_x10.json:per_model.llama-base.V.R_obs_over_R_pred"
+ },
+ "x11.lb.B": {
+  "value": "$48.8$",
+  "source": "exploratory_v3_x11.json:per_model.llama-base.B"
+ },
+ "x11.lb.Bq": {
+  "value": "$49.4$",
+  "source": "exploratory_v3_x11.json:per_model.llama-base.B_q"
+ },
+ "x11.lb.B1": {
+  "value": "$49.2$",
+  "source": "exploratory_v3_x11.json:per_model.llama-base.B_1"
+ },
+ "x11.lb.dil": {
+  "value": "$0.67$",
+  "source": "exploratory_v3_x11.json:per_model.llama-base.dilution_gC1V_over_gQO"
+ },
+ "x11.lb.dilci": {
+  "value": "$[0.63, 0.71]$",
+  "source": "exploratory_v3_x11.json:per_model.llama-base.dilution_ci95"
+ },
+ "x9a.lb.A": {
+  "value": "$-0.007$",
+  "source": "x9_results.json:per_model.llama-base.a.test.estimate"
+ },
+ "x9a.lb.Aci": {
+  "value": "$[-0.012, -0.002]$",
+  "source": "x9_results.json:per_model.llama-base.a.test.ci95"
+ },
+ "x9a.lb.holm": {
+  "value": "$0.014$",
+  "source": "x9_results.json:per_model.llama-base.a.holm_p"
+ },
+ "x9a.lb.verdict": {
+  "value": "supported",
+  "source": "x9_results.json:per_model.llama-base.a.verdict"
+ },
+ "x9a.lb.F": {
+  "value": "$0.124$",
+  "source": "x9_results.json:per_model.llama-base.a.F_mean"
+ },
+ "x9a.lb.F0": {
+  "value": "$0.100$",
+  "source": "x9_results.json:per_model.llama-base.a.F_per_layer[0].F"
+ },
+ "x9a.lb.rho": {
+  "value": "$+0.12$",
+  "source": "x9_results.json:per_model.llama-base.a.spearman_lnF_vs_locked_theta_NATK_C1K.rho"
+ },
+ "x9a.lb.rhoci": {
+  "value": "$[-0.16, +0.38]$",
+  "source": "x9_results.json:per_model.llama-base.a.spearman_lnF_vs_locked_theta_NATK_C1K.ci95"
+ },
+ "x9b.lb.G": {
+  "value": "$+0.02$",
+  "source": "x9_results.json:per_model.llama-base.b.G"
+ },
+ "x9b.lb.Gci": {
+  "value": "$[+0.00, +0.03]$",
+  "source": "x9_results.json:per_model.llama-base.b.G_ci95"
+ },
+ "x9b.lb.verdict": {
+  "value": "descriptive",
+  "source": "x9_results.json:per_model.llama-base.b.verdict"
+ },
+ "x9b.lb.EK": {
+  "value": "$-0.22$",
+  "source": "x9_results.json:per_model.llama-base.b.E_Kstar"
+ },
+ "x9b.lb.EL0": {
+  "value": "$-0.24$",
+  "source": "x9_results.json:per_model.llama-base.b.E_L0"
+ },
+ "x9b.lb.EL0ci": {
+  "value": "$[-0.29, -0.19]$",
+  "source": "x9_results.json:per_model.llama-base.b.E_L0_ci95"
+ },
+ "x9c.lb.drho": {
+  "value": "$+0.0025$",
+  "source": "x9_results.json:per_model.llama-base.c.P_logit.delta_rho.mean"
+ },
+ "x9c.lb.drhoci": {
+  "value": "$[+0.0003, +0.0048]$",
+  "source": "x9_results.json:per_model.llama-base.c.P_logit.delta_rho.ci95"
+ },
+ "x9c.lb.D": {
+  "value": "$+0.150$",
+  "source": "x9_results.json:per_model.llama-base.c.P_logit.D.mean"
+ },
+ "x9c.lb.D0": {
+  "value": "$+0.153$",
+  "source": "x9_results.json:per_model.llama-base.c.P_logit.D_no_l0.mean"
+ },
+ "x9d.lb.L0": {
+  "value": "$4.1$",
+  "source": "x9_results.json:per_model.llama-base.d.per_layer[0].median"
+ },
+ "x9d.lb.restmax": {
+  "value": "$2.7$",
+  "source": "max over layers >= 1 of x9_results.json:per_model.llama-base.d.per_layer.median"
+ },
+ "x9d.lb.restmed": {
+  "value": "$1.83$",
+  "source": "median over layers >= 1 of x9_results.json:per_model.llama-base.d.per_layer.median"
+ },
+ "x9d.lb.biglayers": {
+  "value": "none",
+  "source": "layers >= 1 with x9_results.json:per_model.llama-base.d.per_layer.median > 5"
+ },
+ "x9d.lb.sK": {
+  "value": "$1.88$",
+  "source": "x9_results.json:per_model.llama-base.d.s_K"
+ },
+ "x4.li.norm": {
+  "value": "$+0.079$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_norm.mean"
+ },
+ "x4.li.norm.ci": {
+  "value": "$[+0.052, +0.106]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_norm.ci95"
+ },
+ "x4.li.logit": {
+  "value": "$+0.121$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_logit.mean"
+ },
+ "x4.li.logit.ci": {
+  "value": "$[+0.092, +0.151]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_logit.ci95"
+ },
+ "x4.li.val": {
+  "value": "$+0.090$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_val.mean"
+ },
+ "x4.li.val.ci": {
+  "value": "$[+0.059, +0.120]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_val.ci95"
+ },
+ "x4.li.anormk": {
+  "value": "$+0.095$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_anormK.mean"
+ },
+ "x4.li.anormk.ci": {
+  "value": "$[+0.065, +0.124]$",
+  "source": "exploratory_v3_x4x8.json:X4.per_model.llama-instruct.P_anormK.ci95"
+ },
+ "x5.li.est": {
+  "value": "$+0.026$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-instruct.estimate"
+ },
+ "x5.li.ci": {
+  "value": "$[+0.022, +0.031]$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-instruct.ci95"
+ },
+ "x5.li.holm": {
+  "value": "$<0.001$",
+  "source": "exploratory_v3_x4x8.json:X5.per_model.llama-instruct.holm_p"
+ },
+ "x6.li.nat.geo": {
+  "value": "$2.20\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT.geo_mean"
+ },
+ "x6.li.nat.arith": {
+  "value": "$2.63\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT.arith_mean"
+ },
+ "x6.li.c1.geo": {
+  "value": "$2.03\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1.geo_mean"
+ },
+ "x6.li.c1.arith": {
+  "value": "$2.50\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1.arith_mean"
+ },
+ "x6.li.c2.geo": {
+  "value": "$1.76\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C2.geo_mean"
+ },
+ "x6.li.c2.arith": {
+  "value": "$2.22\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C2.arith_mean"
+ },
+ "x6.li.qa.geo": {
+  "value": "$1.11\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.QA.geo_mean"
+ },
+ "x6.li.qa.arith": {
+  "value": "$1.29\\times10^{-2}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.QA.arith_mean"
+ },
+ "x6.li.qo.geo": {
+  "value": "$8.59\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.QO.geo_mean"
+ },
+ "x6.li.qo.arith": {
+  "value": "$1.04\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.QO.arith_mean"
+ },
+ "x6.li.cv.geo": {
+  "value": "$1.78\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.CV.geo_mean"
+ },
+ "x6.li.cv.arith": {
+  "value": "$2.25\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.CV.arith_mean"
+ },
+ "x6.li.natk.geo": {
+  "value": "$5.72\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-K.geo_mean"
+ },
+ "x6.li.natk.arith": {
+  "value": "$7.15\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-K.arith_mean"
+ },
+ "x6.li.natv.geo": {
+  "value": "$1.57\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-V.geo_mean"
+ },
+ "x6.li.natv.arith": {
+  "value": "$1.89\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-V.arith_mean"
+ },
+ "x6.li.relk.geo": {
+  "value": "$1.80\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-K*.geo_mean"
+ },
+ "x6.li.relk.arith": {
+  "value": "$2.25\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-K*.arith_mean"
+ },
+ "x6.li.relv.geo": {
+  "value": "$5.40\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-V*.geo_mean"
+ },
+ "x6.li.relv.arith": {
+  "value": "$7.00\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.NAT-V*.arith_mean"
+ },
+ "x6.li.c1k.geo": {
+  "value": "$1.38\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1-K.geo_mean"
+ },
+ "x6.li.c1k.arith": {
+  "value": "$1.77\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1-K.arith_mean"
+ },
+ "x6.li.c1v.geo": {
+  "value": "$6.44\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1-V.geo_mean"
+ },
+ "x6.li.c1v.arith": {
+  "value": "$8.11\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.C1-V.arith_mean"
+ },
+ "x6.li.loc.geo": {
+  "value": "$4.99\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.LOC.geo_mean"
+ },
+ "x6.li.loc.arith": {
+  "value": "$6.28\\times10^{-4}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.LOC.arith_mean"
+ },
+ "x6.li.inh.geo": {
+  "value": "$1.70\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.INH.geo_mean"
+ },
+ "x6.li.inh.arith": {
+  "value": "$2.00\\times10^{-3}$",
+  "source": "exploratory_v3_x4x8.json:X6.per_model.llama-instruct.INH.arith_mean"
+ },
+ "x7a.li.b1ci": {
+  "value": "$[+0.449, +0.767]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.beta1_ci95"
+ },
+ "x7a.li.xbar": {
+  "value": "$-0.519$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.x_bar"
+ },
+ "x7a.li.xbarci": {
+  "value": "$[-0.523, -0.516]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.x_bar_ci95"
+ },
+ "x7a.li.gamma": {
+  "value": "$+1.070$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.gamma"
+ },
+ "x7a.li.gammaci": {
+  "value": "$[+0.765, +1.369]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.gamma_ci95"
+ },
+ "x7a.li.neg": {
+  "value": "$1.0000$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.share_steps_x_negative"
+ },
+ "x7a.li.nneg": {
+  "value": "11{,}146",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.share_steps_x_negative x n_steps"
+ },
+ "x7a.li.nsteps": {
+  "value": "11{,}146",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.n_steps"
+ },
+ "x7a.li.xval": {
+  "value": "$+0.289$",
+  "source": "exploratory_v3_x4x8.json:X7.X7a.llama-instruct.x_bar_val"
+ },
+ "x7b.li.b1": {
+  "value": "$-0.156$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-instruct.beta1"
+ },
+ "x7b.li.b1ci": {
+  "value": "$[-0.236, -0.076]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-instruct.beta1_ci95"
+ },
+ "x7b.li.f": {
+  "value": "$-1.94$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-instruct.fraction"
+ },
+ "x7b.li.fci": {
+  "value": "$[-7.63, -0.13]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-instruct.fraction_ci95"
+ },
+ "x7b.li.band": {
+  "value": "no",
+  "source": "exploratory_v3_x4x8.json:X7.X7b joint rank-based (P_logit, P_val).llama-instruct.band"
+ },
+ "x7c.li.b1": {
+  "value": "$-0.137$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-instruct.beta1"
+ },
+ "x7c.li.b1ci": {
+  "value": "$[-0.218, -0.058]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-instruct.beta1_ci95"
+ },
+ "x7c.li.f": {
+  "value": "$-1.59$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-instruct.fraction"
+ },
+ "x7c.li.fci": {
+  "value": "$[-6.84, +0.13]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-instruct.fraction_ci95"
+ },
+ "x7c.li.band": {
+  "value": "no",
+  "source": "exploratory_v3_x4x8.json:X7.X7c rank-based P_logit only (control).llama-instruct.band"
+ },
+ "x8.li.inh": {
+  "value": "77",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.INH.geo_ratio x100"
+ },
+ "x8.li.inhci": {
+  "value": "$[75, 80]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.INH.geo_ratio_ci95 x100"
+ },
+ "x8.li.loc": {
+  "value": "23",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.LOC.geo_ratio x100"
+ },
+ "x8.li.locci": {
+  "value": "$[21, 24]$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.LOC.geo_ratio_ci95 x100"
+ },
+ "x8.li.share": {
+  "value": "76",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.INH_share_of_INH_plus_LOC x100"
+ },
+ "arch.li.locpct": {
+  "value": "3.4",
+  "source": "locked config.json of llama-instruct: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "arch.li.potency": {
+  "value": "$7$",
+  "source": "exploratory_v3_x4x8.json:X8.per_model.llama-instruct.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "x10.li.K.robs": {
+  "value": "$3.15$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.K.R_obs"
+ },
+ "x10.li.K.rpred": {
+  "value": "$3.69$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.K.R_pred"
+ },
+ "x10.li.K.E": {
+  "value": "$-0.16$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.K.excess_E"
+ },
+ "x10.li.K.Eci": {
+  "value": "$[-0.18, -0.13]$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.K.excess_E_ci95"
+ },
+ "x10.li.K.ratio": {
+  "value": "$0.85$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.K.R_obs_over_R_pred"
+ },
+ "x10.li.V.robs": {
+  "value": "$0.34$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.V.R_obs"
+ },
+ "x10.li.V.rpred": {
+  "value": "$0.27$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.V.R_pred"
+ },
+ "x10.li.V.E": {
+  "value": "$+0.24$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.V.excess_E"
+ },
+ "x10.li.V.Eci": {
+  "value": "$[+0.22, +0.26]$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.V.excess_E_ci95"
+ },
+ "x10.li.V.ratio": {
+  "value": "$1.27$",
+  "source": "exploratory_v3_x10.json:per_model.llama-instruct.V.R_obs_over_R_pred"
+ },
+ "x11.li.B": {
+  "value": "$43.3$",
+  "source": "exploratory_v3_x11.json:per_model.llama-instruct.B"
+ },
+ "x11.li.Bq": {
+  "value": "$44.3$",
+  "source": "exploratory_v3_x11.json:per_model.llama-instruct.B_q"
+ },
+ "x11.li.B1": {
+  "value": "$43.9$",
+  "source": "exploratory_v3_x11.json:per_model.llama-instruct.B_1"
+ },
+ "x11.li.dil": {
+  "value": "$0.75$",
+  "source": "exploratory_v3_x11.json:per_model.llama-instruct.dilution_gC1V_over_gQO"
+ },
+ "x11.li.dilci": {
+  "value": "$[0.71, 0.79]$",
+  "source": "exploratory_v3_x11.json:per_model.llama-instruct.dilution_ci95"
+ },
+ "x9a.li.A": {
+  "value": "$-0.015$",
+  "source": "x9_results.json:per_model.llama-instruct.a.test.estimate"
+ },
+ "x9a.li.Aci": {
+  "value": "$[-0.021, -0.009]$",
+  "source": "x9_results.json:per_model.llama-instruct.a.test.ci95"
+ },
+ "x9a.li.holm": {
+  "value": "$<0.001$",
+  "source": "x9_results.json:per_model.llama-instruct.a.holm_p"
+ },
+ "x9a.li.verdict": {
+  "value": "supported",
+  "source": "x9_results.json:per_model.llama-instruct.a.verdict"
+ },
+ "x9a.li.F": {
+  "value": "$0.123$",
+  "source": "x9_results.json:per_model.llama-instruct.a.F_mean"
+ },
+ "x9a.li.F0": {
+  "value": "$0.101$",
+  "source": "x9_results.json:per_model.llama-instruct.a.F_per_layer[0].F"
+ },
+ "x9a.li.rho": {
+  "value": "$+0.20$",
+  "source": "x9_results.json:per_model.llama-instruct.a.spearman_lnF_vs_locked_theta_NATK_C1K.rho"
+ },
+ "x9a.li.rhoci": {
+  "value": "$[-0.08, +0.47]$",
+  "source": "x9_results.json:per_model.llama-instruct.a.spearman_lnF_vs_locked_theta_NATK_C1K.ci95"
+ },
+ "x9b.li.G": {
+  "value": "$+0.01$",
+  "source": "x9_results.json:per_model.llama-instruct.b.G"
+ },
+ "x9b.li.Gci": {
+  "value": "$[-0.00, +0.03]$",
+  "source": "x9_results.json:per_model.llama-instruct.b.G_ci95"
+ },
+ "x9b.li.verdict": {
+  "value": "descriptive",
+  "source": "x9_results.json:per_model.llama-instruct.b.verdict"
+ },
+ "x9b.li.EK": {
+  "value": "$-0.18$",
+  "source": "x9_results.json:per_model.llama-instruct.b.E_Kstar"
+ },
+ "x9b.li.EL0": {
+  "value": "$-0.19$",
+  "source": "x9_results.json:per_model.llama-instruct.b.E_L0"
+ },
+ "x9b.li.EL0ci": {
+  "value": "$[-0.25, -0.14]$",
+  "source": "x9_results.json:per_model.llama-instruct.b.E_L0_ci95"
+ },
+ "x9c.li.drho": {
+  "value": "$+0.0039$",
+  "source": "x9_results.json:per_model.llama-instruct.c.P_logit.delta_rho.mean"
+ },
+ "x9c.li.drhoci": {
+  "value": "$[+0.0017, +0.0060]$",
+  "source": "x9_results.json:per_model.llama-instruct.c.P_logit.delta_rho.ci95"
+ },
+ "x9c.li.D": {
+  "value": "$+0.016$",
+  "source": "x9_results.json:per_model.llama-instruct.c.P_logit.D.mean"
+ },
+ "x9c.li.D0": {
+  "value": "$+0.022$",
+  "source": "x9_results.json:per_model.llama-instruct.c.P_logit.D_no_l0.mean"
+ },
+ "x9d.li.L0": {
+  "value": "$3.9$",
+  "source": "x9_results.json:per_model.llama-instruct.d.per_layer[0].median"
+ },
+ "x9d.li.restmax": {
+  "value": "$2.6$",
+  "source": "max over layers >= 1 of x9_results.json:per_model.llama-instruct.d.per_layer.median"
+ },
+ "x9d.li.restmed": {
+  "value": "$1.72$",
+  "source": "median over layers >= 1 of x9_results.json:per_model.llama-instruct.d.per_layer.median"
+ },
+ "x9d.li.biglayers": {
+  "value": "none",
+  "source": "layers >= 1 with x9_results.json:per_model.llama-instruct.d.per_layer.median > 5"
+ },
+ "x9d.li.sK": {
+  "value": "$1.81$",
+  "source": "x9_results.json:per_model.llama-instruct.d.s_K"
+ },
+ "x5.pooled.est": {
+  "value": "$+0.025$",
+  "source": "exploratory_v3_x4x8.json:X5.pooled_mean_over_models.estimate"
+ },
+ "x5.pooled.ci": {
+  "value": "$[+0.023, +0.027]$",
+  "source": "exploratory_v3_x4x8.json:X5.pooled_mean_over_models.ci95"
+ },
+ "x7d.FJ": {
+  "value": "$+0.79$",
+  "source": "exploratory_v3_x4x8.json:X7.X7d.F_J"
+ },
+ "x7d.FJci": {
+  "value": "$[-0.05, +0.98]$",
+  "source": "exploratory_v3_x4x8.json:X7.X7d.F_J_ci95"
+ },
+ "x7d.band": {
+  "value": "inconclusive",
+  "source": "exploratory_v3_x4x8.json:X7.X7d.band"
+ },
+ "x12.q.est": {
+  "value": "$-0.082$",
+  "source": "exploratory_v3_x12.json:effects.Qwen tuning effect (instruct - base).estimate"
+ },
+ "x12.q.ci": {
+  "value": "$[-0.175, +0.011]$",
+  "source": "exploratory_v3_x12.json:effects.Qwen tuning effect (instruct - base).ci95"
+ },
+ "x12.q.holm": {
+  "value": "$0.169$",
+  "source": "exploratory_v3_x12.json:effects.Qwen tuning effect (instruct - base).holm_p"
+ },
+ "x12.l.est": {
+  "value": "$+0.066$",
+  "source": "exploratory_v3_x12.json:effects.Llama tuning effect (instruct - base).estimate"
+ },
+ "x12.l.ci": {
+  "value": "$[-0.017, +0.150]$",
+  "source": "exploratory_v3_x12.json:effects.Llama tuning effect (instruct - base).ci95"
+ },
+ "x12.l.holm": {
+  "value": "$0.169$",
+  "source": "exploratory_v3_x12.json:effects.Llama tuning effect (instruct - base).holm_p"
+ },
+ "rng.x4logitqwen.min": {
+  "value": "$-0.003$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X4.per_model.qwen-*.P_logit.mean"
+ },
+ "rng.x4logitqwen.max": {
+  "value": "$+0.005$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X4.per_model.qwen-*.P_logit.mean"
+ },
+ "rng.x4logitllama.min": {
+  "value": "$+0.121$",
+  "source": "min over ['llama-base', 'llama-instruct'] of exploratory_v3_x4x8.json:X4.per_model.llama-*.P_logit.mean"
+ },
+ "rng.x4logitllama.max": {
+  "value": "$+0.236$",
+  "source": "max over ['llama-base', 'llama-instruct'] of exploratory_v3_x4x8.json:X4.per_model.llama-*.P_logit.mean"
+ },
+ "rng.x4norm.min": {
+  "value": "$+0.055$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X4.per_model.*.P_norm.mean"
+ },
+ "rng.x4norm.max": {
+  "value": "$+0.157$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X4.per_model.*.P_norm.mean"
+ },
+ "rng.x4all.min": {
+  "value": "$-0.037$",
+  "source": "min over ['llama-base/P_anormK', 'llama-base/P_logit', 'llama-base/P_norm', 'llama-base/P_val', 'llama-instruct/P_anormK', 'llama-instruct/P_logit', 'llama-instruct/P_norm', 'llama-instruct/P_val', 'qwen-base/P_anormK', 'qwen-base/P_logit', 'qwen-base/P_norm', 'qwen-base/P_val', 'qwen-instruct/P_anormK', 'qwen-instruct/P_logit', 'qwen-instruct/P_norm', 'qwen-instruct/P_val'] of exploratory_v3_x4x8.json:X4.per_model.*.*.mean"
+ },
+ "rng.x4all.max": {
+  "value": "$+0.236$",
+  "source": "max over ['llama-base/P_anormK', 'llama-base/P_logit', 'llama-base/P_norm', 'llama-base/P_val', 'llama-instruct/P_anormK', 'llama-instruct/P_logit', 'llama-instruct/P_norm', 'llama-instruct/P_val', 'qwen-base/P_anormK', 'qwen-base/P_logit', 'qwen-base/P_norm', 'qwen-base/P_val', 'qwen-instruct/P_anormK', 'qwen-instruct/P_logit', 'qwen-instruct/P_norm', 'qwen-instruct/P_val'] of exploratory_v3_x4x8.json:X4.per_model.*.*.mean"
+ },
+ "rng.x5.min": {
+  "value": "$+0.023$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X5.per_model.*.estimate"
+ },
+ "rng.x5.max": {
+  "value": "$+0.026$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X5.per_model.*.estimate"
+ },
+ "rng.x6nat.min": {
+  "value": "$2.20\\times10^{-3}$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X6.per_model.*.NAT.geo_mean"
+ },
+ "rng.x6nat.max": {
+  "value": "$6.22\\times10^{-3}$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X6.per_model.*.NAT.geo_mean"
+ },
+ "rng.x7xbar.min": {
+  "value": "$-0.726$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X7.X7a.*.x_bar"
+ },
+ "rng.x7xbar.max": {
+  "value": "$-0.519$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X7.X7a.*.x_bar"
+ },
+ "rng.x7neg.min": {
+  "value": "$1.0000$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X7.X7a.*.share_steps_x_negative"
+ },
+ "rng.x7neg.max": {
+  "value": "$1.0000$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X7.X7a.*.share_steps_x_negative"
+ },
+ "rng.x8inh.min": {
+  "value": "67",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.INH.geo_ratio x100"
+ },
+ "rng.x8inh.max": {
+  "value": "77",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.INH.geo_ratio x100"
+ },
+ "rng.x8loc.min": {
+  "value": "22",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.LOC.geo_ratio x100"
+ },
+ "rng.x8loc.max": {
+  "value": "28",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.LOC.geo_ratio x100"
+ },
+ "rng.x8share.min": {
+  "value": "71",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.INH_share_of_INH_plus_LOC x100"
+ },
+ "rng.x8share.max": {
+  "value": "77",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.INH_share_of_INH_plus_LOC x100"
+ },
+ "rng.archloc.min": {
+  "value": "1.5",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of locked config.json: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "rng.archloc.max": {
+  "value": "3.4",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of locked config.json: (k_proj + v_proj weights) / all NF4 linear weights x100"
+ },
+ "rng.archpotency.min": {
+  "value": "$7$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "rng.archpotency.max": {
+  "value": "$18$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x4x8.json:X8.per_model.*.LOC.geo_ratio / LOC share of NF4 linear weights"
+ },
+ "rng.x10Kqwen.min": {
+  "value": "$21$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.qwen-*.K.R_obs_over_R_pred"
+ },
+ "rng.x10Kqwen.max": {
+  "value": "$26$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.qwen-*.K.R_obs_over_R_pred"
+ },
+ "rng.x10Krobsqwen.min": {
+  "value": "$73$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.qwen-*.K.R_obs"
+ },
+ "rng.x10Krobsqwen.max": {
+  "value": "$95$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.qwen-*.K.R_obs"
+ },
+ "rng.x10Kllama.min": {
+  "value": "$0.81$",
+  "source": "min over ['llama-base', 'llama-instruct'] of exploratory_v3_x10.json:per_model.llama-*.K.R_obs_over_R_pred"
+ },
+ "rng.x10Kllama.max": {
+  "value": "$0.85$",
+  "source": "max over ['llama-base', 'llama-instruct'] of exploratory_v3_x10.json:per_model.llama-*.K.R_obs_over_R_pred"
+ },
+ "rng.x10V.min": {
+  "value": "$1.16$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.*.V.R_obs_over_R_pred"
+ },
+ "rng.x10V.max": {
+  "value": "$1.27$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x10.json:per_model.*.V.R_obs_over_R_pred"
+ },
+ "rng.x10pred.min": {
+  "value": "$3.6$",
+  "source": "min over ['llama-base/K', 'llama-instruct/K', 'qwen-base/K', 'qwen-instruct/K'] of exploratory_v3_x10.json:per_model.*.K.R_pred"
+ },
+ "rng.x10pred.max": {
+  "value": "$4.0$",
+  "source": "max over ['llama-base/K', 'llama-instruct/K', 'qwen-base/K', 'qwen-instruct/K'] of exploratory_v3_x10.json:per_model.*.K.R_pred"
+ },
+ "rng.x11B.min": {
+  "value": "$43$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x11.json:per_model.*.B"
+ },
+ "rng.x11B.max": {
+  "value": "$56$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x11.json:per_model.*.B"
+ },
+ "rng.x11dil.min": {
+  "value": "$0.67$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x11.json:per_model.*.dilution_gC1V_over_gQO"
+ },
+ "rng.x11dil.max": {
+  "value": "$0.75$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exploratory_v3_x11.json:per_model.*.dilution_gC1V_over_gQO"
+ },
+ "rng.x9aF.min": {
+  "value": "$0.118$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.F_mean"
+ },
+ "rng.x9aF.max": {
+  "value": "$0.124$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.F_mean"
+ },
+ "rng.x9aF0qwen.min": {
+  "value": "$0.013$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.a.F_per_layer[0].F"
+ },
+ "rng.x9aF0qwen.max": {
+  "value": "$0.022$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.a.F_per_layer[0].F"
+ },
+ "rng.x9aA.min": {
+  "value": "$-0.054$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.test.estimate"
+ },
+ "rng.x9aA.max": {
+  "value": "$-0.007$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.test.estimate"
+ },
+ "rng.x9adeficit.min": {
+  "value": "0.7",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of 1 - x9_results.json:per_model.*.a.F_mean / 0.125, x100"
+ },
+ "rng.x9adeficit.max": {
+  "value": "5.3",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of 1 - x9_results.json:per_model.*.a.F_mean / 0.125, x100"
+ },
+ "rng.x9arho.min": {
+  "value": "$-0.03$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.spearman.rho"
+ },
+ "rng.x9arho.max": {
+  "value": "$+0.20$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x9_results.json:per_model.*.a.spearman.rho"
+ },
+ "rng.x9bGqwen.min": {
+  "value": "$+0.38$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.b.G"
+ },
+ "rng.x9bGqwen.max": {
+  "value": "$+0.43$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.b.G"
+ },
+ "rng.x9bEL0qwen.min": {
+  "value": "$+1.22$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.b.E_L0"
+ },
+ "rng.x9bEL0qwen.max": {
+  "value": "$+1.43$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.b.E_L0"
+ },
+ "rng.x9bEL0qwenratio.min": {
+  "value": "$3.4$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of exp x9_results.json:per_model.qwen-*.b.E_L0"
+ },
+ "rng.x9bEL0qwenratio.max": {
+  "value": "$4.2$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of exp x9_results.json:per_model.qwen-*.b.E_L0"
+ },
+ "rng.x9cabs.min": {
+  "value": "$0.000$",
+  "source": "min over ['llama-base/P_anormK', 'llama-base/P_logit', 'llama-base/P_val', 'llama-instruct/P_anormK', 'llama-instruct/P_logit', 'llama-instruct/P_val', 'qwen-base/P_anormK', 'qwen-base/P_logit', 'qwen-base/P_val', 'qwen-instruct/P_anormK', 'qwen-instruct/P_logit', 'qwen-instruct/P_val'] of |x9_results.json:per_model.*.c.*.delta_rho.mean|"
+ },
+ "rng.x9cabs.max": {
+  "value": "$0.004$",
+  "source": "max over ['llama-base/P_anormK', 'llama-base/P_logit', 'llama-base/P_val', 'llama-instruct/P_anormK', 'llama-instruct/P_logit', 'llama-instruct/P_val', 'qwen-base/P_anormK', 'qwen-base/P_logit', 'qwen-base/P_val', 'qwen-instruct/P_anormK', 'qwen-instruct/P_logit', 'qwen-instruct/P_val'] of |x9_results.json:per_model.*.c.*.delta_rho.mean|"
+ },
+ "rng.x9dL0qwen.min": {
+  "value": "$131$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.d.per_layer[0].median"
+ },
+ "rng.x9dL0qwen.max": {
+  "value": "$143$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x9_results.json:per_model.qwen-*.d.per_layer[0].median"
+ },
+ "rng.x9dL0llama.min": {
+  "value": "$3.9$",
+  "source": "min over ['llama-base', 'llama-instruct'] of x9_results.json:per_model.llama-*.d.per_layer[0].median"
+ },
+ "rng.x9dL0llama.max": {
+  "value": "$4.1$",
+  "source": "max over ['llama-base', 'llama-instruct'] of x9_results.json:per_model.llama-*.d.per_layer[0].median"
+ },
+ "rng.x9dbigqwen.min": {
+  "value": "$7.5$",
+  "source": "min over ['qwen-base/1', 'qwen-base/2', 'qwen-base/8', 'qwen-instruct/1', 'qwen-instruct/2', 'qwen-instruct/8'] of x9_results.json:per_model.qwen-*.d.per_layer[l>=1].median > 5"
+ },
+ "rng.x9dbigqwen.max": {
+  "value": "$11.4$",
+  "source": "max over ['qwen-base/1', 'qwen-base/2', 'qwen-base/8', 'qwen-instruct/1', 'qwen-instruct/2', 'qwen-instruct/8'] of x9_results.json:per_model.qwen-*.d.per_layer[l>=1].median > 5"
+ },
+ "x9.gpu.qb": {
+  "value": "0.341",
+  "source": "v3_runs_x9/gpu_ledger.jsonl blocks x9:qwen-base"
+ },
+ "x9.gpu.qi": {
+  "value": "0.357",
+  "source": "v3_runs_x9/gpu_ledger.jsonl blocks x9:qwen-instruct"
+ },
+ "x9.gpu.lb": {
+  "value": "0.225",
+  "source": "v3_runs_x9/gpu_ledger.jsonl blocks x9:llama-base"
+ },
+ "x9.gpu.li": {
+  "value": "0.253",
+  "source": "v3_runs_x9/gpu_ledger.jsonl blocks x9:llama-instruct"
+ },
+ "x9.gpu.total": {
+  "value": "1.175",
+  "source": "sum v3_runs_x9/gpu_ledger.jsonl seconds / 3600"
+ },
+ "gpu.v3x9": {
+  "value": "24.92",
+  "source": "v3 ledger + X9 ledger, hours"
+ },
+ "x9.repro.n": {
+  "value": "200",
+  "source": "v3_runs_x9/*/reproduction.jsonl count"
+ },
+ "x9.mut.caught": {
+  "value": "13",
+  "source": "v3/phase7/x9_mutation_check.json:caught"
+ },
+ "x9.mut.total": {
+  "value": "13",
+  "source": "v3/phase7/x9_mutation_check.json:total"
+ },
+ "x9.cpu.pass": {
+  "value": "16",
+  "source": "v3/phase7/x9_cpu_validation.json: tiny tests passed"
+ },
+ "x9.cpu.total": {
+  "value": "16",
+  "source": "v3/phase7/x9_cpu_validation.json:tiny_tests_total"
+ },
+ "x9.repro.ok": {
+  "value": "200",
+  "source": "v3_runs_x9/*/reproduction.jsonl: ok, history match, bitwise NAT and NAT-K*"
+ },
+ "x13.gpu.qb": {
+  "value": "0.542",
+  "source": "v3_runs_x13/gpu_ledger.jsonl blocks x13:qwen-base"
+ },
+ "x13.gpu.qi": {
+  "value": "0.555",
+  "source": "v3_runs_x13/gpu_ledger.jsonl blocks x13:qwen-instruct"
+ },
+ "x13.gpu.lb": {
+  "value": "0.195",
+  "source": "v3_runs_x13/gpu_ledger.jsonl blocks x13:llama-base"
+ },
+ "x13.gpu.li": {
+  "value": "0.182",
+  "source": "v3_runs_x13/gpu_ledger.jsonl blocks x13:llama-instruct"
+ },
+ "x13.gpu.total": {
+  "value": "1.473",
+  "source": "sum v3_runs_x13/gpu_ledger.jsonl seconds / 3600"
+ },
+ "gpu.grand": {
+  "value": "26.39",
+  "source": "v3 ledger + X9 ledger + X13 ledger, hours"
+ },
+ "x13.n": {
+  "value": "40",
+  "source": "v3_runs_x13/design_x13.json:n (all models)"
+ },
+ "x13.proj.full": {
+  "value": "2.02",
+  "source": "design_x13.json:projection_steps[0]"
+ },
+ "x13.proj.final": {
+  "value": "1.62",
+  "source": "design_x13.json:projection_steps[-1]"
+ },
+ "x13.repro.n": {
+  "value": "160",
+  "source": "v3_runs_x13/*/reproduction.jsonl count"
+ },
+ "x13.repro.ok": {
+  "value": "160",
+  "source": "v3_runs_x13/*/reproduction.jsonl: ok, history, NAT bitwise"
+ },
+ "x13.mut.caught": {
+  "value": "18",
+  "source": "v3/phase8/x13_mutation_check.json:caught"
+ },
+ "x13.mut.total": {
+  "value": "18",
+  "source": "v3/phase8/x13_mutation_check.json:total"
+ },
+ "x13.cpu.pass": {
+  "value": "22",
+  "source": "x13_cpu_validation.json tiny passed"
+ },
+ "x13.cpu.total": {
+  "value": "22",
+  "source": "x13_cpu_validation.json:tiny_tests_total"
+ },
+ "x13.nc.steps": {
+  "value": "10{,}038",
+  "source": "v3_runs_x13/qwen-*/C1*-nc.jsonl nc_ok count"
+ },
+ "x13.nc.bad": {
+  "value": "0",
+  "source": "v3_runs_x13/qwen-*/C1*-nc.jsonl nc_ok false count"
+ },
+ "x13a.qb.K": {
+  "value": "$+2.629$",
+  "source": "x13_results.json:per_model.qwen-base.a.K.test.estimate"
+ },
+ "x13a.qb.K.ci": {
+  "value": "$[+2.576, +2.673]$",
+  "source": "x13_results.json:per_model.qwen-base.a.K.test.ci95"
+ },
+ "x13a.qb.K.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-base.a.K.verdict"
+ },
+ "x13a.qb.K.fac": {
+  "value": "$13.9$",
+  "source": "exp x13_results.json:per_model.qwen-base.a.K.test.estimate"
+ },
+ "x13b.qb.K": {
+  "value": "$-0.033$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.theta_cen.estimate"
+ },
+ "x13b.qb.K.ci": {
+  "value": "$[-0.125, +0.057]$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.theta_cen.ci95"
+ },
+ "x13b.qb.K.holm": {
+  "value": "$0.983$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.holm_p"
+ },
+ "x13b.qb.K.dir": {
+  "value": "inconclusive",
+  "source": "x13_results.json:per_model.qwen-base.b.K.direction"
+ },
+ "x13b.qb.K.G": {
+  "value": "$-0.03$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.G"
+ },
+ "x13b.qb.K.Gci": {
+  "value": "$[-0.11, +0.05]$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.G_ci95"
+ },
+ "x13b.qb.K.band": {
+  "value": "---",
+  "source": "x13_results.json:per_model.qwen-base.b.K.band"
+ },
+ "x13b.qb.K.man": {
+  "value": "$-1.31$",
+  "source": "x13_results.json:per_model.qwen-base.b.K.manipulation.estimate"
+ },
+ "x13b.qb.K.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.qwen-base.b.K.manipulation_ok"
+ },
+ "x13a.qb.V": {
+  "value": "$+2.476$",
+  "source": "x13_results.json:per_model.qwen-base.a.V.test.estimate"
+ },
+ "x13a.qb.V.ci": {
+  "value": "$[+2.419, +2.524]$",
+  "source": "x13_results.json:per_model.qwen-base.a.V.test.ci95"
+ },
+ "x13a.qb.V.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-base.a.V.verdict"
+ },
+ "x13a.qb.V.fac": {
+  "value": "$11.9$",
+  "source": "exp x13_results.json:per_model.qwen-base.a.V.test.estimate"
+ },
+ "x13b.qb.V": {
+  "value": "$-0.289$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.theta_cen.estimate"
+ },
+ "x13b.qb.V.ci": {
+  "value": "$[-0.373, -0.210]$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.theta_cen.ci95"
+ },
+ "x13b.qb.V.holm": {
+  "value": "$<0.001$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.holm_p"
+ },
+ "x13b.qb.V.dir": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-base.b.V.direction"
+ },
+ "x13b.qb.V.G": {
+  "value": "$+0.34$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.G"
+ },
+ "x13b.qb.V.Gci": {
+  "value": "$[+0.25, +0.43]$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.G_ci95"
+ },
+ "x13b.qb.V.band": {
+  "value": "partial",
+  "source": "x13_results.json:per_model.qwen-base.b.V.band"
+ },
+ "x13b.qb.V.man": {
+  "value": "$-1.85$",
+  "source": "x13_results.json:per_model.qwen-base.b.V.manipulation.estimate"
+ },
+ "x13b.qb.V.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.qwen-base.b.V.manipulation_ok"
+ },
+ "x13c.qb.Dc": {
+  "value": "$+0.025$",
+  "source": "x13_results.json:per_model.qwen-base.c.D_c.mean"
+ },
+ "x13c.qb.Dcci": {
+  "value": "$[+0.016, +0.033]$",
+  "source": "x13_results.json:per_model.qwen-base.c.D_c.ci95"
+ },
+ "x13c.qb.spc": {
+  "value": "$+0.029$",
+  "source": "x13_results.json:per_model.qwen-base.c.Sp_P_logit_c.mean"
+ },
+ "x13c.qb.lnR": {
+  "value": "$-0.67$",
+  "source": "x13_results.json:per_model.qwen-base.c.mean_ln_R.mean"
+ },
+ "x13c.qb.R": {
+  "value": "$0.51$",
+  "source": "exp x13_results.json:per_model.qwen-base.c.mean_ln_R.mean"
+ },
+ "x13c.qb.A": {
+  "value": "$-0.035$",
+  "source": "x13_results.json:per_model.qwen-base.c.X9a_A_same_problems.mean"
+ },
+ "x13c.qb.rho": {
+  "value": "$-0.05$",
+  "source": "x13_results.json:per_model.qwen-base.c.spearman_lnR_vs_locked_theta"
+ },
+ "x13c.qb.lnR0": {
+  "value": "$-2.35$",
+  "source": "x13_results.json:per_model.qwen-base.c.ln_R_per_layer[0]"
+ },
+ "x13a.qi.K": {
+  "value": "$+2.475$",
+  "source": "x13_results.json:per_model.qwen-instruct.a.K.test.estimate"
+ },
+ "x13a.qi.K.ci": {
+  "value": "$[+2.409, +2.536]$",
+  "source": "x13_results.json:per_model.qwen-instruct.a.K.test.ci95"
+ },
+ "x13a.qi.K.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-instruct.a.K.verdict"
+ },
+ "x13a.qi.K.fac": {
+  "value": "$11.9$",
+  "source": "exp x13_results.json:per_model.qwen-instruct.a.K.test.estimate"
+ },
+ "x13b.qi.K": {
+  "value": "$-0.012$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.theta_cen.estimate"
+ },
+ "x13b.qi.K.ci": {
+  "value": "$[-0.105, +0.076]$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.theta_cen.ci95"
+ },
+ "x13b.qi.K.holm": {
+  "value": "$0.983$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.holm_p"
+ },
+ "x13b.qi.K.dir": {
+  "value": "inconclusive",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.direction"
+ },
+ "x13b.qi.K.G": {
+  "value": "$-0.01$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.G"
+ },
+ "x13b.qi.K.Gci": {
+  "value": "$[-0.10, +0.06]$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.G_ci95"
+ },
+ "x13b.qi.K.band": {
+  "value": "---",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.band"
+ },
+ "x13b.qi.K.man": {
+  "value": "$-1.37$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.manipulation.estimate"
+ },
+ "x13b.qi.K.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.qwen-instruct.b.K.manipulation_ok"
+ },
+ "x13a.qi.V": {
+  "value": "$+2.231$",
+  "source": "x13_results.json:per_model.qwen-instruct.a.V.test.estimate"
+ },
+ "x13a.qi.V.ci": {
+  "value": "$[+2.137, +2.309]$",
+  "source": "x13_results.json:per_model.qwen-instruct.a.V.test.ci95"
+ },
+ "x13a.qi.V.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-instruct.a.V.verdict"
+ },
+ "x13a.qi.V.fac": {
+  "value": "$9.3$",
+  "source": "exp x13_results.json:per_model.qwen-instruct.a.V.test.estimate"
+ },
+ "x13b.qi.V": {
+  "value": "$-0.243$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.theta_cen.estimate"
+ },
+ "x13b.qi.V.ci": {
+  "value": "$[-0.316, -0.172]$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.theta_cen.ci95"
+ },
+ "x13b.qi.V.holm": {
+  "value": "$<0.001$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.holm_p"
+ },
+ "x13b.qi.V.dir": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.direction"
+ },
+ "x13b.qi.V.G": {
+  "value": "$+0.33$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.G"
+ },
+ "x13b.qi.V.Gci": {
+  "value": "$[+0.22, +0.48]$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.G_ci95"
+ },
+ "x13b.qi.V.band": {
+  "value": "partial",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.band"
+ },
+ "x13b.qi.V.man": {
+  "value": "$-1.80$",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.manipulation.estimate"
+ },
+ "x13b.qi.V.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.qwen-instruct.b.V.manipulation_ok"
+ },
+ "x13c.qi.Dc": {
+  "value": "$+0.025$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.D_c.mean"
+ },
+ "x13c.qi.Dcci": {
+  "value": "$[+0.017, +0.033]$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.D_c.ci95"
+ },
+ "x13c.qi.spc": {
+  "value": "$+0.020$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.Sp_P_logit_c.mean"
+ },
+ "x13c.qi.lnR": {
+  "value": "$-0.70$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.mean_ln_R.mean"
+ },
+ "x13c.qi.R": {
+  "value": "$0.50$",
+  "source": "exp x13_results.json:per_model.qwen-instruct.c.mean_ln_R.mean"
+ },
+ "x13c.qi.A": {
+  "value": "$-0.056$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.X9a_A_same_problems.mean"
+ },
+ "x13c.qi.rho": {
+  "value": "$+0.24$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.spearman_lnR_vs_locked_theta"
+ },
+ "x13c.qi.lnR0": {
+  "value": "$-1.68$",
+  "source": "x13_results.json:per_model.qwen-instruct.c.ln_R_per_layer[0]"
+ },
+ "x13a.lb.K": {
+  "value": "$+2.459$",
+  "source": "x13_results.json:per_model.llama-base.a.K.test.estimate"
+ },
+ "x13a.lb.K.ci": {
+  "value": "$[+2.363, +2.544]$",
+  "source": "x13_results.json:per_model.llama-base.a.K.test.ci95"
+ },
+ "x13a.lb.K.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-base.a.K.verdict"
+ },
+ "x13a.lb.K.fac": {
+  "value": "$11.7$",
+  "source": "exp x13_results.json:per_model.llama-base.a.K.test.estimate"
+ },
+ "x13b.lb.K": {
+  "value": "$+0.087$",
+  "source": "x13_results.json:per_model.llama-base.b.K.theta_cen.estimate"
+ },
+ "x13b.lb.K.ci": {
+  "value": "$[+0.006, +0.158]$",
+  "source": "x13_results.json:per_model.llama-base.b.K.theta_cen.ci95"
+ },
+ "x13b.lb.K.holm": {
+  "value": "$0.086$",
+  "source": "x13_results.json:per_model.llama-base.b.K.holm_p"
+ },
+ "x13b.lb.K.dir": {
+  "value": "inconclusive",
+  "source": "x13_results.json:per_model.llama-base.b.K.direction"
+ },
+ "x13b.lb.K.G": {
+  "value": "$+0.09$",
+  "source": "x13_results.json:per_model.llama-base.b.K.G"
+ },
+ "x13b.lb.K.Gci": {
+  "value": "$[+0.01, +0.17]$",
+  "source": "x13_results.json:per_model.llama-base.b.K.G_ci95"
+ },
+ "x13b.lb.K.band": {
+  "value": "---",
+  "source": "x13_results.json:per_model.llama-base.b.K.band"
+ },
+ "x13b.lb.K.man": {
+  "value": "$-1.52$",
+  "source": "x13_results.json:per_model.llama-base.b.K.manipulation.estimate"
+ },
+ "x13b.lb.K.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.llama-base.b.K.manipulation_ok"
+ },
+ "x13a.lb.V": {
+  "value": "$+2.536$",
+  "source": "x13_results.json:per_model.llama-base.a.V.test.estimate"
+ },
+ "x13a.lb.V.ci": {
+  "value": "$[+2.435, +2.625]$",
+  "source": "x13_results.json:per_model.llama-base.a.V.test.ci95"
+ },
+ "x13a.lb.V.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-base.a.V.verdict"
+ },
+ "x13a.lb.V.fac": {
+  "value": "$12.6$",
+  "source": "exp x13_results.json:per_model.llama-base.a.V.test.estimate"
+ },
+ "x13b.lb.V": {
+  "value": "$-0.310$",
+  "source": "x13_results.json:per_model.llama-base.b.V.theta_cen.estimate"
+ },
+ "x13b.lb.V.ci": {
+  "value": "$[-0.379, -0.241]$",
+  "source": "x13_results.json:per_model.llama-base.b.V.theta_cen.ci95"
+ },
+ "x13b.lb.V.holm": {
+  "value": "$<0.001$",
+  "source": "x13_results.json:per_model.llama-base.b.V.holm_p"
+ },
+ "x13b.lb.V.dir": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-base.b.V.direction"
+ },
+ "x13b.lb.V.G": {
+  "value": "$+0.32$",
+  "source": "x13_results.json:per_model.llama-base.b.V.G"
+ },
+ "x13b.lb.V.Gci": {
+  "value": "$[+0.24, +0.40]$",
+  "source": "x13_results.json:per_model.llama-base.b.V.G_ci95"
+ },
+ "x13b.lb.V.band": {
+  "value": "partial",
+  "source": "x13_results.json:per_model.llama-base.b.V.band"
+ },
+ "x13b.lb.V.man": {
+  "value": "$-1.74$",
+  "source": "x13_results.json:per_model.llama-base.b.V.manipulation.estimate"
+ },
+ "x13b.lb.V.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.llama-base.b.V.manipulation_ok"
+ },
+ "x13c.lb.Dc": {
+  "value": "$+0.020$",
+  "source": "x13_results.json:per_model.llama-base.c.D_c.mean"
+ },
+ "x13c.lb.Dcci": {
+  "value": "$[+0.012, +0.027]$",
+  "source": "x13_results.json:per_model.llama-base.c.D_c.ci95"
+ },
+ "x13c.lb.spc": {
+  "value": "$+0.248$",
+  "source": "x13_results.json:per_model.llama-base.c.Sp_P_logit_c.mean"
+ },
+ "x13c.lb.lnR": {
+  "value": "$-0.47$",
+  "source": "x13_results.json:per_model.llama-base.c.mean_ln_R.mean"
+ },
+ "x13c.lb.R": {
+  "value": "$0.62$",
+  "source": "exp x13_results.json:per_model.llama-base.c.mean_ln_R.mean"
+ },
+ "x13c.lb.A": {
+  "value": "$-0.008$",
+  "source": "x13_results.json:per_model.llama-base.c.X9a_A_same_problems.mean"
+ },
+ "x13c.lb.rho": {
+  "value": "$-0.05$",
+  "source": "x13_results.json:per_model.llama-base.c.spearman_lnR_vs_locked_theta"
+ },
+ "x13c.lb.lnR0": {
+  "value": "$-0.53$",
+  "source": "x13_results.json:per_model.llama-base.c.ln_R_per_layer[0]"
+ },
+ "x13a.li.K": {
+  "value": "$+2.291$",
+  "source": "x13_results.json:per_model.llama-instruct.a.K.test.estimate"
+ },
+ "x13a.li.K.ci": {
+  "value": "$[+2.199, +2.373]$",
+  "source": "x13_results.json:per_model.llama-instruct.a.K.test.ci95"
+ },
+ "x13a.li.K.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-instruct.a.K.verdict"
+ },
+ "x13a.li.K.fac": {
+  "value": "$9.9$",
+  "source": "exp x13_results.json:per_model.llama-instruct.a.K.test.estimate"
+ },
+ "x13b.li.K": {
+  "value": "$+0.087$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.theta_cen.estimate"
+ },
+ "x13b.li.K.ci": {
+  "value": "$[+0.022, +0.155]$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.theta_cen.ci95"
+ },
+ "x13b.li.K.holm": {
+  "value": "$0.054$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.holm_p"
+ },
+ "x13b.li.K.dir": {
+  "value": "inconclusive",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.direction"
+ },
+ "x13b.li.K.G": {
+  "value": "$+0.09$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.G"
+ },
+ "x13b.li.K.Gci": {
+  "value": "$[+0.03, +0.16]$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.G_ci95"
+ },
+ "x13b.li.K.band": {
+  "value": "---",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.band"
+ },
+ "x13b.li.K.man": {
+  "value": "$-2.08$",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.manipulation.estimate"
+ },
+ "x13b.li.K.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.llama-instruct.b.K.manipulation_ok"
+ },
+ "x13a.li.V": {
+  "value": "$+2.323$",
+  "source": "x13_results.json:per_model.llama-instruct.a.V.test.estimate"
+ },
+ "x13a.li.V.ci": {
+  "value": "$[+2.228, +2.407]$",
+  "source": "x13_results.json:per_model.llama-instruct.a.V.test.ci95"
+ },
+ "x13a.li.V.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-instruct.a.V.verdict"
+ },
+ "x13a.li.V.fac": {
+  "value": "$10.2$",
+  "source": "exp x13_results.json:per_model.llama-instruct.a.V.test.estimate"
+ },
+ "x13b.li.V": {
+  "value": "$-0.231$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.theta_cen.estimate"
+ },
+ "x13b.li.V.ci": {
+  "value": "$[-0.291, -0.168]$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.theta_cen.ci95"
+ },
+ "x13b.li.V.holm": {
+  "value": "$<0.001$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.holm_p"
+ },
+ "x13b.li.V.dir": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.direction"
+ },
+ "x13b.li.V.G": {
+  "value": "$+0.27$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.G"
+ },
+ "x13b.li.V.Gci": {
+  "value": "$[+0.20, +0.36]$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.G_ci95"
+ },
+ "x13b.li.V.band": {
+  "value": "partial",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.band"
+ },
+ "x13b.li.V.man": {
+  "value": "$-2.34$",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.manipulation.estimate"
+ },
+ "x13b.li.V.manok": {
+  "value": "yes",
+  "source": "x13_results.json:per_model.llama-instruct.b.V.manipulation_ok"
+ },
+ "x13c.li.Dc": {
+  "value": "$+0.012$",
+  "source": "x13_results.json:per_model.llama-instruct.c.D_c.mean"
+ },
+ "x13c.li.Dcci": {
+  "value": "$[+0.006, +0.019]$",
+  "source": "x13_results.json:per_model.llama-instruct.c.D_c.ci95"
+ },
+ "x13c.li.spc": {
+  "value": "$+0.126$",
+  "source": "x13_results.json:per_model.llama-instruct.c.Sp_P_logit_c.mean"
+ },
+ "x13c.li.lnR": {
+  "value": "$-0.46$",
+  "source": "x13_results.json:per_model.llama-instruct.c.mean_ln_R.mean"
+ },
+ "x13c.li.R": {
+  "value": "$0.63$",
+  "source": "exp x13_results.json:per_model.llama-instruct.c.mean_ln_R.mean"
+ },
+ "x13c.li.A": {
+  "value": "$-0.016$",
+  "source": "x13_results.json:per_model.llama-instruct.c.X9a_A_same_problems.mean"
+ },
+ "x13c.li.rho": {
+  "value": "$-0.18$",
+  "source": "x13_results.json:per_model.llama-instruct.c.spearman_lnR_vs_locked_theta"
+ },
+ "x13c.li.lnR0": {
+  "value": "$-0.63$",
+  "source": "x13_results.json:per_model.llama-instruct.c.ln_R_per_layer[0]"
+ },
+ "x13d.qb.c1": {
+  "value": "$-0.001$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.delta_theta.estimate"
+ },
+ "x13d.qb.c1.ci": {
+  "value": "$[-0.004, +0.001]$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.delta_theta.ci95"
+ },
+ "x13d.qb.c1.h": {
+  "value": "$0.065$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.h"
+ },
+ "x13d.qb.c1.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.verdict"
+ },
+ "x13d.qb.c1.gt5nc": {
+  "value": "0",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.steps_gt5_nc"
+ },
+ "x13d.qb.c1.gt5lock": {
+  "value": "483",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-C1.steps_gt5_locked"
+ },
+ "x13d.qb.c1k": {
+  "value": "$+0.001$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.delta_theta.estimate"
+ },
+ "x13d.qb.c1k.ci": {
+  "value": "$[-0.002, +0.004]$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.delta_theta.ci95"
+ },
+ "x13d.qb.c1k.h": {
+  "value": "$0.069$",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.h"
+ },
+ "x13d.qb.c1k.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.verdict"
+ },
+ "x13d.qb.c1k.gt5nc": {
+  "value": "0",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.steps_gt5_nc"
+ },
+ "x13d.qb.c1k.gt5lock": {
+  "value": "512",
+  "source": "x13_results.json:per_model.qwen-base.d.NAT-K-C1-K.steps_gt5_locked"
+ },
+ "x13d.qi.c1": {
+  "value": "$+0.001$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.delta_theta.estimate"
+ },
+ "x13d.qi.c1.ci": {
+  "value": "$[-0.001, +0.003]$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.delta_theta.ci95"
+ },
+ "x13d.qi.c1.h": {
+  "value": "$0.071$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.h"
+ },
+ "x13d.qi.c1.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.verdict"
+ },
+ "x13d.qi.c1.gt5nc": {
+  "value": "0",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.steps_gt5_nc"
+ },
+ "x13d.qi.c1.gt5lock": {
+  "value": "541",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-C1.steps_gt5_locked"
+ },
+ "x13d.qi.c1k": {
+  "value": "$-0.002$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.delta_theta.estimate"
+ },
+ "x13d.qi.c1k.ci": {
+  "value": "$[-0.005, +0.002]$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.delta_theta.ci95"
+ },
+ "x13d.qi.c1k.h": {
+  "value": "$0.079$",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.h"
+ },
+ "x13d.qi.c1k.verdict": {
+  "value": "supported",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.verdict"
+ },
+ "x13d.qi.c1k.gt5nc": {
+  "value": "0",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.steps_gt5_nc"
+ },
+ "x13d.qi.c1k.gt5lock": {
+  "value": "552",
+  "source": "x13_results.json:per_model.qwen-instruct.d.NAT-K-C1-K.steps_gt5_locked"
+ },
+ "rng.x13fac.min": {
+  "value": "9",
+  "source": "min over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of exp x13_results.json:per_model.*.a.*.test.estimate"
+ },
+ "rng.x13fac.max": {
+  "value": "14",
+  "source": "max over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of exp x13_results.json:per_model.*.a.*.test.estimate"
+ },
+ "rng.x13aL.min": {
+  "value": "$+2.231$",
+  "source": "min over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of x13_results.json:per_model.*.a.*.test.estimate"
+ },
+ "rng.x13aL.max": {
+  "value": "$+2.629$",
+  "source": "max over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of x13_results.json:per_model.*.a.*.test.estimate"
+ },
+ "rng.x13bV.min": {
+  "value": "$-0.310$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.b.V.theta_cen.estimate"
+ },
+ "rng.x13bV.max": {
+  "value": "$-0.231$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.b.V.theta_cen.estimate"
+ },
+ "rng.x13GV.min": {
+  "value": "$0.27$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.b.V.G"
+ },
+ "rng.x13GV.max": {
+  "value": "$0.34$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.b.V.G"
+ },
+ "rng.x13bKq.min": {
+  "value": "$-0.033$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x13_results.json:per_model.qwen-*.b.K.theta_cen.estimate"
+ },
+ "rng.x13bKq.max": {
+  "value": "$-0.012$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x13_results.json:per_model.qwen-*.b.K.theta_cen.estimate"
+ },
+ "rng.x13bKl.min": {
+  "value": "$+0.087$",
+  "source": "min over ['llama-base', 'llama-instruct'] of x13_results.json:per_model.llama-*.b.K.theta_cen.estimate"
+ },
+ "rng.x13bKl.max": {
+  "value": "$+0.087$",
+  "source": "max over ['llama-base', 'llama-instruct'] of x13_results.json:per_model.llama-*.b.K.theta_cen.estimate"
+ },
+ "rng.x13holmKl.min": {
+  "value": "$0.054$",
+  "source": "min over ['llama-base', 'llama-instruct'] of x13_results.json:per_model.llama-*.b.K.holm_p"
+ },
+ "rng.x13holmKl.max": {
+  "value": "$0.086$",
+  "source": "max over ['llama-base', 'llama-instruct'] of x13_results.json:per_model.llama-*.b.K.holm_p"
+ },
+ "rng.x13man.min": {
+  "value": "$-2.34$",
+  "source": "min over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of x13_results.json:per_model.*.b.*.manipulation.estimate"
+ },
+ "rng.x13man.max": {
+  "value": "$-1.31$",
+  "source": "max over ['llama-base/K', 'llama-base/V', 'llama-instruct/K', 'llama-instruct/V', 'qwen-base/K', 'qwen-base/V', 'qwen-instruct/K', 'qwen-instruct/V'] of x13_results.json:per_model.*.b.*.manipulation.estimate"
+ },
+ "rng.x13Dc.min": {
+  "value": "$+0.012$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.D_c.mean"
+ },
+ "rng.x13Dc.max": {
+  "value": "$+0.025$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.D_c.mean"
+ },
+ "rng.x13spcq.min": {
+  "value": "$+0.020$",
+  "source": "min over ['qwen-base', 'qwen-instruct'] of x13_results.json:per_model.qwen-*.c.Sp_P_logit_c.mean"
+ },
+ "rng.x13spcq.max": {
+  "value": "$+0.029$",
+  "source": "max over ['qwen-base', 'qwen-instruct'] of x13_results.json:per_model.qwen-*.c.Sp_P_logit_c.mean"
+ },
+ "rng.x13R.min": {
+  "value": "$0.50$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp x13_results.json:per_model.*.c.mean_ln_R.mean"
+ },
+ "rng.x13R.max": {
+  "value": "$0.63$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of exp x13_results.json:per_model.*.c.mean_ln_R.mean"
+ },
+ "rng.x13lnR.min": {
+  "value": "$-0.70$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.mean_ln_R.mean"
+ },
+ "rng.x13lnR.max": {
+  "value": "$-0.46$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.mean_ln_R.mean"
+ },
+ "rng.x13A.min": {
+  "value": "$-0.056$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.X9a_A_same_problems.mean"
+ },
+ "rng.x13A.max": {
+  "value": "$-0.008$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.X9a_A_same_problems.mean"
+ },
+ "rng.x13rho.min": {
+  "value": "$-0.18$",
+  "source": "min over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.spearman"
+ },
+ "rng.x13rho.max": {
+  "value": "$+0.24$",
+  "source": "max over ['llama-base', 'llama-instruct', 'qwen-base', 'qwen-instruct'] of x13_results.json:per_model.*.c.spearman"
+ },
+ "rng.x13dabs.min": {
+  "value": "$0.001$",
+  "source": "min over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of |x13_results.json:per_model.qwen-*.d.*.delta_theta.estimate|"
+ },
+ "rng.x13dabs.max": {
+  "value": "$0.002$",
+  "source": "max over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of |x13_results.json:per_model.qwen-*.d.*.delta_theta.estimate|"
+ },
+ "rng.x13dciabs.min": {
+  "value": "$0.001$",
+  "source": "min over ['qwen-base/NAT-C1/0', 'qwen-base/NAT-C1/1', 'qwen-base/NAT-K-C1-K/0', 'qwen-base/NAT-K-C1-K/1', 'qwen-instruct/NAT-C1/0', 'qwen-instruct/NAT-C1/1', 'qwen-instruct/NAT-K-C1-K/0', 'qwen-instruct/NAT-K-C1-K/1'] of |x13_results.json:per_model.qwen-*.d.*.delta_theta.ci95|"
+ },
+ "rng.x13dciabs.max": {
+  "value": "$0.005$",
+  "source": "max over ['qwen-base/NAT-C1/0', 'qwen-base/NAT-C1/1', 'qwen-base/NAT-K-C1-K/0', 'qwen-base/NAT-K-C1-K/1', 'qwen-instruct/NAT-C1/0', 'qwen-instruct/NAT-C1/1', 'qwen-instruct/NAT-K-C1-K/0', 'qwen-instruct/NAT-K-C1-K/1'] of |x13_results.json:per_model.qwen-*.d.*.delta_theta.ci95|"
+ },
+ "rng.x13gt5lock.min": {
+  "value": "483",
+  "source": "min over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.steps_gt5_locked"
+ },
+ "rng.x13gt5lock.max": {
+  "value": "552",
+  "source": "max over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.steps_gt5_locked"
+ },
+ "rng.x13nnpos.min": {
+  "value": "0.19",
+  "source": "min over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.signed_nearest.share_above_5pct x100"
+ },
+ "rng.x13nnpos.max": {
+  "value": "0.41",
+  "source": "max over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.signed_nearest.share_above_5pct x100"
+ },
+ "rng.x13nnneg.min": {
+  "value": "0.03",
+  "source": "min over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.signed_nearest.share_below_minus_5pct x100"
+ },
+ "rng.x13nnneg.max": {
+  "value": "0.07",
+  "source": "max over ['qwen-base/NAT-C1', 'qwen-base/NAT-K-C1-K', 'qwen-instruct/NAT-C1', 'qwen-instruct/NAT-K-C1-K'] of x13_results.json:per_model.qwen-*.d.*.signed_nearest.share_below_minus_5pct x100"
+ },
+ "x13.readK": {
+  "value": "mixed",
+  "source": "x13_results.json:reading_b_K"
+ },
+ "x13.readV": {
+  "value": "supported",
+  "source": "x13_results.json:reading_b_V"
+ },
+ "x13.ncgt5": {
+  "value": "0",
+  "source": "sum x13_results.json:per_model.qwen-*.d.*.steps_gt5_nc"
+ },
+ "e1.flip.nat": {
+  "value": "3.43",
+  "source": "e1_runs/tierA/NAT.jsonl mean per-problem flip rate x100"
+ },
+ "e1.js.nat": {
+  "value": "$4.45\\times10^{-3}$",
+  "source": "e1_runs/tierA/NAT.jsonl mean per-problem mean JS"
+ },
+ "e1.flip.c1": {
+  "value": "3.86",
+  "source": "e1_runs/tierA/C1_a1.0.jsonl mean per-problem flip rate x100"
+ },
+ "e1.js.c1": {
+  "value": "$6.10\\times10^{-3}$",
+  "source": "e1_runs/tierA/C1_a1.0.jsonl mean per-problem mean JS"
+ },
+ "e1.flip.c1half": {
+  "value": "1.77",
+  "source": "e1_runs/tierA/C1_a0.5.jsonl mean per-problem flip rate x100"
+ },
+ "e1.js.c1half": {
+  "value": "$1.29\\times10^{-3}$",
+  "source": "e1_runs/tierA/C1_a0.5.jsonl mean per-problem mean JS"
+ },
+ "e1.flip.c1two": {
+  "value": "10.55",
+  "source": "e1_runs/tierA/C1_a2.0.jsonl mean per-problem flip rate x100"
+ },
+ "e1.js.c1two": {
+  "value": "$3.81\\times10^{-2}$",
+  "source": "e1_runs/tierA/C1_a2.0.jsonl mean per-problem mean JS"
+ },
+ "e1l.flip.nat": {
+  "value": "2.56",
+  "source": "e1l_runs/tierA/NAT.jsonl mean per-problem flip rate x100"
+ },
+ "e1l.js.nat": {
+  "value": "$2.63\\times10^{-3}$",
+  "source": "e1l_runs/tierA/NAT.jsonl mean per-problem mean JS"
+ },
+ "e1l.flip.c1": {
+  "value": "2.51",
+  "source": "e1l_runs/tierA/C1_a1.0.jsonl mean per-problem flip rate x100"
+ },
+ "e1l.js.c1": {
+  "value": "$2.54\\times10^{-3}$",
+  "source": "e1l_runs/tierA/C1_a1.0.jsonl mean per-problem mean JS"
+ },
+ "e1l.flip.c1half": {
+  "value": "1.29",
+  "source": "e1l_runs/tierA/C1_a0.5.jsonl mean per-problem flip rate x100"
+ },
+ "e1l.js.c1half": {
+  "value": "$6.41\\times10^{-4}$",
+  "source": "e1l_runs/tierA/C1_a0.5.jsonl mean per-problem mean JS"
+ },
+ "e1l.flip.c1two": {
+  "value": "5.79",
+  "source": "e1l_runs/tierA/C1_a2.0.jsonl mean per-problem flip rate x100"
+ },
+ "e1l.js.c1two": {
+  "value": "$1.16\\times10^{-2}$",
+  "source": "e1l_runs/tierA/C1_a2.0.jsonl mean per-problem mean JS"
+ }
+}

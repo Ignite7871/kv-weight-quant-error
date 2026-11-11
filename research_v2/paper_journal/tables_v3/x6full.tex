@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{4.1cm}p{2.55cm}p{2.55cm}p{2.55cm}p{2.55cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule\multicolumn{5}{@{}l}{\emph{Geometric-mean JS}} \\
+NAT & \vn{x6.qb.nat.geo} & \vn{x6.qi.nat.geo} & \vn{x6.lb.nat.geo} & \vn{x6.li.nat.geo} \\
+C1 & \vn{x6.qb.c1.geo} & \vn{x6.qi.c1.geo} & \vn{x6.lb.c1.geo} & \vn{x6.li.c1.geo} \\
+C2 & \vn{x6.qb.c2.geo} & \vn{x6.qi.c2.geo} & \vn{x6.lb.c2.geo} & \vn{x6.li.c2.geo} \\
+QA & \vn{x6.qb.qa.geo} & \vn{x6.qi.qa.geo} & \vn{x6.lb.qa.geo} & \vn{x6.li.qa.geo} \\
+QO & \vn{x6.qb.qo.geo} & \vn{x6.qi.qo.geo} & \vn{x6.lb.qo.geo} & \vn{x6.li.qo.geo} \\
+CV & \vn{x6.qb.cv.geo} & \vn{x6.qi.cv.geo} & \vn{x6.lb.cv.geo} & \vn{x6.li.cv.geo} \\
+NAT-K & \vn{x6.qb.natk.geo} & \vn{x6.qi.natk.geo} & \vn{x6.lb.natk.geo} & \vn{x6.li.natk.geo} \\
+NAT-V & \vn{x6.qb.natv.geo} & \vn{x6.qi.natv.geo} & \vn{x6.lb.natv.geo} & \vn{x6.li.natv.geo} \\
+REL-K & \vn{x6.qb.relk.geo} & \vn{x6.qi.relk.geo} & \vn{x6.lb.relk.geo} & \vn{x6.li.relk.geo} \\
+REL-V & \vn{x6.qb.relv.geo} & \vn{x6.qi.relv.geo} & \vn{x6.lb.relv.geo} & \vn{x6.li.relv.geo} \\
+C1-K & \vn{x6.qb.c1k.geo} & \vn{x6.qi.c1k.geo} & \vn{x6.lb.c1k.geo} & \vn{x6.li.c1k.geo} \\
+C1-V & \vn{x6.qb.c1v.geo} & \vn{x6.qi.c1v.geo} & \vn{x6.lb.c1v.geo} & \vn{x6.li.c1v.geo} \\
+LOC & \vn{x6.qb.loc.geo} & \vn{x6.qi.loc.geo} & \vn{x6.lb.loc.geo} & \vn{x6.li.loc.geo} \\
+INH & \vn{x6.qb.inh.geo} & \vn{x6.qi.inh.geo} & \vn{x6.lb.inh.geo} & \vn{x6.li.inh.geo} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{X6 \tagD{}: geometric-mean over problems of the per-problem mean JS (nats, steps $1\ldots T_i$) for every arm. Plan entry \texttt{21e16a5}; descriptive. The arithmetic means and intervals are in \texttt{EXPLORATORY\_RESULTS\_X4X8.md}.}
+\label{tab:x6full}
+\end{table}

@@ -1,0 +1,112 @@
+{
+ "mutants": {
+  "m_l0nat_wrong_layer": {
+   "caught": true,
+   "failing_tests": [
+    "x03_l0nat_construction[llama]",
+    "x03_l0nat_construction[qwen]"
+   ],
+   "seconds": 8.2
+  },
+  "m_l0nat_on_values": {
+   "caught": true,
+   "failing_tests": [
+    "x03_l0nat_construction[llama]",
+    "x03_l0nat_construction[qwen]"
+   ],
+   "seconds": 8.1
+  },
+  "m_projector_wrong_layer": {
+   "caught": true,
+   "failing_tests": [
+    "x04_slot_energies_independent[llama]",
+    "x04_slot_energies_independent[qwen]"
+   ],
+   "seconds": 8.2
+  },
+  "m_projector_wrong_head": {
+   "caught": true,
+   "failing_tests": [
+    "x04_slot_energies_independent[llama]",
+    "x04_slot_energies_independent[qwen]"
+   ],
+   "seconds": 8.1
+  },
+  "m_summed_predictor_other_order": {
+   "caught": true,
+   "failing_tests": [
+    "x08_records_bitwise_three_layers[llama]",
+    "x08_records_bitwise_three_layers[qwen]"
+   ],
+   "seconds": 6.3
+  },
+  "m_pl_norm_wrong_axis": {
+   "caught": true,
+   "failing_tests": [
+    "x02_per_layer_p_norm_independent[llama]",
+    "x02_per_layer_p_norm_independent[qwen]"
+   ],
+   "seconds": 8.4
+  },
+  "m_comparator_tolerance": {
+   "caught": true,
+   "failing_tests": [
+    "x05_reproduction_comparator[llama]",
+    "x05_reproduction_comparator[qwen]"
+   ],
+   "seconds": 8.4
+  },
+  "m_comparator_nan_blind": {
+   "caught": true,
+   "failing_tests": [
+    "x05_reproduction_comparator[llama]",
+    "x05_reproduction_comparator[qwen]"
+   ],
+   "seconds": 8.3
+  },
+  "m_auth_ignores_manifest_id": {
+   "caught": true,
+   "failing_tests": [
+    "x06_manifest_auth_subset_design[llama]",
+    "x06_manifest_auth_subset_design[qwen]"
+   ],
+   "seconds": 8.6
+  },
+  "m_energies_of_stored_entry": {
+   "caught": true,
+   "failing_tests": [
+    "x02_per_layer_p_norm_independent[llama]",
+    "x02_per_layer_p_norm_independent[qwen]",
+    "x04_slot_energies_independent[llama]",
+    "x04_slot_energies_independent[qwen]"
+   ],
+   "seconds": 8.4
+  },
+  "m_share_swapped": {
+   "caught": true,
+   "failing_tests": [
+    "x07_analysis_on_synthetic_records[llama]",
+    "x07_analysis_on_synthetic_records[qwen]"
+   ],
+   "seconds": 8.4
+  },
+  "m_history_always_matches": {
+   "caught": true,
+   "failing_tests": [
+    "x05_reproduction_comparator[llama]",
+    "x05_reproduction_comparator[qwen]"
+   ],
+   "seconds": 8.5
+  },
+  "m_subset_seed_changed": {
+   "caught": true,
+   "failing_tests": [
+    "x06_manifest_auth_subset_design[llama]",
+    "x06_manifest_auth_subset_design[qwen]"
+   ],
+   "seconds": 8.6
+  }
+ },
+ "caught": 13,
+ "total": 13
+}

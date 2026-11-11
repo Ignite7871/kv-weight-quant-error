@@ -1,0 +1,30 @@
+NOTICE
+
+This repository contains no model weights. The per-problem records (token ids,
+per-step divergences, error statistics) were produced by running the models
+listed below at pinned revisions; each model is used under its own licence.
+
+Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright (c) Meta
+Platforms, Inc. All Rights Reserved.
+  Models used: meta-llama/Llama-3.2-1B, meta-llama/Llama-3.2-1B-Instruct,
+  meta-llama/Llama-3.2-3B.
+  Licence and Acceptable Use Policy: https://www.llama.com/llama3_2/license/
+
+Llama 3.1 is licensed under the Llama 3.1 Community License, Copyright (c) Meta
+Platforms, Inc. All Rights Reserved.
+  Model used: meta-llama/Llama-3.1-8B.
+  Licence and Acceptable Use Policy: https://www.llama.com/llama3_1/license/
+
+Qwen2.5-3B (Qwen/Qwen2.5-3B) is licensed under the Qwen Research License
+Agreement (non-commercial research and evaluation).
+Qwen2.5-0.5B, Qwen2.5-0.5B-Instruct, Qwen2.5-1.5B and Qwen2.5-7B (Qwen/...) and
+Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3) are licensed under the Apache
+License 2.0.
+
+GSM8K (Cobbe et al., 2021; openai/gsm8k) is distributed under the MIT License.
+The v3 and v4 records identify problems by id; some earlier-study records
+(research_v2/e1_runs/tierB) contain decoded model text that can include
+GSM8K problem text, redistributed under the MIT License.
+
+research_v2/paper_journal/ contains no third-party template files; the JAIR
+template is obtained from https://www.jair.org.

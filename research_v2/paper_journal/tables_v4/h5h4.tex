@@ -1,0 +1,24 @@
+\begin{table}[tbp]
+\centering\small
+\caption{H5 (common mode) and the NAT$-$C1 contrast entering H4. $L^P$ is the null-corrected log ratio of the cross-position common-mode share to its isotropic value; support requires a 95\% lower bound above $\ln 4$ and Holm $p<0.05$ (Holm over the 16 tests). NAT$-$C1 is shown with its 95\% interval and verdict; Mistral-7B-v0.3 is out of sample in H4.}
+\label{tab:h5h4}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lr ll ll ll@{}}
+\toprule
+ & & \multicolumn{2}{c}{H5, $L^K$} & \multicolumn{2}{c}{H5, $L^V$} & \multicolumn{2}{c}{NAT$-$C1 (H4)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Model & hd & Est. & 95\% CI & Est. & 95\% CI & Est. & 95\% CI \\
+\midrule
+Qwen2.5-0.5B & \vf{geo.qa.headdim} & \vf{hfiveK.qa.est} & \vf{hfiveK.qa.ci} & \vf{hfiveV.qa.est} & \vf{hfiveV.qa.ci} & \vf{natc.qa.est} & \vf{natc.qa.ci} \\
+Qwen2.5-1.5B & \vf{geo.qb.headdim} & \vf{hfiveK.qb.est} & \vf{hfiveK.qb.ci} & \vf{hfiveV.qb.est} & \vf{hfiveV.qb.ci} & \vf{natc.qb.est} & \vf{natc.qb.ci} \\
+Qwen2.5-3B & \vf{geo.qc.headdim} & \vf{hfiveK.qc.est} & \vf{hfiveK.qc.ci} & \vf{hfiveV.qc.est} & \vf{hfiveV.qc.ci} & \vf{natc.qc.est} & \vf{natc.qc.ci} \\
+Qwen2.5-7B & \vf{geo.qd.headdim} & \vf{hfiveK.qd.est} & \vf{hfiveK.qd.ci} & \vf{hfiveV.qd.est} & \vf{hfiveV.qd.ci} & \vf{natc.qd.est} & \vf{natc.qd.ci} \\
+\midrule
+Llama-3.2-1B & \vf{geo.la.headdim} & \vf{hfiveK.la.est} & \vf{hfiveK.la.ci} & \vf{hfiveV.la.est} & \vf{hfiveV.la.ci} & \vf{natc.la.est} & \vf{natc.la.ci} \\
+Llama-3.2-3B & \vf{geo.lb.headdim} & \vf{hfiveK.lb.est} & \vf{hfiveK.lb.ci} & \vf{hfiveV.lb.est} & \vf{hfiveV.lb.ci} & \vf{natc.lb.est} & \vf{natc.lb.ci} \\
+Llama-3.1-8B & \vf{geo.lc.headdim} & \vf{hfiveK.lc.est} & \vf{hfiveK.lc.ci} & \vf{hfiveV.lc.est} & \vf{hfiveV.lc.ci} & \vf{natc.lc.est} & \vf{natc.lc.ci} \\
+\midrule
+Mistral-7B-v0.3 & \vf{geo.mi.headdim} & \vf{hfiveK.mi.est} & \vf{hfiveK.mi.ci} & \vf{hfiveV.mi.est} & \vf{hfiveV.mi.ci} & \vf{natc.mi.est} & \vf{natc.mi.ci} \\
+\bottomrule
+\end{tabular}
+\end{table}

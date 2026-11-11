@@ -1,0 +1,58 @@
+{
+ "n_problems": 930,
+ "per_arm": {
+  "fp16": {
+   "steps": 102.63333333333334,
+   "ms_per_step_central": 35.679037766114014,
+   "ms_speed_check": 35.55657857144806,
+   "ms_feasibility": 35.80149696077997
+  },
+  "nf4": {
+   "steps": 106.36666666666666,
+   "ms_per_step_central": 57.192208247171365,
+   "ms_speed_check": 57.200742857146125,
+   "ms_feasibility": 57.183673637196605
+  },
+  "cache_only": {
+   "steps": 104.5,
+   "ms_per_step_central": 90.00283981051959,
+   "ms_speed_check": 90.47995357142345,
+   "ms_feasibility": 89.52572604961571
+  },
+  "token_only": {
+   "steps": 104.5,
+   "ms_per_step_central": 89.5692870095103,
+   "ms_speed_check": 90.47995357142345,
+   "ms_feasibility": 88.65862044759716
+  },
+  "oracle_flip": {
+   "steps": 104.5,
+   "ms_per_step_central": 90.8712748681638,
+   "ms_speed_check": 90.47995357142345,
+   "ms_feasibility": 91.26259616490414
+  }
+ },
+ "overhead_s_per_problem": 0.0008674099997705298,
+ "sec_per_problem_central": 38.00740601303564,
+ "sec_per_problem_low": 29.66324527921849,
+ "sec_per_problem_high": 46.3515667468528,
+ "hours_central": 9.818579886700874,
+ "hours_low": 7.6630050304647765,
+ "hours_high": 11.974154742936973,
+ "gpu_hours_used_so_far": 0.35780092146661546,
+ "gpu_hours_remaining_under_cap": 11.642199078533384,
+ "cumulative_hours_central": 10.176380808167488,
+ "cumulative_hours_high": 12.331955664403589,
+ "fits_cap_central": true,
+ "fits_cap_high": false,
+ "step_count_source": "30 historical-pool test problems (pilot gate0), early-stop rule; mean steps fp16/nf4: 102.6 / 106.4",
+ "pilot_mean_steps": {
+  "fp16": 102.63333333333334,
+  "nf4": 106.36666666666666
+ },
+ "pilot_se_steps": {
+  "fp16": 7.550052734669891,
+  "nf4": 10.587779468522854
+ },
+ "cap_hours": 12.0
+}

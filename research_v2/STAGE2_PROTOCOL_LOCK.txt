@@ -1,0 +1,50 @@
+protocol lock -- research_v2 Stage 2 (protocol-locked held-out validation of the Stage 1 token-source x KV-source experiment)
+utc: 2026-10-25T04:54:19.656430+00:00
+git commit containing the locked files: 4dd8ebb434323294509c7b16aebfdb75ac2395a3
+Hashes are SHA-256 of the committed file contents (git show <commit>:<path>).
+Private dated hash for coauthors. NOT a public pre-registration.
+PROVENANCE: this is a PROTOCOL-LOCKED HELD-OUT VALIDATION of hypotheses that are EXPLORATORY IN ORIGIN. The five hypotheses (STAGE2_SPEC.md
+section 1) were drawn from the Stage 1 results on the 930-problem pool (STAGE1_REPORT.md), which itself followed the 2026-10-22 pilot and
+earlier routing experiments on that pool. The 389 test problems evaluated here are the complement of the pool; no generated-answer correctness
+outcome was retained for any of them, but they are NOT completely untouched: two of them (test indices 4, 5) appeared in an 8-problem console probe and 47 (test index < 200,
+including those two) had their gold solutions token-labelled by a teacher-forced FP16/INT4 argmax comparison (disclosed in the spec;
+a sensitivity analysis excluding them is pre-declared). This lock is created before ANY GPU use in Stage 2 and before any held-out
+problem is evaluated. Design power from Stage 1 data is low for H1-H3 (STAGE2_SPEC.md 6.7); non-significant results will be reported as inconclusive.
+
+e722fd6dbbabbb6ec561fac7933d09211fe886ec9fbc4a83267f823d2d0efcd4  research_v2/STAGE2_SPEC.md
+3717a0123f1b64f477d1f339b5200a92221a4d7957e63e5720e326a1a63040e7  research_v2/run_stage2.py
+e9b638410477a364d4cf130bf543027e013770edfd1b1ce5261cb4a1c4233055  research_v2/analyze_stage2.py
+510ccb45ec15b7a234225a791b55d6104a7b1e0a05090221592dacf3440b4a0f  research_v2/stage2_sample.json
+b179246f94ec60b107e446abd6a69e51907ddc3cb3bb1027f309984d79484e3c  research_v2/stage1_runtime.py
+3c9e0863b57dc33f272910fe10ff71bdb4b4d9fb6ab676bccc5a840edbfc31ef  research_v2/tools/check_heldout_clean.py
+2a0d6aa2cd081e3568c666b75ef1a52624757974386fb33b7d42c04cc851dd52  research_v2/tools/design_power_stage2.py
+a3c6012f01fe9904f24460914edf3e7601ff85d2652f6a7056ce8f71ee18d7ef  research_v2/tools/verify_checkpoint.py
+6a758f55ccbf790e61b1017a1c6ee29e5ffccd98f8a96249b3b491dd5d0ee13c  research_v2/validation_logs/stage2_heldout_clean_check.json
+0af1cc6952676ee6955c4dc7769e7136c2e42f8a5515b0ba78bfe32a7231b636  research_v2/validation_logs/stage2_design_power.json
+73358764cb8a9682d44e5f684b04c12f95241f1281b383fcea1afc41f1be8633  research_v2/stage1_analysis/stage1_report.json
+892d729013a3683bf454ec64b88c3d7de84520f9f2d100c31fd944a6d19997ca  research_v2/STAGE1_REPORT.md
+c7454be90873fbb66f70cb1defe6af518a14cc957c2ba33f23d1963423747db1  research_v2/tests/run_stage2_tests.py
+f446ce2c20031e401f0a7a3a5192b77f1d12fd6bd94f27ce1fa1165126714a0d  research_v2/tests/test_analyze_stage2.py
+51b6786082b04d30c801b548d4ed9a5408dfa6f4b8ce3ea225f9476fec562128  research_v2/tests/mutation_check_stage2.py
+297a82c1eb27884ee17f5a2d1e8bdf2491c24f5d5eded6e346b97270649e2c8d  research_v2/tests/mutation_check_a2.py
+d818cc91cc7dcfa1306ec47fc233fa60069af9ad5057cd1290841813a7781a5b  research_v2/STAGE1_SPEC.md
+d7f6e72cba9d8754e87b3e19821bb54155d6b43e7e2d98f417205fb8dbb0a6be  research_v2/run_stage1.py
+e9113178108b30c3cea0a3b726f62ebeb86014755020ac96a846ac396e29c639  research_v2/stage1_gates.py
+ff46a3458ad312d9b15afdddda578915873b9bc4dded830f858925baedfe2fb6  research_v2/analyze_stage1.py
+e806e36629d54b89155c78496921a0db2f7709105142bf7ac8676311ce0ac464  research_v2/stage1_sample.json
+2736ce056af42dbfc8e5b05592ee6363c55be9bf12d8e5fa92e56a88be26dceb  research_v2/tests/run_stage1_tests.py
+482c92600cceb7d106bd8943ec74dd0fe94757fa50786121b5314dcc419cb40e  research_v2/tests/mutation_check_stage1.py
+51f32fc4eeb4acce1c647ceb9eee52ad86f318d0d2129e27720ca5636ab47d9c  research_v2/tests/run_cpu_tests.py
+794423020ce0639b4b9af9b6f36bdc02925735e6d34c4044f5960bcbdcfa6990  research_v2/tests/test_analyze_stage1.py
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py
+a0c0b20a7f794f3549bbb8623c19d55f722e438000cfe3065846f9d672f37f60  src/dynamic_linear.py
+492860f92d43a34410f5755821f5681602fd3379928e9df838eae7f07d6a19d7  src/dynamic_model.py
+cc4a9c93d6d66f0fc0e5618e656ecc0802e2f516581d53e0f59106561f45c302  src/routing.py
+9aac42782378b48c1842ae11ee438de9069a67a79ca9c7ca8436fcc9b27f3764  src/fragility.py
+cd33978c07c2f147e5517fe02a52bcf827d9d7370045aa5e0b100c6ccc9bf287  scripts/gsm8k_gate_check.py
+e2c286be1d724cf9d25ffeeadd44f2e48111421f2de6907da8f8d2f1cb5b6ecc  scripts/probe_gsm8k_routing.py

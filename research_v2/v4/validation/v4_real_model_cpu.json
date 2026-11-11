@@ -1,0 +1,918 @@
+{
+ "passed": 10,
+ "n": 10,
+ "not_possible_on_this_laptop": {
+  "qwen2.5-7b": "weights 15.2 GB in FP16 exceed this laptop's 16 GB RAM with the NF4 copy; checked on the pod (G1-G8)",
+  "llama3.1-8b": "gated repo not readable with the laptop account, and 16 GB in FP16; checked on the pod",
+  "llama3.2-3b": "gated repo not readable with the laptop account; snapshot checks and G5 through identical bytes here, the rest on the pod",
+  "mistral-7b-v0.3": "weights 14.5 GB in FP16 exceed this laptop's RAM with the NF4 copy; checked on the pod"
+ },
+ "results": [
+  {
+   "kind": "full",
+   "model": "qwen2.5-0.5b",
+   "precision": "fp16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 18.5,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 102.4,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     24,
+     2
+    ],
+    "normsV": [
+     2,
+     24,
+     2
+    ],
+    "S1K": [
+     24,
+     2,
+     64
+    ],
+    "S1V": [
+     24,
+     2,
+     64
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 155.4
+  },
+  {
+   "kind": "full",
+   "model": "llama3.2-1b-instruct",
+   "precision": "fp16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 50.7,
+   "G7_config": {
+    "layers": 16,
+    "q_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "vocab": 128256,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "expected_bos": true,
+    "eos_token_id": 128009,
+    "bos_token_id": 128000,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 235.9,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     16,
+     8
+    ],
+    "normsV": [
+     2,
+     16,
+     8
+    ],
+    "S1K": [
+     16,
+     8,
+     64
+    ],
+    "S1V": [
+     16,
+     8,
+     64
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 16,
+    "n_kv_heads": 8,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 386,
+    "n_dynamic": 112,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 335.5
+  },
+  {
+   "kind": "full",
+   "model": "llama3.2-1b",
+   "precision": "fp16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 48.4,
+   "G7_config": {
+    "layers": 16,
+    "q_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "vocab": 128256,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "expected_bos": true,
+    "eos_token_id": 128001,
+    "bos_token_id": 128000,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 237.0,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     16,
+     8
+    ],
+    "normsV": [
+     2,
+     16,
+     8
+    ],
+    "S1K": [
+     16,
+     8,
+     64
+    ],
+    "S1V": [
+     16,
+     8,
+     64
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 16,
+    "n_kv_heads": 8,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 386,
+    "n_dynamic": 112,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 336.0
+  },
+  {
+   "kind": "full",
+   "model": "qwen2.5-1.5b",
+   "precision": "fp16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "8faed761d45a263340a0528343f099c05c9a4323",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 70.3,
+   "G7_config": {
+    "layers": 28,
+    "q_heads": 12,
+    "kv_heads": 2,
+    "head_dim": 128,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 338.3,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     28,
+     2
+    ],
+    "normsV": [
+     2,
+     28,
+     2
+    ],
+    "S1K": [
+     28,
+     2,
+     128
+    ],
+    "S1V": [
+     28,
+     2,
+     128
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 28,
+    "n_kv_heads": 2,
+    "head_dim": 128,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 196,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 474.8
+  },
+  {
+   "kind": "full",
+   "model": "qwen2.5-3b",
+   "precision": "fp16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model-00001-of-00002.safetensors": true,
+     "model-00002-of-00002.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 176.4,
+   "G7_config": {
+    "layers": 36,
+    "q_heads": 16,
+    "kv_heads": 2,
+    "head_dim": 128,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 667.9,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     36,
+     2
+    ],
+    "normsV": [
+     2,
+     36,
+     2
+    ],
+    "S1K": [
+     36,
+     2,
+     128
+    ],
+    "S1V": [
+     36,
+     2,
+     128
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 36,
+    "n_kv_heads": 2,
+    "head_dim": 128,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 252,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 950.3
+  },
+  {
+   "kind": "full",
+   "model": "qwen2.5-0.5b",
+   "precision": "bf16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 19.0,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 101.8,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     24,
+     2
+    ],
+    "normsV": [
+     2,
+     24,
+     2
+    ],
+    "S1K": [
+     24,
+     2,
+     64
+    ],
+    "S1V": [
+     24,
+     2,
+     64
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.bfloat16",
+    "value_dtype": "torch.bfloat16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 161.9
+  },
+  {
+   "kind": "full",
+   "model": "llama3.2-1b",
+   "precision": "bf16",
+   "quantizer": "nf4",
+   "G7_snapshot": {
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 50.5,
+   "G7_config": {
+    "layers": 16,
+    "q_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "vocab": 128256,
+    "tied_embeddings": true,
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "expected_bos": true,
+    "eos_token_id": 128001,
+    "bos_token_id": 128000,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 221.9,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "slot_shapes": {
+    "normsK": [
+     2,
+     16,
+     8
+    ],
+    "normsV": [
+     2,
+     16,
+     8
+    ],
+    "S1K": [
+     16,
+     8,
+     64
+    ],
+    "S1V": [
+     16,
+     8,
+     64
+    ]
+   },
+   "slots_ok": true,
+   "G7_cache": {
+    "n_layers": 16,
+    "n_kv_heads": 8,
+    "head_dim": 64,
+    "key_dtype": "torch.bfloat16",
+    "value_dtype": "torch.bfloat16",
+    "all_mode_dtype": true,
+    "seq_len": 386,
+    "n_dynamic": 112,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 323.0
+  },
+  {
+   "kind": "tok",
+   "model": "qwen2.5-7b",
+   "precision": null,
+   "quantizer": null,
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 21.2
+  },
+  {
+   "kind": "tok",
+   "model": "mistral-7b-v0.3",
+   "precision": null,
+   "quantizer": null,
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "expected_bos": true,
+    "eos_token_id": 2,
+    "bos_token_id": 1,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 19.7
+  },
+  {
+   "kind": "tok",
+   "model": "llama3.2-3b",
+   "precision": null,
+   "quantizer": null,
+   "tokenizer_bytes_identical_to": {
+    "model": "llama3.2-1b",
+    "identical": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "expected_bos": true,
+    "eos_token_id": 128001,
+    "bos_token_id": 128000,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 20.2
+  }
+ ]
+}

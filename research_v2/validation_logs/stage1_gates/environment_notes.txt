@@ -1,0 +1,3 @@
+gate-equiv start 2026-10-23T13:29:02Z; background: qemu 3665 cpu-s, studio64, msedge; AC power; CPU 11-19%
+gate-feasible start 2026-10-23T13:43:29Z
+speed start 2026-10-23T13:51:58Z

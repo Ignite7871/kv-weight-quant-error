@@ -1,0 +1,102 @@
+{
+ "quick": false,
+ "passed": 19,
+ "n": 19,
+ "results": [
+  {
+   "test": "a01_h4_permutation_exact",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "a02_readings_rules",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "a03_x13a_null_uses_model_head_dim",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "a04_calibrate_core_reproduces_v3",
+   "ok": true,
+   "seconds": 11.5
+  },
+  {
+   "test": "a05_truth_supported_everywhere",
+   "ok": true,
+   "seconds": 21.0
+  },
+  {
+   "test": "a06_one_model_falsifies_h1",
+   "ok": true,
+   "seconds": 20.6
+  },
+  {
+   "test": "a07_equivalence_falsifies_h2",
+   "ok": true,
+   "seconds": 20.5
+  },
+  {
+   "test": "a08_equivalence_needs_informative_dose",
+   "ok": true,
+   "seconds": 20.8
+  },
+  {
+   "test": "a09_h4_qwen_equivalent_falsifies",
+   "ok": true,
+   "seconds": 20.3
+  },
+  {
+   "test": "a10_h4_incomplete_separation_inconclusive",
+   "ok": true,
+   "seconds": 20.1
+  },
+  {
+   "test": "a11_flagged_with_and_without",
+   "ok": true,
+   "seconds": 20.3
+  },
+  {
+   "test": "a12_unresolved_model_and_h4_not_estimable",
+   "ok": true,
+   "seconds": 15.6
+  },
+  {
+   "test": "a13_h5_isotropic_falsified",
+   "ok": true,
+   "seconds": 21.0
+  },
+  {
+   "test": "a19_mistral_dropped_leaves_seven_and_h4_intact",
+   "ok": true,
+   "seconds": 18.1
+  },
+  {
+   "test": "a20_h4_needs_all_seven",
+   "ok": true,
+   "seconds": 17.4
+  },
+  {
+   "test": "a15_refuses_before_all_models_finish",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "a16_step0_on_v3_records_themselves",
+   "ok": true,
+   "seconds": 23.2
+  },
+  {
+   "test": "a18_h4_sign_rules_unit",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "a17_independent_recomputation_agrees",
+   "ok": true,
+   "seconds": 66.4
+  }
+ ]
+}

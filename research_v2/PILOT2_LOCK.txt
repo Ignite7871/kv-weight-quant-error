@@ -1,0 +1,17 @@
+pilot lock -- research_v2 second-model feasibility pilot (PILOT2_SPEC.md)
+utc: 2026-10-26T15:14:46Z
+git commit containing the locked files: d3c03f05c01906ad3fffab97703ea4b49cad232f
+Private dated hash, NOT a public pre-registration. Created before any pilot GPU use.
+
+f3fc7764917179be71172dd7b050fc0a6b0fbe08e34c39a2d9ba29d7421a66cc  research_v2/PILOT2_SPEC.md
+b26412c3730647922643bff62f3aeea1127e30b45438e9913bb3509adaaf38d0  research_v2/run_pilot2.py
+900bf8c9fadfb86054aa376035358c584d44f141ca24ac46256341f72c6ddd39  research_v2/pilot2_sample.json
+d7f6e72cba9d8754e87b3e19821bb54155d6b43e7e2d98f417205fb8dbb0a6be  research_v2/run_stage1.py
+b179246f94ec60b107e446abd6a69e51907ddc3cb3bb1027f309984d79484e3c  research_v2/stage1_runtime.py
+11319ba12a2afb7364895800f027ce3808010619154177697227968411dc4698  research_v2/rv2/__init__.py
+0b76a5b19cde51a6d7a98d5f80003c437c5705c09d25fca328a01f5fbd0b62e8  research_v2/rv2/backends.py
+a06aedb99516fe9287e476d99aff064f8d545b933bc926298a04e2f9a0ada025  research_v2/rv2/boundary.py
+aa2a4e16868db2878eb7e66ad14b561654c400a90048c9b0eee2360dcfbf6a9c  research_v2/rv2/controls.py
+cdd0e6a3fc065b068ea9be31e309c4e3a6ca6879aae7e867048ca2568c0f3402  research_v2/rv2/engine.py
+eb25563051b2e5fd4ee22be93fe57b1ff3507c5439a97fd13bf88a277f37e08e  research_v2/rv2/policies.py
+b74bc7e132fc4b04a6cfa034e5111c2ecbdd69cc07de5c136fdc94faaeeb5cbf  research_v2/rv2/stage1.py

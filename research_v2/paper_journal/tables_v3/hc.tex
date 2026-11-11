@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}l l l l l l@{}}
+\toprule
+Model & $\beta_0$ [95\% CI] & $\beta_1$ & $S_m$ [95\% CI] & $f_m$ [95\% CI] & Band \\
+\midrule
+Qwen-base & \vn{hc.qb.b0} \vn{hc.qb.b0ci} & \vn{hc.qb.b1} & \vn{hc.qb.S} \vn{hc.qb.Sci} & \vn{hc.qb.f} \vn{hc.qb.fci} & \vn{hc.qb.band} \\
+Qwen-instruct & \vn{hc.qi.b0} \vn{hc.qi.b0ci} & \vn{hc.qi.b1} & \vn{hc.qi.S} \vn{hc.qi.Sci} & \vn{hc.qi.f} \vn{hc.qi.fci} & \vn{hc.qi.band} \\
+Llama-base & \vn{hc.lb.b0} \vn{hc.lb.b0ci} & \vn{hc.lb.b1} & \vn{hc.lb.S} \vn{hc.lb.Sci} & \vn{hc.lb.f} \vn{hc.lb.fci} & \vn{hc.lb.band} \\
+Llama-instruct & \vn{hc.li.b0} \vn{hc.li.b0ci} & \vn{hc.li.b1} & \vn{hc.li.S} \vn{hc.li.Sci} & \vn{hc.li.f} \vn{hc.li.fci} & \vn{hc.li.band} \\
+\midrule
+Pair (first minus second) & $\Gamma_0$ [95\% CI] & $\Gamma_1$ [95\% CI] & & $f_\times$ [95\% CI] & Band \\
+\midrule
+Qwen-base vs Llama-instruct (decision rule) & $-0.196$ $[-0.259, -0.130]$ & $-0.066$ $[-0.378, +0.245]$ & & $+0.66$ $[-1.03, +0.97]$ & inconclusive \\
+Qwen-base vs Qwen-instruct & $+0.153$ $[+0.087, +0.221]$ & $+0.199$ $[-0.100, +0.498]$ & & $-0.30$ $[-2.48, +0.91]$ & inconclusive \\
+Qwen-base vs Llama-base & $-0.171$ $[-0.237, -0.104]$ & $+0.345$ $[+0.033, +0.674]$ & & $-1.02$ $[-4.33, +0.76]$ & inconclusive \\
+Llama-instruct vs Qwen-instruct & $+0.348$ $[+0.293, +0.403]$ & $+0.265$ $[+0.007, +0.527]$ & & $+0.24$ $[-0.50, +0.91]$ & inconclusive \\
+Llama-instruct vs Llama-base & $+0.025$ $[-0.025, +0.075]$ & $+0.411$ $[+0.167, +0.653]$ & &  --- & not applicable \\
+Qwen-instruct vs Llama-base & $-0.324$ $[-0.381, -0.267]$ & $+0.146$ $[-0.123, +0.416]$ & & $+0.55$ $[-0.36, +0.98]$ & inconclusive \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{H-C \tagC{}, reported for completeness; the adjustment is not identified (Section~\ref{sec:res:hc}): $x$ is negative at every scored step, so $\beta_1$, the intercept at $x=0$, lies outside the observed range, and the bands and $p$-values below carry no conclusion. Top: per-model regression adjustment (step-level $y=\log\mathrm{JS}^{\mathrm{NAT}}-\log\mathrm{JS}^{\mathrm{C1}}$ on $x=\log P_{\mathrm{logit}}^{\mathrm{NAT}}-\log P_{\mathrm{logit}}^{\mathrm{C1}}$, steps $2\ldots T_i$); $\beta_0=\bar y$ is the step-level mean log ratio, not the problem-level contrast $\theta(\mathrm{NAT},\mathrm{C1})$; $S_m=|\beta_0|-|\beta_1|$, $f_m=1-|\beta_1|/|\beta_0|$. Bottom: cross-model gaps $\Gamma_0$ (unadjusted) and $\Gamma_1$ (adjusted), $f_\times=1-|\Gamma_1|/|\Gamma_0|$, same problems resampled for both models; only Qwen-base vs Llama-instruct is a decision rule, the other pairs are descriptive. ``---'': precondition not met. H-C bands and $p$-values for this table only: Qwen-base Holm \vn{hc.qb.holm}, Qwen-instruct Holm \vn{hc.qi.holm}, Llama-instruct Holm \vn{hc.li.holm} (within $\mathcal{F}_m$).}
+\label{tab:hc}
+\end{table}

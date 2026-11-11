@@ -1,0 +1,17 @@
+KILLED    stop rule without the safety margin                       failed by: ['s12']
+KILLED    stop rule ignores worst-case problem duration             failed by: ['s12']
+KILLED    stop rule never stops                                     failed by: ['s12']
+KILLED    worst-case factor 1.0 instead of 1.25                     failed by: ['s12']
+KILLED    watchdog never fires                                      failed by: ['s13']
+KILLED    pooled pace uses only the current session                 failed by: ['s14']
+KILLED    temperature stop disabled                                 failed by: ['s15']
+KILLED    integrity: token-source check dropped                     failed by: ['s16']
+KILLED    integrity: KV-letter check dropped                        failed by: ['s16']
+KILLED    integrity: step-1 label check dropped                     failed by: ['s16']
+KILLED    integrity: flip-oracle prefix check dropped               failed by: ['s16']
+KILLED    integrity: identical-history outcome check dropped        failed by: ['s16']
+KILLED    integrity: JS range check dropped                         failed by: ['s16']
+KILLED    checkpoint: hash comparison dropped                       failed by: ['s17']
+KILLED    checkpoint: order/repeat/skip check dropped               failed by: ['s17']
+clean code passes all 6 A2 tests: True
+15/15 mutants killed

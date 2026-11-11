@@ -1,0 +1,98 @@
+{
+ "device": "cpu",
+ "torch": "2.13.0+cu126",
+ "passed": 18,
+ "n": 18,
+ "results": [
+  {
+   "test": "t01_fp16_equals_locked_v3_arm",
+   "ok": true,
+   "seconds": 17.62
+  },
+  {
+   "test": "t02_generic_construction_equals_locked_fp16",
+   "ok": true,
+   "seconds": 0.02
+  },
+  {
+   "test": "t03_alpha0_bitwise_all_modes",
+   "ok": true,
+   "seconds": 5.34
+  },
+  {
+   "test": "t04_natural_arms_store_measured_entry_on_own_path",
+   "ok": true,
+   "seconds": 1.29
+  },
+  {
+   "test": "t05_constructed_arms_norm_path_and_full_sphere",
+   "ok": true,
+   "seconds": 0.01
+  },
+  {
+   "test": "t06_slot_norm_per_kv_head",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t07_bf16_rounding_equals_independent_oracle",
+   "ok": true,
+   "seconds": 0.05
+  },
+  {
+   "test": "t08_bf16_mode_end_to_end",
+   "ok": true,
+   "seconds": 0.42
+  },
+  {
+   "test": "t09_fp16_rounding_check_active",
+   "ok": true,
+   "seconds": 0.35
+  },
+  {
+   "test": "t10_seeds_labels_only",
+   "ok": true,
+   "seconds": 0.43
+  },
+  {
+   "test": "t11_measure_pass_all_4bit_and_reset",
+   "ok": true,
+   "seconds": 0.05
+  },
+  {
+   "test": "t12_x13a_sums_independent",
+   "ok": true,
+   "seconds": 1.53
+  },
+  {
+   "test": "t13_rho_accumulator_independent",
+   "ok": true,
+   "seconds": 0.45
+  },
+  {
+   "test": "t17_cache_geometry_and_config_snapshot",
+   "ok": true,
+   "seconds": 0.65
+  },
+  {
+   "test": "t18_integrity_flags_finite_and_step1",
+   "ok": true,
+   "seconds": 1.37
+  },
+  {
+   "test": "t19_past_entries_never_revisited",
+   "ok": true,
+   "seconds": 0.14
+  },
+  {
+   "test": "t21_fp16_storage_correctly_rounded_on_double_rounding_cases",
+   "ok": true,
+   "seconds": 0.04
+  },
+  {
+   "test": "t22_reload_releases_the_previous_model",
+   "ok": true,
+   "seconds": 1.49
+  }
+ ]
+}

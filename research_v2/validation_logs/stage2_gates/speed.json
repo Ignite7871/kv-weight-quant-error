@@ -1,0 +1,48 @@
+{
+ "workload": "pass micro-benchmark (fixed prompt, constant cache length, synchronous) + generation of 2 fixed train problems x {fp16, nf4, cache_only} x 2 reps, 64 new tokens, lean engine",
+ "telemetry_start": "2250, 8101, 0, 59, 20.89, P0",
+ "micro_ms_per_pass": {
+  "fp16": {
+   "ms_per_pass_blocks": [
+    30.110205000005408,
+    31.614262499999768,
+    31.197562500005915
+   ],
+   "mean": 30.974010000003698
+  },
+  "nf4": {
+   "ms_per_pass_blocks": [
+    50.90968749999547,
+    48.727037499998005,
+    47.08115749999706
+   ],
+   "mean": 48.90596083333018
+  }
+ },
+ "token_determinism_across_reps": true,
+ "generation_ms_per_step": {
+  "fp16": {
+   "mean_ms_per_step": 33.75095277777883,
+   "sd": 5.9583684066793055,
+   "n": 4
+  },
+  "nf4": {
+   "mean_ms_per_step": 49.85139047619394,
+   "sd": 0.6434582583602042,
+   "n": 4
+  },
+  "cache_only": {
+   "mean_ms_per_step": 79.29089841269658,
+   "sd": 1.7865074618095562,
+   "n": 4
+  }
+ },
+ "vs_2026_10_23": {
+  "fp16_pass": 0.7942053846154794,
+  "nf4_pass": 0.7398783787190648,
+  "fp16_step": 0.8654090455840725,
+  "nf4_step": 0.790037883933343,
+  "both_branch_step_ratio_to_sum_of_single": 0.9484291387840816
+ },
+ "telemetry_end": "1245, 7001, 34, 61, 16.84, P3"
+}

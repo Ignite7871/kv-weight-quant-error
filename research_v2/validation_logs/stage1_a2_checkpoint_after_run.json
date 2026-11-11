@@ -1,0 +1,14 @@
+{
+ "ok": true,
+ "problems": [],
+ "lengths": {
+  "fp16": 930,
+  "nf4": 930,
+  "cache_only": 930,
+  "token_only": 930,
+  "oracle_flip": 930
+ },
+ "n_complete_all_arms": 930,
+ "next_problem_order_position": 930,
+ "next_problem_index": null
+}

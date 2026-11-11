@@ -1,0 +1,261 @@
+{
+ "assumptions": {
+  "pred_overhead": 0.15,
+  "gate_hours_per_model": 0.35,
+  "margin": 0.05,
+  "n_test": 200,
+  "n_calib": 100,
+  "test_arms": [
+   "NAT",
+   "C1",
+   "C2",
+   "QA",
+   "QO",
+   "CV",
+   "NAT-K",
+   "NAT-V",
+   "NAT-K*",
+   "NAT-V*",
+   "C1-K",
+   "C1-V",
+   "LOC",
+   "INH"
+  ],
+  "calib_arms": [
+   "NAT",
+   "C1_a0.5",
+   "C1_a1",
+   "C1_a2"
+  ]
+ },
+ "families": {
+  "qwen": {
+   "measured": {
+    "ledger_s": {
+     "gates": 812.8904995918274,
+     "gpu_mutation_check": 48.06213164329529,
+     "calibrate": 3026.7526347637177,
+     "tierA": 6864.541534662247,
+     "tierB": 12909.796703100204
+    },
+    "tierA_arm_s": {
+     "NAT.jsonl": {
+      "n": 200,
+      "mean_s": 5.368619990000102,
+      "sum_s": 1073.7239980000204,
+      "mean_steps": 61.175
+     },
+     "C1_a0.5.jsonl": {
+      "n": 200,
+      "mean_s": 5.397506951999999,
+      "sum_s": 1079.5013903999998,
+      "mean_steps": 61.175
+     },
+     "C1_a1.0.jsonl": {
+      "n": 200,
+      "mean_s": 5.4003800514999964,
+      "sum_s": 1080.0760102999993,
+      "mean_steps": 61.175
+     },
+     "C1_a2.0.jsonl": {
+      "n": 200,
+      "mean_s": 5.383888471999967,
+      "sum_s": 1076.7776943999934,
+      "mean_steps": 61.175
+     },
+     "C2_a1.0.jsonl": {
+      "n": 200,
+      "mean_s": 5.407971740000011,
+      "sum_s": 1081.5943480000024,
+      "mean_steps": 61.175
+     },
+     "C1star.jsonl": {
+      "n": 200,
+      "mean_s": 5.364624617500026,
+      "sum_s": 1072.9249235000052,
+      "mean_steps": 61.175
+     }
+    },
+    "calib_arm_s": {
+     "C1_a0.5.jsonl": {
+      "n": 100,
+      "mean_s": 5.301643297000026,
+      "sum_s": 530.1643297000026,
+      "mean_steps": 61.02
+     },
+     "C1_a1.jsonl": {
+      "n": 100,
+      "mean_s": 5.277045372000023,
+      "sum_s": 527.7045372000023,
+      "mean_steps": 61.02
+     },
+     "C1_a2.jsonl": {
+      "n": 100,
+      "mean_s": 5.301896256000009,
+      "sum_s": 530.1896256000009,
+      "mean_steps": 61.02
+     },
+     "C1_a4.jsonl": {
+      "n": 100,
+      "mean_s": 5.290098157000018,
+      "sum_s": 529.0098157000018,
+      "mean_steps": 61.02
+     },
+     "NAT.jsonl": {
+      "n": 100,
+      "mean_s": 5.267298802,
+      "sum_s": 526.7298802,
+      "mean_steps": 61.02
+     }
+    },
+    "arm_problem_s_mean": 5.38716530383335,
+    "tierA_overhead_s": 399.9431700622263,
+    "calib_overhead_s": 382.9544463637103
+   },
+   "per_model_projection_h": {
+    "test_arms_h": 4.818520077317608,
+    "test_overhead_h": 0.11109532501728507,
+    "calib_h": 0.7820135499143658,
+    "gates_h": 0.35,
+    "total_h": 6.364710399861722
+   },
+   "per_test_arm_h": 0.34418000552268624
+  },
+  "llama": {
+   "measured": {
+    "ledger_s": {
+     "gates": 855.6256024837494,
+     "gpu_mutation_check": 83.48052310943604,
+     "calibrate": 1828.1691310405731,
+     "tierA": 4515.409223794937
+    },
+    "tierA_arm_s": {
+     "NAT.jsonl": {
+      "n": 200,
+      "mean_s": 3.3123713990001304,
+      "sum_s": 662.4742798000261,
+      "mean_steps": 56.73
+     },
+     "C1_a0.5.jsonl": {
+      "n": 200,
+      "mean_s": 3.3248516854999433,
+      "sum_s": 664.9703370999887,
+      "mean_steps": 56.73
+     },
+     "C1_a1.0.jsonl": {
+      "n": 200,
+      "mean_s": 3.3257237455000177,
+      "sum_s": 665.1447491000035,
+      "mean_steps": 56.73
+     },
+     "C1_a2.0.jsonl": {
+      "n": 200,
+      "mean_s": 3.3290341575000095,
+      "sum_s": 665.8068315000019,
+      "mean_steps": 56.73
+     },
+     "C2_a1.0.jsonl": {
+      "n": 200,
+      "mean_s": 3.3268047705000936,
+      "sum_s": 665.3609541000187,
+      "mean_steps": 56.73
+     },
+     "C1star.jsonl": {
+      "n": 200,
+      "mean_s": 3.328267477500267,
+      "sum_s": 665.6534955000534,
+      "mean_steps": 56.73
+     }
+    },
+    "calib_arm_s": {
+     "C1_a0.5.jsonl": {
+      "n": 100,
+      "mean_s": 3.1587197039998864,
+      "sum_s": 315.87197039998864,
+      "mean_steps": 54.95
+     },
+     "C1_a1.jsonl": {
+      "n": 100,
+      "mean_s": 3.1392189340000733,
+      "sum_s": 313.9218934000073,
+      "mean_steps": 54.95
+     },
+     "C1_a2.jsonl": {
+      "n": 100,
+      "mean_s": 3.1752388979998067,
+      "sum_s": 317.5238897999807,
+      "mean_steps": 54.95
+     },
+     "C1_a4.jsonl": {
+      "n": 100,
+      "mean_s": 3.166171309000092,
+      "sum_s": 316.6171309000092,
+      "mean_steps": 54.95
+     },
+     "NAT.jsonl": {
+      "n": 100,
+      "mean_s": 3.141793674000146,
+      "sum_s": 314.1793674000146,
+      "mean_steps": 54.95
+     }
+    },
+    "arm_problem_s_mean": 3.32450887258341,
+    "tierA_overhead_s": 525.9985766948448,
+    "calib_overhead_s": 250.05487914057267
+   },
+   "per_model_projection_h": {
+    "test_arms_h": 2.9735884915884947,
+    "test_overhead_h": 0.14611071574856802,
+    "calib_h": 0.4727555530246036,
+    "gates_h": 0.35,
+    "total_h": 4.13957749837975
+   },
+   "per_test_arm_h": 0.21239917797060676
+  }
+ },
+ "per_model_total_h": {
+  "Qwen2.5-0.5B": 6.364710399861722,
+  "Qwen2.5-0.5B-Instruct": 6.364710399861722,
+  "Llama-3.2-1B": 4.13957749837975,
+  "Llama-3.2-1B-Instruct": 4.13957749837975
+ },
+ "grand_total_h": 21.008575796482944,
+ "saving_if_drop_arm_all_models_h": 1.1688162853359152,
+ "power_2x2": {
+  "n_problems_paired": 200,
+  "sd_theta_qwen": 0.531230581989003,
+  "sd_theta_llama": 0.46299041113931766,
+  "r_between_family": 0.04962262928670123,
+  "theta_qwen_mean": -0.25291541037904036,
+  "theta_llama_mean": 0.057799678168558286,
+  "observed_family_gap_E1_vs_E1L_log": 0.31071508854759866,
+  "mde_log_80pct_two_sided_by_r_within": {
+   "r_w=0.05": {
+    "family": 0.09600410788689165,
+    "tuning": 0.09600410788689165,
+    "interaction": 0.09600410788689165
+   },
+   "r_w=0.25": {
+    "family": 0.10564115951927561,
+    "tuning": 0.085284951062534,
+    "interaction": 0.085284951062534
+   },
+   "r_w=0.50": {
+    "family": 0.11655283012647087,
+    "tuning": 0.06963487094714746,
+    "interaction": 0.06963487094714746
+   },
+   "r_w=0.75": {
+    "family": 0.12652695300370953,
+    "tuning": 0.04923928945377807,
+    "interaction": 0.04923928945377807
+   },
+   "r_w=0.90": {
+    "family": 0.13215057476965691,
+    "tuning": 0.03114166100844937,
+    "interaction": 0.03114166100844937
+   }
+  },
+  "note": "common SD = mean of the two measured SDs; r_w unknown (no within-family pair has been run)"
+ }
+}

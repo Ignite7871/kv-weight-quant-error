@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{4.1cm}p{2.55cm}p{2.55cm}p{2.55cm}p{2.55cm}@{}}
+\toprule
+Quantity & Qwen-base & Qwen-instruct & Llama-base & Llama-instruct \\
+\midrule\multicolumn{5}{@{}l}{\emph{X7a: locked H-C covariate and fit}} \\
+$\bar x$ & \vn{x7a.qb.xbar} \vn{x7a.qb.xbarci} & \vn{x7a.qi.xbar} \vn{x7a.qi.xbarci} & \vn{x7a.lb.xbar} \vn{x7a.lb.xbarci} & \vn{x7a.li.xbar} \vn{x7a.li.xbarci} \\
+Steps with $x<0$ / scored steps & \vn{x7a.qb.nneg} / \vn{x7a.qb.nsteps} & \vn{x7a.qi.nneg} / \vn{x7a.qi.nsteps} & \vn{x7a.lb.nneg} / \vn{x7a.lb.nsteps} & \vn{x7a.li.nneg} / \vn{x7a.li.nsteps} \\
+Slope $\gamma$ & \vn{x7a.qb.gamma} \vn{x7a.qb.gammaci} & \vn{x7a.qi.gamma} \vn{x7a.qi.gammaci} & \vn{x7a.lb.gamma} \vn{x7a.lb.gammaci} & \vn{x7a.li.gamma} \vn{x7a.li.gammaci} \\
+$\beta_1$ (95\% CI) & \vn{hc.qb.b1} \vn{x7a.qb.b1ci} & \vn{hc.qi.b1} \vn{x7a.qi.b1ci} & \vn{hc.lb.b1} \vn{x7a.lb.b1ci} & \vn{hc.li.b1} \vn{x7a.li.b1ci} \\
+$\bar x$ for $P_{\mathrm{val}}$ & \vn{x7a.qb.xval} & \vn{x7a.qi.xval} & \vn{x7a.lb.xval} & \vn{x7a.li.xval} \\
+\midrule\multicolumn{5}{@{}l}{\emph{X7b: joint rank-based adjustment (illustration)}} \\
+$\beta_1$; $f$; band & \vn{x7b.qb.b1} \vn{x7b.qb.b1ci}\newline $f$ \vn{x7b.qb.f} \vn{x7b.qb.fci}; \vn{x7b.qb.band} & \vn{x7b.qi.b1} \vn{x7b.qi.b1ci}\newline $f$ \vn{x7b.qi.f} \vn{x7b.qi.fci}; \vn{x7b.qi.band} & \vn{x7b.lb.b1} \vn{x7b.lb.b1ci}\newline $f$ \vn{x7b.lb.f} \vn{x7b.lb.fci}; \vn{x7b.lb.band} & \vn{x7b.li.b1} \vn{x7b.li.b1ci}\newline $f$ \vn{x7b.li.f} \vn{x7b.li.fci}; \vn{x7b.li.band} \\
+\midrule\multicolumn{5}{@{}l}{\emph{X7c: rank-based, $P_{\mathrm{logit}}$ only (illustration)}} \\
+$\beta_1$; $f$; band & \vn{x7c.qb.b1} \vn{x7c.qb.b1ci}\newline $f$ \vn{x7c.qb.f} \vn{x7c.qb.fci}; \vn{x7c.qb.band} & \vn{x7c.qi.b1} \vn{x7c.qi.b1ci}\newline $f$ \vn{x7c.qi.f} \vn{x7c.qi.fci}; \vn{x7c.qi.band} & \vn{x7c.lb.b1} \vn{x7c.lb.b1ci}\newline $f$ \vn{x7c.lb.f} \vn{x7c.lb.fci}; \vn{x7c.lb.band} & \vn{x7c.li.b1} \vn{x7c.li.b1ci}\newline $f$ \vn{x7c.li.f} \vn{x7c.li.fci}; \vn{x7c.li.band} \\
+\bottomrule
+\end{tabular}\end{adjustbox}
+\caption{X7 \tagE{}: why H-C is not identified (plan entry \texttt{21e16a5}). X7a: the locked covariate $x$ and fit, over all scored steps $2\ldots T_i$ of the 200 problems. X7b/X7c re-fit the adjustment on within-problem rank differences of the predictors (X7b: $P_{\mathrm{logit}}$ and $P_{\mathrm{val}}$ jointly; X7c: $P_{\mathrm{logit}}$ only), whose zero point is also never reached. They are shown only to illustrate how the extrapolated intercept depends on the covariate scale; they are not results.}
+\label{tab:x7}
+\end{table}

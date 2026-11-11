@@ -1,0 +1,17 @@
+X13 manifest id: f2cdf1118bc18fe0
+utc: 2026-11-01T08:58:12Z
+files (in hashing order; LF-normalized; each prefixed by name and byte length):
+  FOLLOWUP_X13.md  sha256(LF) e386a85be1b066736a8e0fa189b09ebcad21d8cafd3f4e4681f3d9b80152118c
+  rv3x13.py  sha256(LF) 898d873a1a950ae7e03baf970da12db66bfa6f2571156f752b1def2aacb8ad8d
+  run_x13.py  sha256(LF) 5ff7c36646b7e90a22c7d9c33683b0b73fcfc8cf6939ab3e41cecf02a0a490b1
+  analyze_x13.py  sha256(LF) 3360b2858181c5735b10d7ef925d4ce31b6c41dfdb7f3dc61b4432be1795836a
+  test_x13.py  sha256(LF) a34f8a6047724302f71dd3dcc7f45ca76904553d6b36aefbe767612b2f433862
+  mutation_check_x13.py  sha256(LF) ae672aacd7df5b4f1c9f21732e00d0dd587358e2a171c01fc89b686c06748872
+  x13_subset.json  sha256(LF) d9c96db2d02fdd812179da627fe093878984b64a2781bedef82da1eb57fa0429
+then, in this order (binary sha256 of research_v2/v3_runs/<model>/calib/aux_state.pt):
+  aux_state qwen-base 7542ef36770435c321924072f62810de6478251c2089ba739d6380b8dd2aade0
+  aux_state qwen-instruct 1ca5282f5c51fd5f5447a0456a0befc99778731ae369157d2be08c8d2ea4e912
+  aux_state llama-base 235bdb18b9391a14db3ffca55ad4328dc7bada90e00734c3780c34a361ba0367
+  aux_state llama-instruct 75fe89fbfe14644d7b14b659528816cee92138911ed827f96bdc4408432265d3
+
+Authorization (created only by the corresponding author, FOLLOWUP_X13 decision D8): research_v2\v3_runs_x13\AUTHORIZED_X13_BY_AUTHORS.txt containing the text FOLLOWUP_X13 and the id f2cdf1118bc18fe0.
