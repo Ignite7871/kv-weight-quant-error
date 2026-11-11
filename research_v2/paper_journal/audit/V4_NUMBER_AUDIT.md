@@ -4,7 +4,7 @@
 - v3 macros used: 175; undefined: 0; not in numbers_v3_sources.json: 0
 - v4 macros re-derived from their sources by this script: 980; mismatches: 0
 - v4 result macros checked against the independent recomputation: 195; failures: 0
-- literal numbers in the v4 text and tables: 239; unclassified: 0
+- literal numbers in the v4 text and tables: 240; unclassified: 0
 - prose claims checked against the locked report: 32/32 hold
 
 ## Claims
@@ -68,7 +68,7 @@ none
 - C(7,3) labellings (§7.4): 1 (35)
 - CC BY 4.0: 1 (4.0)
 - CI level: 28 (90\%, 95\%)
-- D1 drift factor (V4-D1.json): 2 (1.48)
+- D1 drift factor (V4-D1.json): 3 (1.48)
 - GM attempt mutants caught (V4-A12): 1 (83)
 - GM attempt mutants total (V4-A12): 1 (87)
 - GPU model RTX 4060: 3 (4060)
@@ -93,6 +93,7 @@ none
 - count: 2 (12)
 - date: 7 (2026-10-29, 2026-11-01, 2026-11-02, 2026-11-09)
 - date (AI-use log): 1 (2026-10-28)
+- date (Gemini proofreading, AI-use appendix): 1 (2026-11-11)
 - dose / steps 2-8 / ln 2: 15 (2)
 - drift tolerance (§10; D1): 4 (25\%)
 - earlier study arms (§6): 1 (14)
@@ -100,13 +101,13 @@ none
 - earlier study's test sample / null draws (§3, §6): 6 (200)
 - eight / top-8 / steps 2-8: 3 (8)
 - equivalence attainability (§7.6: 0.115): 1 (0.1)
-- head dimension (§2): 9 (128)
-- head dimension / step cap T_i (PROTOCOL_V4 §2, §3): 19 (64)
+- head dimension (§2): 8 (128)
+- head dimension / step cap T_i (PROTOCOL_V4 §2, §3): 18 (64)
 - history cap (§3): 1 (65)
 - image CUDA (tag): 1 (12.8.1)
 - image tag: 1 (1.0.2)
 - laptop GPU memory: 2 (8\,GB)
-- ln 4 / four: 4 (4)
+- ln 4 / four: 5 (4)
 - ln 4 rounded (threshold): 1 (1.39)
 - model / licence name Llama 3.1: 4 (3.1)
 - model / licence name Llama 3.2: 4 (3.2)

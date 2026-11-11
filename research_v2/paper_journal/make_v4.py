@@ -340,7 +340,7 @@ def tab_models():
          "checkpoint (billions). $\\hat b$: dose slope of C1; margin $=|\\hat b|\\ln(1+c)$; $\\rho_K$, $\\rho_V$: median natural relative "
          "error of keys and values. Calibration used " + vf("design.ncal") + " training problems per model.}", "\\label{tab:models}",
          "\\begin{tabular}{@{}lrrrrrrrrr@{}}", "\\toprule",
-         "Model & Params & Layers & Q/KV & head\\_dim & $\\hat b$ & Margin & $\\rho_K$ & $\\rho_V$ & $\\rho_V/\\rho_K$ \\\\", "\\midrule"]
+         "Model & Params & Layers & Q/KV & Head dim. & $\\hat b$ & Margin & $\\rho_K$ & $\\rho_V$ & $\\rho_V/\\rho_K$ \\\\", "\\midrule"]
     t += rows[:4] + ["\\midrule"] + rows[4:7] + ["\\midrule"] + rows[7:] + ["\\bottomrule", "\\end{tabular}", "\\end{table}"]
     (TAB / "models.tex").write_text("\n".join(t) + "\n", encoding="utf-8")
 
@@ -372,7 +372,7 @@ def tab_h5_h4():
     t = ["\\begin{table}[tbp]", "\\centering\\small",
          "\\caption{H5 (common mode) and the NAT$-$C1 contrast entering H4. $L^P$ is the null-corrected log ratio of the cross-position "
          "common-mode share to its isotropic value; support requires a 95\\% lower bound above $\\ln 4$ and Holm $p<0.05$ (Holm over the "
-         "16 tests). NAT$-$C1 is shown with its 95\\% interval and verdict; Mistral-7B-v0.3 is out of sample in H4.}", "\\label{tab:h5h4}",
+         "16 tests). NAT$-$C1 is shown with its 95\\% interval and verdict; Mistral-7B-v0.3 is out of sample in H4. hd: head dimension.}", "\\label{tab:h5h4}",
          "\\setlength{\\tabcolsep}{4pt}",
          "\\begin{tabular}{@{}lr ll ll ll@{}}", "\\toprule",
          " & & \\multicolumn{2}{c}{H5, $L^K$} & \\multicolumn{2}{c}{H5, $L^V$} & \\multicolumn{2}{c}{NAT$-$C1 (H4)} \\\\",
@@ -410,9 +410,9 @@ def tab_step0():
 def tab_x():
     t = ["\\begin{table}[tbp]", "\\centering\\small",
          "\\caption{Exploratory X1 and X4: OLS slope of the per-model estimate on $\\log_{10}$ parameters within each family, per decade, "
-         "with a 95\\% bootstrap interval over problems (" + vf("x.B") + " resamples, models fixed). Llama's head\\_dim-128 ``slope'' "
+         "with a 95\\% bootstrap interval over problems (" + vf("x.B") + " resamples, models fixed). Llama's head-dimension-128 ``slope'' "
          "joins two points. Not blind; no test.}", "\\label{tab:x1}",
-         "\\begin{tabular}{@{}llll@{}}", "\\toprule", "Family & Contrast & All sizes & head\\_dim 128 only \\\\", "\\midrule"]
+         "\\begin{tabular}{@{}llll@{}}", "\\toprule", "Family & Contrast & All sizes & Head dim.\\ 128 only \\\\", "\\midrule"]
     for f, fam in (("q", "Qwen"), ("l", "Llama")):
         for cn, lab in (("hone", "H1"), ("natc", "NAT$-$C1")):
             t.append(f"{fam} & {lab} & {vf(f'xone.{f}.{cn}.slope')} {vf(f'xone.{f}.{cn}.ci')} & {vf(f'xfour.{f}.{cn}.slope')} {vf(f'xfour.{f}.{cn}.ci')} \\\\")
@@ -421,7 +421,7 @@ def tab_x():
     # X2 (supplementary-style appendix table)
     t = ["\\begin{table}[tbp]", "\\centering\\small",
          "\\caption{Exploratory X2: per-layer common-mode share $C^P$ from the locked report, pooled over problems (no interval, not "
-         "head\\_dim-adjusted). Layer of the maximum (0-based), layer 0 against the mean of the other layers, and the fraction of layers "
+         "head-dimension-adjusted). Layer of the maximum (0-based), layer 0 against the mean of the other layers, and the fraction of layers "
          "with $C^V>C^K$.}", "\\label{tab:x2}", "\\setlength{\\tabcolsep}{3.5pt}",
          "\\begin{tabular}{@{}lr rrrr rrrr r@{}}", "\\toprule",
          " & & \\multicolumn{4}{c}{K} & \\multicolumn{4}{c}{V} & \\\\", "\\cmidrule(lr){3-6}\\cmidrule(lr){7-10}",
@@ -518,7 +518,7 @@ def figures():
         ax.set_xlabel("log$_{10}$ parameters")
         ax.set_title(lab, fontsize=8)
     axs[0].legend(fontsize=7, frameon=False, loc="upper left")
-    axs[1].text(0.02, 0.04, "open squares: head_dim 64", transform=axs[1].transAxes, fontsize=7)
+    axs[1].text(0.02, 0.04, "open squares: head dimension 64", transform=axs[1].transAxes, fontsize=7)
     fig.tight_layout()
     fig.savefig(FIG / "fig_size.pdf")
     plt.close(fig)

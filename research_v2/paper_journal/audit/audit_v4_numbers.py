@@ -120,7 +120,7 @@ CONST = {
     "1.4.0": "RunPod plugin version (AI_USE_LOG_V4)", "83": "GM attempt mutants caught (V4-A12)", "87": "GM attempt mutants total (V4-A12)",
     "100\\%": "the whole", "13386": "TMLR submission number", "283": "ARR submission number", "6": "GPT-6 model name",
     "2.0": "Apache License 2.0", "3.1": "model / licence name Llama 3.1", "3.2": "model / licence name Llama 3.2", "4.0": "CC BY 4.0",
-    "2026": "year", "2026-10-28": "date (AI-use log)", "2026-10-29": "date", "2026-11-01": "date", "2026-11-02": "date", "2026-11-09": "date",
+    "2026": "year", "2026-10-28": "date (AI-use log)", "2026-10-29": "date", "2026-11-01": "date", "2026-11-02": "date", "2026-11-09": "date", "2026-11-11": "date (Gemini proofreading, AI-use appendix)",
     "1409b94": "commit id", "b4eecc6": "commit id", "13": "X1--X13 label", "4.5": "section ref", "2.5": "model name Qwen2.5",
     "1/2": "half", "0.5B": "model size", "1.5B": "model size", "3B": "model size", "7B": "model size", "8B": "model size", "1B": "model size",
     "1.3B": "cited model size (Dewage et al.)", "12": "count",
