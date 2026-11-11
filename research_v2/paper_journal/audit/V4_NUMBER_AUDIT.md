@@ -4,20 +4,30 @@
 - v3 macros used: 175; undefined: 0; not in numbers_v3_sources.json: 0
 - v4 macros re-derived from their sources by this script: 980; mismatches: 0
 - v4 result macros checked against the independent recomputation: 195; failures: 0
-- literal numbers in the v4 text and tables: 229; unclassified: 0
-- prose claims checked against the locked report: 22/22 hold
+- literal numbers in the v4 text and tables: 239; unclassified: 0
+- prose claims checked against the locked report: 32/32 hold
 
 ## Claims
 
 - [ok] All eight models complete, n = 100, none flagged
 - [ok] H2: every model supported, every CI > 0, every Holm p < 0.001
-- [ok] H2: larger in the largest than the smallest model of each family; Mistral largest of all
+- [ok] H2 [descriptive]: point estimate larger in the largest than the smallest model of each family; Mistral highest
+- [ok] H2: head-dim-128 intervals overlap within each family (Qwen 1.5/3/7B pairwise; Llama 3B/8B); Mistral overlaps Llama-8B
+- [ok] H2 rose across the head-dimension step in both families (0.5B->1.5B, 1B->3B)
+- [ok] H5: smallest 95% lower bound >= 2.255 (printed 'at or above 2.255')
 - [ok] H3: every model supported, all Holm p < 0.001
 - [ok] H5: all 16 supported, lower bounds > ln 4, Holm p < 0.01
 - [ok] H5: L^K > L^V in all Qwen and Mistral; L^V > L^K in all Llama
 - [ok] H1: supported in the seven Qwen/Llama models with Holm p < 0.001; Mistral inconclusive
 - [ok] Mistral H1: 90% CI excludes 0 but not inside the margin, so not equivalent; 95% CI includes 0
-- [ok] H1 shrinks monotonically with size in Qwen and in Llama; Mistral smallest magnitude
+- [ok] H1 [descriptive]: shrinks monotonically across the four Qwen sizes
+- [ok] H1 [descriptive]: Llama changes between 1B and 3B (> 0.4) and is flat from 3B to 8B (|change| < 0.01)
+- [ok] H1: Qwen-7B and Llama-8B resolved (Holm p < 0.001, CI < 0), unlike Mistral
+- [ok] NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05
+- [ok] X1: Llama H1 slope restricted to head-dim 128 has a CI including 0 (flat)
+- [ok] v3: Llama-base NAT-C1 CI includes 0; Llama-instruct CI > 0 ("near zero or positive")
+- [ok] v3 X13: Llama key-path centring not significant after Holm (both p > 0.05)
+- [ok] v3: LOC potency printed as Llama (low end) to Qwen (high end): Llama-base < Qwen-base, both instruct equal to base
 - [ok] H4 falsified; three Qwen CIs entirely above 0; Qwen-0.5B negative; Llama-1B equivalent; other Llama positive
 - [ok] NAT-C1 negative only in Qwen-0.5B; positive in every model from 1.5B params up (incl. Mistral)
 - [ok] NAT-C1 rises monotonically with size within each family; Mistral largest of the eight
@@ -54,7 +64,7 @@ none
 - A40 memory: 1 (48\,GB)
 - ARR submission number: 1 (283)
 - Apache License 2.0: 1 (2.0)
-- C(7,3): 1 (7)
+- C(7,3): 2 (7)
 - C(7,3) labellings (§7.4): 1 (35)
 - CC BY 4.0: 1 (4.0)
 - CI level: 28 (90\%, 95\%)
@@ -81,17 +91,17 @@ none
 - clamp of c (§3): 1 (0.10,0.40)
 - construction tolerance (§3): 1 (10^{-4})
 - count: 2 (12)
-- date: 5 (2026-10-29, 2026-11-01, 2026-11-02, 2026-11-09)
+- date: 7 (2026-10-29, 2026-11-01, 2026-11-02, 2026-11-09)
 - date (AI-use log): 1 (2026-10-28)
-- dose / steps 2-8 / ln 2: 14 (2)
+- dose / steps 2-8 / ln 2: 15 (2)
 - drift tolerance (§10; D1): 4 (25\%)
 - earlier study arms (§6): 1 (14)
 - earlier study's calibration sample / count: 3 (100)
 - earlier study's test sample / null draws (§3, §6): 6 (200)
 - eight / top-8 / steps 2-8: 3 (8)
 - equivalence attainability (§7.6: 0.115): 1 (0.1)
-- head dimension (§2): 7 (128)
-- head dimension / step cap T_i (PROTOCOL_V4 §2, §3): 18 (64)
+- head dimension (§2): 9 (128)
+- head dimension / step cap T_i (PROTOCOL_V4 §2, §3): 19 (64)
 - history cap (§3): 1 (65)
 - image CUDA (tag): 1 (12.8.1)
 - image tag: 1 (1.0.2)
@@ -101,13 +111,13 @@ none
 - model / licence name Llama 3.1: 4 (3.1)
 - model / licence name Llama 3.2: 4 (3.2)
 - model name Claude Opus 5.5 (AI_USE_LOG_V4): 3 (5.5)
-- p display threshold: 8 (0.001)
+- p display threshold: 9 (0.001)
 - pre-declared $29 stop (§10, r5): 2 (29)
 - smallest attainable p: 1 (1/35)
 - step 1 / count / 1/n: 13 (1)
-- steps 9-64: 3 (9)
+- steps 9-64: 4 (9)
 - the whole: 1 (100\%)
 - transformers version (V4_PACKAGES): 1 (5.13.0)
 - truncation sensitivity / Step 0 rho tolerance (§4, §8): 3 (5\%)
-- year: 2 (2026)
+- year: 3 (2026)
 - zero: 35 (0)

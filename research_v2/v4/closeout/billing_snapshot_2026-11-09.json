@@ -1,5 +1,6 @@
-{"source": "RunPod MCP list-billing, bucketSize=day, 2026-11-06T00:00Z to 2026-11-10T00:00Z", "read_utc": "2026-11-09T06:10Z",
- "note": "snapshot after the closeout fetch and the author's deletion of the volume and pods; the last day's bucket may still be settling",
- "totals": {"podGpuAmount": 11.227272609365173, "podDiskAmount": 0.07951388414949179, "storageHighPerformanceAmount": 0.797222251072526, "totalAmount": 12.10400874458719},
- "days": {"2026-11-07": 0.6610985388979316, "2026-11-08": 9.661498180706985, "2026-11-09": 1.7814120249822736},
+{"source": "RunPod MCP list-billing, bucketSize=day, 2026-11-06T00:00Z to 2026-11-12T00:00Z", "read_utc": "2026-11-11",
+ "note": "settled: read after the author confirmed billing had settled; no pods and no network volumes exist (list-pods and list-network-volumes empty); no billed bucket after 2026-11-09. File name kept for the generator's source path.",
+ "earlier_read": {"read_utc": "2026-11-09T06:10Z", "totalAmount": 12.10400874458719},
+ "totals": {"podGpuAmount": 11.253052167710848, "podDiskAmount": 0.07986110635101795, "storageHighPerformanceAmount": 0.797222251072526, "totalAmount": 12.130135525134392},
+ "days": {"2026-11-07": 0.6610985388979316, "2026-11-08": 9.661498180706985, "2026-11-09": 1.8075388055294752},
  "prepaid_ceiling_usd": 30, "paid_by": "corresponding author, personally (prepaid RunPod credit)"}

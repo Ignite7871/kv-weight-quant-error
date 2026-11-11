@@ -183,9 +183,17 @@ def claims():
         and all(pm[m]["n_problems"] == 100 for m in ALL))
     add("H2: every model supported, every CI > 0, every Holm p < 0.001", all(am["F2 H2"]["readings"][m] == "supported" and ci(m, "H2")[0] > 0
         and am["F2 H2"]["holm_p"][m] < 0.001 for m in ALL))
-    add("H2: larger in the largest than the smallest model of each family; Mistral largest of all",
+    add("H2 [descriptive]: point estimate larger in the largest than the smallest model of each family; Mistral highest",
         est("qwen2.5-7b", "H2") > est("qwen2.5-0.5b", "H2") and est("llama3.1-8b", "H2") > est("llama3.2-1b", "H2")
         and max(ALL, key=lambda m: est(m, "H2")) == "mistral-7b-v0.3")
+    ov = lambda a, b: ci(a, "H2")[0] <= ci(b, "H2")[1] and ci(b, "H2")[0] <= ci(a, "H2")[1]
+    add("H2: head-dim-128 intervals overlap within each family (Qwen 1.5/3/7B pairwise; Llama 3B/8B); Mistral overlaps Llama-8B",
+        ov("qwen2.5-1.5b", "qwen2.5-3b") and ov("qwen2.5-1.5b", "qwen2.5-7b") and ov("qwen2.5-3b", "qwen2.5-7b")
+        and ov("llama3.2-3b", "llama3.1-8b") and ov("mistral-7b-v0.3", "llama3.1-8b"))
+    add("H2 rose across the head-dimension step in both families (0.5B->1.5B, 1B->3B)",
+        est("qwen2.5-1.5b", "H2") > est("qwen2.5-0.5b", "H2") and est("llama3.2-3b", "H2") > est("llama3.2-1b", "H2"))
+    add("H5: smallest 95% lower bound >= 2.255 (printed 'at or above 2.255')",
+        min(pm[m]["H5"][P]["ci95"][0] for m in ALL for P in "KV") >= 2.255)
     add("H3: every model supported, all Holm p < 0.001", all(am["F3 H3"]["readings"][m] == "supported" and am["F3 H3"]["holm_p"][m] < 0.001
                                                            and ci(m, "H3")[1] < 0 for m in ALL))
     add("H5: all 16 supported, lower bounds > ln 4, Holm p < 0.01", all(v == "supported" for v in am["F5 H5"]["readings"].values())
@@ -200,9 +208,28 @@ def claims():
     mg = cal["mistral-7b-v0.3"]["margin_log_js"]
     add("Mistral H1: 90% CI excludes 0 but not inside the margin, so not equivalent; 95% CI includes 0",
         mi["ci90"][1] < 0 and not (mi["ci90"][0] > -mg and mi["ci90"][1] < mg) and mi["ci95"][0] < 0 < mi["ci95"][1])
-    add("H1 shrinks monotonically with size in Qwen and in Llama; Mistral smallest magnitude",
-        all(est(a, "H1") < est(b, "H1") for a, b in zip(QWEN, QWEN[1:])) and all(est(a, "H1") < est(b, "H1") for a, b in zip(LLAMA, LLAMA[1:]))
-        and max(ALL, key=lambda m: est(m, "H1")) == "mistral-7b-v0.3")
+    add("H1 [descriptive]: shrinks monotonically across the four Qwen sizes",
+        all(est(a, "H1") < est(b, "H1") for a, b in zip(QWEN, QWEN[1:])))
+    add("H1 [descriptive]: Llama changes between 1B and 3B (> 0.4) and is flat from 3B to 8B (|change| < 0.01)",
+        est("llama3.2-3b", "H1") - est("llama3.2-1b", "H1") > 0.4 and abs(est("llama3.1-8b", "H1") - est("llama3.2-3b", "H1")) < 0.01)
+    add("H1: Qwen-7B and Llama-8B resolved (Holm p < 0.001, CI < 0), unlike Mistral",
+        all(am["F1 H1"]["holm_p"][m] < 0.001 and ci(m, "H1")[1] < 0 for m in ("qwen2.5-7b", "llama3.1-8b"))
+        and ci("mistral-7b-v0.3", "H1")[1] > 0)
+    add("NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05",
+        est("llama3.2-3b", "NAT-C1") > est("qwen2.5-3b", "NAT-C1") and est("llama3.1-8b", "NAT-C1") > est("qwen2.5-7b", "NAT-C1")
+        and am["H4"]["permutation"]["T"] > 0 and am["H4"]["permutation"]["p_one_sided"] > 0.05)
+    add("X1: Llama H1 slope restricted to head-dim 128 has a CI including 0 (flat)",
+        ex["X4"]["hd128_only_slopes"]["llama"]["H1"]["ci95_boot"][0] < 0 < ex["X4"]["hd128_only_slopes"]["llama"]["H1"]["ci95_boot"][1])
+    vn = dict(re.findall(r"\\csname vn@([^\\]+)\\endcsname\{(.*)\}$", (PJ / "tables_v3/numbers_v3.tex").read_text(encoding="utf-8"), flags=re.M))
+    num = lambda k: [float(x) for x in re.findall(r"[+-]?\d+\.\d+", vn[k])]
+    add("v3: Llama-base NAT-C1 CI includes 0; Llama-instruct CI > 0 (\"near zero or positive\")",
+        num("natc1.lb.ci")[0] < 0 < num("natc1.lb.ci")[1] and num("natc1.li.ci")[0] > 0)
+    add("v3 X13: Llama key-path centring not significant after Holm (both p > 0.05)",
+        num("rng.x13holmKl.min")[0] > 0.05 and num("rng.x13holmKl.max")[0] > 0.05)
+    pot = lambda k: int(re.findall(r"\d+", vn[k])[0])
+    add("v3: LOC potency printed as Llama (low end) to Qwen (high end): Llama-base < Qwen-base, both instruct equal to base",
+        pot("arch.lb.potency") < pot("arch.qb.potency") and pot("arch.li.potency") == pot("arch.lb.potency")
+        and pot("arch.qi.potency") == pot("arch.qb.potency"))
     add("H4 falsified; three Qwen CIs entirely above 0; Qwen-0.5B negative; Llama-1B equivalent; other Llama positive",
         am["H4"]["result"] == "falsified" and sum(ci(m, "NAT-C1")[0] > 0 for m in QWEN) == 3 and ci("qwen2.5-0.5b", "NAT-C1")[1] < 0
         and pm["llama3.2-1b"]["contrasts"]["NAT-C1"]["verdict"] == "equivalent" and all(ci(m, "NAT-C1")[0] > 0 for m in LLAMA[1:]))

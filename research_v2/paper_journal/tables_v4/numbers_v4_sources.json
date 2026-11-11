@@ -5386,20 +5386,20 @@
    ]
   },
   "cost.total": {
-   "val": "\\$12.10",
-   "raw": 12.10400874458719,
+   "val": "\\$12.13",
+   "raw": 12.130135525134392,
    "fmt": "usd",
    "src": "v4/closeout/billing_snapshot_2026-11-09.json#totals/totalAmount"
   },
   "cost.gpu": {
-   "val": "\\$11.23",
-   "raw": 11.227272609365173,
+   "val": "\\$11.25",
+   "raw": 11.253052167710848,
    "fmt": "usd",
    "src": "v4/closeout/billing_snapshot_2026-11-09.json#totals/podGpuAmount"
   },
   "cost.disk": {
    "val": "\\$0.08",
-   "raw": 0.07951388414949179,
+   "raw": 0.07986110635101795,
    "fmt": "usd",
    "src": "v4/closeout/billing_snapshot_2026-11-09.json#totals/podDiskAmount"
   },
@@ -5570,9 +5570,9 @@
    ]
   },
   "rng.hfivelo.min": {
-   "val": "$2.26$",
+   "val": "$2.255$",
    "raw": 2.2554002165398703,
-   "fmt": "u2",
+   "fmt": "u3",
    "op": "min",
    "inputs": [
     "v4_runs/v4_report.json#per_model/qwen2.5-0.5b/H5/K/ci95/0",

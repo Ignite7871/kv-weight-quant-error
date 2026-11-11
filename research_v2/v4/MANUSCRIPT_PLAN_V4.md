@@ -9,7 +9,7 @@ tolerance), `v4/exploratory/X_RESULTS_V4.md` (X1-X4, plan 1409b94, results b4eec
 
 Alternatives:
 - (a) *Weight-quantization error in the KV cache across scale: a robust key–value asymmetry and a corrected family effect in eight language models*
-- (b) keep v3's opening, *Weight-quantization error in the KV cache is not isotropic noise*, and add *: a pre-registered scale study across three model families*
+- (b) keep v3's opening, *Weight-quantization error in the KV cache is not isotropic noise*, and add *: a pre-specified (privately locked) scale study across three model families*
 
 ## 2. Abstract (draft, 249 words)
 
@@ -21,7 +21,7 @@ Alternatives:
 > reported. In every model, natural value error was more disruptive than isotropic noise of the same norm, values-only error was
 > more disruptive than keys-only error at natural size, and the error shared a component across decode positions far above the
 > isotropic share. Natural key error was milder than isotropic noise in seven models. This advantage shrank with size in both
-> multi-size families and was inconclusive in Mistral-7B. The pre-registered prediction that the sign of the
+> multi-size families and was inconclusive in Mistral-7B. The pre-specified (privately locked) prediction that the sign of the
 > natural-versus-isotropic contrast follows model family was falsified. The contrast was negative only in the smallest Qwen
 > model, near zero in the smallest Llama, and positive in every larger model, including Mistral. The family difference reported
 > in our earlier four-model study is therefore confounded with size, and with head dimension, which changes from 64 to 128 at the
@@ -29,11 +29,13 @@ Alternatives:
 
 ## 3. Highlights (each ≤ 85 characters, Elsevier)
 
-1. NF4 value-cache error is harsher than equal-norm noise in all eight models.
+The JAIR template has no highlights; these are kept for other venues. Revised 2026-11-11 after the fresh-eyes review.
+
+1. NF4 value-cache error is harsher than equal-norm noise in all eight checkpoints.
 2. Values-only cache error exceeds keys-only error at natural size in every model.
 3. The error shares a cross-position component far above isotropic in every model.
-4. The key-path advantage over isotropic noise shrinks with model size.
-5. The earlier family effect is falsified; it is confounded with size and head_dim.
+4. Key-path mildness held in 7 of 8 models; its size trend is confounded with head_dim.
+5. The predicted family-dependent sign was falsified; a family offset is unresolved.
 
 ## 4. The framing change
 
@@ -49,7 +51,7 @@ Alternatives:
 
   > *Correction of our earlier reading.* In the four-model study (Section 6), NAT−C1 was negative in both Qwen-0.5B models and
   > non-negative in both Llama-1B models, and we read the difference as tracking family, not tuning. With four Qwen and three
-  > Llama sizes, the pre-registered family prediction (Qwen < 0, Llama ≥ 0) was falsified. Three of the four Qwen models had
+  > Llama sizes, the pre-specified (privately locked) family prediction (Qwen < 0, Llama ≥ 0) was falsified. Three of the four Qwen models had
   > NAT−C1 entirely above 0, and the permutation test gave p = 0.257 with no separation. The negative sign appears only at the
   > smallest Qwen size. It rose with size in both families at similar rates (exploratory: +0.52 and +0.63 log units per decade
   > of parameters). The earlier family contrast compared one size per family. Its sign difference is better described as a

@@ -9,7 +9,7 @@
  "rederived_fail": [],
  "recomp_n": 195,
  "recomp_fail": [],
- "literals_n": 229,
+ "literals_n": 239,
  "literals_unclassified": [],
  "claims": [
   {
@@ -21,7 +21,19 @@
    "ok": true
   },
   {
-   "claim": "H2: larger in the largest than the smallest model of each family; Mistral largest of all",
+   "claim": "H2 [descriptive]: point estimate larger in the largest than the smallest model of each family; Mistral highest",
+   "ok": true
+  },
+  {
+   "claim": "H2: head-dim-128 intervals overlap within each family (Qwen 1.5/3/7B pairwise; Llama 3B/8B); Mistral overlaps Llama-8B",
+   "ok": true
+  },
+  {
+   "claim": "H2 rose across the head-dimension step in both families (0.5B->1.5B, 1B->3B)",
+   "ok": true
+  },
+  {
+   "claim": "H5: smallest 95% lower bound >= 2.255 (printed 'at or above 2.255')",
    "ok": true
   },
   {
@@ -45,7 +57,35 @@
    "ok": true
   },
   {
-   "claim": "H1 shrinks monotonically with size in Qwen and in Llama; Mistral smallest magnitude",
+   "claim": "H1 [descriptive]: shrinks monotonically across the four Qwen sizes",
+   "ok": true
+  },
+  {
+   "claim": "H1 [descriptive]: Llama changes between 1B and 3B (> 0.4) and is flat from 3B to 8B (|change| < 0.01)",
+   "ok": true
+  },
+  {
+   "claim": "H1: Qwen-7B and Llama-8B resolved (Holm p < 0.001, CI < 0), unlike Mistral",
+   "ok": true
+  },
+  {
+   "claim": "NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05",
+   "ok": true
+  },
+  {
+   "claim": "X1: Llama H1 slope restricted to head-dim 128 has a CI including 0 (flat)",
+   "ok": true
+  },
+  {
+   "claim": "v3: Llama-base NAT-C1 CI includes 0; Llama-instruct CI > 0 (\"near zero or positive\")",
+   "ok": true
+  },
+  {
+   "claim": "v3 X13: Llama key-path centring not significant after Holm (both p > 0.05)",
+   "ok": true
+  },
+  {
+   "claim": "v3: LOC potency printed as Llama (low end) to Qwen (high end): Llama-base < Qwen-base, both instruct equal to base",
    "ok": true
   },
   {
@@ -111,35 +151,35 @@
   },
   {
    "file": "sections_v4\\00_abstract.tex",
-   "line": 21,
+   "line": 20,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
-   "context": "ameters up. Head dimension changes from 64 to 128 at the same step as size, so siz"
+   "context": "64 to 128. The pre-specified prediction th"
   },
   {
    "file": "sections_v4\\00_abstract.tex",
-   "line": 21,
+   "line": 20,
    "literal": "128",
    "class": "head dimension (\u00a72)",
-   "context": "s up. Head dimension changes from 64 to 128 at the same step as size, so size and h"
+   "context": "64 to 128. The pre-specified prediction that the"
   },
   {
    "file": "sections_v4\\01_introduction.tex",
-   "line": 22,
+   "line": 23,
    "literal": "3.2",
    "class": "model / licence name Llama 3.2",
    "context": "four   sizes ( -- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
   },
   {
    "file": "sections_v4\\01_introduction.tex",
-   "line": 22,
+   "line": 23,
    "literal": "3.2",
    "class": "model / licence name Llama 3.2",
    "context": "sizes ( -- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
   },
   {
    "file": "sections_v4\\01_introduction.tex",
-   "line": 22,
+   "line": 23,
    "literal": "3.1",
    "class": "model / licence name Llama 3.1",
    "context": "-- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
@@ -758,193 +798,228 @@
    "line": 33,
    "literal": "0.001",
    "class": "p display threshold",
-   "context": "$p<0.001$.   is  { }. The contrast does not shri"
+   "context": "$p<0.001$.   is  { }."
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 38,
+   "line": 37,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "ead dimension. Among the head-dimension-128 models the estimates were"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 43,
    "literal": "0.001",
    "class": "p display threshold",
    "context": "$NAT-V lay between   and   (all Holm $p<0.001$), a factor of"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 48,
+   "line": 53,
    "literal": "95\\%",
    "class": "CI level",
    "context": "times the isotropic share, with every 95\\% lower bound at"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 49,
+   "line": 54,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "bove  , against the support threshold $ 4 1.39$, and every Holm $p<0.01$"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 49,
+   "line": 54,
    "literal": "1.39",
    "class": "ln 4 rounded (threshold)",
    "context": "ve  , against the support threshold $ 4 1.39$, and every Holm $p<0.01$"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 49,
+   "line": 54,
    "literal": "0.01",
    "class": "Holm level wording (all Holm p = 0.0016)",
    "context": "threshold $ 4 1.39$, and every Holm $p<0.01$"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 56,
+   "line": 61,
    "literal": "0.001",
    "class": "p display threshold",
    "context": "and   (Holm $p<0.001$). In   the estimate was"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 57,
+   "line": 62,
    "literal": "90\\%",
    "class": "CI level",
    "context": ", Holm $p=$\\, :  { }. Its 90\\% interval,  , excludes"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 58,
+   "line": 63,
    "literal": "0",
    "class": "zero",
    "context": "0 but does not lie inside its margin of $"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 58,
+   "line": 63,
    "literal": "0",
    "class": "zero",
    "context": "neither a difference nor equivalent to 0,"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 67,
+   "line": 70,
+   "literal": "0.001",
+   "class": "p display threshold",
+   "context": "ze, which were both resolved at Holm $p<0.001$ ( -   ,  -   ); since"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 77,
    "literal": "95\\%",
    "class": "CI level",
    "context": "(right) against $  $ parameters, with 95\\% intervals. Lines join the"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 68,
+   "line": 78,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
    "context": "family. Open squares mark the head\\_dim-64 models, which are also the smallest of"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 78,
+   "line": 88,
    "literal": "0",
    "class": "zero",
    "context": "n models had an interval entirely above 0,"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 79,
+   "line": 89,
    "literal": "0",
    "class": "zero",
    "context": "it as predicted.  -  was equivalent to 0 ( ), and the other two Llama models wer"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 88,
+   "line": 99,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
-   "context": "from the change in head dimension from 64 to 128, which happens at the same step"
+   "context": "head dimension from 64 to 128, which happens at the same step"
   },
   {
    "file": "sections_v4\\04_results.tex",
-   "line": 88,
+   "line": 99,
    "literal": "128",
    "class": "head dimension (\u00a72)",
-   "context": "the change in head dimension from 64 to 128, which happens at the same step in both"
+   "context": "head dimension from 64 to 128, which happens at the same step in both"
+  },
+  {
+   "file": "sections_v4\\04_results.tex",
+   "line": 101,
+   "literal": "7",
+   "class": "C(7,3)",
+   "context": "against  ; 7--    against  ), and $T$ points in the"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 27,
+   "line": 17,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "context": "he two families when the head-dimension-64 models are included; among the"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 18,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "head-dimension-128 models the Llama   slope is flat (   ;"
+  },
+  {
+   "file": "sections_v4\\05_exploratory.tex",
+   "line": 28,
    "literal": "0",
    "class": "zero",
    "context": "ation of the two contrasts was close to 0 in the four smallest models ("
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 29,
+   "line": 30,
    "literal": "0",
    "class": "zero",
    "context": ", intervals excluding 0). Both contrasts are computed on the sa"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 35,
+   "line": 36,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
    "context": "del is the only one with head dimension 64, so every within-family size comparison"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 37,
+   "line": 38,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
    "context": "estimate is at head dimension 64, and its estimate equivalent to 0 is th"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 37,
+   "line": 38,
    "literal": "0",
    "class": "zero",
    "context": "sion 64, and its estimate equivalent to 0 is the other head-dimension-64 model),"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 37,
+   "line": 38,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
    "context": "valent to 0 is the other head-dimension-64 model), the   family"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 41,
+   "line": 42,
    "literal": "128",
    "class": "head dimension (\u00a72)",
    "context": "Restricted to the head-dimension-128 models, the Qwen slopes stay positive ("
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 44,
+   "line": 45,
    "literal": "0",
    "class": "zero",
    "context": "includes 0 (   ). The step from each family's head"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 44,
+   "line": 45,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
    "context": "step from each family's head-dimension-64 model to its next"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 54,
+   "line": 56,
    "literal": "0",
    "class": "zero",
    "context": "h pairs the largest share sits in layer 0 or 1; it is most extreme in  , where la"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 54,
+   "line": 56,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "rs the largest share sits in layer 0 or 1; it is most extreme in  , where layer 0"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 54,
+   "line": 56,
    "literal": "0",
    "class": "zero",
    "context": "1; it is most extreme in  , where layer 0"
@@ -1000,189 +1075,189 @@
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 33,
+   "line": 34,
    "literal": "95\\%",
    "class": "CI level",
    "context": "study: locked contrasts per model, with 95\\% intervals ($n=200$ each). NAT$-$C1 is t"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 33,
+   "line": 34,
    "literal": "200",
    "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
    "context": "asts per model, with 95\\% intervals ($n=200$ each). NAT$-$C1 is the"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 53,
+   "line": 54,
    "literal": "0.001",
    "class": "p display threshold",
    "context": "between   and   (all Holm $p<0.001$; Table~ ). The two arms split the natu"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 66,
+   "line": 67,
    "literal": "100\\%",
    "class": "the whole",
-   "context": "the two need not add to 100\\%. INH is the cache component of a config"
+   "context": "two need not add to 100\\%. INH is the cache component of a config"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 74,
+   "line": 75,
    "literal": "95\\%",
    "class": "CI level",
    "context": "(95\\% intervals), the percentage of quantized"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 97,
+   "line": 98,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "positions of a slot would carry about $1/n$ of the error energy. The natural err"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 105,
+   "line": 106,
    "literal": "0.001",
    "class": "p display threshold",
    "context": "($ _{ {cen}}$ from   to  , Holm $p<0.001$) and closed a share $G$ of"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 124,
+   "line": 125,
    "literal": "95\\%",
    "class": "CI level",
    "context": "sus-isotropic gap that centring closes. 95\\%"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 155,
+   "line": 156,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
    "context": "{The 2$ $2} With the four models as cells $a$"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 155,
+   "line": 156,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
    "context": "{The 2$ $2} With the four models as cells $a$ (Qwe"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 157,
+   "line": 158,
    "literal": "12",
    "class": "count",
    "context": "ble~ , Figure~ ). The family contrast $ 12[(c+d)-(a+b)]$ was"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 159,
+   "line": 160,
    "literal": "12",
    "class": "count",
    "context": "predicted. The tuning contrast $ 12[(b+d)-(a+c)]$ was equivalent to 0 (   )"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 159,
+   "line": 160,
    "literal": "0",
    "class": "zero",
    "context": "st $ 12[(b+d)-(a+c)]$ was equivalent to 0 (   ), contradicting a"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 166,
+   "line": 168,
    "literal": "200",
    "class": "earlier study's test sample / null draws (\u00a73, \u00a76)",
    "context": "the per-problem NAT$-$C1 over the same 200 problems, Holm"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 171,
+   "line": 173,
    "literal": "95\\%",
    "class": "CI level",
    "context": "Contrast & Estimate & 95\\% CI & Holm $p$ & Verdict & Prediction \\\\"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 173,
+   "line": 175,
    "literal": "0",
    "class": "zero",
    "context": "Family &   &   &   &   & $>0$:   \\\\"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 174,
+   "line": 176,
    "literal": "0",
    "class": "zero",
    "context": "Tuning &   &   &   &   & $>0$:   \\\\"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 183,
+   "line": 185,
    "literal": "95\\%",
    "class": "CI level",
    "context": "C1 per model in the earlier study, with 95\\% intervals: the cells of Table~ . Genera"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 189,
+   "line": 191,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
    "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llam"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 189,
+   "line": 191,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
    "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llama si"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 191,
+   "line": 193,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
-   "context": "(Figure~ ). The 2$ $2's family contrast is better describ"
+   "context": "ro to positive in Llama (Figure~ ). The 2$ $2's family"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 191,
+   "line": 193,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
-   "context": "(Figure~ ). The 2$ $2's family contrast is better described a"
+   "context": "o positive in Llama (Figure~ ). The 2$ $2's family"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 192,
+   "line": 195,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
-   "context": "ize, and they share a head dimension of 64 that no larger model in the ladder has."
+   "context": "share a head dimension of 64 that no larger model in the ladder has."
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 193,
+   "line": 195,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
-   "context": "The caveat we attached to the 2$ $2 named this confound; the ladder sho"
+   "context": "dder has. The caveat we attached to the 2$ $2 named this"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
-   "line": 193,
+   "line": 195,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2",
-   "context": "The caveat we attached to the 2$ $2 named this confound; the ladder shows t"
+   "context": "has. The caveat we attached to the 2$ $2 named this"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 32,
+   "line": 38,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "} For practitioners who keep weights in 4 bits and the cache in 16 bits, the resu"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 32,
+   "line": 38,
    "literal": "16",
    "class": "H5 family size (16 tests)",
    "context": "keep weights in 4 bits and the cache in 16 bits, the results suggest"
@@ -1280,21 +1355,21 @@
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 31,
+   "line": 33,
    "literal": "4.0",
    "class": "CC BY 4.0",
-   "context": "MIT License and the records under CC BY 4.0."
+   "context": "records under CC BY 4.0."
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 35,
+   "line": 37,
    "literal": "13386",
    "class": "TMLR submission number",
    "context": "question, TMLR submission 13386 (rejected) and ACL Rolling Review submi"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 35,
+   "line": 37,
    "literal": "283",
    "class": "ARR submission number",
    "context": "cted) and ACL Rolling Review submission 283 (not committed to any venue), were not"
@@ -1395,77 +1470,112 @@
    "line": 6,
    "literal": "2026",
    "class": "year",
-   "context": "(OpenAI) was used from July to November 2026 for research discussion, experimental p"
+   "context": "only for the earlier studies, from July 2026 up to and including the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 12,
+   "line": 10,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2",
+   "context": "s not used for the present scale study (2 to 9 November 2026) or for this manuscr"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 10,
+   "literal": "9",
+   "class": "steps 9-64",
+   "context": "used for the present scale study (2 to 9 November 2026) or for this manuscript."
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 10,
+   "literal": "2026",
+   "class": "year",
+   "context": "he present scale study (2 to 9 November 2026) or for this manuscript."
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 13,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 12,
+   "line": 13,
    "literal": "2026-10-29",
    "class": "date",
    "context": "the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 12,
+   "line": 13,
    "literal": "2026-11-01",
    "class": "date",
    "context": "e VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 16,
+   "line": 17,
    "literal": "2026-11-02",
    "class": "date",
    "context": "sent study} For the present study, from 2026-11-02 to 2026-11-09, the AI-use log records C"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 16,
+   "line": 17,
    "literal": "2026-11-09",
    "class": "date",
    "context": "r the present study, from 2026-11-02 to 2026-11-09, the AI-use log records Claude"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 17,
+   "line": 18,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 23,
+   "line": 24,
    "literal": "1.4.0",
    "class": "RunPod plugin version (AI_USE_LOG_V4)",
    "context": "(plugin   1.4.0). Each such action was approved by the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 37,
+   "line": 38,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 37,
+   "line": 38,
    "literal": "2026-10-28",
    "class": "date (AI-use log)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 37,
+   "line": 38,
    "literal": "2026-11-01",
    "class": "date",
    "context": "del Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as a source of d"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 40,
+   "literal": "2026-11-01",
+   "class": "date",
+   "context": "interface, with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 40,
+   "literal": "2026-11-09",
+   "class": "date",
+   "context": "with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the choice of GPU"
   },
   {
    "file": "tables_v4\\h5h4.tex",

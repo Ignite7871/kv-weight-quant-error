@@ -311,7 +311,7 @@ def build_ops():
     put("rng.facKV.max", math.exp(max(get(p) for p in ptrs)), "u1", op="exp_max", inputs=ptrs)
     der("x.ratio.laqa", "div", [f"{EXP}#size/llama3.2-1b/params_16bit", f"{EXP}#size/qwen2.5-0.5b/params_16bit"], "u1")
     ptrs = [pm(m, "H5", P, "ci95", "0") for m in LADDER for P in ("K", "V")]
-    put("rng.hfivelo.min", min(get(p) for p in ptrs), "u2", op="min", inputs=ptrs)
+    put("rng.hfivelo.min", min(get(p) for p in ptrs), "u3", op="min", inputs=ptrs)
 
 
 def write_macros():
