@@ -1,0 +1,27 @@
+{
+ "started_utc": "2026-11-11T12:51:54Z",
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "gpu_environment": {
+  "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "driver_version": "621.14",
+  "ecc_mode": "[N/A]",
+  "memory_total": "8188 MiB",
+  "cuda_version": "13.5"
+ },
+ "image": {
+  "image": "runpod/pytorch",
+  "tag": "1.0.2-cu1281-torch280-ubuntu2404",
+  "digest": "sha256:0a360022e8de4375af99430f84e8b38951acc397252163a37ceac7204d01be35",
+  "source": "Docker Hub tag record, read inside the pod at first boot",
+  "utc": "2026-11-11T12:51:11Z"
+ },
+ "tests_passed": "16/16",
+ "mutants_caught": "67/67",
+ "determinism": {
+  "cublas_workspace_config": ":4096:8",
+  "deterministic_algorithms": true
+ },
+ "torch_cuda": "12.6",
+ "all_passed": true,
+ "finished_utc": "2026-11-11T12:57:31Z"
+}

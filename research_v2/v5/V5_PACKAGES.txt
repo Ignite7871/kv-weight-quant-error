@@ -1,0 +1,22 @@
+# PROTOCOL_V5 section 10: the pod's Python packages, the v4 pins unchanged (v4/V4_PACKAGES.txt). torch 2.13.0+cu126 is installed first from the
+# PyTorch cu126 index, and hqq==0.2.8.post1 last with DISABLE_CUDA=1 and --no-deps (v5/cloud/pod_setup_v5.sh).
+# The full pip freeze, CUDA, driver and nvidia-smi output go into every model's run manifest.
+transformers==5.13.0
+bitsandbytes==0.49.2
+accelerate==1.14.0
+huggingface_hub==1.23.0
+safetensors==0.8.0
+tokenizers==0.22.2
+datasets==5.0.0
+numpy==2.5.1
+einops==0.8.2
+termcolor==3.3.0
+tqdm==4.68.4
+sentencepiece==0.2.1
+httpx==0.28.1
+PyYAML==6.0.3
+regex==2026.7.10
+pyarrow==25.0.0
+pandas==3.0.3
+psutil==7.2.2
+Jinja2==3.1.6

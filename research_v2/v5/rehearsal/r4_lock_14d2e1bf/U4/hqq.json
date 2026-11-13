@@ -1,0 +1,23 @@
+{
+ "unit": "U4",
+ "precision": "fp16",
+ "hqq_version": "0.2.8.post1",
+ "config": {
+  "nbits": 4,
+  "group_size": 64,
+  "axis": 1
+ },
+ "deterministic": true,
+ "state_sha256": "8b93f27d1cf8df3af3f89c7da5d40af9318f31a69c1f3d6666e60e7af4c5bf43",
+ "second_state_sha256": "8b93f27d1cf8df3af3f89c7da5d40af9318f31a69c1f3d6666e60e7af4c5bf43",
+ "frozen": false,
+ "bits_per_weight": 4.5,
+ "quantize_seconds": 5.266370999999992,
+ "utc": "2026-11-12T03:12:32Z",
+ "pass": true,
+ "oracle": {
+  "n_layers": 168,
+  "mismatches": [],
+  "pass": true
+ }
+}

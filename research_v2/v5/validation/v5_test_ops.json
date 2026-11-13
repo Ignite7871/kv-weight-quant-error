@@ -1,0 +1,94 @@
+{
+ "passed": 22,
+ "n": 22,
+ "results": [
+  {
+   "test": "o01_authorization_files_and_tokens",
+   "ok": true
+  },
+  {
+   "test": "o02_rehearsal_files_and_guards",
+   "ok": true
+  },
+  {
+   "test": "o03_permission_rules",
+   "ok": true
+  },
+  {
+   "test": "o04_ceiling_stop_and_storage_tier",
+   "ok": true
+  },
+  {
+   "test": "o05_no_token_anywhere",
+   "ok": true
+  },
+  {
+   "test": "o06_one_gpu_process_lock",
+   "ok": true
+  },
+  {
+   "test": "o07_order_rules",
+   "ok": true
+  },
+  {
+   "test": "o08_unit_start_check_and_cut_units",
+   "ok": true
+  },
+  {
+   "test": "o09_design_reduction_order",
+   "ok": true
+  },
+  {
+   "test": "o10_drift_reference_and_start_check_before_problem",
+   "ok": true
+  },
+  {
+   "test": "o11_exactly_once_resume_and_hash_only_history",
+   "ok": true
+  },
+  {
+   "test": "o12_g5_bos_from_manifest",
+   "ok": true
+  },
+  {
+   "test": "o13_remote_filter_and_local_fetch_verification",
+   "ok": true
+  },
+  {
+   "test": "o14_closeout_gate_with_cut_units",
+   "ok": true
+  },
+  {
+   "test": "o21_gm_environment_reads_both_nvidia_smi_banners",
+   "ok": true
+  },
+  {
+   "test": "o22_watcher_exit_codes_on_a_local_pod",
+   "ok": true
+  },
+  {
+   "test": "o15_gm_verdict",
+   "ok": true
+  },
+  {
+   "test": "o16_lock_create_verify_and_v5_appendix_lines",
+   "ok": true
+  },
+  {
+   "test": "o17_locked_file_list_and_v4_previous_lock",
+   "ok": true
+  },
+  {
+   "test": "o18_cloud_files_name_the_study",
+   "ok": true
+  },
+  {
+   "test": "o19_wikitext_history_is_the_real_text_not_a_generation",
+   "ok": true
+  },
+  {
+   "test": "o20_hqq_state_checked_at_every_load",
+   "ok": true
+  }
+ ]
+}

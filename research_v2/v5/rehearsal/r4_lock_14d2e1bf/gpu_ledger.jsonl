@@ -1,0 +1,19 @@
+{"start_utc": "2026-11-11T15:29:06Z", "seconds": 297.18409299850464, "block": "gm", "completed": true}
+{"start_utc": "2026-11-11T15:34:47Z", "seconds": 909.5216994285583, "block": "gates:U0", "completed": true}
+{"start_utc": "2026-11-11T15:50:20Z", "seconds": 91.24057602882385, "block": "calibrate:U0", "completed": true}
+{"start_utc": "2026-11-11T15:52:25Z", "seconds": 224.60292148590088, "block": "test:U0", "completed": true}
+{"start_utc": "2026-11-11T15:57:35Z", "seconds": 93.28780388832092, "block": "probe:qwen-nf4", "completed": true}
+{"start_utc": "2026-11-11T15:59:31Z", "seconds": 104.3695547580719, "block": "probe:qwen-hqq", "completed": true}
+{"start_utc": "2026-11-11T16:03:36Z", "seconds": 1414.054765701294, "block": "gates:U1", "completed": true}
+{"start_utc": "2026-11-11T16:27:34Z", "seconds": 162.550039768219, "block": "calibrate:U1", "completed": true}
+{"start_utc": "2026-11-11T16:30:53Z", "seconds": 150.08439469337463, "block": "test:U1", "completed": false, "recovered_after_unclean_exit": true}
+{"start_utc": "2026-11-11T16:34:53Z", "seconds": 210.90376710891724, "block": "test:U1", "completed": true}
+{"start_utc": "2026-11-11T16:39:45Z", "seconds": 851.9479196071625, "block": "gates:U2", "completed": true}
+{"start_utc": "2026-11-11T16:54:23Z", "seconds": 96.28804779052734, "block": "calibrate:U2", "completed": true}
+{"start_utc": "2026-11-11T16:56:38Z", "seconds": 224.08306288719177, "block": "test:U2", "completed": true}
+{"start_utc": "2026-11-11T17:01:41Z", "seconds": 864.770448923111, "block": "gates:U3", "completed": true}
+{"start_utc": "2026-11-11T17:16:27Z", "seconds": 91.54948878288269, "block": "calibrate:U3", "completed": true}
+{"start_utc": "2026-11-11T17:18:34Z", "seconds": 269.3067002296448, "block": "test:U3", "completed": true}
+{"start_utc": "2026-11-12T03:12:16Z", "seconds": 996.9087221622467, "block": "gates:U4", "completed": true}
+{"start_utc": "2026-11-12T03:29:18Z", "seconds": 106.3388159275055, "block": "calibrate:U4", "completed": true}
+{"start_utc": "2026-11-12T03:31:39Z", "seconds": 258.33603596687317, "block": "test:U4", "completed": true}

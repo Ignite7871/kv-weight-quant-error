@@ -1,0 +1,15 @@
+{
+ "n_calibration_problems": 3,
+ "dose_slope_b_hat": 2.005012714935541,
+ "dose_slope_problem_sd": 0.7829134115773105,
+ "dose_response_informative": true,
+ "cv_raw_median": 0.09748342414830796,
+ "c_used": 0.1,
+ "margin_log_js": 0.19109812237046409,
+ "rho_K": 0.07386890830555931,
+ "rho_V": 0.21657416086269404,
+ "rho_V_over_rho_K": 2.931871687704296,
+ "unit": "U4",
+ "n_measure_steps": 176,
+ "included": 3
+}

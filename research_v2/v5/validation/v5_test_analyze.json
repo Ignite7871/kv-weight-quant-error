@@ -1,0 +1,50 @@
+{
+ "passed": 11,
+ "n": 11,
+ "results": [
+  {
+   "test": "a01_ax_references_and_sources_are_the_protocol_table",
+   "ok": true
+  },
+  {
+   "test": "a02_ax_classify_and_one_sided_p",
+   "ok": true
+  },
+  {
+   "test": "a03_truth_at_head_dim_everywhere",
+   "ok": true
+  },
+  {
+   "test": "a04_truth_at_size_and_mixed_and_between",
+   "ok": true
+  },
+  {
+   "test": "a05_families_falsified_and_inconclusive",
+   "ok": true
+  },
+  {
+   "test": "a06_holm_within_each_family",
+   "ok": true
+  },
+  {
+   "test": "a07_cut_unit_leaves_one_model_family",
+   "ok": true
+  },
+  {
+   "test": "a08_r1_n60_and_unresolved_units",
+   "ok": true
+  },
+  {
+   "test": "a09_flagged_with_and_without",
+   "ok": true
+  },
+  {
+   "test": "a10_anchor_criteria",
+   "ok": true
+  },
+  {
+   "test": "a11_independent_recomputation_agrees",
+   "ok": true
+  }
+ ]
+}

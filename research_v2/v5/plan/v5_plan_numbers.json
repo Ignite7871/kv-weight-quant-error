@@ -1,0 +1,1624 @@
+{
+ "check_v4_fit_x1.48_vs_measured": {
+  "qwen2.5-0.5b": {
+   "measured_h": 1.2,
+   "fit_x1.48_h": 1.22
+  },
+  "qwen2.5-1.5b": {
+   "measured_h": 1.42,
+   "fit_x1.48_h": 1.48
+  },
+  "qwen2.5-7b": {
+   "measured_h": 1.82,
+   "fit_x1.48_h": 1.81
+  },
+  "mistral-7b-v0.3": {
+   "measured_h": 2.25,
+   "fit_x1.48_h": 1.99
+  }
+ },
+ "unit_gpu_h": {
+  "qwen2.5-0.5b": 1.2,
+  "qwen2.5-7b": 1.82,
+  "mistral-7b-v0.3": 2.25,
+  "qwen2.5-1.5b": 1.42,
+  "qwen3-0.6b-base": 1.42,
+  "smollm2-1.7b": 1.31
+ },
+ "wiki_factor": 1.047,
+ "billed_over_gpu": 1.222,
+ "plans": {
+  "hqq x1.5 | full: B=D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.8
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     2.73
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.37
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 17.75,
+   "billed_h": 24.61,
+   "pod_usd": 14.52,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.71,
+   "container_disk_usd": 0.1,
+   "total_usd": 15.33
+  },
+  "hqq x1.5 | full: B=D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.34
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     2.07
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     2.53
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 14.42,
+   "billed_h": 20.34,
+   "pod_usd": 12.0,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.66,
+   "container_disk_usd": 0.08,
+   "total_usd": 12.74
+  },
+  "hqq x1.5 | core: B=D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.8
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.37
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 13.11,
+   "billed_h": 18.4,
+   "pod_usd": 10.86,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.65,
+   "container_disk_usd": 0.08,
+   "total_usd": 11.59
+  },
+  "hqq x1.5 | core: B=D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.34
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     2.53
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 10.9,
+   "billed_h": 15.57,
+   "pod_usd": 9.19,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.62,
+   "container_disk_usd": 0.06,
+   "total_usd": 9.87
+  },
+  "hqq x1.5 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.8
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.37
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 15.02,
+   "billed_h": 21.11,
+   "pod_usd": 12.45,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.67,
+   "container_disk_usd": 0.09,
+   "total_usd": 13.21
+  },
+  "hqq x1.5 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.34
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     2.53
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 12.35,
+   "billed_h": 17.69,
+   "pod_usd": 10.43,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.64,
+   "container_disk_usd": 0.07,
+   "total_usd": 11.14
+  },
+  "hqq x1.5 | min: B={0.5B,Mistral}, D={0.5B} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.8
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.37
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ]
+   ],
+   "gpu_h": 10.76,
+   "billed_h": 15.38,
+   "pod_usd": 9.07,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.62,
+   "container_disk_usd": 0.06,
+   "total_usd": 9.75
+  },
+  "hqq x1.5 | min: B={0.5B,Mistral}, D={0.5B} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.34
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     2.53
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ]
+   ],
+   "gpu_h": 9.14,
+   "billed_h": 13.3,
+   "pod_usd": 7.85,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.6,
+   "container_disk_usd": 0.06,
+   "total_usd": 8.51
+  },
+  "hqq x1.5 | no B: D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 7.94,
+   "billed_h": 11.77,
+   "pod_usd": 6.94,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.58,
+   "container_disk_usd": 0.05,
+   "total_usd": 7.57
+  },
+  "hqq x1.5 | no B: D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 7.03,
+   "billed_h": 10.6,
+   "pod_usd": 6.26,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.57,
+   "container_disk_usd": 0.04,
+   "total_usd": 6.87
+  },
+  "hqq x2.0 | full: B=D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.4
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     3.64
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     4.49
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 20.38,
+   "billed_h": 27.99,
+   "pod_usd": 16.52,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.74,
+   "container_disk_usd": 0.12,
+   "total_usd": 17.38
+  },
+  "hqq x2.0 | full: B=D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.78
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     2.76
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.38
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 16.4,
+   "billed_h": 22.88,
+   "pod_usd": 13.5,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.69,
+   "container_disk_usd": 0.1,
+   "total_usd": 14.29
+  },
+  "hqq x2.0 | core: B=D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.4
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     4.49
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 14.83,
+   "billed_h": 20.61,
+   "pod_usd": 12.16,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.67,
+   "container_disk_usd": 0.09,
+   "total_usd": 12.92
+  },
+  "hqq x2.0 | core: B=D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.78
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.38
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 12.19,
+   "billed_h": 17.22,
+   "pod_usd": 10.16,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.63,
+   "container_disk_usd": 0.07,
+   "total_usd": 10.86
+  },
+  "hqq x2.0 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.4
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     4.49
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 16.74,
+   "billed_h": 23.32,
+   "pod_usd": 13.76,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.69,
+   "container_disk_usd": 0.1,
+   "total_usd": 14.55
+  },
+  "hqq x2.0 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.78
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.38
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 13.64,
+   "billed_h": 19.34,
+   "pod_usd": 11.41,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.65,
+   "container_disk_usd": 0.08,
+   "total_usd": 12.14
+  },
+  "hqq x2.0 | min: B={0.5B,Mistral}, D={0.5B} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.4
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     4.49
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ]
+   ],
+   "gpu_h": 12.48,
+   "billed_h": 17.59,
+   "pod_usd": 10.38,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.64,
+   "container_disk_usd": 0.07,
+   "total_usd": 11.09
+  },
+  "hqq x2.0 | min: B={0.5B,Mistral}, D={0.5B} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     1.78
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     3.38
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ]
+   ],
+   "gpu_h": 10.42,
+   "billed_h": 14.95,
+   "pod_usd": 8.82,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.61,
+   "container_disk_usd": 0.06,
+   "total_usd": 9.49
+  },
+  "hqq x2.0 | no B: D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 7.94,
+   "billed_h": 11.77,
+   "pod_usd": 6.94,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.58,
+   "container_disk_usd": 0.05,
+   "total_usd": 7.57
+  },
+  "hqq x2.0 | no B: D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 7.03,
+   "billed_h": 10.6,
+   "pod_usd": 6.26,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.57,
+   "container_disk_usd": 0.04,
+   "total_usd": 6.87
+  },
+  "hqq x3.0 | full: B=D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     3.59
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     5.46
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     6.74
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 25.64,
+   "billed_h": 34.75,
+   "pod_usd": 20.5,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.8,
+   "container_disk_usd": 0.14,
+   "total_usd": 21.44
+  },
+  "hqq x3.0 | full: B=D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.67
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-7b",
+     4.14
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     5.06
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 20.35,
+   "billed_h": 27.96,
+   "pod_usd": 16.5,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.74,
+   "container_disk_usd": 0.12,
+   "total_usd": 17.36
+  },
+  "hqq x3.0 | core: B=D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     3.59
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     6.74
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 18.28,
+   "billed_h": 25.03,
+   "pod_usd": 14.77,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.71,
+   "container_disk_usd": 0.1,
+   "total_usd": 15.58
+  },
+  "hqq x3.0 | core: B=D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.67
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     5.06
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 14.77,
+   "billed_h": 20.53,
+   "pod_usd": 12.12,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.67,
+   "container_disk_usd": 0.09,
+   "total_usd": 12.88
+  },
+  "hqq x3.0 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     3.59
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     6.74
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.91
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 20.18,
+   "billed_h": 27.74,
+   "pod_usd": 16.37,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.74,
+   "container_disk_usd": 0.12,
+   "total_usd": 17.23
+  },
+  "hqq x3.0 | B={0.5B,Mistral}, D={0.5B,7B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.67
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     5.06
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-7b",
+     1.44
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 16.22,
+   "billed_h": 22.65,
+   "pod_usd": 13.36,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen2.5-7b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 35.3,
+   "storage_usd_hp_50gb": 0.69,
+   "container_disk_usd": 0.09,
+   "total_usd": 14.14
+  },
+  "hqq x3.0 | min: B={0.5B,Mistral}, D={0.5B} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     3.59
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     6.74
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ]
+   ],
+   "gpu_h": 15.92,
+   "billed_h": 22.01,
+   "pod_usd": 12.99,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.68,
+   "container_disk_usd": 0.09,
+   "total_usd": 13.76
+  },
+  "hqq x3.0 | min: B={0.5B,Mistral}, D={0.5B} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "B HQQ GSM8K",
+     "qwen2.5-0.5b",
+     2.67
+    ],
+    [
+     "B HQQ GSM8K",
+     "mistral-7b-v0.3",
+     5.06
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ]
+   ],
+   "gpu_h": 13.0,
+   "billed_h": 18.26,
+   "pod_usd": 10.78,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.64,
+   "container_disk_usd": 0.08,
+   "total_usd": 11.5
+  },
+  "hqq x3.0 | no B: D={0.5B,Mistral} n_BD=100": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     1.25
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     2.35
+    ]
+   ],
+   "gpu_h": 7.94,
+   "billed_h": 11.77,
+   "pod_usd": 6.94,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.58,
+   "container_disk_usd": 0.05,
+   "total_usd": 7.57
+  },
+  "hqq x3.0 | no B: D={0.5B,Mistral} n_BD=60": {
+   "rows": [
+    [
+     "anchor NF4 GSM8K",
+     "qwen2.5-0.5b",
+     1.2
+    ],
+    [
+     "A NF4 GSM8K",
+     "qwen3-0.6b-base",
+     1.42
+    ],
+    [
+     "A NF4 GSM8K",
+     "smollm2-1.7b",
+     1.31
+    ],
+    [
+     "D NF4 WikiText-2",
+     "qwen2.5-0.5b",
+     0.93
+    ],
+    [
+     "D NF4 WikiText-2",
+     "mistral-7b-v0.3",
+     1.77
+    ]
+   ],
+   "gpu_h": 7.03,
+   "billed_h": 10.6,
+   "pod_usd": 6.26,
+   "models": [
+    "mistral-7b-v0.3",
+    "qwen2.5-0.5b",
+    "qwen3-0.6b-base",
+    "smollm2-1.7b"
+   ],
+   "download_gb": 20.1,
+   "storage_usd_hp_50gb": 0.57,
+   "container_disk_usd": 0.04,
+   "total_usd": 6.87
+  }
+ },
+ "power": {
+  "n100_m1": 0.179,
+  "n100_m2": 0.197,
+  "n100_m3": 0.207,
+  "n100_m6": 0.223,
+  "n100_m9": 0.231,
+  "n60_m1": 0.231,
+  "n60_m2": 0.255,
+  "n60_m3": 0.267,
+  "n60_m6": 0.288,
+  "n60_m9": 0.299
+ },
+ "power_h5": {
+  "n100_m4": 0.1,
+  "n100_m6": 0.104,
+  "n100_m12": 0.111,
+  "n60_m4": 0.129,
+  "n60_m6": 0.135,
+  "n60_m12": 0.144
+ }
+}

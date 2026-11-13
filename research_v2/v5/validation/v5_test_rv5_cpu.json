@@ -1,0 +1,88 @@
+{
+ "device": "cpu",
+ "torch": "2.13.0+cu126",
+ "passed": 16,
+ "n": 16,
+ "results": [
+  {
+   "test": "t01_anchor_seeds_are_v4_and_other_units_are_new",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t02_v4_imports_unchanged_and_hqq_restored_byte_for_byte",
+   "ok": true,
+   "seconds": 0.01
+  },
+  {
+   "test": "t03_units_and_order",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t04_core_arms_new_geometries_integrity_and_alpha0",
+   "ok": true,
+   "seconds": 3.77
+  },
+  {
+   "test": "t05_c1_full_sphere_and_slot_norms_per_kv_head_new_geometries",
+   "ok": true,
+   "seconds": 0.05
+  },
+  {
+   "test": "t06_x13a_slot_shapes_at_head_dim",
+   "ok": true,
+   "seconds": 0.29
+  },
+  {
+   "test": "t07_attention_snapshot_qk_norm_and_kv_heads",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t08_bf16_rule_on_new_geometries",
+   "ok": true,
+   "seconds": 0.42
+  },
+  {
+   "test": "t09_hqq_config_twice_quantize_and_oracle",
+   "ok": true,
+   "seconds": 0.61
+  },
+  {
+   "test": "t10_hqq_measurement_differs_from_nf4_and_alpha0_bitwise",
+   "ok": true,
+   "seconds": 0.62
+  },
+  {
+   "test": "t11_hqq_c1_norm_from_hqq_delta",
+   "ok": true,
+   "seconds": 0.03
+  },
+  {
+   "test": "t12_hqq_frozen_state_roundtrip",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "t13_wikitext_paragraphs_and_prompt_cut",
+   "ok": true,
+   "seconds": 0.01
+  },
+  {
+   "test": "t14_wikitext_eligibility_history_and_order",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t15_wikitext_records_hold_no_text_or_ids",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "t16_wikitext_sample_file_hashes_only",
+   "ok": true,
+   "seconds": 0.0
+  }
+ ]
+}

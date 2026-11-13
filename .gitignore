@@ -1,8 +1,33 @@
-research_v2/v4_runs/
-research_v2/v3_runs/
-research_v2/v3_runs_x9/
-research_v2/v3_runs_x13/
-research_v2/e1_runs/
-research_v2/e1l_runs/
+# Python virtual environment (4.7GB, trivially reproducible from requirements.txt)
+venv/
+
+# Python bytecode caches
 __pycache__/
 *.pyc
+
+# LaTeX build artifacts (keep the source .tex, exclude compile byproducts)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+
+# Stale pre-rebuttal PDF snapshot (superseded by paper_acl/main.pdf;
+# kept on disk, just not versioned -- has the old, unqualified abstract)
+paper_acl/ergeg.pdf
+
+# Redundant zip of files already tracked individually under results/
+paper_acl/Data.zip
+
+# v4 cloud run state: records, ledgers, authorization copies, pod_ssh.json, known_hosts (PROTOCOL_V4 section 11)
+research_v2/v4_runs/
+
+# v5 cloud run state: records, ledgers, authorization copies, pod_ssh.json, known_hosts (PROTOCOL_V5 section 10)
+research_v2/v5_runs/

@@ -1,0 +1,715 @@
+{
+ "passed": 8,
+ "n": 8,
+ "not_possible_on_this_laptop": {
+  "U5": "Mistral-7B weights (14.5 GB FP16) exceed this laptop's RAM with the 4-bit copy; tokenizer-level GW here, the rest on the pod",
+  "U6": "Mistral-7B HQQ: the same; checked by the CPU tiny-model HQQ tests and on the pod (GH, G1-G8)"
+ },
+ "results": [
+  {
+   "kind": "unit",
+   "arg": "U0",
+   "G7_snapshot": {
+    "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 23.7,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "attention": {
+     "q_norm": false,
+     "k_norm": false,
+     "n_q_norm": 0,
+     "n_k_norm": 0,
+     "k_proj_out": 128
+    },
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 123.2,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "record_fields": [
+    "S",
+    "_slots",
+    "alpha",
+    "arm",
+    "constr_dev_max",
+    "construction_ok",
+    "dn2_K",
+    "dn2_V",
+    "exact_ok",
+    "finite_ok",
+    "flip",
+    "index",
+    "js",
+    "model",
+    "natural_ok",
+    "quantizer",
+    "rdev_arg",
+    "rdev_count",
+    "rdev_hist",
+    "rdev_max",
+    "rdev_n_gt5",
+    "rdev_sum",
+    "ref_len",
+    "ref_logits_finite",
+    "rel_K",
+    "rel_V",
+    "rounding_ok",
+    "routing_reset",
+    "split",
+    "target_norm_mean",
+    "task",
+    "top",
+    "unit",
+    "wall_seconds"
+   ],
+   "slots_ok": true,
+   "no_ids_in_wikitext_records": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 189.5
+  },
+  {
+   "kind": "unit",
+   "arg": "U1",
+   "G7_snapshot": {
+    "snapshot": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 26.5,
+   "G7_config": {
+    "layers": 28,
+    "q_heads": 16,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "attention": {
+     "q_norm": true,
+     "k_norm": true,
+     "n_q_norm": 28,
+     "n_k_norm": 28,
+     "k_proj_out": 1024
+    },
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 147.8,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "record_fields": [
+    "S",
+    "_slots",
+    "alpha",
+    "arm",
+    "constr_dev_max",
+    "construction_ok",
+    "dn2_K",
+    "dn2_V",
+    "exact_ok",
+    "finite_ok",
+    "flip",
+    "index",
+    "js",
+    "model",
+    "natural_ok",
+    "quantizer",
+    "rdev_arg",
+    "rdev_count",
+    "rdev_hist",
+    "rdev_max",
+    "rdev_n_gt5",
+    "rdev_sum",
+    "ref_len",
+    "ref_logits_finite",
+    "rel_K",
+    "rel_V",
+    "rounding_ok",
+    "routing_reset",
+    "split",
+    "target_norm_mean",
+    "task",
+    "top",
+    "unit",
+    "wall_seconds"
+   ],
+   "slots_ok": true,
+   "no_ids_in_wikitext_records": true,
+   "G7_cache": {
+    "n_layers": 28,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 196,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 218.7
+  },
+  {
+   "kind": "unit",
+   "arg": "U2",
+   "G7_snapshot": {
+    "snapshot": "effd688a12921b4cc83e3312b6feb579f70f9c71",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 113.3,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 32,
+    "kv_heads": 32,
+    "head_dim": 64,
+    "vocab": 49152,
+    "tied_embeddings": true,
+    "attention": {
+     "q_norm": false,
+     "k_norm": false,
+     "n_q_norm": 0,
+     "n_k_norm": 0,
+     "k_proj_out": 2048
+    },
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 0,
+    "bos_token_id": 0,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "arms_s": 465.6,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "record_fields": [
+    "S",
+    "_slots",
+    "alpha",
+    "arm",
+    "constr_dev_max",
+    "construction_ok",
+    "dn2_K",
+    "dn2_V",
+    "exact_ok",
+    "finite_ok",
+    "flip",
+    "index",
+    "js",
+    "model",
+    "natural_ok",
+    "quantizer",
+    "rdev_arg",
+    "rdev_count",
+    "rdev_hist",
+    "rdev_max",
+    "rdev_n_gt5",
+    "rdev_sum",
+    "ref_len",
+    "ref_logits_finite",
+    "rel_K",
+    "rel_V",
+    "rounding_ok",
+    "routing_reset",
+    "split",
+    "target_norm_mean",
+    "task",
+    "top",
+    "unit",
+    "wall_seconds"
+   ],
+   "slots_ok": true,
+   "no_ids_in_wikitext_records": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 32,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 451,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 658.0
+  },
+  {
+   "kind": "unit",
+   "arg": "U3",
+   "G7_snapshot": {
+    "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 21.6,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "attention": {
+     "q_norm": false,
+     "k_norm": false,
+     "n_q_norm": 0,
+     "n_k_norm": 0,
+     "k_proj_out": 128
+    },
+    "pass": true
+   },
+   "GW": {
+    "parquet": {
+     "files_ok": {
+      "test": true,
+      "train": true
+     },
+     "pass": true
+    },
+    "G5_wikitext": {
+     "n_items": 153,
+     "failures": [],
+     "pass": true
+    },
+    "pass": true
+   },
+   "arms_s": 81.1,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "record_fields": [
+    "S",
+    "_slots",
+    "alpha",
+    "arm",
+    "constr_dev_max",
+    "construction_ok",
+    "dn2_K",
+    "dn2_V",
+    "exact_ok",
+    "finite_ok",
+    "flip",
+    "index",
+    "js",
+    "model",
+    "natural_ok",
+    "quantizer",
+    "rdev_arg",
+    "rdev_count",
+    "rdev_hist",
+    "rdev_max",
+    "rdev_n_gt5",
+    "rdev_sum",
+    "ref_len",
+    "ref_logits_finite",
+    "rel_K",
+    "rel_V",
+    "rounding_ok",
+    "routing_reset",
+    "split",
+    "target_norm_mean",
+    "task",
+    "top_sha256",
+    "unit",
+    "wall_seconds"
+   ],
+   "slots_ok": true,
+   "no_ids_in_wikitext_records": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 130,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 126.9
+  },
+  {
+   "kind": "unit",
+   "arg": "U4",
+   "G7_snapshot": {
+    "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "revision_pinned": true,
+    "shards_ok": {
+     "model.safetensors": true
+    },
+    "excluded_present": [],
+    "pass": true
+   },
+   "load_s": 53.7,
+   "G7_config": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "attention": {
+     "q_norm": false,
+     "k_norm": false,
+     "n_q_norm": 0,
+     "n_k_norm": 0,
+     "k_proj_out": 128
+    },
+    "pass": true
+   },
+   "G5": {
+    "prompt_sha_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "roundtrip_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "bos_first": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "expected_bos": false,
+    "eos_token_id": 151643,
+    "bos_token_id": null,
+    "drift_marker_detected": true,
+    "no_false_drift": true,
+    "pass": true
+   },
+   "GH_oracle": {
+    "n_layers": 168,
+    "mismatches": [],
+    "pass": true
+   },
+   "GH_config": true,
+   "arms_s": 64.0,
+   "integrity_errors": [],
+   "step1_js": {
+    "NAT": 0.0,
+    "C1": 0.0,
+    "NAT-K": 0.0,
+    "C1-K": 0.0,
+    "NAT-V": 0.0,
+    "C1-V": 0.0
+   },
+   "record_fields": [
+    "S",
+    "_slots",
+    "alpha",
+    "arm",
+    "constr_dev_max",
+    "construction_ok",
+    "dn2_K",
+    "dn2_V",
+    "exact_ok",
+    "finite_ok",
+    "flip",
+    "index",
+    "js",
+    "model",
+    "natural_ok",
+    "quantizer",
+    "rdev_arg",
+    "rdev_count",
+    "rdev_hist",
+    "rdev_max",
+    "rdev_n_gt5",
+    "rdev_sum",
+    "ref_len",
+    "ref_logits_finite",
+    "rel_K",
+    "rel_V",
+    "rounding_ok",
+    "routing_reset",
+    "split",
+    "target_norm_mean",
+    "task",
+    "top",
+    "unit",
+    "wall_seconds"
+   ],
+   "slots_ok": true,
+   "no_ids_in_wikitext_records": true,
+   "G7_cache": {
+    "n_layers": 24,
+    "n_kv_heads": 2,
+    "head_dim": 64,
+    "key_dtype": "torch.float16",
+    "value_dtype": "torch.float16",
+    "all_mode_dtype": true,
+    "seq_len": 432,
+    "n_dynamic": 168,
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 158.1
+  },
+  {
+   "kind": "tok",
+   "arg": "mistral-7b-v0.3",
+   "GW": {
+    "parquet": {
+     "files_ok": {
+      "test": true,
+      "train": true
+     },
+     "pass": true
+    },
+    "G5_wikitext": {
+     "n_items": 153,
+     "failures": [],
+     "pass": true
+    },
+    "pass": true
+   },
+   "pass": true,
+   "seconds": 18.2
+  },
+  {
+   "kind": "ax",
+   "arg": null,
+   "refs": {
+    "U1 NAT-C1": [
+     -0.223,
+     0.204,
+     -0.01
+    ],
+    "U1 H1": [
+     -1.29,
+     -0.984,
+     -1.137
+    ],
+    "U2 NAT-C1": [
+     0.309,
+     -0.1,
+     0.104
+    ],
+    "U2 H1": [
+     -0.757,
+     -1.118,
+     -0.937
+    ]
+   },
+   "pass": true,
+   "seconds": 16.9
+  },
+  {
+   "kind": "anchor",
+   "arg": null,
+   "n": 100,
+   "anchor_pass": true,
+   "bitwise": {
+    "records_equal": 600,
+    "records_total": 600,
+    "share": 1.0,
+    "nat_slots_equal": 100,
+    "histories_equal": 100,
+    "n_problems": 100
+   },
+   "h5": {
+    "K": {
+     "v5": 2.5734757607215544,
+     "v4": 2.5735735645384694,
+     "within_0.10": true
+    },
+    "V": {
+     "v5": 2.4197315748198496,
+     "v4": 2.419716717736436,
+     "within_0.10": true
+    }
+   },
+   "pass": true,
+   "seconds": 88.7
+  }
+ ]
+}

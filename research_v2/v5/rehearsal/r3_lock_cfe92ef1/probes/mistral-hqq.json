@@ -1,0 +1,19 @@
+{
+ "probe": "mistral-hqq",
+ "model": "mistral-7b-v0.3",
+ "quantizer": "hqq",
+ "t_arm_problem_s": 11.027192967224295,
+ "t_hist_ref_problem_s": 6.365650179998919,
+ "t_load_s": 3.655740100002731,
+ "finite": true,
+ "layers": 32,
+ "params": {
+  "total": 7248023552,
+  "linear": 6979321856
+ },
+ "rehearsal": true,
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "utc": "2026-11-11T13:26:20Z",
+ "rehearsal_synthetic": true,
+ "note": "rehearsal stand-in: Mistral-7B does not fit in 8 GB; qwen probe x 1.9 (v4 hours ratio)"
+}

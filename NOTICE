@@ -21,6 +21,17 @@ Qwen2.5-0.5B, Qwen2.5-0.5B-Instruct, Qwen2.5-1.5B and Qwen2.5-7B (Qwen/...) and
 Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3) are licensed under the Apache
 License 2.0.
 
+Qwen3-0.6B-Base (Qwen/Qwen3-0.6B-Base) and SmolLM2-1.7B
+(HuggingFaceTB/SmolLM2-1.7B), used in v5, are licensed under the Apache
+License 2.0.
+
+WikiText-2 (Merity et al., 2016; Salesforce/wikitext, wikitext-2-raw-v1), used
+in v5, is distributed under CC BY-SA 3.0 and the GFDL. No WikiText-2 text or
+token ids are redistributed here: the v5 sample and the records of the WikiText
+units (U3, U5) hold paragraph indices, lengths and SHA-256 hashes only, and the
+divergences and statistics derived from them (checked before release by
+research_v2/tools/v5_wikitext_release_scan.py).
+
 GSM8K (Cobbe et al., 2021; openai/gsm8k) is distributed under the MIT License.
 The v3 and v4 records identify problems by id; some earlier-study records
 (research_v2/e1_runs/tierB) contain decoded model text that can include

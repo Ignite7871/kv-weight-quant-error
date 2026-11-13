@@ -1,0 +1,409 @@
+{
+ "what": "PROTOCOL_V5 model and dataset manifest: pinned revisions, shard SHA-256 (HF-reported LFS hashes), geometry, QK-norm, parameter counts, tokenizer BOS behaviour; the WikiText-2 parquet files. Built by tools/v5_build_manifest.py; G7 and GW check it on the pod.",
+ "models": {
+  "qwen2.5-0.5b": {
+   "hf_id": "Qwen/Qwen2.5-0.5B",
+   "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+   "family": "qwen",
+   "licence": "apache-2.0",
+   "card_licence": "apache-2.0",
+   "gated": false,
+   "step0_only": false,
+   "v3_label": "qwen-base",
+   "shards": {
+    "model.safetensors": {
+     "size": 988097824,
+     "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+    }
+   },
+   "small_files": {
+    "config.json": {
+     "size": 681,
+     "git_blob": "141506237b9022c4ab3e01734cfafb9310b57d2d",
+     "lfs_sha256": null
+    },
+    "generation_config.json": {
+     "size": 138,
+     "git_blob": "cbbb3133034e192527e5321b4c679154e4819ab8",
+     "lfs_sha256": null
+    },
+    "tokenizer.json": {
+     "size": 7031645,
+     "git_blob": "443909a61d429dff23010e5bddd28ff530edda00",
+     "lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+     "size": 7228,
+     "git_blob": "ba7e4c5637b9732dadcd66286ce48334e8b31e9e",
+     "lfs_sha256": null
+    },
+    "vocab.json": {
+     "size": 2776833,
+     "git_blob": "4783fe10ac3adce15ac8f358ef5462739852c569",
+     "lfs_sha256": null
+    },
+    "merges.txt": {
+     "size": 1671839,
+     "git_blob": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+     "lfs_sha256": null
+    }
+   },
+   "allow_patterns": [
+    "config.json",
+    "generation_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json",
+    "merges.txt",
+    "model.safetensors"
+   ],
+   "excluded_files": [],
+   "geometry": {
+    "layers": 24,
+    "q_heads": 14,
+    "kv_heads": 2,
+    "head_dim": 64,
+    "hidden": 896,
+    "intermediate": 4864,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "rope_theta": 1000000.0,
+    "stored_dtype": "bfloat16",
+    "sliding_window": null,
+    "model_type": "qwen2",
+    "qk_norm": false
+   },
+   "geometry_source": "config.json at the pinned revision",
+   "snapshot_checks": {
+    "tied_embeddings": true,
+    "vocab": 151936,
+    "method": [
+     "config.json at the pinned revision"
+    ]
+   },
+   "source": "v4/V4_MODEL_MANIFEST.json entry, unchanged (v4 pins)",
+   "params": {
+    "total": 494032768,
+    "linear": 357826560
+   },
+   "params_source": "safetensors headers of the local pinned snapshot (shard SHA-256 verified)",
+   "qk_norm_tensors": {
+    "q_norm": 0,
+    "k_norm": 0
+   },
+   "expects_bos": false
+  },
+  "mistral-7b-v0.3": {
+   "hf_id": "mistralai/Mistral-7B-v0.3",
+   "revision": "caa1feb0e54d415e2df31207e5f4e273e33509b1",
+   "family": "mistral",
+   "licence": "apache-2.0",
+   "card_licence": "apache-2.0",
+   "gated": false,
+   "step0_only": false,
+   "v3_label": null,
+   "shards": {
+    "model-00001-of-00003.safetensors": {
+     "size": 4949453792,
+     "sha256": "2d7de8eb9bd554cccc999649fd5a3a28a44d09042879d6c1cedd13f59c86f7a8"
+    },
+    "model-00002-of-00003.safetensors": {
+     "size": 4999819336,
+     "sha256": "79a5f871a0fbb7919f263d78caff0d4d3b7a1d444552db3011ada70f48fd5ee4"
+    },
+    "model-00003-of-00003.safetensors": {
+     "size": 4546807800,
+     "sha256": "ba7ae59358f726f5f5bc5264fd8a3aec907f42e6009d7b22454007d18723616a"
+    }
+   },
+   "small_files": {
+    "config.json": {
+     "size": 601,
+     "git_blob": "9f913dc05d66cfb23c16e3c93b3cc4899813dfa6",
+     "lfs_sha256": null
+    },
+    "generation_config.json": {
+     "size": 116,
+     "git_blob": "b6bea2642bc3fe80f392111d52af91d1563a8de2",
+     "lfs_sha256": null
+    },
+    "model.safetensors.index.json": {
+     "size": 23950,
+     "git_blob": "050e5515d49376fc01e4837d031902c63af98111",
+     "lfs_sha256": null
+    },
+    "tokenizer.json": {
+     "size": 1961548,
+     "git_blob": "8d7d23136b474a3df1182ed829db19984e295ee7",
+     "lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+     "size": 136697,
+     "git_blob": "07992b5eb9617dbdf13bb69b825c45e0da5fddb2",
+     "lfs_sha256": null
+    },
+    "special_tokens_map.json": {
+     "size": 414,
+     "git_blob": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+     "lfs_sha256": null
+    },
+    "tokenizer.model": {
+     "size": 587404,
+     "git_blob": "f3b30c02e7f12eb7fbc7e89595b97c43067d73c6",
+     "lfs_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89"
+    }
+   },
+   "allow_patterns": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "special_tokens_map.json",
+    "tokenizer.model",
+    "model-00001-of-00003.safetensors",
+    "model-00002-of-00003.safetensors",
+    "model-00003-of-00003.safetensors"
+   ],
+   "excluded_files": [
+    "consolidated.safetensors"
+   ],
+   "geometry": {
+    "layers": 32,
+    "q_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "hidden": 4096,
+    "intermediate": 14336,
+    "vocab": 32768,
+    "tied_embeddings": false,
+    "rope_theta": 1000000.0,
+    "stored_dtype": "bfloat16",
+    "sliding_window": null,
+    "model_type": "mistral",
+    "qk_norm": false
+   },
+   "geometry_source": "config.json at the pinned revision",
+   "snapshot_checks": {
+    "tied_embeddings": false,
+    "vocab": 32768,
+    "method": [
+     "config.json at the pinned revision"
+    ]
+   },
+   "source": "v4/V4_MODEL_MANIFEST.json entry, unchanged (v4 pins)",
+   "params": {
+    "total": 7248023552,
+    "linear": 6979321856
+   },
+   "params_source": "safetensors headers range-read from the pinned revision",
+   "qk_norm_tensors": {
+    "q_norm": 0,
+    "k_norm": 0
+   },
+   "expects_bos": true
+  },
+  "qwen3-0.6b-base": {
+   "hf_id": "Qwen/Qwen3-0.6B-Base",
+   "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+   "family": "qwen3",
+   "licence": "apache-2.0",
+   "card_licence": "apache-2.0",
+   "gated": false,
+   "shards": {
+    "model.safetensors": {
+     "size": 1192135096,
+     "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+    }
+   },
+   "small_files": {
+    "config.json": {
+     "size": 727,
+     "git_blob": "43c79dcb3766612b23cbed17d0a56ce63efe4e74",
+     "lfs_sha256": null
+    },
+    "generation_config.json": {
+     "size": 138,
+     "git_blob": "cbbb3133034e192527e5321b4c679154e4819ab8",
+     "lfs_sha256": null
+    },
+    "tokenizer.json": {
+     "size": 7031645,
+     "git_blob": "443909a61d429dff23010e5bddd28ff530edda00",
+     "lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+     "size": 9678,
+     "git_blob": "6a3829ee9491f36113e64df37573be81df0366f5",
+     "lfs_sha256": null
+    },
+    "vocab.json": {
+     "size": 2776833,
+     "git_blob": "4783fe10ac3adce15ac8f358ef5462739852c569",
+     "lfs_sha256": null
+    },
+    "merges.txt": {
+     "size": 1671853,
+     "git_blob": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+     "lfs_sha256": null
+    }
+   },
+   "allow_patterns": [
+    "config.json",
+    "generation_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json",
+    "merges.txt",
+    "model.safetensors"
+   ],
+   "excluded_files": [],
+   "geometry": {
+    "layers": 28,
+    "q_heads": 16,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "hidden": 1024,
+    "intermediate": 3072,
+    "vocab": 151936,
+    "tied_embeddings": true,
+    "rope_theta": 1000000,
+    "stored_dtype": "bfloat16",
+    "sliding_window": null,
+    "model_type": "qwen3",
+    "qk_norm": true
+   },
+   "geometry_source": "config.json at the pinned revision",
+   "architectures": [
+    "Qwen3ForCausalLM"
+   ],
+   "source": "HF API at the pinned revision",
+   "params": {
+    "total": 596049920,
+    "linear": 440401920
+   },
+   "params_source": "safetensors headers of the local pinned snapshot (shard SHA-256 verified)",
+   "qk_norm_tensors": {
+    "q_norm": 28,
+    "k_norm": 28
+   },
+   "expects_bos": false
+  },
+  "smollm2-1.7b": {
+   "hf_id": "HuggingFaceTB/SmolLM2-1.7B",
+   "revision": "effd688a12921b4cc83e3312b6feb579f70f9c71",
+   "family": "smollm2",
+   "licence": "apache-2.0",
+   "card_licence": "apache-2.0",
+   "gated": false,
+   "shards": {
+    "model.safetensors": {
+     "size": 3422777952,
+     "sha256": "1193528982f4ac0c0b707ce36fd7dc03a0ef6f3e1a432deb886dce2e90c300c0"
+    }
+   },
+   "small_files": {
+    "config.json": {
+     "size": 635,
+     "git_blob": "fdd9cb3110ec94e0f9652f54a0fc48fe21595e78",
+     "lfs_sha256": null
+    },
+    "generation_config.json": {
+     "size": 111,
+     "git_blob": "0fce861c328ff24830f3037d91ce773254447bf7",
+     "lfs_sha256": null
+    },
+    "tokenizer.json": {
+     "size": 2104556,
+     "git_blob": "f922b1797f0c88e71addc8393787831f2477a4bd",
+     "lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+     "size": 3658,
+     "git_blob": "d45192775d58298087a1fedf5967fe5b63b091ab",
+     "lfs_sha256": null
+    },
+    "special_tokens_map.json": {
+     "size": 831,
+     "git_blob": "f6652f246cb895ca1edfb16d10b57917b266e335",
+     "lfs_sha256": null
+    },
+    "vocab.json": {
+     "size": 800662,
+     "git_blob": "0ad5ecc2035b7031b88afb544ee95e2d49baa484",
+     "lfs_sha256": null
+    },
+    "merges.txt": {
+     "size": 466391,
+     "git_blob": "69503b13f727ba3812b6803e97442a6de05ef5eb",
+     "lfs_sha256": null
+    }
+   },
+   "allow_patterns": [
+    "config.json",
+    "generation_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "special_tokens_map.json",
+    "vocab.json",
+    "merges.txt",
+    "model.safetensors"
+   ],
+   "excluded_files": [],
+   "geometry": {
+    "layers": 24,
+    "q_heads": 32,
+    "kv_heads": 32,
+    "head_dim": 64,
+    "hidden": 2048,
+    "intermediate": 8192,
+    "vocab": 49152,
+    "tied_embeddings": true,
+    "rope_theta": 130000,
+    "stored_dtype": "bfloat16",
+    "sliding_window": null,
+    "model_type": "llama",
+    "qk_norm": false
+   },
+   "geometry_source": "config.json at the pinned revision",
+   "architectures": [
+    "LlamaForCausalLM"
+   ],
+   "source": "HF API at the pinned revision",
+   "params": {
+    "total": 1711376384,
+    "linear": 1610612736
+   },
+   "params_source": "safetensors headers of the local pinned snapshot (shard SHA-256 verified)",
+   "qk_norm_tensors": {
+    "q_norm": 0,
+    "k_norm": 0
+   },
+   "expects_bos": false
+  }
+ },
+ "datasets": {
+  "wikitext2": {
+   "repo": "Salesforce/wikitext",
+   "config": "wikitext-2-raw-v1",
+   "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+   "gated": false,
+   "card_licence": [
+    "cc-by-sa-3.0",
+    "gfdl"
+   ],
+   "files": {
+    "test": {
+     "path": "wikitext-2-raw-v1/test-00000-of-00001.parquet",
+     "size": 732610,
+     "sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91"
+    },
+    "train": {
+     "path": "wikitext-2-raw-v1/train-00000-of-00001.parquet",
+     "size": 6357543,
+     "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-11",
+ "host": "laptop (CPU), Windows-11-10.0.26300-SP0",
+ "results": {
+  "test_rv5_cpu": "16/16",
+  "test_ops": "22/22",
+  "test_analyze": "11/11",
+  "mutation_cpu": "68/68",
+  "real_model_cpu": "8/8"
+ },
+ "all_ok": true,
+ "note": "CUDA runs (test_rv5 and the mutation check on the RTX 4060) are part of the post-lock rehearsal, recorded in v5/rehearsal/; on the A40 they are GM.",
+ "amendment_r3": "o21 and one mutant added for the nvidia-smi 'CUDA UMD Version' banner",
+ "amendment_r4": "o22 and one mutant added for the watcher's phase check and the confirmed 'driver gone'; real_model_cpu not rerun (no model code changed)"
+}

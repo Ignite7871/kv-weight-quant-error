@@ -127,6 +127,18 @@ CONST = {
     "10^{-9}": "JS floor (§3)", "10^{-4}": "construction tolerance (§3)", "256": "SHA-256 (hash name)", "48\\,GB": "A40 memory",
     "0.5,1,2": "calibration doses (§3)", "0.10,0.40": "clamp of c (§3)", "5.5": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
 }
+# v5 (second locked study, Section 6 and Appendix C): protocol constants and logged operational facts. Every v5 result number is
+# a \vsv{} macro audited by audit_v5_numbers.py.
+CONST.update({
+    "4.13": "NF4 bits per weight, approximate (PROTOCOL_V5 §3)", "4.5": "section ref / HQQ bits per weight (PROTOCOL_V5 §3)",
+    "600": "WikiText-2 prompt length in characters (PROTOCOL_V5 §3)", "65": "history cap (§3; PROTOCOL_V5 §3)",
+    "15": "v5 ceiling in USD (PROTOCOL_V5 §0, §9; V5-D3)", "14": "earlier study arms (§6) / v5 $14 ledger stop (PROTOCOL_V5 §9)",
+    "16": "H5 family size (16 tests) / V5-D1 $16 stop", "3.0": "licence name CC BY-SA 3.0 (WikiText-2 card)",
+    "2026-11-13": "date (AI_USE_LOG_V5)", "2026-11-11": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
+    "3.7": "first v5 idle period, hours (V5-A8)", "26": "second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z)",
+    "25\\%": "drift tolerance (§10; D1; PROTOCOL_V5 §9)", "64": "head dimension / step cap T_i (PROTOCOL_V4 §2, §3) / HQQ group size",
+    "2": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+})
 MODEL_RE = re.compile(r"(Qwen2\.5|Qwen3|Llama-3(\.\d)?|Llama-3\.\d-\d+B|Mistral-7B(-v0\.3)?|v0\.3|0\.5B|1\.5B|\d+B|NF4|FP16|BF16|A40|RTX|"
                       r"float64|GPT-6|H[1-5]|F[1-5]|X[1-9]\d*|r[4-8]b?|V4-A\d+|A\d+|D1|L\d|Step~0|3-shot|top-8|4-bit|16-bit|"
                       r"[0-9a-f]{16}|CA-MTL-1|cu\d+|sm_\d+|Ada|_\{10\}|R\^\{?d\}?|R\^\{64\}|S1|S2|x_i\^P|L\^[KPV]|C\^[KPV]|e\^\{\\theta\}|2\\times2|2\$\\times\$2)")
@@ -140,7 +152,7 @@ def strip_tex(t):
     t = uncomment(t)
     t = re.sub(r"\\setlength\{\\tabcolsep\}\{[^}]*\}", " ", t)
     t = re.sub(r"\\cmidrule\([a-z]*\)\{[^}]*\}", " ", t)
-    t = re.sub(r"\\(vf|vn|ref|label|cite|citet|citep|input|includegraphics|texttt|url|acmDOI|acmVolume|acmArticle|acmMonth|acmYear|"
+    t = re.sub(r"\\(vf|vn|vsv|ref|label|cite|citet|citep|input|includegraphics|texttt|url|acmDOI|acmVolume|acmArticle|acmMonth|acmYear|"
                r"multirow|addbibresource)(\[[^\]]*\])?\{[^{}]*\}", " ", t)
     t = re.sub(r"\\begin\{tabular\}\{.*?\}\s*$", " ", t, flags=re.M)
     t = re.sub(r"\\(begin|end)\{[^}]*\}(\[[^\]]*\])?", " ", t)

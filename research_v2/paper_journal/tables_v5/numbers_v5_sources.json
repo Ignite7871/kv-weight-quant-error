@@ -1,0 +1,2254 @@
+{
+ "report_sha256": "2f00f5113aec05f67990fac55e9150340780f31273a18080d2e276db0f493706",
+ "macros": {
+  "hone.u0.est": {
+   "val": "$-1.290$",
+   "raw": -1.2900964196353388,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H1/estimate"
+  },
+  "hone.u0.ci": {
+   "val": "$[-1.399, -1.182]$",
+   "raw": [
+    -1.3990443522623732,
+    -1.1824082890357652
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H1/ci95"
+  },
+  "hone.u0.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H1/p"
+  },
+  "hone.u0.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H1/verdict"
+  },
+  "htwo.u0.est": {
+   "val": "$+0.876$",
+   "raw": 0.8761955395746728,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H2/estimate"
+  },
+  "htwo.u0.ci": {
+   "val": "$[+0.784, +0.968]$",
+   "raw": [
+    0.7839461100406042,
+    0.9683196428305907
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H2/ci95"
+  },
+  "htwo.u0.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H2/p"
+  },
+  "htwo.u0.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H2/verdict"
+  },
+  "hthree.u0.est": {
+   "val": "$-0.953$",
+   "raw": -0.953236647982314,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H3/estimate"
+  },
+  "hthree.u0.ci": {
+   "val": "$[-1.053, -0.854]$",
+   "raw": [
+    -1.0534269635835116,
+    -0.8542984933073765
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H3/ci95"
+  },
+  "hthree.u0.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H3/p"
+  },
+  "hthree.u0.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/H3/verdict"
+  },
+  "natc.u0.est": {
+   "val": "$-0.223$",
+   "raw": -0.22328787905893413,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/NAT-C1/estimate"
+  },
+  "natc.u0.ci": {
+   "val": "$[-0.315, -0.133]$",
+   "raw": [
+    -0.3148002764592558,
+    -0.13281966417421465
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/NAT-C1/ci95"
+  },
+  "natc.u0.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/NAT-C1/p"
+  },
+  "natc.u0.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U0/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u0.est": {
+   "val": "$2.573$",
+   "raw": 2.5734757607215544,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/H5/K/estimate"
+  },
+  "hfiveK.u0.ci": {
+   "val": "$[2.521, 2.621]$",
+   "raw": [
+    2.5205983662027966,
+    2.6210267472857316
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/H5/K/ci95"
+  },
+  "hfiveV.u0.est": {
+   "val": "$2.420$",
+   "raw": 2.4197315748198496,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/H5/V/estimate"
+  },
+  "hfiveV.u0.ci": {
+   "val": "$[2.364, 2.466]$",
+   "raw": [
+    2.3643471951895787,
+    2.466105260022455
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U0/H5/V/ci95"
+  },
+  "n.u0": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U0/n_problems"
+  },
+  "hd.u0": {
+   "val": "$64$",
+   "raw": 64,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U0/head_dim"
+  },
+  "cal.u0.b": {
+   "val": "$2.63$",
+   "raw": 2.631800271490128,
+   "fmt": "u2",
+   "src": "v5_runs/U0/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u0.margin": {
+   "val": "$0.251$",
+   "raw": 0.25083735708479526,
+   "fmt": "u3",
+   "src": "v5_runs/U0/calibration.json#margin_log_js"
+  },
+  "cal.u0.rhoK": {
+   "val": "$0.072$",
+   "raw": 0.07242644086890376,
+   "fmt": "u3",
+   "src": "v5_runs/U0/calibration.json#rho_K"
+  },
+  "cal.u0.rhoV": {
+   "val": "$0.209$",
+   "raw": 0.20947358509647274,
+   "fmt": "u3",
+   "src": "v5_runs/U0/calibration.json#rho_V"
+  },
+  "cal.u0.rhoVK": {
+   "val": "$2.89$",
+   "raw": 2.892225305888392,
+   "fmt": "u2",
+   "src": "v5_runs/U0/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u1.est": {
+   "val": "$-1.848$",
+   "raw": -1.8479592749929978,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H1/estimate"
+  },
+  "hone.u1.ci": {
+   "val": "$[-2.101, -1.601]$",
+   "raw": [
+    -2.1009333535167043,
+    -1.6014008645105835
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H1/ci95"
+  },
+  "hone.u1.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H1/p"
+  },
+  "hone.u1.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H1/verdict"
+  },
+  "htwo.u1.est": {
+   "val": "$+1.226$",
+   "raw": 1.2262886472316303,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H2/estimate"
+  },
+  "htwo.u1.ci": {
+   "val": "$[+1.108, +1.344]$",
+   "raw": [
+    1.1077201324747241,
+    1.3437008883852597
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H2/ci95"
+  },
+  "htwo.u1.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H2/p"
+  },
+  "htwo.u1.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H2/verdict"
+  },
+  "hthree.u1.est": {
+   "val": "$-1.111$",
+   "raw": -1.110793601316461,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H3/estimate"
+  },
+  "hthree.u1.ci": {
+   "val": "$[-1.235, -0.985]$",
+   "raw": [
+    -1.2354416328956015,
+    -0.9850529565038219
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H3/ci95"
+  },
+  "hthree.u1.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H3/p"
+  },
+  "hthree.u1.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/H3/verdict"
+  },
+  "natc.u1.est": {
+   "val": "$-0.903$",
+   "raw": -0.9028417297976334,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/NAT-C1/estimate"
+  },
+  "natc.u1.ci": {
+   "val": "$[-1.181, -0.641]$",
+   "raw": [
+    -1.1813622374592903,
+    -0.6411364422444135
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/NAT-C1/ci95"
+  },
+  "natc.u1.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/NAT-C1/p"
+  },
+  "natc.u1.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U1/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u1.est": {
+   "val": "$2.951$",
+   "raw": 2.951144242167343,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/H5/K/estimate"
+  },
+  "hfiveK.u1.ci": {
+   "val": "$[2.910, 2.986]$",
+   "raw": [
+    2.9103093363495764,
+    2.9862682169944446
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/H5/K/ci95"
+  },
+  "hfiveV.u1.est": {
+   "val": "$2.385$",
+   "raw": 2.385095884436022,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/H5/V/estimate"
+  },
+  "hfiveV.u1.ci": {
+   "val": "$[2.332, 2.432]$",
+   "raw": [
+    2.331730760303527,
+    2.4324456800027074
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U1/H5/V/ci95"
+  },
+  "n.u1": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U1/n_problems"
+  },
+  "hd.u1": {
+   "val": "$128$",
+   "raw": 128,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U1/head_dim"
+  },
+  "cal.u1.b": {
+   "val": "$4.04$",
+   "raw": 4.044911483931498,
+   "fmt": "u2",
+   "src": "v5_runs/U1/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u1.margin": {
+   "val": "$0.386$",
+   "raw": 0.3855212408260899,
+   "fmt": "u3",
+   "src": "v5_runs/U1/calibration.json#margin_log_js"
+  },
+  "cal.u1.rhoK": {
+   "val": "$0.092$",
+   "raw": 0.09229980304905852,
+   "fmt": "u3",
+   "src": "v5_runs/U1/calibration.json#rho_K"
+  },
+  "cal.u1.rhoV": {
+   "val": "$0.217$",
+   "raw": 0.2165849483875189,
+   "fmt": "u3",
+   "src": "v5_runs/U1/calibration.json#rho_V"
+  },
+  "cal.u1.rhoVK": {
+   "val": "$2.35$",
+   "raw": 2.346537492310804,
+   "fmt": "u2",
+   "src": "v5_runs/U1/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u2.est": {
+   "val": "$-0.647$",
+   "raw": -0.6469971314760644,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H1/estimate"
+  },
+  "hone.u2.ci": {
+   "val": "$[-0.753, -0.541]$",
+   "raw": [
+    -0.7529047981079919,
+    -0.5412642148519674
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H1/ci95"
+  },
+  "hone.u2.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H1/p"
+  },
+  "hone.u2.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H1/verdict"
+  },
+  "htwo.u2.est": {
+   "val": "$+1.042$",
+   "raw": 1.0420723502883649,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H2/estimate"
+  },
+  "htwo.u2.ci": {
+   "val": "$[+0.948, +1.139]$",
+   "raw": [
+    0.9477201555668671,
+    1.1392873886326769
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H2/ci95"
+  },
+  "htwo.u2.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H2/p"
+  },
+  "htwo.u2.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H2/verdict"
+  },
+  "hthree.u2.est": {
+   "val": "$-0.837$",
+   "raw": -0.83681375824586,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H3/estimate"
+  },
+  "hthree.u2.ci": {
+   "val": "$[-0.945, -0.720]$",
+   "raw": [
+    -0.9454325765443917,
+    -0.7198074327612052
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H3/ci95"
+  },
+  "hthree.u2.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H3/p"
+  },
+  "hthree.u2.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/H3/verdict"
+  },
+  "natc.u2.est": {
+   "val": "$+0.201$",
+   "raw": 0.20144816417071765,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/NAT-C1/estimate"
+  },
+  "natc.u2.ci": {
+   "val": "$[+0.089, +0.312]$",
+   "raw": [
+    0.08931834706663769,
+    0.3123326586050038
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/NAT-C1/ci95"
+  },
+  "natc.u2.p": {
+   "val": "$0.001$",
+   "raw": 0.0013998600139986002,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/NAT-C1/p"
+  },
+  "natc.u2.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U2/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u2.est": {
+   "val": "$2.688$",
+   "raw": 2.687914379655215,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/H5/K/estimate"
+  },
+  "hfiveK.u2.ci": {
+   "val": "$[2.651, 2.722]$",
+   "raw": [
+    2.6507349127208713,
+    2.72230093125516
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/H5/K/ci95"
+  },
+  "hfiveV.u2.est": {
+   "val": "$2.527$",
+   "raw": 2.5265248876814907,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/H5/V/estimate"
+  },
+  "hfiveV.u2.ci": {
+   "val": "$[2.483, 2.567]$",
+   "raw": [
+    2.482598424844592,
+    2.567246071797518
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U2/H5/V/ci95"
+  },
+  "n.u2": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U2/n_problems"
+  },
+  "hd.u2": {
+   "val": "$64$",
+   "raw": 64,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U2/head_dim"
+  },
+  "cal.u2.b": {
+   "val": "$2.26$",
+   "raw": 2.263904031238037,
+   "fmt": "u2",
+   "src": "v5_runs/U2/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u2.margin": {
+   "val": "$0.263$",
+   "raw": 0.26329636389679867,
+   "fmt": "u3",
+   "src": "v5_runs/U2/calibration.json#margin_log_js"
+  },
+  "cal.u2.rhoK": {
+   "val": "$0.069$",
+   "raw": 0.06926037604497104,
+   "fmt": "u3",
+   "src": "v5_runs/U2/calibration.json#rho_K"
+  },
+  "cal.u2.rhoV": {
+   "val": "$0.206$",
+   "raw": 0.20589160779418264,
+   "fmt": "u3",
+   "src": "v5_runs/U2/calibration.json#rho_V"
+  },
+  "cal.u2.rhoVK": {
+   "val": "$2.97$",
+   "raw": 2.972718595413002,
+   "fmt": "u2",
+   "src": "v5_runs/U2/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u3.est": {
+   "val": "$-1.259$",
+   "raw": -1.2589868895518492,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H1/estimate"
+  },
+  "hone.u3.ci": {
+   "val": "$[-1.326, -1.186]$",
+   "raw": [
+    -1.3263606612841004,
+    -1.1862231141601258
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H1/ci95"
+  },
+  "hone.u3.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H1/p"
+  },
+  "hone.u3.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H1/verdict"
+  },
+  "htwo.u3.est": {
+   "val": "$+0.724$",
+   "raw": 0.723864107030728,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/estimate"
+  },
+  "htwo.u3.ci": {
+   "val": "$[+0.670, +0.779]$",
+   "raw": [
+    0.6703158943103215,
+    0.779345879252765
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/ci95"
+  },
+  "htwo.u3.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/p"
+  },
+  "htwo.u3.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/verdict"
+  },
+  "hthree.u3.est": {
+   "val": "$-1.255$",
+   "raw": -1.2552797060275136,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H3/estimate"
+  },
+  "hthree.u3.ci": {
+   "val": "$[-1.322, -1.182]$",
+   "raw": [
+    -1.3223783886256646,
+    -1.1818493719474932
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H3/ci95"
+  },
+  "hthree.u3.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H3/p"
+  },
+  "hthree.u3.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/H3/verdict"
+  },
+  "natc.u3.est": {
+   "val": "$-0.197$",
+   "raw": -0.1969481330100433,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/NAT-C1/estimate"
+  },
+  "natc.u3.ci": {
+   "val": "$[-0.255, -0.138]$",
+   "raw": [
+    -0.25516680775807643,
+    -0.13765199252424318
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/NAT-C1/ci95"
+  },
+  "natc.u3.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/NAT-C1/p"
+  },
+  "natc.u3.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U3/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u3.est": {
+   "val": "$2.389$",
+   "raw": 2.3889443180328533,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/H5/K/estimate"
+  },
+  "hfiveK.u3.ci": {
+   "val": "$[2.369, 2.410]$",
+   "raw": [
+    2.3692618067123417,
+    2.4097213540521505
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/H5/K/ci95"
+  },
+  "hfiveV.u3.est": {
+   "val": "$2.167$",
+   "raw": 2.1666209737457756,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/H5/V/estimate"
+  },
+  "hfiveV.u3.ci": {
+   "val": "$[2.142, 2.192]$",
+   "raw": [
+    2.1422363477646,
+    2.191654206868606
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U3/H5/V/ci95"
+  },
+  "n.u3": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U3/n_problems"
+  },
+  "hd.u3": {
+   "val": "$64$",
+   "raw": 64,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U3/head_dim"
+  },
+  "cal.u3.b": {
+   "val": "$2.17$",
+   "raw": 2.174185952735994,
+   "fmt": "u2",
+   "src": "v5_runs/U3/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u3.margin": {
+   "val": "$0.257$",
+   "raw": 0.257143503071495,
+   "fmt": "u3",
+   "src": "v5_runs/U3/calibration.json#margin_log_js"
+  },
+  "cal.u3.rhoK": {
+   "val": "$0.076$",
+   "raw": 0.07642419233076911,
+   "fmt": "u3",
+   "src": "v5_runs/U3/calibration.json#rho_K"
+  },
+  "cal.u3.rhoV": {
+   "val": "$0.198$",
+   "raw": 0.1978360189008183,
+   "fmt": "u3",
+   "src": "v5_runs/U3/calibration.json#rho_V"
+  },
+  "cal.u3.rhoVK": {
+   "val": "$2.59$",
+   "raw": 2.5886569797763848,
+   "fmt": "u2",
+   "src": "v5_runs/U3/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u4.est": {
+   "val": "$-1.394$",
+   "raw": -1.3941343669401445,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H1/estimate"
+  },
+  "hone.u4.ci": {
+   "val": "$[-1.514, -1.276]$",
+   "raw": [
+    -1.5139039499797033,
+    -1.275879801332685
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H1/ci95"
+  },
+  "hone.u4.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H1/p"
+  },
+  "hone.u4.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H1/verdict"
+  },
+  "htwo.u4.est": {
+   "val": "$+0.907$",
+   "raw": 0.9066949274498597,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/estimate"
+  },
+  "htwo.u4.ci": {
+   "val": "$[+0.817, +0.997]$",
+   "raw": [
+    0.8166320777547954,
+    0.9967110895768234
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/ci95"
+  },
+  "htwo.u4.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/p"
+  },
+  "htwo.u4.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/verdict"
+  },
+  "hthree.u4.est": {
+   "val": "$-1.134$",
+   "raw": -1.1344153819454446,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/estimate"
+  },
+  "hthree.u4.ci": {
+   "val": "$[-1.237, -1.032]$",
+   "raw": [
+    -1.2373656768563415,
+    -1.0323174104814936
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/ci95"
+  },
+  "hthree.u4.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/p"
+  },
+  "hthree.u4.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/verdict"
+  },
+  "natc.u4.est": {
+   "val": "$-0.271$",
+   "raw": -0.27067994113900684,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/NAT-C1/estimate"
+  },
+  "natc.u4.ci": {
+   "val": "$[-0.372, -0.164]$",
+   "raw": [
+    -0.37230801157650534,
+    -0.16442806509495114
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/NAT-C1/ci95"
+  },
+  "natc.u4.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/NAT-C1/p"
+  },
+  "natc.u4.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U4/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u4.est": {
+   "val": "$2.585$",
+   "raw": 2.58462657426095,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/H5/K/estimate"
+  },
+  "hfiveK.u4.ci": {
+   "val": "$[2.535, 2.631]$",
+   "raw": [
+    2.5346134461029326,
+    2.631155038327623
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/H5/K/ci95"
+  },
+  "hfiveV.u4.est": {
+   "val": "$2.459$",
+   "raw": 2.4590801962410156,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/H5/V/estimate"
+  },
+  "hfiveV.u4.ci": {
+   "val": "$[2.405, 2.507]$",
+   "raw": [
+    2.4048540460962653,
+    2.506796080595143
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U4/H5/V/ci95"
+  },
+  "n.u4": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U4/n_problems"
+  },
+  "hd.u4": {
+   "val": "$64$",
+   "raw": 64,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U4/head_dim"
+  },
+  "cal.u4.b": {
+   "val": "$2.55$",
+   "raw": 2.5484684819109304,
+   "fmt": "u2",
+   "src": "v5_runs/U4/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u4.margin": {
+   "val": "$0.243$",
+   "raw": 0.24289498923658578,
+   "fmt": "u3",
+   "src": "v5_runs/U4/calibration.json#margin_log_js"
+  },
+  "cal.u4.rhoK": {
+   "val": "$0.072$",
+   "raw": 0.0723245995272512,
+   "fmt": "u3",
+   "src": "v5_runs/U4/calibration.json#rho_K"
+  },
+  "cal.u4.rhoV": {
+   "val": "$0.214$",
+   "raw": 0.21388655140032842,
+   "fmt": "u3",
+   "src": "v5_runs/U4/calibration.json#rho_V"
+  },
+  "cal.u4.rhoVK": {
+   "val": "$2.96$",
+   "raw": 2.9573140093190293,
+   "fmt": "u2",
+   "src": "v5_runs/U4/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u5.est": {
+   "val": "$-0.100$",
+   "raw": -0.0995036217916146,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H1/estimate"
+  },
+  "hone.u5.ci": {
+   "val": "$[-0.156, -0.045]$",
+   "raw": [
+    -0.15588913267621332,
+    -0.04465606568443077
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H1/ci95"
+  },
+  "hone.u5.p": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H1/p"
+  },
+  "hone.u5.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H1/verdict"
+  },
+  "htwo.u5.est": {
+   "val": "$+1.040$",
+   "raw": 1.039996250512794,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/estimate"
+  },
+  "htwo.u5.ci": {
+   "val": "$[+0.983, +1.097]$",
+   "raw": [
+    0.9831576555567126,
+    1.0966552867772585
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/ci95"
+  },
+  "htwo.u5.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/p"
+  },
+  "htwo.u5.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/verdict"
+  },
+  "hthree.u5.est": {
+   "val": "$-1.411$",
+   "raw": -1.4109725159819455,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H3/estimate"
+  },
+  "hthree.u5.ci": {
+   "val": "$[-1.474, -1.345]$",
+   "raw": [
+    -1.4737651103059353,
+    -1.3450144134153958
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H3/ci95"
+  },
+  "hthree.u5.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H3/p"
+  },
+  "hthree.u5.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/H3/verdict"
+  },
+  "natc.u5.est": {
+   "val": "$+0.762$",
+   "raw": 0.7619141425440151,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/NAT-C1/estimate"
+  },
+  "natc.u5.ci": {
+   "val": "$[+0.707, +0.817]$",
+   "raw": [
+    0.7073014246621517,
+    0.8165233655658213
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/NAT-C1/ci95"
+  },
+  "natc.u5.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/NAT-C1/p"
+  },
+  "natc.u5.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U5/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u5.est": {
+   "val": "$2.372$",
+   "raw": 2.371972718708783,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/H5/K/estimate"
+  },
+  "hfiveK.u5.ci": {
+   "val": "$[2.351, 2.393]$",
+   "raw": [
+    2.3514827826834366,
+    2.392637631594069
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/H5/K/ci95"
+  },
+  "hfiveV.u5.est": {
+   "val": "$2.291$",
+   "raw": 2.2907377109754647,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/H5/V/estimate"
+  },
+  "hfiveV.u5.ci": {
+   "val": "$[2.265, 2.317]$",
+   "raw": [
+    2.264633152868597,
+    2.3166439934766956
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U5/H5/V/ci95"
+  },
+  "n.u5": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U5/n_problems"
+  },
+  "hd.u5": {
+   "val": "$128$",
+   "raw": 128,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U5/head_dim"
+  },
+  "cal.u5.b": {
+   "val": "$2.04$",
+   "raw": 2.0351748833376617,
+   "fmt": "u2",
+   "src": "v5_runs/U5/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u5.margin": {
+   "val": "$0.194$",
+   "raw": 0.19397288406415855,
+   "fmt": "u3",
+   "src": "v5_runs/U5/calibration.json#margin_log_js"
+  },
+  "cal.u5.rhoK": {
+   "val": "$0.062$",
+   "raw": 0.061885360359697494,
+   "fmt": "u3",
+   "src": "v5_runs/U5/calibration.json#rho_K"
+  },
+  "cal.u5.rhoV": {
+   "val": "$0.152$",
+   "raw": 0.1521175336235602,
+   "fmt": "u3",
+   "src": "v5_runs/U5/calibration.json#rho_V"
+  },
+  "cal.u5.rhoVK": {
+   "val": "$2.46$",
+   "raw": 2.458053612993517,
+   "fmt": "u2",
+   "src": "v5_runs/U5/calibration.json#rho_V_over_rho_K"
+  },
+  "hone.u6.est": {
+   "val": "$-0.192$",
+   "raw": -0.1916372915389008,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H1/estimate"
+  },
+  "hone.u6.ci": {
+   "val": "$[-0.323, -0.047]$",
+   "raw": [
+    -0.3227535323737016,
+    -0.047299671529081475
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H1/ci95"
+  },
+  "hone.u6.p": {
+   "val": "$0.006$",
+   "raw": 0.006199380061993801,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H1/p"
+  },
+  "hone.u6.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H1/verdict"
+  },
+  "htwo.u6.est": {
+   "val": "$+1.190$",
+   "raw": 1.1903781147664787,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/estimate"
+  },
+  "htwo.u6.ci": {
+   "val": "$[+1.093, +1.288]$",
+   "raw": [
+    1.092670306353539,
+    1.2883201227313699
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/ci95"
+  },
+  "htwo.u6.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/p"
+  },
+  "htwo.u6.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/verdict"
+  },
+  "hthree.u6.est": {
+   "val": "$-1.263$",
+   "raw": -1.263345999304208,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/estimate"
+  },
+  "hthree.u6.ci": {
+   "val": "$[-1.379, -1.141]$",
+   "raw": [
+    -1.3791281245826945,
+    -1.140992165044216
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/ci95"
+  },
+  "hthree.u6.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/p"
+  },
+  "hthree.u6.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/verdict"
+  },
+  "natc.u6.est": {
+   "val": "$+0.690$",
+   "raw": 0.6901003122606246,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/NAT-C1/estimate"
+  },
+  "natc.u6.ci": {
+   "val": "$[+0.607, +0.771]$",
+   "raw": [
+    0.6066314066644017,
+    0.7708929329544408
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/NAT-C1/ci95"
+  },
+  "natc.u6.p": {
+   "val": "$<0.001$",
+   "raw": 9.999000099990002e-05,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/NAT-C1/p"
+  },
+  "natc.u6.verdict": {
+   "val": "difference",
+   "raw": "difference",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#per_unit/U6/contrasts/NAT-C1/verdict"
+  },
+  "hfiveK.u6.est": {
+   "val": "$2.667$",
+   "raw": 2.666747723440105,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/H5/K/estimate"
+  },
+  "hfiveK.u6.ci": {
+   "val": "$[2.627, 2.705]$",
+   "raw": [
+    2.6265983722932003,
+    2.704888070577442
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/H5/K/ci95"
+  },
+  "hfiveV.u6.est": {
+   "val": "$2.738$",
+   "raw": 2.7378477445523237,
+   "fmt": "u3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/H5/V/estimate"
+  },
+  "hfiveV.u6.ci": {
+   "val": "$[2.698, 2.775]$",
+   "raw": [
+    2.6975716665727214,
+    2.774529823443241
+   ],
+   "fmt": "uci3",
+   "src": "v5_runs/v5_report.json#per_unit/U6/H5/V/ci95"
+  },
+  "n.u6": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U6/n_problems"
+  },
+  "hd.u6": {
+   "val": "$128$",
+   "raw": 128,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#per_unit/U6/head_dim"
+  },
+  "cal.u6.b": {
+   "val": "$1.96$",
+   "raw": 1.962616726567108,
+   "fmt": "u2",
+   "src": "v5_runs/U6/calibration.json#dose_slope_b_hat"
+  },
+  "cal.u6.margin": {
+   "val": "$0.187$",
+   "raw": 0.18705735309608668,
+   "fmt": "u3",
+   "src": "v5_runs/U6/calibration.json#margin_log_js"
+  },
+  "cal.u6.rhoK": {
+   "val": "$0.055$",
+   "raw": 0.054680500334627104,
+   "fmt": "u3",
+   "src": "v5_runs/U6/calibration.json#rho_K"
+  },
+  "cal.u6.rhoV": {
+   "val": "$0.164$",
+   "raw": 0.16448661543551596,
+   "fmt": "u3",
+   "src": "v5_runs/U6/calibration.json#rho_V"
+  },
+  "cal.u6.rhoVK": {
+   "val": "$3.01$",
+   "raw": 3.0081402772269947,
+   "fmt": "u2",
+   "src": "v5_runs/U6/calibration.json#rho_V_over_rho_K"
+  },
+  "geo.qt.layers": {
+   "val": "$28$",
+   "raw": 28,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/geometry/layers"
+  },
+  "geo.qt.qheads": {
+   "val": "$16$",
+   "raw": 16,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/geometry/q_heads"
+  },
+  "geo.qt.kvheads": {
+   "val": "$8$",
+   "raw": 8,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/geometry/kv_heads"
+  },
+  "geo.qt.headdim": {
+   "val": "$128$",
+   "raw": 128,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/geometry/head_dim"
+  },
+  "geo.qt.vocab": {
+   "val": "$151{,}936$",
+   "raw": 151936,
+   "fmt": "intc",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/geometry/vocab"
+  },
+  "geo.qt.params": {
+   "val": "$0.60$",
+   "raw": 596049920,
+   "fmt": "bn",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/params/total"
+  },
+  "geo.qt.qknorm": {
+   "val": "$28$",
+   "raw": 28,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/qwen3-0.6b-base/qk_norm_tensors/k_norm"
+  },
+  "geo.sm.layers": {
+   "val": "$24$",
+   "raw": 24,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/geometry/layers"
+  },
+  "geo.sm.qheads": {
+   "val": "$32$",
+   "raw": 32,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/geometry/q_heads"
+  },
+  "geo.sm.kvheads": {
+   "val": "$32$",
+   "raw": 32,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/geometry/kv_heads"
+  },
+  "geo.sm.headdim": {
+   "val": "$64$",
+   "raw": 64,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/geometry/head_dim"
+  },
+  "geo.sm.vocab": {
+   "val": "$49{,}152$",
+   "raw": 49152,
+   "fmt": "intc",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/geometry/vocab"
+  },
+  "geo.sm.params": {
+   "val": "$1.71$",
+   "raw": 1711376384,
+   "fmt": "bn",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/params/total"
+  },
+  "geo.sm.qknorm": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "src": "v5/V5_MODEL_MANIFEST.json#models/smollm2-1.7b/qk_norm_tensors/k_norm"
+  },
+  "fam.ah1": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H1/result"
+  },
+  "famwf.ah1": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/A-H1/result"
+  },
+  "holm.ah1.u1": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H1/holm_p/U1"
+  },
+  "read.ah1.u1": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H1/readings/U1"
+  },
+  "holm.ah1.u2": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H1/holm_p/U2"
+  },
+  "read.ah1.u2": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H1/readings/U2"
+  },
+  "fam.ah2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H2/result"
+  },
+  "famwf.ah2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/A-H2/result"
+  },
+  "holm.ah2.u1": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H2/holm_p/U1"
+  },
+  "read.ah2.u1": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H2/readings/U1"
+  },
+  "holm.ah2.u2": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H2/holm_p/U2"
+  },
+  "read.ah2.u2": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H2/readings/U2"
+  },
+  "fam.ah3": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H3/result"
+  },
+  "famwf.ah3": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/A-H3/result"
+  },
+  "holm.ah3.u1": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H3/holm_p/U1"
+  },
+  "read.ah3.u1": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H3/readings/U1"
+  },
+  "holm.ah3.u2": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H3/holm_p/U2"
+  },
+  "read.ah3.u2": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H3/readings/U2"
+  },
+  "fam.ah5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/result"
+  },
+  "famwf.ah5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/A-H5/result"
+  },
+  "holm.ah5.u1k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/holm_p/U1~1K"
+  },
+  "read.ah5.u1k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/readings/U1~1K"
+  },
+  "holm.ah5.u1v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/holm_p/U1~1V"
+  },
+  "read.ah5.u1v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/readings/U1~1V"
+  },
+  "holm.ah5.u2k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/holm_p/U2~1K"
+  },
+  "read.ah5.u2k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/readings/U2~1K"
+  },
+  "holm.ah5.u2v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/holm_p/U2~1V"
+  },
+  "read.ah5.u2v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-H5/readings/U2~1V"
+  },
+  "fam.bh2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H2/result"
+  },
+  "famwf.bh2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/B-H2/result"
+  },
+  "holm.bh2.u4": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H2/holm_p/U4"
+  },
+  "read.bh2.u4": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H2/readings/U4"
+  },
+  "holm.bh2.u6": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H2/holm_p/U6"
+  },
+  "read.bh2.u6": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H2/readings/U6"
+  },
+  "fam.bh3": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H3/result"
+  },
+  "famwf.bh3": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/B-H3/result"
+  },
+  "holm.bh3.u4": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H3/holm_p/U4"
+  },
+  "read.bh3.u4": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H3/readings/U4"
+  },
+  "holm.bh3.u6": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H3/holm_p/U6"
+  },
+  "read.bh3.u6": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H3/readings/U6"
+  },
+  "fam.bh5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/result"
+  },
+  "famwf.bh5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/B-H5/result"
+  },
+  "holm.bh5.u4k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/holm_p/U4~1K"
+  },
+  "read.bh5.u4k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/readings/U4~1K"
+  },
+  "holm.bh5.u4v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/holm_p/U4~1V"
+  },
+  "read.bh5.u4v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/readings/U4~1V"
+  },
+  "holm.bh5.u6k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/holm_p/U6~1K"
+  },
+  "read.bh5.u6k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/readings/U6~1K"
+  },
+  "holm.bh5.u6v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/holm_p/U6~1V"
+  },
+  "read.bh5.u6v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/B-H5/readings/U6~1V"
+  },
+  "fam.dh2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H2/result"
+  },
+  "famwf.dh2": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/D-H2/result"
+  },
+  "holm.dh2.u3": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H2/holm_p/U3"
+  },
+  "read.dh2.u3": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H2/readings/U3"
+  },
+  "holm.dh2.u5": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H2/holm_p/U5"
+  },
+  "read.dh2.u5": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H2/readings/U5"
+  },
+  "fam.dh5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/result"
+  },
+  "famwf.dh5": {
+   "val": "supported in every model",
+   "raw": "supported in every model",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/D-H5/result"
+  },
+  "holm.dh5.u3k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/holm_p/U3~1K"
+  },
+  "read.dh5.u3k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/readings/U3~1K"
+  },
+  "holm.dh5.u3v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/holm_p/U3~1V"
+  },
+  "read.dh5.u3v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/readings/U3~1V"
+  },
+  "holm.dh5.u5k": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/holm_p/U5~1K"
+  },
+  "read.dh5.u5k": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/readings/U5~1K"
+  },
+  "holm.dh5.u5v": {
+   "val": "$<0.001$",
+   "raw": 0.00039996000399960006,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/holm_p/U5~1V"
+  },
+  "read.dh5.u5v": {
+   "val": "supported",
+   "raw": "supported",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/D-H5/readings/U5~1V"
+  },
+  "nflag": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v5_runs/v5_report.json#flagged_bf16"
+   ]
+  },
+  "ndisagree": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v5_runs/v5_report.json#abstract_level/disagreements"
+   ]
+  },
+  "ax.natc.u1.est": {
+   "val": "$-0.903$",
+   "raw": -0.9028417297976334,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/estimate"
+  },
+  "ax.natc.u1.ci": {
+   "val": "$[-1.181, -0.641]$",
+   "raw": [
+    -1.1813622374592903,
+    -0.6411364422444135
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/ci95"
+  },
+  "ax.natc.u1.b": {
+   "val": "$-0.010$",
+   "raw": -0.009822111675028639,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/boundary"
+  },
+  "ax.natc.u1.size": {
+   "val": "$-0.223$",
+   "raw": -0.22328787905893413,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/size_pred"
+  },
+  "ax.natc.u1.hd": {
+   "val": "$+0.204$",
+   "raw": 0.20364365570887685,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/hd_pred"
+  },
+  "ax.natc.u1.holm": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/holm_p"
+  },
+  "ax.natc.u1.class": {
+   "val": "size pattern",
+   "raw": "size pattern",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U1/classification"
+  },
+  "ax.natc.u2.est": {
+   "val": "$+0.201$",
+   "raw": 0.20144816417071765,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/estimate"
+  },
+  "ax.natc.u2.ci": {
+   "val": "$[+0.089, +0.312]$",
+   "raw": [
+    0.08931834706663769,
+    0.3123326586050038
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/ci95"
+  },
+  "ax.natc.u2.b": {
+   "val": "$+0.104$",
+   "raw": 0.10441864698397371,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/boundary"
+  },
+  "ax.natc.u2.size": {
+   "val": "$+0.309$",
+   "raw": 0.3089571581573281,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/size_pred"
+  },
+  "ax.natc.u2.hd": {
+   "val": "$-0.100$",
+   "raw": -0.10011986418938068,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/hd_pred"
+  },
+  "ax.natc.u2.holm": {
+   "val": "$0.048$",
+   "raw": 0.048095190480951906,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/holm_p"
+  },
+  "ax.natc.u2.class": {
+   "val": "unresolved",
+   "raw": "unresolved",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-X/NAT-C1/units/U2/classification"
+  },
+  "ax.hone.u1.est": {
+   "val": "$-1.848$",
+   "raw": -1.8479592749929978,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/estimate"
+  },
+  "ax.hone.u1.ci": {
+   "val": "$[-2.101, -1.601]$",
+   "raw": [
+    -2.1009333535167043,
+    -1.6014008645105835
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/ci95"
+  },
+  "ax.hone.u1.b": {
+   "val": "$-1.137$",
+   "raw": -1.1370705853101184,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/boundary"
+  },
+  "ax.hone.u1.size": {
+   "val": "$-1.290$",
+   "raw": -1.2900964196353388,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/size_pred"
+  },
+  "ax.hone.u1.hd": {
+   "val": "$-0.984$",
+   "raw": -0.9840447509848979,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/hd_pred"
+  },
+  "ax.hone.u1.holm": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/holm_p"
+  },
+  "ax.hone.u1.class": {
+   "val": "size pattern",
+   "raw": "size pattern",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U1/classification"
+  },
+  "ax.hone.u2.est": {
+   "val": "$-0.647$",
+   "raw": -0.6469971314760644,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/estimate"
+  },
+  "ax.hone.u2.ci": {
+   "val": "$[-0.753, -0.541]$",
+   "raw": [
+    -0.7529047981079919,
+    -0.5412642148519674
+   ],
+   "fmt": "ci3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/ci95"
+  },
+  "ax.hone.u2.b": {
+   "val": "$-0.937$",
+   "raw": -0.9374273848208979,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/boundary"
+  },
+  "ax.hone.u2.size": {
+   "val": "$-0.757$",
+   "raw": -0.7567795146508254,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/size_pred"
+  },
+  "ax.hone.u2.hd": {
+   "val": "$-1.118$",
+   "raw": -1.1180752549909705,
+   "fmt": "s3",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/hd_pred"
+  },
+  "ax.hone.u2.holm": {
+   "val": "$<0.001$",
+   "raw": 0.00019998000199980003,
+   "fmt": "p",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/holm_p"
+  },
+  "ax.hone.u2.class": {
+   "val": "size pattern",
+   "raw": "size pattern",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-X/H1/units/U2/classification"
+  },
+  "ax.joint": {
+   "val": "neither factor alone accounts for it in these checkpoints",
+   "raw": "neither factor alone accounts for it in these checkpoints",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#all_units/A-X/joint_reading_NAT-C1/reading"
+  },
+  "ax.jointwf": {
+   "val": "neither factor alone accounts for it in these checkpoints",
+   "raw": "neither factor alone accounts for it in these checkpoints",
+   "fmt": "word",
+   "src": "v5_runs/v5_report.json#without_flagged/A-X/joint_reading_NAT-C1/reading"
+  },
+  "anc.pass": {
+   "val": "yes",
+   "raw": true,
+   "fmt": "bool",
+   "src": "v5_runs/anchor.json#pass"
+  },
+  "anc.req": {
+   "val": "$600$",
+   "raw": 600,
+   "fmt": "int",
+   "src": "v5_runs/anchor.json#reported_bitwise/records_equal"
+  },
+  "anc.rtot": {
+   "val": "$600$",
+   "raw": 600,
+   "fmt": "int",
+   "src": "v5_runs/anchor.json#reported_bitwise/records_total"
+  },
+  "anc.share": {
+   "val": "$100$\\%",
+   "raw": 1.0,
+   "fmt": "pct0",
+   "src": "v5_runs/anchor.json#reported_bitwise/share"
+  },
+  "anc.slots": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/anchor.json#reported_bitwise/nat_slots_equal"
+  },
+  "anc.hist": {
+   "val": "$100$",
+   "raw": 100,
+   "fmt": "int",
+   "src": "v5_runs/anchor.json#reported_bitwise/histories_equal"
+  },
+  "anc.dabsmax": {
+   "val": "$0.000$",
+   "raw": 0.0,
+   "fmt": "u3",
+   "op": "absmax",
+   "inputs": [
+    "v5_runs/anchor.json#contrasts/H1/delta/estimate",
+    "v5_runs/anchor.json#contrasts/H2/delta/estimate",
+    "v5_runs/anchor.json#contrasts/H3/delta/estimate",
+    "v5_runs/anchor.json#contrasts/NAT-C1/delta/estimate"
+   ]
+  },
+  "recomp.n": {
+   "val": "$230$",
+   "raw": 230,
+   "fmt": "int",
+   "src": "v5_runs/v5_recomputation.json#n_compared"
+  },
+  "recomp.ndis": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "src": "v5_runs/v5_recomputation.json#n_disagree"
+  },
+  "recomp.nunres": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v5_runs/v5_recomputation.json#unresolved_verdicts"
+   ]
+  },
+  "design.reduction": {
+   "val": "none",
+   "raw": "none",
+   "fmt": "word",
+   "src": "v5_runs/design.json#reduction"
+  },
+  "design.factor": {
+   "val": "$1.48$",
+   "raw": 1.48,
+   "fmt": "u2",
+   "src": "v5_runs/design.json#factor"
+  },
+  "design.ncal": {
+   "val": "$50$",
+   "raw": 50,
+   "fmt": "int",
+   "src": "v5_runs/design.json#n_cal"
+  },
+  "seed.locked": {
+   "val": "$20261111$",
+   "raw": 20261111,
+   "fmt": "int",
+   "src": "v5_runs/v5_report.json#seed"
+  },
+  "dtwo.factor": {
+   "val": "$1.38$",
+   "raw": 1.3814974752023372,
+   "fmt": "u2",
+   "op": "div",
+   "inputs": [
+    "v5_runs/U1/drift_stop.json#mean_problem_s",
+    "v5_runs/U1/drift_stop.json#expected_problem_s"
+   ]
+  },
+  "dthree.calequal": {
+   "val": "yes",
+   "raw": true,
+   "fmt": "bool",
+   "src": "v5_runs/U1/d3_calibration_check.json#equal"
+  },
+  "dthree.nref": {
+   "val": "$13$",
+   "raw": 13,
+   "fmt": "int",
+   "op": "count_rows",
+   "inputs": [
+    "v5_runs/U1/d3_reference_check.jsonl"
+   ]
+  },
+  "dthree.nrefeq": {
+   "val": "$13$",
+   "raw": 13,
+   "fmt": "int",
+   "op": "count_true_field",
+   "inputs": [
+    "v5_runs/U1/d3_reference_check.jsonl#*/bitwise_equal"
+   ]
+  },
+  "gm.tests": {
+   "val": "16/16",
+   "raw": "16/16",
+   "fmt": "word",
+   "src": "v5_runs/gm.json#tests_passed"
+  },
+  "gm.mutants": {
+   "val": "68/68",
+   "raw": "68/68",
+   "fmt": "word",
+   "src": "v5_runs/gm.json#mutants_caught"
+  },
+  "gmdthree.tests": {
+   "val": "16/16",
+   "raw": "16/16",
+   "fmt": "word",
+   "src": "v5_runs/gm_D3.json#tests_passed"
+  },
+  "gmdthree.mutants": {
+   "val": "83/83",
+   "raw": "83/83",
+   "fmt": "word",
+   "src": "v5_runs/gm_D3.json#mutants_caught"
+  },
+  "gm.driver": {
+   "val": "595.91.07",
+   "raw": "595.91.07",
+   "fmt": "word",
+   "src": "v5_runs/gm_D3.json#gpu_environment/driver_version"
+  },
+  "gpu.hours": {
+   "val": "$17.8$",
+   "raw": 17.808046420084107,
+   "fmt": "u1",
+   "op": "ledger_hours",
+   "inputs": [
+    "v5_runs/gpu_ledger.jsonl"
+   ]
+  },
+  "gpu.dthree": {
+   "val": "$2.3$",
+   "raw": 2.343915180762609,
+   "fmt": "u1",
+   "op": "ledger_hours_since",
+   "inputs": [
+    "v5_runs/gpu_ledger.jsonl",
+    "2026-11-13"
+   ]
+  },
+  "cost.total": {
+   "val": "\\$13.88",
+   "raw": 13.884,
+   "fmt": "usd",
+   "op": "last_billing",
+   "inputs": [
+    "v5_runs/cost_ledger.jsonl"
+   ]
+  },
+  "both.cost": {
+   "val": "\\$26.01",
+   "raw": 26.014135525134392,
+   "fmt": "usd",
+   "op": "last_billing_plus",
+   "inputs": [
+    "v5_runs/cost_ledger.jsonl",
+    "v4/closeout/billing_snapshot_2026-11-09.json#totals/totalAmount"
+   ]
+  },
+  "both.hours": {
+   "val": "$33.4$",
+   "raw": 33.408652558525404,
+   "fmt": "u1",
+   "op": "ledger_hours_sum",
+   "inputs": [
+    "v5_runs/gpu_ledger.jsonl",
+    "v4_runs/gpu_ledger.jsonl"
+   ]
+  },
+  "cost.rate": {
+   "val": "\\$0.59",
+   "raw": 0.59,
+   "fmt": "usd",
+   "src": "v5_runs/cost_config.json#rate_usd_per_h"
+  },
+  "rng.btwo.min": {
+   "val": "$+0.907$",
+   "raw": 0.9066949274498597,
+   "fmt": "s3",
+   "op": "min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/estimate"
+   ]
+  },
+  "rng.btwo.max": {
+   "val": "$+1.190$",
+   "raw": 1.1903781147664787,
+   "fmt": "s3",
+   "op": "max",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U4/contrasts/H2/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/contrasts/H2/estimate"
+   ]
+  },
+  "rng.bthree.min": {
+   "val": "$-1.263$",
+   "raw": -1.263345999304208,
+   "fmt": "s3",
+   "op": "min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/estimate"
+   ]
+  },
+  "rng.bthree.max": {
+   "val": "$-1.134$",
+   "raw": -1.1344153819454446,
+   "fmt": "s3",
+   "op": "max",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U4/contrasts/H3/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/contrasts/H3/estimate"
+   ]
+  },
+  "rng.dtwo.min": {
+   "val": "$+0.724$",
+   "raw": 0.723864107030728,
+   "fmt": "s3",
+   "op": "min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/estimate"
+   ]
+  },
+  "rng.dtwo.max": {
+   "val": "$+1.040$",
+   "raw": 1.039996250512794,
+   "fmt": "s3",
+   "op": "max",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U3/contrasts/H2/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/contrasts/H2/estimate"
+   ]
+  },
+  "rng.bdhfivelo.min": {
+   "val": "$2.142$",
+   "raw": 2.142,
+   "fmt": "u3",
+   "op": "floor3_min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U3/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U3/H5/V/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U4/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U4/H5/V/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U5/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U5/H5/V/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U6/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U6/H5/V/ci95/0"
+   ]
+  },
+  "rng.ahfivelo.min": {
+   "val": "$2.331$",
+   "raw": 2.331,
+   "fmt": "u3",
+   "op": "floor3_min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U1/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U1/H5/V/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U2/H5/K/ci95/0",
+    "v5_runs/v5_report.json#per_unit/U2/H5/V/ci95/0"
+   ]
+  }
+ }
+}

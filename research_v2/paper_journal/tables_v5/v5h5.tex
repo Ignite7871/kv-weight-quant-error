@@ -1,0 +1,22 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{v5 per unit: H5 ($L^K$, $L^V$ with 95\% intervals; support needs a lower bound above $\ln 4$), the frozen calibration (margin, $\rho_K$, $\rho_V$, $\rho_V/\rho_K$) and the Holm-adjusted $p$ of each locked test of the unit's component (A: H1, H2, H3; B: H2, H3; D: H2; H5 for A, B and D). Under HQQ, $\rho$ and the margin come from HQQ's own error.}
+\label{tab:v5h5}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}l llll rrrr l@{}}
+\toprule
+Unit & $L^K$ & 95\% CI & $L^V$ & 95\% CI & Margin & $\rho_K$ & $\rho_V$ & $\rho_V/\rho_K$ & Holm $p$ (locked tests) \\
+\midrule
+U0 & \vsv{hfiveK.u0.est} & \vsv{hfiveK.u0.ci} & \vsv{hfiveV.u0.est} & \vsv{hfiveV.u0.ci} & \vsv{cal.u0.margin} & \vsv{cal.u0.rhoK} & \vsv{cal.u0.rhoV} & \vsv{cal.u0.rhoVK} & anchor (not tested) \\
+\midrule
+U1 & \vsv{hfiveK.u1.est} & \vsv{hfiveK.u1.ci} & \vsv{hfiveV.u1.est} & \vsv{hfiveV.u1.ci} & \vsv{cal.u1.margin} & \vsv{cal.u1.rhoK} & \vsv{cal.u1.rhoV} & \vsv{cal.u1.rhoVK} & H2 \vsv{holm.ah2.u1}, H1 \vsv{holm.ah1.u1}, H3 \vsv{holm.ah3.u1}, H5 \vsv{holm.ah5.u1k} \\
+U2 & \vsv{hfiveK.u2.est} & \vsv{hfiveK.u2.ci} & \vsv{hfiveV.u2.est} & \vsv{hfiveV.u2.ci} & \vsv{cal.u2.margin} & \vsv{cal.u2.rhoK} & \vsv{cal.u2.rhoV} & \vsv{cal.u2.rhoVK} & H2 \vsv{holm.ah2.u2}, H1 \vsv{holm.ah1.u2}, H3 \vsv{holm.ah3.u2}, H5 \vsv{holm.ah5.u2k} \\
+\midrule
+U4 & \vsv{hfiveK.u4.est} & \vsv{hfiveK.u4.ci} & \vsv{hfiveV.u4.est} & \vsv{hfiveV.u4.ci} & \vsv{cal.u4.margin} & \vsv{cal.u4.rhoK} & \vsv{cal.u4.rhoV} & \vsv{cal.u4.rhoVK} & H2 \vsv{holm.bh2.u4}, H3 \vsv{holm.bh3.u4}, H5 \vsv{holm.bh5.u4k} \\
+U6 & \vsv{hfiveK.u6.est} & \vsv{hfiveK.u6.ci} & \vsv{hfiveV.u6.est} & \vsv{hfiveV.u6.ci} & \vsv{cal.u6.margin} & \vsv{cal.u6.rhoK} & \vsv{cal.u6.rhoV} & \vsv{cal.u6.rhoVK} & H2 \vsv{holm.bh2.u6}, H3 \vsv{holm.bh3.u6}, H5 \vsv{holm.bh5.u6k} \\
+\midrule
+U3 & \vsv{hfiveK.u3.est} & \vsv{hfiveK.u3.ci} & \vsv{hfiveV.u3.est} & \vsv{hfiveV.u3.ci} & \vsv{cal.u3.margin} & \vsv{cal.u3.rhoK} & \vsv{cal.u3.rhoV} & \vsv{cal.u3.rhoVK} & H2 \vsv{holm.dh2.u3}, H5 \vsv{holm.dh5.u3k} \\
+U5 & \vsv{hfiveK.u5.est} & \vsv{hfiveK.u5.ci} & \vsv{hfiveV.u5.est} & \vsv{hfiveV.u5.ci} & \vsv{cal.u5.margin} & \vsv{cal.u5.rhoK} & \vsv{cal.u5.rhoV} & \vsv{cal.u5.rhoVK} & H2 \vsv{holm.dh2.u5}, H5 \vsv{holm.dh5.u5k} \\
+\bottomrule
+\end{tabular}
+\end{table}

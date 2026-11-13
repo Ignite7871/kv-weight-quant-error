@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or these records, please cite the article."
 title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: code, locks and per-problem records"
 type: software
-version: "1.0.0"
-date-released: "2026-11-09"
+version: "1.1.0"
+date-released: "2026-11-13"
 license: MIT
 repository-code: "https://github.com/Ignite7871/kv-weight-quant-error"
 authors:

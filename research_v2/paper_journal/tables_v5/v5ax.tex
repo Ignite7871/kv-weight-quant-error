@@ -1,0 +1,17 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{A-X, the crossed reading (locked). Predictions are locked v4 estimates of named source models (Qwen3: Qwen2.5-0.5B for size, Qwen2.5-1.5B for head dimension; SmolLM2: the mean of the head-dimension-128 Qwen2.5-1.5B, Qwen2.5-3B and Llama-3.2-3B for size, the mean of the two head-dimension-64 models for head dimension); $b$ is their midpoint. A classification needs the 95\% interval entirely on one side of $b$ and a one-sided Holm $p<0.05$ (Holm over the two models per contrast).}
+\label{tab:v5ax}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lllrrrll@{}}
+\toprule
+Model & Contrast & Estimate [95\% CI] & Size pred. & hd pred. & $b$ & Holm $p$ & Classification \\
+\midrule
+Qwen3-0.6B (hd 128) & NAT$-$C1 (primary) & \vsv{ax.natc.u1.est} \vsv{ax.natc.u1.ci} & \vsv{ax.natc.u1.size} & \vsv{ax.natc.u1.hd} & \vsv{ax.natc.u1.b} & \vsv{ax.natc.u1.holm} & \vsv{ax.natc.u1.class} \\
+ & H1 (secondary) & \vsv{ax.hone.u1.est} \vsv{ax.hone.u1.ci} & \vsv{ax.hone.u1.size} & \vsv{ax.hone.u1.hd} & \vsv{ax.hone.u1.b} & \vsv{ax.hone.u1.holm} & \vsv{ax.hone.u1.class} \\
+\midrule
+SmolLM2-1.7B (hd 64) & NAT$-$C1 (primary) & \vsv{ax.natc.u2.est} \vsv{ax.natc.u2.ci} & \vsv{ax.natc.u2.size} & \vsv{ax.natc.u2.hd} & \vsv{ax.natc.u2.b} & \vsv{ax.natc.u2.holm} & \vsv{ax.natc.u2.class} \\
+ & H1 (secondary) & \vsv{ax.hone.u2.est} \vsv{ax.hone.u2.ci} & \vsv{ax.hone.u2.size} & \vsv{ax.hone.u2.hd} & \vsv{ax.hone.u2.b} & \vsv{ax.hone.u2.holm} & \vsv{ax.hone.u2.class} \\
+\bottomrule
+\end{tabular}
+\end{table}

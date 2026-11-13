@@ -1,0 +1,14 @@
+{
+ "id": "D1",
+ "lock_id": "14d2e1bf669417b8",
+ "commit": "5cb9b636ecae9f8834d0004ac2fd8ccec617b8cd",
+ "reason": "Pre-declared resource deviation, decided by the corresponding author on 2026-11-12 during U1 and before any U6 data: if, at the start of U6 (its first command), the projection spent + U6's projected cost (design.json; U5 is complete by then) + storage until the volume is deleted (the design's storage allowance) exceeds $14, the ledger stop is raised to $16 for U6 only; if $16 would also be exceeded, the run stops at $16 (the unit start check and the in-run ledger stop read the stop in force) and is reported. No change to arms, n, gates, analysis or any decision rule. Implemented as run_v5.d1_stop (decision written once to v5_runs/U6/d1_stop.json and reread by every later U6 command) and a U6-only override of v5_ops.stop_usd; test o23 and three mutants added (ops 23/23, mutants 71/71 on CPU).",
+ "utc": "2026-11-12T06:01:34.568963+00:00",
+ "earlier_deviations": [],
+ "files": {
+  "research_v2/v5/v5_ops.py": "a5ae5c29d161a206d95960f561dc588f8d076eec28f8a68504eb2697ce7e4c1d",
+  "research_v2/v5/run_v5.py": "cb219cfd4bd1053ff61f8d33d2ff17cbc2ca0961dc993766369d4cde1e9ff562",
+  "research_v2/v5/tests/mutation_check_v5.py": "7e8e1f692471e5ce5916a9fe4f7ef482fb8a7d5192b696e94b2d529998b4461e",
+  "research_v2/v5/tests/test_ops_v5.py": "041d6953c94431b19bc0b3601c54f07fe711b4cbfdcbb2151159a037a3853ceb"
+ }
+}

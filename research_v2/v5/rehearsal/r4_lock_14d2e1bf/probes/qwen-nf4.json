@@ -1,0 +1,17 @@
+{
+ "probe": "qwen-nf4",
+ "model": "qwen2.5-0.5b",
+ "quantizer": "nf4",
+ "t_arm_problem_s": 4.342226383332874,
+ "t_hist_ref_problem_s": 3.105414799999077,
+ "t_load_s": 1.5536232000013115,
+ "finite": true,
+ "layers": 24,
+ "params": {
+  "total": 494032768,
+  "linear": 357826560
+ },
+ "rehearsal": true,
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "utc": "2026-11-11T15:59:08Z"
+}

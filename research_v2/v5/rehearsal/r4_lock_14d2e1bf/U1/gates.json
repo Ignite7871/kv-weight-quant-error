@@ -1,0 +1,116 @@
+{
+ "started_utc": "2026-11-11T16:03:41Z",
+ "unit": {
+  "unit": "U1",
+  "model": "qwen3-0.6b-base",
+  "quantizer": "nf4",
+  "task": "gsm8k",
+  "component": "A"
+ },
+ "hf_id": "Qwen/Qwen3-0.6B-Base",
+ "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+ "G7_snapshot": {
+  "snapshot": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+  "revision_pinned": true,
+  "shards_ok": {
+   "model.safetensors": true
+  },
+  "excluded_present": [],
+  "pass": true
+ },
+ "G7_config": {
+  "layers": 28,
+  "q_heads": 16,
+  "kv_heads": 8,
+  "head_dim": 128,
+  "vocab": 151936,
+  "tied_embeddings": true,
+  "attention": {
+   "q_norm": true,
+   "k_norm": true,
+   "n_q_norm": 28,
+   "n_k_norm": 28,
+   "k_proj_out": 1024
+  },
+  "manifest": {
+   "layers": 28,
+   "q_heads": 16,
+   "kv_heads": 8,
+   "head_dim": 128,
+   "vocab": 151936,
+   "tied_embeddings": true,
+   "qk_norm": true
+  },
+  "pass": true
+ },
+ "G5_format": {
+  "prompt_sha_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "roundtrip_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "bos_first": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "expected_bos": false,
+  "eos_token_id": 151643,
+  "bos_token_id": null,
+  "drift_marker_detected": true,
+  "no_false_drift": true,
+  "pass": true
+ },
+ "G3_finite": {
+  "precision": "fp16",
+  "pass": true,
+  "failures": []
+ },
+ "precision": "fp16",
+ "G2_integrity_errors": [],
+ "G1_alpha0_bitwise": {
+  "n": 60,
+  "all_identical": true,
+  "failures": []
+ },
+ "G4_seeds": {
+  "same_label_identical": true,
+  "different_label_differs_in_n_of": [
+   6,
+   6
+  ]
+ },
+ "G7_cache": {
+  "n_layers": 28,
+  "n_kv_heads": 8,
+  "head_dim": 128,
+  "key_dtype": "torch.float16",
+  "value_dtype": "torch.float16",
+  "all_mode_dtype": true,
+  "seq_len": 425,
+  "n_dynamic_modules": 196,
+  "pass": true
+ },
+ "all_passed": true,
+ "finished_utc": "2026-11-11T16:27:10Z"
+}

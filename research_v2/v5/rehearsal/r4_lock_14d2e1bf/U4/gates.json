@@ -1,0 +1,139 @@
+{
+ "started_utc": "2026-11-12T03:12:21Z",
+ "unit": {
+  "unit": "U4",
+  "model": "qwen2.5-0.5b",
+  "quantizer": "hqq",
+  "task": "gsm8k",
+  "component": "B"
+ },
+ "hf_id": "Qwen/Qwen2.5-0.5B",
+ "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+ "G7_snapshot": {
+  "snapshot": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "revision_pinned": true,
+  "shards_ok": {
+   "model.safetensors": true
+  },
+  "excluded_present": [],
+  "pass": true
+ },
+ "GH_fp16": {
+  "unit": "U4",
+  "precision": "fp16",
+  "hqq_version": "0.2.8.post1",
+  "config": {
+   "nbits": 4,
+   "group_size": 64,
+   "axis": 1
+  },
+  "deterministic": true,
+  "state_sha256": "8b93f27d1cf8df3af3f89c7da5d40af9318f31a69c1f3d6666e60e7af4c5bf43",
+  "second_state_sha256": "8b93f27d1cf8df3af3f89c7da5d40af9318f31a69c1f3d6666e60e7af4c5bf43",
+  "frozen": false,
+  "bits_per_weight": 4.5,
+  "quantize_seconds": 5.266370999999992,
+  "utc": "2026-11-12T03:12:32Z",
+  "pass": true,
+  "oracle": {
+   "n_layers": 168,
+   "mismatches": [],
+   "pass": true
+  }
+ },
+ "G7_config": {
+  "layers": 24,
+  "q_heads": 14,
+  "kv_heads": 2,
+  "head_dim": 64,
+  "vocab": 151936,
+  "tied_embeddings": true,
+  "attention": {
+   "q_norm": false,
+   "k_norm": false,
+   "n_q_norm": 0,
+   "n_k_norm": 0,
+   "k_proj_out": 128
+  },
+  "manifest": {
+   "layers": 24,
+   "q_heads": 14,
+   "kv_heads": 2,
+   "head_dim": 64,
+   "vocab": 151936,
+   "tied_embeddings": true,
+   "qk_norm": false
+  },
+  "pass": true
+ },
+ "G5_format": {
+  "prompt_sha_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "roundtrip_ok": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "bos_first": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "expected_bos": false,
+  "eos_token_id": 151643,
+  "bos_token_id": null,
+  "drift_marker_detected": true,
+  "no_false_drift": true,
+  "pass": true
+ },
+ "G3_finite": {
+  "precision": "fp16",
+  "pass": true,
+  "failures": []
+ },
+ "precision": "fp16",
+ "G2_integrity_errors": [],
+ "G1_alpha0_bitwise": {
+  "n": 60,
+  "all_identical": true,
+  "failures": []
+ },
+ "G4_seeds": {
+  "same_label_identical": true,
+  "different_label_differs_in_n_of": [
+   6,
+   6
+  ]
+ },
+ "G7_cache": {
+  "n_layers": 24,
+  "n_kv_heads": 2,
+  "head_dim": 64,
+  "key_dtype": "torch.float16",
+  "value_dtype": "torch.float16",
+  "all_mode_dtype": true,
+  "seq_len": 425,
+  "n_dynamic_modules": 168,
+  "pass": true
+ },
+ "all_passed": true,
+ "finished_utc": "2026-11-12T03:28:53Z"
+}

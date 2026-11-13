@@ -1,0 +1,788 @@
+{
+ "device": "cpu",
+ "caught": 68,
+ "n": 68,
+ "all_caught": true,
+ "results": [
+  {
+   "mutant": "m_c1_on_64_sphere_for_hd128",
+   "caught": true,
+   "by": [
+    [
+     "t05_c1_full_sphere_and_slot_norms_per_kv_head_new_geometries",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_c1_on_128_sphere_for_hd64",
+   "caught": true,
+   "by": [
+    [
+     "t05_c1_full_sphere_and_slot_norms_per_kv_head_new_geometries",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.2
+  },
+  {
+   "mutant": "m_slot_norms_pooled_over_kv_heads",
+   "caught": true,
+   "by": [
+    [
+     "t05_c1_full_sphere_and_slot_norms_per_kv_head_new_geometries",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_hqq_group_128",
+   "caught": true,
+   "by": [
+    [
+     "t09_hqq_config_twice_quantize_and_oracle",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_hqq_axis_0",
+   "caught": true,
+   "by": [
+    [
+     "t09_hqq_config_twice_quantize_and_oracle",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_hqq_tuned_3bit",
+   "caught": true,
+   "by": [
+    [
+     "t09_hqq_config_twice_quantize_and_oracle",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.2
+  },
+  {
+   "mutant": "m_hqq_dequantization_skipped",
+   "caught": true,
+   "by": [
+    [
+     "t11_hqq_c1_norm_from_hqq_delta",
+     "AssertionError: the 4-bit route is the HQQ layer"
+    ]
+   ],
+   "seconds": 0.6
+  },
+  {
+   "mutant": "m_hqq_unit_measures_with_nf4",
+   "caught": true,
+   "by": [
+    [
+     "t09_hqq_config_twice_quantize_and_oracle",
+     "AssertionError: "
+    ],
+    [
+     "t11_hqq_c1_norm_from_hqq_delta",
+     "IndexError: list index out of range"
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_hqq_frozen_state_ignored",
+   "caught": true,
+   "by": [
+    [
+     "t12_hqq_frozen_state_roundtrip",
+     "AssertionError: a frozen state replaces the fresh quantization"
+    ]
+   ],
+   "seconds": 0.5
+  },
+  {
+   "mutant": "m_hqq_state_not_checked_at_load",
+   "caught": true,
+   "by": [
+    [
+     "o20_hqq_state_checked_at_every_load",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_g7_qk_norm_not_checked",
+   "caught": true,
+   "by": [
+    [
+     "t07_attention_snapshot_qk_norm_and_kv_heads",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_anchor_with_v5_seed_label",
+   "caught": true,
+   "by": [
+    [
+     "t01_anchor_seeds_are_v4_and_other_units_are_new",
+     "AssertionError: ('NAT', 0.0)"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_units_share_one_label",
+   "caught": true,
+   "by": [
+    [
+     "t01_anchor_seeds_are_v4_and_other_units_are_new",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_wikitext_history_is_own_generation",
+   "caught": true,
+   "by": [
+    [
+     "o19_wikitext_history_is_the_real_text_not_a_generation",
+     "AttributeError: 'Tok' object has no attribute 'eos_token_id'"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_prompt_cut_mid_word",
+   "caught": true,
+   "by": [
+    [
+     "t13_wikitext_paragraphs_and_prompt_cut",
+     "AssertionError: 0"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_headings_kept",
+   "caught": true,
+   "by": [
+    [
+     "t13_wikitext_paragraphs_and_prompt_cut",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_paragraph_order_not_seeded",
+   "caught": true,
+   "by": [
+    [
+     "t14_wikitext_eligibility_history_and_order",
+     "AssertionError: the order is seeded by the label, not by the file order"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_history_with_special_tokens",
+   "caught": true,
+   "by": [
+    [
+     "t14_wikitext_eligibility_history_and_order",
+     "AssertionError: history: no special tokens"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_eligibility_600_chars",
+   "caught": true,
+   "by": [
+    [
+     "t14_wikitext_eligibility_history_and_order",
+     "AssertionError: fewer than 1,200 characters"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_wikitext_argmax_ids_released",
+   "caught": true,
+   "by": [
+    [
+     "t15_wikitext_records_hold_no_text_or_ids",
+     "AssertionError: "
+    ],
+    [
+     "o11_exactly_once_resume_and_hash_only_history",
+     "AssertionError: no WikiText token ids in released records"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_wikitext_history_ids_released",
+   "caught": true,
+   "by": [
+    [
+     "t15_wikitext_records_hold_no_text_or_ids",
+     "AssertionError: "
+    ],
+    [
+     "o11_exactly_once_resume_and_hash_only_history",
+     "AssertionError: no WikiText token ids in released records"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_ax_boundary_not_from_v4_report",
+   "caught": true,
+   "by": [
+    [
+     "a01_ax_references_and_sources_are_the_protocol_table",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 8.9
+  },
+  {
+   "mutant": "m_ax_smollm2_sources_nearest_size_only",
+   "caught": true,
+   "by": [
+    [
+     "a01_ax_references_and_sources_are_the_protocol_table",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_ax_point_estimate_only",
+   "caught": true,
+   "by": [
+    [
+     "a02_ax_classify_and_one_sided_p",
+     "AssertionError: "
+    ],
+    [
+     "a04_truth_at_size_and_mixed_and_between",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 26.5
+  },
+  {
+   "mutant": "m_ax_without_holm",
+   "caught": true,
+   "by": [
+    [
+     "a02_ax_classify_and_one_sided_p",
+     "AssertionError: the CI alone is not enough: Holm p < 0.05 too"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_ax_two_sided_direction_ignored",
+   "caught": true,
+   "by": [
+    [
+     "a02_ax_classify_and_one_sided_p",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_ax_sides_swapped",
+   "caught": true,
+   "by": [
+    [
+     "a01_ax_references_and_sources_are_the_protocol_table",
+     "AssertionError: "
+    ],
+    [
+     "a03_truth_at_head_dim_everywhere",
+     "AssertionError: ('NAT-C1', 'U1', {'estimate': 0.20359999999999978, 'ci95': [0.11833927407830076, 0.2929892502090226], 'boundary': -0.009"
+    ]
+   ],
+   "seconds": 8.6
+  },
+  {
+   "mutant": "m_ax_joint_reading_any",
+   "caught": true,
+   "by": [
+    [
+     "a04_truth_at_size_and_mixed_and_between",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 17.5
+  },
+  {
+   "mutant": "m_holm_over_the_wrong_family",
+   "caught": true,
+   "by": [
+    [
+     "a06_holm_within_each_family",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 8.6
+  },
+  {
+   "mutant": "m_equivalence_ignored",
+   "caught": true,
+   "by": [
+    [
+     "a05_families_falsified_and_inconclusive",
+     "AssertionError: equivalent to 0 falsifies"
+    ]
+   ],
+   "seconds": 17.5
+  },
+  {
+   "mutant": "m_h5_threshold_ln16",
+   "caught": true,
+   "by": [
+    [
+     "a03_truth_at_head_dim_everywhere",
+     "AssertionError: ('A-H5', {'units': ['U1', 'U2'], 'summaries': {'U1/K': {'n': 100, 'estimate': 2.2392238501108244, 'ci95': [2.23602815369"
+    ]
+   ],
+   "seconds": 8.8
+  },
+  {
+   "mutant": "m_unresolved_unit_counted",
+   "caught": true,
+   "by": [
+    [
+     "a08_r1_n60_and_unresolved_units",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 15.0
+  },
+  {
+   "mutant": "m_anchor_criterion_1_off",
+   "caught": true,
+   "by": [
+    [
+     "a10_anchor_criteria",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 1.8
+  },
+  {
+   "mutant": "m_anchor_calibration_tolerance_10pc",
+   "caught": true,
+   "by": [
+    [
+     "a10_anchor_criteria",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 1.8
+  },
+  {
+   "mutant": "m_anchor_bitwise_ignores_slots",
+   "caught": true,
+   "by": [
+    [
+     "a10_anchor_criteria",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 2.1
+  },
+  {
+   "mutant": "m_ceiling_30",
+   "caught": true,
+   "by": [
+    [
+     "o04_ceiling_stop_and_storage_tier",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_stop_ignored",
+   "caught": true,
+   "by": [
+    [
+     "o04_ceiling_stop_and_storage_tier",
+     "AssertionError: the start check refuses a problem that would cross $14"
+    ],
+    [
+     "o10_drift_reference_and_start_check_before_problem",
+     "AssertionError: checked before the problem, not after"
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_start_check_after_the_problem",
+   "caught": true,
+   "by": [
+    [
+     "o10_drift_reference_and_start_check_before_problem",
+     "AssertionError: checked before the problem, not after"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_storage_standard_rate_always",
+   "caught": true,
+   "by": [
+    [
+     "o04_ceiling_stop_and_storage_tier",
+     "AssertionError: ('high_performance', {'inpod_usd': 0.004861111111111112, 'billing_based_usd': None, 'used_usd': 0.004861111111111112, 'c"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_hf_token_accepted_on_the_pod",
+   "caught": true,
+   "by": [
+    [
+     "o05_no_token_anywhere",
+     "AssertionError: names only, never the value"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_remote_allows_token",
+   "caught": true,
+   "by": [
+    [
+     "o05_no_token_anywhere",
+     "AssertionError: "
+    ],
+    [
+     "o13_remote_filter_and_local_fetch_verification",
+     "AssertionError: export HF_TOKEN=abc"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_rehearsal_on_an_a40",
+   "caught": true,
+   "by": [
+    [
+     "o02_rehearsal_files_and_guards",
+     "AssertionError: no rehearsal on an A40"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_rehearsal_file_authorizes_a_real_run",
+   "caught": true,
+   "by": [
+    [
+     "o02_rehearsal_files_and_guards",
+     "AssertionError: a REHEARSAL file authorizes nothing outside the rehearsal"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_auth_tag_substring",
+   "caught": true,
+   "by": [
+    [
+     "o01_authorization_files_and_tokens",
+     "AssertionError: a file naming U10 must not authorize U1"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gpu_process_guard_off",
+   "caught": true,
+   "by": [
+    [
+     "o06_one_gpu_process_lock",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_anchor_decision_skipped",
+   "caught": true,
+   "by": [
+    [
+     "o07_order_rules",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_design_not_required",
+   "caught": true,
+   "by": [
+    [
+     "o07_order_rules",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_hqq_record_not_required",
+   "caught": true,
+   "by": [
+    [
+     "o07_order_rules",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_wikitext_dataset_not_required",
+   "caught": true,
+   "by": [
+    [
+     "o07_order_rules",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_unit_start_check_off",
+   "caught": true,
+   "by": [
+    [
+     "o08_unit_start_check_and_cut_units",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_reduction_cuts_an_a_unit",
+   "caught": true,
+   "by": [
+    [
+     "o09_design_reduction_order",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_reduction_drops_mistral_before_r1",
+   "caught": true,
+   "by": [
+    [
+     "o09_design_reduction_order",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_design_without_the_1_48_factor",
+   "caught": true,
+   "by": [
+    [
+     "o09_design_reduction_order",
+     "AssertionError: probe x 1.48"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_design_without_the_wikitext_factor",
+   "caught": true,
+   "by": [
+    [
+     "o09_design_reduction_order",
+     "AssertionError: WikiText x 64/61.1"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_rehearsal_probe_enters_a_real_design",
+   "caught": true,
+   "by": [
+    [
+     "o09_design_reduction_order",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "m_drift_reference_times_1_48_again",
+   "caught": true,
+   "by": [
+    [
+     "o10_drift_reference_and_start_check_before_problem",
+     "AssertionError: the design projection already holds the 1.48 factor"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_records_appended_twice",
+   "caught": true,
+   "by": [
+    [
+     "o11_exactly_once_resume_and_hash_only_history",
+     "AssertionError: exactly once"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_g5_bos_by_family",
+   "caught": true,
+   "by": [
+    [
+     "o12_g5_bos_from_manifest",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_watcher_accepts_an_unverified_checkpoint",
+   "caught": true,
+   "by": [
+    [
+     "o13_remote_filter_and_local_fetch_verification",
+     "AssertionError: an unverified checkpoint is never merged"
+    ]
+   ],
+   "seconds": 1.2
+  },
+  {
+   "mutant": "m_checkpoint_carries_the_hqq_state",
+   "caught": true,
+   "by": [
+    [
+     "o13_remote_filter_and_local_fetch_verification",
+     "AssertionError: the frozen HQQ state stays on the volume"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_closeout_ignores_final_state",
+   "caught": true,
+   "by": [
+    [
+     "o14_closeout_gate_with_cut_units",
+     "AssertionError: a checkpoint taken mid-unit does not clear the volume for deletion"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_gm_reads_only_the_old_cuda_banner",
+   "caught": true,
+   "by": [
+    [
+     "o21_gm_environment_reads_both_nvidia_smi_banners",
+     "AssertionError: ('| NVIDIA-SMI 621.14     KMD Version: 621.14        CUDA UMD Version: 13.5     |', {'name': 'NVIDIA A40', 'driver_versi"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_watcher_accepts_any_phase",
+   "caught": true,
+   "by": [
+    [
+     "o22_watcher_exit_codes_on_a_local_pod",
+     "AssertionError: an earlier phase's done is not this phase's end"
+    ]
+   ],
+   "seconds": 0.9
+  },
+  {
+   "mutant": "m_gm_without_image_record",
+   "caught": true,
+   "by": [
+    [
+     "o15_gm_verdict",
+     "AssertionError: t"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_lock_hqq_line_maps_to_calibration",
+   "caught": true,
+   "by": [
+    [
+     "o16_lock_create_verify_and_v5_appendix_lines",
+     "AssertionError: "
+    ],
+    [
+     "o17_locked_file_list_and_v4_previous_lock",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.4
+  },
+  {
+   "mutant": "m_lock_without_the_v4_previous_lock",
+   "caught": true,
+   "by": [
+    [
+     "o17_locked_file_list_and_v4_previous_lock",
+     "AssertionError: "
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_lock_omits_the_driver",
+   "caught": true,
+   "by": [
+    [
+     "o17_locked_file_list_and_v4_previous_lock",
+     "AssertionError: research_v2/v5/run_v5_pod.sh"
+    ]
+   ],
+   "seconds": 0.0
+  },
+  {
+   "mutant": "m_lock_accepts_a_failed_gh",
+   "caught": true,
+   "by": [
+    [
+     "o16_lock_create_verify_and_v5_appendix_lines",
+     "TypeError: argument of type 'NoneType' is not iterable"
+    ]
+   ],
+   "seconds": 0.5
+  }
+ ]
+}

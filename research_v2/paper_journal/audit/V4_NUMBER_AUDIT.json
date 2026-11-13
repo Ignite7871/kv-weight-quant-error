@@ -9,7 +9,7 @@
  "rederived_fail": [],
  "recomp_n": 195,
  "recomp_fail": [],
- "literals_n": 240,
+ "literals_n": 301,
  "literals_unclassified": [],
  "claims": [
   {
@@ -147,7 +147,28 @@
    "line": 7,
    "literal": "3.1",
    "class": "model / licence name Llama 3.1",
-   "context": "ckpoints from three families (   -- ,  /3.1  --  and"
+   "context": ":} In eight base checkpoints (   -- ,  /3.1  -- ,  ), each decode step"
+  },
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 9,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "ond locked study added HQQ and WikiText-2 at   and  , and two models crossing"
+  },
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 14,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "first and third on WikiText-2, where task and history source changed"
+  },
+  {
+   "file": "sections_v4\\00_abstract.tex",
+   "line": 21,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "models tested under HQQ and on WikiText-2. Key-path mildness varies with size and"
   },
   {
    "file": "sections_v4\\01_introduction.tex",
@@ -169,6 +190,27 @@
    "literal": "3.1",
    "class": "model / licence name Llama 3.1",
    "context": "-- ), three Llama sizes (3.2- , 3.2- , 3.1- )"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 28,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "er they hold on a second task (WikiText-2)."
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 39,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "under HQQ, and   and   held on WikiText-2, in both models tested (  and  ); on Wi"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 39,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "th models tested (  and  ); on WikiText-2 the task and the"
   },
   {
    "file": "sections_v4\\02_related.tex",
@@ -195,7 +237,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 11,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "has a head dimension of 64; every other model, Mistral included, h"
   },
   {
@@ -230,7 +272,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 30,
    "literal": "65",
-   "class": "history cap (\u00a73)",
+   "class": "history cap (\u00a73; PROTOCOL_V5 \u00a73)",
    "context": "-session   greedy generation, capped at 65"
   },
   {
@@ -244,7 +286,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 32,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "$1  T_i$, with $T_i= (64, {history length}-1)$, we compute in"
   },
   {
@@ -307,7 +349,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 68,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "64 steps, before its first test problem; t"
   },
   {
@@ -419,21 +461,21 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 97,
    "literal": "16",
-   "class": "H5 family size (16 tests)",
+   "class": "H5 family size (16 tests) / V5-D1 $16 stop",
    "context": "over the 16 model--path tests."
   },
   {
    "file": "sections_v4\\03_methods.tex",
    "line": 100,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "$ _ = _j _{j }$ and $ _ = _j\\| _{j }\\|^2$ over positions $j$."
   },
   {
    "file": "sections_v4\\03_methods.tex",
    "line": 103,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "C_i^P= { _ \\| _ /n_i\\|^2}{ _   _ /n_i},"
   },
   {
@@ -475,7 +517,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 108,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "alsified if the upper bound is below $  2$. These are the thresholds of the"
   },
   {
@@ -566,7 +608,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 125,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "score steps 2--8 or 9--64 only, use per-problem media"
   },
   {
@@ -587,7 +629,7 @@
    "file": "sections_v4\\03_methods.tex",
    "line": 125,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "score steps 2--8 or 9--64 only, use per-problem medians, and trun"
   },
   {
@@ -678,7 +720,7 @@
    "file": "sections_v4\\04_results.tex",
    "line": 15,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "pen squares mark the two head-dimension-64 models. Generated by  .}"
   },
   {
@@ -804,7 +846,7 @@
    "file": "sections_v4\\04_results.tex",
    "line": 78,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "y. Open squares mark the head-dimension-64 models, which are also the smallest of"
   },
   {
@@ -825,7 +867,7 @@
    "file": "sections_v4\\04_results.tex",
    "line": 99,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "head dimension from 64 to 128, which happens at the same step"
   },
   {
@@ -846,7 +888,7 @@
    "file": "sections_v4\\05_exploratory.tex",
    "line": 17,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "he two families when the head-dimension-64 models are included; among the"
   },
   {
@@ -874,14 +916,14 @@
    "file": "sections_v4\\05_exploratory.tex",
    "line": 36,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "del is the only one with head dimension 64, so every within-family size comparison"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
    "line": 38,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "estimate is at head dimension 64, and its estimate equivalent to 0 is th"
   },
   {
@@ -895,7 +937,7 @@
    "file": "sections_v4\\05_exploratory.tex",
    "line": 38,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "valent to 0 is the other head-dimension-64 model), the   family"
   },
   {
@@ -916,35 +958,182 @@
    "file": "sections_v4\\05_exploratory.tex",
    "line": 45,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "step from each family's head-dimension-64 model to its next"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 56,
+   "line": 57,
    "literal": "0",
    "class": "zero",
    "context": "h pairs the largest share sits in layer 0 or 1; it is most extreme in  , where la"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 56,
+   "line": 57,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "rs the largest share sits in layer 0 or 1; it is most extreme in  , where layer 0"
   },
   {
    "file": "sections_v4\\05_exploratory.tex",
-   "line": 56,
+   "line": 57,
    "literal": "0",
    "class": "zero",
    "context": "1; it is most extreme in  , where layer 0"
   },
   {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 20,
+   "literal": "0",
+   "class": "zero",
+   "context": "ize against head dimension (U1, U2).}  -0. -Base~  is small ("
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 21,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "ameters) with head dimension  ; SmolLM2-1. ~  is mid-sized"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 22,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
+   "context": "ead dimension  . In v4, small went with 64 and larger with 128. The locked"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 22,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "v4, small went with 64 and larger with 128. The locked"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 26,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "as following a pattern only if its 95\\% interval lies entirely on that side of"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 26,
+   "literal": "0.05",
+   "class": "Holm level",
+   "context": "hat side of $b$ and a one-sided Holm $p<0.05$"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 30,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
+   "context": "(U4, U6).} HQQ~    weights (group size 64, library defaults, not"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 31,
+   "literal": "4.5",
+   "class": "section ref / HQQ bits per weight (PROTOCOL_V5 \u00a73)",
+   "context": "tuned; about 4.5 bits per weight against  's 4.13) repla"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 31,
+   "literal": "4.13",
+   "class": "NF4 bits per weight, approximate (PROTOCOL_V5 \u00a73)",
+   "context": "; about 4.5 bits per weight against  's 4.13) replace   in  -  and  . The isotropic"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 34,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "{D, a second task (U3, U5).} WikiText-2~  paragraphs replace GSM8K in the same"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 35,
+   "literal": "600",
+   "class": "WikiText-2 prompt length in characters (PROTOCOL_V5 \u00a73)",
+   "context": "a prompt of the paragraph's first 600 characters and a 65-token history of th"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 35,
+   "literal": "65",
+   "class": "history cap (\u00a73; PROTOCOL_V5 \u00a73)",
+   "context": "paragraph's first 600 characters and a 65-token history of the real continuing te"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 38,
+   "literal": "256",
+   "class": "SHA-256 (hash name)",
+   "context": "dentify each paragraph by index and SHA-256 hashes."
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 40,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "HQQ, and  ,   and NAT$-$C1 on WikiText-2, were not predicted and are reported as"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 54,
+   "literal": "0",
+   "class": "zero",
+   "context": "$p$  ): in  -0. -Base and SmolLM2-1. , natural key err"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 54,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "$p$  ): in  -0. -Base and SmolLM2-1. , natural key error was milder than is"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 56,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "he isotropic share on both paths (every 95\\% lower bound"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 76,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "re on both paths (across B and D, every 95\\% lower bound of $ $ at or above"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 81,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "e each  , here both models: on WikiText-2, natural value error"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 85,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "both WikiText-2 units, and  's   was small (   ), as on"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 96,
+   "literal": "15",
+   "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
+   "context": "GPU-hours and   as billed, under its \\$15 ceiling, including the"
+  },
+  {
    "file": "sections_v4\\06_v3study.tex",
    "line": 13,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "struct version, all with head dimension 64, under the raw   prompt (so the instruc"
   },
   {
@@ -965,7 +1154,7 @@
    "file": "sections_v4\\06_v3study.tex",
    "line": 15,
    "literal": "14",
-   "class": "earlier study arms (\u00a76)",
+   "class": "earlier study arms (\u00a76) / v5 $14 ledger stop (PROTOCOL_V5 \u00a79)",
    "context": "problems per model, and 14 arms. Besides the six arms of the prese"
   },
   {
@@ -1049,14 +1238,14 @@
    "file": "sections_v4\\06_v3study.tex",
    "line": 156,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "{The 2$ $2} With the four models as cells $a$"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 156,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "{The 2$ $2} With the four models as cells $a$ (Qwe"
   },
   {
@@ -1119,120 +1308,197 @@
    "file": "sections_v4\\06_v3study.tex",
    "line": 191,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llam"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 191,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "at the one size per family that the 2$ $2 used. With four Qwen and three Llama si"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 193,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "ro to positive in Llama (Figure~ ). The 2$ $2's family"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 193,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "o positive in Llama (Figure~ ). The 2$ $2's family"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 195,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "share a head dimension of 64 that no larger model in the ladder has."
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 195,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "dder has. The caveat we attached to the 2$ $2 named this"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
    "line": 195,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "has. The caveat we attached to the 2$ $2 named this"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 38,
+   "line": 15,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "HQQ, and   and   on WikiText-2, in both models tested ( -  and  ), so"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 16,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "specific to   or to GSM8K. On WikiText-2 the history was human text"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 31,
+   "literal": "128",
+   "class": "head dimension (\u00a72)",
+   "context": "e checkpoints: the small head-dimension-128 model followed the size pattern, and th"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 31,
+   "literal": "64",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
+   "context": "ttern, and the mid-sized head-dimension-64 model"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 32,
+   "literal": "0",
+   "class": "zero",
+   "context": "he v4 models in head dimension alone.  -0. -Base adds QK-norm, which acts on"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 33,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "elf, and is a newer generation; SmolLM2-1.  is a different family whose reference"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 48,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "} For practitioners who keep weights in 4 bits and the cache in 16 bits, the resu"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 38,
+   "line": 48,
    "literal": "16",
-   "class": "H5 family size (16 tests)",
+   "class": "H5 family size (16 tests) / V5-D1 $16 stop",
    "context": "keep weights in 4 bits and the cache in 16 bits, the results suggest"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
    "line": 5,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
-   "context": "dimension 64. No checkpoint here varies size with he"
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
+   "context": "del is the only one with head dimension 64, so its statements about scale are also"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
    "line": 6,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
-   "context": "also a statement about the change from 64 to 128 at the smallest step (Section~ )"
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
+   "context": "from 64 to 128 at the smallest step (Section~ )"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
    "line": 6,
    "literal": "128",
    "class": "head dimension (\u00a72)",
-   "context": "a statement about the change from 64 to 128 at the smallest step (Section~ )."
+   "context": "from 64 to 128 at the smallest step (Section~ ). The s"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
-   "line": 14,
+   "line": 7,
+   "literal": "0",
+   "class": "zero",
+   "context": "he v4 models in head dimension alone:  -0. -Base adds"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 8,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "and is a newer generation, and SmolLM2-1.  changes family, tokenizer, training d"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 19,
    "literal": "100",
    "class": "earlier study's calibration sample / count",
-   "context": "nning generation and no other task. The 100 test problems"
+   "context": "its 100 test problems were used in the earlier"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
-   "line": 21,
+   "line": 20,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "task, WikiText-2, ran in two models, and its history is"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 24,
+   "literal": "4.5",
+   "class": "section ref / HQQ bits per weight (PROTOCOL_V5 \u00a73)",
+   "context": "HQQ with its defaults (about 4.5 bits per weight), ran in two models, so"
+  },
+  {
+   "file": "sections_v4\\08_limitations.tex",
+   "line": 28,
    "literal": "0.2",
    "class": "Step 0 verdict threshold (\u00a74, D9) / MDE wording (\u00a77.6: 0.206)",
    "context": "any data. Per-model effects below about 0.2 log units are not reliably detected, an"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
-   "line": 21,
+   "line": 28,
    "literal": "0",
    "class": "zero",
    "context": "t reliably detected, and equivalence to 0 is attainable only for"
   },
   {
    "file": "sections_v4\\08_limitations.tex",
-   "line": 22,
+   "line": 29,
    "literal": "0.1",
    "class": "equivalence attainability (\u00a77.6: 0.115)",
    "context": "estimates within about 0.1 of 0."
   },
   {
    "file": "sections_v4\\08_limitations.tex",
-   "line": 22,
+   "line": 29,
    "literal": "0",
    "class": "zero",
    "context": "estimates within about 0.1 of 0."
+  },
+  {
+   "file": "sections_v4\\09_conclusion.tex",
+   "line": 10,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "(WikiText-2, where the task and the history source"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
@@ -1271,35 +1537,91 @@
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 33,
-   "literal": "4.0",
-   "class": "CC BY 4.0",
-   "context": "records under CC BY 4.0."
+   "line": 25,
+   "literal": "0",
+   "class": "zero",
+   "context": "Reserved.  -0. -Base and SmolLM2-1.  are distributed"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 37,
+   "line": 25,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "Reserved.  -0. -Base and SmolLM2-1.  are distributed under the Apache Lice"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 25,
+   "literal": "2.0",
+   "class": "Apache License 2.0",
+   "context": "re distributed under the Apache License 2.0. GSM8K is distributed under the MIT"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 26,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "License, and WikiText-2 under CC BY-SA 3.0 and the GFDL; no Wik"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 26,
+   "literal": "3.0",
+   "class": "licence name CC BY-SA 3.0 (WikiText-2 card)",
+   "context": "License, and WikiText-2 under CC BY-SA 3.0 and the GFDL; no WikiText-2 text or tok"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 26,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "CC BY-SA 3.0 and the GFDL; no WikiText-2 text or token ids are redistributed, on"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 27,
+   "literal": "256",
+   "class": "SHA-256 (hash name)",
+   "context": "indices, SHA-256 hashes and the numbers derived from the"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 30,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "ments use the public GSM8K and WikiText-2 benchmarks and public model"
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 35,
+   "literal": "4.0",
+   "class": "CC BY 4.0",
+   "context": "License and the records under CC BY 4.0."
+  },
+  {
+   "file": "sections_v4\\10_declarations.tex",
+   "line": 39,
    "literal": "13386",
    "class": "TMLR submission number",
    "context": "question, TMLR submission 13386 (rejected) and ACL Rolling Review submi"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 37,
+   "line": 39,
    "literal": "283",
    "class": "ARR submission number",
    "context": "cted) and ACL Rolling Review submission 283 (not committed to any venue), were not"
   },
   {
    "file": "sections_v4\\11_acks.tex",
-   "line": 3,
+   "line": 4,
    "literal": "4060",
    "class": "GPU model RTX 4060",
-   "context": "author's personal laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
+   "context": "personal laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
   },
   {
    "file": "sections_v4\\11_acks.tex",
-   "line": 3,
+   "line": 4,
    "literal": "8\\,GB",
    "class": "laptop GPU memory",
    "context": "l laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
@@ -1308,7 +1630,7 @@
    "file": "sections_v4\\B_protocol.tex",
    "line": 12,
    "literal": "16",
-   "class": "H5 family size (16 tests)",
+   "class": "H5 family size (16 tests) / V5-D1 $16 stop",
    "context": "identifiers are the first 16 hexadecimal digits of the lock hash. ``"
   },
   {
@@ -1336,7 +1658,7 @@
    "file": "sections_v4\\B_protocol.tex",
    "line": 37,
    "literal": "25\\%",
-   "class": "drift tolerance (\u00a710; D1)",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
    "context": "me exceeded the projection by more than 25\\%; the projection"
   },
   {
@@ -1350,7 +1672,7 @@
    "file": "sections_v4\\B_protocol.tex",
    "line": 39,
    "literal": "25\\%",
-   "class": "drift tolerance (\u00a710; D1)",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
    "context": "ence $=$ projection $ $ 1.48, tolerance 25\\%,"
   },
   {
@@ -1406,7 +1728,7 @@
    "file": "sections_v4\\B_protocol.tex",
    "line": 66,
    "literal": "25\\%",
-   "class": "drift tolerance (\u00a710; D1)",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
    "context": "than 25\\%. The projection, fitted on timing probe"
   },
   {
@@ -1420,7 +1742,7 @@
    "file": "sections_v4\\B_protocol.tex",
    "line": 69,
    "literal": "25\\%",
-   "class": "drift tolerance (\u00a710; D1)",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
    "context": "kept the 25\\% tolerance, and required every resumed t"
   },
   {
@@ -1460,77 +1782,77 @@
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 6,
+   "line": 7,
    "literal": "2026",
    "class": "year",
    "context": "only for the earlier studies, from July 2026 up to and including the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 10,
+   "line": 11,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "s not used for the present scale study (2 to 9 November 2026) or for this manuscr"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 10,
+   "line": 11,
    "literal": "9",
    "class": "steps 9-64",
    "context": "used for the present scale study (2 to 9 November 2026) or for this manuscript."
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 10,
+   "line": 11,
    "literal": "2026",
    "class": "year",
    "context": "he present scale study (2 to 9 November 2026) or for this manuscript."
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 13,
+   "line": 14,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 13,
+   "line": 14,
    "literal": "2026-10-29",
    "class": "date",
    "context": "the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 13,
+   "line": 14,
    "literal": "2026-11-01",
    "class": "date",
    "context": "e VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 17,
+   "line": 18,
    "literal": "2026-11-02",
    "class": "date",
    "context": "sent study} For the present study, from 2026-11-02 to 2026-11-09, the AI-use log records C"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 17,
+   "line": 18,
    "literal": "2026-11-09",
    "class": "date",
    "context": "r the present study, from 2026-11-02 to 2026-11-09, the AI-use log records Claude"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 18,
+   "line": 19,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 24,
+   "line": 25,
    "literal": "1.4.0",
    "class": "RunPod plugin version (AI_USE_LOG_V4)",
    "context": "(plugin   1.4.0). Each such action was approved by the"
@@ -1538,51 +1860,156 @@
   {
    "file": "sections_v4\\D_aiuse.tex",
    "line": 38,
+   "literal": "2026-11-11",
+   "class": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
+   "context": "e second locked study (Section~ ), from 2026-11-11 to"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 39,
+   "literal": "2026-11-13",
+   "class": "date (AI_USE_LOG_V5)",
+   "context": "2026-11-13, the AI-use log ( ) records Claude Opus"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 39,
+   "literal": "5.5",
+   "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
+   "context": "the AI-use log ( ) records Claude Opus 5.5 ( ) in the Claude"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 49,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 38,
+   "line": 49,
    "literal": "2026-10-28",
    "class": "date (AI-use log)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 38,
+   "line": 49,
    "literal": "2026-11-01",
    "class": "date",
    "context": "del Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as a source of d"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 40,
+   "line": 51,
    "literal": "2026-11-01",
    "class": "date",
    "context": "interface, with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 40,
+   "line": 51,
    "literal": "2026-11-09",
    "class": "date",
    "context": "with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the choice of GPU"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 45,
+   "line": 56,
    "literal": "2026-11-11",
-   "class": "date (Gemini proofreading, AI-use appendix)",
+   "class": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
    "context": "{Gemini in Google AI Studio} On 2026-11-11 the authors used Gemini (Google) in Goo"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 45,
+   "line": 56,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "ogle) in Google AI Studio, model Gemini 4"
+  },
+  {
+   "file": "sections_v4\\E_checklist.tex",
+   "line": 77,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "GSM8K and WikiText-2 are used unchanged, and the released Wi"
+  },
+  {
+   "file": "sections_v4\\E_checklist.tex",
+   "line": 77,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "ed unchanged, and the released WikiText-2 records hold hashes instead of text."
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 17,
+   "literal": "14",
+   "class": "earlier study arms (\u00a76) / v5 $14 ledger stop (PROTOCOL_V5 \u00a79)",
+   "context": "ent plus U6's projection exceeded the \\$14 ledger stop, the stop would be raised t"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 17,
+   "literal": "16",
+   "class": "H5 family size (16 tests) / V5-D1 $16 stop",
+   "context": "ger stop, the stop would be raised to \\$16 for U6 alone. The condition"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 18,
+   "literal": "14",
+   "class": "earlier study arms (\u00a76) / v5 $14 ledger stop (PROTOCOL_V5 \u00a79)",
+   "context": "was not met and U6 ran under the \\$14 stop."
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 20,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
+   "context": "design projection by more than 25\\%; the measured slowdown was   times the"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 22,
+   "literal": "25\\%",
+   "class": "drift tolerance (\u00a710; D1; PROTOCOL_V5 \u00a79)",
+   "context": "with the 25\\% tolerance kept. U1 resumed under the ex"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 34,
+   "literal": "15",
+   "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
+   "context": "ledger stop was \\$15, the declared ceiling, instead of \\$14."
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 34,
+   "literal": "14",
+   "class": "earlier study arms (\u00a76) / v5 $14 ledger stop (PROTOCOL_V5 \u00a79)",
+   "context": "$15, the declared ceiling, instead of \\$14. The locked analysis was then rerun wit"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 41,
+   "literal": "3.7",
+   "class": "first v5 idle period, hours (V5-A8)",
+   "context": "s are recorded: the pod stayed up about 3.7 hours after the main run finished, beca"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 42,
+   "literal": "26",
+   "class": "second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z)",
+   "context": "reached the operator late, and about 26 minutes after the U1 re-execution's clo"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 46,
+   "literal": "15",
+   "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
+   "context": "\\$15 ceiling. Together with v4, the cloud ru"
   },
   {
    "file": "tables_v4\\h5h4.tex",
@@ -1609,7 +2036,7 @@
    "file": "tables_v4\\h5h4.tex",
    "line": 3,
    "literal": "16",
-   "class": "H5 family size (16 tests)",
+   "class": "H5 family size (16 tests) / V5-D1 $16 stop",
    "context": "$  4$ and Holm $p<0.05$ (Holm over the 16 tests). NAT$-$C1 is shown with its 95\\%"
   },
   {
@@ -1679,7 +2106,7 @@
    "file": "tables_v4\\sens.tex",
    "line": 3,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "he exposed test problems, scoring steps 2--8 or 9--64 only, per-problem medians i"
   },
   {
@@ -1700,7 +2127,7 @@
    "file": "tables_v4\\sens.tex",
    "line": 3,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "test problems, scoring steps 2--8 or 9--64 only, per-problem medians instead of me"
   },
   {
@@ -1714,7 +2141,7 @@
    "file": "tables_v4\\sens.tex",
    "line": 8,
    "literal": "2",
-   "class": "dose / steps 2-8 / ln 2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "rast & Primary & Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\"
   },
   {
@@ -1735,7 +2162,7 @@
    "file": "tables_v4\\sens.tex",
    "line": 8,
    "literal": "64",
-   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73)",
+   "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "Excl.\\ exposed & Steps 2--8 & Steps 9--64 & Median & Truncated \\\\"
   },
   {

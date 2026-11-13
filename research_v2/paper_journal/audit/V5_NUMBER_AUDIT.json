@@ -1,0 +1,170 @@
+{
+ "vsv_defined": 338,
+ "vsv_used": 206,
+ "vsv_undefined": [],
+ "rederived_n": 338,
+ "rederived_fail": [],
+ "recomp_n": 196,
+ "recomp_fail": [],
+ "claims": [
+  {
+   "claim": "All seven units complete, n = 100, no BF16 flag, design reduction 'none', no abstract-level disagreement",
+   "ok": true
+  },
+  {
+   "claim": "Without-flagged families identical to all-units",
+   "ok": true
+  },
+  {
+   "claim": "Anchor passed; every record, NAT slot set and history bitwise equal; every anchor delta exactly 0",
+   "ok": true
+  },
+  {
+   "claim": "U0 reproduces the v4 Qwen2.5-0.5B estimates exactly (H1, H2, H3, NAT-C1)",
+   "ok": true
+  },
+  {
+   "claim": "U3 and U4 share U0's model; U3 differs only in task, U4 only in quantizer",
+   "ok": true
+  },
+  {
+   "claim": "B and D run in Qwen2.5-0.5B and Mistral-7B-v0.3 (0.5B and 7B)",
+   "ok": true
+  },
+  {
+   "claim": "Recomputation: 230 quantities, none outside tolerance, no unresolved verdict",
+   "ok": true
+  },
+  {
+   "claim": "A-H1, A-H2, A-H3, A-H5 each supported in every model, every Holm p < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "A: H1 < 0 and H2 > 0 and H3 < 0 with CIs excluding 0 in U1 and U2",
+   "ok": true
+  },
+  {
+   "claim": "A: every H5 lower bound at or above the printed rng.ahfivelo.min and above ln 4",
+   "ok": true
+  },
+  {
+   "claim": "A-X: H1 size pattern in both models; NAT-C1 size pattern in U1, unresolved in U2",
+   "ok": true
+  },
+  {
+   "claim": "A-X: SmolLM2's NAT-C1 interval contains its boundary b",
+   "ok": true
+  },
+  {
+   "claim": "A-X: every size-pattern classification has its CI entirely on the size side and Holm p < 0.05",
+   "ok": true
+  },
+  {
+   "claim": "A-X joint reading is exactly 'neither factor alone accounts for it in these checkpoints'",
+   "ok": true
+  },
+  {
+   "claim": "[exploratory] Qwen3 NAT-C1: whole interval below the size prediction, which is below the head-dimension prediction",
+   "ok": true
+  },
+  {
+   "claim": "SmolLM2's references are all from Qwen2.5 / Llama-3.2 models (no SmolLM2 in v4)",
+   "ok": true
+  },
+  {
+   "claim": "Qwen3: one key-norm tensor per layer (QK-norm); head dim 128; under 1B params",
+   "ok": true
+  },
+  {
+   "claim": "SmolLM2: KV heads = query heads (no GQA); head dim 64; 49,152-token vocabulary; no QK-norm",
+   "ok": true
+  },
+  {
+   "claim": "v4 small models had head dim 64 and the larger ones 128 (the confound A addresses)",
+   "ok": true
+  },
+  {
+   "claim": "B-H2, B-H3, B-H5 and D-H2, D-H5 each supported in every model",
+   "ok": true
+  },
+  {
+   "claim": "B and D: every H5 lower bound at or above the printed rng.bdhfivelo.min and above ln 4",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] Mistral H1 under HQQ: CI below 0; v4 NF4 Mistral H1 inconclusive",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] H3 negative (CI < 0) in both WikiText-2 units",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] Mistral H1 small on WikiText-2 and in v4 (|estimate| < 0.15)",
+   "ok": true
+  },
+  {
+   "claim": "H1 and NAT-C1 under HQQ, and H1, H3, NAT-C1 on WikiText-2, carry no locked family",
+   "ok": true
+  },
+  {
+   "claim": "D1 not triggered: U6 ran under the $14 stop",
+   "ok": true
+  },
+  {
+   "claim": "D2 factor printed (1.38) equals the deviation record's factor",
+   "ok": true
+  },
+  {
+   "claim": "D3: calibration recomputed equal to the locked hash; 13 of 13 surviving problems bitwise equal",
+   "ok": true
+  },
+  {
+   "claim": "D3 declares gm_D2.json lost",
+   "ok": true
+  },
+  {
+   "claim": "v5 billed cost under the $15 ceiling",
+   "ok": true
+  },
+  {
+   "claim": "Abstract has at most 300 words (counted: 300)",
+   "ok": true
+  },
+  {
+   "claim": "Every highlight has at most 85 characters (80, 79, 79, 85, 81, 83, 80)",
+   "ok": true
+  }
+ ],
+ "abstract_words": 300,
+ "highlights": [
+  {
+   "text": "NF4 value-cache error is harsher than equal-norm noise in all eight checkpoints.",
+   "chars": 80
+  },
+  {
+   "text": "Values-only cache error exceeds keys-only error at natural size in every model.",
+   "chars": 79
+  },
+  {
+   "text": "The error shares a cross-position component far above isotropic in every model.",
+   "chars": 79
+  },
+  {
+   "text": "Key-path mildness held in 7 of 8; in two crossed models it followed the size pattern.",
+   "chars": 85
+  },
+  {
+   "text": "The predicted family-dependent sign was falsified; a family offset is unresolved.",
+   "chars": 81
+  },
+  {
+   "text": "Value harshness and the common mode held under HQQ and on WikiText-2 in two models.",
+   "chars": 83
+  },
+  {
+   "text": "Combined contrast: neither size nor head_dim alone accounts for it (confounded).",
+   "chars": 80
+  }
+ ]
+}

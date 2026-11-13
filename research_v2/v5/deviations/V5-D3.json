@@ -1,0 +1,25 @@
+{
+ "id": "D3",
+ "lock_id": "14d2e1bf669417b8",
+ "commit": "2ccc2ae3f929c98086d0f00b7c8887d07161e4da",
+ "reason": "REVISED before any cloud action (supersedes the first V5-D3 row; that record was never appended). Corresponding author's decision after V5-A10, decided before any further U1 data (U1's 13 surviving test problems not analysed): (1) cause fixed: the watcher (tools/v5_remote.py sync) and close-out compare the pod's checkpoint list and SHA-256s with the laptop's and fetch again every tag whose newest pod checkpoint differs, whatever the 'checkpointed' flag says; close-out takes a fresh pod manifest and runs with the pod up; checkpoints now also carry gm_<ID>*.json and the driver logs. (2) gm_D2.json (GM D2 line 9b742d31...) was never checkpointed and is lost with the first volume; it is declared lost here, and lock verify reports it as recorded lost once D3 is appended. (3) U1 is re-executed in full under lock 14d2e1bf669417b8 on a new Standard volume, same image (runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404), A40, EU-SE-1: driver phase u1d3 runs GM for D3 (gm_D3.json, GM D3 line), U1 download, gates, calibration and the full 100-problem test. Stops: the U1 calibration recomputed by the locked analyze_v5.calibrate from the re-executed records must equal the locked CALIBRATION U1 hash ad6dfa7a...; each of the 13 problems surviving in U1_20261112T065200Z.tar (sha256 db2c16eb...) must be re-executed bitwise equal (resume-check sense: every arm's record without wall_seconds, the NAT slots, the history); a BF16 flag at the U1 gates stops (the first run had none); otherwise stop and report. (4) Resource-only addition: in phase u1d3 only (GM D3 and U1 with D3 appended) the ledger stop is $15, the declared v5 ceiling, instead of $14; every other tag keeps $14. Billing facts: authoritative RunPod spend to date $11.692 (billing line 2026-11-13T01:13:24Z); volume uhg5o7jcnw deleted 2026-11-13T01:11:16Z accrues no storage after it; storage for the new volume starts at its creation time (read via MCP into cost_config.json), and the ledger adds storage only from the configured volume's creation. Tests o25-o28 (ops 28/28), mutants incl. m_stale_fetched_flag and the three D3-stop/storage mutants (83/83 on CPU). The restore set (tools/v5_d3_prepare.py) copies the verified laptop records the lock and the order rules need. Measurement code (rv5.py, rv5_hqq.py, analyze_v5.py, recompute_v5_independent.py, v4 and earlier modules) is byte-identical to 27e32b7; arms, n, gates, checks, the D2 drift reference, the analysis and every decision rule are unchanged.",
+ "utc": "2026-11-13T05:57:04.023490+00:00",
+ "earlier_deviations": [
+  "D1",
+  "D2"
+ ],
+ "files": {
+  "research_v2/v5/v5_ops.py": "56f03a7800e14b01c6f70048cd79c9f72981994f9b86370abc8c2e045fd71f51",
+  "research_v2/v5/run_v5.py": "21615705ead971bbc8603063654044e38616e4c0ad9221b4e0ee52aa34292992",
+  "research_v2/v5/run_v5_pod.sh": "2cb5b30dc5bf78cc68e5b75245c1a714a337d7848e54268c6c2d5cb2d2231298",
+  "research_v2/v5/watch_v5.sh": "a6b9c3da61c838e7b7782af0ec1895d27fdda3fc8fa4ff6605e62c414e7e5029",
+  "research_v2/v5/cloud/RUNBOOK_V5.md": "fee11c715af64944f809eac1f762c0574bea072baa3e256c2425a5f761d2dd3f",
+  "research_v2/v5/tests/mutation_check_v5.py": "924dfe9df8e078833a770aefc5ff633264b71910e11aa2d3257cf9d40648a850",
+  "research_v2/v5/tests/test_ops_v5.py": "ed63fa0d2e6d3481b072780e23b92ae8c746b93aac077f5cdd78e9b821d20ea9",
+  "research_v2/tools/lock_v5.py": "1534c91023033c625786ffc99052acfcc054528bff6583b74cae13feefc18a7d",
+  "research_v2/tools/v5_remote.py": "fe65560208a2fafa6df8f3908122fa99e34fbae6d222b2a9414f3d94a5145990"
+ },
+ "lost_appendix_files": {
+  "gm_D2.json": "9b742d31dae14e26d97cdfebe05ea2c4d3795602e513f73d30d2de76e91fd222"
+ }
+}

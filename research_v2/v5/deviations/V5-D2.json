@@ -1,0 +1,15 @@
+{
+ "id": "D2",
+ "lock_id": "14d2e1bf669417b8",
+ "commit": "852e81a87f24e9c22c3270a1c3d03b5c99fac0f5",
+ "reason": "Corresponding author's decision after the U1 drift stop (V5-A5), from timing data only and before any further test data: the drift reference for U1's remaining problems and for every later unit (U2-U6) is the design projection x 1.38 (the U1 slowdown factor, 49.95 s measured vs 36.16 s projected); tolerance stays 25 %. U1 resumes under the exactly-once rules with the bitwise rerun check of its last completed problem. Run order unchanged (U1 -> U6); the $14 stop applies to U1-U5; U6 runs only if V5-D1's check at U6's start fits under $16, else U6 is recorded as not run (locked reduction order). A later drift stop on U1 is written to drift_stop_D2.json so the first record is never overwritten. GM runs again on the pod under D2 (gm_D2.json, GM D2 line). No change to arms, n, gates, analysis or any decision rule. Test o10 updated, test o24 and two mutants added (ops 24/24, mutants 73/73 on CPU).",
+ "utc": "2026-11-12T07:26:14.004885+00:00",
+ "earlier_deviations": [
+  "D1"
+ ],
+ "files": {
+  "research_v2/v5/run_v5.py": "648780990fe3ca46de58839354f953feedcf02eef9b71a8432b1df1a519c6ea7",
+  "research_v2/v5/tests/mutation_check_v5.py": "bded1d8ffcbae84dc2a478cdc44344372e9f903e7ed9987479c85b4a1d01a522",
+  "research_v2/v5/tests/test_ops_v5.py": "5c50d78a570109e751530bcb3a81ed7bd6b52eb353cf20062e7b12da175d89fc"
+ }
+}

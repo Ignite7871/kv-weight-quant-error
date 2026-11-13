@@ -1,0 +1,24 @@
+\begin{table}[tbp]
+\centering\scriptsize
+\caption{Second locked study (v5): the four contrasts per unit, estimate and 95\% problem-clustered bootstrap interval ($n=$\,\vsv{n.u1} problems per unit). Locked tests: A, H1--H3 in U1 and U2; B, H2 and H3 under HQQ; D, H2 on WikiText-2. Every other cell is descriptive (no prediction). U0 is the anchor, a rerun of the v4 Qwen2.5-0.5B unit. WT-2: WikiText-2; Qwen3-0.6B: Qwen3-0.6B-Base; Mistral-7B: Mistral-7B-v0.3. hd: head dimension. Holm-adjusted $p$ of every locked test: Table~\ref{tab:v5h5}.}
+\label{tab:v5main}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llllr ll ll ll ll@{}}
+\toprule
+ & & & & & \multicolumn{2}{c}{H1: NAT-K$-$C1-K} & \multicolumn{2}{c}{H2: NAT-V$-$C1-V} & \multicolumn{2}{c}{H3: NAT-K$-$NAT-V} & \multicolumn{2}{c}{NAT$-$C1} \\
+\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}
+Unit & Model & Quant. & Task & hd & Est. & 95\% CI & Est. & 95\% CI & Est. & 95\% CI & Est. & 95\% CI \\
+\midrule
+U0 & Qwen2.5-0.5B & NF4 & GSM8K & \vsv{hd.u0} & \vsv{hone.u0.est} & \vsv{hone.u0.ci} & \vsv{htwo.u0.est} & \vsv{htwo.u0.ci} & \vsv{hthree.u0.est} & \vsv{hthree.u0.ci} & \vsv{natc.u0.est} & \vsv{natc.u0.ci} \\
+\midrule
+U1 & Qwen3-0.6B & NF4 & GSM8K & \vsv{hd.u1} & \vsv{hone.u1.est} & \vsv{hone.u1.ci} & \vsv{htwo.u1.est} & \vsv{htwo.u1.ci} & \vsv{hthree.u1.est} & \vsv{hthree.u1.ci} & \vsv{natc.u1.est} & \vsv{natc.u1.ci} \\
+U2 & SmolLM2-1.7B & NF4 & GSM8K & \vsv{hd.u2} & \vsv{hone.u2.est} & \vsv{hone.u2.ci} & \vsv{htwo.u2.est} & \vsv{htwo.u2.ci} & \vsv{hthree.u2.est} & \vsv{hthree.u2.ci} & \vsv{natc.u2.est} & \vsv{natc.u2.ci} \\
+\midrule
+U4 & Qwen2.5-0.5B & HQQ & GSM8K & \vsv{hd.u4} & \vsv{hone.u4.est} & \vsv{hone.u4.ci} & \vsv{htwo.u4.est} & \vsv{htwo.u4.ci} & \vsv{hthree.u4.est} & \vsv{hthree.u4.ci} & \vsv{natc.u4.est} & \vsv{natc.u4.ci} \\
+U6 & Mistral-7B & HQQ & GSM8K & \vsv{hd.u6} & \vsv{hone.u6.est} & \vsv{hone.u6.ci} & \vsv{htwo.u6.est} & \vsv{htwo.u6.ci} & \vsv{hthree.u6.est} & \vsv{hthree.u6.ci} & \vsv{natc.u6.est} & \vsv{natc.u6.ci} \\
+\midrule
+U3 & Qwen2.5-0.5B & NF4 & WT-2 & \vsv{hd.u3} & \vsv{hone.u3.est} & \vsv{hone.u3.ci} & \vsv{htwo.u3.est} & \vsv{htwo.u3.ci} & \vsv{hthree.u3.est} & \vsv{hthree.u3.ci} & \vsv{natc.u3.est} & \vsv{natc.u3.ci} \\
+U5 & Mistral-7B & NF4 & WT-2 & \vsv{hd.u5} & \vsv{hone.u5.est} & \vsv{hone.u5.ci} & \vsv{htwo.u5.est} & \vsv{htwo.u5.ci} & \vsv{hthree.u5.est} & \vsv{hthree.u5.ci} & \vsv{natc.u5.est} & \vsv{natc.u5.ci} \\
+\bottomrule
+\end{tabular}
+\end{table}

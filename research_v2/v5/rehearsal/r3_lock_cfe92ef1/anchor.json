@@ -1,0 +1,129 @@
+{
+ "n_paired": 3,
+ "v4_margin": 0.25083735708479526,
+ "contrasts": {
+  "H1": {
+   "delta": {
+    "n": 3,
+    "estimate": -0.02168349938675777,
+    "ci95": [
+     -0.04834006197027829,
+     -0.006848275629151246
+    ],
+    "ci90": [
+     -0.035514094833800115,
+     -0.00785290393971542
+    ],
+    "p": 0.25377462253774624,
+    "verdict": "difference"
+   },
+   "criterion_1": true,
+   "theta_v4": -1.2900964196353388,
+   "v4_category": "difference -",
+   "v5_category": "difference -",
+   "criterion_2": true
+  },
+  "H2": {
+   "delta": {
+    "n": 3,
+    "estimate": 0.00828198746637998,
+    "ci95": [
+     -0.02856084676293502,
+     0.03677733994027221
+    ],
+    "ci90": [
+     -0.013497408101355765,
+     0.030061383034115725
+    ],
+    "p": 0.7499250074992501,
+    "verdict": "inconclusive"
+   },
+   "criterion_1": true,
+   "theta_v4": 0.8761955395746728,
+   "v4_category": "difference +",
+   "v5_category": "inconclusive",
+   "criterion_2": false
+  },
+  "H3": {
+   "delta": {
+    "n": 3,
+    "estimate": -0.01951381247047686,
+    "ci95": [
+     -0.04150950586966129,
+     0.006509741881472131
+    ],
+    "ci90": [
+     -0.035520228387521335,
+     -0.0035073965534323883
+    ],
+    "p": 0.5006499350064993,
+    "verdict": "inconclusive"
+   },
+   "criterion_1": true,
+   "theta_v4": -0.953236647982314,
+   "v4_category": "difference -",
+   "v5_category": "difference -",
+   "criterion_2": true
+  },
+  "NAT-C1": {
+   "delta": {
+    "n": 3,
+    "estimate": 0.016329025091308107,
+    "ci95": [
+     -0.01696455222339921,
+     0.04354579291344507
+    ],
+    "ci90": [
+     -0.0038410899543066535,
+     0.03649914013692287
+    ],
+    "p": 0.49845015498450157,
+    "verdict": "inconclusive"
+   },
+   "criterion_1": true,
+   "theta_v4": -0.22328787905893413,
+   "v4_category": "difference -",
+   "v5_category": "inconclusive",
+   "criterion_2": false
+  }
+ },
+ "criterion_3": {
+  "rho_K": true,
+  "rho_V": true,
+  "b_hat": true,
+  "v5": {
+   "rho_K": 0.07339070232113101,
+   "rho_V": 0.21165040450512013,
+   "dose_slope_b_hat": 2.4320637122609043
+  },
+  "v4": {
+   "rho_K": 0.07242644086890376,
+   "rho_V": 0.20947358509647274,
+   "dose_slope_b_hat": 2.631800271490128
+  }
+ },
+ "reported_H5": {
+  "K": {
+   "v5": 2.305497593432908,
+   "v4": 2.5735735645384694,
+   "within_0.10": false
+  },
+  "V": {
+   "v5": 2.119567285171654,
+   "v4": 2.419716717736436,
+   "within_0.10": false
+  }
+ },
+ "pass": false,
+ "reported_bitwise": {
+  "records_equal": 0,
+  "records_total": 18,
+  "share": 0.0,
+  "nat_slots_equal": 0,
+  "histories_equal": 3,
+  "n_problems": 3
+ },
+ "decision": "author: proceed",
+ "author_decision_file_sha256": "891250a8c8b07a61ca8d4267d3c1f845ad1ea4c40c61ba9778ea3b2b86c9c9bc",
+ "label_for_all_v4_comparisons": "not agreed"
+}
