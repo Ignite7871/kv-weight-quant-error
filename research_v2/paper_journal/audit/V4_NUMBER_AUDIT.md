@@ -4,7 +4,7 @@
 - v3 macros used: 175; undefined: 0; not in numbers_v3_sources.json: 0
 - v4 macros re-derived from their sources by this script: 980; mismatches: 0
 - v4 result macros checked against the independent recomputation: 195; failures: 0
-- literal numbers in the v4 text and tables: 301; unclassified: 0
+- literal numbers in the v4 text and tables: 306; unclassified: 0
 - prose claims checked against the locked report: 32/32 hold
 
 ## Claims
@@ -86,6 +86,7 @@ none
 - TMLR submission number: 1 (13386)
 - Ubuntu version (image tag): 1 (24.04)
 - WikiText-2 prompt length in characters (PROTOCOL_V5 §3): 1 (600)
+- X1--X13 label: 1 (13)
 - b-hat threshold (§3): 3 (0.25)
 - bitsandbytes version (V4_PACKAGES): 1 (0.49.2)
 - bootstrap and permutation count (§7): 2 (10{,}000)
@@ -95,8 +96,9 @@ none
 - count: 2 (12)
 - date: 7 (2026-10-29, 2026-11-01, 2026-11-02, 2026-11-09)
 - date (AI-use log): 1 (2026-10-28)
-- date (AI_USE_LOG_V5): 1 (2026-11-13)
-- date (Gemini proofreading; v5 start, AI_USE_LOG_V5): 2 (2026-11-11)
+- date (AI_USE_LOG_V5): 2 (2026-11-13)
+- date (Gemini proofreading; v5 start, AI_USE_LOG_V5): 3 (2026-11-11)
+- date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5): 1 (11)
 - dose / steps 2-8 / ln 2 / WikiText-2 name: 34 (2)
 - drift tolerance (§10; D1; PROTOCOL_V5 §9): 6 (25\%)
 - earlier study arms (§6) / v5 $14 ledger stop (PROTOCOL_V5 §9): 4 (14)
@@ -128,5 +130,5 @@ none
 - transformers version (V4_PACKAGES): 1 (5.13.0)
 - truncation sensitivity / Step 0 rho tolerance (§4, §8): 3 (5\%)
 - v5 ceiling in USD (PROTOCOL_V5 §0, §9; V5-D3): 3 (15)
-- year: 3 (2026)
+- year: 4 (2026)
 - zero: 40 (0)

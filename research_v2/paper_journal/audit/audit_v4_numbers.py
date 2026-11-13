@@ -137,7 +137,7 @@ CONST.update({
     "2026-11-13": "date (AI_USE_LOG_V5)", "2026-11-11": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
     "3.7": "first v5 idle period, hours (V5-A8)", "26": "second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z)",
     "25\\%": "drift tolerance (§10; D1; PROTOCOL_V5 §9)", "64": "head dimension / step cap T_i (PROTOCOL_V4 §2, §3) / HQQ group size",
-    "2": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+    "2": "dose / steps 2-8 / ln 2 / WikiText-2 name", "11": "date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5)",
 })
 MODEL_RE = re.compile(r"(Qwen2\.5|Qwen3|Llama-3(\.\d)?|Llama-3\.\d-\d+B|Mistral-7B(-v0\.3)?|v0\.3|0\.5B|1\.5B|\d+B|NF4|FP16|BF16|A40|RTX|"
                       r"float64|GPT-6|H[1-5]|F[1-5]|X[1-9]\d*|r[4-8]b?|V4-A\d+|A\d+|D1|L\d|Step~0|3-shot|top-8|4-bit|16-bit|"

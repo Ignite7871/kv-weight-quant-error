@@ -9,7 +9,7 @@
  "rederived_fail": [],
  "recomp_n": 195,
  "recomp_fail": [],
- "literals_n": 301,
+ "literals_n": 306,
  "literals_unclassified": [],
  "claims": [
   {
@@ -1502,112 +1502,112 @@
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 21,
+   "line": 22,
    "literal": "2.0",
    "class": "Apache License 2.0",
    "context": "the Apache License 2.0.  -  is distributed under the Qwen Rese"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 22,
+   "line": 23,
    "literal": "3.2",
    "class": "model / licence name Llama 3.2",
    "context": "and  -  are distributed under the Llama 3.2 Community License"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 23,
+   "line": 24,
    "literal": "3.1",
    "class": "model / licence name Llama 3.1",
    "context": "Agreement, and  -  under the Llama 3.1 Community License Agreement (Meta), wit"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 24,
+   "line": 25,
    "literal": "3.1",
    "class": "model / licence name Llama 3.1",
    "context": "3.1 and Llama 3.2 are licensed under their"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 24,
+   "line": 25,
    "literal": "3.2",
    "class": "model / licence name Llama 3.2",
    "context": "3.1 and Llama 3.2 are licensed under their community lice"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 25,
+   "line": 26,
    "literal": "0",
    "class": "zero",
    "context": "Reserved.  -0. -Base and SmolLM2-1.  are distributed"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 25,
+   "line": 26,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "Reserved.  -0. -Base and SmolLM2-1.  are distributed under the Apache Lice"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 25,
+   "line": 26,
    "literal": "2.0",
    "class": "Apache License 2.0",
    "context": "re distributed under the Apache License 2.0. GSM8K is distributed under the MIT"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 26,
+   "line": 27,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "License, and WikiText-2 under CC BY-SA 3.0 and the GFDL; no Wik"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 26,
+   "line": 27,
    "literal": "3.0",
    "class": "licence name CC BY-SA 3.0 (WikiText-2 card)",
    "context": "License, and WikiText-2 under CC BY-SA 3.0 and the GFDL; no WikiText-2 text or tok"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 26,
+   "line": 27,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "CC BY-SA 3.0 and the GFDL; no WikiText-2 text or token ids are redistributed, on"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 27,
+   "line": 28,
    "literal": "256",
    "class": "SHA-256 (hash name)",
    "context": "indices, SHA-256 hashes and the numbers derived from the"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 30,
+   "line": 31,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "ments use the public GSM8K and WikiText-2 benchmarks and public model"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 35,
+   "line": 36,
    "literal": "4.0",
    "class": "CC BY 4.0",
    "context": "License and the records under CC BY 4.0."
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 39,
+   "line": 40,
    "literal": "13386",
    "class": "TMLR submission number",
    "context": "question, TMLR submission 13386 (rejected) and ACL Rolling Review submi"
   },
   {
    "file": "sections_v4\\10_declarations.tex",
-   "line": 39,
+   "line": 40,
    "literal": "283",
    "class": "ARR submission number",
    "context": "cted) and ACL Rolling Review submission 283 (not committed to any venue), were not"
@@ -1792,137 +1792,172 @@
    "line": 11,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
-   "context": "s not used for the present scale study (2 to 9 November 2026) or for this manuscr"
+   "context": "s not used for the present scale study (2 to 9 November 2026), for the second loc"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
    "line": 11,
    "literal": "9",
    "class": "steps 9-64",
-   "context": "used for the present scale study (2 to 9 November 2026) or for this manuscript."
+   "context": "used for the present scale study (2 to 9 November 2026), for the second locked s"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
    "line": 11,
    "literal": "2026",
    "class": "year",
-   "context": "he present scale study (2 to 9 November 2026) or for this manuscript."
+   "context": "he present scale study (2 to 9 November 2026), for the second locked study (11 to 13"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 14,
+   "line": 11,
+   "literal": "11",
+   "class": "date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5)",
+   "context": "ber 2026), for the second locked study (11 to 13 November"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 11,
+   "literal": "13",
+   "class": "X1--X13 label",
+   "context": "26), for the second locked study (11 to 13 November"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 12,
+   "literal": "2026",
+   "class": "year",
+   "context": "2026) or for this manuscript."
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 15,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 14,
+   "line": 15,
    "literal": "2026-10-29",
    "class": "date",
    "context": "the Claude Code VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 14,
+   "line": 15,
    "literal": "2026-11-01",
    "class": "date",
    "context": "e VS Code extension, from 2026-10-29 to 2026-11-01, for the literature"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 18,
+   "line": 19,
    "literal": "2026-11-02",
    "class": "date",
    "context": "sent study} For the present study, from 2026-11-02 to 2026-11-09, the AI-use log records C"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 18,
+   "line": 19,
    "literal": "2026-11-09",
    "class": "date",
    "context": "r the present study, from 2026-11-02 to 2026-11-09, the AI-use log records Claude"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 19,
+   "line": 20,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "Opus 5.5 ( ) in the Claude Code VS Code extensio"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 25,
+   "line": 26,
    "literal": "1.4.0",
    "class": "RunPod plugin version (AI_USE_LOG_V4)",
    "context": "(plugin   1.4.0). Each such action was approved by the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 38,
+   "line": 39,
    "literal": "2026-11-11",
    "class": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
    "context": "e second locked study (Section~ ), from 2026-11-11 to"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 39,
+   "line": 40,
    "literal": "2026-11-13",
    "class": "date (AI_USE_LOG_V5)",
    "context": "2026-11-13, the AI-use log ( ) records Claude Opus"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 39,
+   "line": 40,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "the AI-use log ( ) records Claude Opus 5.5 ( ) in the Claude"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 49,
+   "line": 50,
    "literal": "5.5",
    "class": "model name Claude Opus 5.5 (AI_USE_LOG_V4)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 49,
+   "line": 50,
    "literal": "2026-10-28",
    "class": "date (AI-use log)",
    "context": "interface, model Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 49,
+   "line": 50,
    "literal": "2026-11-01",
    "class": "date",
    "context": "del Claude Opus 5.5, from 2026-10-28 to 2026-11-01 for the earlier study, as a source of d"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 51,
+   "line": 52,
    "literal": "2026-11-01",
    "class": "date",
    "context": "interface, with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 51,
+   "line": 52,
    "literal": "2026-11-09",
    "class": "date",
    "context": "with the same model, from 2026-11-01 to 2026-11-09 for design decisions: the choice of GPU"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 56,
+   "line": 54,
+   "literal": "2026-11-11",
+   "class": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
+   "context": "me interface, with the same model, from 2026-11-11 to 2026-11-13 for design decisions: the"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 54,
+   "literal": "2026-11-13",
+   "class": "date (AI_USE_LOG_V5)",
+   "context": "with the same model, from 2026-11-11 to 2026-11-13 for design decisions: the choice of mod"
+  },
+  {
+   "file": "sections_v4\\D_aiuse.tex",
+   "line": 59,
    "literal": "2026-11-11",
    "class": "date (Gemini proofreading; v5 start, AI_USE_LOG_V5)",
    "context": "{Gemini in Google AI Studio} On 2026-11-11 the authors used Gemini (Google) in Goo"
   },
   {
    "file": "sections_v4\\D_aiuse.tex",
-   "line": 56,
+   "line": 59,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "ogle) in Google AI Studio, model Gemini 4"
