@@ -74,9 +74,11 @@ python paper_journal/audit/audit_v5_numbers.py       # re-derives every v5 macro
 ```
 
 `v5_runs/v5_report.json` must hash to `2f00f5113aec05f67990fac55e9150340780f31273a18080d2e276db0f493706` (checked by
-`make_v5.py`). The two audits also read the manuscript sources, which are not included, so in this repository they stop
-after loading them; the re-derivation of every macro from its declared source is in `tables_v4/numbers_v4_sources.json` and
-`tables_v5/numbers_v5_sources.json`, and the audit outputs are included (`audit/V4_NUMBER_AUDIT.md`, `V5_NUMBER_AUDIT.md`).
+`make_v5.py`). The two audit scripts also read the manuscript sources, which are not included, so in this repository they
+exit at once with a missing-file error. Their outputs, run on the full sources, are included (`audit/V4_NUMBER_AUDIT.md`,
+`audit/V5_NUMBER_AUDIT.md`), and each macro's declared source is in `tables_v4/numbers_v4_sources.json` and
+`tables_v5/numbers_v5_sources.json`. Rerunning `make_v4.py` and `make_v5.py` on the unpacked records reproduces every table
+and macro file byte for byte, apart from line endings; the figure PDFs differ only in their embedded metadata.
 
 `tools/lock_v5.py --verify`, `tools/lock_v4.py --verify` and `tools/lock_v3.py --verify` need the original git history;
 `verify_release.py` checks the same hashes without it. `v4_runs/v4_report.json` must hash to `df57a31483160e62351378576d14123893081249e06525ed5be5f5099758dccb` (checked by
