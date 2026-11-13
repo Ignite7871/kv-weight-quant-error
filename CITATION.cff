@@ -19,7 +19,7 @@ authors:
     affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
 preferred-citation:
   type: article
-  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher across 0.5B-8B Language Models"
+  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher in Ten 0.5B-8B Base Language Models"
   authors:
     - family-names: Gunupati
       given-names: Srikar Reddy

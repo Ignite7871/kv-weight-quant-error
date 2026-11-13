@@ -9,7 +9,7 @@
  "rederived_fail": [],
  "recomp_n": 195,
  "recomp_fail": [],
- "literals_n": 306,
+ "literals_n": 318,
  "literals_unclassified": [],
  "claims": [
   {
@@ -70,6 +70,18 @@
   },
   {
    "claim": "NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05",
+   "ok": true
+  },
+  {
+   "claim": "Conclusion: Llama-3.2-1B NAT-C1 is equivalent to 0 (90% CI inside its margin), so on the combined contrast natural error is equivalent to isotropic noise there",
+   "ok": true
+  },
+  {
+   "claim": "NAT-C1 changes sign in Qwen only between 0.5B and 1.5B (the head-dimension step): CI < 0 at 0.5B, CI > 0 at 1.5B, 3B, 7B",
+   "ok": true
+  },
+  {
+   "claim": "Practical reading: values-only error 2.6-4.0 times as disruptive as keys-only error = exp(-H3) range over the eight models",
    "ok": true
   },
   {
@@ -158,17 +170,17 @@
   },
   {
    "file": "sections_v4\\00_abstract.tex",
-   "line": 14,
+   "line": 16,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
-   "context": "first and third on WikiText-2, where task and history source changed"
+   "context": "QQ, and the first and third on WikiText-2, where task and history source changed"
   },
   {
    "file": "sections_v4\\00_abstract.tex",
-   "line": 21,
+   "line": 22,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
-   "context": "models tested under HQQ and on WikiText-2. Key-path mildness varies with size and"
+   "context": "checkpoints and under HQQ and WikiText-2."
   },
   {
    "file": "sections_v4\\01_introduction.tex",
@@ -200,17 +212,45 @@
   },
   {
    "file": "sections_v4\\01_introduction.tex",
-   "line": 39,
+   "line": 32,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "nd study) and under HQQ and on WikiText-2 in the two models run there: natural va"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 35,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "checkpoints and under HQQ; on WikiText-2 it is descriptive.  {(ii)} The key-path"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 42,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "under HQQ, and   and   held on WikiText-2, in both models tested (  and  ); on Wi"
   },
   {
    "file": "sections_v4\\01_introduction.tex",
-   "line": 39,
+   "line": 42,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "th models tested (  and  ); on WikiText-2 the task and the"
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 45,
+   "literal": "0",
+   "class": "zero",
+   "context": "d its fallback label (`` ''), because  -0.  fell on the size side and SmolLM2-1."
+  },
+  {
+   "file": "sections_v4\\01_introduction.tex",
+   "line": 45,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "-0.  fell on the size side and SmolLM2-1.  was unresolved, so the data neither e"
   },
   {
    "file": "sections_v4\\02_related.tex",
@@ -1012,119 +1052,140 @@
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 26,
+   "line": 27,
    "literal": "95\\%",
    "class": "CI level",
    "context": "as following a pattern only if its 95\\% interval lies entirely on that side of"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 26,
+   "line": 27,
    "literal": "0.05",
    "class": "Holm level",
    "context": "hat side of $b$ and a one-sided Holm $p<0.05$"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 30,
+   "line": 31,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
    "context": "(U4, U6).} HQQ~    weights (group size 64, library defaults, not"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 31,
+   "line": 32,
    "literal": "4.5",
    "class": "section ref / HQQ bits per weight (PROTOCOL_V5 \u00a73)",
    "context": "tuned; about 4.5 bits per weight against  's 4.13) repla"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 31,
+   "line": 32,
    "literal": "4.13",
    "class": "NF4 bits per weight, approximate (PROTOCOL_V5 \u00a73)",
    "context": "; about 4.5 bits per weight against  's 4.13) replace   in  -  and  . The isotropic"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 34,
+   "line": 35,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "{D, a second task (U3, U5).} WikiText-2~  paragraphs replace GSM8K in the same"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 35,
+   "line": 36,
    "literal": "600",
    "class": "WikiText-2 prompt length in characters (PROTOCOL_V5 \u00a73)",
    "context": "a prompt of the paragraph's first 600 characters and a 65-token history of th"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 35,
+   "line": 36,
    "literal": "65",
    "class": "history cap (\u00a73; PROTOCOL_V5 \u00a73)",
    "context": "paragraph's first 600 characters and a 65-token history of the real continuing te"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 38,
+   "line": 39,
    "literal": "256",
    "class": "SHA-256 (hash name)",
    "context": "dentify each paragraph by index and SHA-256 hashes."
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 40,
+   "line": 41,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "HQQ, and  ,   and NAT$-$C1 on WikiText-2, were not predicted and are reported as"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 54,
+   "line": 57,
    "literal": "0",
    "class": "zero",
    "context": "$p$  ): in  -0. -Base and SmolLM2-1. , natural key err"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 54,
+   "line": 57,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "$p$  ): in  -0. -Base and SmolLM2-1. , natural key error was milder than is"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 56,
+   "line": 59,
    "literal": "95\\%",
    "class": "CI level",
    "context": "he isotropic share on both paths (every 95\\% lower bound"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 76,
-   "literal": "95\\%",
-   "class": "CI level",
-   "context": "re on both paths (across B and D, every 95\\% lower bound of $ $ at or above"
+   "line": 70,
+   "literal": "0",
+   "class": "zero",
+   "context": "d its fallback label (`` ''), because  -0.  fell on the size side and SmolLM2-1."
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 81,
+   "line": 70,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "-0.  fell on the size side and SmolLM2-1.  was unresolved, so the data neither e"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 82,
+   "literal": "95\\%",
+   "class": "CI level",
+   "context": "re on both paths (across B and D, every 95\\% lower bound of $ $ above"
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 87,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "e each  , here both models: on WikiText-2, natural value error"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 85,
+   "line": 91,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "both WikiText-2 units, and  's   was small (   ), as on"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
-   "line": 96,
+   "line": 92,
+   "literal": "0",
+   "class": "zero",
+   "context": "though here its interval excludes 0."
+  },
+  {
+   "file": "sections_v4\\05b_v5.tex",
+   "line": 103,
    "literal": "15",
    "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
    "context": "GPU-hours and   as billed, under its \\$15 ceiling, including the"
@@ -1355,56 +1416,77 @@
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 15,
+   "line": 7,
+   "literal": "2",
+   "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
+   "context": "and on WikiText-2 in the two models run there. On the val"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 17,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "HQQ, and   and   on WikiText-2, in both models tested ( -  and  ), so"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 16,
+   "line": 18,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
    "context": "specific to   or to GSM8K. On WikiText-2 the history was human text"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 31,
+   "line": 34,
    "literal": "128",
    "class": "head dimension (\u00a72)",
-   "context": "e checkpoints: the small head-dimension-128 model followed the size pattern, and th"
+   "context": "head-dimension-128 model,  -0. , fell on the size side and"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 31,
+   "line": 34,
+   "literal": "0",
+   "class": "zero",
+   "context": "head-dimension-128 model,  -0. , fell on the size side and the mid-si"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 34,
    "literal": "64",
    "class": "head dimension / step cap T_i (PROTOCOL_V4 \u00a72, \u00a73) / HQQ group size",
-   "context": "ttern, and the mid-sized head-dimension-64 model"
+   "context": "e side and the mid-sized head-dimension-64 model, SmolLM2-1. , was"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 32,
+   "line": 34,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "-sized head-dimension-64 model, SmolLM2-1. , was"
+  },
+  {
+   "file": "sections_v4\\07_discussion.tex",
+   "line": 35,
    "literal": "0",
    "class": "zero",
    "context": "he v4 models in head dimension alone.  -0. -Base adds QK-norm, which acts on"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 33,
+   "line": 36,
    "literal": "1",
    "class": "step 1 / count / 1/n",
    "context": "elf, and is a newer generation; SmolLM2-1.  is a different family whose reference"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 48,
+   "line": 51,
    "literal": "4",
    "class": "ln 4 / four",
    "context": "} For practitioners who keep weights in 4 bits and the cache in 16 bits, the resu"
   },
   {
    "file": "sections_v4\\07_discussion.tex",
-   "line": 48,
+   "line": 51,
    "literal": "16",
    "class": "H5 family size (16 tests) / V5-D1 $16 stop",
    "context": "keep weights in 4 bits and the cache in 16 bits, the results suggest"
@@ -1498,7 +1580,21 @@
    "line": 10,
    "literal": "2",
    "class": "dose / steps 2-8 / ln 2 / WikiText-2 name",
-   "context": "(WikiText-2, where the task and the history source"
+   "context": "er (HQQ) and on a second task (WikiText-2, where the task and the history source"
+  },
+  {
+   "file": "sections_v4\\09_conclusion.tex",
+   "line": 17,
+   "literal": "0",
+   "class": "zero",
+   "context": "d its fallback label (`` ''), because  -0.  fell on the size side and SmolLM2-1."
+  },
+  {
+   "file": "sections_v4\\09_conclusion.tex",
+   "line": 17,
+   "literal": "1",
+   "class": "step 1 / count / 1/n",
+   "context": "-0.  fell on the size side and SmolLM2-1.  was unresolved, so the data neither e"
   },
   {
    "file": "sections_v4\\10_declarations.tex",

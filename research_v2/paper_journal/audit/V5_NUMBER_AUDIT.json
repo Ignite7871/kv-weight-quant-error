@@ -1,8 +1,8 @@
 {
- "vsv_defined": 338,
- "vsv_used": 206,
+ "vsv_defined": 341,
+ "vsv_used": 210,
  "vsv_undefined": [],
- "rederived_n": 338,
+ "rederived_n": 341,
  "rederived_fail": [],
  "recomp_n": 196,
  "recomp_fail": [],
@@ -44,7 +44,7 @@
    "ok": true
   },
   {
-   "claim": "A: every H5 lower bound at or above the printed rng.ahfivelo.min and above ln 4",
+   "claim": "A: every H5 lower bound above the printed rng.ahfivelo.min and above ln 4",
    "ok": true
   },
   {
@@ -60,7 +60,55 @@
    "ok": true
   },
   {
-   "claim": "A-X joint reading is exactly 'neither factor alone accounts for it in these checkpoints'",
+   "claim": "A-X joint reading is exactly the fallback label 'neither factor alone accounts for it in these checkpoints'",
+   "ok": true
+  },
+  {
+   "claim": "Joint NAT-C1 reading reported as 'unresolved': the two models do not share a classification (U1 size pattern, U2 unresolved), and neither model follows the head-dimension pattern, so neither factor is established or excluded",
+   "ok": true
+  },
+  {
+   "claim": "A-X H1: in both crossed models the whole 95% interval lies beyond the size reference (further from b than size_pred)",
+   "ok": true
+  },
+  {
+   "claim": "A-X H1: printed size references equal the report's size predictions (Qwen3 -1.290, SmolLM2 -0.757)",
+   "ok": true
+  },
+  {
+   "claim": "Ten base checkpoints: the eight v4 models plus Qwen3-0.6B-Base and SmolLM2-1.7B (U1, U2), all distinct",
+   "ok": true
+  },
+  {
+   "claim": "H2, H3, H5 supported in all ten base checkpoints (v4 F2, F3, F5 in all eight; A-H2, A-H3, A-H5 in U1 and U2)",
+   "ok": true
+  },
+  {
+   "claim": "H1 supported in both crossed models (A-H1) and in the seven v4 Qwen/Llama models; only Mistral not resolved (9 of 10)",
+   "ok": true
+  },
+  {
+   "claim": "Second-study common-mode factor range exp(L) over U1-U6 matches the printed range",
+   "ok": true
+  },
+  {
+   "claim": "Anchor: v5 bootstrap seed differs from v4's; at least one U0 interval differs from v4; |L(v5) - L(v4)| < 0.001",
+   "ok": true
+  },
+  {
+   "claim": "Anchor intervals differ from v4's only in the third decimal (every endpoint within 0.005)",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] Mistral H1 on WikiText-2 has an interval excluding 0, unlike v4 GSM8K (interval includes 0)",
+   "ok": true
+  },
+  {
+   "claim": "rho_V/rho_K range 2.40-3.52 is the eight-model study's; a v5 NF4 unit (U1) lies outside it, hence 'in the eight-model study'",
+   "ok": true
+  },
+  {
+   "claim": "Table 4 caption: the H1 and NAT-C1 cells of U1 and U2 are exactly the A-X classification inputs",
    "ok": true
   },
   {
@@ -88,7 +136,7 @@
    "ok": true
   },
   {
-   "claim": "B and D: every H5 lower bound at or above the printed rng.bdhfivelo.min and above ln 4",
+   "claim": "B and D: every H5 lower bound above the printed rng.bdhfivelo.min and above ln 4",
    "ok": true
   },
   {
@@ -132,15 +180,15 @@
    "ok": true
   },
   {
-   "claim": "Every highlight has at most 85 characters (80, 79, 79, 85, 81, 83, 80)",
+   "claim": "Every highlight has at most 85 characters (83, 79, 79, 77, 81, 83, 79)",
    "ok": true
   }
  ],
  "abstract_words": 300,
  "highlights": [
   {
-   "text": "NF4 value-cache error is harsher than equal-norm noise in all eight checkpoints.",
-   "chars": 80
+   "text": "NF4 value-cache error is harsher than equal-norm noise in all ten base checkpoints.",
+   "chars": 83
   },
   {
    "text": "Values-only cache error exceeds keys-only error at natural size in every model.",
@@ -151,8 +199,8 @@
    "chars": 79
   },
   {
-   "text": "Key-path mildness held in 7 of 8; in two crossed models it followed the size pattern.",
-   "chars": 85
+   "text": "Key-path mildness held in 9 of 10; both crossed models fell on its size side.",
+   "chars": 77
   },
   {
    "text": "The predicted family-dependent sign was falsified; a family offset is unresolved.",
@@ -163,8 +211,8 @@
    "chars": 83
   },
   {
-   "text": "Combined contrast: neither size nor head_dim alone accounts for it (confounded).",
-   "chars": 80
+   "text": "Combined contrast: size versus head dimension unresolved in two crossed models.",
+   "chars": 79
   }
  ]
 }

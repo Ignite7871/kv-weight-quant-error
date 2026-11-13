@@ -30,15 +30,16 @@ Alternatives:
 ## 3. Highlights (each ≤ 85 characters, Elsevier)
 
 The JAIR template has no highlights; these are kept for other venues. Revised 2026-11-11 after the fresh-eyes review, and
-2026-11-13 for the v5 integration (4 revised, 6 and 7 added; lengths checked by `paper_journal/audit/audit_v5_numbers.py`).
+2026-11-13 for the v5 integration (4 revised, 6 and 7 added; lengths checked by `paper_journal/audit/audit_v5_numbers.py`),
+and 2026-11-13 after the second fresh-eyes review (1, 4 and 7 revised).
 
-1. NF4 value-cache error is harsher than equal-norm noise in all eight checkpoints.
+1. NF4 value-cache error is harsher than equal-norm noise in all ten base checkpoints.
 2. Values-only cache error exceeds keys-only error at natural size in every model.
 3. The error shares a cross-position component far above isotropic in every model.
-4. Key-path mildness held in 7 of 8; in two crossed models it followed the size pattern.
+4. Key-path mildness held in 9 of 10; both crossed models fell on its size side.
 5. The predicted family-dependent sign was falsified; a family offset is unresolved.
 6. Value harshness and the common mode held under HQQ and on WikiText-2 in two models.
-7. Combined contrast: neither size nor head_dim alone accounts for it (confounded).
+7. Combined contrast: size versus head dimension unresolved in two crossed models.
 
 ## 4. The framing change
 

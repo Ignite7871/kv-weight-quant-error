@@ -58,6 +58,7 @@ def fmt(x, f):
     if f == "u3": return f"${x:.3f}$"
     if f == "u2": return f"${x:.2f}$"
     if f == "u1": return f"${x:.1f}$"
+    if f == "u4": return f"${x:.4f}$"
     if f == "int": return f"${int(round(x))}$"
     if f == "intc": return f"${int(round(x)):,}$".replace(",", "{,}")
     if f == "ci3": return f"$[{x[0]:+.3f}, {x[1]:+.3f}]$"
@@ -157,6 +158,9 @@ def build_anchor_recomp_design():
     src("anc.hist", ANC + "#reported_bitwise/histories_equal", "int")
     ptrs = [f"{ANC}#contrasts/{c}/delta/estimate" for c in CON]
     put("anc.dabsmax", max(abs(get(p)) for p in ptrs), "u3", op="absmax", inputs=ptrs)
+    # H5 of the anchor: same records, re-drawn empirical isotropic null, so L^P differs from v4 in the fourth decimal
+    pairs = [(f"{ANC}#reported_H5/{P}/v5", f"{ANC}#reported_H5/{P}/v4") for P in "KV"]
+    put("anc.hfivedmax", max(abs(get(a) - get(b)) for a, b in pairs), "u4", op="absdiffmax", inputs=[x for ab in pairs for x in ab])
     src("recomp.n", REC + "#n_compared", "int")
     src("recomp.ndis", REC + "#n_disagree", "int")
     der_len("recomp.nunres", REC + "#unresolved_verdicts")
@@ -196,11 +200,16 @@ def build_ranges():
         ptrs = [pu(u, "contrasts", c, "estimate") for u in units]
         put(key + ".min", min(get(p) for p in ptrs), "s3", op="min", inputs=ptrs)
         put(key + ".max", max(get(p) for p in ptrs), "s3", op="max", inputs=ptrs)
-    # lower bounds printed as "at or above x": rounded DOWN to 3 decimals, so the printed bound never exceeds the true one
+    # lower bounds printed as "above x": rounded DOWN to 2 decimals, so the printed bound is below the true one and below the
+    # 3-decimal value printed in Table tab:v5h5 (fresh-eyes review 2, item 3g)
     ptrs = [pu(u, "H5", P, "ci95", "0") for u in ("U3", "U4", "U5", "U6") for P in "KV"]
-    put("rng.bdhfivelo.min", math.floor(1000 * min(get(p) for p in ptrs)) / 1000, "u3", op="floor3_min", inputs=ptrs)
+    put("rng.bdhfivelo.min", math.floor(100 * min(get(p) for p in ptrs)) / 100, "u2", op="floor2_min", inputs=ptrs)
     ptrs = [pu(u, "H5", P, "ci95", "0") for u in ("U1", "U2") for P in "KV"]
-    put("rng.ahfivelo.min", math.floor(1000 * min(get(p) for p in ptrs)) / 1000, "u3", op="floor3_min", inputs=ptrs)
+    put("rng.ahfivelo.min", math.floor(100 * min(get(p) for p in ptrs)) / 100, "u2", op="floor2_min", inputs=ptrs)
+    # common-mode factor exp(L^P) over every tested v5 unit (U1-U6) and both paths (the anchor U0 is the v4 value)
+    ptrs = [pu(u, "H5", P, "estimate") for u in ("U1", "U2", "U3", "U4", "U5", "U6") for P in "KV"]
+    put("rng.facv5.min", math.exp(min(get(p) for p in ptrs)), "u1", op="exp_min", inputs=ptrs)
+    put("rng.facv5.max", math.exp(max(get(p) for p in ptrs)), "u1", op="exp_max", inputs=ptrs)
 
 
 def write_macros():
@@ -223,7 +232,8 @@ def tab_main():
     t = [r"\begin{table}[tbp]", r"\centering\scriptsize",
          r"\caption{Second locked study (v5): the four contrasts per unit, estimate and 95\% problem-clustered bootstrap interval "
          r"($n=$\," + vv("n.u1") + r" problems per unit). Locked tests: A, H1--H3 in U1 and U2; B, H2 and H3 under HQQ; D, H2 on "
-         r"WikiText-2. Every other cell is descriptive (no prediction). U0 is the anchor, a rerun of the v4 Qwen2.5-0.5B unit. "
+         r"WikiText-2. The H1 and NAT$-$C1 cells of U1 and U2 also enter the locked classification A-X (Table~\ref{tab:v5ax}); every other "
+         r"cell is descriptive (no prediction). U0 is the anchor, a rerun of the v4 Qwen2.5-0.5B unit. "
          r"WT-2: WikiText-2; Qwen3-0.6B: Qwen3-0.6B-Base; Mistral-7B: Mistral-7B-v0.3. hd: head dimension. Holm-adjusted $p$ of every locked test: Table~\ref{tab:v5h5}.}", r"\label{tab:v5main}",
          r"\setlength{\tabcolsep}{2pt}", r"\begin{tabular}{@{}llllr ll ll ll ll@{}}", r"\toprule",
          r" & & & & & \multicolumn{2}{c}{H1: NAT-K$-$C1-K} & \multicolumn{2}{c}{H2: NAT-V$-$C1-V} & \multicolumn{2}{c}{H3: NAT-K$-$NAT-V}"
@@ -243,7 +253,8 @@ def tab_main():
 
 def tab_ax():
     t = [r"\begin{table}[tbp]", r"\centering\footnotesize",
-         r"\caption{A-X, the crossed reading (locked). Predictions are locked v4 estimates of named source models (Qwen3: Qwen2.5-0.5B "
+         r"\caption{A-X, the crossed reading: a locked classification, not a hypothesis test, and exploratory in origin (its references "
+         r"were chosen from the v4 estimates). Predictions are locked v4 estimates of named source models (Qwen3: Qwen2.5-0.5B "
          r"for size, Qwen2.5-1.5B for head dimension; SmolLM2: the mean of the head-dimension-128 Qwen2.5-1.5B, Qwen2.5-3B and Llama-3.2-3B "
          r"for size, the mean of the two head-dimension-64 models for head dimension); $b$ is their midpoint. A classification needs the "
          r"95\% interval entirely on one side of $b$ and a one-sided Holm $p<0.05$ (Holm over the two models per contrast).}",

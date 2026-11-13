@@ -1999,6 +1999,18 @@
     "v5_runs/anchor.json#contrasts/NAT-C1/delta/estimate"
    ]
   },
+  "anc.hfivedmax": {
+   "val": "$0.0001$",
+   "raw": 9.780381691504303e-05,
+   "fmt": "u4",
+   "op": "absdiffmax",
+   "inputs": [
+    "v5_runs/anchor.json#reported_H5/K/v5",
+    "v5_runs/anchor.json#reported_H5/K/v4",
+    "v5_runs/anchor.json#reported_H5/V/v5",
+    "v5_runs/anchor.json#reported_H5/V/v4"
+   ]
+  },
   "recomp.n": {
    "val": "$230$",
    "raw": 230,
@@ -2223,10 +2235,10 @@
    ]
   },
   "rng.bdhfivelo.min": {
-   "val": "$2.142$",
-   "raw": 2.142,
-   "fmt": "u3",
-   "op": "floor3_min",
+   "val": "$2.14$",
+   "raw": 2.14,
+   "fmt": "u2",
+   "op": "floor2_min",
    "inputs": [
     "v5_runs/v5_report.json#per_unit/U3/H5/K/ci95/0",
     "v5_runs/v5_report.json#per_unit/U3/H5/V/ci95/0",
@@ -2239,15 +2251,55 @@
    ]
   },
   "rng.ahfivelo.min": {
-   "val": "$2.331$",
-   "raw": 2.331,
-   "fmt": "u3",
-   "op": "floor3_min",
+   "val": "$2.33$",
+   "raw": 2.33,
+   "fmt": "u2",
+   "op": "floor2_min",
    "inputs": [
     "v5_runs/v5_report.json#per_unit/U1/H5/K/ci95/0",
     "v5_runs/v5_report.json#per_unit/U1/H5/V/ci95/0",
     "v5_runs/v5_report.json#per_unit/U2/H5/K/ci95/0",
     "v5_runs/v5_report.json#per_unit/U2/H5/V/ci95/0"
+   ]
+  },
+  "rng.facv5.min": {
+   "val": "$8.7$",
+   "raw": 8.728739513003829,
+   "fmt": "u1",
+   "op": "exp_min",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U1/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U1/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U2/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U2/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U3/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U3/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U4/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U4/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/H5/V/estimate"
+   ]
+  },
+  "rng.facv5.max": {
+   "val": "$19.1$",
+   "raw": 19.12782807852513,
+   "fmt": "u1",
+   "op": "exp_max",
+   "inputs": [
+    "v5_runs/v5_report.json#per_unit/U1/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U1/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U2/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U2/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U3/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U3/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U4/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U4/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U5/H5/V/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/H5/K/estimate",
+    "v5_runs/v5_report.json#per_unit/U6/H5/V/estimate"
    ]
   }
  }

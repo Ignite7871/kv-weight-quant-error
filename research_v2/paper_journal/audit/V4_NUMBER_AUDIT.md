@@ -4,8 +4,8 @@
 - v3 macros used: 175; undefined: 0; not in numbers_v3_sources.json: 0
 - v4 macros re-derived from their sources by this script: 980; mismatches: 0
 - v4 result macros checked against the independent recomputation: 195; failures: 0
-- literal numbers in the v4 text and tables: 306; unclassified: 0
-- prose claims checked against the locked report: 32/32 hold
+- literal numbers in the v4 text and tables: 318; unclassified: 0
+- prose claims checked against the locked report: 35/35 hold
 
 ## Claims
 
@@ -24,6 +24,9 @@
 - [ok] H1 [descriptive]: Llama changes between 1B and 3B (> 0.4) and is flat from 3B to 8B (|change| < 0.01)
 - [ok] H1: Qwen-7B and Llama-8B resolved (Holm p < 0.001, CI < 0), unlike Mistral
 - [ok] NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05
+- [ok] Conclusion: Llama-3.2-1B NAT-C1 is equivalent to 0 (90% CI inside its margin), so on the combined contrast natural error is equivalent to isotropic noise there
+- [ok] NAT-C1 changes sign in Qwen only between 0.5B and 1.5B (the head-dimension step): CI < 0 at 0.5B, CI > 0 at 1.5B, 3B, 7B
+- [ok] Practical reading: values-only error 2.6-4.0 times as disruptive as keys-only error = exp(-H3) range over the eight models
 - [ok] X1: Llama H1 slope restricted to head-dim 128 has a CI including 0 (flat)
 - [ok] v3: Llama-base NAT-C1 CI includes 0; Llama-instruct CI > 0 ("near zero or positive")
 - [ok] v3 X13: Llama key-path centring not significant after Holm (both p > 0.05)
@@ -99,7 +102,7 @@ none
 - date (AI_USE_LOG_V5): 2 (2026-11-13)
 - date (Gemini proofreading; v5 start, AI_USE_LOG_V5): 3 (2026-11-11)
 - date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5): 1 (11)
-- dose / steps 2-8 / ln 2 / WikiText-2 name: 34 (2)
+- dose / steps 2-8 / ln 2 / WikiText-2 name: 37 (2)
 - drift tolerance (§10; D1; PROTOCOL_V5 §9): 6 (25\%)
 - earlier study arms (§6) / v5 $14 ledger stop (PROTOCOL_V5 §9): 4 (14)
 - earlier study's calibration sample / count: 3 (100)
@@ -124,11 +127,11 @@ none
 - second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z): 1 (26)
 - section ref / HQQ bits per weight (PROTOCOL_V5 §3): 2 (4.5)
 - smallest attainable p: 1 (1/35)
-- step 1 / count / 1/n: 18 (1)
+- step 1 / count / 1/n: 22 (1)
 - steps 9-64: 4 (9)
 - the whole: 1 (100\%)
 - transformers version (V4_PACKAGES): 1 (5.13.0)
 - truncation sensitivity / Step 0 rho tolerance (§4, §8): 3 (5\%)
 - v5 ceiling in USD (PROTOCOL_V5 §0, §9; V5-D3): 3 (15)
 - year: 4 (2026)
-- zero: 40 (0)
+- zero: 45 (0)

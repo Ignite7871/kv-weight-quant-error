@@ -230,6 +230,17 @@ def claims():
     add("NAT-C1 at matched sizes: Llama above Qwen (3B: Llama-3B > Qwen-3B; 7-8B: Llama-8B > Qwen-7B); T > 0; p > 0.05",
         est("llama3.2-3b", "NAT-C1") > est("qwen2.5-3b", "NAT-C1") and est("llama3.1-8b", "NAT-C1") > est("qwen2.5-7b", "NAT-C1")
         and am["H4"]["permutation"]["T"] > 0 and am["H4"]["permutation"]["p_one_sided"] > 0.05)
+    # ---- prose claims added by the second fresh-eyes review (2026-11-13)
+    add("Conclusion: Llama-3.2-1B NAT-C1 is equivalent to 0 (90% CI inside its margin), so on the combined contrast natural "
+        "error is equivalent to isotropic noise there",
+        pm["llama3.2-1b"]["contrasts"]["NAT-C1"]["verdict"] == "equivalent"
+        and -cal["llama3.2-1b"]["margin_log_js"] < pm["llama3.2-1b"]["contrasts"]["NAT-C1"]["ci90"][0]
+        and pm["llama3.2-1b"]["contrasts"]["NAT-C1"]["ci90"][1] < cal["llama3.2-1b"]["margin_log_js"])
+    add("NAT-C1 changes sign in Qwen only between 0.5B and 1.5B (the head-dimension step): CI < 0 at 0.5B, CI > 0 at 1.5B, 3B, 7B",
+        ci("qwen2.5-0.5b", "NAT-C1")[1] < 0 and all(ci(m, "NAT-C1")[0] > 0 for m in QWEN[1:])
+        and pm["qwen2.5-0.5b"]["head_dim"] == 64 and all(pm[m]["head_dim"] == 128 for m in QWEN[1:]))
+    add("Practical reading: values-only error 2.6-4.0 times as disruptive as keys-only error = exp(-H3) range over the eight models",
+        f"{math.exp(-max(est(m, 'H3') for m in ALL)):.1f}" == "2.6" and f"{math.exp(-min(est(m, 'H3') for m in ALL)):.1f}" == "4.0")
     add("X1: Llama H1 slope restricted to head-dim 128 has a CI including 0 (flat)",
         ex["X4"]["hd128_only_slopes"]["llama"]["H1"]["ci95_boot"][0] < 0 < ex["X4"]["hd128_only_slopes"]["llama"]["H1"]["ci95_boot"][1])
     vn = dict(re.findall(r"\\csname vn@([^\\]+)\\endcsname\{(.*)\}$", (PJ / "tables_v3/numbers_v3.tex").read_text(encoding="utf-8"), flags=re.M))

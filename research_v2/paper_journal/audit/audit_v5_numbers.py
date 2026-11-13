@@ -14,6 +14,7 @@ Shares no code with make_v5.py. Literal numbers outside macros are classified by
 Writes audit/V5_NUMBER_AUDIT.md and audit/V5_NUMBER_AUDIT.json.
 """
 import json
+import math
 import re
 from pathlib import Path
 
@@ -62,7 +63,7 @@ def sg(x, d):
 def show(x, f):
     return {
         "s3": lambda: f"${sg(x, 3)}$", "s2": lambda: f"${sg(x, 2)}$", "u3": lambda: f"${x:.3f}$", "u2": lambda: f"${x:.2f}$",
-        "u1": lambda: f"${x:.1f}$", "int": lambda: f"${round(x)}$", "intc": lambda: "$" + f"{round(x):,}".replace(",", "{,}") + "$", "ci3": lambda: f"$[{sg(x[0], 3)}, {sg(x[1], 3)}]$",
+        "u1": lambda: f"${x:.1f}$", "u4": lambda: f"${x:.4f}$", "int": lambda: f"${round(x)}$", "intc": lambda: "$" + f"{round(x):,}".replace(",", "{,}") + "$", "ci3": lambda: f"$[{sg(x[0], 3)}, {sg(x[1], 3)}]$",
         "uci3": lambda: f"$[{x[0]:.3f}, {x[1]:.3f}]$", "p": lambda: "$<0.001$" if x < 0.001 else f"${x:.3f}$",
         "usd": lambda: "\\$" + f"{x:.2f}", "pct0": lambda: f"${100 * x:.0f}$\\%", "bn": lambda: f"${x / 1e9:.2f}$",
         "word": lambda: str(x), "bool": lambda: "yes" if x else "no"}[f]()
@@ -96,6 +97,14 @@ def recompute(e):
         f, field = ins[0].split("#*/")
         return sum(1 for r in jl(f) if r[field] is True)
     v = [at(p) for p in ins]
+    if op == "floor2_min":
+        return math.floor(min(v) * 100) / 100
+    if op == "exp_min":
+        return math.exp(min(v))
+    if op == "exp_max":
+        return math.exp(max(v))
+    if op == "absdiffmax":
+        return max(abs(v[i] - v[i + 1]) for i in range(0, len(v), 2))
     if op == "floor3_min":
         return int(min(v) * 1000) / 1000 if min(v) >= 0 else -int(-min(v) * 1000 + 0.999999999) / 1000
     return {"len": lambda: len(v[0]), "absmax": lambda: max(abs(a) for a in v), "min": lambda: min(v), "max": lambda: max(v),
@@ -139,8 +148,8 @@ def claims(vsv):
         all(au[f]["result"] == "supported in every model" and max(au[f]["holm_p"].values()) < 0.001 for f in ("A-H1", "A-H2", "A-H3", "A-H5")))
     add("A: H1 < 0 and H2 > 0 and H3 < 0 with CIs excluding 0 in U1 and U2",
         all(ci(u, "H1")[1] < 0 and ci(u, "H2")[0] > 0 and ci(u, "H3")[1] < 0 for u in ("U1", "U2")))
-    add("A: every H5 lower bound at or above the printed rng.ahfivelo.min and above ln 4",
-        all(lo(u, P) >= num("rng.ahfivelo.min") and lo(u, P) > 1.3863 for u in ("U1", "U2") for P in "KV"))
+    add("A: every H5 lower bound above the printed rng.ahfivelo.min and above ln 4",
+        all(lo(u, P) > num("rng.ahfivelo.min") and lo(u, P) > 1.3863 for u in ("U1", "U2") for P in "KV"))
     add("A-X: H1 size pattern in both models; NAT-C1 size pattern in U1, unresolved in U2",
         ax["H1"]["units"]["U1"]["classification"] == ax["H1"]["units"]["U2"]["classification"] == "size pattern"
         and ax["NAT-C1"]["units"]["U1"]["classification"] == "size pattern" and ax["NAT-C1"]["units"]["U2"]["classification"] == "unresolved")
@@ -149,8 +158,46 @@ def claims(vsv):
     add("A-X: every size-pattern classification has its CI entirely on the size side and Holm p < 0.05",
         all((x["ci95"][1] < x["boundary"]) == (x["size_pred"] < x["boundary"]) and (x["ci95"][0] > x["boundary"] or x["ci95"][1] < x["boundary"])
             and x["holm_p"] < 0.05 for c in ("H1", "NAT-C1") for x in ax[c]["units"].values() if x["classification"] == "size pattern"))
-    add("A-X joint reading is exactly 'neither factor alone accounts for it in these checkpoints'",
+    add("A-X joint reading is exactly the fallback label 'neither factor alone accounts for it in these checkpoints'",
         ax["joint_reading_NAT-C1"]["reading"] == "neither factor alone accounts for it in these checkpoints")
+    # ---- prose claims added by the second fresh-eyes review (2026-11-13)
+    nc = ax["NAT-C1"]["units"]
+    add("Joint NAT-C1 reading reported as 'unresolved': the two models do not share a classification (U1 size pattern, U2 "
+        "unresolved), and neither model follows the head-dimension pattern, so neither factor is established or excluded",
+        nc["U1"]["classification"] == "size pattern" and nc["U2"]["classification"] == "unresolved"
+        and all(x["classification"] != "head-dimension pattern" for x in nc.values()))
+    h1 = ax["H1"]["units"]
+    add("A-X H1: in both crossed models the whole 95% interval lies beyond the size reference (further from b than size_pred)",
+        all((x["ci95"][1] < x["size_pred"]) if x["size_pred"] < x["boundary"] else (x["ci95"][0] > x["size_pred"]) for x in h1.values()))
+    add("A-X H1: printed size references equal the report's size predictions (Qwen3 -1.290, SmolLM2 -0.757)",
+        vsv["ax.hone.u1.size"] == "$-1.290$" and vsv["ax.hone.u2.size"] == "$-0.757$")
+    add("Ten base checkpoints: the eight v4 models plus Qwen3-0.6B-Base and SmolLM2-1.7B (U1, U2), all distinct",
+        len(set(v4["per_model"]) - {"llama3.2-1b-instruct"}) == 8 and pu["U1"]["model"] not in v4["per_model"]
+        and pu["U2"]["model"] not in v4["per_model"] and pu["U1"]["model"] != pu["U2"]["model"])
+    add("H2, H3, H5 supported in all ten base checkpoints (v4 F2, F3, F5 in all eight; A-H2, A-H3, A-H5 in U1 and U2)",
+        all(v4["all_models"][f]["readings"][m] == "supported" for f in ("F2 H2", "F3 H3") for m in v4["all_models"][f]["readings"])
+        and all(v == "supported" for v in v4["all_models"]["F5 H5"]["readings"].values())
+        and all(au[f]["result"] == "supported in every model" for f in ("A-H2", "A-H3", "A-H5")))
+    add("H1 supported in both crossed models (A-H1) and in the seven v4 Qwen/Llama models; only Mistral not resolved (9 of 10)",
+        au["A-H1"]["result"] == "supported in every model"
+        and [m for m, w in v4["all_models"]["F1 H1"]["readings"].items() if w != "supported"] == ["mistral-7b-v0.3"])
+    L5 = [pu[u]["H5"][P]["estimate"] for u in ("U1", "U2", "U3", "U4", "U5", "U6") for P in "KV"]
+    add("Second-study common-mode factor range exp(L) over U1-U6 matches the printed range",
+        f"${math.exp(min(L5)):.1f}$" == vsv["rng.facv5.min"] and f"${math.exp(max(L5)):.1f}$" == vsv["rng.facv5.max"])
+    add("Anchor: v5 bootstrap seed differs from v4's; at least one U0 interval differs from v4; |L(v5) - L(v4)| < 0.001",
+        r["seed"] != v4["seed"] and any(pu["U0"]["contrasts"][c]["ci95"] != v4["per_model"]["qwen2.5-0.5b"]["contrasts"][c]["ci95"]
+                                        for c in ("H1", "H2", "H3", "NAT-C1"))
+        and max(abs(anc["reported_H5"][P]["v5"] - anc["reported_H5"][P]["v4"]) for P in "KV") < 0.001)
+    add("Anchor intervals differ from v4's only in the third decimal (every endpoint within 0.005)",
+        all(abs(a - b) < 0.005 for c in ("H1", "H2", "H3", "NAT-C1")
+            for a, b in zip(pu["U0"]["contrasts"][c]["ci95"], v4["per_model"]["qwen2.5-0.5b"]["contrasts"][c]["ci95"])))
+    add("[descriptive] Mistral H1 on WikiText-2 has an interval excluding 0, unlike v4 GSM8K (interval includes 0)",
+        ci("U5", "H1")[1] < 0 and v4["per_model"]["mistral-7b-v0.3"]["contrasts"]["H1"]["ci95"][0] < 0
+        < v4["per_model"]["mistral-7b-v0.3"]["contrasts"]["H1"]["ci95"][1])
+    add("rho_V/rho_K range 2.40-3.52 is the eight-model study's; a v5 NF4 unit (U1) lies outside it, hence 'in the eight-model study'",
+        jl("v5_runs/U1/calibration.json")["rho_V_over_rho_K"] < 2.395)
+    add("Table 4 caption: the H1 and NAT-C1 cells of U1 and U2 are exactly the A-X classification inputs",
+        all(abs(ax[c]["units"][u]["estimate"] - est(u, c)) < 1e-12 for c in ("H1", "NAT-C1") for u in ("U1", "U2")))
     u1 = ax["NAT-C1"]["units"]["U1"]
     add("[exploratory] Qwen3 NAT-C1: whole interval below the size prediction, which is below the head-dimension prediction",
         u1["ci95"][1] < u1["size_pred"] < u1["hd_pred"])
@@ -167,8 +214,8 @@ def claims(vsv):
         [m for m, d in v4["per_model"].items() if d["head_dim"] == 64] == ["qwen2.5-0.5b", "llama3.2-1b"])
     add("B-H2, B-H3, B-H5 and D-H2, D-H5 each supported in every model",
         all(au[f]["result"] == "supported in every model" for f in ("B-H2", "B-H3", "B-H5", "D-H2", "D-H5")))
-    add("B and D: every H5 lower bound at or above the printed rng.bdhfivelo.min and above ln 4",
-        all(lo(u, P) >= num("rng.bdhfivelo.min") and lo(u, P) > 1.3863 for u in ("U3", "U4", "U5", "U6") for P in "KV"))
+    add("B and D: every H5 lower bound above the printed rng.bdhfivelo.min and above ln 4",
+        all(lo(u, P) > num("rng.bdhfivelo.min") and lo(u, P) > 1.3863 for u in ("U3", "U4", "U5", "U6") for P in "KV"))
     add("[descriptive] Mistral H1 under HQQ: CI below 0; v4 NF4 Mistral H1 inconclusive",
         ci("U6", "H1")[1] < 0 and v4["all_models"]["F1 H1"]["readings"]["mistral-7b-v0.3"] == "inconclusive")
     add("[descriptive] H3 negative (CI < 0) in both WikiText-2 units", all(ci(u, "H3")[1] < 0 for u in ("U3", "U5")))
