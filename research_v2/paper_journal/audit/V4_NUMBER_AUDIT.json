@@ -9,7 +9,7 @@
  "rederived_fail": [],
  "recomp_n": 195,
  "recomp_fail": [],
- "literals_n": 318,
+ "literals_n": 331,
  "literals_unclassified": [],
  "claims": [
   {
@@ -1062,7 +1062,7 @@
    "line": 27,
    "literal": "0.05",
    "class": "Holm level",
-   "context": "hat side of $b$ and a one-sided Holm $p<0.05$"
+   "context": "at side of $b$ with a one-sided Holm $p<0.05$"
   },
   {
    "file": "sections_v4\\05b_v5.tex",
@@ -1188,7 +1188,7 @@
    "line": 103,
    "literal": "15",
    "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
-   "context": "GPU-hours and   as billed, under its \\$15 ceiling, including the"
+   "context": "window, storage included), under its \\$15 ceiling, including the"
   },
   {
    "file": "sections_v4\\06_v3study.tex",
@@ -1710,14 +1710,42 @@
   },
   {
    "file": "sections_v4\\11_acks.tex",
-   "line": 4,
+   "line": 5,
+   "literal": "29",
+   "class": "pre-declared $29 stop (\u00a710, r5)",
+   "context": "29--30 September 2026, one   80\\,GB pod)."
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 5,
+   "literal": "30",
+   "class": "date: 29-30 September 2026, the earlier routing pod (v5/closeout/billing_earlier_dps_2026-09.json)",
+   "context": "29--30 September 2026, one   80\\,GB pod). The"
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 5,
+   "literal": "2026",
+   "class": "year",
+   "context": "29--30 September 2026, one   80\\,GB pod). The earlier four-mo"
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 5,
+   "literal": "80\\,GB",
+   "class": "A100 memory, earlier routing pod (commit fb3f20a)",
+   "context": "29--30 September 2026, one   80\\,GB pod). The earlier four-model study ran"
+  },
+  {
+   "file": "sections_v4\\11_acks.tex",
+   "line": 6,
    "literal": "4060",
    "class": "GPU model RTX 4060",
    "context": "personal laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
   },
   {
    "file": "sections_v4\\11_acks.tex",
-   "line": 4,
+   "line": 6,
    "literal": "8\\,GB",
    "class": "laptop GPU memory",
    "context": "l laptop GPU (NVIDIA   4060 Laptop GPU, 8\\,GB)."
@@ -1843,10 +1871,52 @@
   },
   {
    "file": "sections_v4\\B_protocol.tex",
+   "line": 79,
+   "literal": "7",
+   "class": "C(7,3)",
+   "context": "s the provider billed in the v4 window (7--9 November 2026), storage included: GP"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 79,
+   "literal": "9",
+   "class": "steps 9-64",
+   "context": "he provider billed in the v4 window (7--9 November 2026), storage included: GPU"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 79,
+   "literal": "2026",
+   "class": "year",
+   "context": "billed in the v4 window (7--9 November 2026), storage included: GPU  , pod disk   a"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
    "line": 80,
    "literal": "29",
    "class": "pre-declared $29 stop (\u00a710, r5)",
    "context": "ng of \\$  with a pre-declared stop at \\$29. The in-pod ledger estimated   at the e"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 83,
+   "literal": "29",
+   "class": "pre-declared $29 stop (\u00a710, r5)",
+   "context": "29--30 September 2026) was billed  ; it is"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 83,
+   "literal": "30",
+   "class": "date: 29-30 September 2026, the earlier routing pod (v5/closeout/billing_earlier_dps_2026-09.json)",
+   "context": "29--30 September 2026) was billed  ; it is not"
+  },
+  {
+   "file": "sections_v4\\B_protocol.tex",
+   "line": 83,
+   "literal": "2026",
+   "class": "year",
+   "context": "29--30 September 2026) was billed  ; it is not part of either"
   },
   {
    "file": "sections_v4\\C_v3details.tex",
@@ -2137,10 +2207,31 @@
   },
   {
    "file": "sections_v4\\F_v5.tex",
+   "line": 45,
+   "literal": "12",
+   "class": "count",
+   "context": "s the provider billed in the v5 window (12--13 November 2026), storage"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 45,
+   "literal": "13",
+   "class": "X1--X13 label",
+   "context": "e provider billed in the v5 window (12--13 November 2026), storage"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
+   "line": 45,
+   "literal": "2026",
+   "class": "year",
+   "context": "illed in the v5 window (12--13 November 2026), storage"
+  },
+  {
+   "file": "sections_v4\\F_v5.tex",
    "line": 46,
    "literal": "15",
    "class": "v5 ceiling in USD (PROTOCOL_V5 \u00a70, \u00a79; V5-D3)",
-   "context": "\\$15 ceiling. Together with v4, the cloud ru"
+   "context": "included, under the declared \\$15 ceiling. This is the settled billing; i"
   },
   {
    "file": "tables_v4\\h5h4.tex",

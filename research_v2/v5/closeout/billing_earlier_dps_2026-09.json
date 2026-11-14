@@ -1,0 +1,15 @@
+{
+ "source": "RunPod MCP list-billing (bucketSize=month, all time) and list-pod-billing (bucketSize=hour), 2026-09-29 to 2026-10-01",
+ "read_utc": "2026-11-14",
+ "note": "All charges the provider billed before 2026-11-07: one pod, v2maa9z6we9mh8 (deleted), billed 2026-09-29 11:00-17:00Z and 2026-09-30 03:00-06:00Z. It ran the Qwen2.5-14B replication for the earlier dynamic-precision routing work (commit fb3f20a: 'a single rented A100 80GB'); it produced none of the results of the v4/v5 article. Reported separately, not part of the v4 or v5 study cost.",
+ "totals": {
+  "podGpuAmount": 11.152249027043581,
+  "podDiskAmount": 0.07685185049194843,
+  "totalAmount": 11.22910087753553
+ },
+ "days": {
+  "2026-09-29": 7.319066228577867,
+  "2026-09-30": 3.9100346489576623
+ },
+ "gpu": "A100 80GB (from commit fb3f20a; not recorded in billing)"
+}

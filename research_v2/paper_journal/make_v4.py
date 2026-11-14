@@ -66,6 +66,7 @@ def fmt(x, f):
     if f == "u1": return f"${x:.1f}$"
     if f == "u4": return f"${x:.4f}$"
     if f == "int": return f"${int(round(x))}$"
+    if f == "nword": return ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][int(round(x))]
     if f == "intc": return f"${int(round(x)):,}$".replace(",", "{,}")
     if f == "ci3": return f"$[{x[0]:+.3f}, {x[1]:+.3f}]$"
     if f == "ci2": return f"$[{x[0]:+.2f}, {x[1]:+.2f}]$"
@@ -203,7 +204,7 @@ def build_families():
     der("nmodels", "len", [f"{REP}#per_model"], "int")
     # how many Qwen models have NAT-C1 CI entirely above 0
     ptrs = [pm(m, "contrasts", "NAT-C1", "ci95", "0") for m in QWEN]
-    put("hfour.nqwenpos", sum(get(p) > 0 for p in ptrs), "int", op="count_gt0", inputs=ptrs)
+    put("hfour.nqwenpos", sum(get(p) > 0 for p in ptrs), "nword", op="count_gt0", inputs=ptrs)
 
 
 def build_recomp_exp():

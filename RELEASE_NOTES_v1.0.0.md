@@ -1,6 +1,6 @@
 # v1.0.0: code, locks, and per-problem records
 
-Release accompanying *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher across 0.5B–8B Language Models* (Gunupati, Anavekar, and Varghese; submitted to the Journal of Artificial Intelligence Research).
+Release accompanying *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher in Ten 0.5B–8B Base Language Models* (Gunupati, Anavekar, and Varghese; submitted to the Journal of Artificial Intelligence Research).
 
 The repository holds the code, protocols, locks, manifests, and documentation. The per-problem records of both locked studies are attached below as archives; unpack each inside `research_v2/` and run `python verify_release.py` from the repository root (see README).
 

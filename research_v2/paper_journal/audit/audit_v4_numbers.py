@@ -69,7 +69,7 @@ def show(x, f):
         "ci3": lambda: f"$[{sgn(x[0], 3)}, {sgn(x[1], 3)}]$", "ci2": lambda: f"$[{sgn(x[0], 2)}, {sgn(x[1], 2)}]$",
         "uci3": lambda: f"$[{x[0]:.3f}, {x[1]:.3f}]$", "p": lambda: "$<0.001$" if x < 0.001 else f"${x:.3f}$",
         "p4": lambda: f"${x:.4f}$", "usd": lambda: "\\$" + f"{x:.2f}", "pct0": lambda: f"${100 * x:.0f}$\\%",
-        "bn": lambda: f"${x / 1e9:.2f}$", "word": lambda: str(x), "bool": lambda: "yes" if x else "no"}
+        "bn": lambda: f"${x / 1e9:.2f}$", "word": lambda: str(x), "nword": lambda: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"][round(x)], "bool": lambda: "yes" if x else "no"}
     return table[f]()
 
 
@@ -138,6 +138,8 @@ CONST.update({
     "3.7": "first v5 idle period, hours (V5-A8)", "26": "second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z)",
     "25\\%": "drift tolerance (§10; D1; PROTOCOL_V5 §9)", "64": "head dimension / step cap T_i (PROTOCOL_V4 §2, §3) / HQQ group size",
     "2": "dose / steps 2-8 / ln 2 / WikiText-2 name", "11": "date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5)",
+    "30": "date: 29-30 September 2026, the earlier routing pod (v5/closeout/billing_earlier_dps_2026-09.json)",
+    "80\\,GB": "A100 memory, earlier routing pod (commit fb3f20a)",
 })
 MODEL_RE = re.compile(r"(Qwen2\.5|Qwen3|Llama-3(\.\d)?|Llama-3\.\d-\d+B|Mistral-7B(-v0\.3)?|v0\.3|0\.5B|1\.5B|\d+B|NF4|FP16|BF16|A40|RTX|"
                       r"float64|GPT-6|H[1-5]|F[1-5]|X[1-9]\d*|r[4-8]b?|V4-A\d+|A\d+|D1|L\d|Step~0|3-shot|top-8|4-bit|16-bit|"

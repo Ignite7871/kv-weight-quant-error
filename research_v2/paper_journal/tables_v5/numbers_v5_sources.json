@@ -2140,23 +2140,32 @@
    ]
   },
   "cost.total": {
+   "val": "\\$14.29",
+   "raw": 14.285091773723252,
+   "fmt": "usd",
+   "src": "v5/closeout/billing_snapshot_2026-11-14.json#totals/totalAmount"
+  },
+  "both.cost": {
+   "val": "\\$26.42",
+   "raw": 26.415227298857644,
+   "fmt": "usd",
+   "op": "sum_ptrs",
+   "inputs": [
+    "v5/closeout/billing_snapshot_2026-11-14.json#totals/totalAmount",
+    "v4/closeout/billing_snapshot_2026-11-09.json#totals/totalAmount"
+   ]
+  },
+  "cost.ledger": {
    "val": "\\$13.88",
    "raw": 13.884,
    "fmt": "usd",
-   "op": "last_billing",
-   "inputs": [
-    "v5_runs/cost_ledger.jsonl"
-   ]
+   "src": "v5/closeout/billing_snapshot_2026-11-14.json#earlier_read/totalAmount"
   },
-  "both.cost": {
-   "val": "\\$26.01",
-   "raw": 26.014135525134392,
+  "cost.earlier": {
+   "val": "\\$11.23",
+   "raw": 11.22910087753553,
    "fmt": "usd",
-   "op": "last_billing_plus",
-   "inputs": [
-    "v5_runs/cost_ledger.jsonl",
-    "v4/closeout/billing_snapshot_2026-11-09.json#totals/totalAmount"
-   ]
+   "src": "v5/closeout/billing_earlier_dps_2026-09.json#totals/totalAmount"
   },
   "both.hours": {
    "val": "$33.4$",

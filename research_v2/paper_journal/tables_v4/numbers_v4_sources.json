@@ -3504,9 +3504,9 @@
    ]
   },
   "hfour.nqwenpos": {
-   "val": "$3$",
+   "val": "three",
    "raw": 3,
-   "fmt": "int",
+   "fmt": "nword",
    "op": "count_gt0",
    "inputs": [
     "v4_runs/v4_report.json#per_model/qwen2.5-0.5b/contrasts/NAT-C1/ci95/0",

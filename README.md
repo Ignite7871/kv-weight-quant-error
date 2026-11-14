@@ -1,7 +1,7 @@
 # Weight-quantization error in the KV cache: code, locks and per-problem records
 
 This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is
-Consistently Harsher across 0.5B–8B Language Models* (Gunupati, Anavekar and Varghese; submitted to the Journal of
+Consistently Harsher in Ten 0.5B–8B Base Language Models* (Gunupati, Anavekar and Varghese; submitted to the Journal of
 Artificial Intelligence Research). It holds the code, the protocol locks and their history, the manifests, and the
 per-problem records of the locked studies:
 

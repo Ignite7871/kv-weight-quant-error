@@ -1,0 +1,27 @@
+{
+ "source": "RunPod MCP list-billing, bucketSize=day, 2026-11-01T00:00Z to 2026-11-15T00:00Z (v5 window: 2026-11-12 and 2026-11-13); per-resource split from list-pod-billing and list-network-volume-billing",
+ "read_utc": "2026-11-14",
+ "note": "settled: all charges the provider billed in the v5 window, storage included. No billed bucket on 2026-11-10, 2026-11-11 or 2026-11-14. Every charge in the window is a v5 resource: pods wn05kmlrydwn3r and tg6m6i73d066oa, network volumes uhg5o7jcnw and qyo63u6wih. Supersedes the unsettled reading of 13.884 entered in v5_runs/cost_ledger.jsonl at 2026-11-13T09:37:29Z (two minutes after pod tg6m6i73d066oa was terminated).",
+ "earlier_read": {
+  "read_utc": "2026-11-13T09:37:29Z",
+  "totalAmount": 13.884
+ },
+ "totals": {
+  "podGpuAmount": 14.059744552825578,
+  "podDiskAmount": 0.09895832743495703,
+  "storageStandardAmount": 0.12638889346271753,
+  "totalAmount": 14.285091773723252
+ },
+ "days": {
+  "2026-11-12": 11.724059543106705,
+  "2026-11-13": 2.561032230616547
+ },
+ "by_resource": {
+  "pod wn05kmlrydwn3r": 12.307978942524642,
+  "pod tg6m6i73d066oa": 1.8507239377358928,
+  "volume uhg5o7jcnw": 0.10694444831460714,
+  "volume qyo63u6wih": 0.01944444514811039
+ },
+ "ceiling_usd": 15,
+ "paid_by": "corresponding author, personally (prepaid RunPod credit)"
+}

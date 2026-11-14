@@ -1,7 +1,7 @@
 # v1.1.0: second locked study (v5)
 
 Release accompanying *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value
-Error Is Consistently Harsher across 0.5B–8B Language Models* (Gunupati, Anavekar, and Varghese;
+Error Is Consistently Harsher in Ten 0.5B–8B Base Language Models* (Gunupati, Anavekar, and Varghese;
 submitted to the *Journal of Artificial Intelligence Research*).
 
 ## What's new

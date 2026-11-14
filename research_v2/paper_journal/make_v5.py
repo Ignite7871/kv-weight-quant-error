@@ -186,10 +186,12 @@ def build_ops():
     put("gpu.hours", ledger_hours("v5_runs/gpu_ledger.jsonl"), "u1", op="ledger_hours", inputs=["v5_runs/gpu_ledger.jsonl"])
     put("gpu.dthree", ledger_hours("v5_runs/gpu_ledger.jsonl", "2026-11-13"), "u1", op="ledger_hours_since",
         inputs=["v5_runs/gpu_ledger.jsonl", "2026-11-13"])
-    bills = [r for r in load("v5_runs/cost_ledger.jsonl") if r.get("kind") == "billing"]
-    put("cost.total", bills[-1]["usd"], "usd", op="last_billing", inputs=["v5_runs/cost_ledger.jsonl"])
+    v5c = "v5/closeout/billing_snapshot_2026-11-14.json#totals/totalAmount"
     v4c = "v4/closeout/billing_snapshot_2026-11-09.json#totals/totalAmount"
-    put("both.cost", bills[-1]["usd"] + get(v4c), "usd", op="last_billing_plus", inputs=["v5_runs/cost_ledger.jsonl", v4c])
+    src("cost.total", v5c, "usd")
+    put("both.cost", get(v5c) + get(v4c), "usd", op="sum_ptrs", inputs=[v5c, v4c])
+    src("cost.ledger", "v5/closeout/billing_snapshot_2026-11-14.json#earlier_read/totalAmount", "usd")
+    src("cost.earlier", "v5/closeout/billing_earlier_dps_2026-09.json#totals/totalAmount", "usd")
     put("both.hours", ledger_hours("v5_runs/gpu_ledger.jsonl") + ledger_hours("v4_runs/gpu_ledger.jsonl"), "u1", op="ledger_hours_sum",
         inputs=["v5_runs/gpu_ledger.jsonl", "v4_runs/gpu_ledger.jsonl"])
     src("cost.rate", "v5_runs/cost_config.json#rate_usd_per_h", "usd")

@@ -91,6 +91,8 @@ def recompute(e):
         return last_billing(ins[0])
     if op == "last_billing_plus":
         return last_billing(ins[0]) + at(ins[1])
+    if op == "sum_ptrs":
+        return sum(at(p) for p in ins)
     if op == "count_rows":
         return len(jl(ins[0]))
     if op == "count_true_field":
@@ -231,7 +233,7 @@ def claims(vsv):
     add("D3: calibration recomputed equal to the locked hash; 13 of 13 surviving problems bitwise equal",
         jl("v5_runs/U1/d3_calibration_check.json")["equal"] is True and len(refs) == 13 and all(x["bitwise_equal"] for x in refs))
     add("D3 declares gm_D2.json lost", "gm_D2.json" in jl("v5/deviations/V5-D3.json").get("lost_appendix_files", {}))
-    add("v5 billed cost under the $15 ceiling", last_billing("v5_runs/cost_ledger.jsonl") < 15)
+    add("v5 billed cost under the $15 ceiling", at("v5/closeout/billing_snapshot_2026-11-14.json#totals/totalAmount") < 15)
     return C
 
 
