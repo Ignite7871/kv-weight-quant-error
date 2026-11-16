@@ -1,0 +1,17 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{Where the value-path excess comes from (v6, fresh problems). $\theta_V=\theta(\text{NAT-V},\text{C1-V})$ (H2) splits exactly, per problem, into a common-mode part $\theta_{\mathrm{cm}}=\theta(\text{NAT-V},\text{NAT-V-cen})$ and a direction part $\theta_{\mathrm{dir}}=\theta(\text{NAT-V-cen},\text{C1-V})$ (L3, estimation target). The last column is the same split of the measured local head-output energy (L4). Estimates with 95\% problem-bootstrap intervals below them.}
+\label{tab:v6main}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lr lll ll@{}}
+\toprule
+ & & \multicolumn{3}{c}{Outcome contrast (L3)} & \multicolumn{2}{c}{Common-mode share} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+Model & $n$ & $\theta_V$ & $\theta_{\mathrm{cm}}$ & $\theta_{\mathrm{dir}}$ & of $\theta_V$ (L3) & of energy (L4) \\
+\midrule
+Qwen2.5-0.5B & \vsix{n.qa} & \makecell[l]{\vsix{tv.qa.est}\\\vsix{tv.qa.ci}} & \makecell[l]{\vsix{tcm.qa.est}\\\vsix{tcm.qa.ci}} & \makecell[l]{\vsix{tdir.qa.est}\\\vsix{tdir.qa.ci}} & \makecell[l]{\vsix{scm.qa.est}\\\vsix{scm.qa.ci}} & \makecell[l]{\vsix{lsh.qa.est}\\\vsix{lsh.qa.ci}} \\
+Llama-3.2-1B & \vsix{n.la} & \makecell[l]{\vsix{tv.la.est}\\\vsix{tv.la.ci}} & \makecell[l]{\vsix{tcm.la.est}\\\vsix{tcm.la.ci}} & \makecell[l]{\vsix{tdir.la.est}\\\vsix{tdir.la.ci}} & \makecell[l]{\vsix{scm.la.est}\\\vsix{scm.la.ci}} & \makecell[l]{\vsix{lsh.la.est}\\\vsix{lsh.la.ci}} \\
+Qwen2.5-1.5B & \vsix{n.qb} & \makecell[l]{\vsix{tv.qb.est}\\\vsix{tv.qb.ci}} & \makecell[l]{\vsix{tcm.qb.est}\\\vsix{tcm.qb.ci}} & \makecell[l]{\vsix{tdir.qb.est}\\\vsix{tdir.qb.ci}} & \makecell[l]{\vsix{scm.qb.est}\\\vsix{scm.qb.ci}} & \makecell[l]{\vsix{lsh.qb.est}\\\vsix{lsh.qb.ci}} \\
+\bottomrule
+\end{tabular}
+\end{table}

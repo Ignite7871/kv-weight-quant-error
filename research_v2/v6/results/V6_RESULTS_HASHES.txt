@@ -1,0 +1,9 @@
+V6 TEST-PHASE RESULTS: SHA-256 of the two reports (accepted by the corresponding author, 2026-11-16)
+The files themselves are under v6_runs/ (git-ignored) and are published with the release; this file fixes their content.
+Produced once each on 2026-11-15 under lock 00369b8d99cefd69 + V6-D1 + V6-D2 (AI_USE_LOG_V6.md, last row).
+
+98626e3ec4a26da93fc6e45ac0a104264ad9fd914f8b14bb26b36c2ab246acc1  research_v2/v6_runs/v6_report.json         (v6/analyze_v6.py)
+ec169a0d628cb2ea875406806afdc7d320333395ba08978f92a248ca804b5be6  research_v2/v6_runs/v6_recomputation.json  (v6/recompute_v6_independent.py; 264 compared, 0 outside tolerance, 0 verdict disagreements)
+
+Verdicts (PROTOCOL_V6 s7): L1 agreement; L2 neither; L5 agreement; L6 neither; L7 neither (i true, ii false, iii true);
+L8a agreement; L8b disagreement; L9a agreement; L9b agreement.

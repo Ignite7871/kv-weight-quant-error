@@ -1,0 +1,164 @@
+{
+ "defined": 381,
+ "used": 289,
+ "undefined": [],
+ "rederived": 381,
+ "mismatches": [],
+ "recomputation_checked": 177,
+ "recomputation_failures": [],
+ "recomputation_not_held": 86,
+ "claims": [
+  {
+   "claim": "Report hashes equal the committed V6_RESULTS_HASHES.txt values",
+   "ok": true
+  },
+  {
+   "claim": "n = 100 (Qwen2.5-0.5B, 13 arms) and 70 (Llama-3.2-1B, Qwen2.5-1.5B; 10 arms) = design n",
+   "ok": true
+  },
+  {
+   "claim": "V6-D1 cuts: per-channel key arms and NAT-K-cen absent from the 10-arm models",
+   "ok": true
+  },
+  {
+   "claim": "Recomputation: 264 compared, 0 outside tolerance, 0 verdict disagreements",
+   "ok": true
+  },
+  {
+   "claim": "Ledger total under the 16 h cap; test blocks are a subset",
+   "ok": true
+  },
+  {
+   "claim": "Replication: H1 < 0, H2 > 0, H3 < 0 with 95% CIs excluding 0 in all three models",
+   "ok": true
+  },
+  {
+   "claim": "L3: theta_cm > 0 (CI excludes 0) and theta_dir > 0 (CI excludes 0) in every model ('milder in every model', 'remained much harsher')",
+   "ok": true
+  },
+  {
+   "claim": "L3: theta_cm + theta_dir = theta_V exactly (identity) in every model",
+   "ok": true
+  },
+  {
+   "claim": "L3: direction carries most (share_cm < 0.5 with CI upper < 0.5) in every model",
+   "ok": true
+  },
+  {
+   "claim": "L4: common mode carries most of the head-output energy (share > 0.5, CI lower > 0.5) in every model",
+   "ok": true
+  },
+  {
+   "claim": "Superseded band: Qwen2.5-1.5B share below 0.2; other two inside [0.2, 0.8]",
+   "ok": true
+  },
+  {
+   "claim": "Pilot centering closed 'somewhat more' (pilot G min above every v6 share)",
+   "ok": true
+  },
+  {
+   "claim": "L1 agreement thresholds: V <= ln1.25, K <= ln1.5 in every model",
+   "ok": true
+  },
+  {
+   "claim": "Abstract L1 range = overall min (V) to overall max (K) over both paths",
+   "ok": true
+  },
+  {
+   "claim": "L5 <= ln 1.5 in every model",
+   "ok": true
+  },
+  {
+   "claim": "L2: every CI includes 0; none entirely <= 0 (neither, not disagreement); every Holm p above printed floor",
+   "ok": true
+  },
+  {
+   "claim": "L6: model-level lin_K log ratio has the sign of H1 in every model; every Spearman CI includes 0",
+   "ok": true
+  },
+  {
+   "claim": "L8a: CI > 0 in every model and every Holm p <= printed bound",
+   "ok": true
+  },
+  {
+   "claim": "L8b: estimate negative with CI entirely below 0 in every model (falsified)",
+   "ok": true
+  },
+  {
+   "claim": "L9a and L9b: CI > 0 in every model",
+   "ok": true
+  },
+  {
+   "claim": "L7(i): n*C^V of ST-V <= 2 in every model",
+   "ok": true
+  },
+  {
+   "claim": "L7(iii): rho ratio >= 1 and ST-K - ST-V CI > 0 in every model",
+   "ok": true
+  },
+  {
+   "claim": "L7(ii): ST-K@nat - C1-K 95% CI entirely below 0 in all three models",
+   "ok": true
+  },
+  {
+   "claim": "L7(ii): K 90% CI outside the margin in Qwen2.5-0.5B and Qwen2.5-1.5B, inside in Llama-3.2-1B",
+   "ok": true
+  },
+  {
+   "claim": "L7(ii): V equivalence (90% CI inside margin) in all three",
+   "ok": true
+  },
+  {
+   "claim": "L7 margin = the model's v4 locked margin (v4 report)",
+   "ok": true
+  },
+  {
+   "claim": "Exactly three 'neither' verdicts (L2, L6, L7) = 'three further tests were inconclusive'",
+   "ok": true
+  },
+  {
+   "claim": "Exactly one disagreement (L8b)",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] NAT-V-cen median A_cov within 0.05 of NAT-V in every model ('centering left it unchanged')",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] ST-V@nat median A_cov below C1-V's in every model ('slightly below isotropic')",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] NAT-V median A_cov above C1-V's in every model",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] per-channel key arm (Qwen2.5-0.5B only) lowers ST-K vs ST-V harm: theta(ST-Kc,ST-V) < theta(ST-K,ST-V)",
+   "ok": true
+  },
+  {
+   "claim": "[descriptive] key centering: theta_cm^K CI includes 0; theta_dir^K within 0.1 of H1 ('essentially all direction')",
+   "ok": true
+  },
+  {
+   "claim": "R block: 10 units (8 v4 + U1, U2)",
+   "ok": true
+  },
+  {
+   "claim": "R2: positive with CI excluding 0 in all 10 units",
+   "ok": true
+  },
+  {
+   "claim": "R1: Qwen2.5-3B, Qwen2.5-7B, Llama-3.1-8B CIs include 0 ('flat'); 6 positive-significant",
+   "ok": true
+  },
+  {
+   "claim": "R4: rho_K > 0.5 and > placebo in all 10 units",
+   "ok": true
+  },
+  {
+   "claim": "R verdicts as printed: R1 neither, R3 agreement, R4 agreement",
+   "ok": true
+  }
+ ]
+}

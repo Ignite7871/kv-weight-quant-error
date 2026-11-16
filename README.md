@@ -1,28 +1,36 @@
 # Weight-quantization error in the KV cache: code, locks and per-problem records
 
-This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is
-Consistently Harsher in Ten 0.5B–8B Base Language Models* (Gunupati, Anavekar and Varghese; submitted to the Journal of
-Artificial Intelligence Research). It holds the code, the protocol locks and their history, the manifests, and the
-per-problem records of the locked studies:
+This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Aligned with the Value Signal:
+Direction, Not Common Mode, Carries Most of the Value-Path Excess* (Gunupati, Anavekar and Varghese; prepared for the Journal
+of Machine Learning Research). It holds the code, the protocol locks and their history, the manifests, and the per-problem
+records of the locked studies:
 
-- **v4, the scale study** (main result): eight base models, 0.5B–8B parameters, three families, on a rented NVIDIA A40.
+- **v6, the logging study** (Sections 3 and 6 of the article; added in v1.2.0): a first-order model of the head output and
+  its tests on fresh GSM8K problems in Qwen2.5-0.5B, Llama-3.2-1B and Qwen2.5-1.5B, with logged attention internals,
+  centered arms, storage-error arms and two direction (alignment) statistics. It ran on a laptop RTX 4060 under lock
+  `00369b8d99cefd69` plus the deviations V6-D1 (cut level at the true speed: n = 70 and 10 arms for the second and third
+  models) and V6-D2 (independent recomputation added before the analysis). Also the R block, pre-specified secondary analyses
+  of the v4/v5 records (`v6/results/`).
+- **v4, the scale study** (Section 5 of the article): eight base models, 0.5B–8B parameters, three families, on a rented NVIDIA A40.
   Lock `b0b191df9bee180e` plus the post-data deviation D1.
-- **v5, the second locked study** (Section 6 of the article; added in v1.1.0): size against head dimension (Qwen3-0.6B-Base,
-  SmolLM2-1.7B), a second 4-bit quantizer (HQQ) and a second task (WikiText-2), with an anchor that reruns a v4 model. It ran on a
-  rented NVIDIA A40 under lock `14d2e1bf669417b8` plus the post-data deviations D1–D3.
-- **v3, the four-model mechanism study** (Section 6 of the article): Qwen2.5-0.5B and Llama-3.2-1B, base and instruct, on a
-  laptop RTX 4060. Lock `7325f563ce2978d8`, with the follow-ups X9 and X13.
+- **v5, the generality study** (Section 5 and Appendix B of the article; added in v1.1.0): size against head dimension
+  (Qwen3-0.6B-Base, SmolLM2-1.7B), a second 4-bit quantizer (HQQ) and a second task (WikiText-2), with an anchor that reruns a
+  v4 model. It ran on a rented NVIDIA A40 under lock `14d2e1bf669417b8` plus the post-data deviations D1–D3.
+- **v3, the four-model pilot** (Appendix C.2 of the article): Qwen2.5-0.5B and Llama-3.2-1B, base and instruct, on a laptop
+  RTX 4060. Lock `7325f563ce2978d8`, with the follow-ups X9 and X13.
 
 No model weights are included. Every model is downloaded from Hugging Face at the revision pinned in the manifests.
 
 ## Getting the records
 
 The per-problem records are too large for the git history and are attached to the GitHub Release
-[v1.1.0](https://github.com/Ignite7871/kv-weight-quant-error/releases/tag/v1.1.0) as six archives (the five of v1.0.0,
-unchanged, and `v5_runs.tar.gz`). Download them and unpack each inside `research_v2/`:
+[v1.2.0](https://github.com/Ignite7871/kv-weight-quant-error/releases/tag/v1.2.0) as seven archives (the six of v1.1.0,
+unchanged, and `v6_runs.tar.gz`). The two v6 reports are also in the git tree (`research_v2/v6_runs/`). Download the archives
+and unpack each inside `research_v2/`:
 
 | Asset | Unpacks to | SHA-256 |
 |---|---|---|
+| `v6_runs.tar.gz` | `research_v2/v6_runs/` | `28ced3f6b6b59b968620df70ee2eb127c2fb75aaac6d28ffa63b59c990b2508d` |
 | `v5_runs.tar.gz` | `research_v2/v5_runs/` | `4c95eec74dae1d0bb25d16cd0f2887da7364f08ff34bad2a873893c36a63c49f` |
 | `v4_runs.tar.gz` | `research_v2/v4_runs/` | `0e064c7b3d57ca6f5d3c5869d40c4e7e681f501fd619c97eb697d6897de41623` |
 | `v3_runs.tar.gz` | `research_v2/v3_runs/` | `9cd1250b8991dcf07d7a9749d92db3729e2fe09682deaf5bf6f4caa808df2999` |
@@ -32,7 +40,7 @@ unchanged, and `v5_runs.tar.gz`). Download them and unpack each inside `research
 
 ```
 cd research_v2
-for f in v5_runs v4_runs v3_runs v3_runs_x9 v3_runs_x13 e1_e1l_runs; do tar -xzf ../$f.tar.gz; done
+for f in v6_runs v5_runs v4_runs v3_runs v3_runs_x9 v3_runs_x13 e1_e1l_runs; do tar -xzf ../$f.tar.gz; done
 cd .. && python verify_release.py
 ```
 
@@ -43,6 +51,9 @@ cd .. && python verify_release.py
 | Path | Contents |
 |---|---|
 | `src/` | `dynamic_linear.py`, `dynamic_model.py`: the dual FP16/NF4 linear layers used by every study |
+| `research_v2/v6/` | v6 protocol (`PROTOCOL_V6.md`) and theory plan (`THEORY_PLAN_V6.md`), novelty check, logging and driver (`rv6.py`, `run_v6.py`), test launcher and power-throttling watcher, locked analysis (`analyze_v6.py`), R-block plan and analysis (`R_ANALYSIS_PLAN_V6.md`, `analyze_r_v6.py`), independent recomputation (`recompute_v6_independent.py`) and its tolerances, deviation log, AI-use log, sample, tests, RoPE-config provenance, rehearsal gate records, R-block report and the SHA-256 of the two accepted reports (`results/V6_RESULTS_HASHES.txt`) |
+| `research_v2/V6_PROTOCOL_LOCK.txt` | the v6 lock |
+| `research_v2/v6_runs/` | v6 records: per model the arm JSONL files and per-problem `.npz` arrays of the logged quantities, for the rehearsal and the test phase; the GPU ledger, design (before and after V6-D1), launcher status and logs; the authorization files; the locked report `v6_report.json` and its recomputation `v6_recomputation.json` |
 | `research_v2/v4/` | v4 protocol (`PROTOCOL_V4.md`), driver (`run_v4.py`, `rv4.py`, `v4_ops.py`), locked analysis (`analyze_v4.py`), independent recomputation (`recompute_v4_independent.py`) and its tolerances, exploratory plan and code, deviation log, deviation record (`deviations/V4-D1.json`), AI-use log, lock history, model manifest, sample, tests, cloud runbook, fallback driver, close-out records |
 | `research_v2/V4_PROTOCOL_LOCK.txt` | the v4 lock, with every appended line (GM, Step 0, design, calibrations, deviation D1, GM D1) |
 | `research_v2/v4_runs/` | v4 records: per model `calib/` and `test/` (one JSONL per arm, one `.npz` of common-mode statistics per problem), `calibration.json`, gate logs, manifests; the GPU and cost ledgers; the gate-check (GM) outputs; Step 0; the locked report `v4_report.json`, the recomputation and the exploratory output; the authorization files of every GPU run |
@@ -53,7 +64,7 @@ cd .. && python verify_release.py
 | `research_v2/v3_runs/`, `v3_runs_x9/`, `v3_runs_x13/` | v3 records, and those of its two follow-ups |
 | `research_v2/e1_runs/`, `e1l_runs/`, earlier `*_SPEC.md`, `*_REPORT.md`, `*_LOCK.txt` | the earlier studies that v3 builds on (background; used by the v3 generator) |
 | `research_v2/tools/` | lock tools (`lock_v3.py`, `lock_v4.py`, `lock_v5.py`), mutation checks, remote-execution tools, secret scan, manifest builders, the D3 restore-set builder and the WikiText-2 release scan |
-| `research_v2/paper_journal/` | the generators of every number, table and figure in the article (`make_v5.py`, `make_v4.py`, `make_v3.py`), their outputs, and the number audits (`audit/`) |
+| `research_v2/paper_journal/` | the generators of every number, table and figure in the article (`make_v6.py`, `make_v5.py`, `make_v4.py`, `make_v3.py`), their outputs, and the number audits (`audit/`) |
 
 ## Reproducing the analyses (CPU only)
 
@@ -61,7 +72,12 @@ Python 3.12 with the packages in `research_v2/v4/V4_PACKAGES.txt` (torch 2.13.0+
 numpy only). From `research_v2/`:
 
 ```
-python ../verify_release.py                          # every locked file and run file hashes to the v3, v4 and v5 locks
+python ../verify_release.py                          # every locked file and run file hashes to the v3-v6 locks; the four reports
+python v6/analyze_v6.py                              # rewrites v6_runs/v6_report.json
+python v6/recompute_v6_independent.py                # v6 independent recomputation (264 quantities)
+python v6/analyze_r_v6.py                            # R block on the v4/v5 records
+python paper_journal/make_v6.py                      # every v6 number macro, table and the figure of the article
+python paper_journal/audit/audit_v6_numbers.py       # re-derives every v6 macro, checks it against the recomputation
 python v4/analyze_v4.py analyze                      # rewrites v4_runs/v4_report.json (about 80 min on CPU)
 python v4/recompute_v4_independent.py                # independent recomputation, compared under the declared tolerances
 python v4/exploratory_v4.py                          # exploratory X1-X4
@@ -73,6 +89,10 @@ python paper_journal/make_v5.py                      # every v5 number macro and
 python paper_journal/audit/audit_v5_numbers.py       # re-derives every v5 macro, checks it against the recomputation
 ```
 
+`recompute_v6_independent.py` reads each v6 model's RoPE parameters from its pinned `config.json` in the local Hugging Face
+cache (the config file alone suffices; its git-blob hash is checked against `v4/V4_MODEL_MANIFEST.json`).
+`v6_runs/v6_report.json` must hash to `98626e3ec4a26da93fc6e45ac0a104264ad9fd914f8b14bb26b36c2ab246acc1` and
+`v6_runs/v6_recomputation.json` to `ec169a0d628cb2ea875406806afdc7d320333395ba08978f92a248ca804b5be6` (checked by `make_v6.py`).
 `v5_runs/v5_report.json` must hash to `2f00f5113aec05f67990fac55e9150340780f31273a18080d2e276db0f493706` (checked by
 `make_v5.py`). The two audit scripts also read the manuscript sources, which are not included, so in this repository they
 exit at once with a missing-file error. Their outputs, run on the full sources, are included (`audit/V4_NUMBER_AUDIT.md`,
@@ -100,7 +120,7 @@ Re-running the GPU studies needs the models, a CUDA GPU and an authorization fil
 - `gm_D2.json`, the GM record of v5 deviation D2: it was never checkpointed and was lost with the first cloud volume. V5-D3
   declares it lost and keeps its hash; `verify_release.py` reports it as recorded lost.
 - WikiText-2 text and token ids (see `NOTICE`).
-- The manuscript sources and internal review documents.
+- The manuscript sources, the submission plan (`v6/JMLR_PLAN.md`) and internal review documents.
 - Access tokens: the model-download token existed only as a cloud-provider secret and was never written to disk.
 
 ## Licences

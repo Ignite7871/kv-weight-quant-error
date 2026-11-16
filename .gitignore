@@ -31,3 +31,8 @@ research_v2/v4_runs/
 
 # v5 cloud run state: records, ledgers, authorization copies, pod_ssh.json, known_hosts (PROTOCOL_V5 section 10)
 research_v2/v5_runs/
+
+# v6 laptop run state: records, ledger, authorization copies (PROTOCOL_V6 section 11); the two reports are tracked
+research_v2/v6_runs/*
+!research_v2/v6_runs/v6_report.json
+!research_v2/v6_runs/v6_recomputation.json

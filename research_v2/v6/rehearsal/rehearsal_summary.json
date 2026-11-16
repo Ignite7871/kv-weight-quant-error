@@ -1,0 +1,169 @@
+{
+ "note": "per-problem SDs of outcome contrasts and timing only; no contrast means, no alignment values and no verdicts are computed or printed (PROTOCOL_V6 s10)",
+ "qwen2.5-0.5b": {
+  "n_problems": 8,
+  "per_problem_sd": {
+   "H2 NAT-V vs C1-V": 0.4850394576774011,
+   "H1 NAT-K vs C1-K": 0.23146049109066744,
+   "H3 NAT-K vs NAT-V": 0.4465817239270725,
+   "L3 theta_cm": 0.38341460377502457,
+   "L3 theta_dir": 0.5376241921148605,
+   "L7ii ST-K@nat vs C1-K": 0.45964978593852285,
+   "L7ii ST-V@nat vs C1-V": 0.585373285490925,
+   "L7iii ST-K vs ST-V": 1.3615437813622253,
+   "L9a NAT-V-cen vs ST-V@nat-cen": 0.23401074591583465
+  },
+  "G2_all_bitwise": true,
+  "integrity_failures": 0,
+  "G3": {
+   "problems": [
+    {
+     "index": 172,
+     "S": 64,
+     "pilot_S": 64,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.3000017622011608
+    },
+    {
+     "index": 811,
+     "S": 26,
+     "pilot_S": 26,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.4027705729807334
+    },
+    {
+     "index": 334,
+     "S": 64,
+     "pilot_S": 64,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.6163357621134544
+    }
+   ],
+   "bitwise_all": false,
+   "within_tolerance_all": false
+  },
+  "G4_real": true,
+  "seconds_per_problem_all_13_arms": 134.55811132499997,
+  "seconds_per_arm_mean": {
+   "NAT-K": 10.159854549999949,
+   "NAT-V": 10.79787656250005,
+   "C1-K": 11.028845487499979,
+   "C1-V": 10.463551649999943,
+   "NAT-K-cen": 10.351671562499916,
+   "NAT-V-cen": 10.244956500000029,
+   "ST-K": 10.062297775000019,
+   "ST-V": 10.117354562499997,
+   "ST-K@nat": 10.31959122500001,
+   "ST-V@nat": 10.448276337499976,
+   "ST-V@nat-cen": 10.099814725000016,
+   "ST-Kc": 10.172754175000023,
+   "ST-Kc@nat": 10.291266212500062
+  },
+  "logging_overhead_factor_NAT-V": 1.8173863200769351,
+  "block_seconds": 1187.6802008000002
+ },
+ "llama3.2-1b": {
+  "n_problems": 8,
+  "per_problem_sd": {
+   "H2 NAT-V vs C1-V": 0.6718853449878784,
+   "H1 NAT-K vs C1-K": 0.47149359841050764,
+   "H3 NAT-K vs NAT-V": 0.3467547626695718,
+   "L3 theta_cm": 0.11303873381697006,
+   "L3 theta_dir": 0.6119230982013054,
+   "L7ii ST-K@nat vs C1-K": 0.5605536492202517,
+   "L7ii ST-V@nat vs C1-V": 0.5210588923222489,
+   "L7iii ST-K vs ST-V": 0.6383357722412358,
+   "L9a NAT-V-cen vs ST-V@nat-cen": 0.5684643581197967
+  },
+  "G2_all_bitwise": true,
+  "integrity_failures": 0,
+  "G3": {
+   "problems": [
+    {
+     "index": 172,
+     "S": 64,
+     "pilot_S": 64,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.40890068177111694
+    },
+    {
+     "index": 811,
+     "S": 64,
+     "pilot_S": 64,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.2493241568810145
+    },
+    {
+     "index": 334,
+     "S": 54,
+     "pilot_S": 54,
+     "history_equal_length": true,
+     "bitwise": false,
+     "max_abs_dlnjs": 0.512183483307922
+    }
+   ],
+   "bitwise_all": false,
+   "within_tolerance_all": false
+  },
+  "G4_real": true,
+  "seconds_per_problem_all_13_arms": 93.7030724375,
+  "seconds_per_arm_mean": {
+   "NAT-K": 7.418062524999982,
+   "NAT-V": 7.043599212500055,
+   "C1-K": 7.02838104999995,
+   "C1-V": 6.783719587499945,
+   "NAT-K-cen": 7.0215645500000505,
+   "NAT-V-cen": 6.9968606500000305,
+   "ST-K": 6.935873437499993,
+   "ST-V": 7.037344762499913,
+   "ST-K@nat": 7.009598975000017,
+   "ST-V@nat": 7.295038599999998,
+   "ST-V@nat-cen": 7.628307412500078,
+   "ST-Kc": 7.394251487500014,
+   "ST-Kc@nat": 8.11047018749997
+  },
+  "logging_overhead_factor_NAT-V": 1.691238855684753,
+  "block_seconds": 838.0500290999998
+ },
+ "qwen2.5-1.5b": {
+  "n_problems": 8,
+  "per_problem_sd": {
+   "H2 NAT-V vs C1-V": 0.4022687812132695,
+   "H1 NAT-K vs C1-K": 0.44157696468451507,
+   "H3 NAT-K vs NAT-V": 0.6061253040280895,
+   "L3 theta_cm": 0.3956364814019492,
+   "L3 theta_dir": 0.39743438611072424,
+   "L7ii ST-K@nat vs C1-K": 0.8587600930565703,
+   "L7ii ST-V@nat vs C1-V": 0.7043152467532396,
+   "L7iii ST-K vs ST-V": 0.581281448175548,
+   "L9a NAT-V-cen vs ST-V@nat-cen": 0.4570968358585472
+  },
+  "G2_all_bitwise": true,
+  "integrity_failures": 0,
+  "G3": null,
+  "G4_real": true,
+  "seconds_per_problem_all_13_arms": 155.8415464000003,
+  "seconds_per_arm_mean": {
+   "NAT-K": 11.894858799999952,
+   "NAT-V": 12.13514143750001,
+   "C1-K": 11.974359000000163,
+   "C1-V": 12.154956175000166,
+   "NAT-K-cen": 12.003960049999762,
+   "NAT-V-cen": 11.83498556249998,
+   "ST-K": 11.913538450000033,
+   "ST-V": 11.943485487500027,
+   "ST-K@nat": 11.85950577500006,
+   "ST-V@nat": 12.389219637500048,
+   "ST-V@nat-cen": 11.970864300000017,
+   "ST-Kc": 11.95261921249994,
+   "ST-Kc@nat": 11.814052512500155
+  },
+  "logging_overhead_factor_NAT-V": 1.7577632998002979,
+  "block_seconds": 1353.4923526000002
+ }
+}

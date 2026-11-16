@@ -1,0 +1,22 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{R block: pre-specified secondary analyses of the v4 and v5 records (not blind; the aggregate results of these records had been seen). R1: slope of the per-step log ratio NAT-V/C1-V on $\ln t$; R2: that log ratio at step 2, where only one perturbed entry exists; R3: problem-level Spearman of the value common-mode statistic with H2; R4: Spearman of the per-rotary-pair share of the key common mode with the RoPE attenuation factor, and the same on values as a placebo. 95\% intervals. Verdicts: R1 \vsix{rb.verd.R1}, R3 \vsix{rb.verd.R3}, R4 \vsix{rb.verd.R4}.}
+\label{tab:rblock}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l ll ll r rr@{}}
+\toprule
+Model & R1 slope & 95\% CI & R2 $r_2$ & 95\% CI & R3 $\rho$ & R4 $\rho_K$ & placebo $\rho_V$ \\
+\midrule
+Qwen2.5-0.5B & \vsix{rb.r1.qwen2505b.est} & \vsix{rb.r1.qwen2505b.ci} & \vsix{rb.r2.qwen2505b.est} & \vsix{rb.r2.qwen2505b.ci} & \vsix{rb.r3.qwen2505b} & \vsix{rb.r4K.qwen2505b} & \vsix{rb.r4V.qwen2505b} \\
+Qwen2.5-1.5B & \vsix{rb.r1.qwen2515b.est} & \vsix{rb.r1.qwen2515b.ci} & \vsix{rb.r2.qwen2515b.est} & \vsix{rb.r2.qwen2515b.ci} & \vsix{rb.r3.qwen2515b} & \vsix{rb.r4K.qwen2515b} & \vsix{rb.r4V.qwen2515b} \\
+Qwen2.5-3B & \vsix{rb.r1.qwen253b.est} & \vsix{rb.r1.qwen253b.ci} & \vsix{rb.r2.qwen253b.est} & \vsix{rb.r2.qwen253b.ci} & \vsix{rb.r3.qwen253b} & \vsix{rb.r4K.qwen253b} & \vsix{rb.r4V.qwen253b} \\
+Qwen2.5-7B & \vsix{rb.r1.qwen257b.est} & \vsix{rb.r1.qwen257b.ci} & \vsix{rb.r2.qwen257b.est} & \vsix{rb.r2.qwen257b.ci} & \vsix{rb.r3.qwen257b} & \vsix{rb.r4K.qwen257b} & \vsix{rb.r4V.qwen257b} \\
+Llama-3.2-1B & \vsix{rb.r1.llama321b.est} & \vsix{rb.r1.llama321b.ci} & \vsix{rb.r2.llama321b.est} & \vsix{rb.r2.llama321b.ci} & \vsix{rb.r3.llama321b} & \vsix{rb.r4K.llama321b} & \vsix{rb.r4V.llama321b} \\
+Llama-3.2-3B & \vsix{rb.r1.llama323b.est} & \vsix{rb.r1.llama323b.ci} & \vsix{rb.r2.llama323b.est} & \vsix{rb.r2.llama323b.ci} & \vsix{rb.r3.llama323b} & \vsix{rb.r4K.llama323b} & \vsix{rb.r4V.llama323b} \\
+Llama-3.1-8B & \vsix{rb.r1.llama318b.est} & \vsix{rb.r1.llama318b.ci} & \vsix{rb.r2.llama318b.est} & \vsix{rb.r2.llama318b.ci} & \vsix{rb.r3.llama318b} & \vsix{rb.r4K.llama318b} & \vsix{rb.r4V.llama318b} \\
+Mistral-7B-v0.3 & \vsix{rb.r1.mistral7bv03.est} & \vsix{rb.r1.mistral7bv03.ci} & \vsix{rb.r2.mistral7bv03.est} & \vsix{rb.r2.mistral7bv03.ci} & \vsix{rb.r3.mistral7bv03} & \vsix{rb.r4K.mistral7bv03} & \vsix{rb.r4V.mistral7bv03} \\
+Qwen3-0.6B-Base & \vsix{rb.r1.u1.est} & \vsix{rb.r1.u1.ci} & \vsix{rb.r2.u1.est} & \vsix{rb.r2.u1.ci} & \vsix{rb.r3.u1} & \vsix{rb.r4K.u1} & \vsix{rb.r4V.u1} \\
+SmolLM2-1.7B & \vsix{rb.r1.u2.est} & \vsix{rb.r1.u2.ci} & \vsix{rb.r2.u2.est} & \vsix{rb.r2.u2.ci} & \vsix{rb.r3.u2} & \vsix{rb.r4K.u2} & \vsix{rb.r4V.u2} \\
+\bottomrule
+\end{tabular}
+\end{table}

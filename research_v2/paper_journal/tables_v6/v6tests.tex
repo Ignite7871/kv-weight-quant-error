@@ -1,0 +1,20 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{Counted tests of the v6 block on fresh problems, with the verdict under the criteria fixed before the rehearsal (Section~\ref{sec:program:hyp}). Agreement needs: L1, medians $\le\ln1.25$ (V) and $\le\ln1.5$ (K) in every model; L5, $\le\ln1.5$ in every model; L8a, L8b, L2, a 95\% interval above 0 and Holm $p<0.05$ in every model; L9a, L9b, the same in at least two models and no interval below 0; L6, model-level signs agreeing with H1 and $\rho$ positive-significant in at least two models. Holm runs over \vsix{holm.n} model-level $p$-values. Alignment differences are per-problem means of log ratios to the isotropic expectation. L7 is in Table~\ref{tab:v6st}. Estimates with 95\% intervals below them.}
+\label{tab:v6tests}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l p{3.3cm} lll l@{}}
+\toprule
+Test & Statistic & Qwen2.5-0.5B & Llama-3.2-1B & Qwen2.5-1.5B & Verdict \\
+\midrule
+L1 & median $|\ln(\mathrm{pred}/\mathrm{meas})|$, V; K & \vsix{lone.V.qa}; \vsix{lone.K.qa} & \vsix{lone.V.la}; \vsix{lone.K.la} & \vsix{lone.V.qb}; \vsix{lone.K.qb} & \vsix{verd.L1} \\
+L5 & median $|\ln(c_p^{\mathrm{post}}/\mathrm{pred})|$ & \vsix{lfive.qa} & \vsix{lfive.la} & \vsix{lfive.qb} & \vsix{verd.L5} \\
+L8a & $\Delta\ln A_{\mathrm{cov}}$, NAT-V$-$C1-V & \makecell[l]{\vsix{leighta.qa.est}\\\vsix{leighta.qa.ci}} & \makecell[l]{\vsix{leighta.la.est}\\\vsix{leighta.la.ci}} & \makecell[l]{\vsix{leighta.qb.est}\\\vsix{leighta.qb.ci}} & \vsix{verd.L8a} \\
+L8b & $\Delta\ln A_o$, NAT-V$-$C1-V & \makecell[l]{\vsix{leightb.qa.est}\\\vsix{leightb.qa.ci}} & \makecell[l]{\vsix{leightb.la.est}\\\vsix{leightb.la.ci}} & \makecell[l]{\vsix{leightb.qb.est}\\\vsix{leightb.qb.ci}} & \vsix{verd.L8b} \\
+L9a & $\theta$(NAT-V-cen, ST-V@nat-cen) & \makecell[l]{\vsix{lninea.qa.est}\\\vsix{lninea.qa.ci}} & \makecell[l]{\vsix{lninea.la.est}\\\vsix{lninea.la.ci}} & \makecell[l]{\vsix{lninea.qb.est}\\\vsix{lninea.qb.ci}} & \vsix{verd.L9a} \\
+L9b & $\Delta\ln A_{\mathrm{cov}}$, NAT-V$-$ST-V@nat & \makecell[l]{\vsix{lnineb.qa.est}\\\vsix{lnineb.qa.ci}} & \makecell[l]{\vsix{lnineb.la.est}\\\vsix{lnineb.la.ci}} & \makecell[l]{\vsix{lnineb.qb.est}\\\vsix{lnineb.qb.ci}} & \vsix{verd.L9b} \\
+L2 & Spearman $\rho$, energy ratio vs.\ $\theta_i$ (V) & \makecell[l]{\vsix{ltwo.qa.rho}\\\vsix{ltwo.qa.ci}} & \makecell[l]{\vsix{ltwo.la.rho}\\\vsix{ltwo.la.ci}} & \makecell[l]{\vsix{ltwo.qb.rho}\\\vsix{ltwo.qb.ci}} & \vsix{verd.L2} \\
+L6 & Spearman $\rho$, \texttt{lin\_K} ratio vs.\ $\theta_i$ (K) & \makecell[l]{\vsix{lsix.qa.rho}\\\vsix{lsix.qa.ci}} & \makecell[l]{\vsix{lsix.la.rho}\\\vsix{lsix.la.ci}} & \makecell[l]{\vsix{lsix.qb.rho}\\\vsix{lsix.qb.ci}} & \vsix{verd.L6} \\
+\bottomrule
+\end{tabular}
+\end{table}

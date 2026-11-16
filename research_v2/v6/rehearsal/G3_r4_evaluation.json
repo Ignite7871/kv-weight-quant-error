@@ -1,0 +1,43 @@
+{
+ "rule": "PROTOCOL_V6 r4 G3: token-identical history AND |d ln m_i| <= 0.05 per problem (NAT-K vs the pilot)",
+ "source": "v6/rehearsal/G3_diagnostic.json (rehearsal-authorized diagnostic run)",
+ "problems": {
+  "qwen2.5-0.5b/172": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.005839669564467798,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.3000017622011608
+  },
+  "qwen2.5-0.5b/811": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.009586290468415193,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.4027705729807334
+  },
+  "qwen2.5-0.5b/334": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.005006608712193383,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.6163357621134544
+  },
+  "llama3.2-1b/172": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.02165447783527963,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.40890068177111694
+  },
+  "llama3.2-1b/811": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.014033006761099642,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.2493241568810145
+  },
+  "llama3.2-1b/334": {
+   "history_equal_pilot": true,
+   "abs_dlnm_vs_pilot": 0.006812529651421428,
+   "pass": true,
+   "descriptive_max_abs_dlnjs_per_step": 0.512183483307922
+  }
+ },
+ "passed": true
+}

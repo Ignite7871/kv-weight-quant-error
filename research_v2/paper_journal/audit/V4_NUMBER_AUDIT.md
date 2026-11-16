@@ -4,7 +4,7 @@
 - v3 macros used: 175; undefined: 0; not in numbers_v3_sources.json: 0
 - v4 macros re-derived from their sources by this script: 980; mismatches: 0
 - v4 result macros checked against the independent recomputation: 195; failures: 0
-- literal numbers in the v4 text and tables: 331; unclassified: 0
+- literal numbers in the v4 text and tables: 323; unclassified: 0
 - prose claims checked against the locked report: 35/35 hold
 
 ## Claims
@@ -91,6 +91,7 @@ none
 - Ubuntu version (image tag): 1 (24.04)
 - WikiText-2 prompt length in characters (PROTOCOL_V5 §3): 1 (600)
 - X1--X13 label: 2 (13)
+- allocated pod system RAM, provider listing (v5/closeout/pod_allocation_provider_listing.json): 1 (50\,GB)
 - b-hat threshold (§3): 3 (0.25)
 - bitsandbytes version (V4_PACKAGES): 1 (0.49.2)
 - bootstrap and permutation count (§7): 2 (10{,}000)
@@ -103,8 +104,7 @@ none
 - date (AI_USE_LOG_V5): 2 (2026-11-13)
 - date (Gemini proofreading; v5 start, AI_USE_LOG_V5): 3 (2026-11-11)
 - date: 11 to 13 November 2026, the v5 period (AI_USE_LOG_V5): 1 (11)
-- date: 29-30 September 2026, the earlier routing pod (v5/closeout/billing_earlier_dps_2026-09.json): 2 (30)
-- dose / steps 2-8 / ln 2 / WikiText-2 name: 37 (2)
+- dose / steps 2-8 / ln 2 / WikiText-2 name: 33 (2)
 - drift tolerance (§10; D1; PROTOCOL_V5 §9): 6 (25\%)
 - earlier study arms (§6) / v5 $14 ledger stop (PROTOCOL_V5 §9): 4 (14)
 - earlier study's calibration sample / count: 3 (100)
@@ -125,15 +125,15 @@ none
 - model / licence name Llama 3.2: 4 (3.2)
 - model name Claude Opus 5.5 (AI_USE_LOG_V4): 4 (5.5)
 - p display threshold: 9 (0.001)
-- pre-declared $29 stop (§10, r5): 4 (29)
+- pre-declared $29 stop (§10, r5): 2 (29)
 - second v5 idle period, minutes (V5-A13: closeout 08:52:42Z, stop 09:18:23Z): 1 (26)
 - section ref / HQQ bits per weight (PROTOCOL_V5 §3): 2 (4.5)
 - smallest attainable p: 1 (1/35)
 - step 1 / count / 1/n: 22 (1)
-- steps 9-64: 5 (9)
+- steps 9-64 / 9 vCPUs per pod (v5/closeout/pod_allocation_provider_listing.json): 6 (9)
 - the whole: 1 (100\%)
 - transformers version (V4_PACKAGES): 1 (5.13.0)
 - truncation sensitivity / Step 0 rho tolerance (§4, §8): 3 (5\%)
 - v5 ceiling in USD (PROTOCOL_V5 §0, §9; V5-D3): 3 (15)
-- year: 8 (2026)
+- year: 6 (2026)
 - zero: 45 (0)

@@ -1,0 +1,14 @@
+{
+  "what": "Host allocation of every rented pod of the two cloud studies (v4, v5), as returned by the provider's pod API (RunPod v2 get-pod / list-pods, field gpu.{count,id,memory,vcpuCount}) when each pod was read during the runs. Per the API schema, gpu.memory is the allocated host system RAM in GB and gpu.vcpuCount the allocated vCPU count.",
+  "source": "pod reads made through the official RunPod MCP server during the runs and kept in the Claude Code session transcripts (not part of this repository); transcribed 2026-11-14, after every pod had been deleted (list-pods now returns no pods).",
+  "not_recorded": "host CPU make and model, CPU cache sizes, host kernel. The provider does not guarantee host specifications beyond the allocation.",
+  "pods": [
+    {"study": "v4", "pod": "0o2qt1zg8uenfh", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v4", "pod": "1gh2wczbuxheeo", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v4", "pod": "pnlub2js003kue", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v4", "pod": "q28xtpej8k1sdv", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v4", "pod": "wletc98r6v348k", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v5", "pod": "wn05kmlrydwn3r", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9},
+    {"study": "v5", "pod": "tg6m6i73d066oa", "gpu": "NVIDIA A40", "gpu_count": 1, "ram_gb": 50, "vcpu": 9}
+  ]
+}

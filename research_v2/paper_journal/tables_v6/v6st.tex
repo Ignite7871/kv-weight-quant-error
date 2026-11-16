@@ -1,0 +1,17 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{Storage error (per-token asymmetric INT4, groups of 32) against weight error, v6 (L7). (i) The common-mode share of ST-V times $n$ (isotropic $\approx1$; agreement needs $\le2$). (ii) Storage-error directions re-normed to the natural NF4 per-slot norm against isotropic noise of that norm, with 90\% intervals; equivalence needs the interval inside $\pm$margin on both paths. (iii) The relative-size ratio $\rho_K^{\mathrm{st}}/\rho_V^{\mathrm{st}}$ and $\theta$(ST-K, ST-V) at codec size (95\% interval), with H3, $\theta$(NAT-K, NAT-V), from the same runs. Verdict: (i) \vsix{verd.L7.i}, (ii) \vsix{verd.L7.ii}, (iii) \vsix{verd.L7.iii}; L7 \vsix{verd.L7}.}
+\label{tab:v6st}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}l l lll ll l@{}}
+\toprule
+ & (i) & \multicolumn{3}{c}{(ii)} & \multicolumn{2}{c}{(iii)} & \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+Model & $nC^V$ & \makecell[l]{ST-K@nat\\$-$C1-K} & \makecell[l]{ST-V@nat\\$-$C1-V} & margin & $\rho_K^{\mathrm{st}}/\rho_V^{\mathrm{st}}$ & \makecell[l]{ST-K\\$-$ST-V} & H3 \\
+\midrule
+Qwen2.5-0.5B & \vsix{lsev.i.qa} & \makecell[l]{\vsix{lsev.K.qa.est}\\\vsix{lsev.K.qa.cininety}} & \makecell[l]{\vsix{lsev.V.qa.est}\\\vsix{lsev.V.qa.cininety}} & $\pm$\vsix{lsev.margin.qa} & \vsix{lsev.ratio.qa} & \makecell[l]{\vsix{lsev.st.qa.est}\\\vsix{lsev.st.qa.ci}} & \makecell[l]{\vsix{hthree.qa.est}\\\vsix{hthree.qa.ci}} \\
+Llama-3.2-1B & \vsix{lsev.i.la} & \makecell[l]{\vsix{lsev.K.la.est}\\\vsix{lsev.K.la.cininety}} & \makecell[l]{\vsix{lsev.V.la.est}\\\vsix{lsev.V.la.cininety}} & $\pm$\vsix{lsev.margin.la} & \vsix{lsev.ratio.la} & \makecell[l]{\vsix{lsev.st.la.est}\\\vsix{lsev.st.la.ci}} & \makecell[l]{\vsix{hthree.la.est}\\\vsix{hthree.la.ci}} \\
+Qwen2.5-1.5B & \vsix{lsev.i.qb} & \makecell[l]{\vsix{lsev.K.qb.est}\\\vsix{lsev.K.qb.cininety}} & \makecell[l]{\vsix{lsev.V.qb.est}\\\vsix{lsev.V.qb.cininety}} & $\pm$\vsix{lsev.margin.qb} & \vsix{lsev.ratio.qb} & \makecell[l]{\vsix{lsev.st.qb.est}\\\vsix{lsev.st.qb.ci}} & \makecell[l]{\vsix{hthree.qb.est}\\\vsix{hthree.qb.ci}} \\
+\bottomrule
+\end{tabular}
+\end{table}

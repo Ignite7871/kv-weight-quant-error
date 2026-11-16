@@ -1,6 +1,6 @@
 """Standalone check of this release against the protocol locks (no git history needed). Python 3 standard library only.
 
-For research_v2/V5_PROTOCOL_LOCK.txt, V4_PROTOCOL_LOCK.txt and V3_PROTOCOL_LOCK.txt:
+For research_v2/V6_PROTOCOL_LOCK.txt, V5_PROTOCOL_LOCK.txt, V4_PROTOCOL_LOCK.txt and V3_PROTOCOL_LOCK.txt:
   - every "<sha256>  <path>" line: the file's SHA-256, raw or with CRLF normalized to LF, must equal the locked hash. A file that
     a post-data deviation changed is checked against the hash in its deviation record instead (v4: V4-D1.json; v5: the latest
     of V5-D1.json, V5-D2.json, V5-D3.json that lists it);
@@ -9,7 +9,9 @@ For research_v2/V5_PROTOCOL_LOCK.txt, V4_PROTOCOL_LOCK.txt and V3_PROTOCOL_LOCK.
     appended run lines, so that line matches when the leading whole lines of the shipped file have the recorded hash;
   - every appended run line (GM, GM D<n>, CALIBRATION, STEP0, ANCHOR, DESIGN, HQQ, DEVIATION D<n>): the run file's hash. A v5
     run file that V5-D3 declares lost (gm_D2.json) is reported as recorded lost, not as missing.
-Then v4_runs/v4_report.json and v5_runs/v5_report.json are checked against the hashes the manuscript generators expect.
+Then v4_runs/v4_report.json, v5_runs/v5_report.json and the two v6 reports (v6_runs/v6_report.json, v6_recomputation.json) are
+checked against the hashes the manuscript generators expect (v6: v6/results/V6_RESULTS_HASHES.txt). The v6 lock has no
+appended run lines and no post-lock change to a locked file (V6-D1 and V6-D2 changed no locked file).
 Usage:  python verify_release.py
 """
 import hashlib
@@ -21,7 +23,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RV = ROOT / "research_v2"
 REPORT_SHA = {"v4_runs/v4_report.json": "df57a31483160e62351378576d14123893081249e06525ed5be5f5099758dccb",
-              "v5_runs/v5_report.json": "2f00f5113aec05f67990fac55e9150340780f31273a18080d2e276db0f493706"}
+              "v5_runs/v5_report.json": "2f00f5113aec05f67990fac55e9150340780f31273a18080d2e276db0f493706",
+              "v6_runs/v6_report.json": "98626e3ec4a26da93fc6e45ac0a104264ad9fd914f8b14bb26b36c2ab246acc1",
+              "v6_runs/v6_recomputation.json": "ec169a0d628cb2ea875406806afdc7d320333395ba08978f92a248ca804b5be6"}
 RUN_RX = re.compile(r"^(GM|GM D\d+|STEP0|ANCHOR|DESIGN|DEVIATION D\d+|CALIBRATION [^:]+|HQQ [^:]+): ([0-9a-f]{64})  (\S+)")
 AMEND_RX = re.compile(r"^AMENDMENT \S+: .*old lock sha256 ([0-9a-f]{64}) preserved at (\S+);")
 
@@ -106,7 +110,8 @@ def main():
         rec = json.loads((RV / "v5" / "deviations" / f"{d}.json").read_text(encoding="utf-8"))
         v5o.update(rec["files"])
         v5lost.update(rec.get("lost_appendix_files") or {})
-    results = {"V5 lock": check_lock(RV / "V5_PROTOCOL_LOCK.txt", [RV / "v5_runs"], v5o, v5lost),
+    results = {"V6 lock": check_lock(RV / "V6_PROTOCOL_LOCK.txt", [RV / "v6_runs"], {}, {}),
+               "V5 lock": check_lock(RV / "V5_PROTOCOL_LOCK.txt", [RV / "v5_runs"], v5o, v5lost),
                "V4 lock": check_lock(RV / "V4_PROTOCOL_LOCK.txt", [RV / "v4_runs"], d1, {}),
                "V3 lock": check_lock(RV / "V3_PROTOCOL_LOCK.txt", [RV / "v3_runs"], {}, {})}
     for name, (ok, bad, missing, rec_lost, pre) in results.items():
