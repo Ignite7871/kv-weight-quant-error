@@ -178,6 +178,7 @@ def build_verdicts_ranges():
     rng("rng.lninea", P("L9a", "estimate"), "s3")
     rng("rng.lnineb", P("L9b", "estimate"), "s3")
     rng("rng.ltwo", P("L2", "rho"), "s3")
+    rng("rng.ltwohi", P("L2", "ci95", "1"), "s3")
     rng("rng.lsix", P("L6", "spearman", "rho"), "s3")
     rng("rng.lseviV", P("L7", "i_nC_V_ST"), "u2")
     rng("rng.lsevratio", P("L7", "iii_rho_ratio_K_over_V"), "u2")
@@ -253,6 +254,7 @@ def build_rblock():
         for r, f in (("R1", "s3"), ("R2", "s3")):
             src(f"rb.{r.lower()}.{k}.est", f"{RB}#units/{u}/{r}/estimate", f)
             src(f"rb.{r.lower()}.{k}.ci", f"{RB}#units/{u}/{r}/ci95", "ci2")
+        src(f"rb.r1.{k}.holm", f"{RB}#units/{u}/R1/holm_p", "p")
         src(f"rb.r3.{k}", f"{RB}#units/{u}/R3/rho", "s3")
         src(f"rb.r4K.{k}", f"{RB}#units/{u}/R4/rho_K", "u3")
         src(f"rb.r4V.{k}", f"{RB}#units/{u}/R4/rho_V_placebo", "s3")
@@ -282,7 +284,8 @@ def tab_main():
     t = [r"\begin{table}[tbp]", r"\centering\footnotesize",
          r"\caption{Where the value-path excess comes from (v6, fresh problems). $\theta_V=\theta(\text{NAT-V},\text{C1-V})$ (H2) "
          r"splits exactly, per problem, into a common-mode part $\theta_{\mathrm{cm}}=\theta(\text{NAT-V},\text{NAT-V-cen})$ and a "
-         r"direction part $\theta_{\mathrm{dir}}=\theta(\text{NAT-V-cen},\text{C1-V})$ (L3, estimation target). The last column is the "
+         r"direction part $\theta_{\mathrm{dir}}=\theta(\text{NAT-V-cen},\text{C1-V})$, the remainder after centering at fixed per-slot "
+         r"norm (L3, an estimation target, not a test; one order of the split, Table~\ref{tab:v6bsplit} gives the others; Section~\ref{sec:model:direction} states what the remainder contains). The last column is the "
          r"same split of the measured local head-output energy (L4). Estimates with 95\% problem-bootstrap intervals below them.}",
          r"\label{tab:v6main}", r"\setlength{\tabcolsep}{4pt}", r"\begin{tabular}{@{}lr lll ll@{}}", r"\toprule",
          r" & & \multicolumn{3}{c}{Outcome contrast (L3)} & \multicolumn{2}{c}{Common-mode share} \\",

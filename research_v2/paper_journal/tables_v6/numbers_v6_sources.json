@@ -1965,6 +1965,28 @@
     "v6_runs/v6_report.json#per_model/qwen2.5-1.5b/L2/rho"
    ]
   },
+  "rng.ltwohi.min": {
+   "val": "$+0.231$",
+   "raw": 0.23108455179158913,
+   "fmt": "s3",
+   "op": "min",
+   "inputs": [
+    "v6_runs/v6_report.json#per_model/qwen2.5-0.5b/L2/ci95/1",
+    "v6_runs/v6_report.json#per_model/llama3.2-1b/L2/ci95/1",
+    "v6_runs/v6_report.json#per_model/qwen2.5-1.5b/L2/ci95/1"
+   ]
+  },
+  "rng.ltwohi.max": {
+   "val": "$+0.389$",
+   "raw": 0.3889454775286705,
+   "fmt": "s3",
+   "op": "max",
+   "inputs": [
+    "v6_runs/v6_report.json#per_model/qwen2.5-0.5b/L2/ci95/1",
+    "v6_runs/v6_report.json#per_model/llama3.2-1b/L2/ci95/1",
+    "v6_runs/v6_report.json#per_model/qwen2.5-1.5b/L2/ci95/1"
+   ]
+  },
   "rng.lsix.min": {
    "val": "$+0.073$",
    "raw": 0.07287201469687692,
@@ -2699,6 +2721,12 @@
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/qwen2.5-0.5b/R2/ci95"
   },
+  "rb.r1.qwen2505b.holm": {
+   "val": "$0.002$",
+   "raw": 0.0020997900209979003,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/qwen2.5-0.5b/R1/holm_p"
+  },
   "rb.r3.qwen2505b": {
    "val": "$+0.082$",
    "raw": 0.0817041704170417,
@@ -2746,6 +2774,12 @@
    ],
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/qwen2.5-1.5b/R2/ci95"
+  },
+  "rb.r1.qwen2515b.holm": {
+   "val": "$0.073$",
+   "raw": 0.07279272072792721,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/qwen2.5-1.5b/R1/holm_p"
   },
   "rb.r3.qwen2515b": {
    "val": "$+0.396$",
@@ -2795,6 +2829,12 @@
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/qwen2.5-3b/R2/ci95"
   },
+  "rb.r1.qwen253b.holm": {
+   "val": "$0.662$",
+   "raw": 0.6623337666233376,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/qwen2.5-3b/R1/holm_p"
+  },
   "rb.r3.qwen253b": {
    "val": "$+0.194$",
    "raw": 0.19419141914191418,
@@ -2842,6 +2882,12 @@
    ],
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/qwen2.5-7b/R2/ci95"
+  },
+  "rb.r1.qwen257b.holm": {
+   "val": "$1.000$",
+   "raw": 1.0,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/qwen2.5-7b/R1/holm_p"
   },
   "rb.r3.qwen257b": {
    "val": "$-0.127$",
@@ -2891,6 +2937,12 @@
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/llama3.2-1b/R2/ci95"
   },
+  "rb.r1.llama321b.holm": {
+   "val": "$0.050$",
+   "raw": 0.049795020497950204,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/llama3.2-1b/R1/holm_p"
+  },
   "rb.r3.llama321b": {
    "val": "$+0.105$",
    "raw": 0.10505850585058506,
@@ -2938,6 +2990,12 @@
    ],
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/llama3.2-3b/R2/ci95"
+  },
+  "rb.r1.llama323b.holm": {
+   "val": "$0.050$",
+   "raw": 0.049795020497950204,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/llama3.2-3b/R1/holm_p"
   },
   "rb.r3.llama323b": {
    "val": "$+0.257$",
@@ -2987,6 +3045,12 @@
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/llama3.1-8b/R2/ci95"
   },
+  "rb.r1.llama318b.holm": {
+   "val": "$1.000$",
+   "raw": 1.0,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/llama3.1-8b/R1/holm_p"
+  },
   "rb.r3.llama318b": {
    "val": "$-0.086$",
    "raw": -0.08614461446144614,
@@ -3034,6 +3098,12 @@
    ],
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/mistral-7b-v0.3/R2/ci95"
+  },
+  "rb.r1.mistral7bv03.holm": {
+   "val": "$0.020$",
+   "raw": 0.019998000199980003,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/mistral-7b-v0.3/R1/holm_p"
   },
   "rb.r3.mistral7bv03": {
    "val": "$+0.161$",
@@ -3083,6 +3153,12 @@
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/U1/R2/ci95"
   },
+  "rb.r1.u1.holm": {
+   "val": "$0.020$",
+   "raw": 0.0202979702029797,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/U1/R1/holm_p"
+  },
   "rb.r3.u1": {
    "val": "$-0.030$",
    "raw": -0.029546954695469547,
@@ -3130,6 +3206,12 @@
    ],
    "fmt": "ci2",
    "src": "v6/results/R_block_report.json#units/U2/R2/ci95"
+  },
+  "rb.r1.u2.holm": {
+   "val": "$0.002$",
+   "raw": 0.0020997900209979003,
+   "fmt": "p",
+   "src": "v6/results/R_block_report.json#units/U2/R1/holm_p"
   },
   "rb.r3.u2": {
    "val": "$+0.233$",

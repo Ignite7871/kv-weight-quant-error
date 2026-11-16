@@ -1,0 +1,12 @@
+V6B TEST-PHASE RESULTS: SHA-256 of the two reports (verdict accepted by the corresponding author, 2026-11-16)
+The files themselves are under v6b_runs/ (git-ignored) and are published with the release; this file fixes their content.
+Produced once each on 2026-11-16 under lock cba09c444c6de782 (no deviation; DEVIATION_LOG_V6B.md is empty).
+
+a766874757f178caa46af4d28873c39b27b039f25e20330b16d321a14226d98f  research_v2/v6b_runs/v6b_report.json         (v6b/analyze_v6b.py)
+2903910cb3cbb9d6048ca9583697725bbca811236c9118d85626268f5366e55f  research_v2/v6b_runs/v6b_recomputation.json  (v6b/recompute_v6b_independent.py; 85 compared, 0 outside tolerance, verdict agrees)
+e0db670c81fed2728cfa78a6267bcdd5aa685663ed4f94a7460e7382780a54e3  research_v2/v6b_runs/gpu_ledger.jsonl        (2.748 GPU-h incl. 0.16 h rehearsal; cap 9 h)
+5c3c7cb750e5758d02ea42d7bb58965c468d8c368716fbf880d3c8e0d1c6962b  research_v2/v6b_runs/AUTHORIZED_V6B_TEST.txt
+
+Integrity: 3 models x 70 problems x 6 arms, no cut, 0 records with a failed flag; G1 70/70 bitwise per model.
+Verdict (FOLLOWUP_V6B s5): H* = reject (U2 s_dir upper bound < 0.5 in qwen2.5-0.5b and llama3.2-1b);
+interactions I_R and I_U exclude 0 in all three models (order-dependent split).

@@ -1,0 +1,442 @@
+{
+ "mutants": 51,
+ "killed": 51,
+ "survivors": [],
+ "baseline_after_restore_failures": [],
+ "detail": [
+  {
+   "mutant": "A re-normed to ||Dn||",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_A_is_centered_unrenormed"
+   ]
+  },
+  {
+   "mutant": "A target ||Dn||",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_A_is_centered_unrenormed"
+   ]
+  },
+  {
+   "mutant": "A not centered",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_A_is_centered_unrenormed",
+    "test_rv6b.test_A_renormed_equals_v6_cen"
+   ]
+  },
+  {
+   "mutant": "C at natural norm",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C",
+    "test_rv6b.test_C_renormed_equals_C1V_same_draw"
+   ]
+  },
+  {
+   "mutant": "B drops mu",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C",
+    "test_rv6b.test_draw_sequence_matches_C1V"
+   ]
+  },
+  {
+   "mutant": "B mu doubled",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C",
+    "test_rv6b.test_draw_sequence_matches_C1V"
+   ]
+  },
+  {
+   "mutant": "B and C draw from vgen",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_dispatch_new_arms_use_gen"
+   ]
+  },
+  {
+   "mutant": "draw not unit",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C",
+    "test_rv6b.test_C_renormed_equals_C1V_same_draw"
+   ]
+  },
+  {
+   "mutant": "key rows not exact",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_keys_exact_and_rounding"
+   ]
+  },
+  {
+   "mutant": "mu from kM - kF",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_A_is_centered_unrenormed",
+    "test_rv6b.test_A_renormed_equals_v6_cen",
+    "test_rv6b.test_C_renormed_equals_C1V_same_draw",
+    "test_rv6b.test_degenerate_count"
+   ]
+  },
+  {
+   "mutant": "B dev check off",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C"
+   ]
+  },
+  {
+   "mutant": "B ratio uses ||c||",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_B_is_mu_plus_C"
+   ]
+  },
+  {
+   "mutant": "dispatcher changes v6 arms",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_dispatch_delegates_v6_arms"
+   ]
+  },
+  {
+   "mutant": "mu sums every arm",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_mu_matches_v6_slot_sums"
+   ]
+  },
+  {
+   "mutant": "mu records kM",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_mu_matches_v6_slot_sums"
+   ]
+  },
+  {
+   "mutant": "degenerate not counted",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_degenerate_count"
+   ]
+  },
+  {
+   "mutant": "B seed own stream",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_seed_arm"
+   ]
+  },
+  {
+   "mutant": "arm order",
+   "module": "rv6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_seed_arm"
+   ]
+  },
+  {
+   "mutant": "G1 ignores tolerance",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_g1"
+   ]
+  },
+  {
+   "mutant": "G1 ignores S",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_g1"
+   ]
+  },
+  {
+   "mutant": "G1 missing record passes",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_g1"
+   ]
+  },
+  {
+   "mutant": "integrity skips b flag",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_integrity_includes_b_check"
+   ]
+  },
+  {
+   "mutant": "cut 1 without bitwise",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_rerun_for_cut1"
+   ]
+  },
+  {
+   "mutant": "cut 1 from the start",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_rerun_for_cut1"
+   ]
+  },
+  {
+   "mutant": "bitwise check one arm",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_rerun_for_cut1"
+   ]
+  },
+  {
+   "mutant": "cap 16",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_constants"
+   ]
+  },
+  {
+   "mutant": "G1 tol 0.5",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_constants",
+    "test_rv6b.test_g1"
+   ]
+  },
+  {
+   "mutant": "tier test",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_constants"
+   ]
+  },
+  {
+   "mutant": "no refusal",
+   "module": "run_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_refusals"
+   ]
+  },
+  {
+   "mutant": "scan allows duplicates",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_scan"
+   ]
+  },
+  {
+   "mutant": "scan allows partial",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_scan"
+   ]
+  },
+  {
+   "mutant": "scan ignores g1 log",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_scan"
+   ]
+  },
+  {
+   "mutant": "scan allows stray reruns",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_scan"
+   ]
+  },
+  {
+   "mutant": "cut ignores cap",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_constants",
+    "test_rv6b.test_launcher_cuts"
+   ]
+  },
+  {
+   "mutant": "cut 1 no saving",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_cuts"
+   ]
+  },
+  {
+   "mutant": "no guard factor",
+   "module": "launch_test_v6b",
+   "killed": true,
+   "by": [
+    "test_rv6b.test_launcher_cuts"
+   ]
+  },
+  {
+   "mutant": "threshold 0.4",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_threshold_and_paths",
+    "test_analyze_v6b.test_undecided"
+   ]
+  },
+  {
+   "mutant": "reject on lower bound",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_undecided"
+   ]
+  },
+  {
+   "mutant": "fixed norm checks U",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_undecided"
+   ]
+  },
+  {
+   "mutant": "keep checks R1 only",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_keep_at_fixed_norm"
+   ]
+  },
+  {
+   "mutant": "R2 path via cen",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6",
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_keep_unrestricted_and_identities",
+    "test_analyze_v6b.test_recompute_flags_ci_disagreement"
+   ]
+  },
+  {
+   "mutant": "U total vs C1-V",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6",
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_keep_unrestricted_and_identities",
+    "test_analyze_v6b.test_recompute_flags_ci_disagreement"
+   ]
+  },
+  {
+   "mutant": "no v6 fill",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6"
+   ]
+  },
+  {
+   "mutant": "duplicates allowed",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_duplicates_refused"
+   ]
+  },
+  {
+   "mutant": "interaction U sign",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6",
+    "test_analyze_v6b.test_interaction_flagged",
+    "test_analyze_v6b.test_keep_unrestricted_and_identities",
+    "test_analyze_v6b.test_recompute_flags_ci_disagreement"
+   ]
+  },
+  {
+   "mutant": "renorm effect order",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6",
+    "test_analyze_v6b.test_keep_unrestricted_and_identities",
+    "test_analyze_v6b.test_recompute_flags_ci_disagreement"
+   ]
+  },
+  {
+   "mutant": "status not required",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_status_required"
+   ]
+  },
+  {
+   "mutant": "flags not counted",
+   "module": "analyze_v6b",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_flags_counted"
+   ]
+  },
+  {
+   "mutant": "recompute decide on lo",
+   "module": "recompute_v6b_independent",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_keep_at_fixed_norm",
+    "test_analyze_v6b.test_undecided"
+   ]
+  },
+  {
+   "mutant": "recompute no fill",
+   "module": "recompute_v6b_independent",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_cut1_fill_from_v6"
+   ]
+  },
+  {
+   "mutant": "recompute CI tolerance off",
+   "module": "recompute_v6b_independent",
+   "killed": true,
+   "by": [
+    "test_analyze_v6b.test_recompute_flags_ci_disagreement"
+   ]
+  }
+ ]
+}

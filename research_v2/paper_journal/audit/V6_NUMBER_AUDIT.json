@@ -1,12 +1,15 @@
 {
- "defined": 381,
- "used": 289,
+ "defined": 393,
+ "used": 292,
  "undefined": [],
- "rederived": 381,
+ "rederived": 393,
  "mismatches": [],
- "recomputation_checked": 177,
+ "v6b_defined": 171,
+ "v6b_used": 146,
+ "v6b_rederived": 171,
+ "recomputation_checked": 258,
  "recomputation_failures": [],
- "recomputation_not_held": 86,
+ "recomputation_not_held": 141,
  "claims": [
   {
    "claim": "Report hashes equal the committed V6_RESULTS_HASHES.txt values",
@@ -41,7 +44,7 @@
    "ok": true
   },
   {
-   "claim": "L3: direction carries most (share_cm < 0.5 with CI upper < 0.5) in every model",
+   "claim": "L3 (one order, R1): remainder share 1 - share_cm > 0.5 with CI upper of share_cm < 0.5 in every model (printed as one order only)",
    "ok": true
   },
   {
@@ -53,7 +56,7 @@
    "ok": true
   },
   {
-   "claim": "Pilot centering closed 'somewhat more' (pilot G min above every v6 share)",
+   "claim": "Pilot centering closed 'about a third' (printed range inside [0.25, 0.40]); pilot centered arms re-normed, cm first (FOLLOWUP_X13: 're-norm to their own')",
    "ok": true
   },
   {
@@ -158,6 +161,94 @@
   },
   {
    "claim": "R verdicts as printed: R1 neither, R3 agreement, R4 agreement",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Report hashes equal the committed V6B_RESULTS_HASHES.txt values",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] n = 70 in every model = design n, no cut, no record from v6, no failed flag",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] G1: 70 problems, all pass, all bitwise, max |d ln m| = 0, in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Ledger total under the 9 h cap; test blocks a subset",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] No deviation (DEVIATION_LOG_V6B.md has no entry row)",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Recomputation: 85 compared, 0 outside tolerance, no disagreement, same verdict",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Verdict reject; rejecting paths exactly U2 in Qwen2.5-0.5B and Llama-3.2-1B ('U2 the rejecting path in 2 of the three')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] U2 s_dir upper bound < 0.5 in Qwen2.5-0.5B and Llama-3.2-1B, not in Qwen2.5-1.5B; no other path's upper bound < 0.5",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Each path telescopes: cm + dir = total (per path) and theta_V = theta_U + theta_N, in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Interactions I_R and I_U: every 95% CI below 0 in every model ('every interval excluding 0', order-dependent)",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Sub-additive: theta(NAT-V,cen)+theta(NAT-V,B) < theta_V and theta(NAT-V,A)+theta(NAT-V,B) < theta_U in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Common mode more harmful on top of isotropic: theta(B,C1-V) > theta(NAT-V,cen) and theta(B,C) > theta(NAT-V,A) in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] R1 gives the common mode its smallest share (largest s_dir) of the four paths in every model (pilot sentence)",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Common-mode share larger without re-norming (U1) than with it (R1), in every model ('as the protocol had expected')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] R2 common-mode share 'about half' (1 - s_dir inside [0.4, 0.6]) in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Re-norm effect CI > 0 and theta_N CI < 0 in every model; |re-norm + theta_N| < 0.02 ('about as much as the norm term')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] U1 common-mode part theta(NAT-V,NAT-V-cen0) CI > 0 in every model ('made the error milder')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Every common-mode and direction part of every path has its 95% CI above 0 in every model ('both interventions reduce the excess')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] B realized median norm ratio prints as 1.00 in every model ('1.00 in every model')",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] R1 reproduces v6 L3 exactly where the problems coincide (Llama-3.2-1B, Qwen2.5-1.5B: n = 70 in both; a subset in Qwen2.5-0.5B)",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] B realized median norm ratio within 0.01 of 1 in every model",
+   "ok": true
+  },
+  {
+   "claim": "[v6b] Threshold 0.5 in the report and in FOLLOWUP_V6B s5; cap 9 h in FOLLOWUP_V6B",
    "ok": true
   }
  ]

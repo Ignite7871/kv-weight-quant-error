@@ -36,3 +36,8 @@ research_v2/v5_runs/
 research_v2/v6_runs/*
 !research_v2/v6_runs/v6_report.json
 !research_v2/v6_runs/v6_recomputation.json
+
+# v6b laptop run state: records, ledger, authorization copies (FOLLOWUP_V6B section 10); the two reports are tracked
+research_v2/v6b_runs/*
+!research_v2/v6b_runs/v6b_report.json
+!research_v2/v6b_runs/v6b_recomputation.json

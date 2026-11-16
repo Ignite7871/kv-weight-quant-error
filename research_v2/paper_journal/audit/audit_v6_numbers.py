@@ -1,4 +1,4 @@
-"""Number audit of the v6 material in main_jmlr.tex. CPU only; read-only. Shares no code with make_v6.py.
+"""Number audit of the v6 and v6b material in main_jmlr.tex. CPU only; read-only. Shares no code with make_v6.py or make_v6b.py.
 
 1. Every \\vsix{key} used in main_jmlr.tex, sections_jmlr/ and tables_v6/ is defined in tables_v6/numbers_v6.tex.
 2. Every v6 macro is RE-DERIVED from the source or operation declared in numbers_v6_sources.json, with this script's own JSON
@@ -8,6 +8,7 @@
    plus half a printed unit, Holm p within 0.01 + 10 %, verdict words identical.
 4. Prose claims of the v6 text (and the v6 sentences of abstract, introduction, discussion, limitations, conclusion) are checked
    against the locked report, the R block report and the ledger.
+5. The same for the v6b macros (\\vsixb, tables_v6b/numbers_v6b.tex, v6b_runs/ reports) and the v6b prose claims (FOLLOWUP_V6B).
 Writes audit/V6_NUMBER_AUDIT.md and audit/V6_NUMBER_AUDIT.json.
 """
 import hashlib
@@ -169,14 +170,15 @@ def claims(V):
       all(R[m]["L3"]["theta_cm"]["ci95"][0] > 0 and R[m]["L3"]["theta_dir"]["ci95"][0] > 0 for m in M))
     C("L3: theta_cm + theta_dir = theta_V exactly (identity) in every model",
       all(abs(R[m]["L3"]["theta_cm"]["estimate"] + R[m]["L3"]["theta_dir"]["estimate"] - R[m]["L3"]["theta_V"]["estimate"]) < 1e-12 for m in M))
-    C("L3: direction carries most (share_cm < 0.5 with CI upper < 0.5) in every model",
+    C("L3 (one order, R1): remainder share 1 - share_cm > 0.5 with CI upper of share_cm < 0.5 in every model (printed as one order only)",
       all(R[m]["L3"]["share_cm"]["ci95"][1] < 0.5 for m in M))
     C("L4: common mode carries most of the head-output energy (share > 0.5, CI lower > 0.5) in every model",
       all(R[m]["L4"]["share_cm"]["ci95"][0] > 0.5 for m in M))
     C("Superseded band: Qwen2.5-1.5B share below 0.2; other two inside [0.2, 0.8]",
       R[M[2]]["L3"]["share_cm"]["share"] < 0.2 and all(0.2 <= R[m]["L3"]["share_cm"]["share"] <= 0.8 for m in M[:2]))
     pil = [float(x) for x in re.findall(r"\$([\d.]+)\$", V["_vn"]["rng.x13GV.min"] + V["_vn"]["rng.x13GV.max"])]
-    C("Pilot centering closed 'somewhat more' (pilot G min above every v6 share)", min(pil) > max(R[m]["L3"]["share_cm"]["share"] for m in M))
+    C("Pilot centering closed 'about a third' (printed range inside [0.25, 0.40]); pilot centered arms re-normed, cm first (FOLLOWUP_X13: 're-norm to their own')",
+      0.25 <= min(pil) and max(pil) <= 0.40 and "re-norm to their own" in (RV / "v3/phase8/FOLLOWUP_X13.md").read_text(encoding="utf-8"))
     C("L1 agreement thresholds: V <= ln1.25, K <= ln1.5 in every model",
       all(R[m]["L1"]["V_mod_vs_meas"]["median_abs_ln"] <= math.log(1.25) and R[m]["L1"]["K_lin_vs_meas"]["median_abs_ln"] <= math.log(1.5) for m in M))
     allL1 = [R[m]["L1"][k]["median_abs_ln"] for m in M for k in ("V_mod_vs_meas", "K_lin_vs_meas")]
@@ -234,6 +236,101 @@ def claims(V):
     return out
 
 
+# ------------------------------------------------------------------ v6b (FOLLOWUP_V6B, lock cba09c444c6de782)
+BREP, BREC = "v6b_runs/v6b_report.json", "v6b_runs/v6b_recomputation.json"
+BHASHES = {BREP: "a766874757f178caa46af4d28873c39b27b039f25e20330b16d321a14226d98f",
+           BREC: "2903910cb3cbb9d6048ca9583697725bbca811236c9118d85626268f5366e55f"}
+
+
+def check_rec_b(e, printed):
+    if not e["src"].startswith(BREP + "#"):
+        return None
+    rp = BREC + "#" + e["src"].split("#", 1)[1]
+    try:
+        rc = at(rp)
+    except (KeyError, IndexError, TypeError):
+        return None
+    lk, f = at(e["src"]), e["fmt"]
+    if f == "word":
+        return lk == rc
+    if f in ("ci2", "ci3", "uci2"):
+        d = {"ci2": 2, "ci3": 3, "uci2": 2}[f]
+        w = abs(lk[1] - lk[0])
+        return all(abs(a - b) <= 0.05 * w + 0.5 * 10 ** -d for a, b in zip(lk, rc))
+    if isinstance(lk, (int, float)):
+        return show(rc, f) == printed or abs(lk - rc) <= 1e-6 * max(1, abs(lk))
+    return None
+
+
+def claims_v6b():
+    out = []
+
+    def C(text, ok):
+        out.append(("[v6b] " + text, bool(ok)))
+
+    B = {m: at(f"{BREP}#models/{m}") for m in M}
+    A6 = {m: at(f"{REP}#per_model/{m}") for m in M}
+    P = ("R1", "R2", "U1", "U2")
+    sh = lambda m, p: B[m]["paths"][p]["share_dir"]
+    est = lambda m, k: B[m][k]["estimate"]
+    hl = (RV / "v6b/results/V6B_RESULTS_HASHES.txt").read_text(encoding="utf-8")
+    C("Report hashes equal the committed V6B_RESULTS_HASHES.txt values",
+      all(hashlib.sha256((RV / r).read_bytes()).hexdigest() == h and h in hl for r, h in BHASHES.items()))
+    C("n = 70 in every model = design n, no cut, no record from v6, no failed flag",
+      all(B[m]["n"] == 70 and B[m]["records_from_v6"] == 0 and B[m]["records_with_a_failed_flag"] == 0 for m in M)
+      and at("v6b_runs/design.json#n") == 70 and at("v6b_runs/design.json#cuts") == [])
+    C("G1: 70 problems, all pass, all bitwise, max |d ln m| = 0, in every model",
+      all(B[m]["G1"]["problems"] == 70 and B[m]["G1"]["all_pass"] and B[m]["G1"]["all_bitwise"] and B[m]["G1"]["max_abs_dlnm"] == 0 for m in M))
+    led = J("v6b_runs/gpu_ledger.jsonl")
+    C("Ledger total under the 9 h cap; test blocks a subset", sum(r["seconds"] for r in led) / 3600 < 9
+      and 0 < sum(r["seconds"] for r in led if r["block"].startswith("test:")) < sum(r["seconds"] for r in led))
+    C("No deviation (DEVIATION_LOG_V6B.md has no entry row)",
+      not [l for l in (RV / "v6b/DEVIATION_LOG_V6B.md").read_text(encoding="utf-8").splitlines() if l.startswith("| V6B-")])
+    C("Recomputation: 85 compared, 0 outside tolerance, no disagreement, same verdict",
+      at(f"{BREC}#compared") == 85 and at(f"{BREC}#outside_tolerance") == 0 and not at(f"{BREC}#disagreements")
+      and at(f"{BREC}#verdict") == at(f"{BREP}#verdict/H_star"))
+    C("Verdict reject; rejecting paths exactly U2 in Qwen2.5-0.5B and Llama-3.2-1B ('U2 the rejecting path in 2 of the three')",
+      at(f"{BREP}#verdict/H_star") == "reject" and sorted(at(f"{BREP}#verdict/rejecting_paths")) == ["llama3.2-1b:U2", "qwen2.5-0.5b:U2"])
+    C("U2 s_dir upper bound < 0.5 in Qwen2.5-0.5B and Llama-3.2-1B, not in Qwen2.5-1.5B; no other path's upper bound < 0.5",
+      sh(M[0], "U2")["ci95"][1] < 0.5 and sh(M[1], "U2")["ci95"][1] < 0.5 and sh(M[2], "U2")["ci95"][1] >= 0.5
+      and all(sh(m, p)["ci95"][1] >= 0.5 for m in M for p in P[:3]))
+    C("Each path telescopes: cm + dir = total (per path) and theta_V = theta_U + theta_N, in every model",
+      all(abs(B[m]["paths"][p]["cm"]["estimate"] + B[m]["paths"][p]["dir"]["estimate"] - B[m]["paths"][p]["total"]["estimate"]) < 1e-9
+          for m in M for p in P)
+      and all(abs(est(m, "theta_U") + est(m, "theta_N") - est(m, "theta_V")) < 1e-9 for m in M))
+    C("Interactions I_R and I_U: every 95% CI below 0 in every model ('every interval excluding 0', order-dependent)",
+      all(B[m][k]["ci95"][1] < 0 for m in M for k in ("interaction_R", "interaction_U"))
+      and len(at(f"{BREP}#verdict/order_dependent")) == 6)
+    C("Sub-additive: theta(NAT-V,cen)+theta(NAT-V,B) < theta_V and theta(NAT-V,A)+theta(NAT-V,B) < theta_U in every model",
+      all(B[m]["paths"]["R1"]["cm"]["estimate"] + B[m]["paths"]["R2"]["dir"]["estimate"] < est(m, "theta_V")
+          and B[m]["paths"]["U1"]["cm"]["estimate"] + B[m]["paths"]["U2"]["dir"]["estimate"] < est(m, "theta_U") for m in M))
+    C("Common mode more harmful on top of isotropic: theta(B,C1-V) > theta(NAT-V,cen) and theta(B,C) > theta(NAT-V,A) in every model",
+      all(B[m]["paths"]["R2"]["cm"]["estimate"] > B[m]["paths"]["R1"]["cm"]["estimate"]
+          and B[m]["paths"]["U2"]["cm"]["estimate"] > B[m]["paths"]["U1"]["cm"]["estimate"] for m in M))
+    C("R1 gives the common mode its smallest share (largest s_dir) of the four paths in every model (pilot sentence)",
+      all(max(P, key=lambda p: sh(m, p)["share"]) == "R1" for m in M))
+    C("Common-mode share larger without re-norming (U1) than with it (R1), in every model ('as the protocol had expected')",
+      all(sh(m, "U1")["share"] < sh(m, "R1")["share"] for m in M))
+    C("R2 common-mode share 'about half' (1 - s_dir inside [0.4, 0.6]) in every model",
+      all(0.4 <= 1 - sh(m, "R2")["share"] <= 0.6 for m in M))
+    C("Re-norm effect CI > 0 and theta_N CI < 0 in every model; |re-norm + theta_N| < 0.02 ('about as much as the norm term')",
+      all(B[m]["renorm_effect"]["ci95"][0] > 0 and B[m]["theta_N"]["ci95"][1] < 0
+          and abs(est(m, "renorm_effect") + est(m, "theta_N")) < 0.02 for m in M))
+    C("U1 common-mode part theta(NAT-V,NAT-V-cen0) CI > 0 in every model ('made the error milder')",
+      all(B[m]["paths"]["U1"]["cm"]["ci95"][0] > 0 for m in M))
+    C("Every common-mode and direction part of every path has its 95% CI above 0 in every model ('both interventions reduce the excess')",
+      all(B[m]["paths"][p][k]["ci95"][0] > 0 for m in M for p in P for k in ("cm", "dir")))
+    C("B realized median norm ratio prints as 1.00 in every model ('1.00 in every model')",
+      all(f"{B[m]['descriptive']['B_norm_ratio_median']:.2f}" == "1.00" for m in M))
+    C("R1 reproduces v6 L3 exactly where the problems coincide (Llama-3.2-1B, Qwen2.5-1.5B: n = 70 in both; a subset in Qwen2.5-0.5B)",
+      all(abs(sh(m, "R1")["share"] - (1 - A6[m]["L3"]["share_cm"]["share"])) < 1e-9 and A6[m]["n"] == 70 for m in M[1:])
+      and A6[M[0]]["n"] == 100)
+    C("B realized median norm ratio within 0.01 of 1 in every model", all(abs(B[m]["descriptive"]["B_norm_ratio_median"] - 1) < 0.01 for m in M))
+    C("Threshold 0.5 in the report and in FOLLOWUP_V6B s5; cap 9 h in FOLLOWUP_V6B",
+      at(f"{BREP}#verdict/threshold") == 0.5 and "9 h" in (RV / "v6b/FOLLOWUP_V6B.md").read_text(encoding="utf-8"))
+    return out
+
+
 def _v4ok():
     try:
         for m in M:
@@ -271,21 +368,45 @@ def main():
     V = dict(defs)
     V["_vn"] = dict(re.findall(r"\\csname vn@([^\\]+)\\endcsname\{(.*)\}$", vn_txt, flags=re.M))
     cl = claims(V)
+    # v6b macros (\vsixb)
+    bdefs = dict(re.findall(r"\\csname vsixb@([^\\]+)\\endcsname\{(.*)\}$", (PJ / "tables_v6b/numbers_v6b.tex").read_text(encoding="utf-8"), flags=re.M))
+    bsrc = json.loads((PJ / "tables_v6b/numbers_v6b_sources.json").read_text(encoding="utf-8"))
+    bfiles = files + sorted(str(p.relative_to(PJ)) for p in (PJ / "tables_v6b").glob("*.tex") if p.name != "numbers_v6b.tex")
+    bused = set()
+    for f in bfiles:
+        bused |= set(re.findall(r"\\vsixb\{([^}]+)\}", re.sub(r"(?<!\\)%.*", "", (PJ / f).read_text(encoding="utf-8"))))
+    bundef = sorted(bused - set(bdefs))
+    for k, e in bsrc["macros"].items():
+        got = show(derive(e), e["fmt"])
+        if got != bdefs.get(k):
+            mism.append(("v6b:" + k, bdefs.get(k), got))
+        if "src" in e:
+            r = check_rec_b(e, bdefs.get(k))
+            if r is None:
+                rec_na += 1
+            elif r:
+                rec_ok += 1
+            else:
+                rec_bad.append("v6b:" + k)
+    undef += ["v6b:" + u for u in bundef]
+    cl += claims_v6b()
     res = {"defined": len(defs), "used": len(used), "undefined": undef, "rederived": len(src["macros"]), "mismatches": mism,
+           "v6b_defined": len(bdefs), "v6b_used": len(bused), "v6b_rederived": len(bsrc["macros"]),
            "recomputation_checked": rec_ok, "recomputation_failures": rec_bad, "recomputation_not_held": rec_na,
            "claims": [{"claim": c, "ok": o} for c, o in cl]}
     (HERE / "V6_NUMBER_AUDIT.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
-    L = ["# Number audit of the v6 material in main_jmlr.tex (generated by audit/audit_v6_numbers.py)", "",
+    L = ["# Number audit of the v6 and v6b material in main_jmlr.tex (generated by audit/audit_v6_numbers.py)", "",
          f"- v6 macros defined: {len(defs)}; used in the text and tables: {len(used)}; used but undefined: {len(undef)}",
-         f"- v6 macros re-derived from their sources by this script: {len(src['macros'])}; mismatches: {len(mism)}",
-         f"- v6 result macros checked against the independent recomputation: {rec_ok}; failures: {len(rec_bad)} "
+         f"- v6b macros defined: {len(bdefs)}; used: {len(bused)}; used but undefined: {len(bundef)}",
+         f"- v6 and v6b macros re-derived from their sources by this script: {len(src['macros'])} + {len(bsrc['macros'])}; mismatches: {len(mism)}",
+         f"- v6 and v6b result macros checked against their independent recomputations: {rec_ok}; failures: {len(rec_bad)} "
          f"(source macros not held by the recomputation, e.g. descriptives and R block: {rec_na})",
          f"- prose claims: {sum(o for _, o in cl)}/{len(cl)} hold", "", "## Claims", ""]
     L += [f"- [{'ok' if o else 'FAIL'}] {c}" for c, o in cl]
     if mism or undef or rec_bad:
         L += ["", "## Problems", ""] + [f"- mismatch {m}" for m in mism] + [f"- undefined {u}" for u in undef] + [f"- recomputation {b}" for b in rec_bad]
     (HERE / "V6_NUMBER_AUDIT.md").write_text("\n".join(L) + "\n", encoding="utf-8")
-    print("\n".join(L[:7]))
+    print("\n".join(L[:8]))
     bad = [c for c, o in cl if not o]
     if bad:
         print("FAILED CLAIMS:", *bad, sep="\n  ")

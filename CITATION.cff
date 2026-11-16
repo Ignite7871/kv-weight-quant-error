@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these records, please cite the article."
 title: "Weight-Quantization Error in the KV Cache: code, locks and per-problem records"
 type: software
-version: "1.2.0"
+version: "1.3.0"
 date-released: "2026-11-16"
 license: MIT
 repository-code: "https://github.com/Ignite7871/kv-weight-quant-error"
@@ -19,7 +19,7 @@ authors:
     affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
 preferred-citation:
   type: article
-  title: "Weight-Quantization Error in the KV Cache Is Aligned with the Value Signal: Direction, Not Common Mode, Carries Most of the Value-Path Excess"
+  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher, and Its Common-Mode and Direction Parts Are Not Separable"
   authors:
     - family-names: Gunupati
       given-names: Srikar Reddy

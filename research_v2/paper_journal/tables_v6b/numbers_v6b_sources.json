@@ -1,0 +1,1432 @@
+{
+ "sha256": {
+  "v6b_runs/v6b_report.json": "a766874757f178caa46af4d28873c39b27b039f25e20330b16d321a14226d98f",
+  "v6b_runs/v6b_recomputation.json": "2903910cb3cbb9d6048ca9583697725bbca811236c9118d85626268f5366e55f"
+ },
+ "macros": {
+  "n.qa": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/n"
+  },
+  "tv.qa.est": {
+   "val": "$+0.910$",
+   "raw": 0.909698566628274,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_V/estimate"
+  },
+  "tv.qa.ci": {
+   "val": "$[+0.811, +1.013]$",
+   "raw": [
+    0.8105157951011125,
+    1.0129620361299976
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_V/ci95"
+  },
+  "tu.qa.est": {
+   "val": "$+1.083$",
+   "raw": 1.0825133014249824,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_U/estimate"
+  },
+  "tu.qa.ci": {
+   "val": "$[+0.986, +1.187]$",
+   "raw": [
+    0.9859858936584024,
+    1.1871832934291426
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_U/ci95"
+  },
+  "tn.qa.est": {
+   "val": "$-0.173$",
+   "raw": -0.17281473479670867,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_N/estimate"
+  },
+  "tn.qa.ci": {
+   "val": "$[-0.182, -0.163]$",
+   "raw": [
+    -0.18244535349476956,
+    -0.1631529672785105
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_N/ci95"
+  },
+  "ir.qa.est": {
+   "val": "$-0.289$",
+   "raw": -0.2892463620638856,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/estimate"
+  },
+  "ir.qa.ci": {
+   "val": "$[-0.387, -0.194]$",
+   "raw": [
+    -0.38684012933892914,
+    -0.19439705103325475
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/ci95"
+  },
+  "iu.qa.est": {
+   "val": "$-0.283$",
+   "raw": -0.28329888032040934,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/estimate"
+  },
+  "iu.qa.ci": {
+   "val": "$[-0.381, -0.190]$",
+   "raw": [
+    -0.3813614652115842,
+    -0.19009237595308215
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/ci95"
+  },
+  "ren.qa.est": {
+   "val": "$+0.179$",
+   "raw": 0.17876221654018495,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/renorm_effect/estimate"
+  },
+  "ren.qa.ci": {
+   "val": "$[+0.166, +0.194]$",
+   "raw": [
+    0.16648522282414127,
+    0.1935101712908053
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/renorm_effect/ci95"
+  },
+  "r1.dir.qa.est": {
+   "val": "$+0.681$",
+   "raw": 0.6805417959723842,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/dir/estimate"
+  },
+  "r1.dir.qa.ci": {
+   "val": "$[+0.573, +0.793]$",
+   "raw": [
+    0.5734093541592988,
+    0.7933046260362637
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/dir/ci95"
+  },
+  "r1.cm.qa.est": {
+   "val": "$+0.229$",
+   "raw": 0.22915677065588938,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/cm/estimate"
+  },
+  "r1.cm.qa.ci": {
+   "val": "$[+0.162, +0.298]$",
+   "raw": [
+    0.16209556281718512,
+    0.29771048300641495
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/cm/ci95"
+  },
+  "r1.sh.qa.est": {
+   "val": "$0.75$",
+   "raw": 0.7480959308254806,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share"
+  },
+  "r1.sh.qa.ci": {
+   "val": "$[0.67, 0.82]$",
+   "raw": [
+    0.6716845679013705,
+    0.8233842857762984
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/ci95"
+  },
+  "r2.dir.qa.est": {
+   "val": "$+0.391$",
+   "raw": 0.39129543390849886,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/dir/estimate"
+  },
+  "r2.dir.qa.ci": {
+   "val": "$[+0.305, +0.482]$",
+   "raw": [
+    0.30456801390304483,
+    0.48212501894496557
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/dir/ci95"
+  },
+  "r2.cm.qa.est": {
+   "val": "$+0.518$",
+   "raw": 0.5184031327197752,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/cm/estimate"
+  },
+  "r2.cm.qa.ci": {
+   "val": "$[+0.444, +0.600]$",
+   "raw": [
+    0.44356409457263996,
+    0.600223813179461
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/cm/ci95"
+  },
+  "r2.sh.qa.est": {
+   "val": "$0.43$",
+   "raw": 0.4301374634004366,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share"
+  },
+  "r2.sh.qa.ci": {
+   "val": "$[0.36, 0.50]$",
+   "raw": [
+    0.3569105845629377,
+    0.5031067541877392
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/ci95"
+  },
+  "u1.dir.qa.est": {
+   "val": "$+0.675$",
+   "raw": 0.674594314228908,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/dir/estimate"
+  },
+  "u1.dir.qa.ci": {
+   "val": "$[+0.568, +0.784]$",
+   "raw": [
+    0.5679099410311848,
+    0.7840479663592526
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/dir/ci95"
+  },
+  "u1.cm.qa.est": {
+   "val": "$+0.408$",
+   "raw": 0.4079189871960744,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/cm/estimate"
+  },
+  "u1.cm.qa.ci": {
+   "val": "$[+0.340, +0.477]$",
+   "raw": [
+    0.33995196422222124,
+    0.4766382605354467
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/cm/ci95"
+  },
+  "u1.sh.qa.est": {
+   "val": "$0.62$",
+   "raw": 0.623174157158989,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/share"
+  },
+  "u1.sh.qa.ci": {
+   "val": "$[0.56, 0.69]$",
+   "raw": [
+    0.5557976900839146,
+    0.6872080288023639
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/ci95"
+  },
+  "u2.dir.qa.est": {
+   "val": "$+0.391$",
+   "raw": 0.39129543390849886,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/dir/estimate"
+  },
+  "u2.dir.qa.ci": {
+   "val": "$[+0.306, +0.483]$",
+   "raw": [
+    0.30615719995735985,
+    0.48258920137592515
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/dir/ci95"
+  },
+  "u2.cm.qa.est": {
+   "val": "$+0.691$",
+   "raw": 0.6912178675164836,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/cm/estimate"
+  },
+  "u2.cm.qa.ci": {
+   "val": "$[+0.613, +0.773]$",
+   "raw": [
+    0.6129831032546053,
+    0.7725493205891557
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/cm/ci95"
+  },
+  "u2.sh.qa.est": {
+   "val": "$0.36$",
+   "raw": 0.3614694003236832,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/share"
+  },
+  "u2.sh.qa.ci": {
+   "val": "$[0.30, 0.43]$",
+   "raw": [
+    0.29698587391161174,
+    0.42545537616527246
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/ci95"
+  },
+  "bratio.qa": {
+   "val": "$1.00$",
+   "raw": 1.0040717839363862,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/B_norm_ratio_median"
+  },
+  "anorm.qa": {
+   "val": "$0.89$",
+   "raw": 0.8865746605916114,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0"
+  },
+  "g1.qa": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/G1/problems"
+  },
+  "n.la": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/n"
+  },
+  "tv.la.est": {
+   "val": "$+0.990$",
+   "raw": 0.9901137300892234,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_V/estimate"
+  },
+  "tv.la.ci": {
+   "val": "$[+0.894, +1.090]$",
+   "raw": [
+    0.8941642109607243,
+    1.0896047311514017
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_V/ci95"
+  },
+  "tu.la.est": {
+   "val": "$+1.219$",
+   "raw": 1.2189180665148687,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_U/estimate"
+  },
+  "tu.la.ci": {
+   "val": "$[+1.121, +1.317]$",
+   "raw": [
+    1.1209251043910764,
+    1.3173400205894297
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_U/ci95"
+  },
+  "tn.la.est": {
+   "val": "$-0.229$",
+   "raw": -0.22880433642564516,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_N/estimate"
+  },
+  "tn.la.ci": {
+   "val": "$[-0.241, -0.217]$",
+   "raw": [
+    -0.24058902716543612,
+    -0.21695617230638295
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_N/ci95"
+  },
+  "ir.la.est": {
+   "val": "$-0.262$",
+   "raw": -0.2618734383320098,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/estimate"
+  },
+  "ir.la.ci": {
+   "val": "$[-0.329, -0.191]$",
+   "raw": [
+    -0.3292656874919463,
+    -0.19096450363295037
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/ci95"
+  },
+  "iu.la.est": {
+   "val": "$-0.266$",
+   "raw": -0.2659333916425733,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/estimate"
+  },
+  "iu.la.ci": {
+   "val": "$[-0.337, -0.193]$",
+   "raw": [
+    -0.33654936007630143,
+    -0.19330514366964105
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/ci95"
+  },
+  "ren.la.est": {
+   "val": "$+0.225$",
+   "raw": 0.22474438311508182,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/renorm_effect/estimate"
+  },
+  "ren.la.ci": {
+   "val": "$[+0.215, +0.234]$",
+   "raw": [
+    0.21519996408713998,
+    0.23365638389940213
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/renorm_effect/ci95"
+  },
+  "r1.dir.la.est": {
+   "val": "$+0.766$",
+   "raw": 0.7655734480522153,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/dir/estimate"
+  },
+  "r1.dir.la.ci": {
+   "val": "$[+0.677, +0.853]$",
+   "raw": [
+    0.6773866783650548,
+    0.8527269427276349
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/dir/ci95"
+  },
+  "r1.cm.la.est": {
+   "val": "$+0.225$",
+   "raw": 0.22454028203700832,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/cm/estimate"
+  },
+  "r1.cm.la.ci": {
+   "val": "$[+0.167, +0.279]$",
+   "raw": [
+    0.16730997124082111,
+    0.27909794058475745
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/cm/ci95"
+  },
+  "r1.sh.la.est": {
+   "val": "$0.77$",
+   "raw": 0.7732176868037434,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share"
+  },
+  "r1.sh.la.ci": {
+   "val": "$[0.73, 0.83]$",
+   "raw": [
+    0.7254061166894887,
+    0.825046945786883
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/ci95"
+  },
+  "r2.dir.la.est": {
+   "val": "$+0.504$",
+   "raw": 0.5037000097202056,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/dir/estimate"
+  },
+  "r2.dir.la.ci": {
+   "val": "$[+0.418, +0.588]$",
+   "raw": [
+    0.41793291807092764,
+    0.5880732699431983
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/dir/ci95"
+  },
+  "r2.cm.la.est": {
+   "val": "$+0.486$",
+   "raw": 0.48641372036901803,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/cm/estimate"
+  },
+  "r2.cm.la.ci": {
+   "val": "$[+0.415, +0.557]$",
+   "raw": [
+    0.41451292930488187,
+    0.5571768134887755
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/cm/ci95"
+  },
+  "r2.sh.la.est": {
+   "val": "$0.51$",
+   "raw": 0.5087294463382656,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share"
+  },
+  "r2.sh.la.ci": {
+   "val": "$[0.44, 0.57]$",
+   "raw": [
+    0.44338322607606,
+    0.5718820376873446
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/ci95"
+  },
+  "u1.dir.la.est": {
+   "val": "$+0.770$",
+   "raw": 0.7696334013627788,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/dir/estimate"
+  },
+  "u1.dir.la.ci": {
+   "val": "$[+0.682, +0.860]$",
+   "raw": [
+    0.681913879822477,
+    0.8598525717889295
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/dir/ci95"
+  },
+  "u1.cm.la.est": {
+   "val": "$+0.449$",
+   "raw": 0.4492846651520901,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/cm/estimate"
+  },
+  "u1.cm.la.ci": {
+   "val": "$[+0.389, +0.509]$",
+   "raw": [
+    0.38887387415176183,
+    0.5085388447713581
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/cm/ci95"
+  },
+  "u1.sh.la.est": {
+   "val": "$0.63$",
+   "raw": 0.6314070014265316,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/share"
+  },
+  "u1.sh.la.ci": {
+   "val": "$[0.59, 0.68]$",
+   "raw": [
+    0.5873681785492324,
+    0.6751199093883451
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/ci95"
+  },
+  "u2.dir.la.est": {
+   "val": "$+0.504$",
+   "raw": 0.5037000097202056,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/dir/estimate"
+  },
+  "u2.dir.la.ci": {
+   "val": "$[+0.416, +0.591]$",
+   "raw": [
+    0.4164875723605856,
+    0.5906686788558342
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/dir/ci95"
+  },
+  "u2.cm.la.est": {
+   "val": "$+0.715$",
+   "raw": 0.7152180567946633,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/cm/estimate"
+  },
+  "u2.cm.la.ci": {
+   "val": "$[+0.641, +0.788]$",
+   "raw": [
+    0.6411840928547737,
+    0.788238531130999
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/cm/ci95"
+  },
+  "u2.sh.la.est": {
+   "val": "$0.41$",
+   "raw": 0.41323533021410125,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/share"
+  },
+  "u2.sh.la.ci": {
+   "val": "$[0.36, 0.47]$",
+   "raw": [
+    0.35851336077396656,
+    0.4667467561730202
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/ci95"
+  },
+  "bratio.la": {
+   "val": "$1.00$",
+   "raw": 1.0010309762513074,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/B_norm_ratio_median"
+  },
+  "anorm.la": {
+   "val": "$0.89$",
+   "raw": 0.8860066103606625,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/stored_over_natural_rel_V/NAT-V-cen0"
+  },
+  "g1.la": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/llama3.2-1b/G1/problems"
+  },
+  "n.qb": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/n"
+  },
+  "tv.qb.est": {
+   "val": "$+0.792$",
+   "raw": 0.7923951647774486,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_V/estimate"
+  },
+  "tv.qb.ci": {
+   "val": "$[+0.663, +0.926]$",
+   "raw": [
+    0.6627809239049117,
+    0.9264384643009237
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_V/ci95"
+  },
+  "tu.qb.est": {
+   "val": "$+0.948$",
+   "raw": 0.9478381793051808,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_U/estimate"
+  },
+  "tu.qb.ci": {
+   "val": "$[+0.813, +1.079]$",
+   "raw": [
+    0.8130224457070329,
+    1.079336184587007
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_U/ci95"
+  },
+  "tn.qb.est": {
+   "val": "$-0.155$",
+   "raw": -0.15544301452773207,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_N/estimate"
+  },
+  "tn.qb.ci": {
+   "val": "$[-0.167, -0.145]$",
+   "raw": [
+    -0.16689343244715724,
+    -0.14460764924104302
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_N/ci95"
+  },
+  "ir.qb.est": {
+   "val": "$-0.249$",
+   "raw": -0.2490264775277464,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/estimate"
+  },
+  "ir.qb.ci": {
+   "val": "$[-0.349, -0.152]$",
+   "raw": [
+    -0.3492883543255589,
+    -0.15155144028259174
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/ci95"
+  },
+  "iu.qb.est": {
+   "val": "$-0.245$",
+   "raw": -0.24494442063552724,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/estimate"
+  },
+  "iu.qb.ci": {
+   "val": "$[-0.350, -0.148]$",
+   "raw": [
+    -0.34956429927379307,
+    -0.14750388437332662
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/ci95"
+  },
+  "ren.qb.est": {
+   "val": "$+0.160$",
+   "raw": 0.15952507141995118,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/renorm_effect/estimate"
+  },
+  "ren.qb.ci": {
+   "val": "$[+0.148, +0.171]$",
+   "raw": [
+    0.1484704586320452,
+    0.17123942447049967
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/renorm_effect/ci95"
+  },
+  "r1.dir.qb.est": {
+   "val": "$+0.688$",
+   "raw": 0.6876410659023919,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/dir/estimate"
+  },
+  "r1.dir.qb.ci": {
+   "val": "$[+0.562, +0.816]$",
+   "raw": [
+    0.5616263730377069,
+    0.8164522214792349
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/dir/ci95"
+  },
+  "r1.cm.qb.est": {
+   "val": "$+0.105$",
+   "raw": 0.10475409887505684,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/cm/estimate"
+  },
+  "r1.cm.qb.ci": {
+   "val": "$[+0.041, +0.171]$",
+   "raw": [
+    0.04059032737787862,
+    0.17085091326888077
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/cm/ci95"
+  },
+  "r1.sh.qb.est": {
+   "val": "$0.87$",
+   "raw": 0.8678006838867097,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share"
+  },
+  "r1.sh.qb.ci": {
+   "val": "$[0.79, 0.95]$",
+   "raw": [
+    0.7883811532491537,
+    0.9452071504766201
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/ci95"
+  },
+  "r2.dir.qb.est": {
+   "val": "$+0.439$",
+   "raw": 0.4386145883746455,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/dir/estimate"
+  },
+  "r2.dir.qb.ci": {
+   "val": "$[+0.310, +0.567]$",
+   "raw": [
+    0.3098630234456473,
+    0.5670394206135053
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/dir/ci95"
+  },
+  "r2.cm.qb.est": {
+   "val": "$+0.354$",
+   "raw": 0.35378057640280314,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/cm/estimate"
+  },
+  "r2.cm.qb.ci": {
+   "val": "$[+0.279, +0.430]$",
+   "raw": [
+    0.27864329364846585,
+    0.43025943657576365
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/cm/ci95"
+  },
+  "r2.sh.qb.est": {
+   "val": "$0.55$",
+   "raw": 0.5535301171326991,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share"
+  },
+  "r2.sh.qb.ci": {
+   "val": "$[0.44, 0.65]$",
+   "raw": [
+    0.44353716682793565,
+    0.6484573480733044
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/ci95"
+  },
+  "u1.dir.qb.est": {
+   "val": "$+0.684$",
+   "raw": 0.6835590090101729,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/dir/estimate"
+  },
+  "u1.dir.qb.ci": {
+   "val": "$[+0.558, +0.814]$",
+   "raw": [
+    0.5579283994296372,
+    0.8141400485278625
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/dir/ci95"
+  },
+  "u1.cm.qb.est": {
+   "val": "$+0.264$",
+   "raw": 0.264279170295008,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/cm/estimate"
+  },
+  "u1.cm.qb.ci": {
+   "val": "$[+0.200, +0.330]$",
+   "raw": [
+    0.19989196861626624,
+    0.330433713002804
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/cm/ci95"
+  },
+  "u1.sh.qb.est": {
+   "val": "$0.72$",
+   "raw": 0.7211769096611622,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/share"
+  },
+  "u1.sh.qb.ci": {
+   "val": "$[0.65, 0.79]$",
+   "raw": [
+    0.6506295571211022,
+    0.7852782562792913
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/ci95"
+  },
+  "u2.dir.qb.est": {
+   "val": "$+0.439$",
+   "raw": 0.4386145883746455,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/dir/estimate"
+  },
+  "u2.dir.qb.ci": {
+   "val": "$[+0.307, +0.567]$",
+   "raw": [
+    0.3066153982843996,
+    0.5665467749873127
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/dir/ci95"
+  },
+  "u2.cm.qb.est": {
+   "val": "$+0.509$",
+   "raw": 0.5092235909305353,
+   "fmt": "s3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/cm/estimate"
+  },
+  "u2.cm.qb.ci": {
+   "val": "$[+0.431, +0.587]$",
+   "raw": [
+    0.43138236210339553,
+    0.5868429555315564
+   ],
+   "fmt": "ci3",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/cm/ci95"
+  },
+  "u2.sh.qb.est": {
+   "val": "$0.46$",
+   "raw": 0.4627526068808232,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/share"
+  },
+  "u2.sh.qb.ci": {
+   "val": "$[0.36, 0.55]$",
+   "raw": [
+    0.3625310082743773,
+    0.5471360995202346
+   ],
+   "fmt": "uci2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/ci95"
+  },
+  "bratio.qb": {
+   "val": "$1.00$",
+   "raw": 1.002918867828673,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/B_norm_ratio_median"
+  },
+  "anorm.qb": {
+   "val": "$0.90$",
+   "raw": 0.8955476342858232,
+   "fmt": "u2",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0"
+  },
+  "g1.qb": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/G1/problems"
+  },
+  "rng.r1.sh.min": {
+   "val": "$0.75$",
+   "raw": 0.7480959308254806,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share"
+   ]
+  },
+  "rng.r1.sh.max": {
+   "val": "$0.87$",
+   "raw": 0.8678006838867097,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share"
+   ]
+  },
+  "rng.r1.shhi.min": {
+   "val": "$0.82$",
+   "raw": 0.8233842857762984,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/ci95/1"
+   ]
+  },
+  "rng.r1.shhi.max": {
+   "val": "$0.95$",
+   "raw": 0.9452071504766201,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/ci95/1"
+   ]
+  },
+  "rng.r2.sh.min": {
+   "val": "$0.43$",
+   "raw": 0.4301374634004366,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share"
+   ]
+  },
+  "rng.r2.sh.max": {
+   "val": "$0.55$",
+   "raw": 0.5535301171326991,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share"
+   ]
+  },
+  "rng.r2.shhi.min": {
+   "val": "$0.50$",
+   "raw": 0.5031067541877392,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/ci95/1"
+   ]
+  },
+  "rng.r2.shhi.max": {
+   "val": "$0.65$",
+   "raw": 0.6484573480733044,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/ci95/1"
+   ]
+  },
+  "rng.u1.sh.min": {
+   "val": "$0.62$",
+   "raw": 0.623174157158989,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/share"
+   ]
+  },
+  "rng.u1.sh.max": {
+   "val": "$0.72$",
+   "raw": 0.7211769096611622,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/share"
+   ]
+  },
+  "rng.u1.shhi.min": {
+   "val": "$0.68$",
+   "raw": 0.6751199093883451,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/ci95/1"
+   ]
+  },
+  "rng.u1.shhi.max": {
+   "val": "$0.79$",
+   "raw": 0.7852782562792913,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/ci95/1"
+   ]
+  },
+  "rng.u2.sh.min": {
+   "val": "$0.36$",
+   "raw": 0.3614694003236832,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/share"
+   ]
+  },
+  "rng.u2.sh.max": {
+   "val": "$0.46$",
+   "raw": 0.4627526068808232,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/share"
+   ]
+  },
+  "rng.u2.shhi.min": {
+   "val": "$0.43$",
+   "raw": 0.42545537616527246,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/ci95/1"
+   ]
+  },
+  "rng.u2.shhi.max": {
+   "val": "$0.55$",
+   "raw": 0.5471360995202346,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/ci95/1",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/ci95/1"
+   ]
+  },
+  "rng.sh.min": {
+   "val": "$0.36$",
+   "raw": 0.3614694003236832,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/share"
+   ]
+  },
+  "rng.sh.max": {
+   "val": "$0.87$",
+   "raw": 0.8678006838867097,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/U2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/U2/share_dir/share"
+   ]
+  },
+  "rng.ir.min": {
+   "val": "$-0.29$",
+   "raw": -0.2892463620638856,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/estimate"
+   ]
+  },
+  "rng.ir.max": {
+   "val": "$-0.25$",
+   "raw": -0.2490264775277464,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/estimate"
+   ]
+  },
+  "rng.iu.min": {
+   "val": "$-0.28$",
+   "raw": -0.28329888032040934,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/estimate"
+   ]
+  },
+  "rng.iu.max": {
+   "val": "$-0.24$",
+   "raw": -0.24494442063552724,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/estimate"
+   ]
+  },
+  "rng.inter.min": {
+   "val": "$-0.29$",
+   "raw": -0.2892463620638856,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/estimate"
+   ]
+  },
+  "rng.inter.max": {
+   "val": "$-0.24$",
+   "raw": -0.24494442063552724,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_R/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/interaction_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/interaction_U/estimate"
+   ]
+  },
+  "rng.ren.min": {
+   "val": "$+0.16$",
+   "raw": 0.15952507141995118,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/renorm_effect/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/renorm_effect/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/renorm_effect/estimate"
+   ]
+  },
+  "rng.ren.max": {
+   "val": "$+0.22$",
+   "raw": 0.22474438311508182,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/renorm_effect/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/renorm_effect/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/renorm_effect/estimate"
+   ]
+  },
+  "rng.tn.min": {
+   "val": "$-0.23$",
+   "raw": -0.22880433642564516,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_N/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_N/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_N/estimate"
+   ]
+  },
+  "rng.tn.max": {
+   "val": "$-0.16$",
+   "raw": -0.15544301452773207,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_N/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_N/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_N/estimate"
+   ]
+  },
+  "rng.tu.min": {
+   "val": "$+0.95$",
+   "raw": 0.9478381793051808,
+   "fmt": "s2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_U/estimate"
+   ]
+  },
+  "rng.tu.max": {
+   "val": "$+1.22$",
+   "raw": 1.2189180665148687,
+   "fmt": "s2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/theta_U/estimate",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/theta_U/estimate",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/theta_U/estimate"
+   ]
+  },
+  "rng.anorm.min": {
+   "val": "$0.89$",
+   "raw": 0.8860066103606625,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/stored_over_natural_rel_V/NAT-V-cen0",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0"
+   ]
+  },
+  "rng.anorm.max": {
+   "val": "$0.90$",
+   "raw": 0.8955476342858232,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/stored_over_natural_rel_V/NAT-V-cen0",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/stored_over_natural_rel_V/NAT-V-cen0"
+   ]
+  },
+  "rng.bratio.min": {
+   "val": "$1.00$",
+   "raw": 1.0010309762513074,
+   "fmt": "u2",
+   "op": "min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/B_norm_ratio_median",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/B_norm_ratio_median",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/B_norm_ratio_median"
+   ]
+  },
+  "rng.bratio.max": {
+   "val": "$1.00$",
+   "raw": 1.0040717839363862,
+   "fmt": "u2",
+   "op": "max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/descriptive/B_norm_ratio_median",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/descriptive/B_norm_ratio_median",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/descriptive/B_norm_ratio_median"
+   ]
+  },
+  "rng.r1.shcm.min": {
+   "val": "$0.13$",
+   "raw": 0.13219931611329028,
+   "fmt": "u2",
+   "op": "one_minus_max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share"
+   ]
+  },
+  "rng.r1.shcm.max": {
+   "val": "$0.25$",
+   "raw": 0.25190406917451935,
+   "fmt": "u2",
+   "op": "one_minus_min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R1/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R1/share_dir/share"
+   ]
+  },
+  "rng.r2.shcm.min": {
+   "val": "$0.45$",
+   "raw": 0.44646988286730094,
+   "fmt": "u2",
+   "op": "one_minus_max",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share"
+   ]
+  },
+  "rng.r2.shcm.max": {
+   "val": "$0.57$",
+   "raw": 0.5698625365995633,
+   "fmt": "u2",
+   "op": "one_minus_min",
+   "inputs": [
+    "v6b_runs/v6b_report.json#models/qwen2.5-0.5b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/llama3.2-1b/paths/R2/share_dir/share",
+    "v6b_runs/v6b_report.json#models/qwen2.5-1.5b/paths/R2/share_dir/share"
+   ]
+  },
+  "verd": {
+   "val": "reject",
+   "raw": "reject",
+   "fmt": "word",
+   "src": "v6b_runs/v6b_report.json#verdict/H_star"
+  },
+  "nrej": {
+   "val": "$2$",
+   "raw": 2,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v6b_runs/v6b_report.json#verdict/rejecting_paths"
+   ]
+  },
+  "norder": {
+   "val": "$6$",
+   "raw": 6,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v6b_runs/v6b_report.json#verdict/order_dependent"
+   ]
+  },
+  "thresh": {
+   "val": "$0.5$",
+   "raw": 0.5,
+   "fmt": "u1",
+   "src": "v6b_runs/v6b_report.json#verdict/threshold"
+  },
+  "design.n": {
+   "val": "$70$",
+   "raw": 70,
+   "fmt": "int",
+   "src": "v6b_runs/design.json#n"
+  },
+  "design.ncuts": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "op": "len",
+   "inputs": [
+    "v6b_runs/design.json#cuts"
+   ]
+  },
+  "gpu.hours": {
+   "val": "$2.7$",
+   "raw": 2.7481504663055563,
+   "fmt": "u1",
+   "op": "ledger_hours",
+   "inputs": [
+    "v6b_runs/gpu_ledger.jsonl"
+   ]
+  },
+  "gpu.test": {
+   "val": "$2.6$",
+   "raw": 2.5891733411388898,
+   "fmt": "u1",
+   "op": "ledger_hours_prefix",
+   "inputs": [
+    "v6b_runs/gpu_ledger.jsonl",
+    "test:"
+   ]
+  },
+  "recomp.n": {
+   "val": "$85$",
+   "raw": 85,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_recomputation.json#compared"
+  },
+  "recomp.ndis": {
+   "val": "$0$",
+   "raw": 0,
+   "fmt": "int",
+   "src": "v6b_runs/v6b_recomputation.json#outside_tolerance"
+  },
+  "recomp.verd": {
+   "val": "reject",
+   "raw": "reject",
+   "fmt": "word",
+   "src": "v6b_runs/v6b_recomputation.json#verdict"
+  },
+  "sha.report": {
+   "val": "\\texttt{a7668747}",
+   "raw": "a7668747",
+   "fmt": "tt",
+   "op": "sha256_prefix",
+   "inputs": [
+    "v6b_runs/v6b_report.json"
+   ]
+  },
+  "sha.recomp": {
+   "val": "\\texttt{2903910c}",
+   "raw": "2903910c",
+   "fmt": "tt",
+   "op": "sha256_prefix",
+   "inputs": [
+    "v6b_runs/v6b_recomputation.json"
+   ]
+  }
+ }
+}

@@ -1,0 +1,39 @@
+\begin{table}[tbp]
+\centering\footnotesize
+\caption{The split of the value-path excess along four paths (v6b, the first \vsixb{design.n} v6 test problems of each model; estimation targets, not tests). A $=$ NAT-V-cen0 (centered error, not re-normed), B $=$ C1-V+$\mu$ (natural common mode plus isotropic position-varying part), C $=$ C1-V@cen (isotropic at the centered norm). Each path telescopes exactly per problem into a common-mode part and a direction part; $s_{\mathrm{dir}}$ is the direction part's share of the total (ratio of means). The interactions $I_R=\theta(\text{NAT-V},\text{B})-\theta(\text{NAT-V-cen},\text{C1-V})$ and $I_U=\theta(\text{NAT-V},\text{B})-\theta(\text{A},\text{C})$ are the differences between the two orders; the norm term is $\theta_N=\theta(\text{C},\text{C1-V})$ and the re-norm effect $\theta(\text{NAT-V-cen},\text{A})$. Estimates with 95\% problem-bootstrap intervals.}
+\label{tab:v6bsplit}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l lll@{}}
+\toprule
+ & Qwen2.5-0.5B & Llama-3.2-1B & Qwen2.5-1.5B \\
+\midrule
+$\theta_V$ (total of R1, R2) & \vsixb{tv.qa.est} \vsixb{tv.qa.ci} & \vsixb{tv.la.est} \vsixb{tv.la.ci} & \vsixb{tv.qb.est} \vsixb{tv.qb.ci} \\
+$\theta_U$ (total of U1, U2) & \vsixb{tu.qa.est} \vsixb{tu.qa.ci} & \vsixb{tu.la.est} \vsixb{tu.la.ci} & \vsixb{tu.qb.est} \vsixb{tu.qb.ci} \\
+norm term $\theta_N$ & \vsixb{tn.qa.est} \vsixb{tn.qa.ci} & \vsixb{tn.la.est} \vsixb{tn.la.ci} & \vsixb{tn.qb.est} \vsixb{tn.qb.ci} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{R1, re-normed, common mode first (v6 L3): $\theta(\text{NAT-V},\text{NAT-V-cen})+\theta(\text{NAT-V-cen},\text{C1-V})$}} \\
+\quad common-mode part & \vsixb{r1.cm.qa.est} \vsixb{r1.cm.qa.ci} & \vsixb{r1.cm.la.est} \vsixb{r1.cm.la.ci} & \vsixb{r1.cm.qb.est} \vsixb{r1.cm.qb.ci} \\
+\quad direction part & \vsixb{r1.dir.qa.est} \vsixb{r1.dir.qa.ci} & \vsixb{r1.dir.la.est} \vsixb{r1.dir.la.ci} & \vsixb{r1.dir.qb.est} \vsixb{r1.dir.qb.ci} \\
+\quad $s_{\mathrm{dir}}$ & \vsixb{r1.sh.qa.est} \vsixb{r1.sh.qa.ci} & \vsixb{r1.sh.la.est} \vsixb{r1.sh.la.ci} & \vsixb{r1.sh.qb.est} \vsixb{r1.sh.qb.ci} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{R2, re-normed, direction first: $\theta(\text{B},\text{C1-V})+\theta(\text{NAT-V},\text{B})$}} \\
+\quad common-mode part & \vsixb{r2.cm.qa.est} \vsixb{r2.cm.qa.ci} & \vsixb{r2.cm.la.est} \vsixb{r2.cm.la.ci} & \vsixb{r2.cm.qb.est} \vsixb{r2.cm.qb.ci} \\
+\quad direction part & \vsixb{r2.dir.qa.est} \vsixb{r2.dir.qa.ci} & \vsixb{r2.dir.la.est} \vsixb{r2.dir.la.ci} & \vsixb{r2.dir.qb.est} \vsixb{r2.dir.qb.ci} \\
+\quad $s_{\mathrm{dir}}$ & \vsixb{r2.sh.qa.est} \vsixb{r2.sh.qa.ci} & \vsixb{r2.sh.la.est} \vsixb{r2.sh.la.ci} & \vsixb{r2.sh.qb.est} \vsixb{r2.sh.qb.ci} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{U1, not re-normed, common mode first: $\theta(\text{NAT-V},\text{A})+\theta(\text{A},\text{C})$}} \\
+\quad common-mode part & \vsixb{u1.cm.qa.est} \vsixb{u1.cm.qa.ci} & \vsixb{u1.cm.la.est} \vsixb{u1.cm.la.ci} & \vsixb{u1.cm.qb.est} \vsixb{u1.cm.qb.ci} \\
+\quad direction part & \vsixb{u1.dir.qa.est} \vsixb{u1.dir.qa.ci} & \vsixb{u1.dir.la.est} \vsixb{u1.dir.la.ci} & \vsixb{u1.dir.qb.est} \vsixb{u1.dir.qb.ci} \\
+\quad $s_{\mathrm{dir}}$ & \vsixb{u1.sh.qa.est} \vsixb{u1.sh.qa.ci} & \vsixb{u1.sh.la.est} \vsixb{u1.sh.la.ci} & \vsixb{u1.sh.qb.est} \vsixb{u1.sh.qb.ci} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{U2, not re-normed, direction first: $\theta(\text{B},\text{C})+\theta(\text{NAT-V},\text{B})$}} \\
+\quad common-mode part & \vsixb{u2.cm.qa.est} \vsixb{u2.cm.qa.ci} & \vsixb{u2.cm.la.est} \vsixb{u2.cm.la.ci} & \vsixb{u2.cm.qb.est} \vsixb{u2.cm.qb.ci} \\
+\quad direction part & \vsixb{u2.dir.qa.est} \vsixb{u2.dir.qa.ci} & \vsixb{u2.dir.la.est} \vsixb{u2.dir.la.ci} & \vsixb{u2.dir.qb.est} \vsixb{u2.dir.qb.ci} \\
+\quad $s_{\mathrm{dir}}$ & \vsixb{u2.sh.qa.est} \vsixb{u2.sh.qa.ci} & \vsixb{u2.sh.la.est} \vsixb{u2.sh.la.ci} & \vsixb{u2.sh.qb.est} \vsixb{u2.sh.qb.ci} \\
+\midrule
+interaction $I_R$ & \vsixb{ir.qa.est} \vsixb{ir.qa.ci} & \vsixb{ir.la.est} \vsixb{ir.la.ci} & \vsixb{ir.qb.est} \vsixb{ir.qb.ci} \\
+interaction $I_U$ & \vsixb{iu.qa.est} \vsixb{iu.qa.ci} & \vsixb{iu.la.est} \vsixb{iu.la.ci} & \vsixb{iu.qb.est} \vsixb{iu.qb.ci} \\
+re-norm effect & \vsixb{ren.qa.est} \vsixb{ren.qa.ci} & \vsixb{ren.la.est} \vsixb{ren.la.ci} & \vsixb{ren.qb.est} \vsixb{ren.qb.ci} \\
+\bottomrule
+\end{tabular}
+\end{table}
