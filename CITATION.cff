@@ -19,7 +19,7 @@ authors:
     affiliation: "Department of Computer Science and Engineering, SRM Institute of Science and Technology"
 preferred-citation:
   type: article
-  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise: Value Error Is Consistently Harsher, and Its Common-Mode and Direction Parts Are Not Separable"
+  title: "Weight-Quantization Error in the KV Cache Is Not Isotropic Noise"
   authors:
     - family-names: Gunupati
       given-names: Srikar Reddy

@@ -1,7 +1,6 @@
 # Weight-quantization error in the KV cache: code, locks and per-problem records
 
-This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise:
-Value Error Is Consistently Harsher, and Its Common-Mode and Direction Parts Are Not Separable* (Gunupati, Anavekar and Varghese; prepared for the Journal
+This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise* (Gunupati, Anavekar and Varghese; prepared for the Journal
 of Machine Learning Research). It holds the code, the protocol locks and their history, the manifests, and the per-problem
 records of the locked studies:
 
