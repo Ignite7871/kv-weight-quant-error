@@ -1,7 +1,7 @@
 # Weight-quantization error in the KV cache: code, locks and per-problem records
 
-This repository accompanies the article *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise* (Gunupati, Anavekar and Varghese; prepared for the Journal
-of Machine Learning Research). It holds the code, the protocol locks and their history, the manifests, and the per-problem
+This repository accompanies the manuscript *Weight-Quantization Error in the KV Cache Is Not Isotropic Noise* by Srikar Reddy Gunupati, Shrinivas Anavekar and
+Alen K Varghese (manuscript under review). It holds the code, the protocol locks and their history, the manifests, and the per-problem
 records of the locked studies:
 
 - **v6b, the split follow-up** (Section 6.3 of the article; added in v1.3.0): the value-path split of v6 rerun on the first
@@ -135,7 +135,7 @@ Re-running the GPU studies needs the models, a CUDA GPU and an authorization fil
 - `gm_D2.json`, the GM record of v5 deviation D2: it was never checkpointed and was lost with the first cloud volume. V5-D3
   declares it lost and keeps its hash; `verify_release.py` reports it as recorded lost.
 - WikiText-2 text and token ids (see `NOTICE`).
-- The manuscript sources, the submission plan (`v6/JMLR_PLAN.md`) and internal review documents.
+- The manuscript sources, the submission plan and internal review documents.
 - Access tokens: the model-download token existed only as a cloud-provider secret and was never written to disk.
 
 ## Licences
